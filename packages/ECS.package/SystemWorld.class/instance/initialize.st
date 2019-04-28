@@ -6,7 +6,7 @@ initialize
 	systems := OrderedCollection new.
 	resources := OrderedCollection new.
 	freeIndexList := OrderedCollection new.
-	components := IdentityDictionary new.
+	components := Dictionary new.
 	
 	components at: #id put: IndexStorage new.
 	

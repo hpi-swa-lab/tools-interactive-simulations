@@ -3,8 +3,6 @@ tick: aWorld
 
 	aWorld query: {ClickEvent} do: [:clickComponents | | clickPosition |
 		clickPosition := clickComponents first position.
-		aWorld query: {Transform. Rendered. #id} do: [:components | | position size entity |
-			position := components first position.
-			size := components second size.
-			entity := components third.
-			((position extent: size) containsPoint: clickPosition) ifTrue: [entity explore]]]
+		aWorld query: {Transform. #id} do: [:components | | entity |
+			entity := components second.
+			(components first bounds containsPoint: clickPosition) ifTrue: [entity explore]]]

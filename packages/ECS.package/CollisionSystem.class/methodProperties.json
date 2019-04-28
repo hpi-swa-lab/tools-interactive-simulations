@@ -2,4 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
-		"tick:" : "T 4/28/2019 12:28" } }
+		"collide:with:" : "T 4/28/2019 15:27",
+		"collide:withBounds:" : "T 4/28/2019 15:22",
+		"component:and:" : "T 4/28/2019 13:03",
+		"componentVector:and:" : "T 4/28/2019 13:05",
+		"resolveCollision:with:" : "T 4/28/2019 19:09",
+		"tick:" : "T 4/28/2019 15:26" } }

@@ -2,4 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
-		"tick:" : "T 4/14/2019 23:10" } }
+		"attemptMoving:by:around:" : "T 4/28/2019 19:13",
+		"eps" : "T 4/28/2019 18:54",
+		"resolveCollision:with:velocity:" : "T 4/28/2019 18:48",
+		"resolveCollisionX:with:" : "T 4/28/2019 18:59",
+		"resolveCollisionY:with:" : "T 4/28/2019 18:59",
+		"tick:" : "T 4/28/2019 19:01" } }

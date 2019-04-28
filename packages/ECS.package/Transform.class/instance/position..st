@@ -1,5 +1,4 @@
 as yet unclassified
 position: aPoint
 
-	position := aPoint.
-	self recordChange: aPoint to: #position
+	self bounds: (aPoint extent: self bounds extent)

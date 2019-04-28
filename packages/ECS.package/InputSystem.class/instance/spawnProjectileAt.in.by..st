@@ -4,5 +4,5 @@ spawnProjectileAt: aPoint in: aWorld by: anEntity
 	aWorld spawnNewWith: {
 		Physics new.
 		Colliding new ignoreList: {anEntity}.
-		Transform new position: aPoint.
-		Rendered new size: 10 @ 10; color: Color orange}
+		Transform new bounds: (aPoint extent: 10 @ 10).
+		Rendered new color: Color orange}

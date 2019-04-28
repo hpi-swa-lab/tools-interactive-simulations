@@ -3,17 +3,16 @@ tick: aWorld
 
 	self setUpViewport.
 	
-	aWorld query: {Transform. Rendered} do:	[:components | | color position size |
-		position := components first position.
+	aWorld query: {Transform. Rendered} do:	[:components | | color bounds |
+		bounds := components first bounds.
 		color := components second color.
-		size := components second size.
 		ogl
 			glBegin: GLQuads;
 			glColor3f: color red with: color green with: color blue;
-			glVertex2f: position x with: position y;
-			glVertex2f: size x + position x with: position y;
-			glVertex2f: size x + position x with: size y + position y;
-			glVertex2f: position x with: size y + position y;
+			glVertex2f: bounds left with: bounds top;
+			glVertex2f: bounds right with: bounds top;
+			glVertex2f: bounds right with: bounds bottom;
+			glVertex2f: bounds left with: bounds bottom;
 			glEnd].
 	
 	self tearDownViewport

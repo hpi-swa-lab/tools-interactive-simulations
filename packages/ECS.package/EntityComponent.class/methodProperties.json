@@ -1,6 +1,6 @@
 {
 	"class" : {
-		 },
+		"optional" : "T 4/28/2019 17:52" },
 	"instance" : {
 		"initialize" : "T 4/27/2019 17:16",
 		"recordChange:to:" : "T 4/27/2019 17:23",

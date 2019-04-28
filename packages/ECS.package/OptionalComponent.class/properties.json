@@ -6,8 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"bounds" ],
-	"name" : "Transform",
+		"componentClass" ],
+	"name" : "OptionalComponent",
 	"pools" : [
 		 ],
 	"super" : "EntityComponent",
