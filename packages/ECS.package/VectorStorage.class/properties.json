@@ -1,0 +1,14 @@
+{
+	"category" : "ECS",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"storage" ],
+	"name" : "VectorStorage",
+	"pools" : [
+		 ],
+	"super" : "Storage",
+	"type" : "normal" }

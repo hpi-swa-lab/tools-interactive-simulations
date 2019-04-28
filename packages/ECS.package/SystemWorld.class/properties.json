@@ -13,7 +13,8 @@
 		"running",
 		"currentParent",
 		"freeIndexList",
-		"components" ],
+		"components",
+		"maxEntityIndex" ],
 	"name" : "SystemWorld",
 	"pools" : [
 		 ],

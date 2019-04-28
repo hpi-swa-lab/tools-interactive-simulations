@@ -2,7 +2,7 @@ as yet unclassified
 tick: aWorld
 
 	aWorld resource: ScreenSize do: [:screenSize | | colliders |
-		colliders := aWorld queryList: {Transform. Rendered. Physics. Colliding. Entity}.
+		colliders := aWorld queryList: {Transform. Rendered. Physics. Colliding. #id}.
 		colliders do: [:components | | position size rect |
 			position := components first position.
 			size := components second size.

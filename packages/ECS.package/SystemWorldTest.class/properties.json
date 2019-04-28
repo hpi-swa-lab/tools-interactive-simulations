@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Test",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SystemWorldTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

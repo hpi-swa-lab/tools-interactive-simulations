@@ -6,7 +6,7 @@ tick: aWorld
 	
 	(events contains: [:event | event first key = $  ]) ifTrue: [^ aWorld resource: SimulationPaused do: #toggle].
 	
-	aWorld query: {Physics. PlayerInput. Transform. Entity} do: [:components | | inputMap velocity position |
+	aWorld query: {Physics. PlayerInput. Transform. #id} do: [:components | | inputMap velocity position |
 		velocity := components first velocity.
 		inputMap := components second.
 		position := components third position.
