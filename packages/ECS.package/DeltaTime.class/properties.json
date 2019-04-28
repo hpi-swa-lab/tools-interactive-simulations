@@ -1,0 +1,15 @@
+{
+	"category" : "ECS",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"milliseconds",
+		"last" ],
+	"name" : "DeltaTime",
+	"pools" : [
+		 ],
+	"super" : "Resource",
+	"type" : "normal" }

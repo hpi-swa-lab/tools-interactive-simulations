@@ -1,0 +1,21 @@
+{
+	"category" : "ECS",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"entities",
+		"systems",
+		"morph",
+		"resources",
+		"running",
+		"currentParent",
+		"freeIndexList",
+		"components" ],
+	"name" : "SystemWorld",
+	"pools" : [
+		 ],
+	"super" : "AbstractHierarchicalList",
+	"type" : "normal" }

@@ -1,0 +1,19 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"extent:" : "T 4/13/2019 23:00",
+		"handlesKeyboard:" : "T 4/14/2019 08:54",
+		"handlesMouseDown:" : "T 4/14/2019 00:09",
+		"initialize" : "T 4/14/2019 10:21",
+		"intoWorld:" : "T 4/14/2019 22:04",
+		"keyStroke:" : "T 4/14/2019 22:46",
+		"keyUp:" : "T 4/14/2019 22:46",
+		"mouseDown:" : "T 4/14/2019 08:58",
+		"ogl" : "T 4/13/2019 23:03",
+		"outOfWorld:" : "T 4/15/2019 15:58",
+		"privateFullMoveBy:" : "T 4/13/2019 23:00",
+		"systemWorld:" : "T 4/14/2019 10:21",
+		"tick" : "T 4/14/2019 08:59",
+		"updateBuffer" : "T 4/14/2019 10:20",
+		"wantsKeyboardFocus" : "T 4/14/2019 08:51" } }

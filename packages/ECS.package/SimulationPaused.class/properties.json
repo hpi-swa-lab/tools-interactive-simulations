@@ -1,0 +1,14 @@
+{
+	"category" : "ECS",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"paused" ],
+	"name" : "SimulationPaused",
+	"pools" : [
+		 ],
+	"super" : "Resource",
+	"type" : "normal" }

@@ -1,0 +1,15 @@
+{
+	"category" : "ECS",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"time",
+		"data" ],
+	"name" : "RecordLink",
+	"pools" : [
+		 ],
+	"super" : "Link",
+	"type" : "normal" }

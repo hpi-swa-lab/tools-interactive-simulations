@@ -1,0 +1,15 @@
+{
+	"category" : "ECS",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"size",
+		"color" ],
+	"name" : "Rendered",
+	"pools" : [
+		 ],
+	"super" : "EntityComponent",
+	"type" : "normal" }

@@ -1,0 +1,15 @@
+{
+	"category" : "ECS",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"velocity",
+		"friction" ],
+	"name" : "Physics",
+	"pools" : [
+		 ],
+	"super" : "EntityComponent",
+	"type" : "normal" }

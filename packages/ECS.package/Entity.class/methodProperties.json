@@ -1,0 +1,16 @@
+{
+	"class" : {
+		"debugLabel:" : "T 4/15/2019 16:23" },
+	"instance" : {
+		"alive" : "T 4/14/2019 08:49",
+		"attach:" : "T 4/13/2019 21:56",
+		"comeAlive" : "T 4/14/2019 08:48",
+		"components" : "T 4/13/2019 21:52",
+		"debugLabel" : "T 4/15/2019 16:22",
+		"debugLabel:" : "T 4/15/2019 16:22",
+		"delete" : "T 4/14/2019 08:48",
+		"detach:" : "T 4/14/2019 00:17",
+		"initialize" : "T 4/14/2019 08:48",
+		"matches:" : "T 4/13/2019 23:12",
+		"printOn:" : "T 4/15/2019 16:23",
+		"setToPointInTime:" : "T 4/27/2019 17:35" } }

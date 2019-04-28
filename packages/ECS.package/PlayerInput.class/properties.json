@@ -1,0 +1,18 @@
+{
+	"category" : "ECS",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"acceleration",
+		"left",
+		"right",
+		"up",
+		"down" ],
+	"name" : "PlayerInput",
+	"pools" : [
+		 ],
+	"super" : "EntityComponent",
+	"type" : "normal" }

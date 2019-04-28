@@ -1,0 +1,16 @@
+{
+	"category" : "ECS",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"components",
+		"alive",
+		"debugLabel" ],
+	"name" : "Entity",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

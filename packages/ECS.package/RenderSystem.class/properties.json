@@ -1,0 +1,14 @@
+{
+	"category" : "ECS",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"ogl" ],
+	"name" : "RenderSystem",
+	"pools" : [
+		"OpenGLConstants" ],
+	"super" : "System",
+	"type" : "normal" }

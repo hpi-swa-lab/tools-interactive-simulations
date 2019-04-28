@@ -1,0 +1,15 @@
+{
+	"category" : "ECS",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"signature",
+		"entities" ],
+	"name" : "LazyComponentList",
+	"pools" : [
+		 ],
+	"super" : "Collection",
+	"type" : "normal" }

@@ -1,0 +1,14 @@
+{
+	"category" : "ECS",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"size" ],
+	"name" : "ScreenSize",
+	"pools" : [
+		 ],
+	"super" : "Resource",
+	"type" : "normal" }

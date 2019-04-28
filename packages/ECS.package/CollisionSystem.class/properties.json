@@ -1,0 +1,14 @@
+{
+	"category" : "ECS",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "CollisionSystem",
+	"pools" : [
+		 ],
+	"super" : "System",
+	"type" : "normal" }

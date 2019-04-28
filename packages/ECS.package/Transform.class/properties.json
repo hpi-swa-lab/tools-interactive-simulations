@@ -1,0 +1,14 @@
+{
+	"category" : "ECS",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"position" ],
+	"name" : "Transform",
+	"pools" : [
+		 ],
+	"super" : "EntityComponent",
+	"type" : "normal" }

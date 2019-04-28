@@ -1,0 +1,15 @@
+{
+	"category" : "ECS",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"which",
+		"key" ],
+	"name" : "KeyEvent",
+	"pools" : [
+		 ],
+	"super" : "EntityComponent",
+	"type" : "normal" }
