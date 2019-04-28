@@ -14,7 +14,8 @@
 		"currentParent",
 		"freeIndexList",
 		"components",
-		"maxEntityIndex" ],
+		"maxEntityIndex",
+		"lastUpdate" ],
 	"name" : "SystemWorld",
 	"pools" : [
 		 ],

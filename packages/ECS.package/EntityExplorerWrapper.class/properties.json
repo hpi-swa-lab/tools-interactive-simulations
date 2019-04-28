@@ -6,14 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"acceleration",
-		"left",
-		"right",
-		"up",
-		"down",
-		"shoot" ],
-	"name" : "PlayerInput",
+		"id",
+		"components" ],
+	"name" : "EntityExplorerWrapper",
 	"pools" : [
 		 ],
-	"super" : "EntityComponent",
+	"super" : "Object",
 	"type" : "normal" }

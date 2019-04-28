@@ -6,13 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"acceleration",
-		"left",
-		"right",
-		"up",
-		"down",
-		"shoot" ],
-	"name" : "PlayerInput",
+		"collidee",
+		"collider" ],
+	"name" : "Collision",
 	"pools" : [
 		 ],
 	"super" : "EntityComponent",

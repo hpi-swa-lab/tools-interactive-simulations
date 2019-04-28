@@ -1,4 +1,4 @@
 as yet unclassified
-alwaysUpdate
+cooldown
 
-	^ false
+	^ cooldown

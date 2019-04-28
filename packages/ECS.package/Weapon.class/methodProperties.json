@@ -1,0 +1,9 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"cooldown" : "T 4/28/2019 23:08",
+		"cooldown:" : "T 4/28/2019 23:08",
+		"initialize" : "T 4/28/2019 23:12",
+		"lastShotTime" : "T 4/28/2019 23:02",
+		"lastShotTime:" : "T 4/28/2019 23:02" } }

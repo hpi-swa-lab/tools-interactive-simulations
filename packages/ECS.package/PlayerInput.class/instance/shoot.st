@@ -1,4 +1,4 @@
 as yet unclassified
-alwaysUpdate
+shoot
 
-	^ false
+	^ shoot

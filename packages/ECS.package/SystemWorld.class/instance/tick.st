@@ -14,4 +14,5 @@ tick
 	entities removeAllSuchThat: [:e | e alive not]."
 	self alwaysUpdate
 		ifTrue: [self changed: #getList]
+		ifFalse: [self maybeUpdate]
 		"ifFalse: [previousSize > entities size ifTrue: [self changed: #getList]]"

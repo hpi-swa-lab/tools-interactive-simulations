@@ -6,14 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"acceleration",
-		"left",
-		"right",
-		"up",
-		"down",
-		"shoot" ],
-	"name" : "PlayerInput",
+		 ],
+	"name" : "ProjectileSystem",
 	"pools" : [
 		 ],
-	"super" : "EntityComponent",
+	"super" : "System",
 	"type" : "normal" }

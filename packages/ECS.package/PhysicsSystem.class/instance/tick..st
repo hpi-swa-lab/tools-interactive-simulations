@@ -16,7 +16,7 @@ tick: aWorld
 			components second velocity: velocity * (1.0 - (friction * deltaTime)) + (gravity * deltaTime).
 			
 			(velocity closeTo: 0 @ 0)
-				ifFalse: [self attemptMoving: components by: velocity * deltaTime around: entities].
+				ifFalse: [self attemptMoving: components by: velocity * deltaTime around: entities world: aWorld].
 			
 			components first bottom >= screenSize y ifTrue: [
 				components first bottom: screenSize y.
