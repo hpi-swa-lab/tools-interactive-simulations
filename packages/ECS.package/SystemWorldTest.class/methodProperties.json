@@ -4,4 +4,5 @@
 	"instance" : {
 		"testAddingWithComponents" : "T 4/28/2019 12:24",
 		"testFetchesCorrectComponents" : "T 4/28/2019 12:34",
-		"testOptionalComponents" : "T 4/28/2019 17:45" } }
+		"testOptionalComponents" : "T 4/28/2019 17:45",
+		"testReuseAfterRemove" : "T 4/29/2019 08:19" } }

@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"damage",
-		"timeToLive" ],
-	"name" : "Projectile",
+		"storage" ],
+	"name" : "HashMapStorage",
 	"pools" : [
 		 ],
-	"super" : "EntityComponent",
+	"super" : "Storage",
 	"type" : "normal" }

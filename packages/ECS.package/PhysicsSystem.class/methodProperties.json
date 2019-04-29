@@ -2,9 +2,10 @@
 	"class" : {
 		 },
 	"instance" : {
-		"attemptMoving:by:around:world:" : "T 4/28/2019 23:59",
+		"attemptMoving:by:around:world:" : "T 4/29/2019 08:43",
+		"canCollide:with:" : "T 4/29/2019 08:48",
 		"eps" : "T 4/28/2019 18:54",
-		"resolveCollision:with:velocity:world:" : "T 4/28/2019 22:53",
+		"resolveCollision:with:velocity:world:" : "T 4/29/2019 08:42",
 		"resolveCollisionX:with:" : "T 4/28/2019 18:59",
 		"resolveCollisionY:with:" : "T 4/28/2019 18:59",
 		"tick:" : "T 4/28/2019 22:49" } }

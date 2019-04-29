@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"ignoreList" ],
+		"ignoreList",
+		"group" ],
 	"name" : "Colliding",
 	"pools" : [
 		 ],

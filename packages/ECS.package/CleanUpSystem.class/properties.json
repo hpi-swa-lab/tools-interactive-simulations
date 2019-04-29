@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"damage",
-		"timeToLive" ],
-	"name" : "Projectile",
+		 ],
+	"name" : "CleanUpSystem",
 	"pools" : [
 		 ],
-	"super" : "EntityComponent",
+	"super" : "System",
 	"type" : "normal" }
