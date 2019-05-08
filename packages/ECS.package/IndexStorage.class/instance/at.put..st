@@ -1,4 +1,4 @@
 as yet unclassified
 at: aNumber put: anObject
 
-	^ self shouldNotImplement
+	alive at: aNumber put: true

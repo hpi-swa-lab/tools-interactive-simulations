@@ -6,7 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"ogl" ],
+		"ogl",
+		"font",
+		"vertices",
+		"texCoords" ],
 	"name" : "RenderSystem",
 	"pools" : [
 		"OpenGLConstants" ],

@@ -1,0 +1,17 @@
+{
+	"category" : "ECS-OpenGL",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"textureHandles",
+		"vertices",
+		"texCoords",
+		"font" ],
+	"name" : "ECSFont",
+	"pools" : [
+		"OpenGLConstants" ],
+	"super" : "Object",
+	"type" : "normal" }

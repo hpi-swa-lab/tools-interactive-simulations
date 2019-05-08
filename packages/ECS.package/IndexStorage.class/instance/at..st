@@ -1,4 +1,4 @@
 as yet unclassified
 at: aNumber
 
-	^ aNumber
+	^ (alive at: aNumber) ifTrue: [aNumber] ifFalse: []

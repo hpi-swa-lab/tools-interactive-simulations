@@ -3,7 +3,9 @@
 		 },
 	"instance" : {
 		"components" : "T 4/13/2019 22:48",
-		"setUp:" : "T 4/13/2019 23:11",
-		"setUpViewport" : "T 4/14/2019 08:25",
-		"tearDownViewport" : "T 4/14/2019 08:25",
-		"tick:" : "T 4/29/2019 00:04" } }
+		"renderFramesPerSecondOf:" : "T 5/8/2019 11:27",
+		"renderOutlineOf:" : "T 5/8/2019 11:34",
+		"setUp:" : "T 5/8/2019 08:44",
+		"setUpViewport" : "T 5/8/2019 09:55",
+		"tearDownViewport" : "T 5/8/2019 09:57",
+		"tick:" : "T 5/8/2019 11:33" } }

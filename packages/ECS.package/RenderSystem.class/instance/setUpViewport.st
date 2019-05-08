@@ -14,7 +14,11 @@ setUpViewport
 	ogl glLoadIdentity.
 	ogl glTranslated: -1 with: 1 with: 0.0.
 	ogl glScaled: (2.0 / ogl extent x) with: (-2.0 / ogl extent y) with: 1.0.
-	ogl glDisable: GLDepthTest.
-	ogl glEnable: GLBlend.
-	ogl glBlendFunc: GLOne with: GLOneMinusSrcAlpha.
+	
+	ogl
+		glDisable: GLDepthTest;
+		glDisable: GLLighting;
+		glEnable: GLBlend;
+		glBlendFunc: GLSrcAlpha with: GLOneMinusSrcAlpha.
+	
 	ogl glViewport: 0 with: 0 with: ogl extent x with: ogl extent y

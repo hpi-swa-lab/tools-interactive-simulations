@@ -1,31 +1,31 @@
 as yet unclassified
 tick: aWorld
 
-	| offset font |
+	| offset |
 	self setUpViewport.
 	
 	aWorld query: {Transform. Rendered} do: [:components | | color bounds |
 		bounds := components first bounds.
 		color := components second color.
 		
-		ogl
-			glBegin: GLQuads;
-			glColor3f: color red with: color green with: color blue;
-			glVertex2f: bounds left with: bounds top;
-			glVertex2f: bounds right with: bounds top;
-			glVertex2f: bounds right with: bounds bottom;
-			glVertex2f: bounds left with: bounds bottom;
-			glEnd].
+		ogl glColor3f: color red with: color green with: color blue.
+		ogl glVertexPointer: 2 with: GLFloat with: 0 with: vertices.
+		ogl glTexCoordPointer: 2 with: GLFloat with: 0 with: texCoords.
+		ogl glEnableClientState: GLVertexArray.
+		ogl glEnableClientState: GLTextureCoordArray.
+		
+		ogl glPushMatrix.
+		ogl glTranslatef: bounds origin x with: bounds origin y with: 0.0.
+		ogl glScalef: bounds width with: bounds height with: 1.0.
+		ogl glDrawArrays: GLTriangleStrip with: 0 with: vertices size // 2.
+		ogl glPopMatrix.
+		
+		ogl glDisableClientState: GLTextureCoordArray.
+		ogl glDisableClientState: GLVertexArray].
 	
-	font := StrikeFont familyName: 'Atlanta' pointSize: 11.
 	offset := font height.
 	
-	aWorld query: {#id} do: [:components |
-		ogl glColor3f: 1.0 with: 1.0 with: 1.0.
-		ogl drawString: components first asString at: 0 @ offset @ 0 font: font color: Color white.
-		offset := offset + font height].
-	
-	aWorld resource: DeltaTime do: [:deltaTime |
-		ogl drawString: deltaTime fps asInteger asString at: 0 @ font height @ 0 font: font color: Color white].
+	self renderOutlineOf: aWorld.
+	self renderFramesPerSecondOf: aWorld.
 	
 	self tearDownViewport

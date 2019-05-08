@@ -2,7 +2,7 @@ as yet unclassified
 attemptMoving: components by: velocity around: aCollectionOfEntities world: aWorld
 
 	components third
-		ifNil: [components first position: components first + velocity]
+		ifNil: [components first position: components first position + velocity]
 		ifNotNil: [:colliding |
 			components first position: components first position + velocity.
 			aCollectionOfEntities do: [:otherComponents |

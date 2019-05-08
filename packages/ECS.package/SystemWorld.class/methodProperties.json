@@ -1,17 +1,21 @@
 {
 	"class" : {
-		"nodeClass" : "T 4/14/2019 21:31" },
+		"nodeClass" : "T 4/14/2019 21:31",
+		"open" : "T 5/8/2019 08:00" },
 	"instance" : {
-		"allocateEntity" : "T 4/28/2019 23:54",
+		"allComponentsOf:do:" : "T 5/8/2019 10:10",
+		"allocateEntity" : "T 5/8/2019 11:18",
 		"alwaysUpdate" : "T 4/28/2019 23:34",
-		"attach:to:" : "T 4/28/2019 11:34",
+		"attach:to:" : "T 4/29/2019 17:26",
 		"buildWith:" : "T 4/29/2019 08:30",
 		"currentParent" : "T 4/14/2019 22:17",
 		"currentParent:" : "T 4/14/2019 22:17",
 		"currentSelection" : "T 4/14/2019 22:10",
 		"currentSelection:" : "T 4/15/2019 10:05",
 		"fetchComponentsInto:componentLists:at:do:componentClasses:" : "T 4/28/2019 17:51",
+		"get:of:" : "T 5/7/2019 21:36",
 		"getList" : "T 4/28/2019 23:41",
+		"in:send:to:with:" : "T 5/7/2019 19:31",
 		"initialize" : "T 4/28/2019 23:35",
 		"isPaused" : "T 4/29/2019 08:28",
 		"label" : "T 4/14/2019 21:25",
@@ -35,6 +39,6 @@
 		"spawnNewWith:" : "T 4/29/2019 00:04",
 		"start" : "T 4/14/2019 20:24",
 		"systems" : "T 4/15/2019 07:40",
-		"tick" : "T 4/28/2019 23:35",
+		"tick" : "T 4/29/2019 09:44",
 		"togglePaused" : "T 4/29/2019 08:29",
-		"updateInterval" : "T 4/28/2019 23:39" } }
+		"updateInterval" : "T 5/7/2019 19:41" } }

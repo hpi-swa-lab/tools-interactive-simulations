@@ -1,0 +1,14 @@
+{
+	"category" : "ECS",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "JetpackWorld",
+	"pools" : [
+		 ],
+	"super" : "SystemWorld",
+	"type" : "normal" }

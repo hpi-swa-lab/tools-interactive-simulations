@@ -1,0 +1,16 @@
+{
+	"category" : "ECS",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"fuel",
+		"acceleration",
+		"capacity" ],
+	"name" : "Jetpack",
+	"pools" : [
+		 ],
+	"super" : "EntityComponent",
+	"type" : "normal" }

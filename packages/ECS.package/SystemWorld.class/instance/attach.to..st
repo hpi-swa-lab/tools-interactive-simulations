@@ -1,4 +1,4 @@
 as yet unclassified
 attach: aComponent to: anEntityId
 
-	(components at: aComponent class ifAbsentPut: [VectorStorage new]) at: anEntityId put: aComponent
+	(components at: aComponent class ifAbsentPut: [aComponent class storage new]) at: anEntityId put: aComponent

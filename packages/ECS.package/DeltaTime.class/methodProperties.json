@@ -4,7 +4,14 @@
 	"instance" : {
 		"dt" : "T 4/14/2019 09:15",
 		"fps" : "T 4/29/2019 08:30",
+		"fpsAccumulated" : "T 5/8/2019 11:22",
+		"fpsAccumulated:" : "T 5/8/2019 11:22",
+		"fpsAverage" : "T 5/8/2019 11:24",
+		"fpsAverage:" : "T 5/8/2019 11:24",
+		"initialize" : "T 5/8/2019 11:29",
 		"last" : "T 4/14/2019 00:04",
 		"last:" : "T 4/14/2019 00:04",
 		"milliseconds" : "T 4/13/2019 23:55",
-		"milliseconds:" : "T 4/13/2019 23:55" } }
+		"milliseconds:" : "T 4/13/2019 23:55",
+		"numAccumulated" : "T 5/8/2019 11:24",
+		"numAccumulated:" : "T 5/8/2019 11:24" } }

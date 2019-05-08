@@ -1,6 +1,10 @@
 as yet unclassified
 allocateEntity
 
-	^ freeIndexList
+	| index |
+	index := freeIndexList
 		ifEmpty: [maxEntityIndex := maxEntityIndex + 1]
-		ifNotEmpty: [freeIndexList removeLast]
+		ifNotEmpty: [freeIndexList removeLast].
+	
+	(components at: #id) at: index put: true.
+	^ index

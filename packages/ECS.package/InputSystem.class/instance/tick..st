@@ -16,8 +16,8 @@ tick: aWorld
 			event first key caseOf: {
 				[inputMap left] -> [velX := -1].
 				[inputMap right] -> [velX := 1].
-				[inputMap up] ->  [velY := -1].
-				[inputMap down] -> [velY := 1]}
+				"[inputMap up] ->  [velY := -1].
+				[inputMap down] -> [velY := 1]"}
 			otherwise: []].
 		
 		components first velocity: components first velocity + ((velX @ velY) * components second acceleration)]
