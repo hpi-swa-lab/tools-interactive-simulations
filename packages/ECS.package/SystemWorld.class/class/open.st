@@ -1,4 +1,7 @@
 as yet unclassified
 open
 
-	ToolBuilder open: self new
+	| world |
+	world := self new.
+	ToolBuilder open: world.
+	^ world

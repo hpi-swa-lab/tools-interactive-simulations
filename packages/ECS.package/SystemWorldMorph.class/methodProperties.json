@@ -2,11 +2,12 @@
 	"class" : {
 		 },
 	"instance" : {
+		"drawSubmorphsOn:" : "T 5/9/2019 19:26",
 		"extent:" : "T 4/13/2019 23:00",
 		"handlesKeyboard:" : "T 4/14/2019 08:54",
 		"handlesMouseDown:" : "T 4/14/2019 00:09",
 		"initialize" : "T 4/28/2019 18:26",
-		"intoWorld:" : "T 4/14/2019 22:04",
+		"intoWorld:" : "T 5/9/2019 19:25",
 		"keyStroke:" : "T 4/28/2019 12:06",
 		"keyUp:" : "T 4/28/2019 11:57",
 		"mouseDown:" : "T 4/28/2019 12:02",

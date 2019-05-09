@@ -25,7 +25,7 @@ tick: aWorld
 	
 	offset := font height.
 	
-	self renderOutlineOf: aWorld.
+	"self renderOutlineOf: aWorld."
 	self renderFramesPerSecondOf: aWorld.
 	
 	self tearDownViewport

@@ -9,7 +9,8 @@
 		"ogl",
 		"systemWorld",
 		"mouseClickEntity",
-		"screenSizeResource" ],
+		"screenSizeResource",
+		"canvas" ],
 	"name" : "SystemWorldMorph",
 	"pools" : [
 		 ],

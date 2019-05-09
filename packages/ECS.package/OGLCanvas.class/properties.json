@@ -1,0 +1,18 @@
+{
+	"category" : "ECS-OpenGL",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"ogl",
+		"clipRect",
+		"font",
+		"vertices",
+		"texCoords" ],
+	"name" : "OGLCanvas",
+	"pools" : [
+		"OpenGLConstants" ],
+	"super" : "Canvas",
+	"type" : "normal" }

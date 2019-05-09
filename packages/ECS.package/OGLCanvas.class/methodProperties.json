@@ -1,0 +1,10 @@
+{
+	"class" : {
+		"on:" : "T 5/9/2019 19:26" },
+	"instance" : {
+		"clipBy:during:" : "T 5/9/2019 19:21",
+		"clipRect" : "T 5/9/2019 19:21",
+		"contentsOfArea:info:" : "T 5/9/2019 19:21",
+		"frameAndFillRectangle:fillColor:borderWidth:borderColor:" : "T 5/9/2019 19:32",
+		"initialize" : "T 5/9/2019 19:33",
+		"ogl:" : "T 5/9/2019 19:33" } }
