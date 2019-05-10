@@ -1,5 +1,5 @@
 as yet unclassified
-drawString: aString at: aVector from: firstIndex to: lastIndex on: ogl
+drawString: aString at: aVector from: firstIndex to: lastIndex color: aColor on: ogl
 
 	| x |
 	x := 0.
@@ -13,10 +13,10 @@ drawString: aString at: aVector from: firstIndex to: lastIndex on: ogl
 		ogl glEnableClientState: GLVertexArray.
 		ogl glEnableClientState: GLTextureCoordArray.
 		
-		ogl glColor3f: 1.0 with: 0.0 with: 0.0.
+		ogl glColor4f: aColor red with: aColor green with: aColor blue with: aColor alpha.
 		
 		ogl glPushMatrix.
-		ogl glTranslatef: aVector x + x with: aVector y with: aVector z.
+		ogl glTranslatef: aVector x + x with: aVector y with: 0.0.
 		ogl glScalef: texture textureForm width with: texture textureForm height with: 1.
 		ogl glDrawArrays: GLTriangleStrip with: 0 with: vertices size // 2.
 		ogl glPopMatrix.

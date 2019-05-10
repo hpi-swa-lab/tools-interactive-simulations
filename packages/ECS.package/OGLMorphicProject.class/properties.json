@@ -6,16 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"ogl",
-		"clipRect",
-		"font",
-		"vertices",
-		"texCoords",
-		"origin",
-		"worldOrigin",
-		"currentForegroundColor" ],
-	"name" : "OGLCanvas",
+		 ],
+	"name" : "OGLMorphicProject",
 	"pools" : [
 		"OpenGLConstants" ],
-	"super" : "Canvas",
+	"super" : "MorphicProject",
 	"type" : "normal" }

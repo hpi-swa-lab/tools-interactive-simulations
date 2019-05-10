@@ -6,12 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"textureHandles",
-		"vertices",
-		"texCoords",
-		"font" ],
-	"name" : "ECSFont",
+		 ],
+	"name" : "OGLCanvasTestMorph",
 	"pools" : [
 		"OpenGLConstants" ],
-	"super" : "Object",
+	"super" : "Morph",
 	"type" : "normal" }

@@ -2,7 +2,7 @@ as yet unclassified
 tick: aWorld
 
 	| offset |
-	self setUpViewport.
+	"self setUpViewport."
 	
 	aWorld query: {Transform. Rendered} do: [:components | | color bounds |
 		bounds := components first bounds.
@@ -28,4 +28,4 @@ tick: aWorld
 	"self renderOutlineOf: aWorld."
 	self renderFramesPerSecondOf: aWorld.
 	
-	self tearDownViewport
+	"self tearDownViewport"

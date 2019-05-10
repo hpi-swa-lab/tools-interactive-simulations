@@ -1,5 +1,6 @@
-as yet unclassified
+drawing-support
 clipBy: aRectangle during: aBlock
 
-	self flag: #todo.
-	aBlock value: self
+	self scissorRect: (aRectangle translateBy: worldOrigin negated).
+	aBlock value: (self copyClipRect: aRectangle).
+	self scissorRect: clipRect

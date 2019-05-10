@@ -1,4 +1,4 @@
-as yet unclassified
+drawing
 clipRect
 
-	^ clipRect
+	^ clipRect translateBy: origin negated

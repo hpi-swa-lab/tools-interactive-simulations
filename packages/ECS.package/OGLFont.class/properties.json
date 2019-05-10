@@ -6,16 +6,12 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"ogl",
-		"clipRect",
-		"font",
+		"textureHandles",
 		"vertices",
 		"texCoords",
-		"origin",
-		"worldOrigin",
-		"currentForegroundColor" ],
-	"name" : "OGLCanvas",
+		"font" ],
+	"name" : "OGLFont",
 	"pools" : [
 		"OpenGLConstants" ],
-	"super" : "Canvas",
+	"super" : "Object",
 	"type" : "normal" }
