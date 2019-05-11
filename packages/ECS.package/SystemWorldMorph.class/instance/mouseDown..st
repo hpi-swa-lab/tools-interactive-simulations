@@ -1,4 +1,4 @@
-as yet unclassified
+system-world-events
 mouseDown: anEvent
 
 	"systemWorld registerResource: (mouseClickResource := MouseClick new position: anEvent position - self position)"

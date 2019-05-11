@@ -1,4 +1,4 @@
-as yet unclassified
+system-world-events
 handlesKeyboard: anEvent
 
 	^ true

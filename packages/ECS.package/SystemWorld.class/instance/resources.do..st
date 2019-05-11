@@ -1,4 +1,4 @@
-as yet unclassified
+resources
 resources: aListOfResourceClasses do: aBlock
 
 	| subset |

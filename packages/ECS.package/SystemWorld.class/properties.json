@@ -15,7 +15,8 @@
 		"freeIndexList",
 		"components",
 		"maxEntityIndex",
-		"lastUpdate" ],
+		"lastUpdate",
+		"drawingBlocks" ],
 	"name" : "SystemWorld",
 	"pools" : [
 		 ],

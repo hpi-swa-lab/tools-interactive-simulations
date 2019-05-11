@@ -1,4 +1,4 @@
-as yet unclassified
+api
 in: aDuration send: aSelector to: anObject with: aCollectionOfArguments
 
 	self spawnNewWith: {Timer new

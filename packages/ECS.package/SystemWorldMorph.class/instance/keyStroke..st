@@ -1,4 +1,4 @@
-as yet unclassified
+system-world-events
 keyStroke: anEvent
 
 	((systemWorld queryList: {KeyEvent}) noneSatisfy: [:list | list first key = anEvent keyCharacter]) ifTrue: [

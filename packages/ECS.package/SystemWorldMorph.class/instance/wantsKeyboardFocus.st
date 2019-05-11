@@ -1,4 +1,4 @@
-as yet unclassified
+system-world-events
 wantsKeyboardFocus
 
 	^ true

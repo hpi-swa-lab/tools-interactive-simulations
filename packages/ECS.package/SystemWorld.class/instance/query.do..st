@@ -1,4 +1,4 @@
-as yet unclassified
+api
 query: aListOfComponentClasses do: aBlock
 
 	| lists |

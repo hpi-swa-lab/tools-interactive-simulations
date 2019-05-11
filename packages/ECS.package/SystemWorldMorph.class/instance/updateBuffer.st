@@ -1,4 +1,4 @@
-as yet unclassified
+ogl-update
 updateBuffer
 
 	ogl ifNotNil: [ogl bufferRect: self bounds].

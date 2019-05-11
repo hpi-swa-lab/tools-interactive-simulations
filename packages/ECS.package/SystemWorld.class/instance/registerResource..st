@@ -1,4 +1,4 @@
-as yet unclassified
+resources
 registerResource: aResource
 
 	resources add: aResource

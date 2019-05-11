@@ -1,10 +1,12 @@
 accessing
 frameDo: aBlock worldOrigin: aPoint
 
+	| ret |
 	self setUpViewport.
 	
 	ogl glTranslatef: aPoint x negated with: aPoint y negated with: 0.0.
 	worldOrigin := aPoint.
-	aBlock value.
+	ret := aBlock value.
 	
-	self tearDownViewport
+	self tearDownViewport.
+	^ ret

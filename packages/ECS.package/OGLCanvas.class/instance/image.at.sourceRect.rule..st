@@ -3,7 +3,7 @@ image: aForm at: aPoint sourceRect: aRectangle rule: anInteger
 	
 	| texture |
 	self flag: #todo. "apply sourceRect through vertext coords"
-	texture := OGLTexture new form: aForm.
+	texture := textureCache at: aForm ifAbsentPut: [OGLTexture new form: aForm].
 	ogl installTexture: texture.
 	ogl enableTexture: texture.
 	

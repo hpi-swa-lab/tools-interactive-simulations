@@ -1,5 +1,5 @@
-as yet unclassified
+ogl-setup
 outOfWorld: aWorld
 
 	super outOfWorld: aWorld.
-	(ogl notNil and: [ogl ~= #glSuspended]) ifTrue: [ogl destroy]
+	self tearDownOGL

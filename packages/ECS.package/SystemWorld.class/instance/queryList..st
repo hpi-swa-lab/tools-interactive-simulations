@@ -1,4 +1,4 @@
-as yet unclassified
+api
 queryList: aListOfComponentClasses
 
 	| list |

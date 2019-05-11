@@ -1,4 +1,4 @@
-as yet unclassified
+entity lifecycle
 remove: anEntityId
 
 	freeIndexList add: anEntityId.

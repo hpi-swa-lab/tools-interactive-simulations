@@ -1,4 +1,4 @@
-as yet unclassified
+resources
 resource: aResourceClass do: aBlock
 
 	^ self resources

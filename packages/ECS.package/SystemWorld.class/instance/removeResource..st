@@ -1,4 +1,4 @@
-as yet unclassified
+resources
 removeResource: aResource
 
 	resources remove: aResource

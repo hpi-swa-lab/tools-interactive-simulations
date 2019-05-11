@@ -1,0 +1,4 @@
+ogl-setup
+wantsOGL
+
+	^ true

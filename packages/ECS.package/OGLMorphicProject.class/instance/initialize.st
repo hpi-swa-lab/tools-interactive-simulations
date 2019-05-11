@@ -2,5 +2,6 @@ as yet unclassified
 initialize
 
 	super initialize.
-	world := SystemWorldMorph newWorldForProject: self.
-	self setWorldBackground: true.
+	world := SystemWorldMorph new.
+	world initForProject: (OGLWorldState new world: world).
+	self setWorldBackground: true

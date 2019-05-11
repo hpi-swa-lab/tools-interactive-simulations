@@ -1,4 +1,4 @@
-as yet unclassified
+ogl-update
 privateFullMoveBy: delta
 
 	super privateFullMoveBy: delta.

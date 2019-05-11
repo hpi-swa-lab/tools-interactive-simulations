@@ -1,0 +1,15 @@
+{
+	"category" : "ECS-OpenGL",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"ogl",
+		"world" ],
+	"name" : "OGLWorldState",
+	"pools" : [
+		 ],
+	"super" : "WorldState",
+	"type" : "normal" }

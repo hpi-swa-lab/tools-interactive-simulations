@@ -1,4 +1,4 @@
-as yet unclassified
+component lifecyle
 fetchComponentsInto: aCollection componentLists: lists at: index do: aBlock componentClasses: aCollectionOfClasses
 
 	lists doWithIndex: [:list :componentIndex | (list at: index)

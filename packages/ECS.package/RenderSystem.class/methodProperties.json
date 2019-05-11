@@ -2,10 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"components" : "T 4/13/2019 22:48",
-		"renderFramesPerSecondOf:" : "T 5/8/2019 11:27",
-		"renderOutlineOf:" : "T 5/8/2019 11:34",
-		"setUp:" : "T 5/10/2019 08:24",
-		"setUpViewport" : "T 5/8/2019 09:55",
-		"tearDownViewport" : "T 5/8/2019 09:57",
-		"tick:" : "T 5/9/2019 19:38" } }
+		"renderFramesPerSecondOf:on:" : "T 5/11/2019 08:25",
+		"renderOutlineOf:on:" : "T 5/11/2019 08:09",
+		"tick:" : "T 5/11/2019 08:09" } }

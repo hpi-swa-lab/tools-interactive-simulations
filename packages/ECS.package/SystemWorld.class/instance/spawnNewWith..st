@@ -1,4 +1,4 @@
-as yet unclassified
+entity lifecycle
 spawnNewWith: aListOfComponents
 
 	| entity |

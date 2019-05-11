@@ -1,4 +1,4 @@
-as yet unclassified
+system-world-events
 keyUp: anEvent
 
 	systemWorld ifNil: [^ self].

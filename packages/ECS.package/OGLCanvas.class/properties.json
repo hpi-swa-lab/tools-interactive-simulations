@@ -13,7 +13,8 @@
 		"texCoords",
 		"origin",
 		"worldOrigin",
-		"currentForegroundColor" ],
+		"currentForegroundColor",
+		"textureCache" ],
 	"name" : "OGLCanvas",
 	"pools" : [
 		"OpenGLConstants" ],

@@ -1,4 +1,4 @@
-as yet unclassified
+component lifecyle
 allComponentsOf: anEntityId do: aBlock
 
 	components valuesDo: [:componentList |
