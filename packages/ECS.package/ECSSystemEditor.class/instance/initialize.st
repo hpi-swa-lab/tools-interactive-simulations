@@ -3,4 +3,9 @@ initialize
 
 	super initialize.
 	
-	3 timesRepeat: [self addMorphBack: (ECSCollapsible new header: (StringMorph new contents: 'Hello world'); body: ECSCodeEditor new)].
+	self universe systems do: [:each | self addMorphBack: (ECSCollapsible new 
+		header: (ECSLabel new contents: each name); 
+		body: (ECSCodeEditor new 
+			changeText: (each class lookupSelector: #tick:) getSourceFromFile;
+			acceptAction: [:text | each class compile: text asString]);
+			collapse)]

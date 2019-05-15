@@ -1,7 +1,5 @@
 as yet unclassified
 toggleBody
 
-	body owner
-		ifNotNil: [self removeMorph: body]
-		ifNil: [self addMorphBack: body].
+	body owner ifNotNil: [self collapse] ifNil: [self expand].
 	self layoutChanged
