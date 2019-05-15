@@ -1,9 +1,11 @@
 as yet unclassified
 initialize
 
+	| spacing |
 	super initialize.
 	
-	self layoutInset: 12; cellInset: 12.
+	spacing := TextStyle defaultFont height / 3.0.
+	self layoutInset: spacing; cellInset: spacing.
 	self changeListDirection: #leftToRight.
 	self changeTableLayout.
 	self vResizing: #shrinkWrap.

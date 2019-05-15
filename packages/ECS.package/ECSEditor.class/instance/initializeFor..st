@@ -8,7 +8,7 @@ initializeFor: aWorld
 	
 	self
 		addMorph: (ECSPanel new
-			addMorphBack: (Morph new))
+			addMorphBack: (ECSControlBar newFor: world))
 		fullFrame: (LayoutFrame fractions: (0 @ 0.8 corner: 0.8 @ 1.0)).
 	self
 		addMorph: (ECSPanel new

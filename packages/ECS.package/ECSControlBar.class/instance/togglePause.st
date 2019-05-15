@@ -1,5 +1,5 @@
 as yet unclassified
 togglePause
 
-	self universe togglePause.
+	self universe togglePaused.
 	self updateIcon

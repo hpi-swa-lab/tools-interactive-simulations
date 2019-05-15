@@ -2,4 +2,5 @@ as yet unclassified
 pause
 
 	morph stopSteppingSelector: #tick.
-	running := false
+	running := false.
+	self changed: #isPaused
