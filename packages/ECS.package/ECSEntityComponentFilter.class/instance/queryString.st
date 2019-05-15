@@ -1,0 +1,4 @@
+accessing
+queryString
+
+	^ queryString

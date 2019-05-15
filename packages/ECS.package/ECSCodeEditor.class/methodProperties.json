@@ -4,8 +4,9 @@
 	"instance" : {
 		"extent:" : "T 5/14/2019 21:37",
 		"extraSpacing" : "T 5/13/2019 19:11",
-		"initialize" : "cf 5/15/2019 11:37",
+		"initialize" : "cf 5/15/2019 12:23",
 		"minExtent" : "T 5/14/2019 21:37",
 		"okToStyle" : "cf 5/15/2019 11:08",
 		"privateGetText" : "cf 5/15/2019 11:33",
-		"privateSetText:" : "cf 5/15/2019 11:45" } }
+		"privateSetText:" : "cf 5/15/2019 11:45",
+		"styleFullMethod:" : "cf 5/15/2019 12:23" } }

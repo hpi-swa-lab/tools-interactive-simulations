@@ -2,5 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
-		"initialize" : "T 5/15/2019 11:49",
-		"title" : "T 5/15/2019 11:26" } }
+		"evaluateQuery" : "cf 5/15/2019 12:54",
+		"initialize" : "cf 5/15/2019 12:48",
+		"queryString" : "cf 5/15/2019 12:36",
+		"queryString:" : "cf 5/15/2019 12:35",
+		"setUp:" : "cf 5/15/2019 12:48",
+		"tick:" : "cf 5/15/2019 12:50",
+		"title" : "T 5/15/2019 11:26",
+		"updateList" : "cf 5/15/2019 12:55" } }

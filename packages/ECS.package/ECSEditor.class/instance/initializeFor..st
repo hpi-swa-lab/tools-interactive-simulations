@@ -15,6 +15,6 @@ initializeFor: aWorld
 	self
 		addMorph: (ECSPanel new
 			addMorphBack: (ECSSystemEditor newFor: world);
-			addMorphBack: ECSEntityComponentFilter new;
-			addMorphBack: ECSEntityComponentFilter new)
+			addMorphBack: (ECSEntityComponentFilter newFor: world);
+			addMorphBack: (ECSEntityComponentFilter newFor: world))
 		fullFrame: (LayoutFrame fractions: (0.8 @ 0.0 corner: 1.0 @ 1.0))

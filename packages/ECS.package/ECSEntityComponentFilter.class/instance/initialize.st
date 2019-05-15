@@ -3,6 +3,18 @@ initialize
 
 	super initialize.
 	
-	self addMorphBack: (ECSCodeEditor new).
-	self addMorphBack: (ECSList new itemCount: 50 itemHeight: 32 builder: [:index | ECSLabel new contents: 'Item ', index asString]).
-	self addMorphBack: (ECSToolResizer new target: self)
+	listMorph := ECSList new.
+	self queryString: '{}'.
+	self addMorphBack: (ECSCodeEditor new 
+		changeText: self queryString;
+		acceptAction: [:text | 
+			self queryString: text asString.
+			self updateList];
+		yourself).
+	self addMorphBack: listMorph.
+	self addMorphBack: (ECSToolResizer new target: self).
+	
+	self updateList.
+	
+	"Register myself as a system. This is hacky, but what would be the correct way?"
+	self universe register: self.
