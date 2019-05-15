@@ -6,6 +6,8 @@ initializeFor: aWorld
 	world := aWorld.
 	self addMorph: (SystemWorldMorph new systemWorld: world) fullFrame: (LayoutFrame fractions: (0 @ 0 corner: 0.8 @ 0.8)).
 	
+	self paneColor: Color white.
+	
 	self
 		addMorph: (ECSPanel new
 			addMorphBack: (ECSControlBar newFor: world))
