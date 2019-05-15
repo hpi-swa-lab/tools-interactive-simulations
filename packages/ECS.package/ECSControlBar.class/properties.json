@@ -6,11 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"detached",
-		"header",
-		"universe" ],
-	"name" : "ECSTool",
+		"pauseIcon" ],
+	"name" : "ECSControlBar",
 	"pools" : [
 		 ],
-	"super" : "Morph",
+	"super" : "ECSTool",
 	"type" : "normal" }

@@ -1,14 +1,14 @@
 {
-	"category" : "ECS",
+	"category" : "ECS-UI",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "OpenGLSpec",
+		"world" ],
+	"name" : "ECSEditor",
 	"pools" : [
 		 ],
-	"super" : "PluggableWidgetSpec",
+	"super" : "SystemWindow",
 	"type" : "normal" }

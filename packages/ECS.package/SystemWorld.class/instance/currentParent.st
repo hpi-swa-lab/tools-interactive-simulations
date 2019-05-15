@@ -1,4 +1,0 @@
-toolbuilder
-currentParent
-
-	^ currentParent

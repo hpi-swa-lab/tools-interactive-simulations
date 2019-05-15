@@ -1,0 +1,7 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"initialize" : "T 5/15/2019 11:11",
+		"togglePause" : "T 5/15/2019 11:15",
+		"updateIcon" : "T 5/15/2019 11:15" } }

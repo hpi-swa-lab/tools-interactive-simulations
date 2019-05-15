@@ -1,4 +1,4 @@
 ogl-setup
 wantsOGL
 
-	^ true
+	^ false

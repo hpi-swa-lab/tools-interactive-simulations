@@ -8,7 +8,8 @@
 	"instvars" : [
 		"grabbed",
 		"lastPosition",
-		"target" ],
+		"target",
+		"oldCursor" ],
 	"name" : "ECSToolResizer",
 	"pools" : [
 		 ],

@@ -11,14 +11,12 @@
 		"morph",
 		"resources",
 		"running",
-		"currentParent",
 		"freeIndexList",
 		"components",
 		"maxEntityIndex",
-		"lastUpdate",
 		"drawingBlocks" ],
 	"name" : "SystemWorld",
 	"pools" : [
 		 ],
-	"super" : "AbstractHierarchicalList",
+	"super" : "Object",
 	"type" : "normal" }
