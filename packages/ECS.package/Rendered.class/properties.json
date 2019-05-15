@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"color" ],
+		"color",
+		"form" ],
 	"name" : "Rendered",
 	"pools" : [
 		 ],

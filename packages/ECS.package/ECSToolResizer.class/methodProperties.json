@@ -1,0 +1,9 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"handlesMouseDown:" : "T 5/14/2019 21:40",
+		"initialize" : "T 5/14/2019 21:41",
+		"mouseDown:" : "T 5/14/2019 21:40",
+		"mouseMove:" : "T 5/14/2019 21:41",
+		"mouseUp:" : "T 5/14/2019 21:40" } }

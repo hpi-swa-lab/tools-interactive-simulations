@@ -1,0 +1,9 @@
+{
+	"class" : {
+		"example" : "T 5/13/2019 19:52" },
+	"instance" : {
+		"attached" : "T 5/14/2019 21:32",
+		"detachNow:" : "T 5/14/2019 21:32",
+		"initialize" : "T 5/14/2019 21:30",
+		"openDetached" : "T 5/14/2019 21:32",
+		"title" : "T 5/13/2019 18:55" } }

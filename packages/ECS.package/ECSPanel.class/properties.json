@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"dropZoneMorph" ],
+	"name" : "ECSPanel",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

@@ -1,0 +1,20 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addCharacter:" : "T 5/12/2019 10:03",
+		"appliedInterval" : "T 5/12/2019 09:57",
+		"applyIn:" : "T 5/12/2019 13:15",
+		"contents" : "T 5/12/2019 11:25",
+		"contents:" : "T 5/12/2019 08:00",
+		"finishAt:" : "T 5/12/2019 10:03",
+		"initialize" : "T 5/12/2019 13:53",
+		"insertCharacter:at:" : "T 5/12/2019 13:21",
+		"interval" : "T 5/12/2019 11:25",
+		"interval:" : "T 5/12/2019 08:02",
+		"nextOperation:" : "T 5/12/2019 08:31",
+		"previousCursor:" : "T 5/12/2019 08:00",
+		"previousOperation:" : "T 5/12/2019 08:31",
+		"removeLastCharacter" : "T 5/12/2019 10:03",
+		"repeatCopy" : "T 5/12/2019 08:47",
+		"undoIn:" : "T 5/12/2019 13:09" } }

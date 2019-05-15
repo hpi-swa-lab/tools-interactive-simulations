@@ -7,6 +7,8 @@ image: aForm at: aPoint sourceRect: aRectangle rule: anInteger
 	ogl installTexture: texture.
 	ogl enableTexture: texture.
 	
+	anInteger = Form blend ifTrue: [ogl glBlendFunc: GLSrcAlpha with: GLOne].
+	
 	ogl glVertexPointer: 2 with: GLFloat with: 0 with: vertices.
 	ogl glTexCoordPointer: 2 with: GLFloat with: 0 with: texCoords.
 	ogl glEnableClientState: GLVertexArray.
@@ -23,3 +25,5 @@ image: aForm at: aPoint sourceRect: aRectangle rule: anInteger
 	ogl glDisableClientState: GLTextureCoordArray.
 	ogl glDisableClientState: GLVertexArray.
 	ogl disableTexture: texture.
+	
+	anInteger = Form blend ifTrue: [ogl glBlendFunc: GLSrcAlpha with: GLOneMinusSrcAlpha].

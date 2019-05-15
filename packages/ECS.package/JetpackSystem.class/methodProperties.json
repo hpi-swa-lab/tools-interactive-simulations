@@ -4,4 +4,5 @@
 	"instance" : {
 		"consumptionPerSecond" : "T 5/7/2019 21:37",
 		"recoveryPerSecond" : "T 5/7/2019 21:23",
-		"tick:" : "T 5/8/2019 08:52" } }
+		"spawnExhaustIn:at:" : "T 5/11/2019 20:40",
+		"tick:" : "T 5/11/2019 20:26" } }

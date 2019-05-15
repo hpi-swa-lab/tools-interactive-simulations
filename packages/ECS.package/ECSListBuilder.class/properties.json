@@ -1,0 +1,18 @@
+{
+	"category" : "ECS-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"builder",
+		"itemCount",
+		"itemHeight",
+		"currentlyDisplayed",
+		"cache" ],
+	"name" : "ECSListBuilder",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

@@ -1,0 +1,17 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"adjustHeight" : "T 5/14/2019 09:45",
+		"bottomVisibleRowForCanvas:" : "T 5/14/2019 09:30",
+		"builder" : "T 5/14/2019 09:21",
+		"builder:" : "T 5/14/2019 09:20",
+		"drawBoundsForRow:" : "T 5/14/2019 09:35",
+		"drawOn:" : "T 5/14/2019 09:41",
+		"initialize" : "T 5/14/2019 09:45",
+		"itemCount" : "T 5/14/2019 09:21",
+		"itemCount:" : "T 5/14/2019 09:45",
+		"itemHeight" : "T 5/14/2019 09:21",
+		"itemHeight:" : "T 5/14/2019 09:45",
+		"rowAtLocation:" : "T 5/14/2019 09:32",
+		"topVisibleRowForCanvas:" : "T 5/14/2019 09:30" } }

@@ -1,0 +1,15 @@
+{
+	"category" : "ECS-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"grabbed",
+		"lastPosition" ],
+	"name" : "ECSToolResizer",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

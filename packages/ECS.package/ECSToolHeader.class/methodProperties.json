@@ -1,0 +1,10 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"deleteTool" : "T 5/13/2019 18:56",
+		"handlesMouseDown:" : "T 5/13/2019 18:50",
+		"initialize" : "T 5/14/2019 21:33",
+		"mouseDown:" : "T 5/13/2019 18:58",
+		"tool:" : "T 5/13/2019 18:56",
+		"toolIsAttached:" : "T 5/14/2019 21:31" } }

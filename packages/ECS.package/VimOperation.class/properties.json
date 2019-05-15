@@ -1,0 +1,20 @@
+{
+	"category" : "ECS-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"previousCursor",
+		"interval",
+		"contents",
+		"appliedInterval",
+		"nextOperation",
+		"previousOperation",
+		"previousContents" ],
+	"name" : "VimOperation",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

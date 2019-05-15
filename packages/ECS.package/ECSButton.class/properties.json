@@ -1,0 +1,17 @@
+{
+	"category" : "ECS-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"label",
+		"icon",
+		"hovered",
+		"active" ],
+	"name" : "ECSButton",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

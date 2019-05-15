@@ -1,0 +1,24 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"apply:" : "T 5/12/2019 09:36",
+		"applyOperation:count:motion:for:" : "T 5/12/2019 13:49",
+		"begin:" : "T 5/12/2019 08:30",
+		"clearPending" : "T 5/12/2019 13:52",
+		"dispatchOnKeyboardEvent:" : "T 5/12/2019 00:11",
+		"encompass:with:" : "T 5/11/2019 23:32",
+		"endOfLine:" : "T 5/12/2019 13:30",
+		"initialize" : "T 5/12/2019 09:38",
+		"inputMode:" : "T 5/12/2019 12:30",
+		"intervalOnLine:" : "T 5/12/2019 13:39",
+		"lastOperation" : "T 5/12/2019 09:57",
+		"motionFor:forOp:" : "T 5/12/2019 13:49",
+		"nextWord:" : "T 5/12/2019 00:21",
+		"normalMode:" : "T 5/12/2019 13:54",
+		"normalizeInterval:" : "T 5/12/2019 12:05",
+		"previousWord:" : "T 5/12/2019 00:22",
+		"repeatLastOperation" : "T 5/12/2019 08:48",
+		"stateArray" : "T 5/12/2019 13:52",
+		"stateArrayPut:" : "T 5/12/2019 13:52",
+		"visualMode:" : "T 5/12/2019 13:49" } }

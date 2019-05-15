@@ -1,0 +1,21 @@
+{
+	"category" : "ECS-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"mode",
+		"pendingOperation",
+		"pendingMotion",
+		"pendingCount",
+		"currentOperation",
+		"lastOperation",
+		"repeatableOperation",
+		"pendingRange" ],
+	"name" : "VimEditor",
+	"pools" : [
+		 ],
+	"super" : "SmalltalkEditor",
+	"type" : "normal" }

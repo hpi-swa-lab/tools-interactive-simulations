@@ -1,0 +1,18 @@
+{
+	"category" : "ECS-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"FormCache",
+		"SVGCache" ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"svg",
+		"cachedForm",
+		"svgColor",
+		"iconName" ],
+	"name" : "ECSIcon",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

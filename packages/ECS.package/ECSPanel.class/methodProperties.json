@@ -1,0 +1,12 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"acceptDroppingMorph:event:" : "T 5/13/2019 19:55",
+		"drawOn:" : "T 5/13/2019 19:47",
+		"handlesMouseMove:" : "T 5/13/2019 19:59",
+		"handlesMouseOverDragging:" : "T 5/13/2019 19:50",
+		"initialize" : "T 5/13/2019 19:20",
+		"mouseEnterDragging:" : "T 5/13/2019 23:18",
+		"mouseLeaveDragging:" : "T 5/13/2019 23:18",
+		"mouseMove:" : "T 5/13/2019 23:15" } }

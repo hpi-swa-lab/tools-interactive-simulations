@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"toggleButton" ],
+	"name" : "ECSCollapsibleHeader",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

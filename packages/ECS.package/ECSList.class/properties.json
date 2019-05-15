@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"builder" ],
+	"name" : "ECSList",
+	"pools" : [
+		 ],
+	"super" : "ScrollPane",
+	"type" : "normal" }

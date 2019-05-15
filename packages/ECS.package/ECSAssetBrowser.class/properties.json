@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"AssetCache" ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ECSAssetBrowser",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

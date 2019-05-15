@@ -1,0 +1,19 @@
+{
+	"category" : "ECS-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"max",
+		"step",
+		"min",
+		"isDown",
+		"lastMousePosition",
+		"value" ],
+	"name" : "ECSNumberInput",
+	"pools" : [
+		 ],
+	"super" : "TextMorph",
+	"type" : "normal" }

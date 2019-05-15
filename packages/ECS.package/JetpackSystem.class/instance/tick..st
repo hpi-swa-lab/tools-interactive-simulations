@@ -2,7 +2,7 @@ as yet unclassified
 tick: aWorld
 
 	aWorld resource: DeltaTime do: [:deltaTime |
-		aWorld query: {Jetpack. Physics. PlayerInput} do: [:components | | isAccelerating |
+		aWorld query: {Jetpack. Physics. PlayerInput. Transform} do: [:components | | isAccelerating |
 			isAccelerating := false.
 			aWorld query: {KeyEvent} do: [:keyComponents |
 				keyComponents first key = components third up ifTrue: [isAccelerating := true]].
@@ -10,6 +10,7 @@ tick: aWorld
 			isAccelerating
 					ifTrue: [
 						components first fuel > 0 ifTrue: [
+							self spawnExhaustIn: aWorld at: components fourth center.
 							components second velocityY: components first acceleration negated.
 							components first fuel: components first fuel - (self consumptionPerSecond * deltaTime dt)]]
 					ifFalse: [

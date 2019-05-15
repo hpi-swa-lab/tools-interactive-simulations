@@ -1,0 +1,27 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"keyStrokes:" : "T 5/12/2019 11:48",
+		"subjectClass" : "T 5/12/2019 09:16",
+		"testKeepWhitespace_cw" : "T 5/12/2019 12:15",
+		"testOnSecondLine_o" : "T 5/12/2019 10:19",
+		"testRepeat_cw" : "T 5/12/2019 12:58",
+		"testRepeat_o" : "T 5/12/2019 11:47",
+		"testUndoEmpty_o" : "T 5/12/2019 09:45",
+		"testUndoMultipleLines_cw" : "T 5/12/2019 13:15",
+		"testUndo_O" : "T 5/12/2019 10:06",
+		"testUndo_a" : "T 5/12/2019 09:48",
+		"testUndo_cw" : "T 5/12/2019 13:05",
+		"testUndo_dw" : "T 5/12/2019 13:04",
+		"testUndo_o" : "T 5/12/2019 10:19",
+		"test_C" : "T 5/12/2019 13:23",
+		"test_D" : "T 5/12/2019 13:22",
+		"test_S" : "T 5/12/2019 13:24",
+		"test_b" : "T 5/12/2019 11:54",
+		"test_cw" : "T 5/12/2019 12:07",
+		"test_db" : "T 5/12/2019 13:16",
+		"test_dd" : "T 5/12/2019 13:39",
+		"test_diPARENTHESIS" : "T 5/12/2019 13:54",
+		"test_dw" : "T 5/12/2019 11:52",
+		"test_i" : "T 5/12/2019 09:48" } }
