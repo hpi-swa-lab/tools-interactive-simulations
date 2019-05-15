@@ -11,4 +11,5 @@ initialize
 	self vResizing: #shrinkWrap.
 	self wrapCentering: #center.
 	self hResizing: #spaceFill.
-	self addMorph: (toggleButton := ECSButton new icon: (ECSIcon iconChevron_down); when: #clicked send: #toggleCollapsed to: self)
+	self addMorph: (toggleButton := ECSButton new icon: (ECSIcon iconChevron_down); when: #clicked send: #toggleCollapsed to: self).
+	self privateCollapse

@@ -3,7 +3,7 @@ initialize
 
 	super initialize.
 	
-	header := ECSCollapsibleHeader new when: #toggleCollapsible send: #toggleBody to: self.
+	header := ECSCollapsibleHeader new when: #toggleCollapsible send: #toggleBody to: self. 
 	self addMorphBack: header.
 	
 	self changeTableLayout.
