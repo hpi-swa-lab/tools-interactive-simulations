@@ -3,7 +3,10 @@
 		 },
 	"instance" : {
 		"handlesMouseDown:" : "T 5/14/2019 21:40",
-		"initialize" : "T 5/14/2019 21:41",
+		"handlesMouseMove:" : "T 5/15/2019 09:59",
+		"initialize" : "T 5/15/2019 10:03",
 		"mouseDown:" : "T 5/14/2019 21:40",
-		"mouseMove:" : "T 5/14/2019 21:41",
-		"mouseUp:" : "T 5/14/2019 21:40" } }
+		"mouseMove:" : "T 5/15/2019 10:02",
+		"mouseUp:" : "T 5/14/2019 21:40",
+		"target" : "T 5/15/2019 09:57",
+		"target:" : "T 5/15/2019 09:57" } }

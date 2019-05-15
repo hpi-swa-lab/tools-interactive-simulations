@@ -3,7 +3,9 @@ initialize
 
 	super initialize.
 	
-	self vResizing: #spaceFill.
-	self hResizing: #rigid.
-	self extent: 0 @ 4.
-	self color: Color orange
+	self vResizing: #rigid.
+	self hResizing: #spaceFill.
+	self extent: 0 @ (TextStyle defaultFont height / 4).
+	self color: Color orange.
+	
+	grabbed := false
