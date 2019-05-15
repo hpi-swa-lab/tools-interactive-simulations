@@ -1,8 +1,8 @@
 as yet unclassified
-tick: aWorld
+tick: aUniverse
 
-	aWorld resource: ScreenSize do: [:screenSize | | colliders |
-		colliders := aWorld queryList: {Transform. Rendered. Physics. Colliding. #id}.
+	aUniverse resource: ScreenSize do: [:screenSize | | colliders |
+		colliders := aUniverse queryList: {Transform. Rendered. Physics. Colliding. #id}.
 		self collide: colliders withBounds: screenSize.
 		
 		1 to: colliders size do: [:i |

@@ -1,5 +1,5 @@
 as yet unclassified
-renderFramesPerSecondOf: aWorld on: aCanvas
+renderFramesPerSecondOf: aUniverse on: aCanvas
 
-	aWorld resource: DeltaTime do: [:deltaTime |
+	aUniverse resource: DeltaTime do: [:deltaTime |
 		 aCanvas drawString: deltaTime fpsAverage asInteger asString at: 0 @ 0]

@@ -1,5 +1,5 @@
 as yet unclassified
 optional
 
-	" optional matcher for SystemWorld>>query:do: "
+	" optional matcher for SystemUniverse>>query:do: "
 	^ OptionalComponent for: self

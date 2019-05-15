@@ -1,5 +1,5 @@
 {
-	"category" : "ECS",
+	"category" : "ECS-Test",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
@@ -7,8 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "JetpackWorld",
+	"name" : "SystemUniverseTest",
 	"pools" : [
 		 ],
-	"super" : "SystemWorld",
+	"super" : "TestCase",
 	"type" : "normal" }

@@ -1,4 +1,4 @@
 as yet unclassified
-setUp: aWorld
+setUp: aUniverse
 
-	aWorld registerResource: (DeltaTime new milliseconds: 0; last: Time millisecondClockValue)
+	aUniverse registerResource: (DeltaTime new milliseconds: 0; last: Time millisecondClockValue)

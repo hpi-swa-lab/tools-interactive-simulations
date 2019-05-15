@@ -1,5 +1,5 @@
 as yet unclassified
-tick: aWorld
+tick: aUniverse
 
-	aWorld query: {Collision. #id} do: [:components |
-		aWorld remove: components second]
+	aUniverse query: {Collision. #id} do: [:components |
+		aUniverse remove: components second]

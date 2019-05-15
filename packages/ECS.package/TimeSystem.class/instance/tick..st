@@ -1,9 +1,9 @@
 as yet unclassified
-tick: aWorld
+tick: aUniverse
 
 	| now |
 	now  := Time millisecondClockValue.
-	aWorld resource: DeltaTime do: [:deltaTime |
+	aUniverse resource: DeltaTime do: [:deltaTime |
 		deltaTime
 			milliseconds: now - deltaTime last;
 			last: now.
@@ -15,9 +15,9 @@ tick: aWorld
 			deltaTime fpsAccumulated: 0.
 			deltaTime numAccumulated: 0].
 		
-		aWorld query: {Timer. #id} do: [:components | | timer |
+		aUniverse query: {Timer. #id} do: [:components | | timer |
 			timer := components first.
 			timer timeLeft: timer timeLeft - deltaTime milliseconds.
 			timer timeLeft <= 0 ifTrue: [
 				timer receiver perform: timer selector with: (timer arguments ifNil: [#()]).
-				aWorld remove: components second]]]
+				aUniverse remove: components second]]]

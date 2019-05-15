@@ -1,8 +1,8 @@
 as yet unclassified
-tick: aWorld
+tick: aUniverse
 
-	aWorld query: {ClickEvent} do: [:clickComponents | | clickPosition |
+	aUniverse query: {ClickEvent} do: [:clickComponents | | clickPosition |
 		clickPosition := clickComponents first position.
-		aWorld query: {Transform. #id} do: [:components | | entity |
+		aUniverse query: {Transform. #id} do: [:components | | entity |
 			entity := components second.
 			(components first bounds containsPoint: clickPosition) ifTrue: [entity explore]]]

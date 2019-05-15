@@ -1,12 +1,12 @@
 as yet unclassified
-tick: aWorld
+tick: aUniverse
 
 	| velX velY events |
-	events := aWorld queryList: {KeyEvent}.
+	events := aUniverse queryList: {KeyEvent}.
 	
-	(events contains: [:event | event first key = $  ]) ifTrue: [^ aWorld resource: SimulationPaused do: #toggle].
+	(events contains: [:event | event first key = $  ]) ifTrue: [^ aUniverse resource: SimulationPaused do: #toggle].
 	
-	aWorld query: {Physics. PlayerInput} do: [:components | | inputMap velocity |
+	aUniverse query: {Physics. PlayerInput} do: [:components | | inputMap velocity |
 		velocity := components first velocity.
 		inputMap := components second.
 		velX := 0.

@@ -1,7 +1,7 @@
 as yet unclassified
-spawnProjectileAt: aPoint in: aWorld by: anEntity to: aVelocityPoint
+spawnProjectileAt: aPoint in: aUniverse by: anEntity to: aVelocityPoint
 
-	aWorld spawnNewWith: {
+	aUniverse spawnNewWith: {
 		Physics new velocity: aVelocityPoint * 6.
 		Projectile new damage: 10; timeToLive: 1000.
 		Colliding new ignoreList: {anEntity}; group: anEntity.

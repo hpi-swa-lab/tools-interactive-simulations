@@ -1,8 +1,8 @@
 as yet unclassified
-tick: aWorld
+tick: aUniverse
 
-	aWorld draw: [:canvas |
-		aWorld query: {Transform. Rendered} do: [:components | | color bounds |
+	aUniverse draw: [:canvas |
+		aUniverse query: {Transform. Rendered} do: [:components | | color bounds |
 			bounds := components first bounds.
 			color := components second color.
 			components second form
@@ -10,4 +10,4 @@ tick: aWorld
 				ifNil: [canvas fillRectangle: bounds color: color]].
 		
 		"self renderOutlineOf: aWorld on: cavas."
-		self renderFramesPerSecondOf: aWorld on: canvas]
+		self renderFramesPerSecondOf: aUniverse on: canvas]

@@ -7,11 +7,11 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"ogl",
-		"systemWorld",
+		"systemUniverse",
 		"mouseClickEntity",
 		"screenSizeResource",
 		"canvas" ],
-	"name" : "SystemWorldMorph",
+	"name" : "SystemUniverseMorph",
 	"pools" : [
 		 ],
 	"super" : "PasteUpMorph",

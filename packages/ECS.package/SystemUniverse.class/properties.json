@@ -15,7 +15,7 @@
 		"components",
 		"maxEntityIndex",
 		"drawingBlocks" ],
-	"name" : "SystemWorld",
+	"name" : "SystemUniverse",
 	"pools" : [
 		 ],
 	"super" : "Object",

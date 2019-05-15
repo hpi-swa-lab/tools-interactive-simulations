@@ -1,5 +1,5 @@
 as yet unclassified
-resolveCollision: components with: otherComponents velocity: velocity world: aWorld
+resolveCollision: components with: otherComponents velocity: velocity universe: aUniverse
 
 	" undo y position change, check x only "
 	components first position: components first position - (0 @ velocity y).
@@ -9,4 +9,4 @@ resolveCollision: components with: otherComponents velocity: velocity world: aWo
 	components first position: components first position + (0 @ velocity y).
 	self resolveCollisionY: components with: otherComponents.
 	
-	aWorld spawnNewWith: {Collision new collider: components fourth; collidee: otherComponents fourth}
+	aUniverse spawnNewWith: {Collision new collider: components fourth; collidee: otherComponents fourth}

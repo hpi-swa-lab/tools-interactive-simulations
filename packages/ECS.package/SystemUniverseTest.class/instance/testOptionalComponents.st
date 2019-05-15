@@ -1,15 +1,15 @@
 as yet unclassified
 testOptionalComponents
 
-	| world entity entity2 c1 c2 p2 list |
-	world := SystemWorld new.
+	| universe entity entity2 c1 c2 p2 list |
+	universe := SystemUniverse new.
 	
 	c1 := Colliding new.
 	c2 := Colliding new.
 	p2 := Physics new.
-	entity := world spawnNewWith: {c1}.
-	entity2 := world spawnNewWith: {c2. p2}.
+	entity := universe spawnNewWith: {c1}.
+	entity2 := universe spawnNewWith: {c2. p2}.
 	
-	list := world queryList: {Colliding. OptionalComponent for: Physics}.
+	list := universe queryList: {Colliding. OptionalComponent for: Physics}.
 	self assert: ((list collect: #first) hasEqualElements: {c1. c2}).
 	self assert: ((list collect: #second) hasEqualElements: {nil. p2})
