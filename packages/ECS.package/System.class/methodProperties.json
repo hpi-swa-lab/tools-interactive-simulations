@@ -6,7 +6,12 @@
 		"components" : "T 4/14/2019 00:00",
 		"explorerContents" : "T 4/15/2019 08:40",
 		"hasContentsInExplorer" : "T 4/15/2019 08:41",
+		"initialize" : "cf 5/16/2019 08:30",
+		"isPaused" : "cf 5/16/2019 08:25",
+		"isRunning" : "cf 5/16/2019 08:25",
+		"pause" : "cf 5/16/2019 08:25",
 		"resources" : "T 4/13/2019 23:54",
+		"resume" : "cf 5/16/2019 08:25",
 		"setUp:" : "ek 5/15/2019 22:34",
 		"tick:" : "T 4/13/2019 22:02",
 		"tick:resources:" : "T 4/13/2019 23:57" } }

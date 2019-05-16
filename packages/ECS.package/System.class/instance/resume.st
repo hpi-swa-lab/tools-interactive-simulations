@@ -1,0 +1,4 @@
+pausing
+resume
+
+	paused := false

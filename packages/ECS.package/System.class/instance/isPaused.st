@@ -1,0 +1,4 @@
+pausing
+isPaused
+
+	^ paused

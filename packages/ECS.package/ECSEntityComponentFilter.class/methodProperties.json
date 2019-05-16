@@ -4,6 +4,7 @@
 	"instance" : {
 		"evaluateQuery" : "cf 5/15/2019 12:54",
 		"initialize" : "cf 5/15/2019 12:48",
+		"isRunning" : "cf 5/16/2019 08:31",
 		"queryString" : "cf 5/15/2019 12:36",
 		"queryString:" : "cf 5/15/2019 12:35",
 		"setUp:" : "cf 5/15/2019 12:48",
