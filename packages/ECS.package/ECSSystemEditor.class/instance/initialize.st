@@ -13,4 +13,4 @@ initialize
 	
 	header addMorphBack: (ECSButton new
 		icon: (ECSIcon iconPlus);
-		when: #clicked send: #createNewSystemClass to: self)
+		when: #clicked send: #addSystem to: self)
