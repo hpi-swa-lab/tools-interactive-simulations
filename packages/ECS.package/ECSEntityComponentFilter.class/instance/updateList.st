@@ -6,7 +6,12 @@ updateList
 	items := self universe queryList: self evaluateQuery.
 	
 	self flag: #todo. "We need to display more than just 'Entity X"
-	listMorph 
+	"listMorph 
 		itemCount: items size
 		itemHeight: 32 
-		builder: [:index | ECSLabel new contents: 'Entity ', index asString]
+		builder: [:index | ECSLabel new contents: 'Entity ', index asString]"
+	list removeAllMorphs.
+	items doWithIndex: [:components :index |
+		list addMorphBack: (ECSCollapsible new
+			header: (ECSLabel new contents: 'Entity ', index asString);
+			body: (ECSColumn new addAllMorphs: (components collect: [:component | self buildComponentControls: component])))]

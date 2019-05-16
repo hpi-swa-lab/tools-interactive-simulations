@@ -3,7 +3,9 @@ initialize
 
 	super initialize.
 	
-	listMorph := ECSList new.
+	"listMorph := ECSList new."
+	list := ECSColumn new.
+	
 	self queryString: '{}'.
 	self addMorphBack: (ECSCodeEditor new 
 		changeText: self queryString;
@@ -11,7 +13,7 @@ initialize
 			self queryString: text asString.
 			self updateList];
 		yourself).
-	self addMorphBack: listMorph.
+	self addMorphBack: (ECSScrollPane new setMorph: list).
 	self addMorphBack: (ECSToolResizer new target: self).
 	
 	self updateList.

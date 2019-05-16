@@ -3,7 +3,7 @@ initialize
 
 	super initialize.
 	
-	self layoutInset: (TextStyle defaultFont height / 3).
+	self layoutInset: (TextStyle defaultFont height / 3) rounded.
 	hovered := false.
 	active := false.
 	self hResizing: #shrinkWrap.

@@ -4,7 +4,7 @@ initialize
 	| spacing |
 	super initialize.
 	
-	spacing := TextStyle defaultFont height / 3.0.
+	spacing := (TextStyle defaultFont height / 3) rounded.
 	
 	self color: Color gray.
 	self addMorph: (StringMorph new hResizing: #spaceFill).

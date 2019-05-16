@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ECSScrollPane",
+	"pools" : [
+		 ],
+	"super" : "ScrollPane",
+	"type" : "normal" }
