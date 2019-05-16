@@ -1,17 +1,18 @@
 as yet unclassified
 updateList
 
-	| items |
-	self flag: #todo. "Should we always evaluate the query, or only when it is changed? Could there be queries that depend on external factors like time or the universe?"
-	items := self universe queryList: self evaluateQuery.
+	| entities |
+	entities := self universe queryList: (self evaluateQuery copyWith: #id).
 	
-	self flag: #todo. "We need to display more than just 'Entity X"
-	"listMorph 
-		itemCount: items size
-		itemHeight: 32 
-		builder: [:index | ECSLabel new contents: 'Entity ', index asString]"
-	list removeAllMorphs.
-	items doWithIndex: [:components :index |
-		list addMorphBack: (ECSCollapsible new
-			header: (ECSLabel new contents: 'Entity ', index asString);
-			body: (ECSColumn new addAllMorphs: (components collect: [:component | self buildComponentControls: component])))]
+	" TODO: do a full diff of the widget tree, otherwise we can't find updates to the components or re-use of the same entity id "
+	entities do: [:components | | column id |
+		id := components last.
+		(currentEntities includes: id) ifFalse: [
+			currentEntities add: id.
+			
+			column := ECSColumn new.
+			components allButLastDo: [:component | column addMorphBack: (self buildComponentControls: component)].
+			
+			list addMorphBack: (ECSCollapsible new
+				header: (ECSLabel new contents: (components detect: [:c | c class = Label] ifFound: #label ifNone: ['Entity ', id asString]));
+				body: column)]]

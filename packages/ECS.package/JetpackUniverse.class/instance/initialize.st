@@ -20,6 +20,7 @@ initialize
 		register: CleanUpSystem new.
 	
 	player1 := self spawnNewWith: {
+		Label new label: 'player1'.
 		Transform new bounds: (30 @ 50 extent: 60 @ 60).
 		Colliding new.
 		Physics new.
@@ -29,6 +30,7 @@ initialize
 		Rendered new color: Color red}.
 	
 	player2 := self spawnNewWith: {
+		Label new label: 'player2'.
 		Transform new bounds: (530 @ 500 extent: 300 @ 300).
 		Colliding new.
 		Physics new.

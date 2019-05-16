@@ -2,13 +2,12 @@
 	"class" : {
 		 },
 	"instance" : {
-		"buildComponentControls:" : "T 5/16/2019 08:05",
+		"buildComponentControls:" : "T 5/16/2019 13:38",
+		"editorFor:of:" : "T 5/16/2019 13:34",
 		"evaluateQuery" : "cf 5/15/2019 12:54",
-		"initialize" : "T 5/16/2019 08:12",
+		"initialize" : "T 5/16/2019 13:18",
 		"isRunning" : "cf 5/16/2019 08:31",
 		"queryString" : "cf 5/15/2019 12:36",
-		"queryString:" : "cf 5/15/2019 12:35",
-		"setUp:" : "cf 5/15/2019 12:48",
-		"tick:" : "cf 5/15/2019 12:50",
+		"queryString:" : "T 5/16/2019 13:35",
 		"title" : "T 5/15/2019 11:26",
-		"updateList" : "T 5/16/2019 08:09" } }
+		"updateList" : "T 5/16/2019 13:42" } }

@@ -7,7 +7,9 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"queryString",
-		"listMorph" ],
+		"listMorph",
+		"list",
+		"currentEntities" ],
 	"name" : "ECSEntityComponentFilter",
 	"pools" : [
 		 ],

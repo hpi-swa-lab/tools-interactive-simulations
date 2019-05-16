@@ -1,0 +1,14 @@
+{
+	"category" : "ECS",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"label" ],
+	"name" : "Label",
+	"pools" : [
+		 ],
+	"super" : "EntityComponent",
+	"type" : "normal" }
