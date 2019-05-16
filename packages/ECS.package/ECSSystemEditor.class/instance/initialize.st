@@ -15,4 +15,8 @@ initialize
 				changeText: (each class lookupSelector: #tick:) getSourceFromFile;
 				acceptAction: [:text | each class compile: text asString];
 				yourself);
-				collapse)]
+				collapse)].
+
+	header addMorphBack: (ECSButton new
+		icon: (ECSIcon iconPlus);
+		when: #clicked send: #createNewSystemClass to: self)

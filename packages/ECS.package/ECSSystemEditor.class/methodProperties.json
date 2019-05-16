@@ -2,7 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		"initialize" : "cf 5/16/2019 09:10",
+		"createNewSystemClass" : "cf 5/16/2019 15:04",
+		"initialize" : "cf 5/16/2019 13:24",
 		"pausedIconName" : "cf 5/16/2019 09:11",
 		"runningIconName" : "cf 5/16/2019 09:11",
 		"stateIconForSystem:" : "cf 5/16/2019 08:37",
