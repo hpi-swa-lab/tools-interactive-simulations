@@ -11,7 +11,8 @@
 		"min",
 		"isDown",
 		"lastMousePosition",
-		"value" ],
+		"value",
+		"onChange" ],
 	"name" : "ECSNumberInput",
 	"pools" : [
 		 ],

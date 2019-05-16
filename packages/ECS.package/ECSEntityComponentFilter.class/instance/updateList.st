@@ -11,7 +11,7 @@ updateList
 			currentEntities add: id.
 			
 			column := ECSColumn new.
-			components allButLastDo: [:component | column addMorphBack: (self buildComponentControls: component)].
+			components allButLastDo: [:component | self buildComponentControls: component addTo: column].
 			
 			list addMorphBack: (ECSCollapsible new
 				header: (ECSLabel new contents: (components detect: [:c | c class = Label] ifFound: #label ifNone: ['Entity ', id asString]));
