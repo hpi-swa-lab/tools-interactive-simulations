@@ -2,10 +2,12 @@
 	"class" : {
 		 },
 	"instance" : {
-		"addSystemToUI:" : "ek 5/16/2019 15:44",
+		"addSystemToUI:" : "ek 5/16/2019 16:23",
 		"createNewSystemClass" : "ek 5/16/2019 16:02",
-		"initialize" : "ek 5/16/2019 15:58",
+		"initialize" : "ek 5/16/2019 16:25",
 		"pausedIconName" : "cf 5/16/2019 09:11",
+		"removeSystemFromUI:" : "ek 5/16/2019 16:28",
+		"removeSystemFromUniverse:" : "ek 5/16/2019 16:19",
 		"runningIconName" : "cf 5/16/2019 09:11",
 		"stateIconForSystem:" : "cf 5/16/2019 08:37",
 		"title" : "T 5/15/2019 11:26",
