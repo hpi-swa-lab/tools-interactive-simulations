@@ -8,7 +8,7 @@ initialize
 		stateButton when: #clicked send: #togglePaused:button: to: self withArguments: {each . stateButton}.
 		
 		self addMorphBack: (ECSCollapsible new 
-			header: (ECSLabel new contents: each name); 
+			header: (ECSLabel new contents: each name; hResizing: #spaceFill); 
 			header: stateButton;
 			body: (ECSCodeEditor new 
 				styleFullMethod: true;
