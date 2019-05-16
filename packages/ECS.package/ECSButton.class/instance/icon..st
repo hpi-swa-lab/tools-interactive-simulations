@@ -1,5 +1,6 @@
 as yet unclassified
 icon: anIcon
 
+	icon ifNotNil: [self removeMorph: anIcon].
 	icon :=  anIcon.
-	self removeAllMorphs; addMorph: anIcon
+	icon ifNotNil: [self addMorph: anIcon]

@@ -1,15 +1,15 @@
 {
 	"class" : {
-		"assetAt:ifAbsentPut:" : "T 5/11/2019 20:30",
 		"assetCache" : "T 5/11/2019 20:12",
 		"cleanCache" : "T 5/16/2019 17:10",
-		"formAt:" : "T 5/11/2019 20:19",
 		"formAt:size:" : "T 5/11/2019 20:36",
 		"loadForm:" : "T 5/11/2019 20:25",
-		"open" : "T 5/16/2019 17:07" },
+		"open" : "T 5/16/2019 17:07",
+		"registerAssetBundle:forDirectory:" : "T 5/16/2019 21:51",
+		"registerMissingAssetBundle:" : "T 5/16/2019 22:08" },
 	"instance" : {
-		"addAsset:" : "T 5/16/2019 17:22",
-		"addAssetBundle" : "T 5/16/2019 17:16",
-		"chooseAssetBundle" : "T 5/16/2019 17:18",
-		"initialize" : "T 5/16/2019 17:27",
-		"updateCurrentAssetList" : "T 5/16/2019 17:23" } }
+		"addAsset:" : "T 5/16/2019 19:57",
+		"addAssetBundle" : "T 5/16/2019 21:47",
+		"chooseAssetBundle" : "T 5/16/2019 22:35",
+		"initialize" : "T 5/16/2019 22:34",
+		"updateCurrentAssetList" : "T 5/16/2019 21:57" } }

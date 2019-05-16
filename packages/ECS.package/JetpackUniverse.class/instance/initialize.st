@@ -22,13 +22,13 @@ initialize
 	
 	player1 := self spawnNewWith: {
 		Label new label: 'player1'.
-		Transform new bounds: (30 @ 50 extent: 60 @ 60).
+		Transform new bounds: (30 @ 50 extent: 66 @ 92).
 		Colliding new.
 		Physics new.
 		Jetpack new acceleration: 300; fuel: 200; capacity: 200.
 		Weapon new cooldown: 100.
 		PlayerInput new left: $a; right: $d; up: $w; down: $s; shoot: $c.
-		Rendered new color: Color red}.
+		Rendered new color: Color red; form: (ECSAsset of: #platformer_base at: 'Player/p2_front.png' sized: 66 @ 92)}.
 	
 	player2 := self spawnNewWith: {
 		Label new label: 'player2'.

@@ -2,7 +2,8 @@ as yet unclassified
 addAssetBundle
 
 	| name path |
-	name := (UIManager default request: 'Name for the Bundle:') ifNil: [^ self].
-	path := UIManager default chooseDirectory: 'Root Path of the Bundle'.
+	name := (UIManager default request: 'Name for the Bundle:') ifEmpty: [^ self].
+	path := (UIManager default chooseDirectory: 'Root Path of the Bundle') ifNil: [^ self].
 	
-	self class assetCache at: name asSymbol put: (ECSAssetBundle new title: name asSymbol; path: path)
+	currentBundle := self class registerAssetBundle: name asSymbol forDirectory: path.
+	self updateCurrentAssetList

@@ -1,4 +1,4 @@
 as yet unclassified
 previewForm
 
-	^ previewForm
+	^ previewForm ifNil: [self updatePreview. previewForm]

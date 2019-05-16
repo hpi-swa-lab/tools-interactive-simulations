@@ -5,4 +5,4 @@ updateCurrentAssetList
 	
 	bundleButton label: (currentBundle ifNotNil: #title ifNil: ['- Choose Bundle -']).
 	
-	currentBundle ifNotNil: [currentBundle assets do: [:asset | self addAsset: asset]]
+	currentBundle ifNotNil: [currentBundle assets select: #isSource thenDo: [:asset | self addAsset: asset]]

@@ -9,7 +9,8 @@
 		"label",
 		"icon",
 		"hovered",
-		"active" ],
+		"active",
+		"labelMorph" ],
 	"name" : "ECSButton",
 	"pools" : [
 		 ],

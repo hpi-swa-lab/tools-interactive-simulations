@@ -1,0 +1,1 @@
+An ECSMissingAssetBundle is a placeholder for a "real" bundle, only producing null/placeholder assets.
