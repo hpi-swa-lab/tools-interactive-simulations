@@ -1,7 +1,7 @@
 as yet unclassified
 createNewSystemClass
 
-	| name newClass |
+	| name newClass system |
 	name := UIManager default request: 'Enter name for new system class' initialAnswer: 'System'.
 	name ifEmpty: [^ self].
 	
@@ -14,4 +14,5 @@ createNewSystemClass
 		category: 'ECS2-Custom'.
 		
 	newClass compile: 'tick: aUniverse', String cr, String cr, String tab.
-	self universe register: newClass new
+	system := newClass new.
+	self universe register: system
