@@ -1,13 +1,12 @@
 as yet unclassified
 tick: aUniverse
 
-	aUniverse resource: DeltaTime do: [:deltaTime |
-		aUniverse query: {Projectile. #id. Transform} do: [:components |
-			self spawnParticlesIn: aUniverse at: components third center.
-			aUniverse query: {Collision} do: [:collisionComponents |
-				(collisionComponents first collider = components second or: [collisionComponents first collidee = components second]) ifTrue: [
-					aUniverse remove: components second.
-					self spawnExplosionIn: aUniverse at: components third center]].
-			components first timeToLive: components first timeToLive - deltaTime milliseconds.
-			components first timeToLive <= 0 ifTrue: [
-				aUniverse remove: components second]]]
+	aUniverse query: {DeltaTime} do: [:deltaTime |
+		aUniverse query: {Projectile. #id. Transform} do: [:projectile :id :transform |
+			self spawnParticlesIn: aUniverse at: transform center.
+			aUniverse query: {Collision} do: [:collision |
+				(collision collider = id or: [collision collidee = id]) ifTrue: [
+					aUniverse remove: id.
+					self spawnExplosionIn: aUniverse at: transform center]].
+			projectile timeToLive: projectile timeToLive - deltaTime milliseconds.
+			projectile timeToLive <= 0 ifTrue: [aUniverse remove: id]]]

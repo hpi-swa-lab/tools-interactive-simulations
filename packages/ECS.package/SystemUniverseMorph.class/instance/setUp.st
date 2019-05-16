@@ -3,4 +3,4 @@ setUp
 
 	self wantsOGL ifTrue: [self setUpOGL].
 	systemUniverse ifNotNil: [:w | w morph: self; setUp].
-	screenSizeResource size: self extent
+	systemUniverse query: {ScreenSize} do: [:size | size size: self extent]

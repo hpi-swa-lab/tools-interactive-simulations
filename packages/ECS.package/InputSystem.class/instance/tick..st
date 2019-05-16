@@ -4,11 +4,7 @@ tick: aUniverse
 	| velX velY events |
 	events := aUniverse queryList: {KeyEvent}.
 	
-	(events contains: [:event | event first key = $  ]) ifTrue: [^ aUniverse resource: SimulationPaused do: #toggle].
-	
-	aUniverse query: {Physics. PlayerInput} do: [:components | | inputMap velocity |
-		velocity := components first velocity.
-		inputMap := components second.
+	aUniverse query: {Physics. PlayerInput} do: [:physics :inputMap |
 		velX := 0.
 		velY := 0.
 		
@@ -20,4 +16,4 @@ tick: aUniverse
 				[inputMap down] -> [velY := 1]"}
 			otherwise: []].
 		
-		components first velocity: components first velocity + ((velX @ velY) * components second acceleration)]
+		physics velocity: physics velocity + ((velX @ velY) * inputMap acceleration)]

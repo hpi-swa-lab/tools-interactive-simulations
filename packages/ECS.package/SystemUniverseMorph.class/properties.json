@@ -9,7 +9,6 @@
 		"ogl",
 		"systemUniverse",
 		"mouseClickEntity",
-		"screenSizeResource",
 		"canvas" ],
 	"name" : "SystemUniverseMorph",
 	"pools" : [

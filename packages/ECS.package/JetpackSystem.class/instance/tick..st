@@ -1,24 +1,24 @@
 as yet unclassified
 tick: aUniverse
 
-	aUniverse resource: DeltaTime do: [:deltaTime |
-		aUniverse query: {Jetpack. Physics. PlayerInput. Transform} do: [:components | | isAccelerating |
+	aUniverse query: {DeltaTime} do: [:deltaTime |
+		aUniverse query: {Jetpack. Physics. PlayerInput. Transform} do: [:jetpack :physics :inputMap :transform | | isAccelerating |
 			isAccelerating := false.
 			aUniverse query: {KeyEvent} do: [:keyComponents |
-				keyComponents first key = components third up ifTrue: [isAccelerating := true]].
+				keyComponents key = inputMap up ifTrue: [isAccelerating := true]].
 			
 			isAccelerating
 					ifTrue: [
-						components first fuel > 0 ifTrue: [
-							self spawnExhaustIn: aUniverse at: components fourth center.
-							components second velocityY: components first acceleration negated.
-							components first fuel: components first fuel - (self consumptionPerSecond * deltaTime dt)]]
+						jetpack fuel > 0 ifTrue: [
+							self spawnExhaustIn: aUniverse at: transform center.
+							physics velocityY: jetpack acceleration negated.
+							jetpack fuel: jetpack fuel - (self consumptionPerSecond * deltaTime dt)]]
 					ifFalse: [
-						components first fuel: components first fuel + (self recoveryPerSecond * deltaTime dt).
-						components first fuel: (components first fuel min: components first capacity)]]].
+						jetpack fuel: jetpack fuel + (self recoveryPerSecond * deltaTime dt).
+						jetpack fuel: (jetpack fuel min: jetpack capacity)]]].
 	
-	aUniverse resource: ScreenSize do: [:screenSize |
-		aUniverse query: {Transform. JetpackFuelIndicator} do: [:components | | jetpack |
-			jetpack := (aUniverse get: {Jetpack} of: components second player) first.
-			components first position: screenSize size x - 200 @ 0.
-			components first width: 200 * (jetpack fuel / jetpack capacity)]]
+	aUniverse query: {ScreenSize} do: [:screenSize |
+		aUniverse query: {Transform. JetpackFuelIndicator} do: [:transform :jetpackFuelIndicator | | jetpack |
+			jetpack := (aUniverse get: {Jetpack} of: jetpackFuelIndicator player) first.
+			transform position: screenSize size x - 200 @ 0.
+			transform width: 200 * (jetpack fuel / jetpack capacity)]]

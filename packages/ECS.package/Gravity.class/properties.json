@@ -10,5 +10,5 @@
 	"name" : "Gravity",
 	"pools" : [
 		 ],
-	"super" : "Resource",
+	"super" : "EntityComponent",
 	"type" : "normal" }

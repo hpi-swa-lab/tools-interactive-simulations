@@ -14,5 +14,5 @@
 	"name" : "DeltaTime",
 	"pools" : [
 		 ],
-	"super" : "Resource",
+	"super" : "EntityComponent",
 	"type" : "normal" }

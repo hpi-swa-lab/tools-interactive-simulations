@@ -5,9 +5,11 @@ initialize
 	super initialize.
 	
 	self
-		registerResource: (SimulationPaused new paused: false);
-		registerResource: (Gravity new force: 0 @ 500);
-	
+		spawnNewWith: {
+			Gravity new force: 0 @ 500.
+			DeltaTime new milliseconds: 0; last: Time millisecondClockValue.
+			ScreenSize new size: 0 @ 0};
+		
 		register: TimeSystem new;
 		register: InputSystem new;
 		register: JetpackSystem new;
@@ -16,7 +18,6 @@ initialize
 		register: ProjectileSystem new;
 		register: InspectorSystem new;
 		register: RenderSystem new;
-		register: DebugOutlineSystem new;
 		register: CleanUpSystem new.
 	
 	player1 := self spawnNewWith: {

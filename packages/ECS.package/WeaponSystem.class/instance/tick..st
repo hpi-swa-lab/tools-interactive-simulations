@@ -3,13 +3,13 @@ tick: aUniverse
 
 	| time |
 	time := Time millisecondClockValue.
-	aUniverse query: {Transform. Weapon. PlayerInput. Physics optional. #id} do: [:components |
-		time - components second lastShotTime > components second cooldown ifTrue: [
+	aUniverse query: {Transform. Weapon. PlayerInput. Physics optional. #id} do: [:transform :weapon :inputMap :physics :id |
+		time - weapon lastShotTime > weapon cooldown ifTrue: [
 			aUniverse query: {KeyEvent} do: [:keyEvent |
-				keyEvent first key = components third shoot ifTrue: [
-					components second lastShotTime: time.
+				keyEvent key = inputMap shoot ifTrue: [
+					weapon lastShotTime: time.
 					self
-						spawnProjectileAt: components first center
+						spawnProjectileAt: transform center
 						in: aUniverse
-						by: components fifth
-						to: (components fourth ifNotNil: #velocity ifNil: [100 @ 0])]]]]
+						by: id
+						to: (physics ifNotNil: #velocity ifNil: [100 @ 0])]]]]
