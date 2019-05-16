@@ -1,0 +1,15 @@
+{
+	"category" : "ECS-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"previewForm",
+		"object" ],
+	"name" : "ECSAsset",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

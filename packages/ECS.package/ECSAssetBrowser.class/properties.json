@@ -4,9 +4,11 @@
 		 ],
 	"classvars" : [
 		"AssetCache" ],
-	"commentStamp" : "",
+	"commentStamp" : "T 5/16/2019 17:00",
 	"instvars" : [
-		 ],
+		"assetList",
+		"currentBundle",
+		"bundleButton" ],
 	"name" : "ECSAssetBrowser",
 	"pools" : [
 		 ],

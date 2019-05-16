@@ -1,0 +1,16 @@
+{
+	"category" : "ECS-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"assets",
+		"title",
+		"path" ],
+	"name" : "ECSAssetBundle",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
