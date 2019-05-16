@@ -13,7 +13,8 @@ initialize
 		color: Color white.
 	
 	self addMorphBack: (ECSRow new
-		cellInset: spacing;
+		cellInset: spacing * 2;
+		wrapDirection: #leftToRight;
 		addMorphBack: (bundleButton := ECSButton new
 			icon: ECSIcon iconChevron_down;
 			label: '';
@@ -21,7 +22,7 @@ initialize
 		addMorphBack: (ECSButton new
 			icon: ECSIcon iconPlus;
 			when: #clicked send: #addAssetBundle to: self)).
-	self addMorphBack: assetList.
+	self addMorphBack: (ECSScrollPane new setMorph: assetList).
 	
 	currentBundle := self class assetCache ifNotEmpty: [self class assetCache anyOne] ifEmpty: [].
 	self updateCurrentAssetList

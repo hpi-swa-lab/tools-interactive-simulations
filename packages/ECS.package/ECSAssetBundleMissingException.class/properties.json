@@ -8,9 +8,9 @@
 	"instvars" : [
 		"previewForm",
 		"object",
-		"isDerived" ],
-	"name" : "ECSAsset",
+		"bundleName" ],
+	"name" : "ECSAssetBundleMissingException",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "Error",
 	"type" : "normal" }
