@@ -1,0 +1,9 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"acceptDroppingMorph:event:" : "cf 5/17/2019 15:36",
+		"addItem:" : "cf 5/17/2019 14:58",
+		"initialize" : "cf 5/17/2019 15:11",
+		"removeItem:" : "cf 5/17/2019 15:14",
+		"wantsDroppedMorph:event:" : "cf 5/17/2019 15:29" } }
