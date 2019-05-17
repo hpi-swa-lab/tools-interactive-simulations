@@ -2,12 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
-		"buildComponentControls:addTo:" : "T 5/16/2019 16:53",
-		"editorFor:of:" : "T 5/16/2019 16:53",
+		"editorAt:orAdd:" : "T 5/17/2019 21:46",
 		"evaluateQuery" : "cf 5/15/2019 12:54",
-		"initialize" : "T 5/17/2019 09:21",
+		"initialize" : "T 5/17/2019 21:55",
 		"isRunning" : "cf 5/16/2019 08:31",
 		"queryString" : "cf 5/15/2019 12:36",
-		"queryString:" : "T 5/16/2019 13:35",
+		"queryString:" : "T 5/17/2019 21:55",
 		"title" : "T 5/15/2019 11:26",
-		"updateList" : "T 5/17/2019 09:23" } }
+		"updateList" : "T 5/17/2019 21:49" } }

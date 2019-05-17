@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"queryString",
-		"list" ],
-	"name" : "ECSEntityComponentFilter",
+		"component" ],
+	"name" : "ECSComponentEditor",
 	"pools" : [
 		 ],
-	"super" : "ECSTool",
+	"super" : "ECSColumn",
 	"type" : "normal" }

@@ -1,0 +1,9 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"expand" : "T 5/17/2019 22:01",
+		"initialize" : "T 5/17/2019 21:39",
+		"submorphAt:orAdd:" : "T 5/17/2019 21:44",
+		"updateComponents:" : "T 5/17/2019 22:01",
+		"updateEntity:components:" : "T 5/17/2019 22:01" } }
