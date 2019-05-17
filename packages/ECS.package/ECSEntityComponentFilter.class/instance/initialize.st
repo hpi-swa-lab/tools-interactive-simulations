@@ -5,7 +5,7 @@ initialize
 	
 	self universe when: #tick send: #updateList to: self.
 	
-	currentEntities := Set new.
+	currentEntities := OrderedCollection new.
 	list := ECSColumn new.
 	
 	self queryString: '{Label}'.

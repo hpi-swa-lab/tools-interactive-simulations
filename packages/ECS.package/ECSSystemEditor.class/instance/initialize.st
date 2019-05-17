@@ -4,13 +4,20 @@ initialize
 	super initialize.
 	
 	systemsInUI := Dictionary new.
+	nonRequiredFunctionsInUI := Dictionary new.
+	systemFunctionsAreasInUI := Dictionary new.
+	list := ECSSortable new.
+	list when: #itemMoved:toIndex: send: #systemReordered:newIndex: to: self.
 	
 	self universe systems do: [:each | self addSystemToUI: each].
 	
 	self universe
 		when: #newSystemRegistered send: #addSystemToUI: to: self;
-		when: #systemUnregistered send: #removeSystemFromUI: to: self.
+		when: #systemUnregistered send: #removeSystemFromUI: to: self;
+		when: #systemOrderChanged send: #systemOrderChanged to: self.
 	
 	header addMorphBack: (ECSButton new
 		icon: (ECSIcon iconPlus);
-		when: #clicked send: #createNewSystemClass to: self)
+		when: #clicked send: #addSystem to: self).
+		
+	self addMorphBack: list

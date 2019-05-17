@@ -1,4 +1,6 @@
 as yet unclassified
 removeSystemFromUI: aSystem
 
-	self removeMorph: (systemsInUI removeKey: aSystem)
+	nonRequiredFunctionsInUI removeKey: aSystem.
+	systemFunctionsAreasInUI removeKey: aSystem.
+	list removeItem: (systemsInUI removeKey: aSystem)

@@ -1,4 +1,4 @@
 as yet unclassified
 assuredCanvas
 
-	^ canvas ifNil: [canvas := OGLCanvas new]
+	^ world canvas ifNil: [super assuredCanvas]

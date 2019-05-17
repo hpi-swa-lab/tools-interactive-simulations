@@ -6,7 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"systemsInUI" ],
+		"systemsInUI",
+		"list",
+		"systemFunctionsAreasInUI",
+		"nonRequiredFunctionsInUI" ],
 	"name" : "ECSSystemEditor",
 	"pools" : [
 		 ],

@@ -9,7 +9,8 @@
 		"ogl",
 		"systemUniverse",
 		"mouseClickEntity",
-		"canvas" ],
+		"canvas",
+		"wantsOGL" ],
 	"name" : "SystemUniverseMorph",
 	"pools" : [
 		 ],
