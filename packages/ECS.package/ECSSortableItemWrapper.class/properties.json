@@ -1,15 +1,14 @@
 {
-	"category" : "ECS-Tools",
+	"category" : "ECS-UI",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"systemsInUI",
 		"list" ],
-	"name" : "ECSSystemEditor",
+	"name" : "ECSSortableItemWrapper",
 	"pools" : [
 		 ],
-	"super" : "ECSTool",
+	"super" : "Morph",
 	"type" : "normal" }
