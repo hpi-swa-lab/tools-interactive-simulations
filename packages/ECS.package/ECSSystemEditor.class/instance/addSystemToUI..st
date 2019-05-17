@@ -12,18 +12,15 @@ addSystemToUI: aSystem
 	addMethodButton := ECSButton new
 		icon: ECSIcon iconPlus;
 		when: #clicked send: #addMethodTo: to: self with: aSystem.
-	
+
 	systemMorph := (ECSCollapsible new 
 		header: (ECSLabel new contents: aSystem name; hResizing: #spaceFill);
 		header: addMethodButton;
 		header: stateButton;
 		header: removeButton;
-		body: (ECSCodeEditor new 
-			styleFullMethod: true;
-			changeText: (aSystem class lookupSelector: #tick:) getSourceFromFile;
-			acceptAction: [:text | aSystem class compile: text asString];
-			yourself);
-			collapse).
-		
+		body: (self buildSystemFunctionsAreaAndFillItFor: aSystem);
+		collapse).
+	
+	list addItem: systemMorph.
 	self addMorphBack: systemMorph.
 	systemsInUI at: aSystem put: systemMorph

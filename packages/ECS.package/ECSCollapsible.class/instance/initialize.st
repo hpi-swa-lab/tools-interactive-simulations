@@ -8,4 +8,4 @@ initialize
 	
 	self changeTableLayout.
 	self hResizing: #spaceFill; vResizing: #shrinkWrap.
-	self color: Color white
+	self color: Color veryVeryLightGray
