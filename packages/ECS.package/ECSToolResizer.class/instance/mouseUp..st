@@ -1,4 +1,5 @@
 as yet unclassified
 mouseUp: anEvent
 
-	grabbed := false
+	grabbed := false.
+	anEvent hand releaseMouseFocus: self
