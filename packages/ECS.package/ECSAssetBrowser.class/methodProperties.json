@@ -4,12 +4,15 @@
 		"cleanCache" : "T 5/16/2019 17:10",
 		"formAt:size:" : "T 5/11/2019 20:36",
 		"loadForm:" : "T 5/11/2019 20:25",
-		"open" : "T 5/16/2019 17:07",
+		"open" : "T 5/17/2019 22:28",
 		"registerAssetBundle:forDirectory:" : "T 5/16/2019 21:51",
 		"registerMissingAssetBundle:" : "T 5/16/2019 22:08" },
 	"instance" : {
-		"addAsset:" : "T 5/16/2019 19:57",
+		"addAsset:" : "T 5/17/2019 22:27",
 		"addAssetBundle" : "T 5/16/2019 21:47",
 		"chooseAssetBundle" : "T 5/16/2019 22:35",
-		"initialize" : "T 5/16/2019 22:34",
+		"closeOnPick" : "T 5/17/2019 22:27",
+		"closeOnPick:" : "T 5/17/2019 22:26",
+		"initialize" : "T 5/17/2019 22:28",
+		"picked:" : "T 5/17/2019 22:31",
 		"updateCurrentAssetList" : "T 5/16/2019 21:57" } }

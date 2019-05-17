@@ -13,4 +13,12 @@ editorFor: aFieldSymbol of: aComponent
 		value: value;
 		onChange: [:number | aComponent instVarNamed: aFieldSymbol put: number]].
 	
+	value isColor ifTrue: [^ ECSColorButton new
+		value: value;
+		onChange: [:color | aComponent instVarNamed: aFieldSymbol put: color]].
+	
+	(value isKindOf: ECSAsset) ifTrue: [^ ECSAssetPreviewPicker new
+		value: value;
+		onChange: [:asset | aComponent instVarNamed: aFieldSymbol put: asset]].
+	
 	^ ECSLabel new contents: value printString

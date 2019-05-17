@@ -6,7 +6,9 @@ updateComponent: aComponent
 			self removeAllMorphs.
 			aComponent class instVarNames do: [:name |
 				self addMorphBack: (ECSRow new
-					addMorphBack: (ECSLabel new contents: aComponent className asText allBold, '>>', name asText; hResizing: #spaceFill);
+					addMorphBack: (ECSLabel new
+						contents: aComponent className asText allBold, '>>', name;
+						hResizing: #spaceFill);
 					addMorphBack: (self editorFor: name of: aComponent))].
 				component := aComponent]
 		ifFalse: [

@@ -4,6 +4,8 @@ initialize
 	| spacing |
 	super initialize.
 	
+	closeOnPick := false.
+	
 	spacing := (TextStyle defaultFont height / 2) rounded.
 	self changeListDirection: #topToBottom; changeTableLayout; layoutInset: spacing; cellInset: spacing; color: Color white.
 	
@@ -25,4 +27,5 @@ initialize
 	self addMorphBack: (ECSScrollPane new setMorph: assetList).
 	
 	currentBundle := self class assetCache ifNotEmpty: [self class assetCache anyOne] ifEmpty: [].
-	self updateCurrentAssetList
+	self updateCurrentAssetList.
+	self extent: 500 @ 500

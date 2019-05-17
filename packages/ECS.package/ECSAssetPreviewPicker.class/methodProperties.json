@@ -1,0 +1,11 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"changeAsset" : "T 5/17/2019 22:26",
+		"externalValueUpdate:" : "T 5/17/2019 22:25",
+		"initialize" : "T 5/17/2019 22:20",
+		"onChange" : "T 5/17/2019 22:24",
+		"onChange:" : "T 5/17/2019 22:24",
+		"updateValue:" : "T 5/17/2019 22:25",
+		"value:" : "T 5/17/2019 22:25" } }

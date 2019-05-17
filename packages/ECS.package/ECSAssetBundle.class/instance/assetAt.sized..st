@@ -6,4 +6,4 @@ assetAt: aString sized: aPoint
 		ifAbsentPut: [ECSAsset new
 			object: ((self assets at: aString) object scaledIntoFormOfSize: aPoint);
 			isDerived: true;
-			yourself]) object
+			yourself])

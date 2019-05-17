@@ -8,7 +8,8 @@
 	"instvars" : [
 		"assetList",
 		"currentBundle",
-		"bundleButton" ],
+		"bundleButton",
+		"closeOnPick" ],
 	"name" : "ECSAssetBrowser",
 	"pools" : [
 		 ],

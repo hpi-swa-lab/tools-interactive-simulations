@@ -4,12 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "T 5/16/2019 22:01",
+	"commentStamp" : "",
 	"instvars" : [
-		"title",
-		"previewForm" ],
-	"name" : "ECSMissingAssetBundle",
+		 ],
+	"name" : "ECSAssetPreview",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "ECSButton",
 	"type" : "normal" }

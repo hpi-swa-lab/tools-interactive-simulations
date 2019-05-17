@@ -1,5 +1,5 @@
 as yet unclassified
-form: aForm
+form: anAsset
 
-	form := aForm.
-	self recordChange: aForm to: #form
+	form := anAsset.
+	self recordChange: anAsset to: #form
