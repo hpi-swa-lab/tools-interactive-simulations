@@ -22,5 +22,4 @@ addSystemToUI: aSystem
 		collapse).
 	
 	list addItem: systemMorph.
-	self addMorphBack: systemMorph.
 	systemsInUI at: aSystem put: systemMorph
