@@ -16,4 +16,5 @@ initializeFor: aUniverse
 		addMorph: (ECSPanel new
 			addMorphBack: (ECSSystemEditor newFor: universe);
 			addMorphBack: (ECSEntityComponentFilter newFor: universe))
-		fullFrame: (LayoutFrame fractions: (0.8 @ 0.0 corner: 1.0 @ 1.0))
+		fullFrame: (LayoutFrame fractions: (0.8 @ 0.0 corner: 1.0 @ 1.0));
+		minimumExtent: 1000@800 * (TextStyle defaultFont height / 16) rounded
