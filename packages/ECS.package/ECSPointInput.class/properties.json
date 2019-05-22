@@ -1,16 +1,15 @@
 {
-	"category" : "ECS",
+	"category" : "ECS-UI",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"systemUniverse",
-		"mouseClickEntity",
-		"canvas" ],
-	"name" : "SystemUniverseMorph",
+		"x",
+		"y" ],
+	"name" : "ECSPointInput",
 	"pools" : [
 		 ],
-	"super" : "Morph",
+	"super" : "ECSRow",
 	"type" : "normal" }
