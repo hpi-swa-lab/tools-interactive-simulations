@@ -1,0 +1,25 @@
+{
+	"class" : {
+		"empty" : "T 5/22/2019 12:13",
+		"fromPoints:" : "T 5/22/2019 12:13",
+		"origin:corner:" : "T 5/22/2019 12:13",
+		"origin:extent:" : "T 5/22/2019 12:13",
+		"topLeft:topRight:bottomRight:bottomLeft:" : "T 5/22/2019 12:13",
+		"unitSquare" : "T 5/22/2019 12:13" },
+	"instance" : {
+		"asAxisAligned" : "T 5/22/2019 12:11",
+		"bottomCenter" : "lcj 2/19/2016 15:46",
+		"bottomLeft" : "lcj 2/19/2016 15:46",
+		"bottomLeft:" : "lcj 2/18/2016 12:44",
+		"bottomRight" : "lcj 2/19/2016 15:47",
+		"bottomRight:" : "lcj 2/18/2016 12:44",
+		"center" : "lcj 2/19/2016 15:47",
+		"containsPoint:" : "lcj 2/18/2016 13:27",
+		"corners" : "lcj 2/18/2016 12:59",
+		"extent" : "T 5/22/2019 12:11",
+		"intersects:" : "lcj 2/18/2016 14:28",
+		"topCenter" : "lcj 2/19/2016 15:47",
+		"topLeft" : "lcj 2/19/2016 15:47",
+		"topLeft:" : "lcj 2/18/2016 12:44",
+		"topRight" : "lcj 2/19/2016 15:47",
+		"topRight:" : "lcj 2/18/2016 12:44" } }

@@ -1,4 +1,4 @@
-as yet unclassified
+initialization
 initialize
 
 	super initialize.
@@ -7,7 +7,7 @@ initialize
 	
 	list := ECSColumn new.
 	
-	self queryString: '{Label}'.
+	self queryString: 'self query: {Label}'.
 	self addMorphBack: (ECSCodeEditor new 
 		changeText: self queryString;
 		acceptAction: [:text |
@@ -15,4 +15,6 @@ initialize
 			self updateList];
 		yourself).
 	self addMorphBack: (ECSScrollPane new setMorph: list).
-	self addMorphBack: (ECSToolResizer new target: self)
+	self addMorphBack: (ECSToolResizer new target: self).
+	self height: 300.
+	self vResizing: #rigid

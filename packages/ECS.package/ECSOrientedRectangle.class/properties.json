@@ -1,0 +1,17 @@
+{
+	"category" : "ECS-Data",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "TB 2/19/2016 13:24",
+	"instvars" : [
+		"topLeft",
+		"topRight",
+		"bottomLeft",
+		"bottomRight" ],
+	"name" : "ECSOrientedRectangle",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

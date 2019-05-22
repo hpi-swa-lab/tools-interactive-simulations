@@ -4,12 +4,16 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "T 5/21/2019 20:03",
+	"commentStamp" : "<historical>",
 	"instvars" : [
-		"array",
+		"x",
+		"y",
+		"color",
+		"pointX",
+		"pointY",
 		"offset",
 		"currentColor" ],
-	"name" : "ECSStorageExperimentVariableDoubleWord",
+	"name" : "ECSStorageExperimentSeparateArrays",
 	"pools" : [
 		 ],
 	"super" : "Object",

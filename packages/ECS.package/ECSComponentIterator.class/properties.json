@@ -1,0 +1,18 @@
+{
+	"category" : "ECS",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"index",
+		"componentLists",
+		"filledComponents",
+		"componentClasses",
+		"maxIndex" ],
+	"name" : "ECSComponentIterator",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

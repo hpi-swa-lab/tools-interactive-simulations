@@ -1,4 +1,4 @@
 as yet unclassified
 entityCount
 
-	^ 10000
+	^ 1000000

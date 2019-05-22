@@ -1,5 +1,5 @@
 {
-	"category" : "ECS-Experiments",
+	"category" : "ECS-Data",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
@@ -7,7 +7,7 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "ECSColorSmall",
+	"name" : "ECSColor",
 	"pools" : [
 		 ],
 	"super" : "SmallInteger",

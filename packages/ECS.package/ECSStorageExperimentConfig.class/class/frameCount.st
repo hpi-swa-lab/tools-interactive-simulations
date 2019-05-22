@@ -1,4 +1,4 @@
 as yet unclassified
 frameCount
 
-	^ 10000
+	^ 100
