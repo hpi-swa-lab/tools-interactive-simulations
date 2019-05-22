@@ -48,5 +48,6 @@ updateComponentClass
 
 	', pragma, '
 	
-	', name, ' := anObject'].
+	', name, ' := anObject.
+	self recordChange: anObject to: #', name].
 	lastComponentName := className
