@@ -3,6 +3,4 @@ initialize
 
 	super initialize.
 	
-	self color: Color black.
-	
-	wantsOGL := false
+	self color: Color black

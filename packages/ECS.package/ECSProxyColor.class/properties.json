@@ -1,0 +1,15 @@
+{
+	"category" : "ECS-Experiments",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"array",
+		"offset" ],
+	"name" : "ECSProxyColor",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

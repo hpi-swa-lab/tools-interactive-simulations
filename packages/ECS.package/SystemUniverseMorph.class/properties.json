@@ -6,11 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"ogl",
 		"systemUniverse",
 		"mouseClickEntity",
-		"canvas",
-		"wantsOGL" ],
+		"canvas" ],
 	"name" : "SystemUniverseMorph",
 	"pools" : [
 		 ],

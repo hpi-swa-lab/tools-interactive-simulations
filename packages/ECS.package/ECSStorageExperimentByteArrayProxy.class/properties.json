@@ -1,0 +1,17 @@
+{
+	"category" : "ECS-Experiments",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "<historical>",
+	"instvars" : [
+		"array",
+		"offset",
+		"currentColor",
+		"currentPoint" ],
+	"name" : "ECSStorageExperimentByteArrayProxy",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

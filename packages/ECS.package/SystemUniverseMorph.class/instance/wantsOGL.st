@@ -1,4 +1,0 @@
-ogl-setup
-wantsOGL
-
-	^ wantsOGL

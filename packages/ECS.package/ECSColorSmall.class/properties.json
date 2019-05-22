@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Experiments",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ECSColorSmall",
+	"pools" : [
+		 ],
+	"super" : "SmallInteger",
+	"type" : "immediate" }

@@ -2,6 +2,6 @@ as yet unclassified
 initialize
 
 	super initialize.
-	world := SystemUniverseMorph new wantsOGL: true.
-	world initForProject: (OGLWorldState new world: world).
+	world := PasteUpMorph new.
+	world initForProject: OGLWorldState new.
 	self setWorldBackground: true

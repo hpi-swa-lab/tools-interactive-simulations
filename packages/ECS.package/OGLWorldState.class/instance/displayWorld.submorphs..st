@@ -7,7 +7,6 @@ displayWorld: aWorld submorphs: submorphs
 		FileStream stdout nextPut: $<; nextPutAll: 'shortcut'; cr.
 		^ super displayWorld: aWorld submorphs: submorphs].
 	
-	FileStream stdout nextPut: $>; nextPutAll: 'proper'; cr.
 	self checkIfUpdateNeeded ifFalse: [^ self].
 	
 	deferredUpdateMode := self doDeferredUpdatingFor: aWorld.

@@ -1,0 +1,16 @@
+{
+	"category" : "ECS-Experiments",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "T 5/20/2019 17:44",
+	"instvars" : [
+		"array",
+		"offset",
+		"currentColor" ],
+	"name" : "ECSStorageExperimentByteArray",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

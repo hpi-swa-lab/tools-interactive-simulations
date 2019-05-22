@@ -1,5 +1,5 @@
-ogl-update
+as yet unclassified
 extent: aPoint
 
 	super extent: aPoint.
-	self updateBuffer
+	systemUniverse query: {ScreenSize} do: [:screenSize | screenSize size: self extent]

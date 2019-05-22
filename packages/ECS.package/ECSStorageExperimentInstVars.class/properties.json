@@ -1,0 +1,17 @@
+{
+	"category" : "ECS-Experiments",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"x",
+		"y",
+		"color",
+		"point" ],
+	"name" : "ECSStorageExperimentInstVars",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

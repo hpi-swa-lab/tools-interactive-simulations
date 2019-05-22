@@ -1,0 +1,15 @@
+{
+	"category" : "ECS-Experiments",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"x",
+		"y" ],
+	"name" : "ECSMutablePoint",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
