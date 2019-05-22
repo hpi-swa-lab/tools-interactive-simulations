@@ -1,4 +1,0 @@
-hacky
-isRunning
-
-	^ true

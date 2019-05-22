@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Data",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ECSColor",
+	"pools" : [
+		 ],
+	"super" : "SmallInteger",
+	"type" : "immediate" }

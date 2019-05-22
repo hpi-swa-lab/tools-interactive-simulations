@@ -1,0 +1,3 @@
+A TOMRectangle is an oriented rectangle, as opposed to Squeaks default Rectangle class of which most opperations only work for axis-aligned rectangles. It largely tries to mimic its interface in order to be a drop-in replacement.
+
+Concerning the naming, this class represents an actual arbitrary rectangle, thus deserving the name. The one from squeak on the other hand is not as appropriately named, as shown before. A more descriptive name could have been AARectangle/AxisAlignedRectangle or similar.

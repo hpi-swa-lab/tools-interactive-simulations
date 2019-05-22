@@ -1,0 +1,15 @@
+{
+	"category" : "ECS-Data",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"origin",
+		"corner" ],
+	"name" : "ECSAlignedRectangle",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

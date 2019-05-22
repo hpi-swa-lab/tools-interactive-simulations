@@ -2,10 +2,14 @@
 	"class" : {
 		 },
 	"instance" : {
+		"doIt" : "T 5/22/2019 22:38",
+		"doItIsAccept" : "T 5/22/2019 22:37",
+		"doItIsAccept:" : "T 5/22/2019 22:37",
+		"evaluateExpression:" : "T 5/22/2019 22:40",
 		"extent:" : "T 5/14/2019 21:37",
 		"externalValueUpdate:" : "T 5/17/2019 21:24",
 		"extraSpacing" : "T 5/13/2019 19:11",
-		"initialize" : "cf 5/15/2019 12:23",
+		"initialize" : "T 5/22/2019 22:38",
 		"minExtent" : "T 5/14/2019 21:37",
 		"okToStyle" : "cf 5/15/2019 11:08",
 		"privateGetText" : "cf 5/15/2019 11:33",

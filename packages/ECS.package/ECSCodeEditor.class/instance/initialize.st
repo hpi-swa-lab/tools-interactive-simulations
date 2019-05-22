@@ -9,4 +9,5 @@ initialize
 	self styler: (SHTextStylerST80 new view: self).
 	self model: self.
 	setTextSelector := #privateSetText:.
-	getTextSelector := #privateGetText
+	getTextSelector := #privateGetText.
+	doItIsAccept := false

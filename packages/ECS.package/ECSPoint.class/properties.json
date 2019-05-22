@@ -1,0 +1,15 @@
+{
+	"category" : "ECS-Data",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"x",
+		"y" ],
+	"name" : "ECSPoint",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

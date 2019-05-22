@@ -12,5 +12,5 @@
 	"name" : "SystemUniverseMorph",
 	"pools" : [
 		 ],
-	"super" : "PasteUpMorph",
+	"super" : "Morph",
 	"type" : "normal" }

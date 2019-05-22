@@ -21,4 +21,12 @@ editorFor: aFieldSymbol of: aComponent
 		value: value;
 		onChange: [:asset | aComponent instVarNamed: aFieldSymbol put: asset]].
 	
+	value isPoint ifTrue: [^ ECSPointInput new
+		value: value;
+		onChange: [:point | aComponent instVarNamed: aFieldSymbol put: point]].
+	
+	value isRectangle ifTrue: [^ ECSRectangleInput new
+		value: value;
+		onChange: [:rectangle | aComponent instVarNamed: aFieldSymbol put: rectangle]].
+	
 	^ ECSLabel new contents: value printString

@@ -1,0 +1,8 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"do:" : "T 5/22/2019 21:07",
+		"fetchComponentsInto:componentLists:at:do:ifNotMatching:" : "T 5/22/2019 21:04",
+		"next" : "T 5/22/2019 21:09",
+		"universe:components:" : "T 5/22/2019 21:10" } }
