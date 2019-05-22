@@ -7,4 +7,5 @@ initialize
 	self changeTableLayout.
 	self changeListDirection: #topToBottom.
 	self hResizing: #spaceFill.
-	self vResizing: #shrinkWrap
+	self vResizing: #shrinkWrap.
+	self height: 0

@@ -1,0 +1,14 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"addAttribute:type:" : "cf 5/22/2019 22:27",
+		"checkAttributeName:" : "cf 5/22/2019 22:21",
+		"initialize" : "cf 5/22/2019 22:31",
+		"loadComponent:" : "cf 5/22/2019 22:53",
+		"removeAttribute:" : "cf 5/22/2019 22:27",
+		"updateComponentClass" : "cf 5/22/2019 22:53",
+		"validatedAttributes" : "cf 5/22/2019 22:21",
+		"validatedClassName" : "cf 5/22/2019 22:37",
+		"validatedStorageType" : "cf 5/20/2019 15:56",
+		"validationError:" : "cf 5/20/2019 15:46" } }
