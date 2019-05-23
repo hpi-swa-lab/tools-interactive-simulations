@@ -1,4 +1,4 @@
 as yet unclassified
 red
 
-	^ (rgba bitAnd: 8r0007) / 255.0
+	^ ((rgba bitAnd: 16r00ff0000) bitShift: -16) / 255.0

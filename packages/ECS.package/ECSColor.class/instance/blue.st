@@ -1,4 +1,4 @@
 as yet unclassified
 blue
 
-	^ ((rgba bitAnd: 8r0700) bitShift: -16) / 255.0
+	^ (rgba bitAnd: 16r000000ff) / 255.0
