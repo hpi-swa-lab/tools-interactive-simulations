@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"rgba" ],
 	"name" : "ECSColor",
 	"pools" : [
 		 ],
-	"super" : "SmallInteger",
-	"type" : "immediate" }
+	"super" : "Object",
+	"type" : "normal" }

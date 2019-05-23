@@ -1,4 +1,4 @@
 as yet unclassified
 red
 
-	^ self bitAnd: 8r0007
+	^ rgba bitAnd: 8r0007
