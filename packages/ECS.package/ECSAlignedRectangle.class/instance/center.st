@@ -1,4 +1,4 @@
 as yet unclassified
 center
 
-	^ self bounds center
+	^ origin + corner // 2

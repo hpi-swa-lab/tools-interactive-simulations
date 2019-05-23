@@ -1,4 +1,4 @@
 as yet unclassified
 top
 
-	^ self bounds top
+	^ origin y

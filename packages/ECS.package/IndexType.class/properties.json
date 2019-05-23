@@ -1,0 +1,14 @@
+{
+	"category" : "ECS",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "T 5/23/2019 17:31",
+	"instvars" : [
+		 ],
+	"name" : "IndexType",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

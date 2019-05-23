@@ -1,4 +1,5 @@
 as yet unclassified
 * arg 
 	
-	^ (x * arg asECSVector2 x) , (y * arg asECSVector2 y)
+	arg isECSVector2 ifTrue: [^ (x * arg x) , (y * arg y)].
+	^ self * arg asECSVector2

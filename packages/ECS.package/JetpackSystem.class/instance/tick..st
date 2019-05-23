@@ -10,8 +10,8 @@ tick: aUniverse
 			isAccelerating
 					ifTrue: [
 						jetpack fuel > 0 ifTrue: [
-							self spawnExhaustIn: aUniverse at: transform center.
-							physics velocityY: jetpack acceleration negated.
+							self spawnExhaustIn: aUniverse at: transform bounds center.
+							physics velocity y: jetpack acceleration negated.
 							jetpack fuel: jetpack fuel - (self consumptionPerSecond * deltaTime dt)]]
 					ifFalse: [
 						jetpack fuel: jetpack fuel + (self recoveryPerSecond * deltaTime dt).
@@ -20,5 +20,5 @@ tick: aUniverse
 	aUniverse query: {ScreenSize} do: [:screenSize |
 		aUniverse query: {Transform. JetpackFuelIndicator} do: [:transform :jetpackFuelIndicator | | jetpack |
 			jetpack := (aUniverse get: {Jetpack} of: jetpackFuelIndicator player) first.
-			transform position: screenSize size x - 200 , 0.
-			transform width: 200 * (jetpack fuel / jetpack capacity)]]
+			transform bounds position: screenSize size x - 200 , 0.
+			transform bounds width: 200 * (jetpack fuel / jetpack capacity)]]

@@ -3,4 +3,4 @@ initialize
 
 	super initialize.
 	
-	alive  := VectorStorage new
+	alive  := VectorStorage newForType: IndexType

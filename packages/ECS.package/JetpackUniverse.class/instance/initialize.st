@@ -5,10 +5,10 @@ initialize
 	super initialize.
 	
 	self
-		spawnNewWith: {
-			Gravity new force: 0,500.
-			DeltaTime new milliseconds: 0; last: Time millisecondClockValue.
-			ScreenSize new size: 0,0};
+		spawnNewWith: {Gravity. DeltaTime. ScreenSize} do: [:gravity :time :size |
+			gravity force: 0,500.
+			time milliseconds: 0; last: Time millisecondClockValue.
+			size size: 0,0];
 		
 		register: TimeSystem new;
 		register: InputSystem new;
@@ -20,26 +20,25 @@ initialize
 		register: RenderSystem new;
 		register: CleanUpSystem new.
 	
-	player1 := self spawnNewWith: {
-		Label new label: 'player1'.
-		Transform new bounds: (30,50 extent: 66,92).
-		Colliding new.
-		Physics new.
-		Jetpack new acceleration: 300; fuel: 200; capacity: 200.
-		Weapon new cooldown: 100.
-		PlayerInput new left: $a; right: $d; up: $w; down: $s; shoot: $c.
-		Rendered new color: ECSColor red; form: (ECSAsset of: #platformer_base at: 'Player/p2_front.png' sized: 66,92)}.
+	player1 := self spawnNewWith: {Label. Transform. Colliding. Physics. Jetpack. Weapon. PlayerInput. Rendered} do: [:label :transform :colliding :physics :jetpack :weapon :input : rendered |
+		label label: 'player1'.
+		transform bounds: (30 , 50 extent: 66 , 92).
+		colliding group: nil; ignoreList: #().
+		physics friction: 0.9; velocity: 0 , 0.
+		jetpack acceleration: 300; fuel: 200; capacity: 200.
+		weapon cooldown: 100.
+		input left: $a; right: $d; up: $w; down: $s; shoot: $c.
+		rendered color: ECSColor red; form: (ECSAsset of: #platformer_base at: 'Player/p2_front.png' sized: 66,92)].
 	
-	player2 := self spawnNewWith: {
-		Label new label: 'player2'.
-		Transform new bounds: (530,500 extent: 300,300).
-		Colliding new.
-		Physics new.
-		Weapon new cooldown: 100.
-		PlayerInput new left: $j; right: $l; up: $i; down: $k; shoot: $m.
-		Rendered new color: "ECS"Color blue}.
+	player2 := self spawnNewWith: {Label. Transform. Colliding. Physics. PlayerInput. Rendered} do: [:label :transform :colliding :physics :input :rendered |
+		label label: 'player2'.
+		transform bounds: (530,500 extent: 300,300).
+		colliding group: nil; ignoreList: #().
+		physics friction: 0.9; velocity: 0 , 0.
+		input left: $j; right: $l; up: $i; down: $k; shoot: $m.
+		rendered color: ECSColor blue; form: nil].
 	
-	self spawnNewWith: {
-		Transform new bounds: (0,0 extent: 200,20).
-		Rendered new color: ECSColor red.
-		JetpackFuelIndicator new player: player1}
+	self spawnNewWith: {Transform. Rendered. JetpackFuelIndicator} do: [:transform :rendered :indicator |
+		transform bounds: (0,0 extent: 200,20).
+		rendered color: ECSColor red; form: nil.
+		indicator player: player1]

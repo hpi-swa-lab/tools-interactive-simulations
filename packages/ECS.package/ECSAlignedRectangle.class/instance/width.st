@@ -1,4 +1,4 @@
 as yet unclassified
 width
 
-	^ self bounds width
+	^ corner x - origin x

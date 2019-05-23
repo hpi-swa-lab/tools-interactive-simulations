@@ -5,7 +5,7 @@ tick: aUniverse
 		entities := aUniverse queryList: {Transform. Physics. Colliding optional. #id}.
 		colliders := entities select: [:e | e third notNil].
 		entities do: [:components | | position velocity friction |
-			position := components first position.
+			position := components first bounds origin.
 			velocity := components second velocity.
 			friction := components second friction.
 			components second velocity: velocity * (1.0 - (friction * deltaTime dt)) + (gravity force * deltaTime dt).
@@ -13,6 +13,6 @@ tick: aUniverse
 			(velocity closeTo: 0 , 0)
 				ifFalse: [self attemptMoving: components by: velocity * deltaTime dt around: colliders universe: aUniverse].
 			
-			components first bottom >= screenSize size y ifTrue: [
-				components first bottom: screenSize size y.
-				components second velocityY: 0]]]
+			components first bounds bottom >= screenSize size y ifTrue: [
+				components first bounds bottom: screenSize size y.
+				components second velocity y: 0]]]

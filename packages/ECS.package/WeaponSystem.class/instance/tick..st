@@ -9,7 +9,7 @@ tick: aUniverse
 				keyEvent key = inputMap shoot ifTrue: [
 					weapon lastShotTime: time.
 					self
-						spawnProjectileAt: transform center
+						spawnProjectileAt: transform bounds center
 						in: aUniverse
 						by: id
 						to: (physics ifNotNil: #velocity ifNil: [100 , 0])]]]]

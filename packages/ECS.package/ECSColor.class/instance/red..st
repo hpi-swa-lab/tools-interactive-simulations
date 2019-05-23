@@ -1,4 +1,4 @@
 as yet unclassified
 red: aNumber
 
-	(rgba bitClear: 8r0007) bitOr: aNumber
+	(rgba bitClear: 8r0007) bitOr: (aNumber * 255.0) asInteger

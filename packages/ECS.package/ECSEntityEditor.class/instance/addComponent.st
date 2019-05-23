@@ -3,4 +3,4 @@ addComponent
 
 	| componentClass |
 	componentClass := UIManager default chooseClassOrTrait.
-	self universe attach: componentClass new to: id
+	self universe attach: componentClass to: id
