@@ -1,0 +1,12 @@
+{
+	"class" : {
+		"benchAliveBool" : "T 5/23/2019 15:21",
+		"benchBitArray" : "T 5/23/2019 15:25",
+		"benchNilValues" : "T 5/23/2019 15:10",
+		"entityCount" : "T 5/23/2019 15:10",
+		"frameCount" : "T 5/23/2019 15:07",
+		"runAliveBool:" : "T 5/23/2019 15:21",
+		"runBitArray:mask:" : "T 5/23/2019 15:09",
+		"runNilValues:" : "T 5/23/2019 15:11" },
+	"instance" : {
+		 } }

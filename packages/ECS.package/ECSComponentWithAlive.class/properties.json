@@ -1,0 +1,16 @@
+{
+	"category" : "ECS-Experiments",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"alive",
+		"x",
+		"y" ],
+	"name" : "ECSComponentWithAlive",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

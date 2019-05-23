@@ -8,7 +8,7 @@
 	"instvars" : [
 		"x",
 		"y" ],
-	"name" : "ECSPoint",
+	"name" : "ECSVector2",
 	"pools" : [
 		 ],
 	"super" : "Object",

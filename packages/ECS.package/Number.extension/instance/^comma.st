@@ -1,4 +1,4 @@
 *ECS-Data
 , aNumber
 
-	^ ECSPoint x: self y: aNumber
+	^ ECSVector2 x: self y: aNumber

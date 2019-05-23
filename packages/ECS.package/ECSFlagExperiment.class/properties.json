@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Experiments",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"Components" ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ECSFlagExperiment",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
