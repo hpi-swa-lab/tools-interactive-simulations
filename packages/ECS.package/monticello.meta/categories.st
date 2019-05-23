@@ -1,5 +1,6 @@
 SystemOrganization addCategory: #'ECS-OpenGL'!
 SystemOrganization addCategory: #'ECS-UI'!
+SystemOrganization addCategory: #'ECS-Tiny-Game'!
 SystemOrganization addCategory: #'ECS-Game-Jetpack'!
 SystemOrganization addCategory: #ECS!
 SystemOrganization addCategory: #'ECS-Data'!

@@ -1,4 +1,4 @@
 accessing
 x: anObject
 
-	array at: self componentSize * offset + 2 put: anObject
+	array at: Components * offset + 2 put: anObject

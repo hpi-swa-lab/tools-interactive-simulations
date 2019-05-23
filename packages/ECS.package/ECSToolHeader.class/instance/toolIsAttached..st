@@ -3,4 +3,6 @@ toolIsAttached: aBoolean
 
 	aBoolean
 		ifTrue: [self addMorph: deleteButton]
-		ifFalse: [self removeMorph: deleteButton]
+		ifFalse: [self removeMorph: deleteButton].
+	
+	grabIcon visible: aBoolean

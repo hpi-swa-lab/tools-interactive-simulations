@@ -1,4 +1,4 @@
 accessing
 color
 
-	^ currentColor privateRGB: (array at: self componentSize * offset + 1); yourself
+	^ currentColor privateRGB: (array at: Components * offset + 1)

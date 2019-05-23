@@ -3,7 +3,7 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		 ],
+		"Components" ],
 	"commentStamp" : "T 5/21/2019 20:03",
 	"instvars" : [
 		"array",

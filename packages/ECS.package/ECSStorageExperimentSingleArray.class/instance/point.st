@@ -1,4 +1,4 @@
 accessing
 point
 
-	^ (array at: 4) @ (array at: 5)
+	^ (array at: Components * offset + 4) @ (array at: (Components * offset + 5))

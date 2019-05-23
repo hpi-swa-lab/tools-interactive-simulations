@@ -1,0 +1,15 @@
+{
+	"category" : "ECS-Tiny-Game",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"x",
+		"y" ],
+	"name" : "PositionDirect",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

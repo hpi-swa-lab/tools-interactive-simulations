@@ -1,6 +1,7 @@
 as yet unclassified
 drawString: aString at: aVector from: firstIndex to: lastIndex color: aColor on: ogl
 
+	| texture |
 	ogl glVertexPointer: 2 with: GLFloat with: 0 with: vertices.
 	ogl glTexCoordPointer: 2 with: GLFloat with: 0 with: texCoords.
 	ogl glEnableClientState: GLVertexArray.
@@ -11,7 +12,7 @@ drawString: aString at: aVector from: firstIndex to: lastIndex color: aColor on:
 	ogl glPushMatrix.
 	ogl glTranslatef: aVector x with: aVector y with: 0.0.
 	
-	firstIndex to: lastIndex do: [:index | | texture |
+	firstIndex to: lastIndex do: [:index |
 		self flag: #todo. " use a texture atlas "
 		texture := textureHandles at: (aString at: index) asInteger + 1.
 		ogl installTexture: texture.
@@ -23,8 +24,9 @@ drawString: aString at: aVector from: firstIndex to: lastIndex color: aColor on:
 		
 		ogl glPopMatrix.
 		
-		ogl glTranslatef: texture textureForm width with: 0.0 with: 0.0.
-		ogl disableTexture: texture].
+		ogl glTranslatef: texture textureForm width with: 0.0 with: 0.0].
+	
+	texture ifNotNil: [ogl disableTexture: texture].
 	
 	ogl glPopMatrix.
 	ogl glDisableClientState: GLTextureCoordArray.

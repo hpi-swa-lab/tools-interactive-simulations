@@ -7,7 +7,7 @@ initialize
 	spacing := (TextStyle defaultFont height / 3) rounded.
 	
 	self color: Color gray.
-	self addMorph: (StringMorph new hResizing: #spaceFill).
+	self addMorph: (title := ECSLabel new hResizing: #spaceFill).
 	self changeListDirection: #leftToRight.
 	self vResizing: #shrinkWrap.
 	self hResizing: #spaceFill.
