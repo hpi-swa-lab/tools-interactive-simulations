@@ -5,15 +5,17 @@ initialize
 	lastComponentName := ''.
 	nameMorph := ECSCodeEditor new externalValueUpdate: ''.
 	nameMorph acceptAction: [:text | self updateComponentClass].
-	storageTypeMorph := (ECSCodeEditor new externalValueUpdate: 'VectorStorage').
-	storageTypeMorph acceptAction: [:text | self updateComponentClass].
+	storageTypeMorph := (ECSSelectButton new labelBlock: #name; value: VectorStorage; choices: [Storage allSubclasses]).
+	storageTypeMorph when: #selected send: #updateComponentClass to: self.
 	instVarMorphs := ECSColumn new.
-		
-	self addMorphBack: (ECSLabel contents: 'Name');
+	
+	self
+		cellInset: (TextStyle defaultFont height / 2) rounded;
+		addMorphBack: (ECSLabel new contents: 'Name' asText allBold; hResizing: #spaceFill);
 		addMorphBack: nameMorph;
-		addMorphBack: (ECSLabel contents: 'Storage Type');
+		addMorphBack: (ECSLabel new contents: 'Storage Type' asText allBold; hResizing: #spaceFill);
 		addMorphBack: storageTypeMorph;
-		addMorphBack: (ECSLabel contents: 'Fields');
+		addMorphBack: (ECSLabel new contents: 'Fields'  asText allBold; hResizing: #spaceFill);
 		addMorphBack: instVarMorphs;
 		addMorphBack: (ECSButton new
 			label: 'Add new attribute';

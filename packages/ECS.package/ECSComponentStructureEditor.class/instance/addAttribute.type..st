@@ -3,11 +3,11 @@ addAttribute: aString type: aClass
 
 	| row |
 	row := (ECSRow new 
-			addMorphBack: (ECSLabel contents: 'Name');
+			addMorphBack: (ECSLabel contents: 'Name: ');
 			addMorphBack: (ECSCodeEditor new 
 				externalValueUpdate: aString;
 				acceptAction: [:text | self updateComponentClass]);
-			addMorphBack: (ECSLabel contents: 'Type');
+			addMorphBack: (ECSLabel contents: ' Type: ');
 			addMorphBack: (ECSCodeEditor new 
 				externalValueUpdate: aClass name;
 				acceptAction: [:text | self updateComponentClass]);

@@ -2,13 +2,14 @@
 	"class" : {
 		 },
 	"instance" : {
-		"addAttribute:type:" : "cf 5/22/2019 22:27",
+		"addAttribute:type:" : "T 5/23/2019 16:10",
 		"checkAttributeName:" : "cf 5/22/2019 22:21",
-		"initialize" : "cf 5/22/2019 22:31",
-		"loadComponent:" : "cf 5/22/2019 22:56",
+		"initialize" : "T 5/23/2019 16:22",
+		"loadComponent:" : "T 5/23/2019 16:17",
 		"removeAttribute:" : "cf 5/22/2019 22:27",
+		"title" : "T 5/23/2019 16:06",
 		"updateComponentClass" : "cf 5/22/2019 22:57",
 		"validatedAttributes" : "cf 5/22/2019 22:21",
 		"validatedClassName" : "cf 5/22/2019 22:37",
-		"validatedStorageType" : "cf 5/20/2019 15:56",
+		"validatedStorageType" : "T 5/23/2019 16:22",
 		"validationError:" : "cf 5/20/2019 15:46" } }

@@ -7,5 +7,5 @@ loadComponent: aClass
 		pragma := (aClass methodDict at: each asSymbol) pragmas detect: [:p | p keyword = #ecs:type:] ifNone: [nil].
 		self addAttribute: each type: (pragma ifNotNil: [Smalltalk at: pragma arguments second] ifNil: [Object])].
 	nameMorph changeText: aClass name.
-	storageTypeMorph changeText: aClass storage name.
+	storageTypeMorph value: aClass storage.
 	lastComponentName := aClass name

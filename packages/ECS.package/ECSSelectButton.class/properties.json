@@ -1,15 +1,16 @@
 {
-	"category" : "ECS-Tiny-Game",
+	"category" : "ECS-UI",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"x",
-		"y" ],
-	"name" : "PositionDirect",
+		"choices",
+		"value",
+		"labelBlock" ],
+	"name" : "ECSSelectButton",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "ECSButton",
 	"type" : "normal" }

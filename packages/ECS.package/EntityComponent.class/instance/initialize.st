@@ -3,4 +3,5 @@ initialize
 
 	super initialize.
 	
-	records := Dictionary new
+	records := Dictionary new.
+	alive := false

@@ -6,7 +6,6 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"which",
 		"key" ],
 	"name" : "KeyEvent",
 	"pools" : [
