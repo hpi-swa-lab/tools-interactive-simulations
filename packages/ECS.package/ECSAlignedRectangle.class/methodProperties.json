@@ -1,9 +1,20 @@
 {
 	"class" : {
-		 },
+		"origin:corner:" : "ek 5/23/2019 17:05" },
 	"instance" : {
-		"corner" : "T 5/22/2019 12:06",
-		"corner:" : "T 5/22/2019 12:06",
+		"bottom" : "ek 5/23/2019 17:22",
+		"bottomLeft" : "ek 5/23/2019 17:22",
+		"bottomRight" : "ek 5/23/2019 17:22",
+		"corner" : "ek 5/23/2019 17:21",
+		"corner:" : "ek 5/23/2019 17:26",
+		"corners" : "ek 5/23/2019 17:20",
 		"extent" : "T 5/22/2019 12:07",
+		"extent:" : "ek 5/23/2019 16:33",
+		"height" : "ek 5/23/2019 16:41",
+		"insetBy:" : "ek 5/23/2019 17:10",
+		"intersects:" : "ek 5/23/2019 17:18",
 		"origin" : "T 5/22/2019 12:06",
-		"origin:" : "T 5/22/2019 12:06" } }
+		"origin:" : "ek 5/23/2019 17:26",
+		"topLeft" : "ek 5/23/2019 16:40",
+		"topRight" : "ek 5/23/2019 17:19",
+		"translateBy:" : "ek 5/23/2019 17:04" } }

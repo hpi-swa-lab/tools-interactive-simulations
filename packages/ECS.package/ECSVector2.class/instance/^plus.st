@@ -1,4 +1,5 @@
 as yet unclassified
 + arg 
 	
-	^ (x + arg x) @ (y + arg y)
+	arg isECSVector2 ifTrue: [^ (x + arg x) , (y + arg y)].
+	^ self + arg asECSVector2
