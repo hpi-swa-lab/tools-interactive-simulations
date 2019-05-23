@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Tiny-Game",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "WritePosition",
+	"pools" : [
+		 ],
+	"super" : "ReadPosition",
+	"type" : "normal" }

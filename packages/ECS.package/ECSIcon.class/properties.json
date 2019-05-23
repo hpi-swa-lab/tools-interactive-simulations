@@ -10,7 +10,8 @@
 		"svg",
 		"cachedForm",
 		"svgColor",
-		"iconName" ],
+		"iconName",
+		"large" ],
 	"name" : "ECSIcon",
 	"pools" : [
 		 ],

@@ -1,0 +1,15 @@
+{
+	"category" : "ECS-Tiny-Game",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"target",
+		"offset" ],
+	"name" : "ReadPosition",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -1,4 +1,4 @@
 accessing
 x
 
-	^ array at: self componentSize * offset + 2
+	^ array at: Components * offset + 2
