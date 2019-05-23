@@ -1,4 +1,4 @@
-as yet unclassified
+squeak-compat
 isTranslucent
 
-	^ false
+	^ self alphaUnscaled < 255

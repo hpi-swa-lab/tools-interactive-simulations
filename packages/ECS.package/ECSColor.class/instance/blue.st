@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 blue
 
-	^ (rgba bitAnd: 16r000000ff) / 255.0
+	^ self blueUnscaled / 255.0

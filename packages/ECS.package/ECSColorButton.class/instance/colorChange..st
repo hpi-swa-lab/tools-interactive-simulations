@@ -1,5 +1,5 @@
 as yet unclassified
 colorChange: aColor
 
-	self value: aColor.
-	self onChange value: aColor
+	self value: (ECSColor from: aColor).
+	self onChange value: colorBlob color

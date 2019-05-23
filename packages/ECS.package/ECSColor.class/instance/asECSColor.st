@@ -1,0 +1,4 @@
+testing
+asECSColor
+
+	^ self

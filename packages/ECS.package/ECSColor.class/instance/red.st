@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 red
 
-	^ ((rgba bitAnd: 16r00ff0000) bitShift: -16) / 255.0
+	^ self redUnscaled / 255.0

@@ -1,4 +1,4 @@
 testing
-isColor
+isSolidFill
 
 	^ true

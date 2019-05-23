@@ -1,0 +1,4 @@
+squeak-compat
+isOrientedFill
+
+	^ false

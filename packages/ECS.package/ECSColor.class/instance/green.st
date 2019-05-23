@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 green
 
-	^ ((rgba bitAnd: 16r0000ff00) bitShift: -8) / 255.0
+	^ self greenUnscaled / 255.0

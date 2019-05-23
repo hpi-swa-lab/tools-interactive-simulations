@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 alpha
 
-	^ ((rgba bitAnd: 16rff000000) bitShift: -24) / 255.0
+	^ self alphaUnscaled / 255.0

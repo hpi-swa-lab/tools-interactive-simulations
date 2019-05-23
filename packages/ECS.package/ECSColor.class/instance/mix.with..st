@@ -1,4 +1,4 @@
-as yet unclassified
+transformations
 mix: aNumber with: aColor
 
 	self
