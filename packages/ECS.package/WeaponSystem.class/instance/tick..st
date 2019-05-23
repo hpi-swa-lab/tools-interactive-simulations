@@ -12,4 +12,4 @@ tick: aUniverse
 						spawnProjectileAt: transform center
 						in: aUniverse
 						by: id
-						to: (physics ifNotNil: #velocity ifNil: [100 @ 0])]]]]
+						to: (physics ifNotNil: #velocity ifNil: [100 , 0])]]]]

@@ -1,4 +1,4 @@
 as yet unclassified
 - arg 
 	
-	^ (x - arg x) @ (y - arg y)
+	^ (x - arg x) , (y - arg y)

@@ -11,6 +11,7 @@ spawnNewEntity
 		remove: OptionalComponent.
 	
 	choosenComponents := UIManager default chooseMultipleFrom: choosableComponents values: choosableComponents.
+	choosenComponents ifNil: [choosenComponents := OrderedCollection new].
 	
 	entityComponents := choosenComponents collect: [:componentClass | componentClass new] into: OrderedCollection new.
 	entityComponents add: (Label new label: name).

@@ -16,4 +16,4 @@ tick: aUniverse
 				[inputMap down] -> [velY := 1]"}
 			otherwise: []].
 		
-		physics velocity: physics velocity + ((velX @ velY) * inputMap acceleration)]
+		physics velocity: physics velocity + ((velX , velY) * inputMap acceleration)]

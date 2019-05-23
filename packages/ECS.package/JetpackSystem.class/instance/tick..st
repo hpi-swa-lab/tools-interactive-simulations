@@ -20,5 +20,5 @@ tick: aUniverse
 	aUniverse query: {ScreenSize} do: [:screenSize |
 		aUniverse query: {Transform. JetpackFuelIndicator} do: [:transform :jetpackFuelIndicator | | jetpack |
 			jetpack := (aUniverse get: {Jetpack} of: jetpackFuelIndicator player) first.
-			transform position: screenSize size x - 200 @ 0.
+			transform position: screenSize size x - 200 , 0.
 			transform width: 200 * (jetpack fuel / jetpack capacity)]]

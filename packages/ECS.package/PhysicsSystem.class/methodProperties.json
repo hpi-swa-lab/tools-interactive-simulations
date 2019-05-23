@@ -5,7 +5,7 @@
 		"attemptMoving:by:around:universe:" : "ek 5/15/2019 22:30",
 		"canCollide:with:" : "T 4/29/2019 08:48",
 		"eps" : "T 4/28/2019 18:54",
-		"resolveCollision:with:velocity:universe:" : "ek 5/15/2019 22:30",
+		"resolveCollision:with:velocity:universe:" : "ek 5/23/2019 16:47",
 		"resolveCollisionX:with:" : "T 4/28/2019 18:59",
 		"resolveCollisionY:with:" : "T 4/28/2019 18:59",
-		"tick:" : "T 5/16/2019 16:04" } }
+		"tick:" : "ek 5/23/2019 17:15" } }

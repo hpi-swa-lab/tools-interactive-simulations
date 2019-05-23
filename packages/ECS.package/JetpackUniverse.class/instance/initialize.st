@@ -6,9 +6,9 @@ initialize
 	
 	self
 		spawnNewWith: {
-			Gravity new force: 0 @ 500.
+			Gravity new force: 0,500.
 			DeltaTime new milliseconds: 0; last: Time millisecondClockValue.
-			ScreenSize new size: 0 @ 0};
+			ScreenSize new size: 0,0};
 		
 		register: TimeSystem new;
 		register: InputSystem new;
@@ -22,24 +22,24 @@ initialize
 	
 	player1 := self spawnNewWith: {
 		Label new label: 'player1'.
-		Transform new bounds: (30 @ 50 extent: 66 @ 92).
+		Transform new bounds: (30,50 extent: 66,92).
 		Colliding new.
 		Physics new.
 		Jetpack new acceleration: 300; fuel: 200; capacity: 200.
 		Weapon new cooldown: 100.
 		PlayerInput new left: $a; right: $d; up: $w; down: $s; shoot: $c.
-		Rendered new color: Color red; form: (ECSAsset of: #platformer_base at: 'Player/p2_front.png' sized: 66 @ 92)}.
+		Rendered new color: ECSColor red; form: (ECSAsset of: #platformer_base at: 'Player/p2_front.png' sized: 66,92)}.
 	
 	player2 := self spawnNewWith: {
 		Label new label: 'player2'.
-		Transform new bounds: (530 @ 500 extent: 300 @ 300).
+		Transform new bounds: (530,500 extent: 300,300).
 		Colliding new.
 		Physics new.
 		Weapon new cooldown: 100.
 		PlayerInput new left: $j; right: $l; up: $i; down: $k; shoot: $m.
-		Rendered new color: Color blue}.
+		Rendered new color: "ECS"Color blue}.
 	
 	self spawnNewWith: {
-		Transform new bounds: (0 @ 0 extent: 200 @ 20).
-		Rendered new color: Color red.
+		Transform new bounds: (0,0 extent: 200,20).
+		Rendered new color: ECSColor red.
 		JetpackFuelIndicator new player: player1}
