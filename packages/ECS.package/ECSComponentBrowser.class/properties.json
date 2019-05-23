@@ -1,16 +1,14 @@
 {
-	"category" : "ECS-Data",
+	"category" : "ECS-Tools",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"previewForm",
-		"object",
-		"isDerived" ],
-	"name" : "ECSAsset",
+		 ],
+	"name" : "ECSComponentBrowser",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "ECSTool",
 	"type" : "normal" }

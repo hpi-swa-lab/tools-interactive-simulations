@@ -1,0 +1,1 @@
+An ECSEntityId is only a placeholder, since entity ids are represented as integers directly.

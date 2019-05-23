@@ -4,12 +4,10 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "T 5/23/2019 16:01",
 	"instvars" : [
-		"previewForm",
-		"object",
-		"isDerived" ],
-	"name" : "ECSAsset",
+		 ],
+	"name" : "ECSEntityId",
 	"pools" : [
 		 ],
 	"super" : "Object",
