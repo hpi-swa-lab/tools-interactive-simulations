@@ -5,6 +5,7 @@ initialize
 	super initialize.
 	
 	spacing := (TextStyle defaultFont height / 3) rounded.
+	grabIcon := ECSIcon iconHand_grab_o.
 	
 	self color: Color gray.
 	self addMorph: (title := ECSLabel new hResizing: #spaceFill).

@@ -4,4 +4,5 @@ updateEntity: aNumber components: aCollection
 	components := aCollection.
 	self isExpanded ifTrue: [self updateComponents: aCollection].
 	
-	nameLabel contents: (aCollection detect: [:c | c class = Label] ifFound: #label ifNone: ['Entity'])
+	id := aCollection detect: #isNumber ifNone: [].
+	nameLabel contents: (aCollection detect: [:c | c class = Label] ifFound: #label ifNone: ['Entity ', id asString])
