@@ -1,6 +1,6 @@
 as yet unclassified
-at: anIndex
+atForRead: anIndex
 
 	^ anIndex > storage size
-		ifTrue: [self growToAccomodate: anIndex. storage at: anIndex]
+		ifTrue: [self nullInstance]
 		ifFalse: [storage at: anIndex]

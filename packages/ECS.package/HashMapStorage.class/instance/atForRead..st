@@ -1,4 +1,4 @@
 as yet unclassified
-at: anIndex
+atForRead: anIndex
 
 	^ storage at: anIndex ifAbsent: []

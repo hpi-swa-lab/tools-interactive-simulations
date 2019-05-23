@@ -1,4 +1,4 @@
 as yet unclassified
-at: aNumber
+atForRead: aNumber
 
 	^ (alive at: aNumber) ifTrue: [aNumber] ifFalse: []

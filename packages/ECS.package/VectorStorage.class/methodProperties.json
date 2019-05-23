@@ -2,9 +2,10 @@
 	"class" : {
 		 },
 	"instance" : {
-		"at:" : "T 4/28/2019 12:04",
+		"at:" : "T 5/23/2019 17:02",
 		"at:put:" : "T 4/28/2019 11:42",
-		"growAtLast" : "T 4/28/2019 11:39",
-		"growToAccomodate:" : "T 4/28/2019 11:41",
+		"atForRead:" : "T 5/23/2019 17:14",
+		"atForWrite:" : "T 5/23/2019 17:14",
+		"growToAccomodate:" : "T 5/23/2019 17:03",
 		"initialize" : "T 4/28/2019 11:37",
-		"remove:" : "T 4/28/2019 12:05" } }
+		"remove:" : "T 5/23/2019 17:04" } }

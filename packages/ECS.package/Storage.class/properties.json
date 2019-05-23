@@ -4,9 +4,10 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "T 5/23/2019 17:22",
 	"instvars" : [
-		 ],
+		"type",
+		"nullInstance" ],
 	"name" : "Storage",
 	"pools" : [
 		 ],

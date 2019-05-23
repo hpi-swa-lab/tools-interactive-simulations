@@ -1,5 +1,5 @@
 as yet unclassified
-at: anIndex
+atForWrite: anIndex
 
 	^ anIndex > storage size
 		ifTrue: [self growToAccomodate: anIndex. storage at: anIndex]

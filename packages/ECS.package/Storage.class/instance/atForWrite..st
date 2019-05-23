@@ -1,4 +1,4 @@
 as yet unclassified
-at: anIndex put: anObject
+atForWrite: anIndex
 
 	^ self subclassResponsibility

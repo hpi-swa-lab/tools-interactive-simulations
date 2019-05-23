@@ -6,4 +6,10 @@ query: aListOfComponentClasses do: aBlock spread: aBoolean
 	
 	1 to: maxEntityIndex do: [:index | | filledComponents |
 		filledComponents := Array new: aListOfComponentClasses size.
-		self fetchComponentsInto: filledComponents componentLists: lists at: index do: aBlock componentClasses: aListOfComponentClasses spread: aBoolean]
+		self
+			fetchComponentsInto: filledComponents
+			componentLists: lists
+			at: index
+			do: aBlock
+			componentClasses: aListOfComponentClasses
+			spread: aBoolean]
