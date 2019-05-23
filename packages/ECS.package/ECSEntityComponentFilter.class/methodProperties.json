@@ -4,8 +4,11 @@
 	"instance" : {
 		"editorAt:orAdd:" : "T 5/17/2019 21:46",
 		"evaluateQuery" : "T 5/22/2019 20:40",
-		"initialize" : "T 5/22/2019 22:38",
+		"initialize" : "ek 5/23/2019 11:39",
+		"privateQueryString:" : "ek 5/23/2019 11:39",
+		"queryEditor" : "ek 5/23/2019 11:38",
+		"queryEditor:" : "ek 5/23/2019 11:38",
 		"queryString" : "cf 5/15/2019 12:36",
-		"queryString:" : "T 5/17/2019 21:55",
+		"queryString:" : "ek 5/23/2019 11:39",
 		"title" : "T 5/15/2019 11:26",
 		"updateList" : "T 5/22/2019 20:47" } }

@@ -7,14 +7,17 @@ initialize
 	
 	list := ECSColumn new.
 	
-	self queryString: 'self query: {Label}'.
-	self addMorphBack: (ECSCodeEditor new 
+	self privateQueryString: 'self query: {Label}'.
+	
+	self queryEditor: (ECSCodeEditor new 
 		changeText: self queryString;
 		doItIsAccept: true;
 		acceptAction: [:text |
 			self queryString: text asString.
 			self updateList];
 		yourself).
+	
+	self addMorphBack: self queryEditor.
 	self addMorphBack: (ECSScrollPane new setMorph: list).
 	self addMorphBack: (ECSToolResizer new target: self).
 	self height: 200 * (TextStyle defaultFont height / 10) rounded.
