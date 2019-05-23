@@ -1,0 +1,17 @@
+{
+	"category" : "ECS-Tools",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"nameMorph",
+		"storageTypeMorph",
+		"instVarMorphs",
+		"lastComponentName" ],
+	"name" : "ECSComponentStructureEditor",
+	"pools" : [
+		 ],
+	"super" : "ECSTool",
+	"type" : "normal" }
