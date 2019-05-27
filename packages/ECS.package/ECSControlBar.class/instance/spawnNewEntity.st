@@ -18,10 +18,4 @@ spawnNewEntity
 	
 	newEntity := self universe spawnNewWith: entityComponents."
 	
-	| filter newEntity |
-	newEntity := self universe allocateEntity.
-	filter := (ECSEntityComponentFilter newFor: self universe)
-		queryString: 'self queryById: ', newEntity;
-		openDetached.
-		
-	filter owner openInHand
+	ECSEntityComponentFilter openForId: self universe allocateEntity universe: self universe
