@@ -12,7 +12,7 @@ initializeFor: aUniverse
 		addMorph: (ECSTemplateBrowser newFor: universe)
 		fullFrame: (LayoutFrame fractions: (0 @ 0.0 corner: 0.1 @ 0.8)).
 	self
-		addMorph: (SystemUniverseMorph new systemUniverse: universe)
+		addMorph: (UniverseMorph new systemUniverse: universe)
 		fullFrame: (LayoutFrame fractions: (0.1 @ 0 corner: 0.8 @ 0.8)).
 	self
 		addMorph: (ECSPanel new
@@ -20,7 +20,7 @@ initializeFor: aUniverse
 		fullFrame: (LayoutFrame fractions: (0.0 @ 0.8 corner: 0.8 @ 1.0)).
 	self
 		addMorph: (ECSPanel new
-			addMorphBack: (ECSSystemEditor newFor: universe);
+			addMorphBack: (ECSPipelineEditor newFor: universe);
 			addMorphBack: (ECSComponentBrowser newFor: universe);
 			addMorphBack: (ECSEntityComponentFilter newFor: universe))
 		fullFrame: (LayoutFrame fractions: (0.8 @ 0.0 corner: 1.0 @ 1.0))
