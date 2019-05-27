@@ -3,7 +3,8 @@ initialize
 
 	super initialize.
 	
-	self universe addDependent: self.
+	self universe when: #pause send: #updateIcon to: self.
+	self universe when: #start send: #updateIcon to: self.
 	
 	self changeTableLayout.
 	self changeListDirection: #leftToRight.

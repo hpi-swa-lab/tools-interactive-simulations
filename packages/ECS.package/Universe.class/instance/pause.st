@@ -1,6 +1,5 @@
 pipelines
 pause
 
-	morph stopSteppingSelector: #tick.
 	running := false.
-	self changed: #isPaused
+	self triggerEvent: #pause
