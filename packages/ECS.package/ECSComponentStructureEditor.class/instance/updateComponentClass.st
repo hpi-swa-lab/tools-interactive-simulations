@@ -34,7 +34,7 @@ updateComponentClass
 	attributes do: [:each | | name class pragma |
 		name := each first.
 		class := each second.
-		pragma := Pragma keyword: #ecs:type: arguments: {'component attribute'. class name}.
+		pragma := Pragma keyword: #ecsType: arguments: {class name}.
 		
 		"getter"
 		component compile: name, '

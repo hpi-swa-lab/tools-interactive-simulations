@@ -1,10 +1,17 @@
 as yet unclassified
 editorFor: aFieldSymbol of: aComponent
 
-	| value |
+	| value class |
+	class := (aComponent class methodDict at: aFieldSymbol asSymbol) pragmas detect: [:p | p keyword = #ecsType:] ifFound: [:p | p arguments first] ifNone: [].
 	value := aComponent instVarNamed: aFieldSymbol.
+	class ifNotNil: [
+		^ (Smalltalk at: class) editorType new
+			onChange: [:val | aComponent instVarNamed: aFieldSymbol put: val];
+			value: value].
 	
-	value isString ifTrue: [^ ECSCodeEditor new
+	^ ECSLabel new contents: value printString
+	
+	"value isString ifTrue: [^ ECSCodeEditor new
 		changeText: value;
 		acceptAction: [:text | aComponent instVarNamed: aFieldSymbol put: text asString];
 		yourself].
@@ -28,5 +35,4 @@ editorFor: aFieldSymbol of: aComponent
 	value isRectangle ifTrue: [^ ECSRectangleInput new
 		value: value;
 		onChange: [:rectangle | aComponent instVarNamed: aFieldSymbol put: rectangle]].
-	
-	^ ECSLabel new contents: value printString
+	"

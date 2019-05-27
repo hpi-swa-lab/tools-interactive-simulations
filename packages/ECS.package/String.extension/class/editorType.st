@@ -1,0 +1,4 @@
+*ECS-Data
+editorType
+
+	^ ECSCodeEditor

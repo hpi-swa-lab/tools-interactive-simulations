@@ -28,8 +28,8 @@ initialize
 		colliding group: nil; ignoreList: #().
 		physics friction: 0.9; velocity: 0 , 0.
 		jetpack acceleration: 300; fuel: 200; capacity: 200.
-		weapon cooldown: 100.
-		input left: $a; right: $d; up: $w; down: $s; shoot: $c.
+		weapon cooldown: 100; lastShotTime: 0.
+		input left: $a; right: $d; up: $w; down: $s; shoot: $c;  acceleration: 30.
 		rendered color: ECSColor red; form: (ECSAsset of: #platformer_base at: 'Player/p2_front.png' sized: 66,92)].
 	
 	player2 := self spawnNewWith: {Label. Transform. Colliding. Physics. PlayerInput. Rendered} do: [:label :transform :colliding :physics :input :rendered |
@@ -37,7 +37,7 @@ initialize
 		transform bounds: (530,500 extent: 300,300).
 		colliding group: nil; ignoreList: #().
 		physics friction: 0.9; velocity: 0 , 0.
-		input left: $j; right: $l; up: $i; down: $k; shoot: $m.
+		input left: $j; right: $l; up: $i; down: $k; shoot: $m;  acceleration: 30.
 		rendered color: ECSColor blue; form: nil].
 	
 	self spawnNewWith: {Transform. Rendered. JetpackFuelIndicator} do: [:transform :rendered :indicator |

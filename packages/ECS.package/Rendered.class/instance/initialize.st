@@ -2,5 +2,5 @@ as yet unclassified
 initialize
 
 	super initialize.
-	
-	acceleration := 30
+	form := nil.
+	color := Color black

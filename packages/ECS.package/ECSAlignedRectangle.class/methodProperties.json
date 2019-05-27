@@ -1,8 +1,10 @@
 {
 	"class" : {
 		"center:extent:" : "T 5/23/2019 17:50",
+		"editorType" : "T 5/27/2019 16:20",
 		"origin:corner:" : "ek 5/23/2019 17:05",
-		"origin:extent:" : "T 5/23/2019 18:18" },
+		"origin:extent:" : "T 5/23/2019 18:18",
+		"zero" : "T 5/27/2019 16:56" },
 	"instance" : {
 		"bottom" : "ek 5/23/2019 17:22",
 		"bottom:" : "T 5/23/2019 18:12",
