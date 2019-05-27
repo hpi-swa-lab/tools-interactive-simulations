@@ -4,7 +4,7 @@ initialize
 	super initialize.
 	
 	systems := OrderedCollection new.
-	resources := OrderedCollection new.
+	templates := OrderedCollection new.
 	freeIndexList := OrderedCollection new.
 	components := Dictionary new.
 	drawingBlocks := OrderedCollection new.
