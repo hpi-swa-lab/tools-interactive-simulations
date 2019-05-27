@@ -32,12 +32,12 @@ updateComponentClass
 	attributes do: [:each | | name class pragma |
 		name := each first.
 		class := each second.
-		pragma := Pragma keyword: #ecs:type: arguments: {'component attribute'. class name}.
+		pragma := Pragma keyword: #ecsType: arguments: {class name}.
 		
 		"getter"
-		component compile: ('{1}\\\\	{2}\\	^ {1}' withCRs format: {name pragma}).
+		component compile: ('{1}\\\\	{2}\\	^ {1}' withCRs format: {name. pragma}).
 		"setter"
 		component compile: 
 			('{1}: anObject\\\\	{2}\\	{1} := anObject\\	self recordChange: anObject to: #{1}' 
-						withCRs format: {name pragma})].
+						withCRs format: {name. pragma})].
 	lastComponentName := className
