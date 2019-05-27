@@ -6,16 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"entities",
-		"pipelines",
-		"morph",
-		"running",
-		"freeIndexList",
 		"components",
-		"maxEntityIndex",
-		"drawingBlocks",
-		"templates" ],
-	"name" : "Universe",
+		"name" ],
+	"name" : "ECSTemplate",
 	"pools" : [
 		 ],
 	"super" : "Object",

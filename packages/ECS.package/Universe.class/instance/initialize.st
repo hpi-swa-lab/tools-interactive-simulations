@@ -8,6 +8,7 @@ initialize
 	freeIndexList := OrderedCollection new.
 	components := Dictionary new.
 	drawingBlocks := OrderedCollection new.
+	templates := OrderedCollection new.
 	
 	components at: #id put: IndexStorage new.
 	

@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Tools",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ECSTemplateBrowser",
+	"pools" : [
+		 ],
+	"super" : "ECSTool",
+	"type" : "normal" }

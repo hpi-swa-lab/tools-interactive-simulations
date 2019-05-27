@@ -2,10 +2,12 @@
 	"class" : {
 		"open" : "ek 5/15/2019 22:18" },
 	"instance" : {
+		"addTemplate:" : "cf 5/27/2019 17:06",
 		"allComponentsOf:" : "T 5/16/2019 15:39",
 		"allComponentsOf:do:" : "T 5/23/2019 17:17",
 		"allocateEntity" : "T 5/23/2019 17:17",
 		"attach:to:" : "T 5/23/2019 17:21",
+		"chooseComponentClassDo:" : "cf 5/27/2019 17:06",
 		"components" : "T 5/22/2019 21:08",
 		"components:" : "cf 5/27/2019 15:24",
 		"draw:" : "T 5/11/2019 08:08",
@@ -20,7 +22,7 @@
 		"freeIndexList:" : "cf 5/27/2019 15:24",
 		"get:of:" : "T 5/23/2019 17:18",
 		"in:send:to:with:" : "T 5/23/2019 17:52",
-		"initialize" : "cf 5/27/2019 15:26",
+		"initialize" : "cf 5/27/2019 17:06",
 		"isPaused" : "T 4/29/2019 08:28",
 		"maxEntityIndex" : "T 5/22/2019 21:10",
 		"maxEntityIndex:" : "cf 5/27/2019 15:24",
@@ -42,7 +44,9 @@
 		"setToPointInTime:" : "T 4/27/2019 17:34",
 		"setUp" : "cf 5/27/2019 15:27",
 		"spawnNewWith:do:" : "T 5/23/2019 17:34",
+		"spawnNewWith:withListDo:" : "cf 5/27/2019 17:06",
 		"start" : "T 5/16/2019 15:56",
+		"templates" : "cf 5/27/2019 17:06",
 		"tick" : "cf 5/27/2019 15:29",
 		"togglePaused" : "T 5/15/2019 11:28",
 		"unregister:" : "cf 5/27/2019 15:31" } }

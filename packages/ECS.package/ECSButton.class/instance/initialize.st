@@ -8,6 +8,7 @@ initialize
 	hovered := false.
 	active := false.
 	self changeListDirection: #leftToRight.
+	self listCentering: #center.
 	self hResizing: #shrinkWrap.
 	self vResizing: #shrinkWrap.
 	self cellPositioning: #center.
