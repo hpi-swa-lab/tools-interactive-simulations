@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"systemUniverse",
-		"canvas" ],
-	"name" : "SystemUniverseMorph",
+		 ],
+	"name" : "PlacementSystem",
 	"pools" : [
 		 ],
-	"super" : "Morph",
+	"super" : "System",
 	"type" : "normal" }

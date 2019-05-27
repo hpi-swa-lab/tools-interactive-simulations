@@ -1,6 +1,7 @@
 as yet unclassified
 tick: aUniverse
 
-	aUniverse query: {ClickEvent} do: [:click |
-		aUniverse query: {Transform. #id} do: [:transform :id |
-			(transform bounds containsPoint: click position) ifTrue: [(aUniverse allComponentsOf: id) explore]]]
+	aUniverse query: {Mouse} do: [:mouse |
+		mouse leftJustDown ifTrue: [
+			aUniverse query: {Transform. #id} do: [:transform :id |
+				(transform bounds containsPoint: mouse position) ifTrue: [(aUniverse allComponentsOf: id) explore]]]]

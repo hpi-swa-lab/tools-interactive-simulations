@@ -5,10 +5,11 @@ initialize
 	super initialize.
 	
 	self
-		spawnNewWith: {Gravity. DeltaTime. ScreenSize} do: [:gravity :time :size |
+		spawnNewWith: {Gravity. DeltaTime. ScreenSize. Mouse} do: [:gravity :time :size :mouse |
 			gravity force: 0,500.
 			time milliseconds: 0; last: Time millisecondClockValue.
-			size size: 0,0];
+			size size: 0,0.
+			mouse position: 0 , 0; leftJustDown: false; leftJustUp: false; leftDown: false];
 		
 		register: TimeSystem new;
 		register: InputSystem new;
@@ -18,6 +19,7 @@ initialize
 		register: ProjectileSystem new;
 		register: InspectorSystem new;
 		register: RenderSystem new;
+		register: PlacementSystem new;
 		register: CleanUpSystem new.
 	
 	player1 := self spawnNewWith: {Label. Transform. Colliding. Physics. Jetpack. Weapon. PlayerInput. Rendered} do: [:label :transform :colliding :physics :jetpack :weapon :input : rendered |

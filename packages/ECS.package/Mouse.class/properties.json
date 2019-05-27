@@ -6,10 +6,12 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"systemUniverse",
-		"canvas" ],
-	"name" : "SystemUniverseMorph",
+		"position",
+		"leftJustUp",
+		"leftJustDown",
+		"leftDown" ],
+	"name" : "Mouse",
 	"pools" : [
 		 ],
-	"super" : "Morph",
+	"super" : "EntityComponent",
 	"type" : "normal" }
