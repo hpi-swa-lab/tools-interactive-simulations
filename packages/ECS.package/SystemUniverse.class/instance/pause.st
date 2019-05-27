@@ -1,6 +1,0 @@
-systems
-pause
-
-	morph stopSteppingSelector: #tick.
-	running := false.
-	self changed: #isPaused

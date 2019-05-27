@@ -1,0 +1,18 @@
+{
+	"category" : "ECS-Tools",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"pipeline",
+		"systemsInUI",
+		"list",
+		"systemFunctionsAreasInUI",
+		"nonRequiredFunctionsInUI" ],
+	"name" : "ECSPipelineEditor",
+	"pools" : [
+		 ],
+	"super" : "ECSTool",
+	"type" : "normal" }

@@ -1,4 +1,0 @@
-pausing
-isPaused
-
-	^ paused

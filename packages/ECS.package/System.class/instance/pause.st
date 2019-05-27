@@ -1,4 +1,0 @@
-pausing
-pause
-
-	paused := true

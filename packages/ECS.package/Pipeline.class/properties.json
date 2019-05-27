@@ -6,8 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "System",
+		"title",
+		"systems",
+		"runContinuously" ],
+	"name" : "Pipeline",
 	"pools" : [
 		 ],
 	"super" : "Object",

@@ -21,9 +21,7 @@ updateComponentClass
 		category: 'ECS2-Custom'.
 	
 	"storage type"
-	component class compile: 'storage
-
-	^ ', storageType name asString.
+	component class compile: ('storage\\\\	^ {1}' withCRs format: storageType name asString).
 	
 	"attributes"
 	
@@ -34,20 +32,12 @@ updateComponentClass
 	attributes do: [:each | | name class pragma |
 		name := each first.
 		class := each second.
-		pragma := Pragma keyword: #ecsType: arguments: {class name}.
+		pragma := Pragma keyword: #ecs:type: arguments: {'component attribute'. class name}.
 		
 		"getter"
-		component compile: name, '
-
-	', pragma, '
-	
-	^ ', name.
-			
+		component compile: ('{1}\\\\	{2}\\	^ {1}' withCRs format: {name pragma}).
 		"setter"
-		component compile: name, ': anObject
-
-	', pragma, '
-	
-	', name, ' := anObject.
-	self recordChange: anObject to: #', name].
+		component compile: 
+			('{1}: anObject\\\\	{2}\\	{1} := anObject\\	self recordChange: anObject to: #{1}' 
+						withCRs format: {name pragma})].
 	lastComponentName := className
