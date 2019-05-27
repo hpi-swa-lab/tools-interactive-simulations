@@ -10,5 +10,5 @@
 	"name" : "JetpackUniverse",
 	"pools" : [
 		 ],
-	"super" : "SystemUniverse",
+	"super" : "Universe",
 	"type" : "normal" }

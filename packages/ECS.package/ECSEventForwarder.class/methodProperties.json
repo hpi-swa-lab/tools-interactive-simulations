@@ -1,0 +1,13 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"event" : "cf 5/27/2019 16:52",
+		"event:" : "cf 5/27/2019 16:52",
+		"isReceiverOrAnyArgumentGarbage" : "cf 5/27/2019 16:56",
+		"prependedValue" : "cf 5/27/2019 16:54",
+		"prependedValue:" : "cf 5/27/2019 16:54",
+		"receiver" : "cf 5/27/2019 16:52",
+		"receiver:" : "cf 5/27/2019 16:52",
+		"value" : "cf 5/27/2019 16:54",
+		"valueWithArguments:" : "cf 5/27/2019 16:54" } }

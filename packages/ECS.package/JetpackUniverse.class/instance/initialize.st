@@ -1,16 +1,13 @@
 as yet unclassified
 initialize
 
-	| player1 player2 |
+	| player1 player2 pipeline |
 	super initialize.
 	
-	self
-		spawnNewWith: {Gravity. DeltaTime. ScreenSize. Mouse} do: [:gravity :time :size :mouse |
-			gravity force: 0,500.
-			time milliseconds: 0; last: Time millisecondClockValue.
-			size size: 0,0.
-			mouse position: 0 , 0; leftJustDown: false; leftJustUp: false; leftDown: false];
-		
+	pipeline := Pipeline new.
+	pipeline
+		title: 'Game Loop';
+		runContinuously: true;
 		register: TimeSystem new;
 		register: InputSystem new;
 		register: JetpackSystem new;
@@ -21,6 +18,14 @@ initialize
 		register: RenderSystem new;
 		register: PlacementSystem new;
 		register: CleanUpSystem new.
+
+	self
+		spawnNewWith: {Gravity. DeltaTime. ScreenSize. Mouse} do: [:gravity :time :size :mouse |
+			gravity force: 0,500.
+			time milliseconds: 0; last: Time millisecondClockValue.
+			size size: 0,0.
+			mouse position: 0 , 0; leftJustDown: false; leftJustUp: false; leftDown: false];
+		register: pipeline.
 	
 	player1 := self spawnNewWith: {Label. Transform. Colliding. Physics. Jetpack. Weapon. PlayerInput. Rendered} do: [:label :transform :colliding :physics :jetpack :weapon :input : rendered |
 		label label: 'player1'.

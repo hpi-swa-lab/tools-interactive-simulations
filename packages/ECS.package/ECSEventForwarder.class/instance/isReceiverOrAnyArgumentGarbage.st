@@ -1,0 +1,4 @@
+events-support
+isReceiverOrAnyArgumentGarbage
+
+	^false

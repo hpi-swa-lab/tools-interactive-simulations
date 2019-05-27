@@ -1,0 +1,16 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"initialize" : "cf 5/27/2019 16:21",
+		"moveSystem:to:" : "cf 5/27/2019 16:31",
+		"register:" : "cf 5/27/2019 15:32",
+		"runContinuously" : "cf 5/27/2019 15:14",
+		"runContinuously:" : "cf 5/27/2019 15:15",
+		"setUp:" : "cf 5/27/2019 16:22",
+		"systems" : "cf 5/27/2019 15:13",
+		"systems:" : "cf 5/27/2019 15:13",
+		"tick:" : "cf 5/27/2019 16:22",
+		"title" : "cf 5/27/2019 15:13",
+		"title:" : "cf 5/27/2019 15:13",
+		"unregister:" : "cf 5/27/2019 16:24" } }

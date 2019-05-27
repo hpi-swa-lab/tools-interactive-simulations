@@ -6,8 +6,16 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "System",
+		"entities",
+		"pipelines",
+		"morph",
+		"resources",
+		"running",
+		"freeIndexList",
+		"components",
+		"maxEntityIndex",
+		"drawingBlocks" ],
+	"name" : "Universe",
 	"pools" : [
 		 ],
 	"super" : "Object",
