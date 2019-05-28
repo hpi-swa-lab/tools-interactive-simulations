@@ -1,4 +1,4 @@
-as yet unclassified
+evaluating
 valueWithArguments: aCollection
 
 	(self filterBlock value: aCollection) ifTrue: [

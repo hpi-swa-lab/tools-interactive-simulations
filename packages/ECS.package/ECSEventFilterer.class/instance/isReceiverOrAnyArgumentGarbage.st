@@ -1,4 +1,4 @@
-as yet unclassified
+events-support
 isReceiverOrAnyArgumentGarbage
 
 	^false

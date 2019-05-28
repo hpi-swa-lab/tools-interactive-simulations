@@ -7,7 +7,7 @@ addSystemToUI: aSystem
 	
 	removeButton := ECSButton new
 		icon: ECSIcon iconRemove;
-		when: #clicked send: #removeSystemFromUniverse: to: self with: aSystem.
+		when: #clicked send: #removeSystemFromPipeline: to: self with: aSystem.
 
 	addMethodButton := ECSButton new
 		icon: ECSIcon iconPlus;
