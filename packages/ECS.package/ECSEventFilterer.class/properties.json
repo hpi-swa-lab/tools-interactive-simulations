@@ -6,8 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"enabled" ],
-	"name" : "System",
+		"receiver",
+		"message",
+		"filterBlock" ],
+	"name" : "ECSEventFilterer",
 	"pools" : [
 		 ],
 	"super" : "Object",

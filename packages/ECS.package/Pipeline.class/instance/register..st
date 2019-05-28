@@ -1,5 +1,5 @@
 as yet unclassified
 register: aSystem
-
-	systems add: aSystem -> true.
+	
+	systems add: aSystem.
 	self triggerEvent: #newSystemRegistered with: aSystem

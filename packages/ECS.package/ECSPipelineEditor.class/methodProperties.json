@@ -4,12 +4,13 @@
 	"instance" : {
 		"addMethodTo:" : "ek 5/17/2019 15:24",
 		"addSystem" : "cf 5/27/2019 16:12",
+		"addSystemToUI:" : "cf 5/28/2019 08:47",
 		"addSystemToUI:isRunning:" : "cf 5/27/2019 15:41",
 		"buildMethodUIElementfor:of:" : "ek 5/17/2019 15:51",
 		"buildRequiredMethodUIElementfor:of:" : "ek 5/17/2019 14:50",
 		"buildSystemFunctionsAreaAndFillItFor:" : "ek 5/17/2019 15:44",
 		"createNewSystemClass:" : "ek 5/16/2019 17:30",
-		"initialize" : "cf 5/27/2019 16:22",
+		"initialize" : "cf 5/28/2019 08:14",
 		"pausedIconName" : "cf 5/16/2019 09:11",
 		"removeMethod:from:" : "ek 5/17/2019 15:58",
 		"removeSystemFromUI:" : "ek 5/17/2019 16:02",
@@ -17,7 +18,8 @@
 		"requiredMethodSymbols" : "ek 5/17/2019 14:54",
 		"runningIconName" : "cf 5/16/2019 09:11",
 		"stateIconForRunningState:" : "cf 5/27/2019 15:42",
-		"systemOrderChanged:" : "cf 5/27/2019 16:36",
+		"systemOrderChanged" : "cf 5/28/2019 08:40",
 		"systemReordered:newIndex:" : "cf 5/27/2019 16:13",
 		"title" : "cf 5/27/2019 15:51",
-		"togglePaused:button:" : "cf 5/16/2019 08:37" } }
+		"togglePaused:button:" : "cf 5/28/2019 08:42",
+		"when:forCurrentPipelineThenSend:" : "cf 5/28/2019 08:08" } }

@@ -1,0 +1,4 @@
+accessing
+isDisabled
+
+	^ enabled not

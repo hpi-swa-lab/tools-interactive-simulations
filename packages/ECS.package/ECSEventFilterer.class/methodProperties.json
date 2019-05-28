@@ -1,0 +1,13 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"filterBlock" : "cf 5/28/2019 08:07",
+		"filterBlock:" : "cf 5/28/2019 08:07",
+		"isReceiverOrAnyArgumentGarbage" : "cf 5/28/2019 08:09",
+		"message" : "cf 5/28/2019 08:07",
+		"message:" : "cf 5/28/2019 08:07",
+		"receiver" : "cf 5/28/2019 08:07",
+		"receiver:" : "cf 5/28/2019 08:07",
+		"value" : "cf 5/28/2019 08:10",
+		"valueWithArguments:" : "cf 5/28/2019 08:12" } }

@@ -1,5 +1,5 @@
 as yet unclassified
 togglePaused: aSystem button: anECSButton
 
-	aSystem isPaused ifTrue: [aSystem resume] ifFalse: [aSystem pause].
-	anECSButton icon changeIconName: (self stateIconForSystem: aSystem)
+	aSystem isEnabled ifTrue: [aSystem disable] ifFalse: [aSystem enable].
+	anECSButton icon changeIconName: (self stateIconForRunningState: aSystem isEnabled)

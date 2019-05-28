@@ -3,14 +3,14 @@
 		 },
 	"instance" : {
 		"initialize" : "cf 5/27/2019 16:21",
-		"moveSystem:to:" : "cf 5/27/2019 16:31",
-		"register:" : "cf 5/27/2019 15:32",
+		"moveSystem:to:" : "cf 5/27/2019 15:27",
+		"register:" : "cf 5/28/2019 08:59",
 		"runContinuously" : "cf 5/27/2019 15:14",
 		"runContinuously:" : "cf 5/27/2019 15:15",
-		"setUp:" : "cf 5/27/2019 16:22",
+		"setUp:" : "cf 5/28/2019 08:39",
 		"systems" : "cf 5/27/2019 15:13",
 		"systems:" : "cf 5/27/2019 15:13",
-		"tick:" : "T 5/27/2019 18:06",
+		"tick:" : "cf 5/28/2019 08:40",
 		"title" : "cf 5/27/2019 15:13",
 		"title:" : "cf 5/27/2019 15:13",
-		"unregister:" : "cf 5/27/2019 16:24" } }
+		"unregister:" : "cf 5/28/2019 08:37" } }

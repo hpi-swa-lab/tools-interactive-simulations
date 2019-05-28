@@ -11,12 +11,11 @@ initialize
 	
 	pipeline := self universe pipelines first.
 	
-	pipeline systems do: [:each | self addSystemToUI: each key isRunning: each value].
+	pipeline systems do: [:each | self addSystemToUI: each].
 	
-	self universe
-		when: #newSystemRegistered send: #addSystemToUI: to: self;
-		when: #systemUnregistered send: #removeSystemFromUI: to: self;
-		when: #systemOrderChanged send: #systemOrderChanged to: self.
+	self when: #newSystemRegistered forCurrentPipelineThenSend: #addSystemToUI:;
+		when: #systemUnregistered forCurrentPipelineThenSend: #removeSystemFromUI:;
+		when: #systemOrderChanged forCurrentPipelineThenSend: #systemOrderChanged.
 	
 	header addMorphBack: (ECSButton new
 		icon: (ECSIcon iconPlus);
