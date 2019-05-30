@@ -9,7 +9,7 @@ initialize
 	list := ECSSortable new.
 	list when: #itemMoved:toIndex: send: #systemReordered:newIndex: to: self.
 	
-	pipeline := self universe pipelines first.
+	pipeline ifNil: [pipeline := self universe pipelines first].
 	
 	pipeline systems do: [:each | self addSystemToUI: each].
 	

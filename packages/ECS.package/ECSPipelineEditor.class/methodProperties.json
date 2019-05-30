@@ -1,6 +1,6 @@
 {
 	"class" : {
-		 },
+		"newFor:pipeline:" : "cmfcmf 5/30/2019 14:49" },
 	"instance" : {
 		"addMethodTo:" : "ek 5/17/2019 15:24",
 		"addSystem" : "cf 5/27/2019 16:12",
@@ -8,9 +8,10 @@
 		"buildMethodUIElementfor:of:" : "ek 5/17/2019 15:51",
 		"buildRequiredMethodUIElementfor:of:" : "ek 5/17/2019 14:50",
 		"buildSystemFunctionsAreaAndFillItFor:" : "ek 5/17/2019 15:44",
-		"createNewSystemClass:" : "ek 5/16/2019 17:30",
-		"initialize" : "cf 5/28/2019 08:14",
+		"createNewSystemClass:" : "cmfcmf 5/30/2019 14:32",
+		"initialize" : "cmfcmf 5/30/2019 14:50",
 		"pausedIconName" : "cf 5/16/2019 09:11",
+		"pipeline:" : "cmfcmf 5/30/2019 14:50",
 		"removeMethod:from:" : "ek 5/17/2019 15:58",
 		"removeSystemFromPipeline:" : "cf 5/28/2019 09:14",
 		"removeSystemFromUI:" : "ek 5/17/2019 16:02",

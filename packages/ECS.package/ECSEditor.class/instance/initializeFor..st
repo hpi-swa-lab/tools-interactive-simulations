@@ -20,7 +20,7 @@ initializeFor: aUniverse
 		fullFrame: (LayoutFrame fractions: (0.0 @ 0.8 corner: 0.8 @ 1.0)).
 	self
 		addMorph: (ECSPanel new
-			addMorphBack: (ECSPipelineEditor newFor: universe);
+			addMorphBack: (ECSMultiPipelineEditor newFor: universe);
 			addMorphBack: (ECSComponentBrowser newFor: universe);
 			addMorphBack: (ECSEntityComponentFilter newFor: universe))
 		fullFrame: (LayoutFrame fractions: (0.8 @ 0.0 corner: 1.0 @ 1.0))

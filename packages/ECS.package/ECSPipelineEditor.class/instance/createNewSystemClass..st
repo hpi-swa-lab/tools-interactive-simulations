@@ -9,8 +9,8 @@ createNewSystemClass: aSystemClassName
 		instanceVariableNames: ''
 		classVariableNames: ''
 		poolDictionaries: ''
-		category: 'ECS2-Custom'.
+		category: self universe class category.
 		
-	newClass compile: 'tick: aUniverse', String cr, String cr, String tab.
+	newClass compile: 'tick: aUniverse\\	' withCRs.
 	
 	^ newClass
