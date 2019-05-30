@@ -4,6 +4,8 @@ assetAt: aString sized: aPoint
 	^ (self assets
 		at: aString, '@', aPoint asString
 		ifAbsentPut: [ECSAsset new
+			path: aString;
+			bundle: self title;
 			object: ((self assets at: aString) object scaledIntoFormOfSize: aPoint);
 			isDerived: true;
 			yourself])
