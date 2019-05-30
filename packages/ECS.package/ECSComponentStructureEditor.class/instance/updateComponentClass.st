@@ -1,7 +1,7 @@
 as yet unclassified
 updateComponentClass
 
-	| component className storageType attributes |
+	| component className storageType attributes category |
 	[
 		className := self validatedClassName.
 		storageType := self validatedStorageType.
@@ -13,15 +13,19 @@ updateComponentClass
 		(UIManager default chooseFrom: {'create new'. 'rename ', lastComponentName, ' to ', className}) = 2
 			ifTrue: [(Smalltalk at: lastComponentName) rename: className]].
 	
+	category := (Smalltalk classNamed: className) 
+		ifNotNil: [:class | class category] 
+		ifNil: [self universe class category].
+	
 	component := EntityComponent 
 		subclass: className asSymbol
 		instanceVariableNames: (attributes collect: #first)
 		classVariableNames: ''
 		poolDictionaries: ''
-		category: 'ECS2-Custom'.
+		category: category.
 	
 	"storage type"
-	component class compile: ('storage\\\\	^ {1}' withCRs format: storageType name asString).
+	component class compile: ('storage\\	^ {1}' withCRs format: {storageType asString}).
 	
 	"attributes"
 	
@@ -35,9 +39,9 @@ updateComponentClass
 		pragma := Pragma keyword: #ecsType: arguments: {class name}.
 		
 		"getter"
-		component compile: ('{1}\\\\	{2}\\	^ {1}' withCRs format: {name. pragma}).
+		component compile: ('{1}\\	{2}\	^ {1}' withCRs format: {name. pragma}).
 		"setter"
 		component compile: 
-			('{1}: anObject\\\\	{2}\\	{1} := anObject\\	self recordChange: anObject to: #{1}' 
+			('{1}: anObject\\	{2}\	{1} := anObject.\	self recordChange: anObject to: #{1}' 
 						withCRs format: {name. pragma})].
 	lastComponentName := className
