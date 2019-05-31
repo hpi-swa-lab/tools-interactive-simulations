@@ -9,8 +9,9 @@
 		"buildRequiredMethodUIElementfor:of:" : "ek 5/17/2019 14:50",
 		"buildSystemFunctionsAreaAndFillItFor:" : "ek 5/17/2019 15:44",
 		"createNewSystemClass:" : "cmfcmf 5/30/2019 14:32",
-		"initialize" : "cmfcmf 5/30/2019 14:50",
+		"initialize" : "cmfcmf 5/30/2019 21:56",
 		"pausedIconName" : "cf 5/16/2019 09:11",
+		"pipeline" : "cmfcmf 5/30/2019 21:53",
 		"pipeline:" : "cmfcmf 5/30/2019 14:50",
 		"removeMethod:from:" : "ek 5/17/2019 15:58",
 		"removeSystemFromPipeline:" : "cf 5/28/2019 09:14",
@@ -22,4 +23,5 @@
 		"systemReordered:newIndex:" : "cf 5/27/2019 16:13",
 		"title" : "cf 5/27/2019 15:51",
 		"togglePaused:button:" : "cf 5/28/2019 08:42",
+		"unregisterPipelineAndDeleteMyself" : "cmfcmf 5/30/2019 22:00",
 		"when:forCurrentPipelineThenSend:" : "cf 5/28/2019 08:08" } }

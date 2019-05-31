@@ -20,5 +20,8 @@ initialize
 	header addMorphBack: (ECSButton new
 		icon: (ECSIcon iconPlus);
 		when: #clicked send: #addSystem to: self).
+	header addMorphBack: (ECSButton new
+		icon: (ECSIcon iconTrash);
+		when: #clicked send: #unregisterPipelineAndDeleteMyself to: self).
 		
 	self addMorphBack: list
