@@ -1,4 +1,5 @@
 accessing
-runContinuously: aBool
+runContinuously: aBoolean
 
-	runContinuously := aBool
+	runContinuously := aBoolean.
+	self triggerEvent: #pipelineExecutionModeChanged with: aBoolean

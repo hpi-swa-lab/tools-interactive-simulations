@@ -10,7 +10,8 @@
 		"systemsInUI",
 		"list",
 		"systemFunctionsAreasInUI",
-		"nonRequiredFunctionsInUI" ],
+		"nonRequiredFunctionsInUI",
+		"runContinuouslyButton" ],
 	"name" : "ECSPipelineEditor",
 	"pools" : [
 		 ],

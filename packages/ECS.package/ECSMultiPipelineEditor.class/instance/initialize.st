@@ -1,13 +1,12 @@
 as yet unclassified
 initialize
 
-	| pipeline pipelines |
+	| pipeline |
 	super initialize.
 	
-	pipelines := self universe pipelines.
-	pipeline := pipelines 
+	pipeline := self universe pipelines 
 		ifEmpty: [nil] 
-		ifNotEmpty: [pipelines detect: #runContinuously ifNone: [pipelines first]].
+		ifNotEmpty: [:pipelines | pipelines detect: #runContinuously ifNone: [pipelines first]].
 	
 	pipelineSelectionButton := (ECSSelectButton new 
 		labelBlock: #title;

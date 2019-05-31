@@ -8,5 +8,6 @@ register: aPipeline
 		forward: #newSystemRegistered from: aPipeline;
 		forward: #systemOrderChanged from: aPipeline;
 		forward: #systemUnregistered from: aPipeline;
+		forward: #pipelineExecutionModeChanged from: aPipeline;
 		
 		triggerEvent: #newPipelineRegistered with: aPipeline
