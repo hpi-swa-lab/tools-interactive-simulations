@@ -1,6 +1,8 @@
 events
 handleKeyDown: anEvent
 
-	((self queryList: {KeyEvent}) noneSatisfy: [:list | list first key = anEvent keyCharacter]) ifTrue: [
-		self spawnNewWith: {KeyEvent} do: [:event | event key: anEvent keyCharacter]].
+	| key |
+	key := self normalizedKeyCharacter: anEvent.
+	((self queryList: {KeyEvent}) noneSatisfy: [:list | list first key = key]) ifTrue: [
+		self spawnNewWith: {KeyEvent} do: [:event | event key: key]].
 	self triggerEvent: #externalEvent with: anEvent
