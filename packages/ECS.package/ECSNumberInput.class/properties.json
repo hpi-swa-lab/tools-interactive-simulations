@@ -12,7 +12,8 @@
 		"isDown",
 		"lastMousePosition",
 		"value",
-		"onChange" ],
+		"onChange",
+		"oldCursor" ],
 	"name" : "ECSNumberInput",
 	"pools" : [
 		 ],

@@ -14,9 +14,10 @@
 		"mouseDown:" : "T 5/27/2019 10:13",
 		"mouseMove:" : "T 5/27/2019 10:16",
 		"mouseUp:" : "T 5/27/2019 10:13",
-		"setUp" : "TB 5/31/2019 06:40",
+		"postTick" : "TB 5/31/2019 07:04",
+		"setUp" : "TB 5/31/2019 07:05",
 		"stepTime" : "T 5/27/2019 18:08",
 		"systemUniverse" : "T 5/27/2019 10:12",
 		"systemUniverse:" : "T 5/16/2019 16:11",
-		"tick" : "T 5/27/2019 10:13",
+		"tickUniverse" : "TB 5/31/2019 07:04",
 		"wantsKeyboardFocus" : "T 4/14/2019 08:51" } }

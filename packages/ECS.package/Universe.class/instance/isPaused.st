@@ -1,4 +1,4 @@
-accessing
+mainloop
 isPaused
 
 	^ running not

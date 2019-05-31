@@ -2,4 +2,5 @@ as yet unclassified
 mouseUp: anEvent
 
 	super mouseUp: anEvent.
-	isDown := false
+	isDown := false.
+	oldCursor ifNotNil: #show

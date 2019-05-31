@@ -2,8 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
-		"initialize" : "TB 5/30/2019 22:33",
+		"initialize" : "TB 5/31/2019 07:10",
 		"spawnNewEntity" : "T 5/27/2019 18:29",
+		"stepForward" : "TB 5/31/2019 07:06",
 		"title" : "T 5/15/2019 11:25",
 		"togglePause" : "T 5/15/2019 11:27",
 		"updateIcon" : "T 5/23/2019 08:50" } }

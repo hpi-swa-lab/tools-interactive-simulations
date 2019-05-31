@@ -4,11 +4,12 @@ toggleRecording
 	recording
 		ifFalse: [
 			recording := true.
-			startTime := Time millisecondClockValue.
+			self universe query: {DeltaTime} do: [:deltaTime | startTime := deltaTime elapsed].
 			recordIcon changeIconName: #iconStop.
 			componentSnapshot := self universe components veryDeepCopy]
 		ifTrue: [
 			recording := false.
-			endTime := Time millisecondClockValue.
+			self universe query: {DeltaTime} do: [:deltaTime | endTime := deltaTime elapsed].
 			recordIcon changeIconName: #iconCircle.
-			self startStepping: #playSnapshot at: Time millisecondClockValue arguments: nil stepTime: (endTime - startTime)]
+			self universe when: #tick send: #checkReplay to: self.
+			"self startStepping: #playSnapshot at: Time millisecondClockValue arguments: nil stepTime: (endTime - startTime)"]
