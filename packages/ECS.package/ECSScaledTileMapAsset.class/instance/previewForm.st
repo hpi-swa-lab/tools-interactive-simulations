@@ -1,0 +1,4 @@
+accessing
+previewForm
+
+	^ self form
