@@ -9,7 +9,8 @@
 		"position",
 		"leftJustUp",
 		"leftJustDown",
-		"leftDown" ],
+		"leftDown",
+		"wheelDelta" ],
 	"name" : "Mouse",
 	"pools" : [
 		 ],

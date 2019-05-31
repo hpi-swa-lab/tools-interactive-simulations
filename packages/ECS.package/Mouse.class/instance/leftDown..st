@@ -1,5 +1,6 @@
 as yet unclassified
-leftDown: aBoolean
-	<ecsType: #Boolean>
+leftDown: anObject
 
-	leftDown := aBoolean
+	<ecsType: #Boolean>
+	leftDown := anObject.
+	self recordChange: anObject to: #leftDown

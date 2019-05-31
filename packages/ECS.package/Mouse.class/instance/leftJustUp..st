@@ -1,5 +1,6 @@
 as yet unclassified
-leftJustUp: aBoolean
-	<ecsType: #Boolean>
+leftJustUp: anObject
 
-	leftJustUp := aBoolean
+	<ecsType: #Boolean>
+	leftJustUp := anObject.
+	self recordChange: anObject to: #leftJustUp

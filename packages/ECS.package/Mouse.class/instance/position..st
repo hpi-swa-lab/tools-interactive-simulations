@@ -1,5 +1,6 @@
 as yet unclassified
-position: aPoint
-	<ecsType: #ECSVector2>
+position: anObject
 
-	position := aPoint
+	<ecsType: #ECSVector2>
+	position := anObject.
+	self recordChange: anObject to: #position

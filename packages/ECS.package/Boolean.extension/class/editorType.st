@@ -1,0 +1,4 @@
+*ECS
+editorType
+
+	^ ECSBooleanInput

@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ECSBooleanInput",
+	"pools" : [
+		 ],
+	"super" : "ECSNumberInput",
+	"type" : "normal" }

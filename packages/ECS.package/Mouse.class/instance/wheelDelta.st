@@ -1,5 +1,5 @@
 as yet unclassified
-position
+wheelDelta
 
 	<ecsType: #ECSVector2>
-	^ position
+	^ wheelDelta

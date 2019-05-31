@@ -1,5 +1,5 @@
 as yet unclassified
 leftJustDown
-	<ecsType: #Boolean>
 
+	<ecsType: #Boolean>
 	^ leftJustDown
