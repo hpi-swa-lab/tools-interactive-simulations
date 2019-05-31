@@ -6,8 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "ECSTileMapAsset",
+		"scale",
+		"form" ],
+	"name" : "ECSScaledTileMapAsset",
 	"pools" : [
 		 ],
 	"super" : "ECSAsset",
