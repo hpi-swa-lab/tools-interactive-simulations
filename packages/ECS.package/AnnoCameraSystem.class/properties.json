@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Anno",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "AnnoCameraSystem",
+	"pools" : [
+		 ],
+	"super" : "System",
+	"type" : "normal" }

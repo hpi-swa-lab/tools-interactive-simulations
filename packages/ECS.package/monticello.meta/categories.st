@@ -8,3 +8,4 @@ SystemOrganization addCategory: #'ECS-Test'!
 SystemOrganization addCategory: #'ECS-Tools'!
 SystemOrganization addCategory: #'ECS-Experiments'!
 SystemOrganization addCategory: #'ECS-Plumbing'!
+SystemOrganization addCategory: #'ECS-Anno'!
