@@ -1,4 +1,4 @@
 as yet unclassified
 atForRead: aNumber
 
-	^ (alive atForRead: aNumber) ifTrue: [aNumber] ifFalse: []
+	^ (alive atForRead: aNumber) ifTrue: [aNumber] ifFalse: [0]

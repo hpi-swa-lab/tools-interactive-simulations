@@ -17,4 +17,5 @@ initialize
 	self updateIcon.
 	
 	self addMorphBack: ECSRow new.
+	self addMorphBack: (ECSButton new when: #clicked send: #saveSnapshot to: self; icon: ECSIcon iconSave).
 	self addMorphBack: self header small
