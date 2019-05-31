@@ -5,4 +5,5 @@ openForId: anEntityId universe: aUniverse
 	filter := (ECSEntityComponentFilter newFor: aUniverse)
 		queryString: 'self queryById: ', anEntityId;
 		openDetached.
-	ActiveWorld activeHand attachMorph: filter owner
+	
+	"ActiveWorld activeHand attachMorph: "filter owner openAsTool

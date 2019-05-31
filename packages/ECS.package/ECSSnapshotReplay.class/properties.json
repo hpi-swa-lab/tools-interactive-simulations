@@ -7,10 +7,12 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"recording",
+		"looping",
 		"startTime",
 		"componentSnapshot",
 		"endTime",
-		"recordIcon" ],
+		"recordIcon",
+		"eventHistory" ],
 	"name" : "ECSSnapshotReplay",
 	"pools" : [
 		 ],

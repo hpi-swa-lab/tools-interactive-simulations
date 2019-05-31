@@ -2,7 +2,10 @@
 	"class" : {
 		 },
 	"instance" : {
-		"checkReplay" : "TB 5/31/2019 06:50",
-		"initialize" : "TB 5/30/2019 22:35",
-		"playSnapshot" : "TB 5/31/2019 06:30",
-		"toggleRecording" : "TB 5/31/2019 06:49" } }
+		"assignStateToUniverse:" : "TB 5/31/2019 08:57",
+		"checkReplay" : "TB 5/31/2019 09:05",
+		"initialize" : "TB 5/31/2019 08:42",
+		"playSnapshot" : "TB 5/31/2019 08:57",
+		"recordEvent:" : "TB 5/31/2019 08:59",
+		"toggleLooping" : "TB 5/31/2019 08:55",
+		"toggleRecording" : "TB 5/31/2019 09:02" } }

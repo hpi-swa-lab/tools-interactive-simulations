@@ -1,5 +1,5 @@
 as yet unclassified
 force: aPoint
-	<ecsType: #Number>
+	<ecsType: #ECSVector2>
 
 	force := aPoint

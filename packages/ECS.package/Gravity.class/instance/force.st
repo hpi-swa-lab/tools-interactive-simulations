@@ -1,5 +1,5 @@
 as yet unclassified
 force
-	<ecsType: #Number>
+	<ecsType: #ECSVector2>
 
 	^ force
