@@ -1,0 +1,15 @@
+{
+	"category" : "ECS-Data",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "TB 5/31/2019 11:03",
+	"instvars" : [
+		"form",
+		"assets" ],
+	"name" : "ECSTileMapBundle",
+	"pools" : [
+		 ],
+	"super" : "ECSAssetBundle",
+	"type" : "normal" }

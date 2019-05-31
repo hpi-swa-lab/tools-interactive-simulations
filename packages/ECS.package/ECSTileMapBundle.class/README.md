@@ -1,0 +1,1 @@
+An ECSTileMapBundle deconstructs a single square image with tiles that a 1px boundary

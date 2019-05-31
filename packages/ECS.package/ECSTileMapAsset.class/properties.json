@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Data",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"sourceRect" ],
+	"name" : "ECSTileMapAsset",
+	"pools" : [
+		 ],
+	"super" : "ECSAsset",
+	"type" : "normal" }

@@ -5,11 +5,11 @@
 		"formAt:size:" : "T 5/11/2019 20:36",
 		"loadForm:" : "T 5/11/2019 20:25",
 		"open" : "T 5/17/2019 22:28",
-		"registerAssetBundle:forDirectory:" : "T 5/16/2019 21:51",
+		"registerAssetBundle:forDirectory:requestedIdentifier:assetClass:" : "TB 5/31/2019 11:00",
 		"registerMissingAssetBundle:" : "T 5/16/2019 22:08" },
 	"instance" : {
 		"addAsset:" : "T 5/17/2019 22:27",
-		"addAssetBundle" : "T 5/16/2019 21:47",
+		"addAssetBundle" : "TB 5/31/2019 10:55",
 		"chooseAssetBundle" : "T 5/16/2019 22:35",
 		"closeOnPick" : "T 5/17/2019 22:27",
 		"closeOnPick:" : "T 5/17/2019 22:26",

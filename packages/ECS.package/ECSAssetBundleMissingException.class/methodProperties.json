@@ -2,7 +2,12 @@
 	"class" : {
 		 },
 	"instance" : {
+		"assetClass" : "TB 5/31/2019 10:56",
+		"assetClass:" : "TB 5/31/2019 10:56",
 		"bundleName" : "T 5/16/2019 21:48",
 		"bundleName:" : "T 5/16/2019 21:48",
-		"defaultAction" : "T 5/16/2019 22:09",
+		"chooseFileOrFolder:" : "TB 5/31/2019 11:10",
+		"defaultAction" : "TB 5/31/2019 11:08",
+		"identifier" : "TB 5/31/2019 10:47",
+		"identifier:" : "TB 5/31/2019 10:47",
 		"isResumable" : "T 5/16/2019 21:43" } }

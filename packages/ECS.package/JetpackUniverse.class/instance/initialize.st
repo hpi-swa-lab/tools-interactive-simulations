@@ -35,7 +35,7 @@ initialize
 		jetpack acceleration: 300; fuel: 200; capacity: 200.
 		weapon cooldown: 100; lastShotTime: 0.
 		input left: $a; right: $d; up: $w; down: $s; shoot: $c; acceleration: 30.
-		rendered color: ECSColor red; form: (ECSAsset of: #platformer_base at: 'Player/p2_front.png' sized: 66 , 92)].
+		rendered color: ECSColor red; form: (ECSImageAsset of: #platformer_base at: 'Player/p2_front.png' sized: 66 , 92)].
 	
 	player2 := self spawnNewWith: {Label. Transform. Colliding. Physics. PlayerInput. Rendered} do: [:label :transform :colliding :physics :input :rendered |
 		label label: 'player2'.

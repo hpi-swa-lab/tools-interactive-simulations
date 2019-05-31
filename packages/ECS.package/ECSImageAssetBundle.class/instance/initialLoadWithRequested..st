@@ -1,5 +1,5 @@
 as yet unclassified
-updatePreviews
+initialLoadWithRequested: anIdentifierObject
 
 	assets := Dictionary new.
 	
@@ -9,4 +9,4 @@ updatePreviews
 		thenDo: [:name |
 			assets
 				at: (name allButFirst: self path fullName size + 1)
-				put: (ECSAsset new updateFile: (FileDirectory on: name))]
+				put: (ECSImageAsset new updateFile: (FileDirectory on: name))]

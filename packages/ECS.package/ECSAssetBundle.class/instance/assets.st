@@ -1,4 +1,5 @@
 as yet unclassified
 assets
+	" dictionary of identifier ->  ECSAsset subclass pairs "
 
-	^ assets
+	^ self subclassResponsibility
