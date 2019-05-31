@@ -1,4 +1,7 @@
 system-world-events
 mouseMove: anEvent
 
-	self systemUniverse query: {Mouse} do: [:mouse | mouse position: (anEvent position - self position) asECSVector2]
+	| translatedEvent |
+	translatedEvent := anEvent copy position: anEvent position - self position.
+	self systemUniverse mouseMove: translatedEvent.
+	self triggerEvent: #externalEvent with: translatedEvent

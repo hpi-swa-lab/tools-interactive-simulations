@@ -1,4 +1,5 @@
 system-world-events
 mouseUp: anEvent
 
-	systemUniverse query: {Mouse} do: [:mouse | mouse leftJustUp: true; leftDown: false]
+	self systemUniverse mouseUp: anEvent.
+	self triggerEvent: #externalEvent with: anEvent

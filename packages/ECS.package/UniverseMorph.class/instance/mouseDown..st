@@ -1,6 +1,6 @@
 system-world-events
 mouseDown: anEvent
 
-	systemUniverse query: {Mouse} do: [:mouse | mouse leftJustDown: true; leftDown: true].
-	
+	self systemUniverse mouseDown: anEvent.
+	self triggerEvent: #externalEvent with: anEvent.
 	self grabKeyboard
