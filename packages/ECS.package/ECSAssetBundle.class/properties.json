@@ -4,9 +4,8 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "TB 5/31/2019 11:25",
 	"instvars" : [
-		"assets",
 		"title",
 		"path" ],
 	"name" : "ECSAssetBundle",

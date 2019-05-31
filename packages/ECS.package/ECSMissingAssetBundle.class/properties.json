@@ -6,10 +6,10 @@
 		 ],
 	"commentStamp" : "T 5/16/2019 22:01",
 	"instvars" : [
-		"title",
-		"previewForm" ],
+		"previewForm",
+		"asset" ],
 	"name" : "ECSMissingAssetBundle",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "ECSAssetBundle",
 	"type" : "normal" }

@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Data",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ECSMissingAsset",
+	"pools" : [
+		 ],
+	"super" : "ECSAsset",
+	"type" : "normal" }

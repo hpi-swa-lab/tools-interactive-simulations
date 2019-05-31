@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Data",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"assets" ],
+	"name" : "ECSImageAssetBundle",
+	"pools" : [
+		 ],
+	"super" : "ECSAssetBundle",
+	"type" : "normal" }

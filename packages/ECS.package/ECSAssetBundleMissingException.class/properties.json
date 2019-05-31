@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"previewForm",
-		"object",
-		"bundleName" ],
+		"bundleName",
+		"identifier",
+		"assetClass" ],
 	"name" : "ECSAssetBundleMissingException",
 	"pools" : [
 		 ],

@@ -1,0 +1,16 @@
+{
+	"category" : "ECS-Data",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"previewForm",
+		"object",
+		"isDerived" ],
+	"name" : "ECSImageAsset",
+	"pools" : [
+		 ],
+	"super" : "ECSAsset",
+	"type" : "normal" }

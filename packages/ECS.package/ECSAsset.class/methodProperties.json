@@ -1,22 +1,14 @@
 {
 	"class" : {
 		"editorType" : "T 5/27/2019 16:20",
-		"of:at:" : "T 5/16/2019 21:52",
-		"of:at:sized:" : "T 5/16/2019 21:58",
-		"previewSize" : "T 5/16/2019 17:22" },
+		"of:at:" : "TB 5/31/2019 11:11",
+		"previewSize" : "T 5/16/2019 17:22",
+		"wantsFileChooser" : "TB 5/31/2019 11:06" },
 	"instance" : {
 		"bundle" : "T 5/30/2019 14:36",
 		"bundle:" : "T 5/30/2019 14:36",
-		"initialize" : "T 5/16/2019 21:57",
-		"isDerived" : "T 5/30/2019 14:38",
-		"isDerived:" : "T 5/16/2019 21:56",
-		"isSource" : "T 5/16/2019 21:57",
-		"object" : "T 5/16/2019 17:20",
-		"object:" : "T 5/16/2019 17:20",
-		"path" : "T 5/30/2019 14:36",
-		"path:" : "T 5/30/2019 14:36",
-		"previewForm" : "T 5/16/2019 22:33",
-		"previewForm:" : "T 5/16/2019 17:20",
-		"storeOn:" : "T 5/30/2019 14:37",
-		"updateFile:" : "T 5/16/2019 22:32",
-		"updatePreview" : "T 5/16/2019 22:33" } }
+		"drawOn:at:" : "TB 5/31/2019 10:29",
+		"identifier" : "TB 5/31/2019 10:29",
+		"identifier:" : "TB 5/31/2019 10:29",
+		"isSource" : "TB 5/31/2019 11:30",
+		"previewForm" : "TB 5/31/2019 11:16" } }

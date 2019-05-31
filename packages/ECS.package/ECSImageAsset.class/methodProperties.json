@@ -1,0 +1,18 @@
+{
+	"class" : {
+		"bundleClass" : "TB 5/31/2019 10:56",
+		"of:at:sized:" : "TB 5/31/2019 11:10",
+		"wantsFileChooser" : "TB 5/31/2019 11:06" },
+	"instance" : {
+		"drawOn:at:" : "TB 5/31/2019 10:07",
+		"initialize" : "T 5/16/2019 21:57",
+		"isDerived" : "T 5/30/2019 14:38",
+		"isDerived:" : "T 5/16/2019 21:56",
+		"isSource" : "T 5/16/2019 21:57",
+		"object" : "T 5/16/2019 17:20",
+		"object:" : "T 5/16/2019 17:20",
+		"previewForm" : "T 5/16/2019 22:33",
+		"previewForm:" : "T 5/16/2019 17:20",
+		"storeOn:" : "TB 5/31/2019 10:30",
+		"updateFile:" : "TB 5/31/2019 10:37",
+		"updatePreview" : "TB 5/31/2019 10:38" } }
