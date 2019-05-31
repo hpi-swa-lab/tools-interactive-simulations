@@ -3,7 +3,7 @@
 		"newFor:pipeline:" : "cmfcmf 5/30/2019 14:49" },
 	"instance" : {
 		"addMethodTo:" : "ek 5/17/2019 15:24",
-		"addSystem" : "cf 5/27/2019 16:12",
+		"addSystem" : "cmfcmf 5/31/2019 13:36",
 		"addSystemToUI:" : "cf 5/28/2019 09:14",
 		"buildMethodUIElementfor:of:" : "ek 5/17/2019 15:51",
 		"buildRequiredMethodUIElementfor:of:" : "ek 5/17/2019 14:50",
@@ -27,4 +27,4 @@
 		"togglePaused:button:" : "cf 5/28/2019 08:42",
 		"toggleRunContinuously" : "cmfcmf 5/31/2019 11:26",
 		"unregisterPipelineAndDeleteMyself" : "cmfcmf 5/30/2019 22:00",
-		"when:forCurrentPipelineThenSend:" : "cf 5/28/2019 08:08" } }
+		"when:forCurrentPipelineThenSend:" : "cmfcmf 5/31/2019 13:40" } }

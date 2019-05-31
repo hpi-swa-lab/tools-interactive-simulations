@@ -6,11 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"receiver",
-		"message",
-		"filterBlock" ],
+		"message" ],
 	"name" : "ECSEventFilterer",
 	"pools" : [
 		 ],
 	"super" : "Object",
-	"type" : "normal" }
+	"type" : "weak" }

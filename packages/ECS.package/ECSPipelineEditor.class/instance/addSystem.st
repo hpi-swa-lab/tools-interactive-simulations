@@ -4,7 +4,7 @@ addSystem
 	| name class |
 	
 	name := UIManager default
-		chooseFromOrAddTo: (System subclasses collect: [:systemClass | systemClass name asSymbol])
+		chooseFromOrAddTo: (System subclasses collect: #name) sorted
 		lines: OrderedCollection new
 		title: 'Choose existing or create new system to add'.
 	(name isNil or: [name isEmpty] or: [(systemsInUI keys collect: [:system | system className asSymbol]) includes: name asSymbol])

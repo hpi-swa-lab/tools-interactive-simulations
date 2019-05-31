@@ -1,4 +1,4 @@
 accessing
 receiver: anObject
 
-	receiver := anObject
+	self at: 1 put: anObject

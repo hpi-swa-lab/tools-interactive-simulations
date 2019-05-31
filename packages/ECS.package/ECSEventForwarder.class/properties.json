@@ -6,11 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"receiver",
-		"event",
-		"prependedValue" ],
+		"event" ],
 	"name" : "ECSEventForwarder",
 	"pools" : [
 		 ],
 	"super" : "Object",
-	"type" : "normal" }
+	"type" : "weak" }

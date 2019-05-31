@@ -1,5 +1,5 @@
 evaluating
 valueWithArguments: aCollection
 
-	(self filterBlock value: aCollection) ifTrue: [
+	aCollection first = self firstArgumentFilter ifTrue: [
 		self receiver perform: self message withArguments: aCollection allButFirst]

@@ -1,4 +1,4 @@
 accessing
-prependedValue
+firstArgumentFilter
 
 	^ self at: 2

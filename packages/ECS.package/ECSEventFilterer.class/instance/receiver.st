@@ -1,4 +1,4 @@
 accessing
 receiver
 
-	^ receiver
+	^ self at: 1

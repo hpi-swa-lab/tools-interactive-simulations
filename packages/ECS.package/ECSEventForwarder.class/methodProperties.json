@@ -1,14 +1,14 @@
 {
 	"class" : {
-		 },
+		"new" : "cmfcmf 5/31/2019 13:43" },
 	"instance" : {
 		"event" : "cf 5/27/2019 16:52",
 		"event:" : "cf 5/27/2019 16:52",
 		"isReceiverOrAnyArgumentGarbage" : "cf 5/27/2019 16:56",
-		"prependedValue" : "cf 5/27/2019 16:54",
-		"prependedValue:" : "cf 5/27/2019 16:54",
-		"receiver" : "cf 5/27/2019 16:52",
-		"receiver:" : "cf 5/27/2019 16:52",
+		"prependedValue" : "cmfcmf 5/31/2019 13:43",
+		"prependedValue:" : "cmfcmf 5/31/2019 13:43",
+		"receiver" : "cmfcmf 5/31/2019 13:11",
+		"receiver:" : "cmfcmf 5/31/2019 13:11",
 		"value" : "cf 5/27/2019 16:54",
 		"valueWithArguments:" : "cf 5/27/2019 16:54",
 		"valueWithArguments:otherwise:" : "cf 5/28/2019 08:44" } }

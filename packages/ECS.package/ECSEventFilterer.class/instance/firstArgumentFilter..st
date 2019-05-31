@@ -1,4 +1,4 @@
 accessing
-prependedValue: anObject
+firstArgumentFilter: anObject
 
 	self at: 2 put: anObject
