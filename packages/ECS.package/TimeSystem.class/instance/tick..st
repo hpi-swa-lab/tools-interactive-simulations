@@ -8,6 +8,7 @@ tick: aUniverse
 			milliseconds: now - deltaTime last;
 			last: now.
 		
+		deltaTime elapsed: deltaTime elapsed + deltaTime milliseconds.
 		deltaTime fpsAccumulated: deltaTime fpsAccumulated + deltaTime milliseconds.
 		deltaTime numAccumulated: deltaTime numAccumulated + 1.
 		deltaTime numAccumulated >= 20 ifTrue: [

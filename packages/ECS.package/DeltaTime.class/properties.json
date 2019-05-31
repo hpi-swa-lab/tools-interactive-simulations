@@ -10,7 +10,8 @@
 		"last",
 		"fpsAccumulated",
 		"fpsAverage",
-		"numAccumulated" ],
+		"numAccumulated",
+		"elapsed" ],
 	"name" : "DeltaTime",
 	"pools" : [
 		 ],

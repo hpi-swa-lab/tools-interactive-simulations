@@ -16,7 +16,8 @@ initializeFor: aUniverse
 		fullFrame: (LayoutFrame fractions: (0.1 @ 0 corner: 0.8 @ 0.8)).
 	self
 		addMorph: (ECSPanel new
-			addMorphBack: (ECSControlBar newFor: universe))
+			addMorphBack: (ECSControlBar newFor: universe);
+			addMorphBack: (ECSSnapshotReplay newFor: universe))
 		fullFrame: (LayoutFrame fractions: (0.0 @ 0.8 corner: 0.8 @ 1.0)).
 	self
 		addMorph: (ECSPanel new

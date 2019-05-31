@@ -22,7 +22,7 @@ initialize
 	self
 		spawnNewWith: {Gravity. DeltaTime. ScreenSize. Mouse} do: [:gravity :time :size :mouse |
 			gravity force: 0,500.
-			time milliseconds: 0; last: Time millisecondClockValue.
+			time milliseconds: 0; last: Time millisecondClockValue; elapsed: 0.
 			size size: 0,0.
 			mouse position: 0 , 0; leftJustDown: false; leftJustUp: false; leftDown: false];
 		register: pipeline.

@@ -1,0 +1,18 @@
+{
+	"category" : "ECS-Tools",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"recording",
+		"startTime",
+		"componentSnapshot",
+		"endTime",
+		"recordIcon" ],
+	"name" : "ECSSnapshotReplay",
+	"pools" : [
+		 ],
+	"super" : "ECSTool",
+	"type" : "normal" }

@@ -1,4 +1,4 @@
-pipelines
+mainloop
 pause
 
 	running := false.
