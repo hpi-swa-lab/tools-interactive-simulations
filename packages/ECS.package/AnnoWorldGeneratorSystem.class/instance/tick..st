@@ -18,11 +18,11 @@ tick: aUniverse
 		ECSImageAsset of: #anno at: '1464.png' sized: 64 , 48.
 	}.
 	
-	(0 to: MapSize - 1) do: [:x |
-		(0 to: MapSize - 1) do: [:y |
-			aUniverse spawnNewWith: {Label. AnnoTile. Rendered} do: [:label :annoTile :rendered | | growTree |
-				growTree := (random nextInt: 2) = 2.
-				label label: 'Tile ', x, ',', y.
-				rendered color: (ECSColor rgba: (16rff000000 + (random nextInt: 16rffffff))).
-				rendered form: (growTree ifTrue: [trees atRandom: random] ifFalse: [grass]).
-				annoTile position: (ECSVector2 x: x y: y)]]]
+	(0 to: MapSize - 1) do: [:x | (0 to: MapSize - 1) do: [:y |
+		aUniverse spawnNewWith: {Label. AnnoTile. Rendered} do: [:label :annoTile :rendered |
+			| growTree |
+			growTree := (random nextInt: 2) = 2.
+			label label: 'Tile ', x, ',', y.
+			rendered color: (ECSColor rgba: (16rff000000 + (random nextInt: 16rffffff))).
+			rendered form: (growTree ifTrue: [trees atRandom: random] ifFalse: [grass]).
+			annoTile position: (ECSVector2 x: x y: y)]]]
