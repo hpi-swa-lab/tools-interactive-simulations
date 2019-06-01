@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Onebit",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "OnebitUniverse",
+	"pools" : [
+		 ],
+	"super" : "Universe",
+	"type" : "normal" }

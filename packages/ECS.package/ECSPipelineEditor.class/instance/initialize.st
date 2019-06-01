@@ -26,6 +26,7 @@ initialize
 		icon: (ECSIcon iconPlus);
 		when: #clicked send: #addSystem to: self).
 	header addMorphBack: runContinuouslyButton.
+	header addMorphBack: (runOnceButton := (ECSButton new icon: ECSIcon iconPlay; when: #clicked send: #runOnce to: self)).
 	header addMorphBack: (ECSButton new
 		icon: (ECSIcon iconTrash);
 		when: #clicked send: #unregisterPipelineAndDeleteMyself to: self).

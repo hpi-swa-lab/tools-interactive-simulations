@@ -11,7 +11,8 @@
 		"list",
 		"systemFunctionsAreasInUI",
 		"nonRequiredFunctionsInUI",
-		"runContinuouslyButton" ],
+		"runContinuouslyButton",
+		"runOnceButton" ],
 	"name" : "ECSPipelineEditor",
 	"pools" : [
 		 ],
