@@ -7,4 +7,5 @@ addMethodTo: aSystem
 	
 	aSystem class compile: methodSignature, String cr, String cr, String tab.
 	
-	(systemFunctionsAreasInUI at: aSystem) addMorphBack: (self buildMethodUIElementfor: methodSignature asSymbol of: aSystem)
+	(systemFunctionsAreasInUI at: aSystem) addMorphBack: 
+		(self buildMethodUIElementfor: methodSignature findSelector asSymbol of: aSystem)
