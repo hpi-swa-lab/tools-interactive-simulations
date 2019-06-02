@@ -2,8 +2,10 @@
 	"class" : {
 		"storage" : "TB 6/2/2019 13:27" },
 	"instance" : {
+		"dt" : "TB 6/2/2019 13:29",
 		"elapsed" : "TB 6/2/2019 13:27",
 		"elapsed:" : "TB 6/2/2019 13:27",
+		"fps" : "TB 6/2/2019 13:29",
 		"fpsAccumulated" : "TB 6/2/2019 13:27",
 		"fpsAccumulated:" : "TB 6/2/2019 13:27",
 		"fpsAverage" : "TB 6/2/2019 13:27",
