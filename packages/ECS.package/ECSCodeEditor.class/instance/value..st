@@ -1,4 +1,4 @@
 as yet unclassified
 value: aString
 
-	self changeText: aString
+	self content: aString

@@ -10,7 +10,7 @@ initialize
 	self privateQueryString: 'self query: {Label}'.
 	
 	self queryEditor: (ECSCodeEditor new 
-		changeText: self queryString;
+		content: self queryString;
 		doItIsAccept: true;
 		acceptAction: [:text |
 			self queryString: text asString.

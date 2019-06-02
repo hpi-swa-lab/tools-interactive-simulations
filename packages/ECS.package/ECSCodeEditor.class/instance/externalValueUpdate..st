@@ -1,4 +1,4 @@
 as yet unclassified
 externalValueUpdate: aString
 
-	self changeText: aString
+	self hasUnacceptedEdits ifFalse: [self content: aString]
