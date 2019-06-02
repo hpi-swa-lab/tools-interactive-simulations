@@ -5,7 +5,7 @@
 		"addMethodTo:" : "cmfcmf 6/1/2019 11:32",
 		"addSystem" : "cmfcmf 5/31/2019 13:36",
 		"addSystemToUI:" : "cf 5/28/2019 09:14",
-		"buildMethodUIElementfor:of:" : "TB 6/2/2019 08:20",
+		"buildMethodUIElementfor:of:" : "TB 6/2/2019 20:13",
 		"buildRequiredMethodUIElementfor:of:" : "TB 6/2/2019 08:22",
 		"buildSystemFunctionsAreaAndFillItFor:" : "ek 5/17/2019 15:44",
 		"createNewSystemClass:" : "cmfcmf 5/30/2019 14:32",
@@ -28,4 +28,5 @@
 		"togglePaused:button:" : "cf 5/28/2019 08:42",
 		"toggleRunContinuously" : "cmfcmf 5/31/2019 11:26",
 		"unregisterPipelineAndDeleteMyself" : "cmfcmf 5/30/2019 22:00",
+		"updateMethodSelectorTo:from:in:" : "TB 6/2/2019 20:13",
 		"when:forCurrentPipelineThenSend:" : "cmfcmf 5/31/2019 13:40" } }

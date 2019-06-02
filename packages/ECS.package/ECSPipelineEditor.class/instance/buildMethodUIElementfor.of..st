@@ -5,7 +5,7 @@ buildMethodUIElementfor: aMethodSymbol of: aSystem
 	removeButton := ECSButton new
 		icon: ECSIcon iconRemove;
 		when: #clicked send: #removeMethod:from: to: self withArguments: {aMethodSymbol. aSystem}.
-
+	
 	^ ((nonRequiredFunctionsInUI at: aSystem) add: (Association
 		key: aMethodSymbol
 		value: (ECSCollapsible new
@@ -13,6 +13,6 @@ buildMethodUIElementfor: aMethodSymbol of: aSystem
 			header: removeButton;
 			body: (ECSCodeEditor new 
 				editingMethod: (aSystem class lookupSelector: aMethodSymbol);
-				"acceptAction: [:text | aSystem class compile: text asString];"
+				"when: #changedSelector send: #updateMethodSelectorTo:from:in: to: self withArguments: {nil. aMethodSymbol. aSystem};"
 				yourself);
 			collapse))) value

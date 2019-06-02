@@ -5,5 +5,5 @@ initialize
 	
 	min := 0.
 	max := 100000.
-	step := 0.01.
+	step := 1.
 	isDown := false

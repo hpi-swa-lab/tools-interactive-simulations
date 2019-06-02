@@ -18,9 +18,10 @@ register: (Pipeline new
 	title: 'Generation';
 	runContinuously: false;
 	register: OnebitGeneratorSystem new);
-spawnNewWith: {DeltaTime. ScreenSize} do: [:deltaTime :screenSize | 
-	deltaTime milliseconds: 131; last: 3736936485684; fpsAccumulated: 1136; fpsAverage: 7.964954201513342; numAccumulated: 9; elapsed: 115712.
-	screenSize size: 1302 , 762];
+spawnNewWith: {DeltaTime. OnebitConfig. ScreenSize} do: [:deltaTime :onebitConfig :screenSize | 
+	deltaTime milliseconds: 132; last: 3736950685919; fpsAccumulated: 1508; fpsAverage: 7.830853563038371; numAccumulated: 12; elapsed: 289167.
+	onebitConfig scale: 2; tileSize: 16; mapSize: 300 , 300.
+	screenSize size: 1099 , 762];
 spawnNewWith: {KeyEvent} do: [:keyEvent | 
 	keyEvent key: $Û];
 yourself
