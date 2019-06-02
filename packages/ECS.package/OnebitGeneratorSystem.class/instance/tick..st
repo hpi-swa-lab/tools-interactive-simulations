@@ -6,7 +6,7 @@ tick: aUniverse
 	
 	aUniverse query: {ScreenSize} do: [:screenSize |
 		100 timesRepeat: [
-			self spawn: (5 atRandom , 1) at: (screenSize size // 64) atRandom in: aUniverse]].
+			self spawn: (5 atRandom , 1) at: (100 , 100) atRandom - (50 , 50) in: aUniverse]].
 	
 	aUniverse
 		spawnNewWith: {Transform. Rendered. Health. PlayerInput. Label. OnebitCameraFocus}

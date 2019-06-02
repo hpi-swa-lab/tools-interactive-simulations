@@ -3,7 +3,7 @@ initialize
 
 	super initialize.
 	
-	self addMorphBack: (ECSScrollPane new setMorph: (list := ECSColumn new)).
+	self addMorphBack: (list := ECSTextList new when: #activate send: #openComponent: to: self).
 	self addMorphBack: (ECSToolResizer new target: self).
 	
 	self header addMorphBack: (ECSButton new small; icon: ECSIcon iconPlus; when: #clicked send: #addComponent to: self).

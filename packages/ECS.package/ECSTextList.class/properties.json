@@ -1,0 +1,15 @@
+{
+	"category" : "ECS-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"labels",
+		"selectedIndex" ],
+	"name" : "ECSTextList",
+	"pools" : [
+		 ],
+	"super" : "PluggableListMorphPlus",
+	"type" : "normal" }
