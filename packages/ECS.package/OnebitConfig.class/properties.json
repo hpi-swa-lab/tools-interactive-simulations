@@ -6,9 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "OnebitFireSystem",
+		"scale",
+		"tileSize" ],
+	"name" : "OnebitConfig",
 	"pools" : [
 		 ],
-	"super" : "System",
+	"super" : "EntityComponent",
 	"type" : "normal" }

@@ -2,13 +2,13 @@
 	"class" : {
 		"example" : "cf 5/27/2019 15:49",
 		"newFor:" : "T 5/15/2019 11:16",
-		"openFor:" : "cf 5/15/2019 11:20" },
+		"openFor:" : "TB 6/2/2019 09:38" },
 	"instance" : {
 		"attached" : "T 5/14/2019 21:32",
 		"detachNow:" : "T 5/23/2019 16:40",
 		"header" : "T 5/23/2019 07:56",
 		"initialize" : "T 5/15/2019 11:03",
-		"openDetached" : "T 5/14/2019 21:32",
+		"openDetached" : "TB 6/2/2019 09:38",
 		"title" : "T 5/13/2019 18:55",
 		"universe" : "T 5/15/2019 11:15",
 		"universe:" : "T 5/15/2019 11:15" } }

@@ -12,7 +12,7 @@ initializeFor: aUniverse
 		addMorph: (ECSTemplateBrowser newFor: universe)
 		fullFrame: (LayoutFrame fractions: (0 @ 0.0 corner: 0.1 @ 0.8)).
 	self
-		addMorph: (UniverseMorph new systemUniverse: universe)
+		addMorph: (UniverseMorph new universe: universe)
 		fullFrame: (LayoutFrame fractions: (0.1 @ 0 corner: 0.8 @ 0.8)).
 	self
 		addMorph: (ECSPanel new

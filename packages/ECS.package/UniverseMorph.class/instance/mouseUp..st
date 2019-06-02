@@ -1,4 +1,4 @@
 system-world-events
 mouseUp: anEvent
 
-	self systemUniverse handleMouseUp: anEvent
+	self universe handleMouseUp: anEvent

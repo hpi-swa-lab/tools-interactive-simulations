@@ -6,6 +6,7 @@ initialize
 	pipelines := OrderedCollection new.
 	drawingBlocks := OrderedCollection new.
 	templates := OrderedCollection new.
+	stepTime := 0.
 	
 	self resetEntityList.
 	

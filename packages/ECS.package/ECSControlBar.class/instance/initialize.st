@@ -14,6 +14,10 @@ initialize
 	self addMorphBack: (ECSButton new when: #clicked send: #togglePause to: self; icon: (pauseIcon := ECSIcon new large); large).
 	self addMorphBack: (ECSButton new when: #clicked send: #stepForward to: self; icon: ECSIcon iconStep_forward).
 	self addMorphBack: (stepMilliseconds := ECSNumberInput new value: 16; min: 0).
+	
+	self addMorphBack: (ECSLabel contents: 'Step Time: ').
+	self addMorphBack: (ECSNumberInput new value: self universe stepTime; min: 0; onChange: [:num | self universe stepTime: num]).
+	
 	self updateIcon.
 	
 	self addMorphBack: ECSRow new.

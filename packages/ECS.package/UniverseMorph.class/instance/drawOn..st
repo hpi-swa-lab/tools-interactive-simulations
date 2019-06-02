@@ -5,5 +5,5 @@ drawOn: aCanvas
 	aCanvas
 		transformBy: (MorphicTransform offset: self position negated)
 		clippingTo: self innerBounds
-		during: [:canvas | systemUniverse drawOn: canvas]
+		during: [:canvas | universe drawOn: canvas]
 		smoothing: 1

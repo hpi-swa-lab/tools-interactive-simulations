@@ -1,4 +1,4 @@
 system-world-events
 keyDown: anEvent
 
-	self systemUniverse handleKeyDown: anEvent
+	self universe handleKeyDown: anEvent

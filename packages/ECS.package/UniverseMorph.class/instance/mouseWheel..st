@@ -1,4 +1,4 @@
 system-world-events
 mouseWheel: anEvent
 
-	self systemUniverse handleMouseWheel: anEvent
+	self universe handleMouseWheel: anEvent

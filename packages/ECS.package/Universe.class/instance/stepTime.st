@@ -1,0 +1,4 @@
+component lifecyle
+stepTime
+
+	^ stepTime

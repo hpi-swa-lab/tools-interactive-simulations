@@ -3,4 +3,4 @@ openDetached
 
 	detached := true.
 	header toolIsAttached: false.
-	self openInWindowLabeled: self title
+	(self openInWindowLabeled: self title) openAsTool

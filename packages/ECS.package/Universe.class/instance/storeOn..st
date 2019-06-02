@@ -3,6 +3,7 @@ storeOn: aStream
 
 	" have to hardcode Universe class name here because `self className` will use our subclasses' class name and thus duplicate the initialize "
 	aStream nextPutAll: Universe name; nextPutAll: ' new'; cr.
+	aStream cr; nextPutAll: 'stepTime: '. self stepTime storeOn: aStream. aStream nextPut: $;; cr.
 	
 	self pipelines do: [:pipeline |
 		aStream nextPutAll: 'register: '. pipeline storeOn: aStream. aStream nextPut: $;; cr].

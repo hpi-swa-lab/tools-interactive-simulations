@@ -1,5 +1,5 @@
 system-world-events
 mouseDown: anEvent
 
-	self systemUniverse handleMouseDown: anEvent.
+	self universe handleMouseDown: anEvent.
 	self grabKeyboard

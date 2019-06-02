@@ -12,7 +12,8 @@
 		"components",
 		"maxEntityIndex",
 		"drawingBlocks",
-		"templates" ],
+		"templates",
+		"stepTime" ],
 	"name" : "Universe",
 	"pools" : [
 		 ],
