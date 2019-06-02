@@ -1,5 +1,5 @@
 as yet unclassified
-elapsed: aNumber
+elapsed: anObject
+
 	<ecsType: #Number>
-	
-	elapsed := aNumber
+	elapsed := anObject

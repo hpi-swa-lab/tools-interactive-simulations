@@ -1,5 +1,5 @@
 as yet unclassified
-collider: anEntityId
-	<ecsType: #ECSEntityId>
+collider: anObject
 
-	collider := anEntityId
+	<ecsType: #ECSEntityId>
+	collider := anObject

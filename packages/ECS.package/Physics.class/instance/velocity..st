@@ -1,6 +1,5 @@
 as yet unclassified
-velocity: aPoint
-	<ecsType: #ECSVector2>
+velocity: anObject
 
-	velocity := aPoint.
-	self recordChange: aPoint to: #velocity
+	<ecsType: #ECSVector2>
+	velocity := anObject

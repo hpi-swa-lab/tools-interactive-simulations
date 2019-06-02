@@ -2,5 +2,6 @@ as yet unclassified
 initialize
 
 	super initialize.
-	form := nil.
-	color := Color black
+
+	color := (ECSColor rgba: 16rFF000000).
+	form := nil

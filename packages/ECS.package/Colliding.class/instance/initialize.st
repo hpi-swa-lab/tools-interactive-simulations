@@ -2,5 +2,6 @@ as yet unclassified
 initialize
 
 	super initialize.
-	
-	ignoreList := #()
+
+	ignoreList := nil.
+	group := nil

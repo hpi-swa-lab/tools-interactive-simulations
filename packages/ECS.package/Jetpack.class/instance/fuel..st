@@ -1,6 +1,5 @@
-accessing
+as yet unclassified
 fuel: anObject
+
 	<ecsType: #Number>
-	
-	fuel := anObject.
-	self recordChange: anObject to: #fuel
+	fuel := anObject

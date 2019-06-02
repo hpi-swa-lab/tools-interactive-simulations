@@ -1,5 +1,5 @@
 as yet unclassified
-last: aNumber
-	<ecsType: #Number>
+last: anObject
 
-	last := aNumber
+	<ecsType: #Number>
+	last := anObject

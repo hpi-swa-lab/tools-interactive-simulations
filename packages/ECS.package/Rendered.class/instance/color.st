@@ -1,5 +1,5 @@
 as yet unclassified
 color
-	<ecsType: #ECSColor>
 
+	<ecsType: #ECSColor>
 	^ color

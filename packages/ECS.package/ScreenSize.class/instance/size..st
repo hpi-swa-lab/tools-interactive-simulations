@@ -1,5 +1,5 @@
 as yet unclassified
-size: aPoint
-	<ecsType: #ECSVector2>
+size: anObject
 
-	size := aPoint
+	<ecsType: #ECSVector2>
+	size := anObject

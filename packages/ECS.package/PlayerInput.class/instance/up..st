@@ -1,5 +1,5 @@
 as yet unclassified
-up: aKey
-	<ecsType: #Character>
+up: anObject
 
-	up := aKey
+	<ecsType: #Character>
+	up := anObject

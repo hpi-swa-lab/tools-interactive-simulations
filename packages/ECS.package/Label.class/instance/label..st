@@ -1,6 +1,5 @@
 as yet unclassified
-label: aString
-	<ecsType: #String>
+label: anObject
 
-	label := aString.
-	self recordChange: aString to: #label
+	<ecsType: #String>
+	label := anObject

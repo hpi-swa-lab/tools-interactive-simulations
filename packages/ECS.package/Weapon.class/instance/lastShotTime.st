@@ -1,5 +1,5 @@
 as yet unclassified
 lastShotTime
-	<ecsType: #Number>
 
+	<ecsType: #Number>
 	^ lastShotTime

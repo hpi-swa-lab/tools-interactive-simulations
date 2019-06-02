@@ -1,6 +1,5 @@
-accessing
-capacity: aNumber
-	<ecsType: #Number>
+as yet unclassified
+capacity: anObject
 
-	capacity := aNumber.
-	self recordChange: aNumber to: #capacity
+	<ecsType: #Number>
+	capacity := anObject

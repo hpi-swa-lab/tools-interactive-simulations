@@ -1,6 +1,5 @@
 as yet unclassified
-friction: aNumber
-	<ecsType: #Number>
+friction: anObject
 
-	friction := aNumber.
-	self recordChange: aNumber to: #friction
+	<ecsType: #Number>
+	friction := anObject

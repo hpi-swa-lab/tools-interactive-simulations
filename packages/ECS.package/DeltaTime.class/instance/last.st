@@ -1,5 +1,5 @@
 as yet unclassified
 last
-	<ecsType: #Number>
 
+	<ecsType: #Number>
 	^ last

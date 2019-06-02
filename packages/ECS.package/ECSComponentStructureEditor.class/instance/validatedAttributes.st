@@ -1,10 +1,8 @@
 as yet unclassified
 validatedAttributes
 
-	^ instVarMorphs submorphs collect: [:each | | name className class | 
+	^ instVarMorphs submorphs collect: [:each | | name class | 
 		name := each submorphs second text asString.
-		className := each submorphs fourth text asSymbol.
+		class := each submorphs fourth value.
 		self checkAttributeName: name.
-		class := Smalltalk at: className ifAbsent: [
-			self validationError: 'The inst var type needs to be a valid class name.'].
 		{name. class}]

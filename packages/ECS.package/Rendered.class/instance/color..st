@@ -1,6 +1,5 @@
 as yet unclassified
-color: aColor
-	<ecsType: #ECSColor>
+color: anObject
 
-	color :=  aColor.
-	self recordChange: aColor to: #color
+	<ecsType: #ECSColor>
+	color := anObject

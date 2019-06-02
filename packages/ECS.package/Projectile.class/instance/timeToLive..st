@@ -1,5 +1,5 @@
 as yet unclassified
-timeToLive: aNumber
-	<ecsType: #Number>
+timeToLive: anObject
 
-	timeToLive := aNumber
+	<ecsType: #Number>
+	timeToLive := anObject

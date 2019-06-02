@@ -2,5 +2,4 @@ as yet unclassified
 timeLeft: anObject
 
 	<ecsType: #Number>
-	timeLeft := anObject.
-	self recordChange: anObject to: #timeLeft
+	timeLeft := anObject

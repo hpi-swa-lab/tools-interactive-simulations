@@ -1,19 +1,17 @@
 {
 	"class" : {
-		"storage" : "T 5/16/2019 15:29" },
+		"storage" : "TB 6/2/2019 13:27" },
 	"instance" : {
-		"dt" : "T 4/14/2019 09:15",
-		"elapsed" : "TB 5/31/2019 06:25",
-		"elapsed:" : "TB 5/31/2019 06:25",
-		"fps" : "T 4/29/2019 08:30",
-		"fpsAccumulated" : "T 5/27/2019 16:45",
-		"fpsAccumulated:" : "T 5/27/2019 16:45",
-		"fpsAverage" : "T 5/27/2019 16:45",
-		"fpsAverage:" : "T 5/27/2019 16:45",
-		"initialize" : "T 5/8/2019 11:29",
-		"last" : "T 5/27/2019 16:45",
-		"last:" : "T 5/27/2019 16:45",
-		"milliseconds" : "T 5/27/2019 16:45",
-		"milliseconds:" : "T 5/27/2019 16:45",
-		"numAccumulated" : "T 5/27/2019 16:45",
-		"numAccumulated:" : "T 5/27/2019 16:45" } }
+		"elapsed" : "TB 6/2/2019 13:27",
+		"elapsed:" : "TB 6/2/2019 13:27",
+		"fpsAccumulated" : "TB 6/2/2019 13:27",
+		"fpsAccumulated:" : "TB 6/2/2019 13:27",
+		"fpsAverage" : "TB 6/2/2019 13:27",
+		"fpsAverage:" : "TB 6/2/2019 13:27",
+		"initialize" : "TB 6/2/2019 13:27",
+		"last" : "TB 6/2/2019 13:27",
+		"last:" : "TB 6/2/2019 13:27",
+		"milliseconds" : "TB 6/2/2019 13:27",
+		"milliseconds:" : "TB 6/2/2019 13:27",
+		"numAccumulated" : "TB 6/2/2019 13:27",
+		"numAccumulated:" : "TB 6/2/2019 13:27" } }

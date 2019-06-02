@@ -1,8 +1,9 @@
 {
 	"class" : {
-		 },
+		"storage" : "TB 6/2/2019 13:27" },
 	"instance" : {
-		"damage" : "T 5/27/2019 16:30",
-		"damage:" : "T 5/27/2019 16:30",
-		"timeToLive" : "T 5/27/2019 16:30",
-		"timeToLive:" : "T 5/27/2019 16:30" } }
+		"damage" : "TB 6/2/2019 13:27",
+		"damage:" : "TB 6/2/2019 13:27",
+		"initialize" : "TB 6/2/2019 13:27",
+		"timeToLive" : "TB 6/2/2019 13:27",
+		"timeToLive:" : "TB 6/2/2019 13:27" } }

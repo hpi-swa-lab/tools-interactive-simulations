@@ -1,5 +1,5 @@
 as yet unclassified
-milliseconds: aNumber
-	<ecsType: #Number>
+milliseconds: anObject
 
-	milliseconds := aNumber
+	<ecsType: #Number>
+	milliseconds := anObject

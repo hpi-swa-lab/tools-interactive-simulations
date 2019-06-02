@@ -1,5 +1,5 @@
 as yet unclassified
 label
-	<ecsType: #String>
 
+	<ecsType: #String>
 	^ label

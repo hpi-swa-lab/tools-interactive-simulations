@@ -1,5 +1,5 @@
 as yet unclassified
-collidee: anEntityId
-	<ecsType: #ECSEntityId>
+collidee: anObject
 
-	collidee := anEntityId
+	<ecsType: #ECSEntityId>
+	collidee := anObject

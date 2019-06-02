@@ -1,5 +1,5 @@
 as yet unclassified
-ignoreList: aCollection
+ignoreList: anObject
 
-	ignoreList := aCollection.
-	self recordChange: aCollection to: #ignoreList
+	<ecsType: #Object>
+	ignoreList := anObject

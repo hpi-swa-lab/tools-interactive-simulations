@@ -1,10 +1,11 @@
 {
 	"class" : {
-		 },
+		"storage" : "TB 6/2/2019 13:26" },
 	"instance" : {
-		"acceleration" : "T 5/27/2019 16:26",
-		"acceleration:" : "T 5/27/2019 16:26",
-		"capacity" : "T 5/27/2019 16:26",
-		"capacity:" : "T 5/27/2019 16:26",
-		"fuel" : "T 5/27/2019 16:26",
-		"fuel:" : "T 5/27/2019 16:26" } }
+		"acceleration" : "TB 6/2/2019 13:26",
+		"acceleration:" : "TB 6/2/2019 13:26",
+		"capacity" : "TB 6/2/2019 13:26",
+		"capacity:" : "TB 6/2/2019 13:26",
+		"fuel" : "TB 6/2/2019 13:26",
+		"fuel:" : "TB 6/2/2019 13:26",
+		"initialize" : "TB 6/2/2019 13:26" } }

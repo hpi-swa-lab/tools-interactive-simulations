@@ -1,6 +1,5 @@
 as yet unclassified
-bounds: aRectangle
-	<ecsType: #ECSAlignedRectangle>
+bounds: anObject
 
-	bounds := aRectangle.
-	self recordChange: aRectangle to: #bounds
+	<ecsType: #ECSAlignedRectangle>
+	bounds := anObject

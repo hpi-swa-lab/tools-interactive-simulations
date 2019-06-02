@@ -1,5 +1,5 @@
 as yet unclassified
 collidee
-	<ecsType: #ECSEntityId>
 
+	<ecsType: #ECSEntityId>
 	^ collidee

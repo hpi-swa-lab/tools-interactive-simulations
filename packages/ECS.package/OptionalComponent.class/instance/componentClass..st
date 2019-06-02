@@ -1,4 +1,4 @@
 as yet unclassified
-componentClass: aClass
+componentClass: anObject
 
-	componentClass := aClass
+	componentClass := anObject

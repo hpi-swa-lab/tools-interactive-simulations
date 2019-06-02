@@ -1,8 +1,9 @@
 {
 	"class" : {
-		 },
+		"storage" : "TB 6/2/2019 13:27" },
 	"instance" : {
-		"cooldown" : "T 5/27/2019 16:30",
-		"cooldown:" : "T 5/27/2019 16:30",
-		"lastShotTime" : "T 5/27/2019 16:30",
-		"lastShotTime:" : "T 5/27/2019 16:31" } }
+		"cooldown" : "TB 6/2/2019 13:27",
+		"cooldown:" : "TB 6/2/2019 13:27",
+		"initialize" : "TB 6/2/2019 13:27",
+		"lastShotTime" : "TB 6/2/2019 13:27",
+		"lastShotTime:" : "TB 6/2/2019 13:27" } }

@@ -1,5 +1,5 @@
 as yet unclassified
-timeLeft: aNumber
-	<ecsType: #Number>
+timeLeft: anObject
 
-	timeLeft := aNumber
+	<ecsType: #Number>
+	timeLeft := anObject

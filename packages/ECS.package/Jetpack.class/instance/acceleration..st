@@ -1,6 +1,5 @@
-accessing
+as yet unclassified
 acceleration: anObject
+
 	<ecsType: #Number>
-	
-	acceleration := anObject.
-	self recordChange: anObject to: #acceleration
+	acceleration := anObject

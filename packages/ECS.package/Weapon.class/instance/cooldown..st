@@ -1,5 +1,5 @@
 as yet unclassified
-cooldown: aNumber
-	<ecsType: #Number>
+cooldown: anObject
 
-	cooldown := aNumber
+	<ecsType: #Number>
+	cooldown := anObject

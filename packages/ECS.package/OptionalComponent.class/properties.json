@@ -10,5 +10,5 @@
 	"name" : "OptionalComponent",
 	"pools" : [
 		 ],
-	"super" : "EntityComponent",
+	"super" : "Object",
 	"type" : "normal" }

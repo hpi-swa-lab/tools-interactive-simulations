@@ -1,5 +1,5 @@
-accessing
+as yet unclassified
 capacity
-	<ecsType: #Number>
 
+	<ecsType: #Number>
 	^ capacity

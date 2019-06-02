@@ -1,5 +1,5 @@
 as yet unclassified
 milliseconds
-	<ecsType: #Number>
 
+	<ecsType: #Number>
 	^ milliseconds

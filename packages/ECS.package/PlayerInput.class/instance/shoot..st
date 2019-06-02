@@ -1,5 +1,5 @@
 as yet unclassified
-shoot: aKey
-	<ecsType: #Character>
+shoot: anObject
 
-	shoot := aKey
+	<ecsType: #Character>
+	shoot := anObject

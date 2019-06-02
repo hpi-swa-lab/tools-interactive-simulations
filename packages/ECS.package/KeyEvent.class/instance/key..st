@@ -1,6 +1,5 @@
 as yet unclassified
-key: aKey
-	<ecsType: #Character>
+key: anObject
 
-	key := aKey.
-	self recordChange: aKey to: #key
+	<ecsType: #Character>
+	key := anObject

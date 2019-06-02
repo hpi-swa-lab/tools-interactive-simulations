@@ -1,5 +1,5 @@
 as yet unclassified
 right
-	<ecsType: #Character>
 
+	<ecsType: #Character>
 	^ right

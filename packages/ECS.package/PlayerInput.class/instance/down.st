@@ -1,5 +1,5 @@
 as yet unclassified
 down
-	<ecsType: #Character>
 
+	<ecsType: #Character>
 	^ down

@@ -1,0 +1,4 @@
+*ECS
+ecsDefault
+
+	^ false

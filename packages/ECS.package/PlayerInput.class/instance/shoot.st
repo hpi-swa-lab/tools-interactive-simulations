@@ -1,5 +1,5 @@
 as yet unclassified
 shoot
-	<ecsType: #Character>
 
+	<ecsType: #Character>
 	^ shoot

@@ -1,5 +1,5 @@
 as yet unclassified
 timeToLive
-	<ecsType: #Number>
 
+	<ecsType: #Number>
 	^ timeToLive

@@ -1,6 +1,5 @@
 as yet unclassified
-damage: aNumber
-	<ecsType: #Number>
+damage: anObject
 
-	damage := aNumber.
-	self recordChange: aNumber to: #damage
+	<ecsType: #Number>
+	damage := anObject

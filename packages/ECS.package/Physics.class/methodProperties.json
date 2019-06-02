@@ -1,8 +1,9 @@
 {
 	"class" : {
-		 },
+		"storage" : "TB 6/2/2019 13:27" },
 	"instance" : {
-		"friction" : "T 5/27/2019 16:28",
-		"friction:" : "T 5/27/2019 16:28",
-		"velocity" : "T 5/27/2019 16:29",
-		"velocity:" : "T 5/27/2019 16:29" } }
+		"friction" : "TB 6/2/2019 13:27",
+		"friction:" : "TB 6/2/2019 13:27",
+		"initialize" : "TB 6/2/2019 13:27",
+		"velocity" : "TB 6/2/2019 13:27",
+		"velocity:" : "TB 6/2/2019 13:27" } }

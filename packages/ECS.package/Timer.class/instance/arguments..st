@@ -1,4 +1,5 @@
 as yet unclassified
-arguments: aCollection
+arguments: anObject
 
-	arguments := aCollection
+	<ecsType: #Object>
+	arguments := anObject

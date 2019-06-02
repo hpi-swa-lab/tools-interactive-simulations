@@ -32,6 +32,14 @@ updateComponentClass
 	"  delete all messages"
 	component selectorsDo: [:each | component removeSelector: each].
 	
+	" initialize "
+	attributes ifNotEmpty: [
+		component compile: (String streamContents: [:stream |
+			stream nextPutAll: ('initialize\\	super initialize.\\') withCRs.
+				attributes
+					do: [:each | stream tab; nextPutAll: each first; nextPutAll: ' := '. each second ecsDefault storeOn: stream. stream]
+					separatedBy: [stream nextPut: $.; cr]])].
+	
 	"  create new messages"
 	attributes do: [:each | | name class pragma |
 		name := each first.
@@ -42,6 +50,7 @@ updateComponentClass
 		component compile: ('{1}\\	{2}\	^ {1}' withCRs format: {name. pragma}).
 		"setter"
 		component compile: 
-			('{1}: anObject\\	{2}\	{1} := anObject.\	self recordChange: anObject to: #{1}' 
+			('{1}: anObject\\	{2}\	{1} := anObject' 
 						withCRs format: {name. pragma})].
+	
 	lastComponentName := className

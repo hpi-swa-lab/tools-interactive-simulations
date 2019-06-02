@@ -1,6 +1,5 @@
 as yet unclassified
-lastShotTime: aNumber
-	<ecsType: #Number>
+lastShotTime: anObject
 
-	lastShotTime := aNumber.
-	self recordChange: aNumber to: #lastShotTime
+	<ecsType: #Number>
+	lastShotTime := anObject

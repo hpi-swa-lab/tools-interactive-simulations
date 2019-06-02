@@ -1,4 +1,5 @@
 as yet unclassified
-selector: aSymbol
+selector: anObject
 
-	selector := aSymbol
+	<ecsType: #Object>
+	selector := anObject

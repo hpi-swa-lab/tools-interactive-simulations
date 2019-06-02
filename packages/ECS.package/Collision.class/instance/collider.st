@@ -1,5 +1,5 @@
 as yet unclassified
 collider
-	<ecsType: #ECSEntityId>
 
+	<ecsType: #ECSEntityId>
 	^ collider

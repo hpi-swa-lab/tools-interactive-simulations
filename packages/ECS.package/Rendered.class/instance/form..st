@@ -1,6 +1,5 @@
 as yet unclassified
-form: anAsset
-	<ecsType: #ECSAsset>
+form: anObject
 
-	form := anAsset.
-	self recordChange: anAsset to: #form
+	<ecsType: #ECSAsset>
+	form := anObject

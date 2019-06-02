@@ -1,5 +1,5 @@
 as yet unclassified
 key
-	<ecsType: #Character>
 
+	<ecsType: #Character>
 	^ key

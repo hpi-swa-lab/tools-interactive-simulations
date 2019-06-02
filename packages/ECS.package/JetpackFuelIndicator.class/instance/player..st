@@ -1,6 +1,5 @@
 as yet unclassified
-player: anEntityId
-	<ecsType: #ECSEntityId>
+player: anObject
 
-	player := anEntityId.
-	self recordChange: anEntityId to: #player
+	<ecsType: #ECSEntityId>
+	player := anObject

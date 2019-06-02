@@ -1,6 +1,5 @@
 as yet unclassified
-acceleration: aNumber
-	<ecsType: #Number>
+acceleration: anObject
 
-	acceleration := aNumber.
-	self recordChange: aNumber to: #acceleration
+	<ecsType: #Number>
+	acceleration := anObject

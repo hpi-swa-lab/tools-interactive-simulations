@@ -1,5 +1,5 @@
 as yet unclassified
-force: aPoint
-	<ecsType: #ECSVector2>
+force: anObject
 
-	force := aPoint
+	<ecsType: #ECSVector2>
+	force := anObject

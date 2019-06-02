@@ -1,5 +1,5 @@
 as yet unclassified
 friction
-	<ecsType: #Number>
 
+	<ecsType: #Number>
 	^ friction

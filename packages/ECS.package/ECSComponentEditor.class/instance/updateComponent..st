@@ -11,8 +11,10 @@ updateComponent: aComponent
 					self addMorphBack: (ECSRow new
 						addMorphBack: (ECSLabel new hResizing: #spaceFill; contents: 'ID' asText allBold);
 						addMorphBack: (ECSLabel new contents: aComponent asString))]
-				ifFalse: [
-					aComponent class instVarNames do: [:name |
+				ifFalse: [ | vars |
+					vars := aComponent class instVarNames.
+					vars ifEmpty: [self addMorphBack: (ECSLabel new contents: aComponent className asText allBold)].
+					vars do: [:name |
 						self addMorphBack: (ECSRow new
 							addMorphBack: (ECSLabel new
 								contents: aComponent className asText allBold, '>>', name;

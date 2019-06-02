@@ -1,5 +1,5 @@
 as yet unclassified
 cooldown
-	<ecsType: #Number>
 
+	<ecsType: #Number>
 	^ cooldown

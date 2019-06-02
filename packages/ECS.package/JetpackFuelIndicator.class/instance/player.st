@@ -1,5 +1,5 @@
 as yet unclassified
 player
-	<ecsType: #ECSEntityId>
 
+	<ecsType: #ECSEntityId>
 	^ player

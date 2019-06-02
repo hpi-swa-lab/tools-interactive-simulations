@@ -1,14 +1,15 @@
 {
 	"class" : {
-		"storage" : "cmfcmf 5/31/2019 20:40" },
+		"storage" : "TB 6/2/2019 13:27" },
 	"instance" : {
-		"leftDown" : "cmfcmf 5/31/2019 20:40",
-		"leftDown:" : "cmfcmf 5/31/2019 20:40",
-		"leftJustDown" : "cmfcmf 5/31/2019 20:40",
-		"leftJustDown:" : "cmfcmf 5/31/2019 20:40",
-		"leftJustUp" : "cmfcmf 5/31/2019 20:40",
-		"leftJustUp:" : "cmfcmf 5/31/2019 20:40",
-		"position" : "cmfcmf 5/31/2019 20:40",
-		"position:" : "cmfcmf 5/31/2019 20:40",
-		"wheelDelta" : "cmfcmf 5/31/2019 20:40",
-		"wheelDelta:" : "cmfcmf 5/31/2019 20:40" } }
+		"initialize" : "TB 6/2/2019 13:27",
+		"leftDown" : "TB 6/2/2019 13:27",
+		"leftDown:" : "TB 6/2/2019 13:27",
+		"leftJustDown" : "TB 6/2/2019 13:27",
+		"leftJustDown:" : "TB 6/2/2019 13:27",
+		"leftJustUp" : "TB 6/2/2019 13:27",
+		"leftJustUp:" : "TB 6/2/2019 13:27",
+		"position" : "TB 6/2/2019 13:27",
+		"position:" : "TB 6/2/2019 13:27",
+		"wheelDelta" : "TB 6/2/2019 13:27",
+		"wheelDelta:" : "TB 6/2/2019 13:27" } }

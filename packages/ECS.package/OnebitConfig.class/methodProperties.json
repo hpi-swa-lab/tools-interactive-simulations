@@ -1,8 +1,9 @@
 {
 	"class" : {
-		"storage" : "TB 6/2/2019 09:40" },
+		"storage" : "TB 6/2/2019 13:27" },
 	"instance" : {
-		"scale" : "TB 6/2/2019 09:40",
-		"scale:" : "TB 6/2/2019 09:40",
-		"tileSize" : "TB 6/2/2019 09:40",
-		"tileSize:" : "TB 6/2/2019 09:40" } }
+		"initialize" : "TB 6/2/2019 13:27",
+		"scale" : "TB 6/2/2019 13:27",
+		"scale:" : "TB 6/2/2019 13:27",
+		"tileSize" : "TB 6/2/2019 13:27",
+		"tileSize:" : "TB 6/2/2019 13:27" } }

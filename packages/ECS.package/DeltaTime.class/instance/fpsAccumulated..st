@@ -1,5 +1,5 @@
 as yet unclassified
-fpsAccumulated: aNumber
-	<ecsType: #Number>
+fpsAccumulated: anObject
 
-	fpsAccumulated := aNumber
+	<ecsType: #Number>
+	fpsAccumulated := anObject

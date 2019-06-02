@@ -1,5 +1,5 @@
 as yet unclassified
 form
-	<ecsType: #ECSAsset>
 
+	<ecsType: #ECSAsset>
 	^ form

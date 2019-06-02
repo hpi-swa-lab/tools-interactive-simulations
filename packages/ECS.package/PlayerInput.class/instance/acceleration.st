@@ -1,5 +1,5 @@
 as yet unclassified
 acceleration
-	<ecsType: #Number>
 
+	<ecsType: #Number>
 	^ acceleration

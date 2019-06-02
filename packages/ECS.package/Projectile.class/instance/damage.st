@@ -1,5 +1,5 @@
 as yet unclassified
 damage
-	<ecsType: #Number>
 
+	<ecsType: #Number>
 	^ damage

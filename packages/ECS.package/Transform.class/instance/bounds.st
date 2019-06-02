@@ -1,5 +1,5 @@
 as yet unclassified
 bounds
-	<ecsType: #ECSAlignedRectangle>
 
+	<ecsType: #ECSAlignedRectangle>
 	^ bounds
