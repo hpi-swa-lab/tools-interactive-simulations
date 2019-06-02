@@ -1,4 +1,4 @@
 accessing
 previewForm
 
-	^ self form
+	^ self form scaledIntoFormOfSize: ECSAsset previewSize

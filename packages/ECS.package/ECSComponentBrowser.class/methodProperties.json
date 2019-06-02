@@ -2,7 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		"initialize" : "T 5/23/2019 16:35",
-		"openComponent:" : "T 5/23/2019 16:10",
+		"addComponent" : "TB 6/1/2019 23:48",
+		"initialize" : "TB 6/1/2019 23:49",
+		"openComponent:" : "TB 6/1/2019 23:48",
 		"title" : "T 5/23/2019 15:50",
 		"updateList" : "T 5/23/2019 16:34" } }

@@ -1,0 +1,15 @@
+{
+	"category" : "ECS",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"max",
+		"current" ],
+	"name" : "Health",
+	"pools" : [
+		 ],
+	"super" : "EntityComponent",
+	"type" : "normal" }

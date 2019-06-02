@@ -8,6 +8,6 @@ initialize
 	self wrapFlag: false.
 	self styler: (SHTextStylerST80 new view: self).
 	self model: self.
-	setTextSelector := #privateSetText:.
+	setTextSelector := #privateSetText:notifying:.
 	getTextSelector := #privateGetText.
 	doItIsAccept := false

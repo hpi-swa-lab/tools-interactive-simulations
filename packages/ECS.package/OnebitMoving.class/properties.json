@@ -1,0 +1,14 @@
+{
+	"category" : "ECS",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"velocity" ],
+	"name" : "OnebitMoving",
+	"pools" : [
+		 ],
+	"super" : "EntityComponent",
+	"type" : "normal" }

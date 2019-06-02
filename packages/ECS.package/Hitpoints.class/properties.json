@@ -1,0 +1,15 @@
+{
+	"category" : "ECS",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"max",
+		"current" ],
+	"name" : "Hitpoints",
+	"pools" : [
+		 ],
+	"super" : "EntityComponent",
+	"type" : "normal" }

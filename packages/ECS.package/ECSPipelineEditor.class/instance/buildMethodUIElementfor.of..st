@@ -12,8 +12,7 @@ buildMethodUIElementfor: aMethodSymbol of: aSystem
 			header: (ECSLabel new contents: aMethodSymbol asString; hResizing: #spaceFill);
 			header: removeButton;
 			body: (ECSCodeEditor new 
-				styleFullMethod: true;
-				changeText: (aSystem class lookupSelector: aMethodSymbol) getSourceFromFile;
-				acceptAction: [:text | aSystem class compile: text asString];
+				editingMethod: (aSystem class lookupSelector: aMethodSymbol);
+				"acceptAction: [:text | aSystem class compile: text asString];"
 				yourself);
 			collapse))) value

@@ -4,13 +4,11 @@ initialize
 	super initialize.
 	
 	pipelines := OrderedCollection new.
-	freeIndexList := OrderedCollection new.
-	components := Dictionary new.
 	drawingBlocks := OrderedCollection new.
 	templates := OrderedCollection new.
 	
-	components at: #id put: IndexStorage new.
+	self resetEntityList.
 	
-	maxEntityIndex := 0.
+	components at: #id put: IndexStorage new.
 	
 	running := false

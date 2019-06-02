@@ -1,4 +1,4 @@
 as yet unclassified
 previewForm
 
-	^ self bundle formFor: self identifier
+	^ (self bundle formFor: self identifier) scaledIntoFormOfSize: ECSAsset previewSize

@@ -1,6 +1,7 @@
 as yet unclassified
 spawn: aTile at: aVector in: aUniverse
 
-	aUniverse spawnNewWith: {Rendered. Transform} do: [:rendered :transform |
-		rendered color: nil; form: (ECSTileMapAsset of: #onebit at: (0 , 1 square: 16) scale: 4).
+	aUniverse spawnNewWith: {Rendered. Transform. Flammable. Health} do: [:rendered :transform :flammable :health |
+		rendered color: nil; form: (ECSTileMapAsset of: #onebit at: (aTile square: 16) scale: 4).
+		health current: 100; max: 100.
 		transform bounds: (aVector square: 64)]
