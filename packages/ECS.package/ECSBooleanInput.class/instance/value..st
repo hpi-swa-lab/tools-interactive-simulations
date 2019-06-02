@@ -1,4 +1,6 @@
 as yet unclassified
 value: aBoolean
 
-	super value: aBoolean asNumber
+	aBoolean
+		ifTrue: [self addMorphBack: checked]
+		ifFalse: [checked delete]

@@ -1,14 +1,14 @@
 {
-	"category" : "ECS",
+	"category" : "ECS-Onebit",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"alive" ],
-	"name" : "EntityComponent",
+		"timeLeft" ],
+	"name" : "OnebitExpiring",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "EntityComponent",
 	"type" : "normal" }

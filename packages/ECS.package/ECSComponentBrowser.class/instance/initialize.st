@@ -9,4 +9,7 @@ initialize
 	self header addMorphBack: (ECSButton new small; icon: ECSIcon iconPlus; when: #clicked send: #addComponent to: self).
 	self updateList.
 	self height: 100 * (TextStyle defaultFont height / 16) rounded.
-	self vResizing: #rigid
+	self vResizing: #rigid.
+	
+	SystemChangeNotifier uniqueInstance
+		notify: self ofSystemChangesOfItem: #class change: #Added using: #updateList

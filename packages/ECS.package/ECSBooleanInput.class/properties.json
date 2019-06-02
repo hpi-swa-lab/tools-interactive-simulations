@@ -6,9 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"checked",
+		"onChange" ],
 	"name" : "ECSBooleanInput",
 	"pools" : [
 		 ],
-	"super" : "ECSNumberInput",
+	"super" : "ECSButton",
 	"type" : "normal" }

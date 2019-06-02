@@ -1,4 +1,4 @@
 as yet unclassified
 extent: aPoint
 
-	super extent: aPoint x @ (textMorph paragraph extent y + self extraSpacing)
+	super extent: (aPoint x @ (textMorph paragraph extent y + self extraSpacing)) ceiling

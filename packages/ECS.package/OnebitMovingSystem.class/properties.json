@@ -6,9 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"alive" ],
-	"name" : "EntityComponent",
+		 ],
+	"name" : "OnebitMovingSystem",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "System",
 	"type" : "normal" }
