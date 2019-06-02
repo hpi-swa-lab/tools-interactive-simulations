@@ -1,0 +1,14 @@
+{
+	"category" : "ECS",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "OnebitCameraFocus",
+	"pools" : [
+		 ],
+	"super" : "EntityComponent",
+	"type" : "normal" }
