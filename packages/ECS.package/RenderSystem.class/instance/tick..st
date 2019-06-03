@@ -4,7 +4,7 @@ tick: aUniverse
 	aUniverse draw: [:canvas :universe |
 		universe query: {Transform. Rendered} do: [:transform :rendered |
 			rendered form
-				ifNotNil: [rendered form drawOn: canvas at: transform bounds origin]
+				ifNotNil: [rendered form drawOn: canvas at: transform bounds origin blend: Color white]
 				ifNil: [canvas fillRectangle: transform bounds color: rendered color]].
 		
 		self renderFramesPerSecondOf: universe on: canvas]

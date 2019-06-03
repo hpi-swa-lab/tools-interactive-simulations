@@ -1,10 +1,11 @@
 as yet unclassified
 tick: aUniverse
 
-	aUniverse query: {Health optional. OnebitBurning. Transform. #id} do: [:health :burning :transform :entity |
+	aUniverse query: {Health optional. Rendered optional. OnebitBurning. Transform. #id} do: [:health :burningRendered :burning :transform :entity |
 		health ifNotNil: [
 			health current: health current - 3.
-			health current <= 0 ifTrue: [aUniverse remove: entity]].
+			health current <= 0 ifTrue: [aUniverse remove: entity].
+			burningRendered ifNotNil: [burningRendered color alpha: (health current / health max) asFloat]].
 		
 		4 timesRepeat: [
 			aUniverse

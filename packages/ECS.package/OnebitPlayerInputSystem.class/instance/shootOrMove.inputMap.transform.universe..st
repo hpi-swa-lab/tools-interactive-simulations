@@ -10,6 +10,6 @@ shootOrMove: aVector inputMap: inputMap transform: transform universe: aUniverse
 					shootTransform bounds: transform bounds + aVector.
 					moving velocity: aVector.
 					expiring timeLeft: 1000.
-					rendered color: nil; form: (ECSTileMapAsset of: #onebit at: (15 , 10 square: config tileSize) scale: config scale)].
+					rendered color: Color white; form: (ECSTileMapAsset of: #onebit at: (15 , 10 square: config tileSize) scale: config scale)].
 				^ self]]].
 	transform bounds += aVector

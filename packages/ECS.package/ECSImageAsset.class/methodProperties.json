@@ -5,6 +5,7 @@
 		"wantsFileChooser" : "TB 5/31/2019 11:06" },
 	"instance" : {
 		"drawOn:at:" : "TB 5/31/2019 10:07",
+		"drawOn:at:blend:" : "TB 6/3/2019 16:13",
 		"initialize" : "T 5/16/2019 21:57",
 		"isDerived" : "T 5/30/2019 14:38",
 		"isDerived:" : "T 5/16/2019 21:56",
