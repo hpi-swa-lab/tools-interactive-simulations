@@ -24,4 +24,5 @@ initialize
 	
 	self universe 
 		when: #newPipelineRegistered send: #pipelinesChanged to: self;
-		when: #pipelineUnregistered send: #pipelinesChanged to: self
+		when: #pipelineUnregistered send: #pipelinesChanged to: self;
+		when: #pipelineTitleChanged send: #pipelinesChanged to: self

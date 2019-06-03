@@ -16,6 +16,7 @@ initialize
 	self when: #newSystemRegistered forCurrentPipelineThenSend: #addSystemToUI:;
 		when: #systemUnregistered forCurrentPipelineThenSend: #removeSystemFromUI:;
 		when: #pipelineExecutionModeChanged forCurrentPipelineThenSend: #executionModeChanged:;
+		when: #pipelineTitleChanged forCurrentPipelineThenSend: #titleChanged:;
 		when: #systemOrderChanged forCurrentPipelineThenSend: #systemOrderChanged.
 	
 	runContinuouslyButton := ECSButton new
@@ -25,6 +26,9 @@ initialize
 	header addMorphBack: (ECSButton new
 		icon: (ECSIcon iconPlus);
 		when: #clicked send: #addSystem to: self).
+	header addMorphBack: (ECSButton new
+		icon: (ECSIcon iconEdit);
+		when: #clicked send: #changeTitle to: self).
 	header addMorphBack: runContinuouslyButton.
 	header addMorphBack: (runOnceButton := (ECSButton new icon: ECSIcon iconPlay; when: #clicked send: #runOnce to: self)).
 	header addMorphBack: (ECSButton new
