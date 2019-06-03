@@ -6,7 +6,8 @@ initialLoadWithRequested: anIdentifierObject
 	"self path fileEntries do: [:file | assets at: file name put: (ECSAsset new updatePreview: file)]"
 	self path fullNamesOfAllFilesInSubtree
 		select: [:name | name endsWith: '.png']
-		thenDo: [:name |
+		thenDo: [:name | | identifier |
+			identifier := name allButFirst: self path fullName size + 1.
 			assets
-				at: (name allButFirst: self path fullName size + 1)
-				put: (ECSImageAsset new updateFile: (FileDirectory on: name))]
+				at: identifier
+				put: (ECSImageAsset new bundle: self; identifier: identifier; updateFile: (FileDirectory on: name))]
