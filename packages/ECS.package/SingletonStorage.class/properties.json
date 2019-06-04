@@ -1,0 +1,15 @@
+{
+	"category" : "ECS",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"myEntityId",
+		"singleInstance" ],
+	"name" : "SingletonStorage",
+	"pools" : [
+		 ],
+	"super" : "Storage",
+	"type" : "normal" }

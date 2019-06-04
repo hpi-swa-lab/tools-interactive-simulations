@@ -19,5 +19,5 @@ tick: aUniverse
 				y: (annoTile position x + annoTile position y) * TileSize y / 2.
 			origin := origin + camera position.
 			rendered form
-				ifNotNil: [rendered form drawOn: canvas at: (origin - (0, rendered form object height))]
+				ifNotNil: [rendered form drawOn: canvas at: (origin - (0, rendered form object height)) blend: Color white]
 				ifNil: [canvas fillRectangle: (ECSAlignedRectangle origin: origin extent: TileSize) color: rendered color]]]

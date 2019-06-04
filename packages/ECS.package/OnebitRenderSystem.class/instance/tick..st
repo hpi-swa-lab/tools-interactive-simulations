@@ -15,7 +15,7 @@ tick: aUniverse
 					
 					(tile x >= 0 and: [tile y >= 0 and: [tile x <= size x and: [tile y <= size y]]]) ifTrue: [
 						rendered form
-							ifNotNil: [:f | f drawOn: canvas at: tile * tileSize]
+							ifNotNil: [:f | f drawOn: canvas at: tile * tileSize blend: rendered color]
 							ifNil: [
 								canvas
 									fillRectangle: (tile * tileSize extent: transform bounds extent)
