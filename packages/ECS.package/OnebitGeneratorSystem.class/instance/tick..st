@@ -15,5 +15,5 @@ tick: aUniverse
 				rendered color: ECSColor black; form: (ECSTileMapAsset of: #onebit at: (24, 4 square: config tileSize) scale: config scale).
 				playerInput left: $A; right: $D; up: $W; down: $S; shoot: Character space; acceleration: 1.
 				label label: 'player'].
-			
-		self buildStreet: config in: aUniverse]
+		
+		10 timesRepeat: [self buildStreet: config in: aUniverse]]

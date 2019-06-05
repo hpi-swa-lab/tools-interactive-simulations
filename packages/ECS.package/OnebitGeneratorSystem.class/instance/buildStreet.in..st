@@ -6,7 +6,7 @@ buildStreet: aConfig in: aUniverse
 	40 timesRepeat: [ | direction |
 		direction := {0,1. 0, -1. 1,0. -1,0} atRandom.
 		
-		10 atRandom timesRepeat: [
+		30 atRandom timesRepeat: [
 			aUniverse spawnNewWith: {Transform. Rendered} do: [:transform :rendered |
 				transform bounds: (current copy square: aConfig tileSize * aConfig scale).
 				rendered color: Color white; form: (ECSTileMapAsset

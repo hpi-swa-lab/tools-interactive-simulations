@@ -2,5 +2,5 @@ as yet unclassified
 atForRead: anIndex
 
 	^ anIndex > storage size
-		ifTrue: [self nullInstance]
+		ifTrue: [nullInstance]
 		ifFalse: [storage at: anIndex]

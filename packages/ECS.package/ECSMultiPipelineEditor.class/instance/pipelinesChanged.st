@@ -5,6 +5,7 @@ pipelinesChanged
 	| pipelines |
 	pipelines := self universe pipelines.
 	pipelineSelectionButton choices: pipelines.
-	(pipelineEditor notNil and: [pipelines includes: pipelineEditor pipeline]) ifFalse: [
-		self changePipeline: nil.
+	(pipelineEditor notNil and: [pipelines includes: pipelineEditor pipeline]) 
+		ifTrue: [pipelineSelectionButton value: pipelineEditor pipeline]
+		ifFalse: [self changePipeline: nil.
 		pipelineSelectionButton value: nil]

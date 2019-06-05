@@ -4,7 +4,8 @@ buildMethodUIElementfor: aMethodSymbol of: aSystem
 	| removeButton |
 	removeButton := ECSButton new
 		icon: ECSIcon iconRemove;
-		when: #clicked send: #removeMethod:from: to: self withArguments: {aMethodSymbol. aSystem}.
+		when: #clicked send: #removeMethod:from: to: self withArguments: {aMethodSymbol. aSystem};
+		balloonText: 'Remover method from system'.
 	
 	^ ((nonRequiredFunctionsInUI at: aSystem) add: (Association
 		key: aMethodSymbol

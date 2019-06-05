@@ -1,8 +1,6 @@
 as yet unclassified
 initialize
-
 	super initialize.
-	
 	self layoutInset: (TextStyle defaultFont height / 3) rounded.
 	self cellInset: self layoutInset.
 	hovered := false.

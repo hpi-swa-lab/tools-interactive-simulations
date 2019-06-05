@@ -16,6 +16,7 @@ initialize
 	self when: #newSystemRegistered forCurrentPipelineThenSend: #addSystemToUI:;
 		when: #systemUnregistered forCurrentPipelineThenSend: #removeSystemFromUI:;
 		when: #pipelineExecutionModeChanged forCurrentPipelineThenSend: #executionModeChanged:;
+		when: #pipelineTitleChanged forCurrentPipelineThenSend: #titleChanged:;
 		when: #systemOrderChanged forCurrentPipelineThenSend: #systemOrderChanged.
 	
 	runContinuouslyButton := ECSButton new
@@ -24,11 +25,20 @@ initialize
 	
 	header addMorphBack: (ECSButton new
 		icon: (ECSIcon iconPlus);
-		when: #clicked send: #addSystem to: self).
+		when: #clicked send: #addSystem to: self;
+		balloonText: 'Add system').
+	header addMorphBack: (ECSButton new
+		icon: (ECSIcon iconEdit);
+		when: #clicked send: #changeTitle to: self;
+		balloonText: 'Change title').
 	header addMorphBack: runContinuouslyButton.
-	header addMorphBack: (runOnceButton := (ECSButton new icon: ECSIcon iconPlay; when: #clicked send: #runOnce to: self)).
+	header addMorphBack: (runOnceButton := (ECSButton new 
+		icon: ECSIcon iconPlay; 
+		when: #clicked send: #runOnce to: self; 
+		balloonText: 'Run pipeline once')).
 	header addMorphBack: (ECSButton new
 		icon: (ECSIcon iconTrash);
-		when: #clicked send: #unregisterPipelineAndDeleteMyself to: self).
+		when: #clicked send: #unregisterPipelineAndDeleteMyself to: self;
+		balloonText: 'Delete pipeline').
 		
 	self addMorphBack: list

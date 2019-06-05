@@ -18,10 +18,12 @@ initialize
 	
 	header addMorphBack: (ECSButton new
 		icon: (ECSIcon iconPlus);
-		when: #clicked send: #addPipeline to: self).
+		when: #clicked send: #addPipeline to: self;
+		balloonText: 'Add new pipeline').
 	
 	pipeline ifNotNil: [self changePipeline: pipeline].
 	
 	self universe 
 		when: #newPipelineRegistered send: #pipelinesChanged to: self;
-		when: #pipelineUnregistered send: #pipelinesChanged to: self
+		when: #pipelineUnregistered send: #pipelinesChanged to: self;
+		when: #pipelineTitleChanged send: #pipelinesChanged to: self

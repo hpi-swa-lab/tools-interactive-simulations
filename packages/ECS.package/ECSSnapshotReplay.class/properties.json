@@ -12,7 +12,8 @@
 		"componentSnapshot",
 		"endTime",
 		"recordIcon",
-		"eventHistory" ],
+		"eventHistory",
+		"previousElapsed" ],
 	"name" : "ECSSnapshotReplay",
 	"pools" : [
 		 ],

@@ -1,15 +1,15 @@
 api
 query: aListOfComponentClasses do: aBlock spread: aBoolean
 
-	| lists |
+	| lists filledComponents |
 	lists := aListOfComponentClasses collect: [:class | components at: class value ifAbsent: [^ self]].
 	
-	1 to: maxEntityIndex do: [:index | | filledComponents |
-		filledComponents := Array new: aListOfComponentClasses size.
+	filledComponents := Array new: aListOfComponentClasses size.
+	1 to: maxEntityIndex do: [:entityIndex |
 		self
 			fetchComponentsInto: filledComponents
 			componentLists: lists
-			at: index
+			at: entityIndex
 			do: aBlock
 			componentClasses: aListOfComponentClasses
 			spread: aBoolean]

@@ -7,11 +7,13 @@ addSystemToUI: aSystem
 	
 	removeButton := ECSButton new
 		icon: ECSIcon iconRemove;
-		when: #clicked send: #removeSystemFromPipeline: to: self with: aSystem.
+		when: #clicked send: #removeSystemFromPipeline: to: self with: aSystem;
+		balloonText: 'Remove system from pipeline'.
 
 	addMethodButton := ECSButton new
 		icon: ECSIcon iconPlus;
-		when: #clicked send: #addMethodTo: to: self with: aSystem.
+		when: #clicked send: #addMethodTo: to: self with: aSystem;
+		balloonText: 'Add method'.
 
 	systemMorph := (ECSCollapsible new 
 		header: (ECSLabel new contents: aSystem name; hResizing: #spaceFill);
