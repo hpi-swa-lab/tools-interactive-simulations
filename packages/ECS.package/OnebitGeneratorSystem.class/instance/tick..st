@@ -5,7 +5,7 @@ tick: aUniverse
 		aUniverse remove: entity].
 	
 	aUniverse query: {OnebitConfig} do: [:config |
-		1000 timesRepeat: [
+		3000 timesRepeat: [
 			self spawn: (5 atRandom , 1) at: config mapSize atRandom - (config mapSize // 2) config: config in: aUniverse].
 		
 		aUniverse

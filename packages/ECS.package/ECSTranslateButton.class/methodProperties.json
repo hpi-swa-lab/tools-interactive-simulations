@@ -1,0 +1,9 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"handlesMouseMove:" : "tobe 6/5/2019 21:04",
+		"initialize" : "tobe 6/5/2019 21:10",
+		"mouseDown:" : "tobe 6/5/2019 21:07",
+		"mouseMove:" : "tobe 6/5/2019 21:10",
+		"target:" : "tobe 6/5/2019 21:03" } }

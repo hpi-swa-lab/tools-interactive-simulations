@@ -14,9 +14,13 @@ addSystemToUI: aSystem
 		icon: ECSIcon iconPlus;
 		when: #clicked send: #addMethodTo: to: self with: aSystem;
 		balloonText: 'Add method'.
-
+	
 	systemMorph := (ECSCollapsible new 
-		header: (ECSLabel new contents: aSystem name; hResizing: #spaceFill);
+		header: (ECSLabel new contents: aSystem className; hResizing: #spaceFill);
+		header: (ECSButton new
+			icon: ECSIcon iconMap;
+			when: #clicked send: #openSystemMap: to: self with: aSystem;
+			balloonText: 'Open System Methods in Map Editor');
 		header: addMethodButton;
 		header: stateButton;
 		header: removeButton;

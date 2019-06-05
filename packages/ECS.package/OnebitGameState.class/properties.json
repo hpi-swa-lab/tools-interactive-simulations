@@ -1,0 +1,14 @@
+{
+	"category" : "ECS",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"state" ],
+	"name" : "OnebitGameState",
+	"pools" : [
+		 ],
+	"super" : "EntityComponent",
+	"type" : "normal" }

@@ -1,0 +1,15 @@
+{
+	"class" : {
+		"openFor:" : "tobe 6/5/2019 22:18" },
+	"instance" : {
+		"checkCloseWindow:" : "tobe 6/5/2019 20:41",
+		"click:" : "tobe 6/5/2019 22:35",
+		"closeWindow" : "tobe 6/5/2019 20:39",
+		"delete" : "tobe 6/5/2019 20:32",
+		"editorForMethod:" : "tobe 6/5/2019 22:29",
+		"handlesMouseDown:" : "tobe 6/5/2019 22:25",
+		"initialize" : "tobe 6/5/2019 20:10",
+		"mouseDown:" : "tobe 6/5/2019 22:31",
+		"okToClose" : "tobe 6/5/2019 20:37",
+		"system:" : "tobe 6/5/2019 22:26",
+		"title" : "tobe 6/5/2019 20:43" } }

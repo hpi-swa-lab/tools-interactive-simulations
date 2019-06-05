@@ -1,7 +1,7 @@
 as yet unclassified
 detachNow: anEvent
 
-	| window |
+	"| window |
 	detached ifFalse: [
 		detached := true.
 		window := (SystemWindow labelled: self title).
@@ -11,4 +11,4 @@ detachNow: anEvent
 		window beKeyWindow.
 		
 		header toolIsAttached: false.
-		window openInHand]
+		window openInHand]"

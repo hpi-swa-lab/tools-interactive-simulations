@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Tools",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"system" ],
+	"name" : "ECSSystemMapEditor",
+	"pools" : [
+		 ],
+	"super" : "ECSTool",
+	"type" : "normal" }
