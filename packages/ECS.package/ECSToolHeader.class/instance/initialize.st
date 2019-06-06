@@ -15,4 +15,7 @@ initialize
 	self changeTableLayout.
 	self cellInset: spacing.
 	self layoutInset: spacing.
-	self addMorph: (deleteButton := ECSButton new icon: ECSIcon iconRemove; when: #clicked send: #deleteTool to: self)
+	self addMorph: (deleteButton := ECSButton new
+		icon: ECSIcon iconRemove;
+		when: #clicked send: #deleteTool to: self;
+		balloonText: 'Close this tool')
