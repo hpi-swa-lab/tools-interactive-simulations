@@ -21,7 +21,8 @@ initialize
 	
 	runContinuouslyButton := ECSButton new
 		icon: (ECSIcon new changeIconName: self iconForRunContinuously);
-		when: #clicked send: #toggleRunContinuously to: self.
+		when: #clicked send: #toggleRunContinuously to: self;
+		balloonText: 'Toggle run continuously'.
 	
 	header addMorphBack: (ECSButton new
 		icon: (ECSIcon iconPlus);
