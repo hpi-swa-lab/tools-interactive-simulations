@@ -1,4 +1,4 @@
 as yet unclassified
 selectedClassOrMetaClass
 
-	^ editingMethod ifNotNil: #methodClass
+	^ method ifNotNil: #methodClass

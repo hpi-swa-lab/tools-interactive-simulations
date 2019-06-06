@@ -7,8 +7,7 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"content",
-		"doItIsAccept",
-		"editingMethod" ],
+		"doItIsAccept" ],
 	"name" : "ECSCodeEditor",
 	"pools" : [
 		 ],

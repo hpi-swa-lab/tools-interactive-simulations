@@ -1,16 +1,14 @@
 {
-	"category" : "ECS-Data",
+	"category" : "ECS-UI",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"scale",
-		"form",
-		"rotation" ],
-	"name" : "ECSScaledTileMapAsset",
+		"method" ],
+	"name" : "ECSCodeMethodEditor",
 	"pools" : [
 		 ],
-	"super" : "ECSAsset",
+	"super" : "ECSCodeEditor",
 	"type" : "normal" }

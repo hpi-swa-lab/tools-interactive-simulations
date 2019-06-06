@@ -2,15 +2,13 @@
 	"class" : {
 		 },
 	"instance" : {
-		"aboutToStyle:" : "TB 6/2/2019 08:24",
+		"aboutToStyle:" : "tobe 6/6/2019 07:45",
 		"completionController" : "TB 6/2/2019 15:20",
 		"content:" : "TB 6/2/2019 15:15",
 		"createCompletionController" : "TB 6/2/2019 15:20",
 		"doIt" : "T 5/22/2019 22:38",
 		"doItIsAccept" : "T 5/22/2019 22:37",
 		"doItIsAccept:" : "T 5/22/2019 22:37",
-		"editingMethod" : "TB 6/2/2019 08:14",
-		"editingMethod:" : "TB 6/2/2019 15:13",
 		"evaluateExpression:" : "TB 6/2/2019 16:08",
 		"extent:" : "tobe 6/5/2019 22:12",
 		"externalValueUpdate:" : "TB 6/2/2019 15:27",
@@ -22,7 +20,6 @@
 		"onChange:" : "T 5/27/2019 16:10",
 		"paragraphWidth" : "tobe 6/5/2019 21:20",
 		"privateGetText" : "cf 5/15/2019 11:33",
-		"privateSetText:notifying:" : "TB 6/2/2019 20:14",
-		"selectedClassOrMetaClass" : "TB 6/2/2019 15:25",
+		"privateSetText:notifying:" : "tobe 6/6/2019 07:45",
 		"sizeForWidth:" : "tobe 6/5/2019 22:04",
 		"value:" : "TB 6/2/2019 15:13" } }

@@ -9,4 +9,5 @@ assetAt: aRectangle scale: aNumber
 			identifier: aRectangle;
 			bundle: self;
 			scale: aNumber;
+			rotation: 0;
 			yourself]

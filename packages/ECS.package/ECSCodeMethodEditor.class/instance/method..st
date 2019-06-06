@@ -1,5 +1,5 @@
 as yet unclassified
-editingMethod: aMethod
+method: aMethod
 
-	editingMethod := aMethod.
+	method := aMethod.
 	self content: aMethod getSourceFromFile
