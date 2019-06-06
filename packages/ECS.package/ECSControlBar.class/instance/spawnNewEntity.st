@@ -1,4 +1,4 @@
-as yet unclassified
+button methods
 spawnNewEntity
 
 	"| name choosableComponents choosenComponents entityComponents newEntity filter |

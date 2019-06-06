@@ -2,7 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		"initialize" : "ek 6/6/2019 10:53",
+		"initialize" : "ek 6/6/2019 15:36",
+		"openNewTool" : "ek 6/6/2019 15:42",
 		"saveSnapshot" : "ek 6/6/2019 13:25",
 		"saveSnapshotInClass:" : "ek 6/6/2019 13:27",
 		"saveSnapshotInCurrentUniverseClass" : "ek 6/6/2019 11:55",
