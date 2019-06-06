@@ -1,4 +1,7 @@
 component lifecyle
 chooseComponentClassDo: aBlock
 	
-	UIManager default chooseClassOrTrait ifNotNil: [:c | aBlock value: c]
+	| componentClasses |
+	componentClasses := EntityComponent subclasses copy.
+	(UIManager default chooseMultipleFrom: componentClasses values: componentClasses)
+		ifNotNil: [:collection | collection do: [:class | aBlock value: class]]

@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-EvasClickingGame",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "EvasClickingGameUniverse",
+	"pools" : [
+		 ],
+	"super" : "Universe",
+	"type" : "normal" }
