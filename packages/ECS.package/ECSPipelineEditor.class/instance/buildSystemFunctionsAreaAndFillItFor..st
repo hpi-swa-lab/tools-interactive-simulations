@@ -13,6 +13,4 @@ buildSystemFunctionsAreaAndFillItFor: aSystem
 	
 	systemFunctionsAreasInUI at: aSystem put: functionsColumn.
 	
-	^ ECSRow new
-		addMorphFront: (Morph new extent: 20@0);
-		addMorphBack: functionsColumn.
+	^ functionsColumn.

@@ -6,6 +6,7 @@ initialize
 	systemsInUI := Dictionary new.
 	nonRequiredFunctionsInUI := Dictionary new.
 	systemFunctionsAreasInUI := Dictionary new.
+	constantsAreas := Dictionary new.
 	list := ECSSortable new.
 	list when: #itemMoved:toIndex: send: #systemReordered:newIndex: to: self.
 	
