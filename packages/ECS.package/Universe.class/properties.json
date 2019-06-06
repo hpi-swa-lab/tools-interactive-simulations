@@ -13,7 +13,8 @@
 		"maxEntityIndex",
 		"drawingBlocks",
 		"templates",
-		"stepTime" ],
+		"stepTime",
+		"saveFilter" ],
 	"name" : "Universe",
 	"pools" : [
 		 ],

@@ -2,7 +2,7 @@ as yet unclassified
 editorFor: aFieldSymbol of: aComponent
 
 	| value class |
-	class := (aComponent class methodDict at: aFieldSymbol asSymbol) pragmas detect: [:p | p keyword = #ecsType:] ifFound: [:p | p arguments first] ifNone: [].
+	class := (aComponent class methodDict at: aFieldSymbol asSymbol ifAbsent: [^ Morph new]) pragmas detect: [:p | p keyword = #ecsType:] ifFound: [:p | p arguments first] ifNone: [].
 	value := aComponent instVarNamed: aFieldSymbol.
 	class ifNotNil: [
 		^ (Smalltalk at: class) editorType new

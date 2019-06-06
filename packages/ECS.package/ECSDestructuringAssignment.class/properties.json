@@ -1,5 +1,5 @@
 {
-	"category" : "ECS-OnebitUniverse",
+	"category" : "ECS-Experiments",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
@@ -7,8 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "OnebitUniverse",
+	"name" : "ECSDestructuringAssignment",
 	"pools" : [
 		 ],
-	"super" : "Universe",
+	"super" : "Object",
 	"type" : "normal" }
