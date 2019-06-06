@@ -1,14 +1,14 @@
 {
-	"category" : "ECS-Onebit",
+	"category" : "ECS",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "OnebitUniverse",
+		"template" ],
+	"name" : "InstanceOfTemplate",
 	"pools" : [
 		 ],
-	"super" : "Universe",
+	"super" : "EntityComponent",
 	"type" : "normal" }

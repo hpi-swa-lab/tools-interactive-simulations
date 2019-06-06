@@ -2,10 +2,12 @@
 	"class" : {
 		"storage" : "tobe 6/6/2019 13:36" },
 	"instance" : {
+		"copyFieldsTo:" : "tobe 6/6/2019 18:54",
 		"id:storage:" : "tobe 6/6/2019 12:32",
 		"initialize" : "tobe 6/6/2019 15:12",
+		"storeForTemplateOn:" : "tobe 6/6/2019 19:12",
 		"x" : "tobe 6/6/2019 15:12",
 		"x:" : "tobe 6/6/2019 12:34",
 		"x:y:" : "tobe 6/6/2019 12:35",
 		"y" : "tobe 6/6/2019 15:12",
-		"y:" : "tobe 6/6/2019 12:34" } }
+		"y:" : "tobe 6/6/2019 18:53" } }
