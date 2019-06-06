@@ -3,7 +3,7 @@ fetchComponentsInto: aCollection componentLists: lists at: entityIndex do: aBloc
 
 	1 to: lists size do: [:index | | list component |
 		list := lists at: index.
-		component := list atForRead: entityIndex.
+		component := list atForFetch: entityIndex.
 		component alive
 			ifTrue: [aCollection at: index put: component]
 			ifFalse: [(aCollectionOfClasses at: index) class = OptionalComponent

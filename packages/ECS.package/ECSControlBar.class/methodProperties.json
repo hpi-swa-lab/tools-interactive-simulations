@@ -2,8 +2,13 @@
 	"class" : {
 		 },
 	"instance" : {
-		"initialize" : "TB 6/2/2019 09:48",
-		"saveSnapshot" : "TB 5/31/2019 07:25",
+		"initialize" : "ek 6/6/2019 10:53",
+		"saveSnapshot" : "ek 6/6/2019 13:25",
+		"saveSnapshotInClass:" : "ek 6/6/2019 13:27",
+		"saveSnapshotInCurrentUniverseClass" : "ek 6/6/2019 11:55",
+		"saveSnapshotInNewUniverseClass" : "ek 6/6/2019 12:13",
+		"saveSnapshotInNewUniverseClassNamed:" : "ek 6/6/2019 12:08",
+		"saveSnapshotInNewUniverseClassNamed:inCategory:" : "ek 6/6/2019 12:08",
 		"spawnNewEntity" : "T 5/27/2019 18:29",
 		"stepForward" : "TB 5/31/2019 07:06",
 		"title" : "T 5/15/2019 11:25",

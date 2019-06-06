@@ -3,7 +3,9 @@ addSystemToUI: aSystem
 
 	| stateButton removeButton systemMorph addMethodButton | 	
 	stateButton := ECSButton new icon: (ECSIcon new changeIconName: (self stateIconForRunningState: aSystem isEnabled)).
-	stateButton when: #clicked send: #togglePaused:button: to: self withArguments: {aSystem . stateButton}.
+	stateButton
+		when: #clicked send: #togglePaused:button: to: self withArguments: {aSystem . stateButton};
+		balloonText: 'Toggle system paused'.
 	
 	removeButton := ECSButton new
 		icon: ECSIcon iconRemove;

@@ -1,0 +1,15 @@
+{
+	"category" : "ECS",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"frequency",
+		"timeout" ],
+	"name" : "OnebitSpawnPoint",
+	"pools" : [
+		 ],
+	"super" : "EntityComponent",
+	"type" : "normal" }

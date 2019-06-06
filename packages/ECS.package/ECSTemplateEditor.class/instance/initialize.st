@@ -5,6 +5,12 @@ initialize
 	
 	self
 		header: (label := ECSLabel new hResizing: #spaceFill);
-		header: (ECSButton new icon: ECSIcon iconPlus; when: #clicked send: #addComponent to: self);
-		header: (ECSButton new icon: ECSIcon iconBolt; when: #clicked send: #spawnTemplate to: self);
+		header: (ECSButton new
+			icon: ECSIcon iconPlus;
+			when: #clicked send: #addComponent to: self;
+			balloonText: 'Add component(s) to template');
+		header: (ECSButton new
+			icon: ECSIcon iconBolt;
+			when: #clicked send: #spawnTemplate to: self;
+			balloonText: 'Spawn new instance of template');
 		body: (list := ECSColumn new)

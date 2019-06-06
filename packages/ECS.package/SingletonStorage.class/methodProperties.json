@@ -2,7 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"atForRead:" : "TB 6/3/2019 13:08",
-		"atForWrite:" : "TB 6/3/2019 13:09",
+		"atForCreate:" : "tobe 6/6/2019 12:23",
+		"atForFetch:" : "tobe 6/6/2019 12:23",
 		"remove:" : "TB 6/3/2019 10:49",
 		"type:" : "TB 6/3/2019 13:09" } }

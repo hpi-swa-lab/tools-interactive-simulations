@@ -1,5 +1,5 @@
 as yet unclassified
-atForRead: anIndex
+atForFetch: anIndex
 
 	^ anIndex > storage size
 		ifTrue: [nullInstance]

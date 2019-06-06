@@ -1,5 +1,5 @@
 as yet unclassified
-atForWrite: aNumber
+atForCreate: aNumber
 
 	myEntityId := aNumber.
 	^ singleInstance

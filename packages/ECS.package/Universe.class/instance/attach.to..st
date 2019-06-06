@@ -3,4 +3,4 @@ attach: aComponentClass to: anEntityId
 
 	^ ((components
 		at: aComponentClass
-		ifAbsentPut: [aComponentClass storage newForType: aComponentClass]) atForWrite: anEntityId) alive: true
+		ifAbsentPut: [aComponentClass storage newForType: aComponentClass]) atForCreate: anEntityId) alive: true
