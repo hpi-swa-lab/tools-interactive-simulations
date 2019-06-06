@@ -1,4 +1,4 @@
 as yet unclassified
-atForRead: aNumber
+atForFetch: aNumber
 
 	^ myEntityId = aNumber ifTrue: [singleInstance] ifFalse: [nullInstance]

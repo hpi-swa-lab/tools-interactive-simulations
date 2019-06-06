@@ -1,4 +1,4 @@
 as yet unclassified
-atForRead: anIndex
+atForFetch: anIndex
 
 	^ storage at: anIndex ifAbsent: [nullInstance]

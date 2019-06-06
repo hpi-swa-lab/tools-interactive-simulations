@@ -6,5 +6,5 @@ allocateEntity
 		ifEmpty: [maxEntityIndex := maxEntityIndex + 1]
 		ifNotEmpty: [freeIndexList removeLast].
 	
-	(components at: #id) atForWrite: index.
+	(components at: #id) atForCreate: index.
 	^ index

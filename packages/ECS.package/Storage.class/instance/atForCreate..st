@@ -1,4 +1,4 @@
 as yet unclassified
-atForWrite: anIndex
+atForCreate: anIndex
 
 	^ self subclassResponsibility

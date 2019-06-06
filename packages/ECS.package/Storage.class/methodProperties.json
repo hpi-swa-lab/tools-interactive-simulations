@@ -2,8 +2,8 @@
 	"class" : {
 		"newForType:" : "T 5/23/2019 17:01" },
 	"instance" : {
-		"atForRead:" : "T 5/23/2019 17:06",
-		"atForWrite:" : "T 5/23/2019 17:06",
+		"atForCreate:" : "tobe 6/6/2019 12:23",
+		"atForFetch:" : "tobe 6/6/2019 12:23",
 		"nullInstance" : "T 5/23/2019 17:12",
 		"remove:" : "T 4/29/2019 08:36",
 		"type" : "T 5/23/2019 17:01",

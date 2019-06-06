@@ -1,6 +1,6 @@
 as yet unclassified
-atForWrite: aNumber
+atForCreate: aNumber
 
-	^ (alive atForWrite: aNumber) 
+	^ (alive atForCreate: aNumber) 
 		ifTrue: [aNumber] 
 		ifFalse: [alive at: aNumber put: true. aNumber]

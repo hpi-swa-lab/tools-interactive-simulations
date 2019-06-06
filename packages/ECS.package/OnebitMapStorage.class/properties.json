@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Onebit",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"linearStorage" ],
+	"name" : "OnebitMapStorage",
+	"pools" : [
+		 ],
+	"super" : "Storage",
+	"type" : "normal" }

@@ -1,4 +1,4 @@
 as yet unclassified
-atForWrite: anIndex
+atForCreate: anIndex
 
 	^ storage at: anIndex ifAbsentPut: [self type new]
