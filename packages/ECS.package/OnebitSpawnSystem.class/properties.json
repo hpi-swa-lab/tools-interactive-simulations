@@ -1,0 +1,14 @@
+{
+	"category" : "ECS",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "OnebitSpawnSystem",
+	"pools" : [
+		 ],
+	"super" : "System",
+	"type" : "normal" }

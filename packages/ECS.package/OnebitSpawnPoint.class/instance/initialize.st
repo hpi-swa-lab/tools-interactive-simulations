@@ -2,5 +2,6 @@ as yet unclassified
 initialize
 
 	super initialize.
-	
-	self layoutPolicy: "ECSAbsoluteLayout new"nil
+
+	frequency := 0.
+	timeout := 0

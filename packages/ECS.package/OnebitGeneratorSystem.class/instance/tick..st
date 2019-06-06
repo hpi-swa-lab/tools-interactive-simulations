@@ -16,4 +16,5 @@ tick: aUniverse
 				playerInput left: $A; right: $D; up: $W; down: $S; shoot: Character space; acceleration: 1.
 				label label: 'player'].
 		
-		10 timesRepeat: [self buildStreet: config in: aUniverse]]
+		10 timesRepeat: [self buildStreet: config in: aUniverse].
+		self placeSpawnPointsIn: aUniverse config: config]

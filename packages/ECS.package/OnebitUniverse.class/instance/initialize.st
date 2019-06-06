@@ -14,6 +14,8 @@ register: (Pipeline new
 	register: OnebitBurningSystem new;
 	register: OnebitExpiringSystem new;
 	register: OnebitMovingSystem new;
+	register: OnebitSpawnSystem new;
+	register: OnebitEnemySystem new;
 	register: OnebitRenderSystem new);
 register: (Pipeline new
 	title: 'Generation';
