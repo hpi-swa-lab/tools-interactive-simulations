@@ -15,6 +15,7 @@ initialize
 		acceptAction: [:text |
 			self queryString: text asString.
 			self updateList];
+		acceptOnCR: true;
 		yourself).
 	
 	self addMorphBack: self queryEditor.
