@@ -1,15 +1,14 @@
 {
-	"category" : "ECS-UI",
+	"category" : "ECS",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"method",
-		"replaceOnSelectorChange" ],
-	"name" : "ECSCodeMethodEditor",
+		 ],
+	"name" : "OnebitRiverGenerationSystem",
 	"pools" : [
 		 ],
-	"super" : "ECSCodeEditor",
+	"super" : "System",
 	"type" : "normal" }

@@ -3,7 +3,10 @@
 		 },
 	"instance" : {
 		"aboutToStyle:" : "tobe 6/6/2019 07:46",
+		"layoutChanged" : "tobe 6/6/2019 08:18",
 		"method" : "tobe 6/6/2019 07:42",
 		"method:" : "tobe 6/6/2019 07:42",
-		"privateSetText:notifying:" : "tobe 6/6/2019 07:46",
+		"privateSetText:notifying:" : "tobe 6/6/2019 07:51",
+		"replaceOnSelectorChange" : "tobe 6/6/2019 07:49",
+		"replaceOnSelectorChange:" : "tobe 6/6/2019 07:49",
 		"selectedClassOrMetaClass" : "tobe 6/6/2019 07:43" } }

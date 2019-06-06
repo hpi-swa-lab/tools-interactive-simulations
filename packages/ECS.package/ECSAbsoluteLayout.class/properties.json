@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"method",
-		"replaceOnSelectorChange" ],
-	"name" : "ECSCodeMethodEditor",
+		 ],
+	"name" : "ECSAbsoluteLayout",
 	"pools" : [
 		 ],
-	"super" : "ECSCodeEditor",
+	"super" : "LayoutPolicy",
 	"type" : "normal" }

@@ -3,4 +3,4 @@ initialize
 
 	super initialize.
 	
-	self layoutPolicy: nil
+	self layoutPolicy: ECSAbsoluteLayout new
