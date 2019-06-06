@@ -1,8 +1,8 @@
 as yet unclassified
 initialize
 
-^ Universe new
-
+super initialize.
+self
 stepTime: 0;
 register: (Pipeline new
 	title: 'main';
