@@ -24,7 +24,11 @@ addSystemToUI: aSystem
 		header: addMethodButton;
 		header: stateButton;
 		header: removeButton;
-		body: (self buildSystemFunctionsAreaAndFillItFor: aSystem);
+		body: (ECSRow new
+			addMorphFront: (Morph new extent: 20@0);
+			addMorphBack: (ECSColumn new
+				addMorphBack: (self buildSystemFunctionsAreaAndFillItFor: aSystem);
+				addMorphBack: (self buildConstantsAreaFor: aSystem)));
 		collapse).
 	
 	list addItem: systemMorph.
