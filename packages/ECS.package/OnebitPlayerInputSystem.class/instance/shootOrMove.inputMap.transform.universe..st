@@ -1,15 +1,15 @@
 as yet unclassified
-shootOrMove: aVector inputMap: inputMap transform: transform universe: aUniverse
+shootOrMove: aVector inputMap: inputMap transform: position universe: aUniverse
 
 	aUniverse query: {OnebitConfig} do: [:config |
 		aUniverse query: {KeyEvent} do: [:keyEvent |
 			keyEvent key = inputMap shoot ifTrue: [
 				aUniverse
-					spawnNewWith: {OnebitMoving. OnebitBurning. OnebitExpiring. Transform. Rendered}
+					spawnNewWith: {OnebitMoving. OnebitBurning. OnebitExpiring. OnebitPosition. Rendered}
 					do: [:moving :burning :expiring :shootTransform :rendered |
-					shootTransform bounds: transform bounds + aVector.
+					shootTransform x: position x + aVector x y: position y + aVector y.
 					moving velocity: aVector.
 					expiring timeLeft: 1000.
 					rendered color: Color white; form: (ECSTileMapAsset of: #onebit at: (15 , 10 square: config tileSize) scale: config scale)].
 				^ self]]].
-	transform bounds += aVector
+	position x: position x + aVector x y: position y + aVector y

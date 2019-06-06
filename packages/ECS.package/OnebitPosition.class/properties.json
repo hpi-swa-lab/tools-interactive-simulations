@@ -6,9 +6,12 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "OnebitBurningSystem",
+		"x",
+		"storage",
+		"id",
+		"y" ],
+	"name" : "OnebitPosition",
 	"pools" : [
 		 ],
-	"super" : "System",
+	"super" : "EntityComponent",
 	"type" : "normal" }

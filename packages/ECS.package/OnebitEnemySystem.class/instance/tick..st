@@ -1,8 +1,9 @@
 as yet unclassified
 tick: aUniverse
 
-	aUniverse query: {PlayerInput. Transform} do: [:input :playerTransform |
-		aUniverse query: {OnebitEnemyMinion. Transform. OnebitMoving} do: [:minion :transform :moving | | delta |
-			delta := playerTransform bounds origin - transform bounds origin.
-			delta  ~= (0 , 0) ifTrue: [
-				moving velocity: delta normalize round]]]
+	aUniverse query: {PlayerInput. OnebitPosition} do: [:input :playerPosition |
+		aUniverse query: {OnebitEnemyMinion. OnebitPosition. OnebitMoving} do: [:minion :position :moving | | dx dy |
+			dx := playerPosition x - position x.
+			dy := playerPosition y - position y.
+			(dx = 0 or: [dy = 0]) ifFalse: [
+				moving velocity: (dx , dy) normalize round]]]
