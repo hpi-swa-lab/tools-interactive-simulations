@@ -1,4 +1,4 @@
-as yet unclassified
+saving snapshots
 saveSnapshotInNewUniverseClassNamed: aClassNameString inCategory: aCategoryNameString
 
 	| newClass |

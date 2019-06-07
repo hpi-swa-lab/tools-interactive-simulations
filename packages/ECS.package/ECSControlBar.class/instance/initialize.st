@@ -1,4 +1,4 @@
-as yet unclassified
+initialization
 initialize
 
 	super initialize.
@@ -32,6 +32,10 @@ initialize
 	self updateIcon.
 	
 	self addMorphBack: ECSRow new.
+	self addMorphBack: (ECSButton new
+		when: #clicked send: #openNewTool to: self;
+		icon: ECSIcon iconWindow_maximize;
+		balloonText: 'Open new tool').
 	self addMorphBack: (ECSButton new
 		when: #clicked send: #saveSnapshot to: self;
 		icon: ECSIcon iconSave;

@@ -10,10 +10,10 @@ initializeFor: aUniverse
 	
 	self
 		addMorph: (ECSTemplateBrowser newFor: universe)
-		fullFrame: (LayoutFrame fractions: (0 @ 0.0 corner: 0.1 @ 0.8)).
+		fullFrame: (LayoutFrame fractions: (0 @ 0.0 corner: 0.18 @ 0.8)).
 	self
 		addMorph: (UniverseMorph new universe: universe)
-		fullFrame: (LayoutFrame fractions: (0.1 @ 0 corner: 0.8 @ 0.8)).
+		fullFrame: (LayoutFrame fractions: (0.18 @ 0 corner: 0.8 @ 0.8)).
 	self
 		addMorph: (ECSPanel new
 			addMorphBack: (ECSControlBar newFor: universe);

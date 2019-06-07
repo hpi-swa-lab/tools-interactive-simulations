@@ -3,8 +3,10 @@
 		 },
 	"instance" : {
 		"addComponent" : "T 5/27/2019 15:37",
-		"initialize" : "ek 6/6/2019 11:09",
+		"initialize" : "ek 6/6/2019 16:18",
+		"removeComponentEditor:" : "ek 6/6/2019 16:52",
+		"renameTemplate" : "ek 6/6/2019 16:09",
 		"spawnTemplate" : "T 5/27/2019 15:52",
 		"universe" : "T 5/27/2019 15:37",
 		"universe:" : "T 5/27/2019 15:36",
-		"updateTemplate:" : "T 5/27/2019 15:37" } }
+		"updateTemplate:" : "ek 6/6/2019 16:46" } }

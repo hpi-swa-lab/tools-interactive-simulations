@@ -1,0 +1,17 @@
+{
+	"category" : "ECS-Onebit",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"x",
+		"storage",
+		"id",
+		"y" ],
+	"name" : "OnebitPosition",
+	"pools" : [
+		 ],
+	"super" : "EntityComponent",
+	"type" : "normal" }

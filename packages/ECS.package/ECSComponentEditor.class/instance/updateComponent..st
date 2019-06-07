@@ -4,6 +4,12 @@ updateComponent: aComponent
 	component ~~ aComponent
 		ifTrue: [
 			self removeAllMorphs.
+			self addMorph: (ECSButton new
+				icon: ECSIcon iconRemove;
+				when: #clicked send: #removeMe to: self;
+				hResizing: #spaceFill;
+				balloonText: 'Remove component from template').
+			
 			
 			" special case #id "
 			aComponent isNumber
@@ -24,4 +30,4 @@ updateComponent: aComponent
 				component := aComponent]
 		ifFalse: [
 			aComponent class instVarNames doWithIndex: [:name :index |
-				(self submorphs at: index) submorphs second externalValueUpdate: (aComponent instVarNamed: name)]]
+				(self submorphs at: index+1) submorphs second externalValueUpdate: (aComponent instVarNamed: name)]]

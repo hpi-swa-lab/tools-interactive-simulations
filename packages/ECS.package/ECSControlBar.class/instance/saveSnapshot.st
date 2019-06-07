@@ -1,4 +1,4 @@
-as yet unclassified
+button methods
 saveSnapshot
 
 	| action |

@@ -6,8 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"linearStorage" ],
-	"name" : "OnebitMapStorage",
+		"linearStorage",
+		"positionStorage" ],
+	"name" : "OnebitPositionStorage",
 	"pools" : [
 		 ],
 	"super" : "Storage",

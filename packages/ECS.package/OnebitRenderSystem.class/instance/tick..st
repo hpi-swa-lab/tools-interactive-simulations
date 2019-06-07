@@ -4,12 +4,26 @@ tick: aUniverse
 	aUniverse draw: [:canvas :universe |
 		canvas fillColor: (Color fromString: '#472d3c').
 		
-		aUniverse query: {Transform. OnebitCameraFocus} do: [:cameraTransform :cameraf |
-			aUniverse query: {ScreenSize. OnebitConfig} do: [:screenSize :config | | size translate tileSize |
+		aUniverse query: {OnebitPosition. OnebitCameraFocus} do: [:cameraPosition :camera |
+			aUniverse query: {ScreenSize. OnebitConfig} do: [:screenSize :config | | size translateX translateY tileSize translate |
 				tileSize := config tileSize * config scale.
 				size := screenSize size // tileSize.
-				translate := cameraTransform bounds origin - (size // 2).
+				translateX := cameraPosition x - (size x // 2).
+				translateY := cameraPosition y - (size y // 2).
 				
+				aUniverse query: {Rendered. OnebitPosition} do: [:rendered :position | | tileX tileY |
+					tileX := position x - translateX.
+					tileY := position y - translateY.
+					
+					(tileX >= 0 and: [tileY >= 0 and: [tileX <= size x and: [tileY <= size y]]]) ifTrue: [
+						rendered form
+							ifNotNil: [:f | f drawOn: canvas at: tileX , tileY * tileSize blend: rendered color]
+							ifNil: [
+								canvas
+									fillRectangle: (tileX , tileY * tileSize extent: config tileSize * config scale)
+									color: rendered color]]].
+				
+				translate := translateX ,  translateY.
 				aUniverse query: {Rendered. Transform} do: [:rendered :transform | | tile |
 					tile := transform bounds origin - translate.
 					
