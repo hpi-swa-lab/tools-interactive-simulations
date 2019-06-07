@@ -1,7 +1,9 @@
 as yet unclassified
 initialize
 
-^ Universe new
+super initialize.
+self
+stepTime: 0;
 register: (Pipeline new
 	title: 'Loop';
 	runContinuously: true;
@@ -14,4 +16,8 @@ register: (Pipeline new
 	runContinuously: false;
 	register: AnnoResetWorldSystem new;
 	register: AnnoWorldGeneratorSystem new);
+register: (Pipeline new
+	title: 'NoiseTest';
+	runContinuously: false;
+	register: AnnoNoiseTestSystem new);
 yourself

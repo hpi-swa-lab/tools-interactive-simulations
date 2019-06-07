@@ -1,9 +1,7 @@
 as yet unclassified
 tick: aUniverse
 
-	| TileSize camera |
-	TileSize := ECSVector2 x: 64 y: 32.
-	
+	| camera |	
 	camera := (aUniverse queryList: {AnnoCamera}).
 	camera ifEmpty: [^ self].
 	camera := camera first first.

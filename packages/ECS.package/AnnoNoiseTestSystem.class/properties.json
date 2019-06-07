@@ -1,14 +1,15 @@
 {
-	"category" : "ECS-AnnoUniverse",
+	"category" : "ECS",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		 ],
+		"MapSize",
+		"Size" ],
 	"commentStamp" : "",
 	"instvars" : [
-		"position" ],
-	"name" : "AnnoTile",
+		 ],
+	"name" : "AnnoNoiseTestSystem",
 	"pools" : [
 		 ],
-	"super" : "EntityComponent",
+	"super" : "System",
 	"type" : "normal" }

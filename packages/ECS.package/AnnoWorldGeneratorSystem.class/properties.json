@@ -1,9 +1,10 @@
 {
-	"category" : "ECS-Anno",
+	"category" : "ECS-AnnoUniverse",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		 ],
+		"MapSize",
+		"R" ],
 	"commentStamp" : "",
 	"instvars" : [
 		 ],

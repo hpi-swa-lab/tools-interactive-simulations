@@ -1,12 +1,9 @@
 as yet unclassified
 tick: aUniverse
 
-	| tiles MapSize grass trees random |
+	| tiles grass trees noise |
 	tiles := aUniverse queryList: {AnnoTile}.
 	tiles ifNotEmpty: [^ self].
-	
-	random := Random seed: 1602.
-	MapSize := 50.
 	
 	"ECSAssetBrowser cleanCache"
 	grass := ECSImageAsset of: #anno at: '0.png' sized: 64 , 31.
@@ -18,11 +15,13 @@ tick: aUniverse
 		ECSImageAsset of: #anno at: '1464.png' sized: 64 , 48.
 	}.
 	
+	noise := self generateNoise.
+	
 	(0 to: MapSize - 1) do: [:x | (0 to: MapSize - 1) do: [:y |
-		aUniverse spawnNewWith: {Label. AnnoTile. Rendered} do: [:label :annoTile :rendered |
+		aUniverse spawnNewWith: {"Label. "AnnoTile. Rendered} do: [":label" :annoTile :rendered |
 			| growTree |
-			growTree := (random nextInt: 2) = 2.
-			label label: 'Tile ', x, ',', y.
-			rendered color: (ECSColor rgba: (16rff000000 + (random nextInt: 16rffffff))).
-			rendered form: (growTree ifTrue: [trees atRandom: random] ifFalse: [grass]).
+			growTree := "(random nextInt: 2) = 2" (noise at: (x + 1) + (MapSize * y)) > 0.
+			"label label: 'Tile ', x, ',', y."
+			rendered color: (ECSColor rgba: (16rff000000 + (R nextInt: 16rffffff))).
+			rendered form: (growTree ifTrue: [trees atRandom: R] ifFalse: [grass]).
 			annoTile position: (ECSVector2 x: x y: y)]]]
