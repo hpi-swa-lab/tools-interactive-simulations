@@ -22,12 +22,15 @@ register: (Pipeline new
 	title: 'Generation';
 	runContinuously: false;
 	register: OnebitGeneratorSystem new);
-spawnNewWith: {OnebitConfig. DeltaTime. OnebitGameState. ScreenSize} do: [:onebitConfig :deltaTime :onebitGameState :screenSize | 
+spawnNewWith: {OnebitConfig. ScreenSize. OnebitGameState. DeltaTime} do: [:onebitConfig :screenSize :onebitGameState :deltaTime | 
 	onebitConfig scale: 2; tileSize: 16; mapSize: 300 , 300.
-	deltaTime milliseconds: 22; last: 3737293847648; fpsAccumulated: 0; fpsAverage: 43.956043956043956; numAccumulated: 0; elapsed: 782308.
+	screenSize size: 513 , 614.
 	onebitGameState state: #init.
-	screenSize size: 1693 , 1241];
+	deltaTime milliseconds: 21; last: 3737425012776; fpsAccumulated: 66; fpsAverage: 46.403712296983755; numAccumulated: 3; elapsed: 929076];
 
 	addTemplate: (ECSTemplate new
-name: 'Enemy'; addComponent: (OnebitFlammable new);  addComponent: (OnebitPosition new);  addComponent: (OnebitMoving new velocity: 0 , 0);  addComponent: (Rendered new color: (ECSColor rgba: 16rFF000000);  form: (ECSTileMapAsset of: #onebit at: (31 , 3 corner: 47 , 19)));  addComponent: (OnebitEnemyMinion new));
+name: 'Enemy'; addComponent: (OnebitFlammable new);  addComponent: (OnebitPosition new);  addComponent: (OnebitMoving new velocity: 0 , 0);  addComponent: (Rendered new color: (ECSColor rgba: 16rFF000000);  form: (ECSTileMapAsset of: #onebit at: (29 , 2 corner: 45 , 18) scale: 2 rotation: 0));  addComponent: (OnebitEnemyMinion new));
+
+	addTemplate: (ECSTemplate new
+name: 'Player'; addComponent: (OnebitPosition new);  addComponent: (Rendered new color: (ECSColor rgba: 16rFF000000);  form: (ECSTileMapAsset of: #onebit at: (24 , 4 corner: 40 , 20) scale: 2 rotation: 0));  addComponent: (Health new max: 123;  current: 123);  addComponent: (PlayerInput new acceleration: 1;  left: $A;  right: $D;  up: $W;  down: $S;  shoot: Character space);  addComponent: (Label new label: (Text string: 'player' runs: (RunArray runs: #(6) values: ((Array new: 1) at: 1 put: ((Array new: 1) at: 1 put: (TextColor basicNew instVarAt: 1 put: (Color r: 1 g: 0.0 b: 0.0); yourself); yourself); yourself))));  addComponent: (OnebitCameraFocus new));
 yourself

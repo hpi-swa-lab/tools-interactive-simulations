@@ -1,5 +1,6 @@
 {
 	"class" : {
+		"normalizedKeyCharacter:" : "cmfcmf 5/31/2019 17:56",
 		"open" : "ek 5/15/2019 22:18" },
 	"instance" : {
 		"addTemplate:" : "cf 5/27/2019 17:06",
@@ -20,8 +21,8 @@
 		"freeIndexList:" : "cf 5/27/2019 15:24",
 		"get:of:" : "tobe 6/6/2019 12:23",
 		"handleAllKeysUp" : "cmfcmf 6/6/2019 13:33",
-		"handleKeyDown:" : "cmfcmf 5/31/2019 17:57",
-		"handleKeyUp:" : "cmfcmf 5/31/2019 17:57",
+		"handleKeyDown:" : "tobe 6/8/2019 07:32",
+		"handleKeyUp:" : "tobe 6/8/2019 07:37",
 		"handleMouseDown:" : "cmfcmf 5/31/2019 20:29",
 		"handleMouseMove:" : "TB 5/31/2019 08:48",
 		"handleMouseUp:" : "TB 5/31/2019 08:49",
@@ -32,7 +33,6 @@
 		"isPaused" : "T 4/29/2019 08:28",
 		"maxEntityIndex" : "T 5/22/2019 21:10",
 		"maxEntityIndex:" : "cf 5/27/2019 15:24",
-		"normalizedKeyCharacter:" : "cmfcmf 5/31/2019 17:56",
 		"onceRunPipelineNamed:" : "tobe 6/5/2019 11:08",
 		"pause" : "T 5/27/2019 18:04",
 		"pipelines" : "cf 5/27/2019 15:24",

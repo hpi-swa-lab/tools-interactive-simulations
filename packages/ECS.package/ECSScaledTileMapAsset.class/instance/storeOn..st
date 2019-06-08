@@ -3,8 +3,8 @@ storeOn: aStream
 
 	aStream nextPut: $(.
 	aStream nextPutAll: ECSTileMapAsset name;
-		nextPutAll: ' new of: '; nextPutAll: self bundle title;
-		nextPutAll: ' at: '. self identifier storeOn: aStream.
+		nextPutAll: ' of: '. self bundle title asSymbol storeOn: aStream.
+	aStream nextPutAll: ' at: '. self identifier storeOn: aStream.
 	aStream nextPutAll: ' scale: '. self scale storeOn: aStream.
 	aStream nextPutAll: ' rotation: '. self rotation storeOn: aStream.
 	aStream nextPut: $)

@@ -6,7 +6,7 @@ assetAt: aRectangle scale: aNumber rotation: anotherNumber
 	size := aRectangle extent * aNumber.
 	^ assets at: (aRectangle origin extent: size) ifAbsentPut: [
 		ECSScaledTileMapAsset new
-			form: ((self formFor: aRectangle) rotateBy: anotherNumber magnify: size smoothing: 1);
+			form: ((self formFor: aRectangle) rotateBy: anotherNumber magnify: aNumber smoothing: 1);
 			identifier: aRectangle;
 			bundle: self;
 			scale: aNumber;

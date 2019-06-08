@@ -1,4 +1,5 @@
 as yet unclassified
 value: anAsset
 
-	image image: ((anAsset ifNotNil: #previewForm) ifNil: [ImageMorph defaultForm])
+	image image: ((anAsset ifNotNil: #previewForm) ifNil: [ImageMorph defaultForm]).
+	self balloonText: anAsset storeString

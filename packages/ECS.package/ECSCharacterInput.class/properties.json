@@ -6,8 +6,10 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "ECSAssetPreview",
+		"character",
+		"value",
+		"onChange" ],
+	"name" : "ECSCharacterInput",
 	"pools" : [
 		 ],
 	"super" : "ECSButton",
