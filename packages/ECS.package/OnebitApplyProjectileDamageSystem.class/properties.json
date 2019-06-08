@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Onebit",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "OnebitApplyProjectileDamageSystem",
+	"pools" : [
+		 ],
+	"super" : "System",
+	"type" : "normal" }

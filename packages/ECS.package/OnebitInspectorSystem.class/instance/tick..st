@@ -1,8 +1,16 @@
 as yet unclassified
 tick: aUniverse
 
-	aUniverse query: {OnebitConfig. Mouse} do: [:config :mouse |
-		mouse leftJustUp ifTrue: [
-			aUniverse query: {OnebitPosition. #id} do: [:position :id |
-				((position x @ position y * 64 extent: config tileSize * config scale) containsPoint: mouse position)
-					ifTrue: [ECSEntityComponentFilter openForId: id universe: aUniverse]]]]
+	aUniverse query: {OnebitConfig. Mouse. ScreenSize. OnebitPosition} do: [:config :mouse :screenSize :mousePos |
+		
+		aUniverse query: {OnebitCameraFocus. OnebitPosition} do: [:cameraFocus :cameraPosition | | size tileSize translateX translateY |
+			tileSize := config tileSize * config scale.
+			size := screenSize size // tileSize.
+			translateX := cameraPosition x - (size x // 2).
+			translateY := cameraPosition y - (size y // 2).
+			
+			mousePos vector: (mouse position / tileSize + (translateX @ translateY)) floor.
+			
+			mouse leftJustUp ifTrue: [
+				(aUniverse storageOf: OnebitPosition) in: aUniverse at: mousePos vector query: {#id} do: [:id |.
+					id ~= 1 ifTrue: [ECSEntityComponentFilter openForId: id universe: aUniverse]]]]]

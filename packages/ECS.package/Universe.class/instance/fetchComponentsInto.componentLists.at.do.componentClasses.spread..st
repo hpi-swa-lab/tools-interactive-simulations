@@ -10,6 +10,7 @@ fetchComponentsInto: aCollection componentLists: lists at: entityIndex do: aBloc
 				ifTrue: [aCollection at: index put: nil]
 				ifFalse: [^ self]]].
 	
+	accesses := accesses + 1.
 	aBoolean
 		ifTrue: [aBlock valueWithArguments: aCollection]
 		ifFalse: [aBlock value: aCollection]

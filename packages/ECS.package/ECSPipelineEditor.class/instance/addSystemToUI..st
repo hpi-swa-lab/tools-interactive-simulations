@@ -1,7 +1,7 @@
 as yet unclassified
 addSystemToUI: aSystem
 
-	| stateButton removeButton systemMorph addMethodButton | 	
+	| stateButton removeButton systemMorph addMethodButton systemTitle | 	
 	stateButton := ECSButton new icon: (ECSIcon new changeIconName: (self stateIconForRunningState: aSystem isEnabled)).
 	stateButton
 		when: #clicked send: #togglePaused:button: to: self withArguments: {aSystem . stateButton};
@@ -11,14 +11,14 @@ addSystemToUI: aSystem
 		icon: ECSIcon iconRemove;
 		when: #clicked send: #removeSystemFromPipeline: to: self with: aSystem;
 		balloonText: 'Remove system from pipeline'.
-
+	
 	addMethodButton := ECSButton new
 		icon: ECSIcon iconPlus;
 		when: #clicked send: #addMethodTo: to: self with: aSystem;
 		balloonText: 'Add method'.
 	
 	systemMorph := (ECSCollapsible new 
-		header: (ECSLabel new contents: aSystem className; hResizing: #spaceFill);
+		header: (systemTitle := ECSLabel new contents: aSystem className; hResizing: #spaceFill);
 		header: (ECSButton new
 			icon: ECSIcon iconMap;
 			when: #clicked send: #openSystemMap: to: self with: aSystem;
@@ -32,6 +32,8 @@ addSystemToUI: aSystem
 				addMorphBack: (self buildSystemFunctionsAreaAndFillItFor: aSystem);
 				addMorphBack: (self buildConstantsAreaFor: aSystem)));
 		collapse).
+	
+	self universe when: #postTick send: #updateLabel:system: to: self withArguments: {systemTitle. aSystem}.
 	
 	list addItem: systemMorph.
 	systemsInUI at: aSystem put: systemMorph

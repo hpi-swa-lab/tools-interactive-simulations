@@ -1,13 +1,15 @@
 {
 	"class" : {
-		"fields" : "tobe 6/8/2019 11:12",
-		"mutatorFields" : "tobe 6/8/2019 11:12",
-		"storage" : "TB 6/3/2019 13:09" },
+		"fields" : "tobe 6/8/2019 12:24",
+		"mutatorFields" : "tobe 6/8/2019 12:24",
+		"storage" : "tobe 6/8/2019 12:24" },
 	"instance" : {
-		"initialize" : "TB 6/3/2019 10:58",
-		"mapSize" : "TB 6/3/2019 10:58",
-		"mapSize:" : "TB 6/3/2019 10:58",
-		"scale" : "TB 6/3/2019 10:58",
-		"scale:" : "TB 6/3/2019 10:58",
-		"tileSize" : "TB 6/3/2019 10:58",
-		"tileSize:" : "TB 6/3/2019 10:58" } }
+		"initialize" : "tobe 6/8/2019 12:24",
+		"mapSize" : "tobe 6/8/2019 12:24",
+		"mapSize:" : "tobe 6/8/2019 12:24",
+		"scale" : "tobe 6/8/2019 12:24",
+		"scale:" : "tobe 6/8/2019 12:24",
+		"tileSize" : "tobe 6/8/2019 12:24",
+		"tileSize:" : "tobe 6/8/2019 12:24",
+		"turnTime" : "tobe 6/8/2019 12:24",
+		"turnTime:" : "tobe 6/8/2019 12:24" } }

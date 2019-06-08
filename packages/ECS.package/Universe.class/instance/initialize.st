@@ -7,6 +7,7 @@ initialize
 	drawingBlocks := OrderedCollection new.
 	templates := OrderedCollection new.
 	stepTime := 0.
+	accesses := 0.
 	
 	self resetEntityList.
 	

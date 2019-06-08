@@ -1,3 +1,4 @@
 as yet unclassified
 fields
-	^#(#scale #tileSize #mapSize)
+
+	^ #(#scale #tileSize #mapSize #turnTime)

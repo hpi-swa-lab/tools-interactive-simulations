@@ -28,5 +28,6 @@ updateComponent: aComponent
 				
 				component := aComponent]
 		ifFalse: [
-			aComponent class fields withIndexDo: [:name :index |
-				(self submorphs at: index + 1) submorphs second externalValueUpdate: (aComponent perform: name)]]
+			aComponent isNumber ifFalse: [
+				aComponent class fields withIndexDo: [:name :index |
+					(self submorphs at: index + 1) submorphs second externalValueUpdate: (aComponent perform: name)]]]

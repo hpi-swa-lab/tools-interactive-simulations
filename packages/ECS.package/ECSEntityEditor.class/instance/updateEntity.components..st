@@ -7,5 +7,5 @@ updateEntity: aNumber components: aCollection
 	id := aCollection detect: #isNumber ifNone: [].
 	nameLabel contents: (aCollection
 		detect: [:c | c class = Label]
-		ifFound: [:labelComponent | labelComponent label asString]
+		ifFound: [:labelComponent | labelComponent label asString, ' (Entity ', id asString, ')']
 		ifNone: ['Entity ', id asString])

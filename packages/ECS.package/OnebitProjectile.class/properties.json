@@ -1,0 +1,16 @@
+{
+	"category" : "ECS-Onebit",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"sourcePosition",
+		"targetPosition",
+		"damage" ],
+	"name" : "OnebitProjectile",
+	"pools" : [
+		 ],
+	"super" : "EntityComponent",
+	"type" : "normal" }

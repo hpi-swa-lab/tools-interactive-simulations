@@ -6,7 +6,8 @@
 		"MetaInfo" ],
 	"commentStamp" : "",
 	"instvars" : [
-		"enabled" ],
+		"enabled",
+		"lastAccessCount" ],
 	"name" : "System",
 	"pools" : [
 		 ],

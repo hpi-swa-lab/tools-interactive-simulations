@@ -5,7 +5,7 @@
 		"addConstantTo:" : "cmfcmf 6/6/2019 10:57",
 		"addMethodTo:" : "cmfcmf 6/1/2019 11:32",
 		"addSystem" : "cmfcmf 5/31/2019 13:36",
-		"addSystemToUI:" : "ek 6/6/2019 11:37",
+		"addSystemToUI:" : "tobe 6/8/2019 16:48",
 		"buildConstantRowFor:named:" : "cmfcmf 6/6/2019 10:56",
 		"buildConstantsAreaFor:" : "cmfcmf 6/6/2019 10:53",
 		"buildMethodUIElementfor:of:" : "tobe 6/6/2019 07:43",
@@ -35,5 +35,6 @@
 		"togglePaused:button:" : "cf 5/28/2019 08:42",
 		"toggleRunContinuously" : "cmfcmf 5/31/2019 11:26",
 		"unregisterPipelineAndDeleteMyself" : "cmfcmf 5/30/2019 22:00",
+		"updateLabel:system:" : "tobe 6/8/2019 15:25",
 		"updateMethodSelectorTo:from:in:" : "TB 6/2/2019 20:13",
 		"when:forCurrentPipelineThenSend:" : "cmfcmf 5/31/2019 13:40" } }

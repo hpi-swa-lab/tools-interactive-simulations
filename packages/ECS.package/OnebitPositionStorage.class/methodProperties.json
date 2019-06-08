@@ -4,8 +4,10 @@
 	"instance" : {
 		"atForCreate:" : "tobe 6/6/2019 12:31",
 		"atForFetch:" : "tobe 6/6/2019 12:23",
+		"in:area:query:do:" : "tobe 6/8/2019 12:18",
+		"in:at:query:do:" : "tobe 6/8/2019 13:07",
 		"initialize" : "tobe 6/6/2019 13:42",
 		"pointGridHashX:y:" : "tobe 6/6/2019 12:41",
 		"positionOf:fromX:fromY:toX:toY:" : "tobe 6/6/2019 12:44",
-		"remove:" : "tobe 6/6/2019 15:21",
+		"remove:" : "tobe 6/8/2019 16:51",
 		"type:" : "tobe 6/6/2019 13:42" } }

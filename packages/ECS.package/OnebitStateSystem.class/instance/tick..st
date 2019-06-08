@@ -1,10 +1,10 @@
 as yet unclassified
 tick: aUniverse
 
-	aUniverse query: {OnebitGameState. DeltaTime} do: [:state :deltaTime |
+	aUniverse query: {OnebitGameState. OnebitConfig. DeltaTime} do: [:state :config :deltaTime |
 		state movingTimeout: state movingTimeout - deltaTime milliseconds.
 		state movingTimeout <= 0 ifTrue: [
-			state movingTimeout: 500.
+			state movingTimeout: config turnTime.
 			aUniverse onceRunPipelineNamed: 'GameTick'].
 		
 		state state == #unset ifTrue: [

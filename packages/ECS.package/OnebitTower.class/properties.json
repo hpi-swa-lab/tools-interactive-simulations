@@ -1,0 +1,15 @@
+{
+	"category" : "ECS-Onebit",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"projectileDamage",
+		"reach" ],
+	"name" : "OnebitTower",
+	"pools" : [
+		 ],
+	"super" : "EntityComponent",
+	"type" : "normal" }

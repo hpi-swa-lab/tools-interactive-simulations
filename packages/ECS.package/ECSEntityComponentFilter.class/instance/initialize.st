@@ -3,9 +3,9 @@ initialize
 
 	super initialize.
 	
-	self universe when: #tick send: #updateList to: self.
+	self universe when: #postTick send: #updateList to: self.
 	
-	list := ECSColumn new.
+	list := ECSColumn new layoutInset: (0 @ 0 corner: ECSScrollPane scrollBarThickness @ 0).
 	
 	self privateQueryString: 'self query: {Label}'.
 	

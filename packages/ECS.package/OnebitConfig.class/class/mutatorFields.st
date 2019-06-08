@@ -1,3 +1,4 @@
 as yet unclassified
 mutatorFields
-	^#(#scale: #tileSize: #mapSize:)
+
+	^ #(#scale: #tileSize: #mapSize: #turnTime:)

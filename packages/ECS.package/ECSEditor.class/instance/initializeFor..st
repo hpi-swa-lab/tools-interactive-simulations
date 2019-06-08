@@ -9,7 +9,7 @@ initializeFor: aUniverse
 	self minimumExtent: 1000@800 * (TextStyle defaultFont height / 16) rounded.
 	
 	self
-		addMorph: (ECSTemplateBrowser newFor: universe)
+		addMorph: (ECSPanel new addMorphBack: (ECSTemplateBrowser newFor: universe))
 		fullFrame: (LayoutFrame fractions: (0 @ 0.0 corner: 0.18 @ 0.8)).
 	self
 		addMorph: (UniverseMorph new universe: universe)

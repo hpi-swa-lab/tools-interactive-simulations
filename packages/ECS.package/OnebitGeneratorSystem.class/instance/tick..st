@@ -2,7 +2,7 @@ as yet unclassified
 tick: aUniverse
 
 	aUniverse query: {Rendered. #id} do: [:rendered :entity |
-		aUniverse remove: entity].
+		entity ~= 1 ifTrue: [aUniverse remove: entity]].
 	
 	aUniverse query: {OnebitConfig} do: [:config |
 		3000 timesRepeat: [

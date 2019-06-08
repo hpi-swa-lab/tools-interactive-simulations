@@ -14,5 +14,5 @@
 	"name" : "ECSComponentIterator",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "ECSIterator",
 	"type" : "normal" }

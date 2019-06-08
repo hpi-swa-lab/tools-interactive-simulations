@@ -14,7 +14,8 @@
 		"drawingBlocks",
 		"templates",
 		"stepTime",
-		"saveFilter" ],
+		"saveFilter",
+		"accesses" ],
 	"name" : "Universe",
 	"pools" : [
 		 ],
