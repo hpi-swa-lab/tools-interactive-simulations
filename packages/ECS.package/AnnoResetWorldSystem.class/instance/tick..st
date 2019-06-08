@@ -3,10 +3,13 @@ tick: aUniverse
 
 	aUniverse query: {#id. AnnoTile} do: [:id :annoTile |
 		aUniverse remove: id].
+	aUniverse query: {#id. AnnoChunk} do: [:id :annoChunk |
+		aUniverse remove: id].
 	aUniverse query: {#id. AnnoCamera} do: [:id :annoCamera |
 		aUniverse remove: id].
-	aUniverse spawnNewWith: {AnnoCamera} do: [:annoCamera |
-		annoCamera position: (ECSVector2 x: 0 y: 0)].
+	aUniverse spawnNewWith: {AnnoCamera. ScreenSize} do: [:annoCamera :screenSize |
+		annoCamera position: 0, 0.
+		screenSize size: 0, 0].
 	
 	aUniverse query: {#id. Mouse. DeltaTime} do: [:id :mouse :deltaTime |
 		aUniverse remove: id].

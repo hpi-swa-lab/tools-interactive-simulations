@@ -12,7 +12,8 @@ buildMethodUIElementfor: aMethodSymbol of: aSystem
 		value: (ECSCollapsible new
 			header: (ECSLabel new contents: aMethodSymbol asString; hResizing: #spaceFill);
 			header: removeButton;
-			body: (ECSCodeMethodEditor new 
+			body: (ECSCodeMethodEditor new
+				replaceOnSelectorChange: true;
 				method: (aSystem class lookupSelector: aMethodSymbol);
 				"when: #changedSelector send: #updateMethodSelectorTo:from:in: to: self withArguments: {nil. aMethodSymbol. aSystem};"
 				yourself);

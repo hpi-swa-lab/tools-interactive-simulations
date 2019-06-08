@@ -1,15 +1,14 @@
 {
-	"category" : "ECS",
+	"category" : "ECS-AnnoUniverse",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"MapSize",
-		"Size",
+		"ChunkSize",
 		"TileSize" ],
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "AnnoNoiseTestSystem",
+	"name" : "AnnoDynamicWorldGeneratorSystem",
 	"pools" : [
 		 ],
 	"super" : "System",

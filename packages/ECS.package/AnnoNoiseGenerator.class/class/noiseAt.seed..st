@@ -1,9 +1,10 @@
 as yet unclassified
-noiseAt: aPoint gradPAndPerm: anArray
+noiseAt: aPoint seed: aNumber
 
-	| s n0 n1 n2 xin yin F2 G2 F3 G3 i j t x0 y0 i1 j1 x1 y1 x2 y2 gi0 gi1 gi2 t0 t1 t2 gradP perm |
-	gradP := anArray first.
-	perm := anArray second.
+	| s n0 n1 n2 xin yin F2 G2 F3 G3 i j t x0 y0 i1 j1 x1 y1 x2 y2 gi0 gi1 gi2 t0 t1 t2 gradP perm tmp |
+	tmp := self gradPAndPermCache at: aNumber ifAbsentPut: [self gradPAndPerm: aNumber].
+	gradP := tmp first.
+	perm := tmp second.
 	
 	F2 := 0.5 * (3 sqrt - 1).
 	G2 := (3 - (3 sqrt)) / 6.
