@@ -3,14 +3,13 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"MapSize",
-		"Size",
-		"TileSize" ],
+		"GradPAndPermCache",
+		"P" ],
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "AnnoNoiseTestSystem",
+	"name" : "AnnoNoiseGenerator",
 	"pools" : [
 		 ],
-	"super" : "System",
+	"super" : "Object",
 	"type" : "normal" }

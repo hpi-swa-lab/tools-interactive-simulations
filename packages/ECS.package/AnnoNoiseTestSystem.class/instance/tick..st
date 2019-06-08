@@ -1,12 +1,14 @@
 as yet unclassified
 tick: aUniverse
 
-	aUniverse draw: [:canvas :universe | | gradPAndPerm1 gradPAndPerm2 |
-		gradPAndPerm1 := self gradPAndPerm: 1602.
-		gradPAndPerm2 := self gradPAndPerm: 1503.
+	| camera tmp |
+	tmp := (aUniverse queryList: {AnnoCamera. ScreenSize}).
+	camera := self pixelToMapPosition: (tmp ifEmpty: [0@0] ifNotEmpty: [tmp first first position negated]).
+
+	aUniverse draw: [:canvas :universe | 
 		1 to: MapSize do: [:y | 1 to: MapSize do: [:x | | noise1 color noise2 |
-			noise1 := self noiseAt: x@y / 100 gradPAndPerm: gradPAndPerm1.
-			noise2 := self noiseAt: x@y / 30 gradPAndPerm: gradPAndPerm2.
+			noise1 := AnnoNoiseGenerator noiseAt: (x@y + camera) / 100 seed: 1602.
+			noise2 := AnnoNoiseGenerator noiseAt: (x@y + camera) / 30 seed: 1503.
 			
 			color := true caseOf: {
 				[noise1 < 0.1] -> [Color fromString: '#003366'].

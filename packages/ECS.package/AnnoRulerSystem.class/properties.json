@@ -3,13 +3,14 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"MapSize",
-		"Size",
+		"ChunkSize",
+		"Distance",
+		"Length",
 		"TileSize" ],
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "AnnoNoiseTestSystem",
+	"name" : "AnnoRulerSystem",
 	"pools" : [
 		 ],
 	"super" : "System",

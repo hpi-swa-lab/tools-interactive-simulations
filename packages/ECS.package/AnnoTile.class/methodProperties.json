@@ -1,9 +1,11 @@
 {
 	"class" : {
-		"fields" : "tobe 6/8/2019 11:12",
-		"mutatorFields" : "tobe 6/8/2019 11:12",
-		"storage" : "TB 6/2/2019 13:27" },
+		"fields" : "cmfcmf 6/8/2019 12:54",
+		"mutatorFields" : "cmfcmf 6/8/2019 12:54",
+		"storage" : "cmfcmf 6/7/2019 15:42" },
 	"instance" : {
-		"initialize" : "TB 6/2/2019 13:27",
-		"position" : "TB 6/2/2019 13:27",
-		"position:" : "TB 6/2/2019 13:27" } }
+		"chunkPos" : "cmfcmf 6/7/2019 15:42",
+		"chunkPos:" : "cmfcmf 6/7/2019 15:42",
+		"initialize" : "cmfcmf 6/7/2019 15:42",
+		"position" : "cmfcmf 6/7/2019 15:42",
+		"position:" : "cmfcmf 6/7/2019 15:42" } }

@@ -2,9 +2,5 @@
 	"class" : {
 		 },
 	"instance" : {
-		"gradPAndPerm:" : "cmfcmf 6/7/2019 14:35",
-		"noiseAt:gradPAndPerm:" : "cmfcmf 6/7/2019 14:34",
-		"p" : "cmfcmf 6/7/2019 14:30",
-		"p1" : "cmfcmf 6/7/2019 14:30",
-		"p2" : "cmfcmf 6/7/2019 14:36",
-		"tick:" : "cmfcmf 6/7/2019 14:36" } }
+		"pixelToMapPosition:" : "cmfcmf 6/8/2019 12:47",
+		"tick:" : "cmfcmf 6/8/2019 12:47" } }

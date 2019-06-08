@@ -3,14 +3,12 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"MapSize",
-		"Size",
-		"TileSize" ],
+		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "AnnoNoiseTestSystem",
+		"position" ],
+	"name" : "AnnoChunk",
 	"pools" : [
 		 ],
-	"super" : "System",
+	"super" : "EntityComponent",
 	"type" : "normal" }

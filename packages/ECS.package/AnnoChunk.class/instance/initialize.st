@@ -3,5 +3,4 @@ initialize
 
 	super initialize.
 
-	position := 0 , 0.
-	chunkPos := 0 , 0
+	position := 0 , 0

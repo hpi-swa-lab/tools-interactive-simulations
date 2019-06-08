@@ -6,7 +6,7 @@ tick: aUniverse
 	camera ifEmpty: [^ self].
 	camera := camera first first.
 	
-	speed := 16. "todo: This should rely on DeltaTime"
+	speed := 32. "todo: This should rely on DeltaTime"
 	
 	aUniverse query: {KeyEvent} do: [:keyEvent | keyEvent key caseOf: {
 		[$W] -> [camera position y: camera position y + speed].
