@@ -6,7 +6,7 @@ buildSystemFunctionsAreaAndFillItFor: aSystem
 	
 	nonRequiredFunctionsInUI at: aSystem put: Dictionary new.
 	
-	aSystem class methodDictionary keys do: [:methodSymbol |
+	aSystem class methodDictionary keys sorted do: [:methodSymbol |
 		(self requiredMethodSymbols includes: methodSymbol)
 			ifTrue: [functionsColumn addMorphFront: (self buildRequiredMethodUIElementfor: methodSymbol of: aSystem)]
 			ifFalse: [functionsColumn addMorphBack: (self buildMethodUIElementfor: methodSymbol of: aSystem)]].

@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "T 5/27/2019 16:11",
 	"instvars" : [
-		"component" ],
+		"component",
+		"parentTool" ],
 	"name" : "ECSComponentEditor",
 	"pools" : [
 		 ],

@@ -4,8 +4,9 @@
 	"instance" : {
 		"addComponent" : "T 5/27/2019 15:37",
 		"initialize" : "ek 6/6/2019 16:18",
+		"removeComponentEditor:" : "ek 6/6/2019 16:52",
 		"renameTemplate" : "ek 6/6/2019 16:09",
 		"spawnTemplate" : "tobe 6/6/2019 18:50",
 		"universe" : "T 5/27/2019 15:37",
 		"universe:" : "T 5/27/2019 15:36",
-		"updateTemplate:" : "T 5/27/2019 15:37" } }
+		"updateTemplate:" : "ek 6/6/2019 16:46" } }

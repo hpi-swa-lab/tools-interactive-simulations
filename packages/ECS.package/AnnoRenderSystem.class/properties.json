@@ -1,9 +1,9 @@
 {
-	"category" : "ECS-Anno",
+	"category" : "ECS-AnnoUniverse",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		 ],
+		"TileSize" ],
 	"commentStamp" : "",
 	"instvars" : [
 		 ],

@@ -10,4 +10,4 @@ SystemOrganization addCategory: #'ECS-Experiments'!
 SystemOrganization addCategory: #'ECS-Plumbing'!
 SystemOrganization addCategory: #'ECS-Onebit'!
 SystemOrganization addCategory: #'ECS-EvasClickingGame'!
-SystemOrganization addCategory: #'ECS-Anno'!
+SystemOrganization addCategory: #'ECS-AnnoUniverse'!
