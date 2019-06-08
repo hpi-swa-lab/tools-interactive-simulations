@@ -1,0 +1,11 @@
+{
+	"class" : {
+		"objectEvents" : "tobe 6/8/2019 08:42",
+		"signals" : "tobe 6/8/2019 08:42",
+		"signalsDirect" : "tobe 6/8/2019 08:42" },
+	"instance" : {
+		"doChange:" : "tobe 6/8/2019 08:36",
+		"doChangeDirect:" : "tobe 6/8/2019 08:38",
+		"doChangeEvent:" : "tobe 6/8/2019 08:37",
+		"gotChange:" : "tobe 6/8/2019 08:39",
+		"positionChanged:" : "tobe 6/8/2019 08:41" } }

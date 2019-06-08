@@ -1,4 +1,4 @@
 as yet unclassified
 removeMe
 
-	self parentTool ifNotNil: [self parentTool removeComponentEditor: self]
+	self parentTool ifNotNil: [self parentTool removeComponent: self]

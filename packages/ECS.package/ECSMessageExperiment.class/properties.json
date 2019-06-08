@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Experiments",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ECSMessageExperiment",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
