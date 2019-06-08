@@ -3,4 +3,5 @@ initialize
 
 	super initialize.
 
-	state := #unset
+	state := #unset.
+	movingTimeout := 0

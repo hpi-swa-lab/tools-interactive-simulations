@@ -1,8 +1,8 @@
 as yet unclassified
 storeFieldsOn: aStream
 
-	self class instVarNames
+	self class fields
 		do: [:name |
 			aStream nextPutAll: name; nextPutAll: ': '.
-			(self instVarNamed: name) storeOn: aStream]
+			(self perform: name) storeOn: aStream]
 		separatedBy: [aStream nextPutAll: '; ']

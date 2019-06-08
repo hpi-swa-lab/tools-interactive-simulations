@@ -9,9 +9,9 @@ tick: aUniverse
 		
 		4 timesRepeat: [
 			aUniverse
-				spawnNewWith: {Transform. Rendered. OnebitExpiring. OnebitMoving}
-				do: [:particleTransform :rendered :expiring :moving |
+				spawnNewWith: {Transform. Rendered. OnebitExpiring. OnebitParticle}
+				do: [:particleTransform :rendered :expiring :particle |
 					expiring timeLeft: 500 atRandom.
-					moving velocity: 2 atRandom - 2 / 8.0, (10 atRandom negated / 10.0).
+					particle velocity: 20 atRandom - 10 / 8.0, (30 atRandom negated / 10.0).
 					particleTransform bounds: (position x , position y + (0 , 0 randomTo: 1 , 1) extent: 5 , 5).
 					rendered color: Color red; form: nil]]]

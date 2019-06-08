@@ -2,11 +2,13 @@
 	"class" : {
 		 },
 	"instance" : {
-		"addComponent" : "T 5/27/2019 15:37",
+		"addComponent" : "tobe 6/8/2019 08:27",
+		"allMyInstancesDo:" : "tobe 6/8/2019 08:26",
 		"initialize" : "ek 6/6/2019 16:18",
-		"removeComponentEditor:" : "ek 6/6/2019 16:52",
+		"removeComponent:" : "tobe 6/8/2019 08:27",
 		"renameTemplate" : "ek 6/6/2019 16:09",
-		"spawnTemplate" : "T 5/27/2019 15:52",
+		"spawnTemplate" : "tobe 6/6/2019 18:50",
 		"universe" : "T 5/27/2019 15:37",
 		"universe:" : "T 5/27/2019 15:36",
-		"updateTemplate:" : "ek 6/6/2019 16:46" } }
+		"update:ofComponent:with:" : "tobe 6/8/2019 09:11",
+		"updateTemplate:" : "tobe 6/8/2019 09:00" } }

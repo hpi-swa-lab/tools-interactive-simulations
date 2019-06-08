@@ -9,7 +9,8 @@
 		"assetList",
 		"currentBundle",
 		"bundleButton",
-		"closeOnPick" ],
+		"closeOnPick",
+		"parameters" ],
 	"name" : "ECSAssetBrowser",
 	"pools" : [
 		 ],

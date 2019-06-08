@@ -1,0 +1,16 @@
+{
+	"category" : "ECS-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"character",
+		"value",
+		"onChange" ],
+	"name" : "ECSCharacterInput",
+	"pools" : [
+		 ],
+	"super" : "ECSButton",
+	"type" : "normal" }

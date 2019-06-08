@@ -6,6 +6,6 @@ storeOn: aStream
 	aStream nextPutAll: ' new'.
 	aStream cr.
 	aStream nextPutAll: 'name: ', $', self name, $'.
-	self components ifNotEmpty: [aStream nextPut: $;].
-	self components do: [:c | aStream nextPutAll: ' addComponent: ('. c storeOn: aStream. aStream nextPut: $)] separatedBy: [aStream nextPutAll: '; '].
+	(self components notNil and: [self components notEmpty]) ifTrue: [aStream nextPut: $;].
+	self components do: [:c | aStream nextPutAll: ' addComponent: ('. c storeForTemplateOn: aStream. aStream nextPut: $)] separatedBy: [aStream nextPutAll: '; '].
 	aStream nextPut: $)

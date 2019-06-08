@@ -1,0 +1,22 @@
+{
+	"class" : {
+		"enumerateFields" : "tobe 6/8/2019 10:30",
+		"fetchFields" : "tobe 6/8/2019 10:35",
+		"fetchFieldsClass" : "tobe 6/8/2019 10:35",
+		"fields" : "tobe 6/8/2019 10:35",
+		"fieldsDo:" : "tobe 6/8/2019 11:00",
+		"loopInstVarAt" : "tobe 6/8/2019 11:03",
+		"loopOptimized" : "tobe 6/8/2019 11:01",
+		"loopPerformAsMutator" : "tobe 6/8/2019 10:56",
+		"loopPerformMutatingFields" : "tobe 6/8/2019 11:01",
+		"mutatingFields" : "tobe 6/8/2019 11:01",
+		"updateAccessor" : "tobe 6/8/2019 10:07",
+		"updateAt" : "tobe 6/8/2019 10:12",
+		"updateInstVarNamed" : "tobe 6/8/2019 10:07",
+		"updatePerformAccessor" : "tobe 6/8/2019 10:53" },
+	"instance" : {
+		"fields" : "tobe 6/8/2019 10:27",
+		"x" : "tobe 6/8/2019 10:57",
+		"x:" : "tobe 6/8/2019 10:06",
+		"y" : "tobe 6/8/2019 10:57",
+		"y:" : "tobe 6/8/2019 10:06" } }

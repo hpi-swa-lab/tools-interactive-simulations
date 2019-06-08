@@ -3,21 +3,15 @@ storeAttributeSettingOn: aStream
 
 	aStream cr; nextPutAll: 'stepTime: '. self stepTime storeOn: aStream. aStream nextPut: $;; cr.
 	
+	self saveFilter ifNotNil: [
+		aStream nextPutAll: 'saveFilter: '. saveFilter storeOn: aStream. aStream nextPut: $;; cr].
+	
 	self pipelines do: [:pipeline |
 		aStream nextPutAll: 'register: '. pipeline storeOn: aStream. aStream nextPut: $;; cr].
 	
-	(1 to: self maxEntityIndex) do: [:entity | | entityComponents |
-		entityComponents := (self allComponentsOf: entity) select: [:c | c isNumber not].
-		entityComponents ifNotEmpty: [
-			aStream nextPutAll: 'spawnNewWith: {'.
-			entityComponents do: [:component | aStream nextPutAll: component className] separatedBy: [aStream nextPutAll: '. '].
-			aStream nextPutAll: '} do: ['.
-			entityComponents do: [:component | aStream nextPut: $:; nextPutAll: component className asLegalSelector; space].
-			aStream nextPut: $|; space; cr.
-			entityComponents do: [:component |
-				aStream tab; nextPutAll: component className asLegalSelector; space.
-				component storeFieldsOn: aStream] separatedBy: [aStream nextPut: $.. aStream cr].
-			aStream nextPut: $]; nextPut: $;; cr]].
+	self saveFilter
+		ifNotNil: [(self saveFilter value: self) do: [:components | self storeEntity: components first on: aStream]]
+		ifNil: [(1 to: self maxEntityIndex) do: [:entity | self storeEntity: entity on: aStream]].
 	
 	self templates do: [:template |
 		aStream cr; tab; nextPutAll: 'addTemplate: '. template storeOn: aStream. aStream nextPut: $;; cr].

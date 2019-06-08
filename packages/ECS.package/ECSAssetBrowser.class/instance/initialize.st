@@ -23,7 +23,8 @@ initialize
 			when: #clicked send: #chooseAssetBundle to: self);
 		addMorphBack: (ECSButton new
 			icon: ECSIcon iconPlus;
-			when: #clicked send: #addAssetBundle to: self)).
+			when: #clicked send: #addAssetBundle to: self);
+		addMorphBack: (parameters := ECSRow new cellInset: 16)).
 	self addMorphBack: (ECSScrollPane new setMorph: assetList).
 	
 	currentBundle := self class assetCache ifNotEmpty: [self class assetCache anyOne] ifEmpty: [].
