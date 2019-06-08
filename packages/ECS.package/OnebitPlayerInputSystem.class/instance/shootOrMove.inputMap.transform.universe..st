@@ -9,7 +9,7 @@ shootOrMove: aVector inputMap: inputMap transform: position universe: aUniverse
 					do: [:moving :burning :expiring :shootTransform :rendered |
 					shootTransform x: position x + aVector x y: position y + aVector y.
 					moving velocity: aVector.
-					expiring timeLeft: 1000.
+					expiring timeLeft: 4000.
 					rendered color: Color white; form: (ECSTileMapAsset of: #onebit at: (15 , 10 square: config tileSize) scale: config scale)].
 				^ self]]].
 	position x: position x + aVector x y: position y + aVector y
