@@ -18,7 +18,7 @@ updateComponent: aComponent
 						addMorphBack: (ECSLabel new hResizing: #spaceFill; contents: 'ID' asText allBold);
 						addMorphBack: (ECSLabel new contents: aComponent asString))]
 				ifFalse: [ | vars |
-					vars := aComponent class instVarNames.
+					vars := aComponent class fields.
 					vars do: [:name |
 						self addMorphBack: (ECSRow new
 							addMorphBack: (ECSLabel new
@@ -28,5 +28,5 @@ updateComponent: aComponent
 				
 				component := aComponent]
 		ifFalse: [
-			aComponent class instVarNames doWithIndex: [:name :index |
-				(self submorphs at: index+1) submorphs second externalValueUpdate: (aComponent instVarNamed: name)]]
+			aComponent class fields withIndexDo: [:name :index |
+				(self submorphs at: index + 1) submorphs second externalValueUpdate: (aComponent perform: name)]]

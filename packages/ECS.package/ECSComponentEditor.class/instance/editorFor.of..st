@@ -6,12 +6,12 @@ editorFor: aFieldSymbol of: aComponent
 		detect: [:p | p keyword = #ecsType:]
 		ifFound: [:p | p arguments first] ifNone: [].
 	
-	value := aComponent instVarNamed: aFieldSymbol.
+	value := aComponent perform: aFieldSymbol.
 	
 	class ifNotNil: [
 		^ (Smalltalk at: class) editorType new
 			onChange: [:val |
-				aComponent instVarNamed: aFieldSymbol put: val.
+				aComponent perform: aFieldSymbol asMutator with: val.
 				self triggerEvent: #changedValue withArguments: {aFieldSymbol. aComponent. val}];
 			value: value].
 	

@@ -1,0 +1,15 @@
+{
+	"category" : "ECS-Experiments",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"Components" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"x",
+		"y" ],
+	"name" : "ECSFieldUpdateExperiment",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

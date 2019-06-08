@@ -1,5 +1,5 @@
 as yet unclassified
 copyFieldsTo: aComponent
 
-	self class instVarNames do: [:name |
-		aComponent instVarNamed: name put: (self instVarNamed: name) copy]
+	self class fieldsDo: [:name :mutatorName |
+		aComponent perform: mutatorName with: (self perform: name) copy]

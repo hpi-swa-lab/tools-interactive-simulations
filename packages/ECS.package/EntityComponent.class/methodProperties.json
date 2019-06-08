@@ -1,12 +1,15 @@
 {
 	"class" : {
+		"fields" : "tobe 6/8/2019 10:38",
+		"fieldsDo:" : "tobe 6/8/2019 11:14",
+		"mutatorFields" : "tobe 6/8/2019 11:05",
 		"optional" : "ek 5/15/2019 22:21",
 		"storage" : "T 4/29/2019 08:35" },
 	"instance" : {
 		"alive" : "T 5/23/2019 16:49",
 		"alive:" : "T 5/23/2019 16:48",
-		"copyFieldsTo:" : "tobe 6/8/2019 09:13",
+		"copyFieldsTo:" : "tobe 6/8/2019 11:14",
 		"initialize" : "TB 6/2/2019 12:41",
-		"storeFieldsOn:" : "T 5/30/2019 13:59",
+		"storeFieldsOn:" : "tobe 6/8/2019 10:36",
 		"storeForTemplateOn:" : "tobe 6/6/2019 18:08",
-		"storeOn:" : "tobe 6/6/2019 16:53" } }
+		"storeOn:" : "tobe 6/8/2019 10:36" } }
