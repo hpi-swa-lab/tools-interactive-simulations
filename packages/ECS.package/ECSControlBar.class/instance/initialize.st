@@ -13,7 +13,7 @@ initialize
 	self addMorphBack: (ECSButton new
 		when: #clicked send: #spawnNewEntity to: self;
 		label: 'Entity';
-		icon: (ECSIcon iconPlus);
+		icon: ECSIcon iconPlus;
 		balloonText: 'Add new entity').
 	self addMorphBack: (ECSButton new
 		when: #clicked send: #togglePause

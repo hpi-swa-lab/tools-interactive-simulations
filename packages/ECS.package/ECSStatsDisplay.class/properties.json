@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Tools",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ECSStatsDisplay",
+	"pools" : [
+		 ],
+	"super" : "ECSTool",
+	"type" : "normal" }

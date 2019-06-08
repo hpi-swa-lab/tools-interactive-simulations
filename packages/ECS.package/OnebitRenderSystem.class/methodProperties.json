@@ -2,4 +2,5 @@
 	"class" : {
 		 },
 	"instance" : {
-		"tick:" : "tobe 6/6/2019 15:28" } }
+		"drawRendered:at:extent:on:" : "tobe 6/8/2019 17:51",
+		"tick:" : "tobe 6/8/2019 17:53" } }

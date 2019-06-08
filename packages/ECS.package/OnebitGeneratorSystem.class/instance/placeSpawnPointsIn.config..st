@@ -7,4 +7,4 @@ placeSpawnPointsIn: aWorld config: aConfig
 		aWorld spawnNewWith: {OnebitPosition. Rendered. OnebitSpawnPoint} do: [:position :rendered :spawnPoint |
 			position x: (index sin * r) rounded y: (index cos * r) rounded.
 			rendered color: Color red; form: nil.
-			spawnPoint frequency: 5000; timeout: 0]]
+			spawnPoint frequency: 15000; timeout: 0]]

@@ -1,4 +1,7 @@
 drawing
 drawOn: aCanvas
 
-	drawingBlocks do: [:block | block value: aCanvas value: self]
+	accesses := 0.
+	self triggerEvent: #preDraw.
+	drawingBlocks do: [:block | block value: aCanvas value: self].
+	self triggerEvent: #postDraw
