@@ -3,5 +3,4 @@ initialize
 
 	super initialize.
 
-	state := #unset.
-	movingTimeout := 0
+	velocity := 0 , 0

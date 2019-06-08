@@ -6,9 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"state",
-		"movingTimeout" ],
-	"name" : "OnebitGameState",
+		"velocity" ],
+	"name" : "OnebitParticle",
 	"pools" : [
 		 ],
 	"super" : "EntityComponent",

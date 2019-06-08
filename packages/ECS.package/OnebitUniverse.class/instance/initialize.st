@@ -3,7 +3,7 @@ initialize
 
 super initialize.
 self
-stepTime: 0;
+stepTime: 454;
 saveFilter: [:u | u query: {#id. DeltaTime}];
 register: (Pipeline new
 	title: 'Loop';
@@ -17,16 +17,17 @@ register: (Pipeline new
 	register: OnebitMovingSystem new;
 	register: OnebitSpawnSystem new;
 	register: OnebitEnemySystem new;
-	register: OnebitRenderSystem new);
+	register: OnebitRenderSystem new;
+	register: OnebitParticleSystem new);
 register: (Pipeline new
 	title: 'Generation';
 	runContinuously: false;
 	register: OnebitGeneratorSystem new);
 spawnNewWith: {OnebitConfig. ScreenSize. OnebitGameState. DeltaTime} do: [:onebitConfig :screenSize :onebitGameState :deltaTime | 
 	onebitConfig scale: 2; tileSize: 16; mapSize: 300 , 300.
-	screenSize size: 513 , 614.
-	onebitGameState state: #init.
-	deltaTime milliseconds: 21; last: 3737425012776; fpsAccumulated: 66; fpsAverage: 46.403712296983755; numAccumulated: 3; elapsed: 929076];
+	screenSize size: 528 , 762.
+	onebitGameState state: #init; movingTimeout: 500.
+	deltaTime milliseconds: 458; last: 3737426696850; fpsAccumulated: 5282; fpsAverage: 2.1356113187399894; numAccumulated: 10; elapsed: 1413229];
 
 	addTemplate: (ECSTemplate new
 name: 'Enemy'; addComponent: (OnebitFlammable new);  addComponent: (OnebitPosition new);  addComponent: (OnebitMoving new velocity: 0 , 0);  addComponent: (Rendered new color: (ECSColor rgba: 16rFF000000);  form: (ECSTileMapAsset of: #onebit at: (29 , 2 corner: 45 , 18) scale: 2 rotation: 0));  addComponent: (OnebitEnemyMinion new));
