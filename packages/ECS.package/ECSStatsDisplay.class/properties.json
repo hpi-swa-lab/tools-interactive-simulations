@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"drawTimeStart",
+		"pipelinesTimeStart" ],
 	"name" : "ECSStatsDisplay",
 	"pools" : [
 		 ],
