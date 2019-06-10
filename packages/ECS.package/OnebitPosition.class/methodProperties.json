@@ -2,13 +2,13 @@
 	"class" : {
 		"fields" : "tobe 6/8/2019 12:10",
 		"mutatorFields" : "tobe 6/8/2019 12:10",
-		"storage" : "tobe 6/6/2019 13:36" },
+		"storage" : "tobe 6/10/2019 20:41" },
 	"instance" : {
 		"copyFieldsTo:" : "tobe 6/6/2019 18:54",
 		"id:storage:" : "tobe 6/6/2019 12:32",
 		"initialize" : "tobe 6/6/2019 15:12",
 		"squaredDistanceTo:" : "tobe 6/8/2019 12:39",
-		"storeForTemplateOn:" : "tobe 6/6/2019 19:12",
+		"storeForTemplateOn:" : "tobe 6/10/2019 20:40",
 		"vector" : "tobe 6/8/2019 12:46",
 		"vector:" : "tobe 6/8/2019 12:54",
 		"x" : "tobe 6/6/2019 15:12",

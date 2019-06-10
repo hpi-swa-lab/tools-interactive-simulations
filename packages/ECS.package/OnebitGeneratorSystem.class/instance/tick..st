@@ -5,8 +5,8 @@ tick: aUniverse
 		entity ~= 1 ifTrue: [aUniverse remove: entity]].
 	
 	aUniverse query: {OnebitConfig} do: [:config |
-		3000 timesRepeat: [
-			self spawn: (5 atRandom , 1) at: config mapSize atRandom - (config mapSize // 2) config: config in: aUniverse].
+		30 timesRepeat: [
+			self spawn: (5 atRandom , 1) at: config mapSize atRandom - (1 , 1) config: config in: aUniverse].
 		
 		aUniverse
 			instanceTemplate: #Player.

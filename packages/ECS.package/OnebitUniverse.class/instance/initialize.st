@@ -17,6 +17,7 @@ register: (Pipeline new
 	register: OnebitRenderSystem new;
 	register: OnebitProjectileSystem new;
 	register: OnebitParticleSystem new;
+	register: OnebitWaterFlowSystem new;
 	register: AnnoFrameCounterSystem new;
 	register: OnebitInspectorSystem new);
 register: (Pipeline new
@@ -33,8 +34,8 @@ register: (Pipeline new
 	register: TowerSystem new;
 	register: OnebitDamageSystem new);
 spawnNewWith: {OnebitPosition. OnebitConfig. DeltaTime. Mouse. OnebitGameState. Rendered. ScreenSize} do: [:onebitPosition :onebitConfig :deltaTime :mouse :onebitGameState :rendered :screenSize | 
-	onebitPosition x: -37; y: -17.
-	onebitConfig scale: 2; tileSize: 16; mapSize: 300 , 300; turnTime: 500.
+	onebitPosition x: 0; y: 0.
+	onebitConfig scale: 2; tileSize: 16; mapSize: 30 , 30; turnTime: 500.
 	deltaTime milliseconds: 21; last: 3737451013137; fpsAccumulated: 315; fpsAverage: 42.3728813559322; numAccumulated: 14; elapsed: 6857076.
 	mouse position: 339 , 5; leftJustUp: false; leftJustDown: false; leftDown: false; wheelDelta: 0 , 0.
 	onebitGameState state: #unset; movingTimeout: 277.

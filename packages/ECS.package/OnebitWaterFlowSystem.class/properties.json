@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Onebit",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "OnebitWaterFlowSystem",
+	"pools" : [
+		 ],
+	"super" : "System",
+	"type" : "normal" }

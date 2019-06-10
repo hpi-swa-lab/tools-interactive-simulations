@@ -7,4 +7,10 @@ initialize
 	leftJustUp := false.
 	leftJustDown := false.
 	leftDown := false.
+	rightJustUp := false.
+	rightJustDown := false.
+	rightDown := false.
+	middleJustUp := false.
+	middleJustDown := false.
+	middleDown := false.
 	wheelDelta := 0 , 0

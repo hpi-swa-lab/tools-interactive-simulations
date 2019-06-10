@@ -11,5 +11,8 @@ shootOrMove: aVector inputMap: inputMap transform: position universe: aUniverse
 					moving velocity: aVector.
 					expiring timeLeft: 4000.
 					rendered color: Color white; form: (ECSTileMapAsset of: #onebit at: (15 , 10 square: config tileSize) scale: config scale)].
-				^ self]]].
-	position x: position x + aVector x y: position y + aVector y
+				^ self]].
+		
+		position
+			x: (position x + aVector x clampLow: 0 high: config mapSize x - 1)
+			y: (position y + aVector y clampLow: 0 high: config mapSize y - 1)]

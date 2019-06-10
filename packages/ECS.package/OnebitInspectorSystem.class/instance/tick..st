@@ -9,10 +9,15 @@ tick: aUniverse
 			translateX := cameraPosition x - (size x // 2).
 			translateY := cameraPosition y - (size y // 2).
 			
-			mousePos vector: (mouse position / tileSize + (translateX @ translateY)) floor.
+			mousePos vector: ((mouse position / tileSize + (translateX @ translateY)) floor min: config mapSize - (1 , 1) max: 0 , 0).
 			
-			mouse leftJustUp ifTrue: [
-				aUniverse spawnNewWith: {OnebitWater. OnebitPosition} do: [:water :position | position x: mousePos x y: mousePos y].
+			mouse rightJustUp ifTrue: [
+				aUniverse spawnNewWith: {OnebitWater. OnebitPosition} do: [:water :position | position x: mousePos x y: mousePos y]].
+			mouse leftDown ifTrue: [ | hasHoleOrWater |
+				hasHoleOrWater := false.
+				(aUniverse storageOf: OnebitPosition) in: aUniverse at: mousePos vector query: {OnebitHole} do: [:hole | hasHoleOrWater := true].
+				(aUniverse storageOf: OnebitPosition) in: aUniverse at: mousePos vector query: {OnebitWater} do: [:hole | hasHoleOrWater := true].
 				
+				hasHoleOrWater ifFalse: [aUniverse spawnNewWith: {OnebitHole. OnebitPosition} do: [:hole :position | position x: mousePos x y: mousePos y]]].
 				"(aUniverse storageOf: OnebitPosition) in: aUniverse at: mousePos vector query: {#id} do: [:id |.
-					id ~= 1 ifTrue: [ECSEntityComponentFilter openForId: id universe: aUniverse]]"]]]
+					id ~= 1 ifTrue: [ECSEntityComponentFilter openForId: id universe: aUniverse]]"]]
