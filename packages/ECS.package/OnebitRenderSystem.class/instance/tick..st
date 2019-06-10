@@ -16,6 +16,11 @@ tick: aUniverse
 					tileY := position y - translateY.
 					self drawRendered: rendered at: tileX , tileY * tileSize extent: config tileSize * config scale on: canvas].
 				
+				(aUniverse storageOf: OnebitPosition) in: aUniverse area: (translateX , translateY extent: size) query: {OnebitWater. OnebitPosition} do: [:water :position | | tileX tileY |
+					tileX := position x - translateX.
+					tileY := position y - translateY.
+					(self riverTileFor: position vector in: aUniverse config: config) drawOn: canvas at: tileX , tileY * tileSize blend: Color white].
+				
 				translate := translateX ,  translateY.
 				aUniverse query: {Rendered. Transform} do: [:rendered :transform | | tile |
 					tile := transform bounds origin - translate.

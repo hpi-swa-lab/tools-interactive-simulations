@@ -9,6 +9,7 @@ initializeFor: aUniverse
 	self minimumExtent: 1000@800 * (TextStyle defaultFont height / 16) rounded.
 	
 	self
+		setLabel: universe className;
 		addMorph: (ECSPanel new
 			addMorphBack: (ECSTemplateBrowser newFor: universe);
 			addMorphBack: (ECSStatsDisplay newFor: universe))

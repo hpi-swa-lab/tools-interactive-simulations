@@ -12,5 +12,7 @@ tick: aUniverse
 			mousePos vector: (mouse position / tileSize + (translateX @ translateY)) floor.
 			
 			mouse leftJustUp ifTrue: [
-				(aUniverse storageOf: OnebitPosition) in: aUniverse at: mousePos vector query: {#id} do: [:id |.
-					id ~= 1 ifTrue: [ECSEntityComponentFilter openForId: id universe: aUniverse]]]]]
+				aUniverse spawnNewWith: {OnebitWater. OnebitPosition} do: [:water :position | position x: mousePos x y: mousePos y].
+				
+				"(aUniverse storageOf: OnebitPosition) in: aUniverse at: mousePos vector query: {#id} do: [:id |.
+					id ~= 1 ifTrue: [ECSEntityComponentFilter openForId: id universe: aUniverse]]"]]]

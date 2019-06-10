@@ -37,7 +37,7 @@ spawnNewWith: {OnebitPosition. OnebitConfig. DeltaTime. Mouse. OnebitGameState. 
 	onebitConfig scale: 2; tileSize: 16; mapSize: 300 , 300; turnTime: 500.
 	deltaTime milliseconds: 21; last: 3737451013137; fpsAccumulated: 315; fpsAverage: 42.3728813559322; numAccumulated: 14; elapsed: 6857076.
 	mouse position: 339 , 5; leftJustUp: false; leftJustDown: false; leftDown: false; wheelDelta: 0 , 0.
-	onebitGameState state: #init; movingTimeout: 277.
+	onebitGameState state: #unset; movingTimeout: 277.
 	rendered color: (ECSColor rgba: 16rFFA4FAFF); form: nil.
 	screenSize size: 775 , 762];
 
