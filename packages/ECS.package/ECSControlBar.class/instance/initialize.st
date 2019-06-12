@@ -33,6 +33,10 @@ initialize
 	
 	self addMorphBack: ECSRow new.
 	self addMorphBack: (ECSButton new
+		when: #clicked send: #exploreUniverse to: self;
+		icon: ECSIcon iconSearch;
+		balloonText: 'Explore the universe').
+	self addMorphBack: (ECSButton new
 		when: #clicked send: #openNewTool to: self;
 		icon: ECSIcon iconWindow_maximize;
 		balloonText: 'Open new tool').
