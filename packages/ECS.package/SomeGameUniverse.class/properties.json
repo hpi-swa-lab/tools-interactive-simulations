@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-SomeGame",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SomeGameUniverse",
+	"pools" : [
+		 ],
+	"super" : "Universe",
+	"type" : "normal" }

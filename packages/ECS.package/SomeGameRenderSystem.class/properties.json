@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-SomeGame",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SomeGameRenderSystem",
+	"pools" : [
+		 ],
+	"super" : "System",
+	"type" : "normal" }
