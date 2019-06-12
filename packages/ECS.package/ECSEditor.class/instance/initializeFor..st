@@ -20,7 +20,8 @@ initializeFor: aUniverse
 	self
 		addMorph: (ECSPanel new
 			addMorphBack: (ECSControlBar newFor: universe);
-			addMorphBack: (ECSSnapshotReplay newFor: universe))
+			addMorphBack: (ECSSnapshotReplay newFor: universe);
+			addMorphBack: (ECSFrameBreakdown newFor: universe))
 		fullFrame: (LayoutFrame fractions: (0.0 @ 0.8 corner: 0.8 @ 1.0)).
 	self
 		addMorph: (ECSPanel new
