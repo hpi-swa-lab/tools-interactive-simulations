@@ -9,4 +9,5 @@ tick: aUniverse
 		
 		state state == #unset ifTrue: [
 			state state: #init.
+			(aUniverse storageOf: OnebitPosition) extent: config mapSize.
 			aUniverse onceRunPipelineNamed: 'Generation']]
