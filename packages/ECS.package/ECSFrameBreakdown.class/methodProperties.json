@@ -1,0 +1,12 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"clearLogicStatistics" : "cmfcmf 6/12/2019 12:03",
+		"displayStatistics:in:" : "cmfcmf 6/12/2019 12:16",
+		"initialize" : "cmfcmf 6/12/2019 12:04",
+		"makeBar" : "cmfcmf 6/12/2019 11:36",
+		"showLogicStatistics" : "cmfcmf 6/12/2019 11:59",
+		"systemTickEnded:system:" : "cmfcmf 6/12/2019 12:04",
+		"systemTickStarted:system:" : "cmfcmf 6/12/2019 12:04",
+		"title" : "cmfcmf 6/12/2019 11:44" } }

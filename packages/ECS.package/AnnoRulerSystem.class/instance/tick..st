@@ -39,4 +39,4 @@ tick: aUniverse
 					chunkPos asString, 
 					' x-y=', (chunkPos x - chunkPos y), 
 					' x+y=', (chunkPos x + chunkPos y) 
-					at: (top + bottom / 2) - (50, 0) font: nil color: Color red]]]
+					at: (top + bottom / 2) - (50, 0) font: nil color: Color white]]]

@@ -1,4 +1,4 @@
 as yet unclassified
 storage
 
-	^ HashMapStorage
+	^ SingletonStorage

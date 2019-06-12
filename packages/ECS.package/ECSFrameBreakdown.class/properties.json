@@ -1,0 +1,17 @@
+{
+	"category" : "ECS-Tools",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"logicBar",
+		"drawBar",
+		"systemTickStart",
+		"logicStatistics" ],
+	"name" : "ECSFrameBreakdown",
+	"pools" : [
+		 ],
+	"super" : "ECSTool",
+	"type" : "normal" }

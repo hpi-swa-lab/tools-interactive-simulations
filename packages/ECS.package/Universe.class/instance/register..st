@@ -10,5 +10,7 @@ register: aPipeline
 		forward: #systemUnregistered from: aPipeline;
 		forward: #pipelineExecutionModeChanged from: aPipeline;
 		forward: #pipelineTitleChanged from: aPipeline;
+		forward: #systemPreTick from: aPipeline;
+		forward: #systemPostTick from: aPipeline;
 		
 		triggerEvent: #newPipelineRegistered with: aPipeline
