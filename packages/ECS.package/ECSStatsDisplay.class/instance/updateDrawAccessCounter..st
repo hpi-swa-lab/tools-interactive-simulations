@@ -1,4 +1,4 @@
 as yet unclassified
-updateDrawAccessCounter: aLabel
+updateDrawAccessCounter: aGraph
 
-	aLabel contents: 'Draw Accesses: ', self universe accesses asString
+	aGraph reportValue: self universe accesses

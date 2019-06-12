@@ -1,0 +1,15 @@
+{
+	"category" : "ECS-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"data",
+		"label" ],
+	"name" : "ECSGraphPlot",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

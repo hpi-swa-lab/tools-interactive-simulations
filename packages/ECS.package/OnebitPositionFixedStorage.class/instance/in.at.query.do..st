@@ -6,6 +6,7 @@ in: aUniverse at: aPoint query: aComponentList do: aBlock
 	
 	entities := (positionStorage at: (aPoint y * extent x + aPoint x + 1)) ifNil: [^ self].
 	entities do: [:entity | | components |
+		aUniverse incrementAccess.
 		components := aUniverse get: aComponentList of: entity.
 		" check if all components were alive "
 		components size = aComponentList size ifTrue: [

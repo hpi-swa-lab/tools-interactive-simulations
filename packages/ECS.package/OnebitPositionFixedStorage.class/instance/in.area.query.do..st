@@ -8,6 +8,7 @@ in: aUniverse area: aRectangle query: aComponentList do: aBlock
 		yLow to: yHigh do: [:y |
 			(positionStorage at: y * extent x + x + 1) ifNotNil: [:entities |
 				entities do: [:entity | | components |
+					aUniverse incrementAccess.
 					components := aUniverse get: aComponentList of: entity.
 					" check if all components were alive "
 					components size = aComponentList size ifTrue: [

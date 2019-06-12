@@ -1,6 +1,7 @@
 as yet unclassified
 tick: aUniverse
 
+	| base |
 	aUniverse query: {Rendered. #id} do: [:rendered :entity |
 		entity ~= 1 ifTrue: [aUniverse remove: entity]].
 	
@@ -8,14 +9,9 @@ tick: aUniverse
 		30 timesRepeat: [
 			self spawn: (5 atRandom , 1) at: config mapSize atRandom - (1 , 1) config: config in: aUniverse].
 		
-		aUniverse
-			instanceTemplate: #Player.
-			"spawnNewWith: {OnebitPosition. Rendered. Health. PlayerInput. Label. OnebitCameraFocus}
-			do: [:position :rendered :health :playerInput :label :cameraFocus |
-				position x: 0 y: 0.
-				rendered color: ECSColor black; form: (ECSTileMapAsset of: #onebit at: (24, 4 square: config tileSize) scale: config scale).
-				playerInput left: $A; right: $D; up: $W; down: $S; shoot: Character space; acceleration: 1.
-				label label: 'player']".
+		base := aUniverse instanceTemplate: #Base.
+		(aUniverse getSingle: OnebitPosition of: base) vector: config mapSize // 2.
+		aUniverse instanceTemplate: #Player.
 		
 		10 timesRepeat: [self buildStreet: config in: aUniverse].
 		self placeSpawnPointsIn: aUniverse config: config]

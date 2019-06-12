@@ -3,7 +3,7 @@ initialize
 
 super initialize.
 self
-stepTime: 0;
+stepTime: 166;
 saveFilter: [:u | 
 (u getSingle: OnebitGameState of: 1)
 		state: #unset.
@@ -36,14 +36,14 @@ register: (Pipeline new
 	register: TowerSystem new;
 	register: OnebitDamageSystem new;
 	register: OnebitWaterFlowSystem new);
-spawnNewWith: {OnebitPosition. Mouse. OnebitConfig. DeltaTime. OnebitGameState. Rendered. ScreenSize} do: [:onebitPosition :mouse :onebitConfig :deltaTime :onebitGameState :rendered :screenSize | 
-	onebitPosition x: 24; y: 28.
-	mouse position: 1061 , 1238; leftJustUp: false; leftJustDown: false; leftDown: false; wheelDelta: 0 , 0; rightJustUp: false; rightJustDown: false; rightDown: false; middleDown: false; middleJustDown: false; middleJustUp: false.
+spawnNewWith: {OnebitConfig. DeltaTime. Rendered. Mouse. ScreenSize. OnebitGameState. OnebitPosition} do: [:onebitConfig :deltaTime :rendered :mouse :screenSize :onebitGameState :onebitPosition | 
 	onebitConfig scale: 2; tileSize: 16; mapSize: 30 , 30; turnTime: 500.
-	deltaTime milliseconds: 28; last: 3737773732811; fpsAccumulated: 353; fpsAverage: 43.38394793926247; numAccumulated: 14; elapsed: 7028779.
-	onebitGameState state: #unset; movingTimeout: 240.
+	deltaTime milliseconds: 170; last: 3737781464067; fpsAccumulated: 1389; fpsAverage: 5.913660555884093; numAccumulated: 8; elapsed: 7827517.
 	rendered color: (ECSColor rgba: 16rFFA4FAFF); form: nil.
-	screenSize size: 1230 , 1241];
+	mouse position: 533 , 425; leftJustUp: false; leftJustDown: false; leftDown: false; wheelDelta: 0 , 0; rightJustUp: false; rightJustDown: false; rightDown: false; middleDown: false; middleJustDown: false; middleJustUp: false.
+	screenSize size: 610 , 610.
+	onebitGameState state: #unset; movingTimeout: 500.
+	onebitPosition x: 29; y: 29];
 
 	addTemplate: (ECSTemplate new
 name: 'Enemy'; addComponent: (OnebitFlammable new);  addComponent: (OnebitPosition new);  addComponent: (OnebitMoving new velocity: 0 , 0);  addComponent: (Rendered new color: (ECSColor rgba: 16rFF000000);  form: (ECSTileMapAsset of: #onebit at: (29 , 2 corner: 45 , 18) scale: 2 rotation: 0));  addComponent: (OnebitEnemyMinion new);  addComponent: (Health new max: 100;  current: 100));
@@ -56,4 +56,7 @@ name: 'Sentry'; addComponent: (Rendered new color: (ECSColor rgba: 16rFF000000);
 
 	addTemplate: (ECSTemplate new
 name: 'TowerProjectile'; addComponent: (Rendered new color: (ECSColor rgba: 16rFF000000);  form: (ECSTileMapAsset of: #onebit at: (14 , 18 corner: 30 , 34) scale: 2 rotation: 0));  addComponent: (OnebitProjectile new sourcePosition: 0 , 0;  targetPosition: 0 , 0;  damage: 75);  addComponent: (OnebitPosition new));
+
+	addTemplate: (ECSTemplate new
+name: 'Base'; addComponent: (Rendered new color: (ECSColor rgba: 16rFF000000);  form: (ECSTileMapAsset of: #onebit at: (6 , 19 corner: 22 , 35) scale: 2 rotation: 0));  addComponent: (OnebitPosition new);  addComponent: (OnebitBase new damageTaken: 0));
 yourself

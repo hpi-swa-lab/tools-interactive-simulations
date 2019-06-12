@@ -1,4 +1,4 @@
 as yet unclassified
-updatePipelinesTimeCounter: aLabel
+updatePipelinesTimeCounter: aGraph
 
-	aLabel contents: 'Pipelines Time: ', (Time utcMicrosecondClock - pipelinesTimeStart + 500 // 1000) asString, 'ms'
+	aGraph reportValue: Time utcMicrosecondClock - pipelinesTimeStart + 500 // 1000

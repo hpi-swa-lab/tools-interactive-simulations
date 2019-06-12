@@ -1,4 +1,4 @@
 as yet unclassified
-updateDrawTimeCounter: aLabel
+updateDrawTimeCounter: aGraph
 
-	aLabel contents: 'Draw Time: ', (Time utcMicrosecondClock - drawTimeStart + 500 // 1000) asString, 'ms'
+	aGraph reportValue: Time utcMicrosecondClock - drawTimeStart + 500 // 1000

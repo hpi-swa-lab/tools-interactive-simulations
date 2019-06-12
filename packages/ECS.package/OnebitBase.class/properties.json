@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Onebit",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"damageTaken" ],
+	"name" : "OnebitBase",
+	"pools" : [
+		 ],
+	"super" : "EntityComponent",
+	"type" : "normal" }

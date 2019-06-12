@@ -2,10 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
-		"initialize" : "tobe 6/9/2019 21:12",
+		"initialize" : "tobe 6/12/2019 12:51",
 		"saveDrawTimeStart" : "tobe 6/9/2019 21:09",
 		"savePipelinesTimeStart" : "tobe 6/9/2019 21:11",
 		"title" : "tobe 6/8/2019 17:40",
-		"updateDrawAccessCounter:" : "tobe 6/8/2019 17:38",
-		"updateDrawTimeCounter:" : "tobe 6/9/2019 21:10",
-		"updatePipelinesTimeCounter:" : "tobe 6/9/2019 21:11" } }
+		"updateDrawAccessCounter:" : "tobe 6/12/2019 12:48",
+		"updateDrawTimeCounter:" : "tobe 6/12/2019 12:46",
+		"updateGCStats:" : "tobe 6/12/2019 12:30",
+		"updatePipelinesTimeCounter:" : "tobe 6/12/2019 12:46" } }
