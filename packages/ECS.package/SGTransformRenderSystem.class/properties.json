@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-SomeGame",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "SGTransformRenderSystem",
+	"pools" : [
+		 ],
+	"super" : "System",
+	"type" : "normal" }
