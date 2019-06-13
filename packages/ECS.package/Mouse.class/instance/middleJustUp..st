@@ -1,5 +1,5 @@
-accessing
-middleJustUp: aBoolean
+as yet unclassified
+middleJustUp: anObject
 
 	<ecsType: #Boolean>
-	middleJustUp := aBoolean
+	middleJustUp := anObject

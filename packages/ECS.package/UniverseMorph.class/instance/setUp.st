@@ -6,4 +6,4 @@ setUp
 		when: #start send: #startSteppingSelector: to: self with: #tickUniverse;
 		when: #postTick send: #postTick to: self;
 		start;
-		query: {ScreenSize} do: [:size | size size: self extent]
+		query: #(ScreenSize) do: [:size | size size: self extent]

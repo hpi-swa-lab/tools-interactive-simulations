@@ -1,4 +1,4 @@
-accessing
+as yet unclassified
 rightDown: anObject
 
 	<ecsType: #Boolean>
