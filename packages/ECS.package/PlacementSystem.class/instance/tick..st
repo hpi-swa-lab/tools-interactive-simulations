@@ -1,8 +1,8 @@
 as yet unclassified
 tick: aUniverse
 
-	aUniverse query: {Transform. PendingPlacement. #id} do: [:transform :p :entity |
-		aUniverse query: {ScreenSize. Mouse} do: [:screenSize :mouse |
+	aUniverse query: #(Transform PendingPlacement id) do: [:transform :p :entity |
+		aUniverse query: #(ScreenSize. Mouse) do: [:screenSize :mouse |
 			transform bounds center: mouse position.
 			
 			mouse leftJustUp ifTrue: [
