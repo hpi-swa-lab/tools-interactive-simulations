@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Experiments",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ECSBitmapExperiment",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
