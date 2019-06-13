@@ -1,4 +1,4 @@
-accessing
+as yet unclassified
 rightJustUp: anObject
 
 	<ecsType: #Boolean>
