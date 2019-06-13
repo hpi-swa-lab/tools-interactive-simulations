@@ -9,7 +9,7 @@ register: (Pipeline new
 	runContinuously: true;
 	register: SomeGameInputSystem new;
 	register: SomeGameRenderSystem new);
-spawnNewWith: #(Rendered. Transform) do: [:rendered :transform | 
+spawnNewWith: #(Rendered Transform) do: [:rendered :transform | 
 	rendered color: (ECSColor rgba: 16rFF000000); form: (ECSImageAsset of: #platformer_base at: 'Player/p3_walk/PNG/p3_walk08.png').
 	transform bounds: (0 , -1 corner: 39 , 33)];
 yourself
