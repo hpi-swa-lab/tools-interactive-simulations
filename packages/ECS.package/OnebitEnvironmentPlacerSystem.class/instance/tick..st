@@ -1,8 +1,10 @@
 as yet unclassified
 tick: aUniverse
 
-	aUniverse query: #(OnebitConfig Mouse ScreenSize OnebitPosition) do: [:config :mouse :screenSize :mousePos |
-		aUniverse query: #(OnebitCameraFocus OnebitPosition) do: [:cameraFocus :cameraPosition | | size tileSize translateX translateY |
+	aUniverse query: #(OnebitGameState OnebitConfig Mouse ScreenSize OnebitPosition) do: [:state :config :mouse :screenSize :mousePos |
+		state selectedPlace ifNil: [^ self].
+		
+		aUniverse query: #(OnebitCameraFocus OnebitPosition) do: [:cameraFocus :cameraPosition | | size tileSize translateX translateY placed |
 			tileSize := config tileSize * config scale.
 			size := screenSize size // tileSize.
 			translateX := cameraPosition x - (size x // 2).
@@ -12,4 +14,6 @@ tick: aUniverse
 			
 			mouse leftDown ifFalse: [^ self].
 			(aUniverse storageOf: #OnebitPosition) in: aUniverse at: mousePos vector query: #(OnebitBlocksPlacement) do: [:hole | ^ self].
-			aUniverse spawnNewWith: #(OnebitHole OnebitPosition) do: [:hole :position | position x: mousePos x y: mousePos y]]]
+			
+			placed := aUniverse instanceTemplate: state selectedPlace.
+			(aUniverse getSingle: #OnebitPosition of: placed) x: mousePos x y: mousePos y]]

@@ -6,11 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"state",
-		"movingTimeout",
-		"selectedPlace" ],
-	"name" : "OnebitGameState",
+		 ],
+	"name" : "OnebitResetSystem",
 	"pools" : [
 		 ],
-	"super" : "EntityComponent",
+	"super" : "System",
 	"type" : "normal" }

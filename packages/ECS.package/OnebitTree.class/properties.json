@@ -6,10 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"state",
-		"movingTimeout",
-		"selectedPlace" ],
-	"name" : "OnebitGameState",
+		 ],
+	"name" : "OnebitTree",
 	"pools" : [
 		 ],
 	"super" : "EntityComponent",
