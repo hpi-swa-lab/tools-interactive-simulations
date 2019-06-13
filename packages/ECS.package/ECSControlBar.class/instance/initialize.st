@@ -46,6 +46,10 @@ initialize
 		icon: ECSIcon iconWindow_maximize;
 		balloonText: 'Open new tool').
 	self addMorphBack: (ECSButton new
+		when: #clicked send: #saveCurrentToolConfigurationAsStandard to: self;
+		icon: ECSIcon iconLife_saver;
+		balloonText: 'Save current tool configuration as standard for editor').
+	self addMorphBack: (ECSButton new
 		when: #clicked send: #saveSnapshot to: self;
 		icon: ECSIcon iconSave;
 		balloonText: 'Save the universe').
