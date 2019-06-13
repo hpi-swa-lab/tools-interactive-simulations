@@ -7,7 +7,7 @@ initialize
 	
 	list := ECSColumn new layoutInset: (0 @ 0 corner: ECSScrollPane scrollBarThickness @ 0).
 	
-	self privateQueryString: 'self query: {Label}'.
+	self privateQueryString: 'self query: #(Label)'.
 	
 	self queryEditor: (ECSCodeEditor new 
 		content: self queryString;

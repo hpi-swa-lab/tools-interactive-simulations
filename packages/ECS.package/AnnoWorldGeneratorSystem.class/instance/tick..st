@@ -2,7 +2,7 @@ as yet unclassified
 tick: aUniverse
 
 	| tiles grass trees noise |
-	tiles := aUniverse queryList: {AnnoTile}.
+	tiles := aUniverse queryList: #(AnnoTile).
 	tiles ifNotEmpty: [^ self].
 	
 	"ECSAssetBrowser cleanCache"
@@ -18,7 +18,7 @@ tick: aUniverse
 	noise := self generateNoise.
 	
 	(0 to: MapSize - 1) do: [:x | (0 to: MapSize - 1) do: [:y |
-		aUniverse spawnNewWith: {"Label. "AnnoTile. Rendered} do: [":label" :annoTile :rendered |
+		aUniverse spawnNewWith: #("Label "AnnoTile Rendered) do: [":label" :annoTile :rendered |
 			| growTree |
 			growTree := "(random nextInt: 2) = 2" (noise at: (x + 1) + (MapSize * y)) > 0.
 			"label label: 'Tile ', x, ',', y."

@@ -2,7 +2,7 @@ as yet unclassified
 tick: aUniverse
 
 	| camera tmp |
-	tmp := (aUniverse queryList: {AnnoCamera. ScreenSize}).
+	tmp := (aUniverse queryList: #(AnnoCamera ScreenSize)).
 	camera := self pixelToMapPosition: (tmp ifEmpty: [0@0] ifNotEmpty: [tmp first first position negated]).
 
 	aUniverse draw: [:canvas :universe | 

@@ -2,7 +2,7 @@ as yet unclassified
 tick: aUniverse
 
 	| screenSize tmp camera offset chunkOffset chunkPos |
-	tmp := (aUniverse queryList: {AnnoCamera. ScreenSize}).
+	tmp := (aUniverse queryList: #(AnnoCamera ScreenSize)).
 	tmp ifEmpty: [^ self].
 	camera := tmp first first position.
 	screenSize := tmp first second size.
