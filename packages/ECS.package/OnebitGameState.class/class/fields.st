@@ -1,3 +1,4 @@
 as yet unclassified
 fields
-	^#(#state #movingTimeout)
+
+	^ #(#state #movingTimeout #selectedPlace)

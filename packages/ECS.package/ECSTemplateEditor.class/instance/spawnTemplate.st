@@ -3,4 +3,4 @@ spawnTemplate
 
 	| entity |
 	entity := template instanceIn: self universe.
-	self universe attach: PendingPlacement to: entity
+	self universe attach: #PendingPlacement to: entity

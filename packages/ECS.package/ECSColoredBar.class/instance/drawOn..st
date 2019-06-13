@@ -11,5 +11,5 @@ drawOn: aCanvas
 		rect := ((offset@0 + self position) extent: fraction@(self height)).
 		aCanvas 
 			fillRectangle: rect color: theColor;
-			drawString: title in: rect.
+			drawString: title in: rect font: nil color: (theColor luminance < 0.5 ifTrue: [Color white] ifFalse: [Color black]).
 		offset := offset + fraction].

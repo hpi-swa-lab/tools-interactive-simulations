@@ -7,7 +7,8 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"state",
-		"movingTimeout" ],
+		"movingTimeout",
+		"selectedPlace" ],
 	"name" : "OnebitGameState",
 	"pools" : [
 		 ],
