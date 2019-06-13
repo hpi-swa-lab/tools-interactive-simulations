@@ -18,9 +18,6 @@ tick: aUniverse
 	maxSum := tmp x + tmp y.
 	maxDiff := tmp x - tmp y.
 	
-	aUniverse draw: [:canvas :universe |
-		canvas fillRectangle: (ECSAlignedRectangle origin: corners topLeft + camera extent: 5@5) color: Color blue].
-	
 	chunkPositions := Set new.
 	minSum to: maxSum do: [:sum | "constant for screen x"
 		minDiff to: maxDiff do: [:diff | "constant for screen y" 
