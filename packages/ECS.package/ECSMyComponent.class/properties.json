@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Experiments",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"val" ],
+	"name" : "ECSMyComponent",
+	"pools" : [
+		 ],
+	"super" : "EntityComponent",
+	"type" : "normal" }
