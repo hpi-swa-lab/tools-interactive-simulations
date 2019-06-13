@@ -1,15 +1,17 @@
 {
 	"class" : {
-		"fields" : "tobe 6/8/2019 12:24",
-		"mutatorFields" : "tobe 6/8/2019 12:24",
-		"storage" : "tobe 6/8/2019 12:24" },
+		"fields" : "tobe 6/13/2019 10:34",
+		"mutatorFields" : "tobe 6/13/2019 10:34",
+		"storage" : "tobe 6/13/2019 10:34" },
 	"instance" : {
-		"initialize" : "tobe 6/8/2019 12:24",
-		"mapSize" : "tobe 6/8/2019 12:24",
-		"mapSize:" : "tobe 6/8/2019 12:24",
-		"scale" : "tobe 6/8/2019 12:24",
-		"scale:" : "tobe 6/8/2019 12:24",
-		"tileSize" : "tobe 6/8/2019 12:24",
-		"tileSize:" : "tobe 6/8/2019 12:24",
-		"turnTime" : "tobe 6/8/2019 12:24",
-		"turnTime:" : "tobe 6/8/2019 12:24" } }
+		"initialize" : "tobe 6/13/2019 10:34",
+		"mapSize" : "tobe 6/13/2019 10:34",
+		"mapSize:" : "tobe 6/13/2019 10:34",
+		"scale" : "tobe 6/13/2019 10:34",
+		"scale:" : "tobe 6/13/2019 10:34",
+		"tileSize" : "tobe 6/13/2019 10:34",
+		"tileSize:" : "tobe 6/13/2019 10:34",
+		"turnTime" : "tobe 6/13/2019 10:34",
+		"turnTime:" : "tobe 6/13/2019 10:34",
+		"worldBackgroundColor" : "tobe 6/13/2019 10:34",
+		"worldBackgroundColor:" : "tobe 6/13/2019 10:34" } }

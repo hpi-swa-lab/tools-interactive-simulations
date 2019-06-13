@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Onebit",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "OnebitBlocksPlacement",
+	"pools" : [
+		 ],
+	"super" : "EntityComponent",
+	"type" : "normal" }

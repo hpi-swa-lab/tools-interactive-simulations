@@ -2,7 +2,7 @@ as yet unclassified
 riverTileFor: aPoint in: aUniverse config: aConfig type: aClass
 
 	| positions top left bottom right |
-	positions := (aUniverse storageOf: OnebitPosition).
+	positions := (aUniverse storageOf: #OnebitPosition).
 	left := false. positions in: aUniverse at: aPoint - (1, 0) query: {aClass} do: [:water | left := true].
 	right := false. positions in: aUniverse at: aPoint + (1, 0) query: {aClass} do: [:water | right := true].
 	bottom := false. positions in: aUniverse at: aPoint + (0, 1) query: {aClass} do: [:water | bottom := true].

@@ -1,0 +1,14 @@
+{
+	"category" : "ECS",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"symbol" ],
+	"name" : "ECSOptionalSymbol",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -3,4 +3,7 @@ attach: aComponentClass to: anEntityId
 
 	^ ((components
 		at: aComponentClass
-		ifAbsentPut: [aComponentClass storage newForType: aComponentClass]) atForCreate: anEntityId) alive: true
+		ifAbsentPut: [ | class |
+			class := Smalltalk at: aComponentClass value.
+			class storage newForType: class
+		]) atForCreate: anEntityId) alive: true

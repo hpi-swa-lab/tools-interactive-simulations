@@ -9,7 +9,8 @@
 		"scale",
 		"tileSize",
 		"mapSize",
-		"turnTime" ],
+		"turnTime",
+		"worldBackgroundColor" ],
 	"name" : "OnebitConfig",
 	"pools" : [
 		 ],

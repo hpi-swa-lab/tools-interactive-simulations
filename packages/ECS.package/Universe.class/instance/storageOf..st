@@ -1,4 +1,4 @@
 component lifecyle
-storageOf: aClass
+storageOf: aClassSymbol
 
-	^ components at: aClass
+	^ components at: aClassSymbol

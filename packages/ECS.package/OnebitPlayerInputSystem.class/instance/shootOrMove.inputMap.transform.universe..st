@@ -1,11 +1,11 @@
 as yet unclassified
 shootOrMove: aVector inputMap: inputMap transform: position universe: aUniverse
 
-	aUniverse query: {OnebitConfig} do: [:config |
-		aUniverse query: {KeyEvent} do: [:keyEvent |
+	aUniverse query: #(OnebitConfig) do: [:config |
+		aUniverse query: #(KeyEvent) do: [:keyEvent |
 			keyEvent key = inputMap shoot ifTrue: [
 				aUniverse
-					spawnNewWith: {OnebitMoving. OnebitBurning. OnebitExpiring. OnebitPosition. Rendered}
+					spawnNewWith: #(OnebitMoving OnebitBurning OnebitExpiring OnebitPosition Rendered)
 					do: [:moving :burning :expiring :shootTransform :rendered |
 					shootTransform x: position x + aVector x y: position y + aVector y.
 					moving velocity: aVector.

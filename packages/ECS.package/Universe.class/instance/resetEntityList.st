@@ -1,6 +1,6 @@
 entity lifecycle
 resetEntityList
 
-	components := Dictionary new.
+	components := IdentityDictionary new.
 	maxEntityIndex := 0.
 	freeIndexList := OrderedCollection new

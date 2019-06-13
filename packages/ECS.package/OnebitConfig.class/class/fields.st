@@ -1,4 +1,4 @@
 as yet unclassified
 fields
 
-	^ #(#scale #tileSize #mapSize #turnTime)
+	^ #(#scale #tileSize #mapSize #turnTime #worldBackgroundColor)
