@@ -4,7 +4,8 @@ initialize
 	super initialize.
 	self 
 		addMorphBack: (logicBar := self makeBar);
-		addMorphBack: (drawBar := self makeBar).
+		addMorphBack: (drawBar := self makeBar);
+		addMorphBack: (overallBar := self makeBar).
 	
 	self universe
 		when: #preTick send: #clearLogicStatistics to: self;
