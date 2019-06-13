@@ -2,11 +2,11 @@
 	"class" : {
 		 },
 	"instance" : {
-		"exploreTally:" : "tobe 6/12/2019 13:29",
+		"exploreTally:into:" : "tobe 6/12/2019 21:06",
 		"exploreUniverse" : "cmfcmf 6/12/2019 11:02",
 		"initialize" : "tobe 6/12/2019 13:22",
 		"openNewTool" : "ek 6/6/2019 15:42",
-		"profileUniverse" : "tobe 6/12/2019 13:28",
+		"profileUniverse" : "tobe 6/12/2019 21:20",
 		"saveSnapshot" : "ek 6/6/2019 13:25",
 		"saveSnapshotInClass:" : "tobe 6/12/2019 08:28",
 		"saveSnapshotInCurrentUniverseClass" : "ek 6/6/2019 11:55",
@@ -15,6 +15,7 @@
 		"saveSnapshotInNewUniverseClassNamed:inCategory:" : "ek 6/6/2019 12:08",
 		"spawnNewEntity" : "T 5/27/2019 18:29",
 		"stepForward" : "TB 5/31/2019 07:06",
+		"tallyStringFor:totalTallies:totalTime:" : "tobe 6/13/2019 10:06",
 		"title" : "T 5/15/2019 11:25",
 		"togglePause" : "T 5/15/2019 11:27",
 		"updateIcon" : "T 5/23/2019 08:50" } }

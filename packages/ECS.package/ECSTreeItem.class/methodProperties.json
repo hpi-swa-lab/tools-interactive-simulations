@@ -1,0 +1,24 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"children" : "tobe 6/12/2019 20:00",
+		"children:" : "tobe 6/12/2019 20:03",
+		"click:" : "tobe 6/12/2019 20:09",
+		"collapse" : "tobe 6/12/2019 20:26",
+		"collapseFrom:" : "tobe 6/12/2019 21:02",
+		"deselect" : "tobe 6/12/2019 20:08",
+		"drawOn:" : "tobe 6/13/2019 10:06",
+		"expand" : "tobe 6/12/2019 21:05",
+		"expanded" : "tobe 6/12/2019 20:35",
+		"handlesMouseDown:" : "tobe 6/12/2019 19:43",
+		"handlesMouseOver:" : "tobe 6/12/2019 19:40",
+		"hasChildren" : "tobe 6/12/2019 20:59",
+		"hasChildren:" : "tobe 6/12/2019 21:00",
+		"initialize" : "tobe 6/12/2019 21:00",
+		"mouseDown:" : "tobe 6/12/2019 20:28",
+		"mouseEnter:" : "tobe 6/12/2019 19:41",
+		"mouseLeave:" : "tobe 6/12/2019 19:49",
+		"select" : "tobe 6/12/2019 20:09",
+		"toggleExpanded" : "tobe 6/12/2019 20:26",
+		"updateIcon" : "tobe 6/12/2019 21:03" } }

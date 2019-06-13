@@ -1,0 +1,22 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"build" : "tobe 6/12/2019 19:57",
+		"buildWidgetForItem:parent:" : "tobe 6/12/2019 21:00",
+		"childItemsForItem" : "tobe 6/12/2019 16:45",
+		"childItemsForItem:" : "tobe 6/12/2019 16:55",
+		"collapseItem:morph:" : "tobe 6/12/2019 20:02",
+		"collapseSelected" : "tobe 6/12/2019 20:37",
+		"expandItem:morph:" : "tobe 6/12/2019 20:43",
+		"expandSelected" : "tobe 6/12/2019 20:35",
+		"indent" : "tobe 6/12/2019 17:13",
+		"initialize" : "tobe 6/12/2019 19:57",
+		"keyDown:" : "tobe 6/12/2019 20:28",
+		"moveSelection:" : "tobe 6/12/2019 20:21",
+		"rootItems" : "tobe 6/12/2019 19:57",
+		"rootItems:" : "tobe 6/12/2019 19:57",
+		"setSelected:morph:" : "tobe 6/12/2019 20:58",
+		"wantsKeyboardFocus" : "tobe 6/12/2019 20:16",
+		"widgetForItem" : "tobe 6/12/2019 16:45",
+		"widgetForItem:" : "tobe 6/12/2019 16:55" } }

@@ -1,0 +1,19 @@
+{
+	"category" : "ECS-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"widgetForItem",
+		"childItemsForItem",
+		"rootItems",
+		"list",
+		"selectedMorph",
+		"selected" ],
+	"name" : "ECSTreeView",
+	"pools" : [
+		 ],
+	"super" : "ECSScrollPane",
+	"type" : "normal" }

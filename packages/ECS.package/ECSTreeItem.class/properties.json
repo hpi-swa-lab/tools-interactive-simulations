@@ -1,0 +1,18 @@
+{
+	"category" : "ECS-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"expanded",
+		"hovered",
+		"selected",
+		"children",
+		"hasChildren" ],
+	"name" : "ECSTreeItem",
+	"pools" : [
+		 ],
+	"super" : "ECSRow",
+	"type" : "normal" }

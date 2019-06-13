@@ -1,0 +1,4 @@
+accessing
+wantsKeyboardFocus
+
+	^ true
