@@ -4,7 +4,7 @@ tick: aUniverse
 	aUniverse query: #(DeltaTime) do: [:deltaTime |
 		aUniverse query: #(Jetpack Physics PlayerInput Transform) do: [:jetpack :physics :inputMap :transform | | isAccelerating |
 			isAccelerating := false.
-			aUniverse query: {KeyEvent} do: [:keyComponents |
+			aUniverse query: #(KeyEvent) do: [:keyComponents |
 				keyComponents key = inputMap up ifTrue: [isAccelerating := true]].
 			
 			isAccelerating

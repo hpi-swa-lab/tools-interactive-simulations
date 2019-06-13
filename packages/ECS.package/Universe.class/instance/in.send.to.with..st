@@ -1,7 +1,7 @@
 api
 in: aDuration send: aSelector to: anObject with: aCollectionOfArguments
 
-	self spawnNewWith: {Timer} do: [:timer |
+	self spawnNewWith: #(Timer) do: [:timer |
 		timer
 			timeLeft: aDuration asMilliSeconds;
 			receiver: anObject;
