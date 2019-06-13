@@ -2,7 +2,7 @@ as yet unclassified
 tick: aUniverse
 
 	| camera chunks tmp screenSize chunkPositions corners minDiff minSum maxDiff maxSum |
-	tmp := (aUniverse queryList: {AnnoCamera. ScreenSize}).
+	tmp := (aUniverse queryList: #(AnnoCamera ScreenSize)).
 	tmp ifEmpty: [^ self].
 	camera := tmp first first position.
 	screenSize := tmp first second size.
@@ -26,7 +26,7 @@ tick: aUniverse
 			y := ((sum - diff) / 2) truncated.
 			chunkPositions add: x, y]].
 	
-	chunks := aUniverse queryList: {#id. AnnoChunk}.
+	chunks := aUniverse queryList: #(id AnnoChunk).
 	tmp := chunks groupBy: [:chunk | chunkPositions includes: chunk second position].
 	chunkPositions do: [:chunkPos |
 		(((tmp at: true ifAbsent: [Array new]) collect: [:each | each second position]) includes: chunkPos) ifFalse: [
@@ -40,5 +40,5 @@ tick: aUniverse
 	
 	tmp at: false ifPresent: [:chunksToDelete | 
 		chunksToDelete do: [:each | aUniverse remove: each first].
-		aUniverse query: {#id. AnnoTile} do: [:id :annoTile |
+		aUniverse query: #(id AnnoTile) do: [:id :annoTile |
 			(chunkPositions includes: annoTile chunkPos) ifFalse: [aUniverse remove: id]]]

@@ -2,12 +2,12 @@ as yet unclassified
 tick: aUniverse
 
 	| camera |	
-	camera := (aUniverse queryList: {AnnoCamera}).
+	camera := (aUniverse queryList: #(AnnoCamera)).
 	camera ifEmpty: [^ self].
 	camera := camera first first.
 	
 	aUniverse draw: [:canvas :universe | | tiles |
-		tiles := universe queryList: {AnnoTile. Rendered}.
+		tiles := universe queryList: #(AnnoTile Rendered).
 		(tiles sorted: [:a :b |
 			a first position <= b first position]) do: [:components | | origin annoTile rendered |
 			annoTile := components first.
