@@ -7,4 +7,9 @@
 		"openFor:" : "cf 5/15/2019 11:19",
 		"universes" : "T 5/27/2019 18:14" },
 	"instance" : {
-		"initializeFor:" : "cmfcmf 6/12/2019 11:43" } }
+		"bottomPanelToolsClasses" : "ek 6/12/2019 21:29",
+		"createPanelFor:" : "ek 6/12/2019 21:23",
+		"defaultMinimumExtent" : "ek 6/12/2019 21:32",
+		"initializeFor:" : "ek 6/12/2019 21:37",
+		"leftPanelToolsClasses" : "ek 6/12/2019 21:23",
+		"rightPanelToolsClasses" : "ek 6/12/2019 21:29" } }

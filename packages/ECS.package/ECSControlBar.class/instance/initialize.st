@@ -9,6 +9,7 @@ initialize
 	self changeListDirection: #leftToRight.
 	self cellInset: (TextStyle defaultFont height / 4) rounded.
 	pauseIcon := ECSIcon new large.
+	currentlyProfiling := false.
 	
 	self addMorphBack: (ECSButton new
 		when: #clicked send: #spawnNewEntity to: self;
@@ -32,6 +33,10 @@ initialize
 	self updateIcon.
 	
 	self addMorphBack: ECSRow new.
+	self addMorphBack: (ECSButton new
+		when: #clicked send: #profileUniverse to: self;
+		icon: ECSIcon iconClock_o;
+		balloonText: 'Profile the Universe').
 	self addMorphBack: (ECSButton new
 		when: #clicked send: #exploreUniverse to: self;
 		icon: ECSIcon iconSearch;
