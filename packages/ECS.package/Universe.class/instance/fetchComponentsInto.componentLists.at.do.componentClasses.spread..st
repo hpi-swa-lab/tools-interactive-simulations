@@ -6,7 +6,7 @@ fetchComponentsInto: aCollection componentLists: lists at: entityIndex do: aBloc
 		component := list atForFetch: entityIndex.
 		component alive
 			ifTrue: [aCollection at: index put: component]
-			ifFalse: [(aCollectionOfClasses at: index) class = OptionalComponent
+			ifFalse: [(aCollectionOfClasses at: index) isOptional
 				ifTrue: [aCollection at: index put: nil]
 				ifFalse: [^ self]]].
 	

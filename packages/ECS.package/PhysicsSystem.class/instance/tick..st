@@ -1,8 +1,8 @@
 as yet unclassified
 tick: aUniverse
 
-	aUniverse query: {DeltaTime. Gravity. ScreenSize} do: [:deltaTime :gravity :screenSize | | entities colliders |
-		entities := aUniverse queryList: {Transform. Physics. Colliding optional. #id}.
+	aUniverse query: #(DeltaTime Gravity ScreenSize) do: [:deltaTime :gravity :screenSize | | entities colliders |
+		entities := aUniverse queryList: {#Transform. #Physics. #Colliding optional. #id}.
 		colliders := entities select: [:e | e third notNil].
 		entities do: [:components | | position velocity friction |
 			position := components first bounds origin.

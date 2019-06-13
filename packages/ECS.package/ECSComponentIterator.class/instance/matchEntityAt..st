@@ -5,7 +5,7 @@ matchEntityAt: index
 		component := list atForFetch: index.
 		component alive
 			ifTrue: [filledComponents at: componentIndex put: component]
-			ifFalse: [(componentClasses at: componentIndex) class = OptionalComponent
+			ifFalse: [(componentClasses at: componentIndex) isOptional
 				ifTrue: [filledComponents at: componentIndex put: nil]
 				ifFalse: [^ nil]]].
 	
