@@ -1,4 +1,4 @@
 as yet unclassified
 addComponent
 
-	self universe chooseComponentClassDo: [:c | self universe attach: c to: id]
+	self universe chooseComponentClassDo: [:class | self universe attach: class name to: id]

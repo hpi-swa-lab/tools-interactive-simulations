@@ -1,0 +1,4 @@
+as yet unclassified
+saveCurrentToolConfigurationAsStandard
+
+	(self ownerThatIsA: ECSEditor) saveCurrentToolConfigurationAsStandard
