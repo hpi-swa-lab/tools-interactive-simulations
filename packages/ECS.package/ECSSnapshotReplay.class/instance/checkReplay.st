@@ -1,7 +1,9 @@
 as yet unclassified
 checkReplay
 
-	self universe query: {DeltaTime} do: [:deltaTime |
+	self universe query: #(DeltaTime) do: [:deltaTime |
+		progress value: (deltaTime elapsed - startTime) / (endTime - startTime).
+		
 		deltaTime elapsed > endTime
 			ifTrue: [self playSnapshot]
 			ifFalse: [ | start end |

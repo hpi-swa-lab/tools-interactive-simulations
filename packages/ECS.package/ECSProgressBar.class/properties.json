@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"value" ],
+	"name" : "ECSProgressBar",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

@@ -1,10 +1,14 @@
 as yet unclassified
 tick: aUniverse
 
-	aUniverse query: #(OnebitConfig) do: [:config | | base |
+	aUniverse query: #(OnebitConfig) do: [:config | | base source |
 		30 timesRepeat: [ | tree |
 			tree := aUniverse instanceTemplate: #Tree.
 			(aUniverse getSingle: #OnebitPosition of: tree) x: config mapSize x atRandom - 1 y: config mapSize y atRandom - 1].
+		
+		source := aUniverse instanceTemplate: #Hole.
+		(aUniverse getSingle: #OnebitPosition of: source) x: config mapSize x atRandom - 1 y: config mapSize y atRandom - 1.
+		aUniverse attach: #OnebitWater to: source; remove: #OnebitHole from: source.
 		
 		base := aUniverse instanceTemplate: #Base.
 		(aUniverse getSingle: #OnebitPosition of: base) vector: config mapSize // 2.

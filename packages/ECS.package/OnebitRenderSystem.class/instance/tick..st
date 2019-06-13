@@ -10,6 +10,7 @@ tick: aUniverse
 				size := screenSize size // tileSize.
 				translateX := cameraPosition x - (size x // 2).
 				translateY := cameraPosition y - (size y // 2).
+				translate := translateX ,  translateY.
 				
 				(aUniverse storageOf: #OnebitPosition) in: aUniverse area: (translateX , translateY extent: size) query: #(Rendered OnebitPosition) do: [:rendered :position | | tileX tileY |
 					tileX := position x - translateX.
@@ -31,7 +32,6 @@ tick: aUniverse
 					tileY := position y - translateY.
 					(self riverTileFor: position vector in: aUniverse config: config type: #OnebitWater) drawOn: canvas at: tileX , tileY * tileSize].
 				
-				translate := translateX ,  translateY.
 				aUniverse query: #(Rendered Transform) do: [:rendered :transform | | tile |
 					tile := transform bounds origin - translate.
 					

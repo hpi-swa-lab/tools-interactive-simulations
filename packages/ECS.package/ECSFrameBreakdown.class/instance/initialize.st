@@ -3,6 +3,9 @@ initialize
 
 	super initialize.
 	
+	lastLogicGcDuration := 0.
+	lastDrawGcDuration := 0.
+	
 	drawStatistics := OrderedDictionary newFrom: {#GC -> ECSSmoothNumber new}.
 	logicStatistics := OrderedDictionary newFrom: {#GC -> ECSSmoothNumber new}.
 	overallStatistics := OrderedDictionary newFrom: {

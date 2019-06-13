@@ -8,13 +8,14 @@ initialize
 	
 	self cellInset: (TextStyle defaultFont height / 4) rounded.
 	self changeListDirection: #leftToRight.
-	self addMorphBack: (ECSButton new
-		icon: (recordIcon := ECSIcon iconCircle);
-		when: #clicked send: #toggleRecording to: self;
-		balloonText: 'Toggle recording').
-	self addMorphBack: (ECSButton new
+	self addMorphBack: (recordButton := ECSButton new
+		icon: (ECSIcon iconCircle);
+		label: 'Start Recording';
+		when: #clicked send: #toggleRecording to: self).
+	self addMorphBack: (loopingButton := ECSButton new
 		icon: ECSIcon iconRepeat;
 		when: #clicked send: #toggleLooping to: self;
+		visible: false;
 		balloonText: 'Toggle looping').
-	self addMorphBack: ECSRow new.
+	self addMorphBack: (progress := ECSProgressBar new visible: false).
 	self addMorphBack: self header small
