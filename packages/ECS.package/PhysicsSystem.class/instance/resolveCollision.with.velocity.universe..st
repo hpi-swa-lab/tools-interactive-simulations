@@ -9,4 +9,4 @@ resolveCollision: components with: otherComponents velocity: velocity universe: 
 	components first bounds position: components first bounds origin + (0 , velocity y).
 	self resolveCollisionY: components with: otherComponents.
 	
-	aUniverse spawnNewWith: {Collision} do: [:collision | collision collider: components fourth; collidee: otherComponents fourth]
+	aUniverse spawnNewWith: #(Collision) do: [:collision | collision collider: components fourth; collidee: otherComponents fourth]

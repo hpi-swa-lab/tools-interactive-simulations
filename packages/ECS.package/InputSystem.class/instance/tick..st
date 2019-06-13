@@ -2,9 +2,9 @@ as yet unclassified
 tick: aUniverse
 
 	| velX velY events |
-	events := aUniverse queryList: {KeyEvent}.
+	events := aUniverse queryList: #(KeyEvent).
 	
-	aUniverse query: {Physics. PlayerInput} do: [:physics :inputMap |
+	aUniverse query: #(Physics PlayerInput) do: [:physics :inputMap |
 		velX := 0.
 		velY := 0.
 		

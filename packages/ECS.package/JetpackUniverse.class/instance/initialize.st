@@ -20,7 +20,7 @@ initialize
 		register: CleanUpSystem new.
 	
 	self
-		spawnNewWith: {Gravity. DeltaTime. ScreenSize. Mouse} do: [:gravity :time :size :mouse |
+		spawnNewWith: #(Gravity DeltaTime ScreenSize Mouse) do: [:gravity :time :size :mouse |
 			gravity force: 0,500.
 			time milliseconds: 0; last: Time millisecondClockValue; elapsed: 0.
 			size size: 0,0.
@@ -28,7 +28,7 @@ initialize
 				wheelDelta: (ECSVector2 x: 0 y: 0)];
 		register: pipeline.
 	
-	player1 := self spawnNewWith: {Label. Transform. Colliding. Physics. Jetpack. Weapon. PlayerInput. Rendered} do: [:label :transform :colliding :physics :jetpack :weapon :input : rendered |
+	player1 := self spawnNewWith: #(Label Transform Colliding Physics Jetpack Weapon PlayerInput Rendered) do: [:label :transform :colliding :physics :jetpack :weapon :input : rendered |
 		label label: 'player1'.
 		transform bounds: (30 , 50 extent: 66 , 92).
 		colliding group: nil; ignoreList: #().
@@ -38,7 +38,7 @@ initialize
 		input left: $A; right: $D; up: $W; down: $S; shoot: $C; acceleration: 30.
 		rendered color: ECSColor red; form: (ECSImageAsset of: #platformer_base at: 'Player/p2_front.png' sized: 66 , 92)].
 	
-	player2 := self spawnNewWith: {Label. Transform. Colliding. Physics. PlayerInput. Rendered} do: [:label :transform :colliding :physics :input :rendered |
+	player2 := self spawnNewWith: #(Label Transform Colliding Physics PlayerInput Rendered) do: [:label :transform :colliding :physics :input :rendered |
 		label label: 'player2'.
 		transform bounds: (530,500 extent: 300,300).
 		colliding group: nil; ignoreList: #().
@@ -46,7 +46,7 @@ initialize
 		input left: $J; right: $L; up: $I; down: $K; shoot: $M; acceleration: 30.
 		rendered color: ECSColor blue; form: nil].
 	
-	self spawnNewWith: {Transform. Rendered. JetpackFuelIndicator} do: [:transform :rendered :indicator |
+	self spawnNewWith: #(Transform Rendered JetpackFuelIndicator) do: [:transform :rendered :indicator |
 		transform bounds: (0,0 extent: 200,20).
 		rendered color: ECSColor red; form: nil.
 		indicator player: player1]
