@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Tools",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ECSCurrentUniverseCategoryComponentBrowser",
+	"pools" : [
+		 ],
+	"super" : "ECSComponentBrowser",
+	"type" : "normal" }

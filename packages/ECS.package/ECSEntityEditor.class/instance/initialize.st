@@ -10,6 +10,10 @@ initialize
 			when: #clicked send: #exploreEntity to: self;
 			balloonText: 'Explore entity');
 		addMorphBack: (ECSButton new
+			small; icon: ECSIcon iconOpenid;
+			when: #clicked send: #openIdFilterForEntity to: self;
+			balloonText: 'Open id filter for entity');
+		addMorphBack: (ECSButton new
 			small; icon: ECSIcon iconPlus;
 			when: #clicked send: #addComponent to: self;
 			balloonText: 'Add component(s) to entity')).

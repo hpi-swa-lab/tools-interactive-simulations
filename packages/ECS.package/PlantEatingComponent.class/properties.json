@@ -1,0 +1,16 @@
+{
+	"category" : "ECS-SomeGame",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"howMuch",
+		"fromGrass",
+		"fromTallFeeders" ],
+	"name" : "PlantEatingComponent",
+	"pools" : [
+		 ],
+	"super" : "EntityComponent",
+	"type" : "normal" }

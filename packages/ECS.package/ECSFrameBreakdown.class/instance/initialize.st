@@ -2,6 +2,14 @@ as yet unclassified
 initialize
 
 	super initialize.
+	
+	drawStatistics := OrderedDictionary newFrom: {#GC -> ECSSmoothNumber new}.
+	logicStatistics := OrderedDictionary newFrom: {#GC -> ECSSmoothNumber new}.
+	overallStatistics := OrderedDictionary newFrom: {
+		#GC -> ECSSmoothNumber new.
+		#Logic -> ECSSmoothNumber new.
+		#Drawing -> ECSSmoothNumber new}.
+	
 	self 
 		addMorphBack: (logicBar := self makeBar);
 		addMorphBack: (drawBar := self makeBar);

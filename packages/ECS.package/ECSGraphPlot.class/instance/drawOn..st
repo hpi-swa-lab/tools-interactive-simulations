@@ -6,9 +6,9 @@ drawOn: aCanvas
 	x := 0.
 	height := self height - 1.
 	
-	aCanvas drawString: label, ' (', data last asString, '/', max asString, ')' at: self position.
-	
 	data do: [:value | | nowY |
 		nowY := (value / max * self height) ceiling.
 		aCanvas fillRectangle: (x - self gap @ (height - nowY) + self position extent: self gap @ nowY) color: Color red.
-		x := x + self gap]
+		x := x + self gap].
+	
+	aCanvas drawString: label, ' (', data last asString, '/', max asString, ')' at: self position.

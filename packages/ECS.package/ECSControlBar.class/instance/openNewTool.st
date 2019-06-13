@@ -3,7 +3,7 @@ openNewTool
 
 	| chosenTool availableTools |
 	
-	availableTools := ECSTool subclasses.
+	availableTools := ECSTool allSubclasses.
 	
 	chosenTool := UIManager default
 		chooseFrom: availableTools
