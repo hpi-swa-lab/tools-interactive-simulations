@@ -1,7 +1,6 @@
 as yet unclassified
 makeBar
 
-	^ Morph new 
-		color: Color transparent;
+	^ ECSColoredBar new 
 		changeProportionalLayout;
 		hResizing: #spaceFill
