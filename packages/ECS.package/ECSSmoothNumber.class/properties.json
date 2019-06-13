@@ -8,7 +8,9 @@
 	"instvars" : [
 		"cursor",
 		"values",
-		"average" ],
+		"average",
+		"touched",
+		"smoothingDuration" ],
 	"name" : "ECSSmoothNumber",
 	"pools" : [
 		 ],

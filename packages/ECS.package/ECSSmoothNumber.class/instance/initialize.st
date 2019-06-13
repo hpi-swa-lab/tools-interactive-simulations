@@ -5,4 +5,5 @@ initialize
 	
 	average := 0.
 	cursor := 1.
-	values := Array new: 10 withAll: 0
+	smoothingDuration := 50.
+	values := Array new: smoothingDuration withAll: 0

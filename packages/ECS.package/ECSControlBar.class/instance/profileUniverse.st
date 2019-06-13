@@ -19,4 +19,4 @@ profileUniverse
 				childItemsForItem: #receiversSortedByCall;
 				rootItems: tickMethods;
 				build;
-				openInWindow)]
+				openInWindow) openAsTool]

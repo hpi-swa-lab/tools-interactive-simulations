@@ -8,8 +8,8 @@ noiseAt: aPoint seed: aNumber
 	
 	F2 := 0.5 * (3 sqrt - 1).
 	G2 := (3 - (3 sqrt)) / 6.
-	F3 := 1/3.
-	G3 := 1/6.
+	F3 := 1.0/3.0.
+	G3 := 1.0/6.0.
 	
 	"Skew the input space to determine which simplex cell we're in"
 	xin := aPoint x.

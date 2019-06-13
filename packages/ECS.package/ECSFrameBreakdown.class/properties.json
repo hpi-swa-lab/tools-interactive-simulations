@@ -12,6 +12,7 @@
 		"logicStatistics",
 		"logicGcTime",
 		"drawStatistics",
+		"overallStatistics",
 		"drawGcTime",
 		"overallBar",
 		"drawBlockStart",

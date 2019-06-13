@@ -7,8 +7,8 @@ tick: aUniverse
 
 	aUniverse draw: [:canvas :universe | 
 		1 to: MapSize do: [:y | 1 to: MapSize do: [:x | | noise1 color noise2 |
-			noise1 := AnnoNoiseGenerator noiseAt: (x@y + camera) / 100 seed: 1602.
-			noise2 := AnnoNoiseGenerator noiseAt: (x@y + camera) / 30 seed: 1503.
+			noise1 := AnnoNoiseGenerator noiseAt: (x@y + camera) / 100.0 seed: 1602.
+			noise2 := AnnoNoiseGenerator noiseAt: (x@y + camera) / 30.0 seed: 1503.
 			
 			color := true caseOf: {
 				[noise1 < 0.1] -> [Color fromString: '#003366'].

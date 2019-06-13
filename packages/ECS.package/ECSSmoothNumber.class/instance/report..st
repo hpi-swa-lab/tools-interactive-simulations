@@ -3,6 +3,7 @@ report: aNumber
 
 	values at: cursor put: aNumber.
 	cursor := cursor + 1.
-	cursor = 11 ifTrue: [
+	cursor = smoothingDuration ifTrue: [
 		cursor := 1.
-		average := values average asFloat]
+		average := values average asFloat].
+	self touch
