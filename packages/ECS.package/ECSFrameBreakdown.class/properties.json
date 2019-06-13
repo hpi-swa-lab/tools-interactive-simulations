@@ -9,7 +9,10 @@
 		"logicBar",
 		"drawBar",
 		"systemTickStart",
-		"logicStatistics" ],
+		"logicStatistics",
+		"drawStatistics",
+		"drawBlockStart",
+		"gcTime" ],
 	"name" : "ECSFrameBreakdown",
 	"pools" : [
 		 ],

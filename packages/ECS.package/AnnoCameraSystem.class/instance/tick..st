@@ -1,8 +1,8 @@
 as yet unclassified
 tick: aUniverse
 
-	aUniverse query: {AnnoCamera} do: [:camera | | speed |
-		speed := 32. "todo: This should rely on DeltaTime"
+	aUniverse query: {AnnoCamera. DeltaTime} do: [:camera :deltaTime | | speed |
+		speed := (deltaTime milliseconds * 1.5) rounded.
 	
 		aUniverse query: {KeyEvent} do: [:keyEvent | keyEvent key caseOf: {
 			[$W] -> [camera position y: camera position y + speed].

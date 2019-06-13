@@ -7,13 +7,12 @@ tick: aUniverse
 		aUniverse remove: id].
 	aUniverse query: {#id. AnnoCamera} do: [:id :annoCamera |
 		aUniverse remove: id].
-	aUniverse spawnNewWith: {AnnoCamera. ScreenSize} do: [:annoCamera :screenSize |
-		annoCamera position: 0, 0.
-		screenSize size: 0, 0].
-	
 	aUniverse query: {#id. Mouse. DeltaTime} do: [:id :mouse :deltaTime |
 		aUniverse remove: id].
-	aUniverse spawnNewWith: {Mouse. DeltaTime} do: [:mouse :deltaTime |
+	aUniverse spawnNewWith: {AnnoCamera. ScreenSize. Mouse. DeltaTime} 
+		do: [:annoCamera :screenSize :mouse :deltaTime |
+		annoCamera position: 0, 0.
+		screenSize size: 0, 0.
 		deltaTime milliseconds: 0; last: Time millisecondClockValue; elapsed: 0.
 		mouse position: 0 , 0; leftJustDown: false; leftJustUp: false; 
 			leftDown: false; wheelDelta: (ECSVector2 x: 0 y: 0)]

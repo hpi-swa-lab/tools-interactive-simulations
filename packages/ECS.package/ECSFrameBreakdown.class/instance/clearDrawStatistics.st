@@ -1,5 +1,5 @@
 as yet unclassified
-clearLogicStatistics
+clearDrawStatistics
 
-	logicStatistics := OrderedCollection new.
+	drawStatistics := OrderedCollection new.
 	gcTime := (Smalltalk vmParameterAt: 8) + (Smalltalk vmParameterAt: 10)

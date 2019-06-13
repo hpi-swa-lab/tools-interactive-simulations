@@ -2,11 +2,15 @@
 	"class" : {
 		 },
 	"instance" : {
-		"clearLogicStatistics" : "cmfcmf 6/12/2019 12:03",
-		"displayStatistics:in:" : "cmfcmf 6/12/2019 12:16",
-		"initialize" : "cmfcmf 6/12/2019 12:04",
+		"clearDrawStatistics" : "cmfcmf 6/13/2019 08:16",
+		"clearLogicStatistics" : "cmfcmf 6/13/2019 08:15",
+		"displayStatistics:in:" : "cmfcmf 6/13/2019 08:15",
+		"drawBlockEnded:" : "cmfcmf 6/13/2019 08:14",
+		"drawBlockStarted:" : "cmfcmf 6/12/2019 13:39",
+		"initialize" : "cmfcmf 6/12/2019 13:37",
 		"makeBar" : "cmfcmf 6/12/2019 11:36",
-		"showLogicStatistics" : "cmfcmf 6/12/2019 11:59",
-		"systemTickEnded:system:" : "cmfcmf 6/12/2019 12:04",
+		"showDrawStatistics" : "cmfcmf 6/13/2019 08:16",
+		"showLogicStatistics" : "cmfcmf 6/13/2019 08:16",
+		"systemTickEnded:system:" : "cmfcmf 6/13/2019 08:14",
 		"systemTickStarted:system:" : "cmfcmf 6/12/2019 12:04",
 		"title" : "cmfcmf 6/12/2019 11:44" } }
