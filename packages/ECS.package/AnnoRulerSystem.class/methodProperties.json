@@ -3,5 +3,7 @@
 		 },
 	"instance" : {
 		"colorForRulerAt:" : "cmfcmf 6/8/2019 09:55",
+		"drawChunkBorders:camera:screenSize:" : "cmfcmf 6/13/2019 18:30",
+		"drawRulers:camera:screenSize:" : "cmfcmf 6/13/2019 18:27",
 		"pixelToMapPosition:" : "cmfcmf 6/8/2019 11:37",
-		"tick:" : "cmfcmf 6/13/2019 11:25" } }
+		"tick:" : "cmfcmf 6/13/2019 18:52" } }
