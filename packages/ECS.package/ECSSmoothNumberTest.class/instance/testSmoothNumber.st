@@ -3,6 +3,7 @@ testSmoothNumber
 
 	| num |
 	num := ECSSmoothNumber new.
+	num smoothingDuration: 10.
 	self assert: 0 equals: num value.
 	
 	num report: 1.

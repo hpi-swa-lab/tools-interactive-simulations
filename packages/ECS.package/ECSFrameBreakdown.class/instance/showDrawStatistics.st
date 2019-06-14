@@ -6,8 +6,10 @@ showDrawStatistics
 	drawStatistics keysAndValuesRemove: [:key :value | value touched not].
 	self displayStatistics: drawStatistics in: drawBar.
 	
-	(overallStatistics at: #GC) report: lastLogicGcDuration + lastDrawGcDuration.
-	(overallStatistics at: #Logic) report: (logicStatistics inject: 0 into: [:sum :each | sum + each value]).
-	(overallStatistics at: #Drawing) report: (drawStatistics inject: 0 into: [:sum :each | sum + each value]).
+	overallStatistics at: #GC put: (logicStatistics at: #GC) value + (drawStatistics at: #GC) value.
+	overallStatistics at: #Logic put: (logicStatistics associations inject: 0 into: [:sum :each | 
+		each key = #GC ifTrue: [sum] ifFalse: [sum + each value value]]).
+	overallStatistics at: #Drawing put: (drawStatistics associations inject: 0 into: [:sum :each | 
+		each key = #GC ifTrue: [sum] ifFalse: [sum + each value value]]).
 	
 	self displayStatistics: overallStatistics in: overallBar

@@ -5,5 +5,5 @@ initialize
 	
 	average := 0.
 	cursor := 1.
-	smoothingDuration := 50.
-	values := Array new: smoothingDuration withAll: 0
+	touched := false.
+	self smoothingDuration: 50

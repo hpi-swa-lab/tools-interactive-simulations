@@ -5,15 +5,12 @@ initialize
 	
 	drawStatistics := OrderedDictionary newFrom: {#GC -> ECSSmoothNumber new}.
 	logicStatistics := OrderedDictionary newFrom: {#GC -> ECSSmoothNumber new}.
-	overallStatistics := OrderedDictionary newFrom: {
-		#GC -> ECSSmoothNumber new.
-		#Logic -> ECSSmoothNumber new.
-		#Drawing -> ECSSmoothNumber new}.
+	overallStatistics := OrderedDictionary newFrom: {#GC -> 0. #Logic -> 0. #Drawing -> 0}.
 	
 	self 
-		addMorphBack: (logicBar := self makeBar);
-		addMorphBack: (drawBar := self makeBar);
-		addMorphBack: (overallBar := self makeBar).
+		addMorphBack: (logicBar := self makeBar: 'Logic');
+		addMorphBack: (drawBar := self makeBar: 'Drawing');
+		addMorphBack: (overallBar := self makeBar: 'Overall').
 	
 	self universe
 		when: #preTick send: #clearLogicStatistics to: self;

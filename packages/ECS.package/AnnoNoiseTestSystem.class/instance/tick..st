@@ -18,4 +18,4 @@ tick: aUniverse
 				[noise1 < 0.9] -> [Color gray].
 				[noise1 <= 1.0] -> [Color white].
 			}.
-			canvas fillRectangle: (((x@y) * Size) extent: Size@Size) color: color]]]
+			canvas fillRectangle: (((x@y) * Size + (20,20)) extent: Size@Size) color: color]]]
