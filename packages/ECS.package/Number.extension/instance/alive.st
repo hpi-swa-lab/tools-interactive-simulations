@@ -1,4 +1,4 @@
 *ECS-Data
 alive
 
-	^ true
+	^ self > 0

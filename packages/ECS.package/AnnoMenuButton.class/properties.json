@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-AnnoUniverse",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"index" ],
+	"name" : "AnnoMenuButton",
+	"pools" : [
+		 ],
+	"super" : "EntityComponent",
+	"type" : "normal" }

@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-AnnoUniverse",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "AnnoStateSystem",
+	"pools" : [
+		 ],
+	"super" : "System",
+	"type" : "normal" }

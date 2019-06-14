@@ -12,8 +12,9 @@ tick: aUniverse
 				annoTile := components first.
 				rendered := components second.
 			"aUniverse query: #(AnnoTile Rendered) do: [:annoTile :rendered | | origin |"
-				x := (annoTile position x - annoTile position y) * TileSize x / 2 + camera position x.
-				y := (annoTile position x + annoTile position y) * TileSize y / 2 + camera position y - rendered form object height.
+				x := (annoTile position x - annoTile position y - 1) * TileSize x / 2 + camera position x.
+				y := (annoTile position x + annoTile position y + 1) * TileSize y / 2 + camera position y - rendered form object height.
+				
 				rendered form
 					ifNotNil: [rendered form drawOn: canvas at: x,y blend: Color white]
 					ifNil: [canvas fillRectangle: (ECSAlignedRectangle origin: x,y extent: TileSize) color: rendered color]]]]

@@ -1,0 +1,15 @@
+{
+	"category" : "ECS-AnnoUniverse",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"buttonsCreated",
+		"buildingOnHand" ],
+	"name" : "AnnoState",
+	"pools" : [
+		 ],
+	"super" : "EntityComponent",
+	"type" : "normal" }

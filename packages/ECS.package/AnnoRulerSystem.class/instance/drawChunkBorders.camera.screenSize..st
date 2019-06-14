@@ -6,7 +6,7 @@ drawChunkBorders: canvas camera: camera screenSize: screenSize
 	
 	-1 * TileSize x * ChunkSize to: screenSize x by: TileSize x * ChunkSize do: [:x | 
 		-1 * TileSize y * ChunkSize to: screenSize y by: TileSize y * ChunkSize do: [:y | | top bottom chunkPos |
-			top := (TileSize x / 2 + x + chunkOffset x)@(y + chunkOffset y).
+			top := (TileSize x / 2 + x + chunkOffset x - (TileSize x / 2))@(y + chunkOffset y - (TileSize y / 2)).
 			bottom := top + (0@(TileSize y * ChunkSize)).
 			canvas line: top to: top + (TileSize * ChunkSize / 2) color: Color red.
 			canvas line: top to: top - (TileSize * ChunkSize / 2 * (1, -1)) color: Color red.
