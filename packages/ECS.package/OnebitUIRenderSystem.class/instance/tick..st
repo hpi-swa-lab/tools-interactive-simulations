@@ -24,4 +24,10 @@ tick: aUniverse
 				at: 128 , (screenSize size y - 64)
 				down: down x: x y: y
 				active: gameState selectedPlace == #Boulder
-				on: canvas) ifTrue: [gameState selectedPlace: #Boulder]]]
+				on: canvas) ifTrue: [gameState selectedPlace: #Boulder].
+			(self
+				button: (ECSTileMapAsset of: #onebit at: (3 , 19 extent: config tileSize) scale: 4)
+				at: 192 , (screenSize size y - 64)
+				down: down x: x y: y
+				active: gameState selectedPlace == #Sentry
+				on: canvas) ifTrue: [gameState selectedPlace: #Sentry]]]

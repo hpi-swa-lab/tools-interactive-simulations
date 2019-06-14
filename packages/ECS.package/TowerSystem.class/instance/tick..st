@@ -14,4 +14,4 @@ tick: aUniverse
 			projectile := (aUniverse instanceTemplate: #TowerProjectile).
 			(aUniverse getSingle: #OnebitProjectile of: projectile)
 				sourcePosition: towerPosition vector;
-				targetPosition: (aUniverse getSingle: #OnebitPosition of: closestEnemy) vector]]
+				targetPosition: (aUniverse getSingle: #OnebitPosition of: closestEnemy) vector copy]]

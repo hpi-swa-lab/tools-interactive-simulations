@@ -13,7 +13,10 @@
 		"endTime",
 		"recordIcon",
 		"eventHistory",
-		"previousElapsed" ],
+		"previousElapsed",
+		"loopingButton",
+		"recordButton",
+		"progress" ],
 	"name" : "ECSSnapshotReplay",
 	"pools" : [
 		 ],
