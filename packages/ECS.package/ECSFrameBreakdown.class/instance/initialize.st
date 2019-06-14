@@ -14,9 +14,9 @@ initialize
 		#Drawing -> ECSSmoothNumber new}.
 	
 	self 
-		addMorphBack: (logicBar := self makeBar);
-		addMorphBack: (drawBar := self makeBar);
-		addMorphBack: (overallBar := self makeBar).
+		addMorphBack: (logicBar := self makeBar: 'Logic');
+		addMorphBack: (drawBar := self makeBar: 'Drawing');
+		addMorphBack: (overallBar := self makeBar: 'Overall').
 	
 	self universe
 		when: #preTick send: #clearLogicStatistics to: self;
