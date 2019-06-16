@@ -1,3 +1,4 @@
 as yet unclassified
 fields
-	^#(#position)
+
+	^ #(#position #justMoved)

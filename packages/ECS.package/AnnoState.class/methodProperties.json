@@ -1,11 +1,19 @@
 {
 	"class" : {
-		"fields" : "cmfcmf 6/14/2019 14:55",
-		"mutatorFields" : "cmfcmf 6/14/2019 14:55",
-		"storage" : "cmfcmf 6/14/2019 14:55" },
+		"fields" : "cmfcmf 6/15/2019 08:05",
+		"mutatorFields" : "cmfcmf 6/15/2019 08:05",
+		"storage" : "cmfcmf 6/15/2019 08:05" },
 	"instance" : {
-		"buildingOnHand" : "cmfcmf 6/14/2019 14:55",
-		"buildingOnHand:" : "cmfcmf 6/14/2019 14:55",
-		"buttonsCreated" : "cmfcmf 6/14/2019 14:55",
-		"buttonsCreated:" : "cmfcmf 6/14/2019 14:55",
-		"initialize" : "cmfcmf 6/14/2019 14:55" } }
+		"buildingOnHand" : "cmfcmf 6/15/2019 08:05",
+		"buildingOnHand:" : "cmfcmf 6/15/2019 08:05",
+		"buttonsCreated" : "cmfcmf 6/15/2019 08:05",
+		"buttonsCreated:" : "cmfcmf 6/15/2019 08:05",
+		"initialize" : "cmfcmf 6/15/2019 08:05",
+		"money" : "cmfcmf 6/15/2019 08:05",
+		"money:" : "cmfcmf 6/15/2019 08:05",
+		"stone" : "cmfcmf 6/15/2019 08:05",
+		"stone:" : "cmfcmf 6/15/2019 08:05",
+		"tools" : "cmfcmf 6/15/2019 08:05",
+		"tools:" : "cmfcmf 6/15/2019 08:05",
+		"wood" : "cmfcmf 6/15/2019 08:05",
+		"wood:" : "cmfcmf 6/15/2019 08:05" } }

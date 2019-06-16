@@ -6,15 +6,18 @@ tick: aUniverse
 			tiles := universe queryList: #(AnnoTile Rendered).
 			tiles sort: [:a :b | a first position x <=> b first position x caseOf: {
 				[-1] -> [true].
-				[0] -> [a first position y < b first position y].
+				[0] -> [a first position y <=> b first position y caseOf: {
+					[-1] -> [true].
+					[0] -> [(a first isPreview or: [a first isBuiltByPlayer]) not].
+					[1] -> [false]
+				}].
 				[1] -> [false]}].
-			tiles do: [:components | | annoTile rendered x y |
+			tiles do: [:components | | annoTile rendered pos form |
 				annoTile := components first.
 				rendered := components second.
-			"aUniverse query: #(AnnoTile Rendered) do: [:annoTile :rendered | | origin |"
-				x := (annoTile position x - annoTile position y - 1) * TileSize x / 2 + camera position x.
-				y := (annoTile position x + annoTile position y + 1) * TileSize y / 2 + camera position y - rendered form object height.
-				
-				rendered form
-					ifNotNil: [rendered form drawOn: canvas at: x,y blend: Color white]
-					ifNil: [canvas fillRectangle: (ECSAlignedRectangle origin: x,y extent: TileSize) color: rendered color]]]]
+			"aUniverse query: #(AnnoTile Rendered) do: [:annoTile :rendered | | pos |"
+				pos := AnnoHelpers mapToPixelPosition: annoTile position offset: camera position.
+				pos -= (0, rendered form object height).
+				form := rendered form object.
+				canvas translucentImage: form at: pos
+				"rendered form drawOn: canvas at: pos blend: Color white"]]]

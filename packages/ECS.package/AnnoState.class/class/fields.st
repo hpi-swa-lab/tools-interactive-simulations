@@ -1,4 +1,4 @@
 as yet unclassified
 fields
 
-	^ #(#buttonsCreated #buildingOnHand)
+	^ #(#buttonsCreated #buildingOnHand #money #wood #stone #tools)

@@ -1,3 +1,4 @@
 as yet unclassified
 mutatorFields
-	^#(#position:)
+
+	^ #(#position: #justMoved:)

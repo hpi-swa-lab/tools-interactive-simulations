@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-AnnoUniverse",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "AnnoBuildingPlacementSystem",
+	"pools" : [
+		 ],
+	"super" : "System",
+	"type" : "normal" }

@@ -19,5 +19,5 @@ tick: aUniverse
 			
 			"Mouse position"
 			canvas fillRectangle: (50@50 extent: 200@TextStyle defaultFont height) color: Color black.
-			canvas drawString: 'Hovered map tile: ', (self pixelToMapPosition: mouse - camera)
+			canvas drawString: 'Hovered map tile: ', (AnnoHelpers pixelToMapPosition: mouse - camera)
 				at: 50@50 font: nil color: Color white]]

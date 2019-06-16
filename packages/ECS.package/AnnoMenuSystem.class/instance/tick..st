@@ -15,7 +15,7 @@ tick: aUniverse
 			"ifNotEmpty: [
 				buttons do: [:each | aUniverse remove: each first]]".
 		
-		mouse rightJustUp ifTrue: [state buildingOnHand: #none].
+		mouse rightJustUp ifTrue: [self removeBuildingFromHand: state universe: aUniverse].
 		
 		buttonPressed := mouse leftJustUp.
 		y := screenSize size y - 60.
@@ -28,6 +28,5 @@ tick: aUniverse
 			position := ((button index - 1) * 60 + 10)@y.
 			isHovered := ((position extent: 50@50) containsPoint: mouse position).
 			canvas drawImage: rendered form object at: position.
-			(isHovered or: [data first = state buildingOnHand]) 
-				ifTrue: [canvas translucentImage: highlight object at: position].
-			(isHovered and: [buttonPressed]) ifTrue: [state buildingOnHand: data first]]]]
+			(isHovered or: [data first = state buildingOnHand]) ifTrue: [canvas translucentImage: highlight object at: position].
+			(isHovered and: [buttonPressed]) ifTrue: [self addBuilding: data toHand: state universe: aUniverse]]]]

@@ -1,11 +1,17 @@
 {
 	"class" : {
-		"fields" : "cmfcmf 6/8/2019 12:54",
-		"mutatorFields" : "cmfcmf 6/8/2019 12:54",
-		"storage" : "cmfcmf 6/7/2019 15:42" },
+		"fields" : "cmfcmf 6/16/2019 11:03",
+		"mutatorFields" : "cmfcmf 6/16/2019 11:03",
+		"storage" : "cmfcmf 6/16/2019 11:03" },
 	"instance" : {
-		"chunkPos" : "cmfcmf 6/7/2019 15:42",
-		"chunkPos:" : "cmfcmf 6/7/2019 15:42",
-		"initialize" : "cmfcmf 6/7/2019 15:42",
-		"position" : "cmfcmf 6/7/2019 15:42",
-		"position:" : "cmfcmf 6/7/2019 15:42" } }
+		"buildingPos" : "cmfcmf 6/16/2019 11:03",
+		"buildingPos:" : "cmfcmf 6/16/2019 11:03",
+		"chunkPos" : "cmfcmf 6/16/2019 11:03",
+		"chunkPos:" : "cmfcmf 6/16/2019 11:03",
+		"initialize" : "cmfcmf 6/16/2019 11:03",
+		"isBuiltByPlayer" : "cmfcmf 6/16/2019 11:03",
+		"isBuiltByPlayer:" : "cmfcmf 6/16/2019 11:03",
+		"isPreview" : "cmfcmf 6/16/2019 11:03",
+		"isPreview:" : "cmfcmf 6/16/2019 11:03",
+		"position" : "cmfcmf 6/16/2019 11:03",
+		"position:" : "cmfcmf 6/16/2019 11:03" } }

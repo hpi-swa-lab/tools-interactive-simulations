@@ -11,7 +11,9 @@ tick: aUniverse
 			aUniverse remove: id].
 		aUniverse spawnNewWith: #(AnnoCamera ScreenSize Mouse DeltaTime AnnoState) 
 			do: [:annoCamera :screenSize :mouse :deltaTime :annoState |
-			annoCamera position: 0, 0.
+			annoCamera 
+				position: 0, 0;
+				justMoved: true.
 			screenSize size: 0, 0.
 			deltaTime milliseconds: 0; 
 				last: Time millisecondClockValue; 
@@ -21,4 +23,8 @@ tick: aUniverse
 				leftDown: false; wheelDelta: 0,0.
 			annoState
 				buttonsCreated: false;
-				buildingOnHand: #none]]
+				buildingOnHand: #none;
+				money: 1000;
+				tools: 0;
+				wood: 0;
+				stone: 0]]

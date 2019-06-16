@@ -12,13 +12,15 @@ register: (Pipeline new
 	register: AnnoCameraSystem new;
 	register: AnnoDynamicWorldGeneratorSystem new;
 	register: AnnoRenderSystem new;
-	register: AnnoRulerSystem new;
+	register: AnnoBuildingPlacementSystem new;
+	register: AnnoRulerSystem new disable;
 	register: AnnoMenuSystem new;
+	register: AnnoAvailableResourcesSystem new;
 	register: AnnoFrameCounterSystem new);
 register: (Pipeline new
-	title: 'World Generation';
+	title: 'BuildingPreview';
 	runContinuously: false;
-	register: AnnoResetWorldSystem new);
+	register: AnnoCreateBuildingPreviewSystem new);
 register: (Pipeline new
 	title: 'Minimap';
 	runContinuously: false;

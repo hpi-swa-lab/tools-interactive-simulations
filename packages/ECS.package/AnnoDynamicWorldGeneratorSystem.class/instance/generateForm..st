@@ -1,7 +1,7 @@
 as yet unclassified
 generateForm: anECSVector2
 
-	| form noise1 noise2 grass water wheat0 wheat1 r tree1 tree2 tree3 trees |
+	| noise1 noise2 grass water wheat0 wheat1 r tree1 tree2 tree3 trees |
 	noise1 := AnnoNoiseGenerator noiseAt: anECSVector2 / 100 seed: 1602.
 	noise2 := AnnoNoiseGenerator noiseAt: anECSVector2 / 30 seed: 1503.
 
@@ -16,7 +16,7 @@ generateForm: anECSVector2
 
 	r := Random seed: ((anECSVector2 x asString, '|', anECSVector2 y) hash).
 
-	form := true caseOf: {
+	^ true caseOf: {
 		[noise1 < 0.1] -> [water].
 		[noise1 < 0.2] -> [water].
 		[noise1 < 0.75 and: [noise2 >= 0.7]] -> [ | forestiness |
@@ -25,6 +25,4 @@ generateForm: anECSVector2
 		[noise1 < 0.75] -> [grass].
 		[noise1 < 0.9] -> [wheat1].
 		[noise1 <= 1.0] -> [wheat0].
-	}.
-	^ form.
-	
+	}

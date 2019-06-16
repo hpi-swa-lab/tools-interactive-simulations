@@ -1,4 +1,4 @@
 as yet unclassified
 mutatorFields
 
-	^ #(#buttonsCreated: #buildingOnHand:)
+	^ #(#buttonsCreated: #buildingOnHand: #money: #wood: #stone: #tools:)

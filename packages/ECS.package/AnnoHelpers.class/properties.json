@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-AnnoUniverse",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "AnnoHelpers",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

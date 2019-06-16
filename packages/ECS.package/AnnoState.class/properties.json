@@ -7,7 +7,11 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"buttonsCreated",
-		"buildingOnHand" ],
+		"buildingOnHand",
+		"money",
+		"wood",
+		"stone",
+		"tools" ],
 	"name" : "AnnoState",
 	"pools" : [
 		 ],

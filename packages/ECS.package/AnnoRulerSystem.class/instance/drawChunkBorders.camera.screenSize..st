@@ -13,7 +13,7 @@ drawChunkBorders: canvas camera: camera screenSize: screenSize
 			canvas line: bottom to: bottom - (TileSize * ChunkSize / 2) color: Color red.
 			canvas line: bottom to: bottom + (TileSize * ChunkSize / 2 * (1, -1)) color: Color red.
 			
-			chunkPos := (self pixelToMapPosition: top + (0, TileSize y / 2) - camera) // ChunkSize.
+			chunkPos := (AnnoHelpers pixelToMapPosition: top + (0, TileSize y / 2) - camera) // ChunkSize.
 			canvas drawString: 
 				chunkPos asString, 
 				' x-y=', (chunkPos x - chunkPos y), 

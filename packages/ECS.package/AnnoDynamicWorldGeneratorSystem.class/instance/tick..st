@@ -3,16 +3,17 @@ tick: aUniverse
 
 	| chunks tmp chunkPositions corners minDiff minSum maxDiff maxSum |
 	aUniverse query: #(AnnoCamera ScreenSize) do: [:camera :screenSize |
+		"camera justMoved ifFalse: [^ self]." "todo: Should also listen for changes to screen size"
 		camera := camera position.
 		screenSize := screenSize size.
 			
 		corners := ECSAlignedRectangle origin: camera negated extent: screenSize.
 
-		tmp := ((self pixelToMapPosition: corners topLeft) / ChunkSize) round.
+		tmp := ((AnnoHelpers pixelToMapPosition: corners topLeft) / ChunkSize) round.
 		tmp := tmp - (2, 0).
 		minSum := tmp x + tmp y.
 		minDiff := tmp x - tmp y.
-		tmp := ((self pixelToMapPosition: corners bottomRight) / ChunkSize) round.
+		tmp := ((AnnoHelpers pixelToMapPosition: corners bottomRight) / ChunkSize) round.
 		tmp := tmp + (2, 0).
 		maxSum := tmp x + tmp y.
 		maxDiff := tmp x - tmp y.
@@ -34,4 +35,4 @@ tick: aUniverse
 		tmp at: false ifPresent: [:chunksToDelete | 
 			chunksToDelete do: [:each | aUniverse remove: each first].
 			aUniverse query: #(id AnnoTile) do: [:id :annoTile |
-				(chunkPositions includes: annoTile chunkPos) ifFalse: [aUniverse remove: id]]]]
+				((chunkPositions includes: annoTile chunkPos) or: [annoTile isPreview] or: [annoTile isBuiltByPlayer]) ifFalse: [aUniverse remove: id]]]]
