@@ -1,5 +1,5 @@
 as yet unclassified
 allMyInstancesDo: aBlock
 
-	self universe query: {InstanceOfTemplate. #id} do: [:templateInstance :entity |
+	self universe query: #(InstanceOfTemplate #id) do: [:templateInstance :entity |
 		templateInstance template == template name ifTrue: [aBlock value: entity]]

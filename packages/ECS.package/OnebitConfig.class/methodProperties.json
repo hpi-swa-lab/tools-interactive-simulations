@@ -1,17 +1,19 @@
 {
 	"class" : {
-		"fields" : "tobe 6/13/2019 10:34",
-		"mutatorFields" : "tobe 6/13/2019 10:34",
-		"storage" : "tobe 6/13/2019 10:34" },
+		"fields" : "tobe 6/19/2019 08:01",
+		"mutatorFields" : "tobe 6/19/2019 08:01",
+		"storage" : "tobe 6/19/2019 08:01" },
 	"instance" : {
-		"initialize" : "tobe 6/13/2019 10:34",
-		"mapSize" : "tobe 6/13/2019 10:34",
-		"mapSize:" : "tobe 6/13/2019 10:34",
-		"scale" : "tobe 6/13/2019 10:34",
-		"scale:" : "tobe 6/13/2019 10:34",
-		"tileSize" : "tobe 6/13/2019 10:34",
-		"tileSize:" : "tobe 6/13/2019 10:34",
-		"turnTime" : "tobe 6/13/2019 10:34",
-		"turnTime:" : "tobe 6/13/2019 10:34",
-		"worldBackgroundColor" : "tobe 6/13/2019 10:34",
-		"worldBackgroundColor:" : "tobe 6/13/2019 10:34" } }
+		"initialize" : "tobe 6/19/2019 08:01",
+		"mapSize" : "tobe 6/19/2019 08:01",
+		"mapSize:" : "tobe 6/19/2019 08:01",
+		"maxScore" : "tobe 6/19/2019 08:01",
+		"maxScore:" : "tobe 6/19/2019 08:01",
+		"scale" : "tobe 6/19/2019 08:01",
+		"scale:" : "tobe 6/19/2019 08:01",
+		"tileSize" : "tobe 6/19/2019 08:01",
+		"tileSize:" : "tobe 6/19/2019 08:01",
+		"turnTime" : "tobe 6/19/2019 08:01",
+		"turnTime:" : "tobe 6/19/2019 08:01",
+		"worldBackgroundColor" : "tobe 6/19/2019 08:01",
+		"worldBackgroundColor:" : "tobe 6/19/2019 08:01" } }

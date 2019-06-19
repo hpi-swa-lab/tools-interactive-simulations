@@ -1,7 +1,9 @@
 {
 	"class" : {
-		"fields" : "tobe 6/8/2019 11:12",
-		"mutatorFields" : "tobe 6/8/2019 11:12",
-		"storage" : "tobe 6/6/2019 10:28" },
+		"fields" : "tobe 6/16/2019 14:22",
+		"mutatorFields" : "tobe 6/16/2019 14:22",
+		"storage" : "tobe 6/16/2019 14:22" },
 	"instance" : {
-		 } }
+		"initialize" : "tobe 6/16/2019 14:22",
+		"nextSteps" : "tobe 6/16/2019 14:22",
+		"nextSteps:" : "tobe 6/16/2019 14:22" } }

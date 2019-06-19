@@ -15,4 +15,4 @@ editorFor: aFieldSymbol of: aComponent
 				self triggerEvent: #changedValue withArguments: {aFieldSymbol. aComponent. val}];
 			value: value].
 	
-	^ ECSLabel new contents: value printString
+	^ ECSLabel new contents: (value printString truncateWithElipsisTo: 10)

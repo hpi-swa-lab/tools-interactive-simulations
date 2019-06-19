@@ -1,4 +1,4 @@
 as yet unclassified
 fields
 
-	^ #(#damage #target)
+	^ #(#damage #target #type #color)

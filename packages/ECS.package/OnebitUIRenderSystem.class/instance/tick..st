@@ -7,6 +7,10 @@ tick: aUniverse
 		y := mouse position y.
 		
 		aUniverse draw: [:canvas :universe |
+			canvas
+				fillRectangle: (0 , 0 extent: (gameState score / config maxScore asFloat * screenSize size x) rounded , 10)
+				color: Color red.
+			
 			(self
 				button: (ECSTileMapAsset of: #onebit at: (10, 27 extent: config tileSize) scale: 4)
 				at: 0 , (screenSize size y - 64)

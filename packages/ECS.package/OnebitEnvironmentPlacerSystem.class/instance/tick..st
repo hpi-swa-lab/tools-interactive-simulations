@@ -13,7 +13,14 @@ tick: aUniverse
 			mousePos vector: ((mouse position / tileSize + (translateX @ translateY)) floor min: config mapSize - (1 , 1) max: 0 , 0).
 			
 			mouse leftDown ifFalse: [^ self].
-			(aUniverse storageOf: #OnebitPosition) in: aUniverse at: mousePos vector query: #(OnebitBlocksPlacement) do: [:hole | ^ self].
+			state selectedTower: 0.
+			(aUniverse storageOf: #OnebitPosition)
+				in: aUniverse
+				at: mousePos vector
+				query: {#OnebitBlocksPlacement. #id. #OnebitTower optional}
+				do: [:hole :entity :tower |
+					tower ifNotNil: [state selectedTower: entity].
+					^ self].
 			
 			placed := aUniverse instanceTemplate: state selectedPlace.
 			(aUniverse getSingle: #OnebitPosition of: placed) x: mousePos x y: mousePos y]]
