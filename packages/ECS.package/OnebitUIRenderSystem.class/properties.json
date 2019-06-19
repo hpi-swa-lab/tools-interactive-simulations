@@ -3,7 +3,10 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"DigButtonAsset" ],
+		"BoulderButtonAsset",
+		"DigButtonAsset",
+		"TowerButtonAsset",
+		"TreeButtonAsset" ],
 	"commentStamp" : "",
 	"instvars" : [
 		 ],

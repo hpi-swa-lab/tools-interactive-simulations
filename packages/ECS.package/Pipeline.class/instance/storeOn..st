@@ -7,5 +7,5 @@ storeOn: aStream
 	aStream tab; nextPutAll: 'runContinuously: '. self runContinuously storeOn: aStream.
 	
 	self systems do: [:system  |
-		aStream nextPut: $;; cr; tab; nextPutAll: 'register: '; nextPutAll: system className; nextPutAll: ' new'].
+		aStream nextPut: $;; cr; tab; nextPutAll: 'register: '. system storeOn: aStream].
 	aStream nextPut: $)

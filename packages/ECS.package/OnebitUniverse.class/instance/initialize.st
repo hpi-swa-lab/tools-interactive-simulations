@@ -3,7 +3,7 @@ initialize
 
 	super initialize.
 	self
-	stepTime: 0;
+	stepTime: 934;
 	saveFilter: [:u | 
 	(u getSingle: #OnebitGameState of: 1)
 			state: #unset.
@@ -18,12 +18,16 @@ initialize
 		register: OnebitExpiringSystem new;
 		register: OnebitSpawnSystem new;
 		register: OnebitRenderSystem new;
-		register: OnebitUIRenderSystem new;
+		register: (OnebitUIRenderSystem new
+		constantAt: #TowerButtonAsset put: (ECSTileMapAsset of: #onebit at: (3 , 19 corner: 19 , 35) scale: 4 rotation: 0);
+		constantAt: #DigButtonAsset put: (ECSTileMapAsset of: #onebit at: (10 , 27 corner: 26 , 43) scale: 4 rotation: 0);
+		constantAt: #BoulderButtonAsset put: (ECSTileMapAsset of: #onebit at: (4 , 0 corner: 20 , 16) scale: 4 rotation: 0);
+		constantAt: #TreeButtonAsset put: (ECSTileMapAsset of: #onebit at: (2 , 1 corner: 18 , 17) scale: 4 rotation: 0));
 		register: OnebitProjectileSystem new;
 		register: OnebitParticleSystem new;
 		register: AnnoFrameCounterSystem new;
 		register: OnebitEnvironmentPlacerSystem new;
-		register: OnebitPositionDebugRenderSystem new);
+		register: OnebitPositionDebugRenderSystem new disable);
 	register: (Pipeline new
 		title: 'Generation';
 		runContinuously: false;
@@ -40,12 +44,12 @@ initialize
 		register: TowerSystem new;
 		register: OnebitWaterFlowSystem new);
 	spawnNewWith: #(Mouse Rendered OnebitGameState OnebitPosition DeltaTime ScreenSize OnebitConfig) do: [:mouse :rendered :onebitGameState :onebitPosition :deltaTime :screenSize :onebitConfig | 
-		mouse position: 748 , 1235; leftJustUp: false; leftJustDown: false; leftDown: false; wheelDelta: 0 , 0; rightJustUp: false; rightJustDown: false; rightDown: false; middleDown: false; middleJustDown: false; middleJustUp: false; positionDelta: 0 , 0.
+		mouse position: 1832 , 1525; leftJustUp: false; leftJustDown: false; leftDown: false; wheelDelta: 0 , 0; rightJustUp: false; rightJustDown: false; rightDown: false; middleDown: false; middleJustDown: false; middleJustUp: false; positionDelta: 0 , 0.
 		rendered color: (ECSColor rgba: 16rFFA4FAFF); form: nil.
-		onebitGameState state: #unset; movingTimeout: 128; selectedPlace: #Boulder; score: -1630; selectedTower: 0.
-		onebitPosition x: 19; y: 29.
-		deltaTime milliseconds: 20; last: 3738389921427; fpsAccumulated: 165; fpsAverage: 35.587188612099645; numAccumulated: 7; elapsed: 16223730.
-		screenSize size: 1031 , 1241.
+		onebitGameState state: #unset; movingTimeout: 500; selectedPlace: #Boulder; score: -2560; selectedTower: 0.
+		onebitPosition x: 27; y: 24.
+		deltaTime milliseconds: 952; last: 3738392044952; fpsAccumulated: 8565; fpsAverage: 1.0545186122535064; numAccumulated: 9; elapsed: 16451435.
+		screenSize size: 1965 , 1526.
 		onebitConfig scale: 2; tileSize: 16; mapSize: 30 , 30; turnTime: 500; worldBackgroundColor: (Color r: 0.279 g: 0.177 b: 0.236); maxScore: 10000];
 	
 		addTemplate: (ECSTemplate new
