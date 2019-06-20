@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Onebit",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "OnebitHelper",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

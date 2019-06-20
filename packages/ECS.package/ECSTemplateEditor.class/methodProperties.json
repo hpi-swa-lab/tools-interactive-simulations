@@ -3,12 +3,12 @@
 		 },
 	"instance" : {
 		"addComponent" : "tobe 6/8/2019 08:27",
-		"allMyInstancesDo:" : "tobe 6/8/2019 08:26",
+		"allMyInstancesDo:" : "tobe 6/19/2019 11:37",
 		"initialize" : "ek 6/6/2019 16:18",
 		"removeComponent:" : "tobe 6/8/2019 08:27",
 		"renameTemplate" : "ek 6/6/2019 16:09",
 		"spawnTemplate" : "tobe 6/13/2019 15:27",
 		"universe" : "T 5/27/2019 15:37",
 		"universe:" : "T 5/27/2019 15:36",
-		"update:ofComponent:with:" : "tobe 6/8/2019 09:11",
+		"update:ofComponent:with:" : "tobe 6/19/2019 11:37",
 		"updateTemplate:" : "tobe 6/8/2019 09:00" } }

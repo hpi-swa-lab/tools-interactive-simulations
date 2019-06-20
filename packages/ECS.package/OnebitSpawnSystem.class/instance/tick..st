@@ -7,4 +7,4 @@ tick: aUniverse
 			spawnPoint timeout <= 0 ifTrue: [ | enemy |
 				spawnPoint timeout: spawnPoint frequency.
 				enemy := aUniverse instanceTemplate: #Enemy.
-				(aUniverse get: #(OnebitPosition) of: enemy) first x: spawnPosition x y: spawnPosition y]]]
+				(aUniverse getSingle: #OnebitPosition of: enemy) x: spawnPosition x y: spawnPosition y]]]

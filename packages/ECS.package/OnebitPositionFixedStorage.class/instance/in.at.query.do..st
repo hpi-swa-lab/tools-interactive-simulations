@@ -9,6 +9,6 @@ in: aUniverse at: aPoint query: aComponentList do: aBlock
 		aUniverse incrementAccess.
 		components := aUniverse get: aComponentList of: entity.
 		" check if all components were alive "
-		components size = aComponentList size ifTrue: [
+		components ifNotNil: [
 			aUniverse incrementAccess.
 			aBlock valueWithArguments: components]]

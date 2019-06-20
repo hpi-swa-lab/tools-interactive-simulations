@@ -10,7 +10,8 @@
 		"tileSize",
 		"mapSize",
 		"turnTime",
-		"worldBackgroundColor" ],
+		"worldBackgroundColor",
+		"maxScore" ],
 	"name" : "OnebitConfig",
 	"pools" : [
 		 ],

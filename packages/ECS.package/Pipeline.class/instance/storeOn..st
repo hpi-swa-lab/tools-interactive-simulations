@@ -6,5 +6,6 @@ storeOn: aStream
 	aStream tab; nextPutAll: 'title: '. self title storeOn: aStream. aStream nextPut: $;; cr.
 	aStream tab; nextPutAll: 'runContinuously: '. self runContinuously storeOn: aStream.
 	
-	self systems do: [:system  | system storeOnForUniverse: aStream].
+	self systems do: [:system  |
+		aStream nextPut: $;; cr; tab; nextPutAll: 'register: '. system storeOn: aStream].
 	aStream nextPut: $)

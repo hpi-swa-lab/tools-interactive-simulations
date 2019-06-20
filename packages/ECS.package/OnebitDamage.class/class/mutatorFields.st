@@ -1,4 +1,4 @@
 as yet unclassified
 mutatorFields
 
-	^ #(#damage: #target:)
+	^ #(#damage: #target: #type: #color:)
