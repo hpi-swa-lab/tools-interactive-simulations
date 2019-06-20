@@ -11,9 +11,7 @@ tick: aUniverse
 			buttonData withIndexDo: [:each :index | 
 				aUniverse spawnNewWith: #(AnnoMenuButton Rendered) do: [:button :rendered | 
 					button index: index.
-					rendered form: (ECSImageAsset of: #anno at: 'tools/', each second, '.png' sized: 53, 50)]]]
-			"ifNotEmpty: [
-				buttons do: [:each | aUniverse remove: each first]]".
+					rendered form: (ECSImageAsset of: #anno at: 'tools/', each second, '.png' sized: 53, 50)]]].
 		
 		mouse rightJustUp ifTrue: [self removeBuildingFromHand: state universe: aUniverse].
 		
