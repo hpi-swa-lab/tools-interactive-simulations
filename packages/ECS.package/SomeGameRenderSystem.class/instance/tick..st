@@ -5,5 +5,6 @@ tick: aUniverse
 		canvas fillColor: ECSColor green.
 		universe query: #(Transform Rendered) do: [:transform :rendered |
 			rendered form
-				ifNotNil: [rendered form drawOn: canvas at: transform bounds origin blend: Color blue]
+			"rendered form drawOn: canvas at: transform bounds origin blend: Color white"
+				ifNotNil: [canvas translucentImage: rendered form object at: transform bounds origin]
 				ifNil: [canvas fillRectangle: transform bounds color: rendered color]].]
