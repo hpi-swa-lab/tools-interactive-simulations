@@ -8,6 +8,7 @@ initialize
 	self layoutInset: spacing; cellInset: spacing.
 	self changeListDirection: #leftToRight.
 	self changeTableLayout.
+	self resetColor.
 	self vResizing: #shrinkWrap.
 	self wrapCentering: #center.
 	self hResizing: #spaceFill.

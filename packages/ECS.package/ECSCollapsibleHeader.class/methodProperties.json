@@ -3,11 +3,12 @@
 		 },
 	"instance" : {
 		"doubleClick:" : "TB 6/2/2019 15:39",
-		"drawOn:" : "T 5/13/2019 18:16",
+		"drawOn:" : "ek 6/20/2019 17:41",
 		"expanderSize" : "T 5/13/2019 13:01",
 		"handlesMouseDown:" : "TB 6/2/2019 15:54",
-		"initialize" : "T 5/16/2019 09:06",
+		"initialize" : "ek 6/20/2019 17:59",
 		"mouseDown:" : "TB 6/2/2019 15:39",
 		"privateCollapse" : "cf 5/15/2019 12:03",
 		"privateExpand" : "cf 5/15/2019 12:02",
+		"resetColor" : "ek 6/20/2019 17:59",
 		"toggleCollapsed" : "cf 5/16/2019 08:16" } }

@@ -33,6 +33,10 @@ initialize
 		icon: (ECSIcon iconEdit);
 		when: #clicked send: #changeTitle to: self;
 		balloonText: 'Change title').
+	header addMorphBack: (ECSButton new
+		icon: (ECSIcon iconFilter);
+		when: #clicked send: #highlightByComponent to: self;
+		balloonText: 'Hightlight by component').
 	header addMorphBack: runContinuouslyButton.
 	header addMorphBack: (runOnceButton := (ECSButton new 
 		icon: ECSIcon iconPlay; 

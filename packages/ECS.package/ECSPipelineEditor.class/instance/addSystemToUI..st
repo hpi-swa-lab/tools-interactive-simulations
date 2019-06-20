@@ -32,6 +32,10 @@ addSystemToUI: aSystem
 				addMorphBack: (self buildSystemFunctionsAreaAndFillItFor: aSystem);
 				addMorphBack: (self buildConstantsAreaFor: aSystem)));
 		collapse).
+		
+	systemMorph assureExtension.
+	systemMorph extension assureOtherProperties.
+	systemMorph extension otherProperties at: #ecsSystem put: aSystem.
 	
 	self universe when: #postTick send: #updateLabel:system: to: self withArguments: {systemTitle. aSystem}.
 	
