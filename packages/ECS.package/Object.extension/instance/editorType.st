@@ -1,4 +1,4 @@
 *ECS-Data
 editorType
 
-	^ ECSLabel
+	^ ECSUnsupportedEditor

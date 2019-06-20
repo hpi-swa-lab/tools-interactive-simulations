@@ -8,7 +8,9 @@
 	"instvars" : [
 		"state",
 		"movingTimeout",
-		"selectedPlace" ],
+		"selectedPlace",
+		"score",
+		"selectedTower" ],
 	"name" : "OnebitGameState",
 	"pools" : [
 		 ],

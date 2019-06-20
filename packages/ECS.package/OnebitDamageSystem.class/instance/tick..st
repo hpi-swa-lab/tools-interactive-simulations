@@ -9,7 +9,7 @@ tick: aUniverse
 						expiring timeLeft: 200 atRandom.
 						particle velocity: 20 atRandom - 10 / 8.0, (30 atRandom negated / 10.0).
 						particleTransform bounds: (position x , position y + (0 , 0 randomTo: 1 , 1) extent: 5 , 5).
-						rendered color: Color lightBlue; form: nil]]].
+						rendered color: damage color; form: nil]]].
 		
 		(aUniverse getSingle: #Health of: damage target) ifNotNil: [:health |
 			health current: health current - damage damage.
