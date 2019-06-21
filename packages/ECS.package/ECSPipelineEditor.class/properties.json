@@ -7,13 +7,9 @@
 	"commentStamp" : "ek 6/21/2019 15:18",
 	"instvars" : [
 		"pipeline",
-		"systemsInUI",
 		"list",
-		"systemFunctionsAreasInUI",
-		"nonRequiredFunctionsInUI",
 		"runContinuouslyButton",
-		"runOnceButton",
-		"constantsAreas" ],
+		"runOnceButton" ],
 	"name" : "ECSPipelineEditor",
 	"pools" : [
 		 ],
