@@ -1,4 +1,4 @@
-as yet unclassified
+header-configuration
 headerColor: aColor
 
 	header color: aColor

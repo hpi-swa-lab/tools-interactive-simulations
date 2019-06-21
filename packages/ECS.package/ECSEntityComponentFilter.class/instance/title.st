@@ -1,4 +1,4 @@
-accessing
+initialization
 title
 
 	^ 'Entity Filter'

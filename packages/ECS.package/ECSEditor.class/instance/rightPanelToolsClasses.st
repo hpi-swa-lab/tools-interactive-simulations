@@ -1,4 +1,4 @@
-as yet unclassified
+initialization
 rightPanelToolsClasses
 
 	^ self class panelToolsClasses at: #rightPanel

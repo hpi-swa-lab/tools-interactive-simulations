@@ -1,4 +1,4 @@
-as yet unclassified
+updating
 addTemplate
 
 	self universe addTemplate: (ECSTemplate new

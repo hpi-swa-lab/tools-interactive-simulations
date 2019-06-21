@@ -1,4 +1,4 @@
-initialization
+profiling
 tallyStringFor: tally totalTallies: total totalTime: totalTime
 
 	| percentage |

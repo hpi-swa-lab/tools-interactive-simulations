@@ -1,4 +1,4 @@
-button methods
+universe interaction
 openNewTool
 
 	| chosenTool availableTools |

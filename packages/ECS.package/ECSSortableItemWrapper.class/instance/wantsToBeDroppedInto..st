@@ -1,4 +1,4 @@
-as yet unclassified
+dropping/grabbing
 wantsToBeDroppedInto: aMorph
 
 	^ aMorph = list

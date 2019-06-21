@@ -1,4 +1,4 @@
-as yet unclassified
+ui-building-updating
 updateTemplate: aTemplate
 
 	template := aTemplate.

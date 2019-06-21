@@ -1,4 +1,4 @@
-as yet unclassified
+component-updating
 updateComponentClass
 
 	| component className storageType attributes category |

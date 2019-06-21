@@ -1,4 +1,4 @@
-as yet unclassified
+component-updating
 loadComponent: aClass
 
 	(EntityComponent subclasses includes: aClass) ifFalse: [^ self error: 'class must be an EntityComponent'].

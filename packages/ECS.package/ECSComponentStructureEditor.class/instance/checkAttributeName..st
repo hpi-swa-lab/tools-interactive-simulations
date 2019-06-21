@@ -1,4 +1,4 @@
-as yet unclassified
+validation
 checkAttributeName: aString
 
 	Smalltalk at: #RBCondition ifAbsent: [

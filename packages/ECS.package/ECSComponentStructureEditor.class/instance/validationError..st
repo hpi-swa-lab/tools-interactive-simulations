@@ -1,4 +1,4 @@
-as yet unclassified
+validation
 validationError: aString
 	
 	^ ECSValidationError new signal: aString

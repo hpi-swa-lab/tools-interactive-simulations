@@ -1,4 +1,4 @@
-as yet unclassified
+attaching
 openDetached
 
 	self detach openAsTool

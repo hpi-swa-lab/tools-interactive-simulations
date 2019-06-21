@@ -1,4 +1,4 @@
-as yet unclassified
+profiling
 showLogicStatistics
 
 	lastLogicGcDuration := (Smalltalk vmParameterAt: 8) + (Smalltalk vmParameterAt: 10) - logicGcTime.

@@ -1,4 +1,4 @@
-as yet unclassified
+button-functionality
 addAttribute: aString type: aClass
 
 	| row |

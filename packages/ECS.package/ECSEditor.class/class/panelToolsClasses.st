@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 panelToolsClasses
 
 	^ PanelToolsClasses ifNil: [PanelToolsClasses := Dictionary new.

@@ -1,4 +1,4 @@
-as yet unclassified
+button-functionality
 unregisterPipelineAndDeleteMyself
 
 	(UIManager default confirm: 'Do you really want to delete the pipeline ', self pipeline title, '?')

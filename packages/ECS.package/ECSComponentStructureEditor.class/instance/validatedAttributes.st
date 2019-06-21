@@ -1,4 +1,4 @@
-as yet unclassified
+validation
 validatedAttributes
 
 	^ instVarMorphs submorphs collect: [:each | | name class | 

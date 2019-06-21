@@ -1,4 +1,4 @@
-as yet unclassified
+pipelines
 pipelinesChanged
 
 	"called whenever a new pipeline is registered or an existing pipeline is unregistered"

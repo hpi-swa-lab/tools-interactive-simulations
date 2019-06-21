@@ -1,4 +1,4 @@
-as yet unclassified
+geometry
 position: aPoint
 
 	super position: aPoint.

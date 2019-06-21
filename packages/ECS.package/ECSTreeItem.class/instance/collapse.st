@@ -1,4 +1,4 @@
-as yet unclassified
+menus
 collapse
 
 	expanded ifTrue: [

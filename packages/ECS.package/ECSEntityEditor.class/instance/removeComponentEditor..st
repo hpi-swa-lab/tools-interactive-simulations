@@ -1,4 +1,4 @@
-as yet unclassified
+ui-building-updating
 removeComponentEditor: aComponentEditor
 
 	self removeMorph: aComponentEditor.

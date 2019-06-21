@@ -1,4 +1,4 @@
-saving snapshots
+snapshot saving
 saveSnapshotInNewUniverseClass
 
 	| newClassName |

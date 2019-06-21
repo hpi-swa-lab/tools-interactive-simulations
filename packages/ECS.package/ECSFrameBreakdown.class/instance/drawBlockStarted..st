@@ -1,4 +1,4 @@
-as yet unclassified
+profiling
 drawBlockStarted: aSystem
 
 	drawBlockStart := Time utcMicrosecondClock

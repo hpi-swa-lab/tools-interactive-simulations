@@ -1,4 +1,4 @@
-as yet unclassified
+ui-building-updating-logic
 updateMethodSelectorTo: aNewSelector from: anOldSelector in: aSystem
 
 	" not currently in use or functional, to be completed. "

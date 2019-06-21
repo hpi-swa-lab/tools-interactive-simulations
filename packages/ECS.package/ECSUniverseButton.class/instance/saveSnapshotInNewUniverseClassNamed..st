@@ -1,4 +1,4 @@
-saving snapshots
+snapshot saving
 saveSnapshotInNewUniverseClassNamed: aClassNameString
 
 	self

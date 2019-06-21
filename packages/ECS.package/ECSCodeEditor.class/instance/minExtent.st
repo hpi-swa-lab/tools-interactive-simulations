@@ -1,4 +1,4 @@
-as yet unclassified
+layout
 minExtent
 
 	^ super minExtent x @ (textMorph paragraph extent y + self extraSpacing)

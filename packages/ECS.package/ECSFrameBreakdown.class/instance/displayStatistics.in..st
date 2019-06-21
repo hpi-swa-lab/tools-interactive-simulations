@@ -1,4 +1,4 @@
-as yet unclassified
+profiling
 displayStatistics: anOrderedDictionary in: aMorph
 
 	aMorph sections: (anOrderedDictionary associations collect: [:each | each key isSymbol 

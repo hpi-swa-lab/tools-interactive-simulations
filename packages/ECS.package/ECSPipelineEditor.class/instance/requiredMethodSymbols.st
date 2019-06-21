@@ -1,4 +1,4 @@
-as yet unclassified
+constants-and-icons
 requiredMethodSymbols
 
 	^ {#tick:}

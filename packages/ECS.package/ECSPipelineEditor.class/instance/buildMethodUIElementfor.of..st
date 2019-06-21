@@ -1,4 +1,4 @@
-as yet unclassified
+ui-building-updating-logic
 buildMethodUIElementfor: aMethodSymbol of: aSystem
 
 	| removeButton |

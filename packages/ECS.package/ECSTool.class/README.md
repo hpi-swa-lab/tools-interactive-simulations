@@ -1,0 +1,1 @@
+I am an abstract ECS tool. I work for a given universe.

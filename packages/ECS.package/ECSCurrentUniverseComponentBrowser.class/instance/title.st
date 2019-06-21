@@ -1,4 +1,4 @@
-as yet unclassified
+initialization
 title
 
 	^ self universe name, ' active Components'

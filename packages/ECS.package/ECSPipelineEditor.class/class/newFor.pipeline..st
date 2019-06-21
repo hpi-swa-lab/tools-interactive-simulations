@@ -1,4 +1,4 @@
-as yet unclassified
+instance creation
 newFor: aUniverse pipeline: aPipeline
 
 	^ self basicNew

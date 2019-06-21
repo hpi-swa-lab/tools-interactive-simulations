@@ -1,4 +1,4 @@
-as yet unclassified
+ui-building-updating-logic
 buildConstantRowFor: aSystem named: aSymbol
 
 	| row removeButton |

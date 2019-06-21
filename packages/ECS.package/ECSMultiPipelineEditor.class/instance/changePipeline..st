@@ -1,4 +1,4 @@
-as yet unclassified
+pipelines
 changePipeline: aPipeline
 
 	pipelineEditor ifNotNil: [pipelineEditor delete. pipelineEditor := nil].

@@ -1,4 +1,4 @@
-as yet unclassified
+replay
 assignStateToUniverse: aCollectionOfComponents
 
 	self universe components: componentSnapshot veryDeepCopy

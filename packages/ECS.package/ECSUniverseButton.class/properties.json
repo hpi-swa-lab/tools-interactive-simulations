@@ -1,0 +1,15 @@
+{
+	"category" : "ECS-Tools",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"universe",
+		"currentlyProfiling" ],
+	"name" : "ECSUniverseButton",
+	"pools" : [
+		 ],
+	"super" : "ECSButton",
+	"type" : "normal" }

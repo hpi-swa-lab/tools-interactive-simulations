@@ -1,0 +1,1 @@
+I am a template editor. A template represents a combination of components (with standard values) to easier create entities with that configuration.

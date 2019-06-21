@@ -1,4 +1,4 @@
-as yet unclassified
+thumbnail
 icon
 
 	^ icon

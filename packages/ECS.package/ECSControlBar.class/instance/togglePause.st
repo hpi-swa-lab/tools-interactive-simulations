@@ -1,4 +1,4 @@
-button methods
+button-functionality
 togglePause
 
 	self universe togglePaused.

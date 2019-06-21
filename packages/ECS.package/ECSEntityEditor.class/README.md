@@ -1,0 +1,1 @@
+I am an entity editor. I allow adding and changing components.

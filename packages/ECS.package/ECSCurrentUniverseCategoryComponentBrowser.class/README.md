@@ -1,0 +1,1 @@
+I am a browser for all component classes in the same category as the current universe.

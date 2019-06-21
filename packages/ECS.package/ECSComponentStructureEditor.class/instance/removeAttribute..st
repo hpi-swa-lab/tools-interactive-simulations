@@ -1,4 +1,4 @@
-as yet unclassified
+component-updating
 removeAttribute: aMorph 
 
 	aMorph delete.

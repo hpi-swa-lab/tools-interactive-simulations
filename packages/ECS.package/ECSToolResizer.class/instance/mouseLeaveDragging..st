@@ -1,4 +1,4 @@
-as yet unclassified
+event handling
 mouseLeaveDragging: anEvent
 
 	super mouseLeaveDragging: anEvent.

@@ -1,4 +1,4 @@
-as yet unclassified
+button-functionality
 addComponent
 
 	ECSComponentStructureEditor openFor: self universe

@@ -1,4 +1,4 @@
-as yet unclassified
+initialization
 leftPanelToolsClasses
 
 	^ self class panelToolsClasses at: #leftPanel

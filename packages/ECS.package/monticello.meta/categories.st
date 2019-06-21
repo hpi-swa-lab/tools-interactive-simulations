@@ -8,6 +8,5 @@ SystemOrganization addCategory: #'ECS-OpenGL'!
 SystemOrganization addCategory: #'ECS-Plumbing'!
 SystemOrganization addCategory: #'ECS-SomeGame'!
 SystemOrganization addCategory: #'ECS-Test'!
-SystemOrganization addCategory: #'ECS-Tiny-Game'!
 SystemOrganization addCategory: #'ECS-Tools'!
 SystemOrganization addCategory: #'ECS-UI'!

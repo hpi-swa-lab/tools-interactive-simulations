@@ -1,4 +1,4 @@
-as yet unclassified
+profiling
 showDrawStatistics
 
 	lastDrawGcDuration := 	(Smalltalk vmParameterAt: 8) + (Smalltalk vmParameterAt: 10) - drawGcTime.

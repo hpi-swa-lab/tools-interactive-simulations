@@ -1,4 +1,4 @@
-as yet unclassified
+initialization
 initialize
 	super initialize.
 	self layoutInset: (TextStyle defaultFont height / 3) rounded.

@@ -1,4 +1,4 @@
-as yet unclassified
+ui-building-updating
 allMyInstancesDo: aBlock
 
 	self universe query: #(InstanceOfTemplate #id) do: [:templateInstance :entity |
