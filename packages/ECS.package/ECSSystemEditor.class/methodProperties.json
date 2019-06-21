@@ -1,0 +1,28 @@
+{
+	"class" : {
+		"openFor:with:" : "ek 6/21/2019 17:36" },
+	"instance" : {
+		"addConstant" : "ek 6/21/2019 16:23",
+		"addMethod" : "ek 6/21/2019 17:45",
+		"buildConstantRowNamed:" : "ek 6/21/2019 16:23",
+		"buildConstantsArea" : "ek 6/21/2019 16:24",
+		"buildMethodUIElementfor:of:" : "ek 6/21/2019 18:01",
+		"buildRequiredMethodUIElementfor:of:" : "ek 6/21/2019 17:31",
+		"buildSystemFunctionsAreaAndFillIt" : "ek 6/21/2019 17:34",
+		"initialize" : "ek 6/21/2019 17:37",
+		"openSystemMap" : "ek 6/21/2019 16:24",
+		"parentTool" : "ek 6/21/2019 17:37",
+		"parentTool:" : "ek 6/21/2019 17:37",
+		"pausedIconName" : "ek 6/21/2019 16:01",
+		"postInitialize" : "ek 6/21/2019 15:49",
+		"removeConstantFrom:named:row:" : "ek 6/21/2019 17:43",
+		"removeMe" : "ek 6/21/2019 16:09",
+		"removeMethod:from:" : "ek 6/21/2019 18:25",
+		"requiredMethodSymbols" : "ek 6/21/2019 17:35",
+		"runningIconName" : "ek 6/21/2019 16:01",
+		"stateIconForRunningState:" : "ek 6/21/2019 16:01",
+		"system" : "ek 6/21/2019 15:49",
+		"system:" : "ek 6/21/2019 15:49",
+		"togglePaused" : "ek 6/21/2019 16:09",
+		"universe" : "ek 6/21/2019 17:38",
+		"updateLabel" : "ek 6/21/2019 16:27" } }

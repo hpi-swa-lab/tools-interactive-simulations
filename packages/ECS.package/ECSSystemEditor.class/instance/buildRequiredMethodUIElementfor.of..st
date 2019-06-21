@@ -1,4 +1,4 @@
-ui-building-updating-logic
+initialization
 buildRequiredMethodUIElementfor: aMethodSymbol of: aSystem
 
 	^ ECSCollapsible new

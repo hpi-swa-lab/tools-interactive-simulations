@@ -1,4 +1,4 @@
-ui-building-updating-logic
+initialization
 buildMethodUIElementfor: aMethodSymbol of: aSystem
 
 	| removeButton |
@@ -7,7 +7,7 @@ buildMethodUIElementfor: aMethodSymbol of: aSystem
 		when: #clicked send: #removeMethod:from: to: self withArguments: {aMethodSymbol. aSystem};
 		balloonText: 'Remover method from system'.
 	
-	^ ((nonRequiredFunctionsInUI at: aSystem) add: (Association
+	^ (nonRequiredFunctionsInUI add: (Association
 		key: aMethodSymbol
 		value: (ECSCollapsible new
 			header: (ECSLabel new contents: aMethodSymbol asString; hResizing: #spaceFill);
