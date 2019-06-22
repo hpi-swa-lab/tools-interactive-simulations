@@ -1,7 +1,7 @@
 as yet unclassified
 tick: aUniverse
 
-	aUniverse query: #(UniverseView) do: [:view | view isCurrent ifTrue: [
+	aUniverse query: #(UniverseView) filter: [:view | view isCurrent] do: [:view | view isCurrent ifTrue: [
 		aUniverse query: #(DeltaTime) do: [:deltaTime |
 			aUniverse canvas
 				drawString: deltaTime fpsAverage asInteger asString

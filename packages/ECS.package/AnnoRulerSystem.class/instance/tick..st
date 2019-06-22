@@ -1,7 +1,7 @@
 as yet unclassified
 tick: aUniverse
 
-	aUniverse query: #(AnnoCamera UniverseView) do: [:camera :view |
+	aUniverse query: #(AnnoCamera UniverseView) filter: [:c :view  | view isCurrent] do: [:camera :view |
 		aUniverse query: #(AnnoState) do: [:state | | screenSize canvas mouse |
 			camera := camera position.
 			canvas := aUniverse canvas.

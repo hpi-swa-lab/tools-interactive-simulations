@@ -6,11 +6,11 @@ tick: aUniverse
 			aUniverse attach: #AnnoCamera to: entity]].
 	
 	aUniverse query: #(DeltaTime) do: [:deltaTime | | speed delta |
-		aUniverse query: #(AnnoCamera UniverseView) do: [:camera :view |
+		aUniverse query: #(AnnoCamera UniverseView id) do: [:camera :view :viewId |
 			speed := (deltaTime milliseconds * 1.5) rounded.
 			camera justMoved: false.
 			
-			aUniverse query: #(KeyEvent) do: [:keyEvent | | key |
+			aUniverse query: #(KeyEvent) filter: [:keyEvent | keyEvent view = viewId] do: [:keyEvent | | key |
 				key := keyEvent key.
 				(key = $W or: [key = Character arrowUp]) ifTrue: [camera 
 					position y: camera position y + speed. camera justMoved: true].

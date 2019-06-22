@@ -5,7 +5,7 @@ tick: aUniverse
 	buttonData := {{#dirtRoad. 96}. {#woodCutter. 126}. {#tree. 127}. {#market. 153}}.
 	highlight := (ECSImageAsset of: #anno at: 'tools/', 85, '.png' sized: 53, 50).
 
-	aUniverse query: #(UniverseView) do: [:view | view isCurrent ifTrue: [
+	aUniverse query: #(UniverseView) filter: [:view | view isCurrent] do: [:view |
 		aUniverse query: #(AnnoState) do: [:state | | buttons y buttonPressed |
 			buttons := aUniverse queryList: #(id AnnoMenuButton Rendered).
 			buttons ifEmpty: [
@@ -28,4 +28,4 @@ tick: aUniverse
 				isHovered := ((position extent: 50@50) containsPoint: view mousePosition).
 				aUniverse canvas drawImage: rendered form object at: position.
 				(isHovered or: [data first = state buildingOnHand]) ifTrue: [aUniverse canvas translucentImage: highlight object at: position].
-				(isHovered and: [buttonPressed]) ifTrue: [self addBuilding: data toHand: state universe: aUniverse]]]]]
+				(isHovered and: [buttonPressed]) ifTrue: [self addBuilding: data toHand: state universe: aUniverse]]]]

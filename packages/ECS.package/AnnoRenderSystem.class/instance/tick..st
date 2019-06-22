@@ -1,7 +1,7 @@
 as yet unclassified
 tick: aUniverse
 
-	aUniverse query: #(UniverseView AnnoCamera) do: [:view :camera | | tiles | view isCurrent ifTrue: [
+	aUniverse query: #(UniverseView AnnoCamera) filter: [:view :camera | view isCurrent] do: [:view :camera | | tiles |
 		tiles := aUniverse queryList: #(AnnoTile Rendered).
 		tiles sort: [:a :b | a first position x <=> b first position x caseOf: {
 			[-1] -> [true].
@@ -19,4 +19,4 @@ tick: aUniverse
 			pos -= (0, rendered form object height).
 			form := rendered form object.
 			aUniverse canvas translucentImage: form at: pos
-			"rendered form drawOn: canvas at: pos blend: Color white"]]]
+			"rendered form drawOn: canvas at: pos blend: Color white"]]

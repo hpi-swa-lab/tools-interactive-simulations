@@ -1,6 +1,6 @@
 as yet unclassified
 tick: aUniverse
-	aUniverse query: #(AnnoCamera UniverseView) do: [:camera :view  |
+	aUniverse query: #(AnnoCamera UniverseView) filter: [:c :view | view isCurrent] do: [:camera :view  |
 		aUniverse query: #(AnnoState) do: [:state | | building |
 			building := AnnoHelpers buildings at: state buildingOnHand.
 			building ifNotNil: [ | pos forms size wasBuilt |
