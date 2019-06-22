@@ -1,4 +1,4 @@
-as yet unclassified
+ui-building-updating
 updateComponents: aCollection
 
 	aCollection doWithIndex: [:component :index |

@@ -1,4 +1,4 @@
-as yet unclassified
+ui-building-updating
 updateComponent: aComponent
 
 	component ~~ aComponent
@@ -6,6 +6,10 @@ updateComponent: aComponent
 			self removeAllMorphs.
 			self addMorphBack: (ECSRow new
 				addMorphBack: (ECSLabel new hResizing: #spaceFill; contents: aComponent className asText allBold);
+				addMorphBack: (ECSButton new
+					icon: ECSIcon iconFilter;
+					when: #clicked send: #openHighlightedMultiPipelineEditor to: self;
+					balloonText: 'Open highlighted multi-pipeline editor for  ', aComponent className);
 				addMorphBack: (ECSButton new
 					icon: ECSIcon iconRemove;
 					when: #clicked send: #removeMe to: self;

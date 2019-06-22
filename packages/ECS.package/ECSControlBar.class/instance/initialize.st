@@ -3,19 +3,16 @@ initialize
 
 	super initialize.
 	
+	self flag: #todo. "extract the other universe related buttons as well"
+	
 	self universe when: #pause send: #updateIcon to: self.
 	self universe when: #start send: #updateIcon to: self.
 	
 	self changeListDirection: #leftToRight.
 	self cellInset: (TextStyle defaultFont height / 4) rounded.
 	pauseIcon := ECSIcon new large.
-	currentlyProfiling := false.
 	
-	self addMorphBack: (ECSButton new
-		when: #clicked send: #spawnNewEntity to: self;
-		label: 'Entity';
-		icon: ECSIcon iconPlus;
-		balloonText: 'Add new entity').
+	self addMorphBack: (ECSUniverseButton spawnNewEntityButtonFor: self universe).
 	self addMorphBack: (ECSButton new
 		when: #clicked send: #togglePause
 		to: self; icon: (pauseIcon := ECSIcon new large);
@@ -33,24 +30,9 @@ initialize
 	self updateIcon.
 	
 	self addMorphBack: ECSRow new.
-	self addMorphBack: (ECSButton new
-		when: #clicked send: #profileUniverse to: self;
-		icon: ECSIcon iconClock_o;
-		balloonText: 'Profile the Universe').
-	self addMorphBack: (ECSButton new
-		when: #clicked send: #exploreUniverse to: self;
-		icon: ECSIcon iconSearch;
-		balloonText: 'Explore the universe').
-	self addMorphBack: (ECSButton new
-		when: #clicked send: #openNewTool to: self;
-		icon: ECSIcon iconWindow_maximize;
-		balloonText: 'Open new tool').
-	self addMorphBack: (ECSButton new
-		when: #clicked send: #saveCurrentToolConfigurationAsStandard to: self;
-		icon: ECSIcon iconLife_saver;
-		balloonText: 'Save current tool configuration as standard for editor').
-	self addMorphBack: (ECSButton new
-		when: #clicked send: #saveSnapshot to: self;
-		icon: ECSIcon iconSave;
-		balloonText: 'Save the universe').
+	self addMorphBack: (ECSUniverseButton profileButtonFor: self universe).
+	self addMorphBack: (ECSUniverseButton exploreButtonFor: self universe).
+	self addMorphBack: (ECSUniverseButton openNewToolButtonFor: self universe).
+	self addMorphBack: self createSaveEditorConfigurationButton.
+	self addMorphBack: (ECSUniverseButton saveSnapshotButtonFor: self universe).
 	self addMorphBack: self header small

@@ -1,4 +1,4 @@
-as yet unclassified
+system-map-editor-compability
 editingMethod: aMethod boundsInfo: aDictionary
 
 	| savedBounds |

@@ -1,4 +1,4 @@
-as yet unclassified
+profiling
 makeBar: aString
 
 	^ ECSColoredBar new 

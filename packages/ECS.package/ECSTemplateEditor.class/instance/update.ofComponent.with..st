@@ -1,4 +1,4 @@
-as yet unclassified
+ui-building-updating
 update: aSymbol ofComponent: aComponent with: aValue
 
 	self allMyInstancesDo: [:entity |

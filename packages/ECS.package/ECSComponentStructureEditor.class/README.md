@@ -1,0 +1,1 @@
+I am a component structure editor. I change the class structure, not the values of one specific instance.

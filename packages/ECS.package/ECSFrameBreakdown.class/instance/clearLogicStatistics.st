@@ -1,4 +1,4 @@
-as yet unclassified
+profiling
 clearLogicStatistics
 
 	logicGcTime := (Smalltalk vmParameterAt: 8) + (Smalltalk vmParameterAt: 10).

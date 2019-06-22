@@ -1,0 +1,1 @@
+I am a snapshot replay for a given universe.

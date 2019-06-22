@@ -1,4 +1,4 @@
-as yet unclassified
+button-functionality
 toggleRunContinuously
 
 	pipeline runContinuously: pipeline runContinuously not.

@@ -1,0 +1,1 @@
+I am wrapper widget to edit all pipelines of a given universe.

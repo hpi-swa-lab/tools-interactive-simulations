@@ -1,4 +1,4 @@
-as yet unclassified
+query-filtering
 editorAt: anIndex orAdd: aBlock
 
 	^ list submorphCount < anIndex

@@ -1,4 +1,4 @@
-as yet unclassified
+attaching
 detachNow: anEvent
 
 	"| window |

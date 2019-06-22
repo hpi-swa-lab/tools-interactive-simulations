@@ -1,4 +1,4 @@
-as yet unclassified
+map-editor-items
 editorForMethod: aMethod
 
 	| editor |

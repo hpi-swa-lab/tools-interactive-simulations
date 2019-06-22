@@ -1,4 +1,4 @@
-as yet unclassified
+button-functionality
 addComponent
 
 	self universe chooseComponentClassDo: [:componentClass |

@@ -1,0 +1,20 @@
+{
+	"category" : "ECS-Tools",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "ek 6/21/2019 15:20",
+	"instvars" : [
+		"stateButton",
+		"constantsArea",
+		"functionsArea",
+		"systemTitleLabel",
+		"system",
+		"parentTool",
+		"nonRequiredFunctionsInUI" ],
+	"name" : "ECSSystemEditor",
+	"pools" : [
+		 ],
+	"super" : "ECSCollapsible",
+	"type" : "normal" }

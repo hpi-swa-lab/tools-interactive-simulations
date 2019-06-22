@@ -1,4 +1,4 @@
-as yet unclassified
+stats-and-drawing
 updateGCStats: aGraph
 
 	| gcTimeNow |

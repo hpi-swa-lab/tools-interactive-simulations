@@ -1,4 +1,4 @@
-as yet unclassified
+button-functionality
 saveCurrentToolConfigurationAsStandard
 
 	(self ownerThatIsA: ECSEditor) saveCurrentToolConfigurationAsStandard

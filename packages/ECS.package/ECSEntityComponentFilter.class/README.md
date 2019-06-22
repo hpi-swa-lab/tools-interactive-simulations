@@ -1,0 +1,1 @@
+I am an enity filter. I can filter by components or id and display all found entities in an editable way.

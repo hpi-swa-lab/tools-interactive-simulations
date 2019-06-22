@@ -1,4 +1,4 @@
-as yet unclassified
+query-filtering
 expandFirstResult
 
 	list hasSubmorphs ifTrue: [

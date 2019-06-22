@@ -1,4 +1,4 @@
-as yet unclassified
+systemeditor-callbacks
 removeSystemFromPipeline: aSystem
 
 	pipeline unregister: aSystem

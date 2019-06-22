@@ -1,4 +1,4 @@
-as yet unclassified
+ui-building-updating
 updateEntity: aNumber components: aCollection
 
 	components := aCollection.

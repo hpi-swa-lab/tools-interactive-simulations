@@ -1,4 +1,4 @@
-as yet unclassified
+layout
 acceptDroppingMorph: aMorph event: anEvent
 
 	(aMorph isKindOf: SystemWindow)

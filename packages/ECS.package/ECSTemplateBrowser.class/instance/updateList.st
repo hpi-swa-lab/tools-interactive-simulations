@@ -1,4 +1,4 @@
-as yet unclassified
+updating
 updateList
 
 	self submorphs from: 2 to: self submorphCount do: [:m | self removeMorph: m].

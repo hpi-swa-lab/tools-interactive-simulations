@@ -1,4 +1,4 @@
-as yet unclassified
+event handling
 mouseEnterDragging: evt
 	(evt hand hasSubmorphs and:[self dropEnabled]) ifFalse: ["no d&d"
 		^super mouseEnterDragging: evt].

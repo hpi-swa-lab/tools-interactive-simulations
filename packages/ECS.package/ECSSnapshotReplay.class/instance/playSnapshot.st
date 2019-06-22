@@ -1,4 +1,4 @@
-as yet unclassified
+replay
 playSnapshot
 
 	self assignStateToUniverse: componentSnapshot.

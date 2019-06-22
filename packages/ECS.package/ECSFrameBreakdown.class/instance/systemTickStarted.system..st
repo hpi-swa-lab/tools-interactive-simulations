@@ -1,4 +1,4 @@
-as yet unclassified
+profiling
 systemTickStarted: aPipeline system: aSystem
 
 	systemTickStart := Time utcMicrosecondClock

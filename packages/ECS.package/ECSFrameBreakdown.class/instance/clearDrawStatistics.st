@@ -1,4 +1,4 @@
-as yet unclassified
+profiling
 clearDrawStatistics
 
 	drawGcTime := (Smalltalk vmParameterAt: 8) + (Smalltalk vmParameterAt: 10).

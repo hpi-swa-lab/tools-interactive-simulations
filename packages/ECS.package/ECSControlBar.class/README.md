@@ -1,0 +1,1 @@
+I am the main controlbar of the editor.

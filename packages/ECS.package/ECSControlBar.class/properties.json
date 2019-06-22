@@ -4,11 +4,10 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "ek 6/21/2019 15:19",
 	"instvars" : [
 		"pauseIcon",
-		"stepMilliseconds",
-		"currentlyProfiling" ],
+		"stepMilliseconds" ],
 	"name" : "ECSControlBar",
 	"pools" : [
 		 ],

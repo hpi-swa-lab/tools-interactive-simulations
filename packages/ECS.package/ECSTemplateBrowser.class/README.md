@@ -1,0 +1,1 @@
+I am the template browser, all templates can be accessed through me.

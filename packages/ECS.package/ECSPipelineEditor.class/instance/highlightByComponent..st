@@ -1,4 +1,4 @@
-as yet unclassified
+ui-building-updating-logic
 highlightByComponent: aClass
 
 	list submorphsDo: [:systemMorphWrapper | | systemMorph |

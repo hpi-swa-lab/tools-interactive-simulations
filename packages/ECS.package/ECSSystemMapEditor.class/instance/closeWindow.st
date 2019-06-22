@@ -1,4 +1,4 @@
-as yet unclassified
+closing
 closeWindow
 
 	self containingWindow delete

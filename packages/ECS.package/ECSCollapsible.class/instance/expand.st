@@ -1,4 +1,4 @@
-as yet unclassified
+menus
 expand
 
 	self addMorphBack: body.

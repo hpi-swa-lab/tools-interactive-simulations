@@ -1,4 +1,4 @@
-as yet unclassified
+example
 example
 
 	ECSPanel new extent: 400 @ 400; openInWindow.
