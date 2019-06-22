@@ -6,6 +6,7 @@
 		 ],
 	"commentStamp" : "ek 6/21/2019 15:18",
 	"instvars" : [
+		"systemsInUI",
 		"pipeline",
 		"list",
 		"runContinuouslyButton",

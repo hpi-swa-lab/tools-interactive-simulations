@@ -1,10 +1,10 @@
 instance creation
-spawnNewEntityButtonFor: aUniverse
+spawnNewEntityButtonFor: aTool
 
 	| button |
 	button := self new.
 	^ button 
-		universe: aUniverse;
+		parentTool: aTool;
 		when: #clicked send: #spawnNewEntity to: button;
 		label: 'Entity';
 		icon: ECSIcon iconPlus;

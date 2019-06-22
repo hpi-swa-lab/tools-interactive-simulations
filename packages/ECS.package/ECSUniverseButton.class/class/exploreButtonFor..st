@@ -1,10 +1,10 @@
 instance creation
-exploreButtonFor: aUniverse
+exploreButtonFor: aTool
 
 	| button |
 	button := self new.
 	^ button 
-		universe: aUniverse;
+		parentTool: aTool;
 		when: #clicked send: #exploreUniverse to: button;
 		icon: ECSIcon iconSearch;
 		balloonText: 'Explore the universe';

@@ -1,37 +1,26 @@
-as yet unclassified
+initialization
 initialize
 
 	super initialize.
 	
 	self changeListDirection: #topToBottom.
 	self cellInset: (TextStyle defaultFont height / 4) rounded.
-	
-	"self addMorphBack: (ECSButton new
-		when: #clicked send: #switchUniverse  to: self;
-		label: 'Switch universe';
-		balloonText: 'Switch universe')."
+
+	self addMorphBack: self currentUniverseWidget.
+	self addMorphBack: (ECSButton new
+		when: #clicked send: #changeUniverse to: self;
+		label: 'Change to a new universe';
+		balloonText: 'Change to a new universe').
 	self addMorphBack: (ECSButton new
 		when: #clicked send: #openNewEditor to: self;
-		label: 'Open new game view tool';
+		label: 'Open new editor';
 		balloonText: 'Open new editor').
-	"self addMorphBack: (ECSButton new
-		when: #clicked send: #profileUniverse to: self;
-		icon: ECSIcon iconClock_o;
-		balloonText: 'Profile the Universe')."
-	"self addMorphBack: (ECSButton new
-		when: #clicked send: #exploreUniverse to: self;
-		icon: ECSIcon iconSearch;
-		balloonText: 'Explore the universe')."
-	self addMorphBack: (ECSButton new
-		when: #clicked send: #openNewTool to: self;
-		icon: ECSIcon iconWindow_maximize;
+	self addMorphBack: ((ECSUniverseButton openNewToolButtonFor: self)
 		label: 'Open new tool';
-		balloonText: 'Open new tool').
-	"self addMorphBack: (ECSButton new
-		when: #clicked send: #saveSnapshot to: self;
-		icon: ECSIcon iconSave;
+		yourself).
+	self addMorphBack: ((ECSUniverseButton saveSnapshotButtonFor: self)
 		label: 'Save the universe';
-		balloonText: 'Save the universe')."
+		yourself).
 	self addMorphBack: (ECSButton new
 		when: #clicked send: #closeUniverse to: self;
 		icon: ECSIcon iconClose;

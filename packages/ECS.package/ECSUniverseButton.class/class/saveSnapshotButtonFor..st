@@ -1,10 +1,10 @@
 instance creation
-saveSnapshotButtonFor: aUniverse
+saveSnapshotButtonFor: aTool
 
 	| button |
 	button := self new.
 	^ button 
-		universe: aUniverse;
+		parentTool: aTool;
 		when: #clicked send: #saveSnapshot to: button;
 		icon: ECSIcon iconSave;
 		balloonText: 'Save the universe';

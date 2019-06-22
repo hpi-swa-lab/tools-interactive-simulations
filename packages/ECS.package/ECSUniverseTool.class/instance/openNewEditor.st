@@ -1,4 +1,4 @@
-as yet unclassified
+button-functionality
 openNewEditor
 
-	ECSSomeGameEditor openFor: self universe
+	ECSEditor openFor: self universe

@@ -12,7 +12,7 @@ initialize
 	self cellInset: (TextStyle defaultFont height / 4) rounded.
 	pauseIcon := ECSIcon new large.
 	
-	self addMorphBack: (ECSUniverseButton spawnNewEntityButtonFor: self universe).
+	self addMorphBack: (ECSUniverseButton spawnNewEntityButtonFor: self).
 	self addMorphBack: (ECSButton new
 		when: #clicked send: #togglePause
 		to: self; icon: (pauseIcon := ECSIcon new large);
@@ -30,9 +30,9 @@ initialize
 	self updateIcon.
 	
 	self addMorphBack: ECSRow new.
-	self addMorphBack: (ECSUniverseButton profileButtonFor: self universe).
-	self addMorphBack: (ECSUniverseButton exploreButtonFor: self universe).
-	self addMorphBack: (ECSUniverseButton openNewToolButtonFor: self universe).
+	self addMorphBack: (ECSUniverseButton profileButtonFor: self).
+	self addMorphBack: (ECSUniverseButton exploreButtonFor: self).
+	self addMorphBack: (ECSUniverseButton openNewToolButtonFor: self).
 	self addMorphBack: self createSaveEditorConfigurationButton.
-	self addMorphBack: (ECSUniverseButton saveSnapshotButtonFor: self universe).
+	self addMorphBack: (ECSUniverseButton saveSnapshotButtonFor: self).
 	self addMorphBack: self header small

@@ -1,15 +1,17 @@
 {
 	"class" : {
-		"exploreButtonFor:" : "ek 6/21/2019 13:35",
-		"openNewToolButtonFor:" : "ek 6/21/2019 13:35",
-		"profileButtonFor:" : "ek 6/21/2019 13:42",
-		"saveSnapshotButtonFor:" : "ek 6/21/2019 13:35",
-		"spawnNewEntityButtonFor:" : "ek 6/21/2019 13:25" },
+		"exploreButtonFor:" : "ek 6/22/2019 11:46",
+		"openNewToolButtonFor:" : "ek 6/22/2019 11:46",
+		"profileButtonFor:" : "ek 6/22/2019 11:46",
+		"saveSnapshotButtonFor:" : "ek 6/22/2019 11:46",
+		"spawnNewEntityButtonFor:" : "ek 6/22/2019 11:46" },
 	"instance" : {
 		"exploreTally:into:" : "ek 6/21/2019 13:39",
 		"exploreUniverse" : "ek 6/21/2019 13:27",
 		"initialize" : "ek 6/21/2019 13:41",
 		"openNewTool" : "ek 6/21/2019 13:20",
+		"parentTool" : "ek 6/22/2019 11:45",
+		"parentTool:" : "ek 6/22/2019 11:45",
 		"profileUniverse" : "ek 6/21/2019 13:39",
 		"saveSnapshot" : "ek 6/21/2019 13:20",
 		"saveSnapshotInClass:" : "ek 6/21/2019 13:22",
@@ -19,5 +21,4 @@
 		"saveSnapshotInNewUniverseClassNamed:inCategory:" : "ek 6/21/2019 13:22",
 		"spawnNewEntity" : "ek 6/21/2019 13:20",
 		"tallyStringFor:totalTallies:totalTime:" : "ek 6/21/2019 13:40",
-		"universe" : "ek 6/21/2019 13:19",
-		"universe:" : "ek 6/21/2019 13:19" } }
+		"universe" : "ek 6/22/2019 11:45" } }

@@ -1,10 +1,10 @@
 instance creation
-profileButtonFor: aUniverse
+profileButtonFor: aTool
 
 	| button |
 	button := self new.
 	^ button 
-		universe: aUniverse;
+		parentTool: aTool;
 		when: #clicked send: #profileUniverse to: button;
 		icon: ECSIcon iconClock_o;
 		balloonText: 'Profile the Universe';
