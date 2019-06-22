@@ -14,7 +14,8 @@ drawOn: aCanvas
 				clippingTo: self innerBounds
 				during: [:canvas |
 					self universe canvas: canvas.
-					universe onceRunPipelineNamed: self drawPipelineName]
+					[universe onceRunPipelineNamed: self drawPipelineName]
+						on: Exception do: [:e | self setProperty: #errorOnDraw toValue: true. e signal]]
 				smoothing: 1]]
 		ensure: [
 			self universe canvas: nil.
