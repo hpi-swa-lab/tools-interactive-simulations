@@ -9,17 +9,11 @@ tick: aUniverse
 			aUniverse remove: id].
 		aUniverse query: #(id #AnnoMenuButton) do: [:id :button |
 			aUniverse remove: id].
-		aUniverse spawnNewWith: #(AnnoCamera Mouse DeltaTime AnnoState) 
-			do: [:annoCamera :mouse :deltaTime :annoState |
-			annoCamera 
-				position: 0, 0;
-				justMoved: true.
+		aUniverse spawnNewWith: #(DeltaTime AnnoState)
+			do: [:deltaTime :annoState |
 			deltaTime milliseconds: 0; 
 				last: Time millisecondClockValue; 
 				elapsed: 0.
-			mouse 
-				position: 0 , 0; leftJustDown: false; leftJustUp: false; 
-				leftDown: false; wheelDelta: 0,0.
 			annoState
 				buttonsCreated: false;
 				buildingOnHand: #none;

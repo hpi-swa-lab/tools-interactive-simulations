@@ -1,3 +1,4 @@
 as yet unclassified
 fields
-	^#(#key)
+
+	^ #(#key #view)

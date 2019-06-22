@@ -3,4 +3,5 @@ initialize
 
 	super initialize.
 
-	key := nil
+	key := $A.
+	view := 0

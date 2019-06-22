@@ -1,9 +1,11 @@
 {
 	"class" : {
-		"fields" : "tobe 6/8/2019 11:12",
-		"mutatorFields" : "tobe 6/8/2019 11:12",
-		"storage" : "tobe 6/12/2019 10:57" },
+		"fields" : "tobe 6/22/2019 09:14",
+		"mutatorFields" : "tobe 6/22/2019 09:14",
+		"storage" : "tobe 6/22/2019 09:14" },
 	"instance" : {
-		"initialize" : "TB 6/2/2019 13:27",
-		"key" : "TB 6/2/2019 13:27",
-		"key:" : "TB 6/2/2019 13:27" } }
+		"initialize" : "tobe 6/22/2019 09:14",
+		"key" : "tobe 6/22/2019 09:14",
+		"key:" : "tobe 6/22/2019 09:14",
+		"view" : "tobe 6/22/2019 09:14",
+		"view:" : "tobe 6/22/2019 09:14" } }

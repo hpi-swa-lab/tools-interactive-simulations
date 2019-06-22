@@ -1,4 +1,0 @@
-as yet unclassified
-mutatorFields
-
-	^ #(#position: #leftJustUp: #leftJustDown: #leftDown: #wheelDelta: #rightJustUp: #rightJustDown: #rightDown: #middleDown: #middleJustDown: #middleJustUp: #positionDelta:)

@@ -21,10 +21,10 @@ initialize
 		register: (AnnoRenderSystem new
 		constantAt: #TileSize put: 64 , 32);
 		register: (AnnoRulerSystem new disable
-		constantAt: #ChunkSize put: 3;
+		constantAt: #Distance put: 64 , 32;
 		constantAt: #Length put: 30;
 		constantAt: #TileSize put: 64 , 32;
-		constantAt: #Distance put: 64 , 32);
+		constantAt: #ChunkSize put: 3);
 		register: AnnoMenuSystem new;
 		register: AnnoAvailableResourcesSystem new;
 		register: AnnoFrameCounterSystem new);

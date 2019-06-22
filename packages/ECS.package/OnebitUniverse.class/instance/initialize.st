@@ -46,8 +46,7 @@ initialize
 		register: OnebitMovingSystem new;
 		register: TowerSystem new;
 		register: OnebitWaterFlowSystem new);
-	spawnNewWith: #(Mouse Rendered OnebitGameState OnebitPosition DeltaTime UniverseView OnebitConfig) do: [:mouse :rendered :onebitGameState :onebitPosition :deltaTime :screenSize :onebitConfig | 
-		mouse position: 1832 , 1525; leftJustUp: false; leftJustDown: false; leftDown: false; wheelDelta: 0 , 0; rightJustUp: false; rightJustDown: false; rightDown: false; middleDown: false; middleJustDown: false; middleJustUp: false; positionDelta: 0 , 0.
+	spawnNewWith: #(Rendered OnebitGameState OnebitPosition DeltaTime UniverseView OnebitConfig) do: [:rendered :onebitGameState :onebitPosition :deltaTime :screenSize :onebitConfig | 
 		rendered color: (ECSColor rgba: 16rFFA4FAFF); form: nil.
 		onebitGameState state: #unset; movingTimeout: 500; selectedPlace: #Boulder; score: -2560; selectedTower: 0.
 		onebitPosition x: 27; y: 24.

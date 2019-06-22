@@ -1,5 +1,5 @@
 as yet unclassified
-isCurrent: aBoolean
+isCurrent: anObject
 
 	<ecsType: #Boolean>
-	isCurrent := aBoolean
+	isCurrent := anObject

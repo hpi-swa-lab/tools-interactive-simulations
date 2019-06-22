@@ -1,19 +1,19 @@
 as yet unclassified
 tick: aUniverse
 
-	aUniverse query: #(UniverseView) do: [:screenSize |
-	aUniverse query: #(OnebitGameState OnebitConfig Mouse OnebitPosition) do: [:state :config :mouse :mousePos |
+	aUniverse query: #(UniverseView) do: [:view |
+	aUniverse query: #(OnebitGameState OnebitConfig OnebitPosition) do: [:state :config :mousePos |
 		state selectedPlace ifNil: [^ self].
 		
 		aUniverse query: #(OnebitCameraFocus OnebitPosition) do: [:cameraFocus :cameraPosition | | size tileSize translateX translateY placed |
 			tileSize := config tileSize * config scale.
-			size := screenSize size // tileSize.
+			size := view size // tileSize.
 			translateX := cameraPosition x - (size x // 2).
 			translateY := cameraPosition y - (size y // 2).
 			
-			mousePos vector: ((mouse position / tileSize + (translateX @ translateY)) floor min: config mapSize - (1 , 1) max: 0 , 0).
+			mousePos vector: ((view mousePosition / tileSize + (translateX @ translateY)) floor min: config mapSize - (1 , 1) max: 0 , 0).
 			
-			mouse leftDown ifFalse: [^ self].
+			view leftDown ifFalse: [^ self].
 			state selectedTower: 0.
 			(aUniverse storageOf: #OnebitPosition)
 				in: aUniverse

@@ -1,4 +1,4 @@
 as yet unclassified
 mutatorFields
 
-	^ #(#size: isCurrent:)
+	^ #(#size: #isCurrent: #mousePosition: #leftJustUp: #leftJustDown: #leftDown: #wheelDelta: #rightJustUp: #rightJustDown: #rightDown: #mousePositionDelta:)

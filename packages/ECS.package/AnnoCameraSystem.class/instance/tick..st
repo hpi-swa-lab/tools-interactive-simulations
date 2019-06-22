@@ -5,8 +5,8 @@ tick: aUniverse
 		(aUniverse getSingle: #AnnoCamera of: entity) ifNil: [
 			aUniverse attach: #AnnoCamera to: entity]].
 	
-	aUniverse query: #(DeltaTime Mouse) do: [:deltaTime :mouse | | speed delta |
-		aUniverse query: #(AnnoCamera) do: [:camera |
+	aUniverse query: #(DeltaTime) do: [:deltaTime | | speed delta |
+		aUniverse query: #(AnnoCamera UniverseView) do: [:camera :view |
 			speed := (deltaTime milliseconds * 1.5) rounded.
 			camera justMoved: false.
 			
@@ -21,7 +21,7 @@ tick: aUniverse
 				(key = $D or: [key = Character arrowRight]) ifTrue: [camera 
 					position x: camera position x - speed. camera justMoved: true]].
 			
-			mouse leftDown ifTrue: [
-				delta := mouse positionDelta.
+			view leftDown ifTrue: [
+				delta := view mousePositionDelta.
 				delta ~= (0,0) ifTrue: [
 					camera position += delta. camera justMoved: true]]]]

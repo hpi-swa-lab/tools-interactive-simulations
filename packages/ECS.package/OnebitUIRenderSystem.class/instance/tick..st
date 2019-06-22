@@ -2,10 +2,10 @@ as yet unclassified
 tick: aUniverse
 
 	aUniverse query: #(UniverseView) do: [:view |
-		aUniverse query: #(Mouse OnebitGameState OnebitConfig) do: [:mouse :gameState :config | | down x y | 
-			down := mouse leftJustDown.
-			x := mouse position x.
-			y := mouse position y.
+		aUniverse query: #(OnebitGameState OnebitConfig) do: [:gameState :config | | down x y | 
+			down := view leftJustDown.
+			x := view mousePosition x.
+			y := view mousePosition y.
 			
 			aUniverse canvas
 				fillRectangle: (0 , 0 extent: (gameState score / config maxScore asFloat * view size x) rounded , 10)

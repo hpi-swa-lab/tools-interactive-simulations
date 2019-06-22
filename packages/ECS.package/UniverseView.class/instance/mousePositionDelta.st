@@ -1,5 +1,5 @@
 as yet unclassified
-position: anObject
+mousePositionDelta
 
 	<ecsType: #ECSVector2>
-	position := anObject
+	^ mousePositionDelta

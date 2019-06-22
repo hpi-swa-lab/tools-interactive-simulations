@@ -1,4 +1,4 @@
 as yet unclassified
 fields
 
-	^ #(#size #isCurrent)
+	^ #(#size #isCurrent #mousePosition #leftJustUp #leftJustDown #leftDown #wheelDelta #rightJustUp #rightJustDown #rightDown #mousePositionDelta)

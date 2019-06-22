@@ -20,12 +20,10 @@ initialize
 		register: CleanUpSystem new.
 	
 	self
-		spawnNewWith: #(Gravity DeltaTime UniverseView Mouse) do: [:gravity :time :size :mouse |
+		spawnNewWith: #(Gravity DeltaTime UniverseView) do: [:gravity :time :size |
 			gravity force: 0,500.
 			time milliseconds: 0; last: Time millisecondClockValue; elapsed: 0.
-			size size: 0,0.
-			mouse position: 0 , 0; leftJustDown: false; leftJustUp: false; leftDown: false;
-				wheelDelta: (ECSVector2 x: 0 y: 0)];
+			size size: 0,0];
 		register: pipeline.
 	
 	player1 := self spawnNewWith: #(Label Transform Colliding Physics Jetpack Weapon PlayerInput Rendered) do: [:label :transform :colliding :physics :jetpack :weapon :input : rendered |

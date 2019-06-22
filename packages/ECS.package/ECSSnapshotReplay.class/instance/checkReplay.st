@@ -13,4 +13,4 @@ checkReplay
 				"end := Time millisecondClockValue - deltaTime last + start."
 				eventHistory
 					select: [:eventPair | eventPair first between: start and: end]
-					thenDo: [:event | event second sentTo: self universe]]]
+					thenDo: [:event | self sendEvent: event second first from: event second second]]]

@@ -22,8 +22,7 @@ initialize
 		transform bounds: (35 , 24 corner: 55 , 44).
 		label label: (Text string: 'tapir1' runs: (RunArray runs: #(6) values: ((Array new: 1) at: 1 put: ((Array new: 1) at: 1 put: (TextColor basicNew instVarAt: 1 put: (Color r: 1 g: 0.0 b: 0.0); yourself); yourself); yourself))).
 		rendered color: (ECSColor rgba: 16rFF000000); form: (ECSImageAsset of: #SomeGame at: 'tapir.png')];
-	spawnNewWith: #(UniverseView Mouse DeltaTime) do: [:screenSize :mouse :deltaTime | 
-		screenSize size: 990 , 891.
-		mouse position: 815 , 879; leftJustUp: false; leftJustDown: false; leftDown: false; wheelDelta: 0 , 0; rightJustUp: false; rightJustDown: false; rightDown: false; middleDown: false; middleJustDown: false; middleJustUp: false; positionDelta: 0 , 0.
+	spawnNewWith: #(UniverseView DeltaTime) do: [:view :deltaTime | 
+		view initialize.
 		deltaTime milliseconds: 0; last: 3738473509157; fpsAccumulated: 0; fpsAverage: 0; numAccumulated: 0; elapsed: 0];
 	yourself

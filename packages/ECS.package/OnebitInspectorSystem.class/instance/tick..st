@@ -1,11 +1,11 @@
 as yet unclassified
 tick: aUniverse
 
-	aUniverse query: {OnebitConfig. Mouse. UniverseView. OnebitPosition} do: [:config :mouse :screenSize :mousePos |
-		mouse leftJustUp ifTrue: [
-			aUniverse query: {OnebitCameraFocus. OnebitPosition} do: [:cameraFocus :cameraPosition | | size tileSize translateX translateY |
+	aUniverse query: #(OnebitConfig UniverseView OnebitPosition) do: [:config :view :mousePos |
+		view leftJustUp ifTrue: [
+			aUniverse query: #(OnebitCameraFocus OnebitPosition) do: [:cameraFocus :cameraPosition | | size tileSize translateX translateY |
 				tileSize := config tileSize * config scale.
-				size := screenSize size // tileSize.
+				size := view size // tileSize.
 				translateX := cameraPosition x - (size x // 2).
 				translateY := cameraPosition y - (size y // 2).
 				

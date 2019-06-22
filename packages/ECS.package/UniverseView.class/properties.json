@@ -7,7 +7,16 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"size",
-		"isCurrent" ],
+		"isCurrent",
+		"mousePosition",
+		"leftJustUp",
+		"leftJustDown",
+		"leftDown",
+		"wheelDelta",
+		"rightJustUp",
+		"rightJustDown",
+		"rightDown",
+		"mousePositionDelta" ],
 	"name" : "UniverseView",
 	"pools" : [
 		 ],

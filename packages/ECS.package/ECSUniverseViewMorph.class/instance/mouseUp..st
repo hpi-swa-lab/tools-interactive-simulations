@@ -1,4 +1,4 @@
 system-world-events
 mouseUp: anEvent
 
-	self universe handleMouseUp: anEvent
+	self universe handleMouseUp: anEvent from: viewEntity

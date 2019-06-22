@@ -1,17 +1,17 @@
 as yet unclassified
 tick: aUniverse
-	aUniverse query: #(AnnoCamera) do: [:camera  |
-		aUniverse query: #(AnnoState Mouse) do: [:state :mouse | | building |
+	aUniverse query: #(AnnoCamera UniverseView) do: [:camera :view  |
+		aUniverse query: #(AnnoState) do: [:state | | building |
 			building := AnnoHelpers buildings at: state buildingOnHand.
 			building ifNotNil: [ | pos forms size wasBuilt |
 				size := building first.
 				forms := building second.
-				pos := AnnoHelpers pixelToMapPosition: mouse position - camera position.
+				pos := AnnoHelpers pixelToMapPosition: view mousePosition - camera position.
 				wasBuilt := false.
 				aUniverse query: #(AnnoTile Rendered) do: [:tile :rendered |
 					tile isPreview ifTrue: [
 						tile position: tile buildingPos + pos.
-						mouse leftJustUp ifTrue: [ | asset |
+						view leftJustUp ifTrue: [ | asset |
 							wasBuilt := true.
 							tile
 								isPreview: false;

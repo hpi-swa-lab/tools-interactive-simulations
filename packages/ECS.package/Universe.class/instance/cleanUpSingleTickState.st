@@ -1,12 +1,10 @@
 mainloop
 cleanUpSingleTickState
 
-	self query: #(Mouse) do: [:mouse | mouse 
+	self query: #(UniverseView) do: [:view | view 
 		leftJustDown: false;
 		leftJustUp: false;
 		rightJustUp: false;
 		rightJustDown: false;
-		middleJustDown: false;
-		middleJustUp: false;
 		wheelDelta: 0, 0;
-		positionDelta: 0, 0]
+		mousePositionDelta: 0, 0]

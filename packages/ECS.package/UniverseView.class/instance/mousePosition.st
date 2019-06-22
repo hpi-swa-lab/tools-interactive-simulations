@@ -1,5 +1,5 @@
 as yet unclassified
-positionDelta
+mousePosition
 
 	<ecsType: #ECSVector2>
-	^ positionDelta
+	^ mousePosition
