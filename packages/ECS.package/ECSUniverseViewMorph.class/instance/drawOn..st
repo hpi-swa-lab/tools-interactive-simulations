@@ -4,7 +4,7 @@ drawOn: aCanvas
 	super drawOn: aCanvas.
 	
 	self drawPipelineName ifNil: [^ self].
-	
+		
 	[
 		(self universe getSingle: #UniverseView of: viewEntity) isCurrent: true; size: self extent.
 		
@@ -12,8 +12,8 @@ drawOn: aCanvas
 			aCanvas
 				transformBy: (MorphicTransform offset: self position negated)
 				clippingTo: self innerBounds
-				during: [:canvas |
-					self universe canvas: canvas.
+				during: [:transformCanvas |
+					self universe canvas: transformCanvas.
 					[universe onceRunPipelineNamed: self drawPipelineName]
 						on: Exception do: [:e | self setProperty: #errorOnDraw toValue: true. e signal]]
 				smoothing: 1]]

@@ -1,4 +1,4 @@
 as yet unclassified
 fields
 
-	^ #(#size)
+	^ #(#size #isCurrent)
