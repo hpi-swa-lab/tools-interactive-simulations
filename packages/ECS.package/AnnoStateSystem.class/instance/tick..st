@@ -9,12 +9,11 @@ tick: aUniverse
 			aUniverse remove: id].
 		aUniverse query: #(id #AnnoMenuButton) do: [:id :button |
 			aUniverse remove: id].
-		aUniverse spawnNewWith: #(AnnoCamera ScreenSize Mouse DeltaTime AnnoState) 
-			do: [:annoCamera :screenSize :mouse :deltaTime :annoState |
+		aUniverse spawnNewWith: #(AnnoCamera Mouse DeltaTime AnnoState) 
+			do: [:annoCamera :mouse :deltaTime :annoState |
 			annoCamera 
 				position: 0, 0;
 				justMoved: true.
-			screenSize size: 0, 0.
 			deltaTime milliseconds: 0; 
 				last: Time millisecondClockValue; 
 				elapsed: 0.

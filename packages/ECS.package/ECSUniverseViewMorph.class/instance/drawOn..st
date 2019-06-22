@@ -1,0 +1,21 @@
+drawing
+drawOn: aCanvas
+
+	super drawOn: aCanvas.
+	
+	self drawPipelineName ifNil: [^ self].
+	
+	[
+		(self universe getSingle: #UniverseView of: viewEntity) isCurrent: true; size: self extent.
+		
+		Display deferUpdatesIn: self bounds while: [
+			aCanvas
+				transformBy: (MorphicTransform offset: self position negated)
+				clippingTo: self innerBounds
+				during: [:canvas |
+					self universe canvas: canvas.
+					universe onceRunPipelineNamed: self drawPipelineName]
+				smoothing: 1]]
+		ensure: [
+			self universe canvas: nil.
+			(self universe getSingle: #UniverseView of: viewEntity) isCurrent: false]

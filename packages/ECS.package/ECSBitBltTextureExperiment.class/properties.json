@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Experiments",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ECSBitBltTextureExperiment",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -11,11 +11,11 @@
 		"freeIndexList",
 		"components",
 		"maxEntityIndex",
-		"drawingBlocks",
 		"templates",
 		"stepTime",
 		"saveFilter",
-		"accesses" ],
+		"accesses",
+		"canvas" ],
 	"name" : "Universe",
 	"pools" : [
 		 ],

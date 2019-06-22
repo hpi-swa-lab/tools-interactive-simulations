@@ -1,0 +1,28 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"drawOn:" : "tobe 6/21/2019 15:11",
+		"drawPipelineName" : "tobe 6/21/2019 07:27",
+		"drawPipelineName:" : "tobe 6/21/2019 07:27",
+		"guessDrawPipeline" : "tobe 6/21/2019 07:41",
+		"handlesKeyboard:" : "T 4/14/2019 08:54",
+		"handlesMouseDown:" : "T 4/14/2019 00:09",
+		"handlesMouseMove:" : "T 5/27/2019 10:16",
+		"handlesMouseWheel:" : "cmfcmf 5/31/2019 20:36",
+		"initialize" : "tobe 6/21/2019 15:16",
+		"intoWorld:" : "TB 5/31/2019 06:40",
+		"keyDown:" : "TB 6/2/2019 09:43",
+		"keyUp:" : "TB 6/2/2019 09:43",
+		"keyboardFocusChange:" : "cmfcmf 6/6/2019 13:32",
+		"mouseDown:" : "tobe 6/21/2019 07:36",
+		"mouseMove:" : "TB 6/2/2019 09:43",
+		"mouseUp:" : "TB 6/2/2019 09:43",
+		"mouseWheel:" : "TB 6/2/2019 09:43",
+		"postTick" : "cmfcmf 6/13/2019 14:42",
+		"setUp" : "tobe 6/21/2019 07:29",
+		"stepTime" : "TB 6/2/2019 09:45",
+		"tickUniverse" : "TB 6/2/2019 09:55",
+		"title" : "tobe 6/21/2019 15:13",
+		"updateScreenSize" : "tobe 6/21/2019 07:32",
+		"wantsKeyboardFocus" : "T 4/14/2019 08:51" } }

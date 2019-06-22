@@ -14,7 +14,7 @@ initializeFor: aUniverse
 		addMorph: (panels at: #leftPanel put: (self createPanelFor: self leftPanelToolsClasses))
 		fullFrame: (LayoutFrame fractions: (0 @ 0.0 corner: 0.18 @ 0.8))".
 	self
-		addMorph: (UniverseMorph new universe: universe)
+		addMorph: (ECSUniverseViewMorph newFor: universe)
 		fullFrame: (LayoutFrame fractions: (0 @ 0 corner: 1 @ 0.92)).
 	self
 		addMorph: (panels at: #bottomPanel put: (self createPanelFor: self bottomPanelToolsClasses))

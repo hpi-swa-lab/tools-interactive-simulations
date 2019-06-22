@@ -4,8 +4,11 @@
 	"instance" : {
 		"editingMethod:boundsInfo:" : "tobe 6/6/2019 07:44",
 		"editor" : "tobe 6/5/2019 21:24",
-		"extent:" : "tobe 6/5/2019 22:23",
+		"extent:" : "tobe 6/19/2019 15:46",
 		"fallbackBounds" : "tobe 6/5/2019 22:22",
-		"initialize" : "tobe 6/6/2019 10:02",
+		"flushLayoutCache" : "tobe 6/19/2019 15:15",
+		"initialize" : "tobe 6/19/2019 15:27",
+		"layout:in:" : "tobe 6/19/2019 15:27",
+		"minExtent" : "tobe 6/19/2019 15:35",
 		"position:" : "tobe 6/5/2019 21:51",
 		"storeBounds" : "tobe 6/6/2019 07:46" } }

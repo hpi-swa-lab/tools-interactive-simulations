@@ -1,12 +1,13 @@
 as yet unclassified
 tick: aUniverse
 
-	aUniverse query: #(AnnoCamera ScreenSize Mouse AnnoState) do: [:camera :screenSize :mouse :state |
-		camera := camera position.
-		screenSize := screenSize size.
-		mouse := mouse position.
+	aUniverse query: #(AnnoCamera UniverseView) do: [:camera :view |
+		aUniverse query: #(Mouse AnnoState) do: [:mouse :state | | screenSize canvas |
+			camera := camera position.
+			canvas := aUniverse canvas.
+			screenSize := view size.
+			mouse := mouse position.
 	
-		aUniverse draw: [:canvas :universe |
 			canvas drawString: state buildingOnHand at: 20@20 font: nil color: Color white.
 			
 			self drawRulers: canvas camera: camera screenSize: screenSize.

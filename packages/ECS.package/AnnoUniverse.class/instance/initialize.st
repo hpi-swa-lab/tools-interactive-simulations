@@ -14,9 +14,12 @@ initialize
 		register: (AnnoDynamicWorldGeneratorSystem new
 		constantAt: #ChunkSize put: 3;
 		constantAt: #TileSize put: 64 , 32);
+		register: AnnoBuildingPlacementSystem new);
+	register: (Pipeline new
+		title: 'Render';
+		runContinuously: false;
 		register: (AnnoRenderSystem new
 		constantAt: #TileSize put: 64 , 32);
-		register: AnnoBuildingPlacementSystem new;
 		register: (AnnoRulerSystem new disable
 		constantAt: #ChunkSize put: 3;
 		constantAt: #Length put: 30;

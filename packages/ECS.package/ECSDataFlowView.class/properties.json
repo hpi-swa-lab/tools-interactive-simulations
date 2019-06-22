@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Tools",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"pipeline" ],
+	"name" : "ECSDataFlowView",
+	"pools" : [
+		 ],
+	"super" : "ECSTool",
+	"type" : "normal" }

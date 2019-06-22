@@ -7,9 +7,10 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"editor",
-		"boundsInfo" ],
+		"boundsInfo",
+		"translateButton" ],
 	"name" : "ECSSystemMethodEditor",
 	"pools" : [
 		 ],
-	"super" : "BorderedMorph",
+	"super" : "Morph",
 	"type" : "normal" }

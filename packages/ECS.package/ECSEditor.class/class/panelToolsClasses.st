@@ -11,13 +11,13 @@ panelToolsClasses
 				yourself);
 			at: #leftPanel
 			put: (OrderedCollection new
+				add: ECSEntityComponentFilter;
 				add: ECSTemplateBrowser;
 				add: ECSStatsDisplay;
 				yourself);
 			at: #rightPanel
 			put: (OrderedCollection new
-				add: ECSMultiPipelineEditor;
 				add: ECSComponentBrowser;
-				add: ECSEntityComponentFilter;
+				add: ECSMultiPipelineEditor;
 				yourself);
 			yourself]

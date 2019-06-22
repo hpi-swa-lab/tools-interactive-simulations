@@ -3,7 +3,7 @@ tick: aUniverse
 
 	aUniverse draw: [:canvas :universe |
 		aUniverse query: #(OnebitPosition OnebitCameraFocus) do: [:cameraPosition :camera |
-			aUniverse query: #(ScreenSize OnebitConfig) do: [:screenSize :config | | size translateX translateY tileSize translate |
+			aUniverse query: #(UniverseView OnebitConfig) do: [:screenSize :config | | size translateX translateY tileSize translate |
 				tileSize := config tileSize * config scale.
 				size := screenSize size // tileSize.
 				translateX := cameraPosition x - (size x // 2).

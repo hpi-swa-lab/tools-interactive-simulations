@@ -9,6 +9,17 @@ initialize
 			state: #unset.
 		u query: {#id. #DeltaTime}];
 	register: (Pipeline new
+		title: 'Render';
+		runContinuously: false;
+		register: OnebitRenderSystem new;
+		register: (OnebitUIRenderSystem new
+		constantAt: #TowerButtonAsset put: (ECSTileMapAsset of: #onebit at: (3 , 19 corner: 19 , 35) scale: 4 rotation: 0);
+		constantAt: #DigButtonAsset put: (ECSTileMapAsset of: #onebit at: (10 , 27 corner: 26 , 43) scale: 4 rotation: 0);
+		constantAt: #BoulderButtonAsset put: (ECSTileMapAsset of: #onebit at: (4 , 0 corner: 20 , 16) scale: 4 rotation: 0);
+		constantAt: #TreeButtonAsset put: (ECSTileMapAsset of: #onebit at: (2 , 1 corner: 18 , 17) scale: 4 rotation: 0));
+		register: AnnoFrameCounterSystem new;
+		register: OnebitPositionDebugRenderSystem new disable);
+	register: (Pipeline new
 		title: 'Loop';
 		runContinuously: true;
 		register: TimeSystem new;
@@ -17,17 +28,9 @@ initialize
 		register: OnebitFireSystem new;
 		register: OnebitExpiringSystem new;
 		register: OnebitSpawnSystem new;
-		register: OnebitRenderSystem new;
-		register: (OnebitUIRenderSystem new
-		constantAt: #TowerButtonAsset put: (ECSTileMapAsset of: #onebit at: (3 , 19 corner: 19 , 35) scale: 4 rotation: 0);
-		constantAt: #DigButtonAsset put: (ECSTileMapAsset of: #onebit at: (10 , 27 corner: 26 , 43) scale: 4 rotation: 0);
-		constantAt: #BoulderButtonAsset put: (ECSTileMapAsset of: #onebit at: (4 , 0 corner: 20 , 16) scale: 4 rotation: 0);
-		constantAt: #TreeButtonAsset put: (ECSTileMapAsset of: #onebit at: (2 , 1 corner: 18 , 17) scale: 4 rotation: 0));
 		register: OnebitProjectileSystem new;
 		register: OnebitParticleSystem new;
-		register: AnnoFrameCounterSystem new;
-		register: OnebitEnvironmentPlacerSystem new;
-		register: OnebitPositionDebugRenderSystem new disable);
+		register: OnebitEnvironmentPlacerSystem new);
 	register: (Pipeline new
 		title: 'Generation';
 		runContinuously: false;
@@ -43,7 +46,7 @@ initialize
 		register: OnebitMovingSystem new;
 		register: TowerSystem new;
 		register: OnebitWaterFlowSystem new);
-	spawnNewWith: #(Mouse Rendered OnebitGameState OnebitPosition DeltaTime ScreenSize OnebitConfig) do: [:mouse :rendered :onebitGameState :onebitPosition :deltaTime :screenSize :onebitConfig | 
+	spawnNewWith: #(Mouse Rendered OnebitGameState OnebitPosition DeltaTime UniverseView OnebitConfig) do: [:mouse :rendered :onebitGameState :onebitPosition :deltaTime :screenSize :onebitConfig | 
 		mouse position: 1832 , 1525; leftJustUp: false; leftJustDown: false; leftDown: false; wheelDelta: 0 , 0; rightJustUp: false; rightJustDown: false; rightDown: false; middleDown: false; middleJustDown: false; middleJustUp: false; positionDelta: 0 , 0.
 		rendered color: (ECSColor rgba: 16rFFA4FAFF); form: nil.
 		onebitGameState state: #unset; movingTimeout: 500; selectedPlace: #Boulder; score: -2560; selectedTower: 0.

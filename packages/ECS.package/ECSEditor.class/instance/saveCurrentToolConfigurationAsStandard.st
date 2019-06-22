@@ -5,7 +5,7 @@ saveCurrentToolConfigurationAsStandard
 	bottomPanelClasses := (panels at: #bottomPanel) submorphs asOrderedCollection collect: [:tool | tool class].
 	leftPanelClasses := (panels at: #leftPanel) submorphs asOrderedCollection collect: [:tool | tool class].
 	rightPanelClasses := (panels at: #rightPanel) submorphs asOrderedCollection collect: [:tool | tool class].
-
+	
 	self class panelToolsClasses
 		at: #bottomPanel
 		put: bottomPanelClasses;

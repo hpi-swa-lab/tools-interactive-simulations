@@ -1,7 +1,8 @@
 as yet unclassified
 tick: aUniverse
 
-	aUniverse query: #(OnebitGameState OnebitConfig Mouse ScreenSize OnebitPosition) do: [:state :config :mouse :screenSize :mousePos |
+	aUniverse query: #(UniverseView) do: [:screenSize |
+	aUniverse query: #(OnebitGameState OnebitConfig Mouse OnebitPosition) do: [:state :config :mouse :mousePos |
 		state selectedPlace ifNil: [^ self].
 		
 		aUniverse query: #(OnebitCameraFocus OnebitPosition) do: [:cameraFocus :cameraPosition | | size tileSize translateX translateY placed |
@@ -23,4 +24,4 @@ tick: aUniverse
 					^ self].
 			
 			placed := aUniverse instanceTemplate: state selectedPlace.
-			(aUniverse getSingle: #OnebitPosition of: placed) x: mousePos x y: mousePos y]]
+			(aUniverse getSingle: #OnebitPosition of: placed) x: mousePos x y: mousePos y]]]

@@ -1,0 +1,16 @@
+{
+	"category" : "ECS-Tools",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"canvas",
+		"drawPipelineName",
+		"viewEntity" ],
+	"name" : "ECSUniverseViewMorph",
+	"pools" : [
+		 ],
+	"super" : "ECSTool",
+	"type" : "normal" }

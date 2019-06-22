@@ -1,6 +1,7 @@
 as yet unclassified
 initialize
 
+	fullExpand := false.
 	super initialize.
 	
 	self vResizing: #shrinkWrap.

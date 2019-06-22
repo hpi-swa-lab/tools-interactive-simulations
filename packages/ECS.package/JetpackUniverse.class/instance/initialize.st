@@ -20,7 +20,7 @@ initialize
 		register: CleanUpSystem new.
 	
 	self
-		spawnNewWith: #(Gravity DeltaTime ScreenSize Mouse) do: [:gravity :time :size :mouse |
+		spawnNewWith: #(Gravity DeltaTime UniverseView Mouse) do: [:gravity :time :size :mouse |
 			gravity force: 0,500.
 			time milliseconds: 0; last: Time millisecondClockValue; elapsed: 0.
 			size size: 0,0.

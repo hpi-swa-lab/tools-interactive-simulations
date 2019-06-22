@@ -1,17 +1,18 @@
 {
 	"class" : {
-		"createNewUniverse" : "tobe 6/13/2019 22:39",
+		"createNewUniverse" : "tobe 6/21/2019 07:29",
 		"loadUniverse:" : "T 5/27/2019 18:15",
 		"new" : "T 5/15/2019 10:59",
 		"newFor:" : "cf 5/15/2019 11:18",
 		"openFor:" : "cf 5/15/2019 11:19",
-		"panelToolsClasses" : "ek 6/13/2019 11:14",
+		"panelToolsClasses" : "tobe 6/19/2019 13:52",
+		"resetPanels" : "tobe 6/19/2019 13:54",
 		"universes" : "T 5/27/2019 18:14" },
 	"instance" : {
 		"bottomPanelToolsClasses" : "ek 6/13/2019 11:15",
 		"createPanelFor:" : "ek 6/12/2019 21:23",
 		"defaultMinimumExtent" : "ek 6/12/2019 21:32",
-		"initializeFor:" : "ek 6/13/2019 11:55",
+		"initializeFor:" : "tobe 6/21/2019 15:13",
 		"leftPanelToolsClasses" : "ek 6/13/2019 11:15",
 		"rightPanelToolsClasses" : "ek 6/13/2019 11:15",
-		"saveCurrentToolConfigurationAsStandard" : "ek 6/13/2019 12:02" } }
+		"saveCurrentToolConfigurationAsStandard" : "tobe 6/19/2019 13:51" } }

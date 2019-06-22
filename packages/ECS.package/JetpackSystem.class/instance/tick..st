@@ -17,7 +17,7 @@ tick: aUniverse
 						jetpack fuel: jetpack fuel + (self recoveryPerSecond * deltaTime dt).
 						jetpack fuel: (jetpack fuel min: jetpack capacity)]]].
 	
-	aUniverse query: #(ScreenSize) do: [:screenSize |
+	aUniverse query: #(UniverseView) do: [:screenSize |
 		aUniverse query: #(Transform JetpackFuelIndicator) do: [:transform :jetpackFuelIndicator | | jetpack |
 			jetpack := (aUniverse get: #(Jetpack) of: jetpackFuelIndicator player) first.
 			transform bounds position: screenSize size x - 200 , 0.
