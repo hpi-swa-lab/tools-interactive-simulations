@@ -5,13 +5,15 @@ drawOn: aCanvas
 	
 	self drawPipelineName ifNil: [^ self].
 		
-	[
-		(self universe getSingle: #UniverseView of: viewEntity) isCurrent: true; size: self extent.
+	[ | area headerOffset |
+		headerOffset := 0 @ self header height.
+		area := self position + headerOffset extent: self extent - headerOffset.
+		(self universe getSingle: #UniverseView of: viewEntity) isCurrent: true; size: area extent.
 		
 		Display deferUpdatesIn: self bounds while: [
 			aCanvas
-				transformBy: (MorphicTransform offset: self position negated)
-				clippingTo: self innerBounds
+				transformBy: (MorphicTransform offset: area origin negated)
+				clippingTo: area
 				during: [:transformCanvas |
 					self universe canvas: transformCanvas.
 					[universe onceRunPipelineNamed: self drawPipelineName]
