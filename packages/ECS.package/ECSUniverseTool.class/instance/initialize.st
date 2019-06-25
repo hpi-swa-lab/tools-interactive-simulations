@@ -22,6 +22,11 @@ initialize
 		label: 'Save the universe';
 		yourself).
 	self addMorphBack: (ECSButton new
+		when: #clicked send: #resetEntities to: self;
+		icon: ECSIcon iconRemove;
+		label: 'Reset entities';
+		balloonText: 'Reset entities (= delete all)').
+	self addMorphBack: (ECSButton new
 		when: #clicked send: #closeUniverse to: self;
 		icon: ECSIcon iconClose;
 		label: 'Close the universe';
