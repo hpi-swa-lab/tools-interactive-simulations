@@ -1,5 +1,4 @@
 evaluating
-valueWithArguments: aCollection
+valueWithArguments: anArray
 
-	aCollection first = self firstArgumentFilter ifTrue: [
-		self receiver perform: self message withArguments: aCollection allButFirst]
+	self valueWithArguments: anArray otherwise: [self error]
