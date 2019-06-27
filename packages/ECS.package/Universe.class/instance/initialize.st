@@ -5,6 +5,7 @@ initialize
 	
 	pipelines := OrderedCollection new.
 	templates := OrderedCollection new.
+	views := OrderedCollection new.
 	stepTime := 0.
 	accesses := 0.
 	

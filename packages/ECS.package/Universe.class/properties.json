@@ -15,7 +15,8 @@
 		"stepTime",
 		"saveFilter",
 		"accesses",
-		"canvas" ],
+		"canvas",
+		"views" ],
 	"name" : "Universe",
 	"pools" : [
 		 ],

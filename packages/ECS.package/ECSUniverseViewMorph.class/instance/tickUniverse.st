@@ -1,4 +1,4 @@
 stepping and presenter
 tickUniverse
 
-	universe tick
+	universe views first = self ifTrue: [universe tick]
