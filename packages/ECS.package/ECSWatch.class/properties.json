@@ -1,0 +1,15 @@
+{
+	"category" : "ECS-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"loggingSymbol",
+		"displayMorph" ],
+	"name" : "ECSWatch",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

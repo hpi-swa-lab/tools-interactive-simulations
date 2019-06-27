@@ -1,0 +1,14 @@
+{
+	"category" : "ECS",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"Buffers" ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ECSLogger",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
