@@ -1,4 +1,4 @@
 events-support
 isReceiverOrAnyArgumentGarbage
 
-	^false
+	^ self receiver isNil

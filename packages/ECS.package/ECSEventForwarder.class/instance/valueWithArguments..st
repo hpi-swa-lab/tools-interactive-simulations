@@ -1,4 +1,4 @@
 evaluating
-valueWithArguments: aCollection
+valueWithArguments: anArray
 
-	self receiver triggerEvent: self event withArguments: {self prependedValue}, aCollection
+	self valueWithArguments: anArray otherwise: [self error]

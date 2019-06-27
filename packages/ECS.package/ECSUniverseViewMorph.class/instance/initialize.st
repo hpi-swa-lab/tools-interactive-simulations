@@ -14,4 +14,6 @@ initialize
 		value: drawPipelineName; 
 		choices: [self universe pipelines collect: #title];
 		small;
-		when: #selected send: #drawPipelineName: to: self)
+		when: #selected send: #drawPipelineName: to: self).
+	
+	self universe views addIfNotPresent: self

@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"delete" : "cmfcmf 6/27/2019 09:11",
 		"drawOn:" : "tobe 6/22/2019 08:46",
 		"drawPipelineName" : "tobe 6/21/2019 07:27",
 		"drawPipelineName:" : "tobe 6/21/2019 07:27",
@@ -10,7 +11,7 @@
 		"handlesMouseDown:" : "T 4/14/2019 00:09",
 		"handlesMouseMove:" : "T 5/27/2019 10:16",
 		"handlesMouseWheel:" : "cmfcmf 5/31/2019 20:36",
-		"initialize" : "tobe 6/21/2019 15:16",
+		"initialize" : "cmfcmf 6/27/2019 09:10",
 		"intoWorld:" : "TB 5/31/2019 06:40",
 		"keyDown:" : "tobe 6/22/2019 09:06",
 		"keyUp:" : "tobe 6/22/2019 09:06",
@@ -18,10 +19,10 @@
 		"mouseDown:" : "tobe 6/22/2019 09:03",
 		"mouseMove:" : "tobe 6/22/2019 09:15",
 		"mouseUp:" : "tobe 6/22/2019 09:05",
-		"mouseWheel:" : "TB 6/2/2019 09:43",
+		"mouseWheel:" : "cmfcmf 6/26/2019 11:10",
 		"setUp" : "tobe 6/22/2019 09:01",
 		"stepTime" : "TB 6/2/2019 09:45",
-		"tickUniverse" : "TB 6/2/2019 09:55",
+		"tickUniverse" : "cmfcmf 6/27/2019 09:11",
 		"title" : "tobe 6/21/2019 15:13",
 		"updateScreenSize" : "tobe 6/21/2019 07:32",
 		"wantsKeyboardFocus" : "T 4/14/2019 08:51" } }
