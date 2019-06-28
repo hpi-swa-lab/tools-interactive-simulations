@@ -6,12 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"clipRect",
-		"origin",
-		"currentForegroundColor",
-		"textureCache" ],
-	"name" : "OGLCanvas",
+		"canvas" ],
+	"name" : "OGLMorph",
 	"pools" : [
 		 ],
-	"super" : "OGLContext",
+	"super" : "Morph",
 	"type" : "normal" }

@@ -1,0 +1,24 @@
+{
+	"class" : {
+		"initialize" : "tobe 6/23/2019 16:56" },
+	"instance" : {
+		"assureContext:" : "T 5/22/2019 10:10",
+		"bounds:" : "tobe 6/22/2019 10:09",
+		"checkGLError" : "tobe 6/23/2019 14:48",
+		"createDefaultShader" : "tobe 6/23/2019 15:23",
+		"createProgramVertex:fragment:" : "tobe 6/23/2019 14:36",
+		"createQuadVAO" : "tobe 6/23/2019 16:57",
+		"createQuadVBO" : "tobe 6/23/2019 15:27",
+		"createVAO" : "tobe 6/23/2019 14:36",
+		"drawQuad" : "tobe 6/23/2019 16:57",
+		"fragmentShader:" : "tobe 6/23/2019 13:00",
+		"frameDo:worldOrigin:" : "tobe 6/23/2019 15:20",
+		"initialize" : "tobe 6/23/2019 14:09",
+		"scissorRect:" : "T 5/10/2019 08:19",
+		"setUpOGL:" : "tobe 6/23/2019 16:46",
+		"setUpViewport" : "tobe 6/24/2019 07:59",
+		"shader:typeConstant:" : "tobe 6/23/2019 13:10",
+		"tearDownOGL" : "T 5/22/2019 09:38",
+		"tearDownViewport" : "T 5/11/2019 10:56",
+		"translateByX:y:during:" : "tobe 6/23/2019 14:09",
+		"vertexShader:" : "tobe 6/23/2019 12:59" } }

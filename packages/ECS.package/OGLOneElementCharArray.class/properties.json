@@ -6,12 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"clipRect",
-		"origin",
-		"currentForegroundColor",
-		"textureCache" ],
-	"name" : "OGLCanvas",
+		 ],
+	"name" : "OGLOneElementCharArray",
 	"pools" : [
 		 ],
-	"super" : "OGLContext",
+	"super" : "ExternalStructure",
 	"type" : "normal" }

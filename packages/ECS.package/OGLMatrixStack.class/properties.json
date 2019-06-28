@@ -6,12 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"clipRect",
-		"origin",
-		"currentForegroundColor",
-		"textureCache" ],
-	"name" : "OGLCanvas",
+		"stack" ],
+	"name" : "OGLMatrixStack",
 	"pools" : [
 		 ],
-	"super" : "OGLContext",
+	"super" : "Object",
 	"type" : "normal" }

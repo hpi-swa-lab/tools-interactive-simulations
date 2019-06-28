@@ -4,7 +4,7 @@ tick: aUniverse
 	| buttonData highlight |
 	buttonData := {{#dirtRoad. 96}. {#woodCutter. 126}. {#tree. 127}. {#market. 153}}.
 	highlight := (ECSImageAsset of: #anno at: 'tools/', 85, '.png' sized: 53, 50).
-
+	
 	aUniverse query: #(UniverseView) filter: [:view | view isCurrent] do: [:view |
 		aUniverse query: #(AnnoState) do: [:state | | buttons y buttonPressed |
 			buttons := aUniverse queryList: #(id AnnoMenuButton Rendered).

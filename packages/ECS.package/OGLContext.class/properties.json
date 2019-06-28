@@ -1,0 +1,21 @@
+{
+	"category" : "ECS-OpenGL",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"GLArrayBuffer" ],
+	"commentStamp" : "",
+	"instvars" : [
+		"fonts",
+		"texCoords",
+		"ogl",
+		"worldOrigin",
+		"modelViewStack",
+		"projectionMatrix",
+		"shader",
+		"vao" ],
+	"name" : "OGLContext",
+	"pools" : [
+		"OpenGLConstants" ],
+	"super" : "Canvas",
+	"type" : "normal" }
