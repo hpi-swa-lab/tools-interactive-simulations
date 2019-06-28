@@ -3,11 +3,12 @@
 		 },
 	"instance" : {
 		"aboutToStyle:" : "tobe 6/6/2019 07:46",
-		"addWatchFor:at:" : "cmfcmf 6/27/2019 14:56",
+		"generateWatchFor:" : "cmfcmf 6/28/2019 14:14",
 		"layoutChanged" : "cmfcmf 6/7/2019 15:10",
 		"method" : "tobe 6/6/2019 07:42",
-		"method:" : "tobe 6/6/2019 07:42",
-		"privateSetText:notifying:" : "tobe 6/6/2019 07:51",
+		"method:" : "cmfcmf 6/28/2019 14:16",
+		"privateSetText:notifying:" : "cmfcmf 6/28/2019 13:51",
 		"replaceOnSelectorChange" : "tobe 6/6/2019 07:49",
 		"replaceOnSelectorChange:" : "tobe 6/6/2019 07:49",
-		"selectedClassOrMetaClass" : "tobe 6/6/2019 07:43" } }
+		"selectedClassOrMetaClass" : "tobe 6/6/2019 07:43",
+		"yellowButtonActivity:" : "cmfcmf 6/28/2019 14:17" } }

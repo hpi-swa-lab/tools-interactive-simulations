@@ -1,5 +1,6 @@
 SystemOrganization addCategory: #ECS!
 SystemOrganization addCategory: #'ECS-AnnoUniverse'!
+SystemOrganization addCategory: #'ECS-CodeInstrumentation'!
 SystemOrganization addCategory: #'ECS-Data'!
 SystemOrganization addCategory: #'ECS-Experiments'!
 SystemOrganization addCategory: #'ECS-Game-Jetpack'!

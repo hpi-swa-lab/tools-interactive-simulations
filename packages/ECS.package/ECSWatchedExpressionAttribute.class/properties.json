@@ -3,12 +3,12 @@
 	"classinstvars" : [
 		 ],
 	"classvars" : [
-		"Buffers" ],
+		 ],
 	"commentStamp" : "",
 	"instvars" : [
 		 ],
-	"name" : "ECSLogger",
+	"name" : "ECSWatchedExpressionAttribute",
 	"pools" : [
 		 ],
-	"super" : "Object",
+	"super" : "TextAttribute",
 	"type" : "normal" }

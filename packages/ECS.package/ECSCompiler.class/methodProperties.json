@@ -2,5 +2,5 @@
 	"class" : {
 		 },
 	"instance" : {
-		"compile:ifFail:" : "cmfcmf 6/27/2019 16:29",
-		"transformCode:class:selector:" : "cmfcmf 6/27/2019 16:22" } }
+		"compile:watcherIntervals:ifFail:" : "cmfcmf 6/28/2019 13:03",
+		"transformCode:watcherIntervals:class:selector:" : "cmfcmf 6/28/2019 14:03" } }
