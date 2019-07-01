@@ -4,7 +4,8 @@ yellowButtonActivity: shiftKeyState
 	super yellowButtonActivity: shiftKeyState.
 	(shiftKeyState not and: [self method notNil] and: [selectionInterval size > 0]) ifTrue: [ | watchName index watcherIntervals text |
 		watcherIntervals := System extractWatcherIntervals: self text.
-		index := watcherIntervals findFirst: [:each | each includes: selectionInterval start].
+		index := 1.
+		watcherIntervals do: [:each | each stop < selectionInterval start ifTrue: [index := index + 1]].
 		watchName := (self method reference, '>>', index) asSymbol.
 		ECSLogger resetBuffer: watchName.
 		
