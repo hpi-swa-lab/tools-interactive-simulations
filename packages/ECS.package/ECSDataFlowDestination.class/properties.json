@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Tools",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ECSDataFlowDestination",
+	"pools" : [
+		 ],
+	"super" : "ECSDataFlowPoint",
+	"type" : "normal" }

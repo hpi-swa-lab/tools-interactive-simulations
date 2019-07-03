@@ -5,6 +5,8 @@
 		"openFor:" : "TB 6/2/2019 09:38" },
 	"instance" : {
 		"attached" : "T 5/14/2019 21:32",
+		"dataFlowDestinations" : "tobe 7/3/2019 12:18",
+		"dataFlowSources" : "tobe 7/3/2019 12:17",
 		"detach" : "tobe 6/5/2019 22:07",
 		"detachNow:" : "tobe 6/5/2019 22:06",
 		"header" : "T 5/23/2019 07:56",

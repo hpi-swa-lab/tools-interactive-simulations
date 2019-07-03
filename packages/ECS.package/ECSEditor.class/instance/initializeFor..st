@@ -5,6 +5,7 @@ initializeFor: aUniverse
 	
 	universe := aUniverse.
 	panels := Dictionary new.
+	dataFlowConnections := #().
 	
 	self
 		setLabel: universe className;

@@ -30,6 +30,7 @@ initialize
 	self updateIcon.
 	
 	self addMorphBack: ECSRow new.
+	self addMorphBack: (ECSUniverseButton buildDataFlowButtonFor: self).
 	self addMorphBack: (ECSUniverseButton profileButtonFor: self).
 	self addMorphBack: (ECSUniverseButton exploreButtonFor: self).
 	self addMorphBack: (ECSUniverseButton openNewToolButtonFor: self).
