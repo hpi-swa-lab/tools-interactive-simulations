@@ -9,29 +9,32 @@ initialize
 		runContinuously: true;
 		register: SomeGameInputSystem new);
 	register: (Pipeline new
-		title: 'Editing';
-		runContinuously: true;
-		register: InspectorSystem new;
-		register: SGTransformRenderSystem new disable);
+		title: 'EditingRender';
+		runContinuously: false;
+		register: SGTransformRenderSystem new);
 	register: (Pipeline new
 		title: 'Render';
 		runContinuously: false;
 		register: SomeGameRenderSystem new);
+	register: (Pipeline new
+		title: 'Editing';
+		runContinuously: true;
+		register: InspectorSystem new);
 	spawnNewWith: #(Transform Label PlantEatingComponent Rendered) do: [:transform :label :plantEatingComponent :rendered | 
-		transform bounds: (35 , 24 corner: 55 , 44).
+		transform bounds: (122 , 24 corner: 142 , 44).
 		label label: (Text string: 'tapirVonHand' runs: (RunArray runs: #(12) values: ((Array new: 1) at: 1 put: ((Array new: 1) at: 1 put: (TextColor basicNew instVarAt: 1 put: (Color r: 1 g: 0.0 b: 0.0); yourself); yourself); yourself))).
 		plantEatingComponent howMuch: 5; fromGrass: true; fromTallFeeders: false.
 		rendered color: (ECSColor rgba: 16rFF000000); form: (ECSImageAsset of: #SomeGame at: 'animal_tapir.png')];
 	spawnNewWith: #(DeltaTime) do: [:deltaTime | 
-		deltaTime milliseconds: 0; last: 3738919437027; fpsAccumulated: 0; fpsAverage: 0; numAccumulated: 0; elapsed: 0];
+		deltaTime milliseconds: 0; last: 3739086885183; fpsAccumulated: 0; fpsAverage: 0; numAccumulated: 0; elapsed: 0];
 	spawnNewWith: #(UniverseView) do: [:universeView | 
-		universeView size: (116@134); isCurrent: false; mousePosition: 347 , 694; leftJustUp: false; leftJustDown: false; leftDown: false; wheelDelta: 0 , 0; rightJustUp: false; rightJustDown: false; rightDown: false; mousePositionDelta: 0 , 0];
+		universeView size: (290@168); isCurrent: false; mousePosition: 347 , 694; leftJustUp: false; leftJustDown: false; leftDown: false; wheelDelta: 0 , 0; rightJustUp: false; rightJustDown: false; rightDown: false; mousePositionDelta: 0 , 0];
 	spawnNewWith: #(UniverseView) do: [:universeView | 
-		universeView size: (116@134); isCurrent: false; mousePosition: 46 , -30; leftJustUp: false; leftJustDown: false; leftDown: false; wheelDelta: 0 , 0; rightJustUp: false; rightJustDown: false; rightDown: false; mousePositionDelta: 0 , 0];
+		universeView size: (290@168); isCurrent: false; mousePosition: 46 , -30; leftJustUp: false; leftJustDown: false; leftDown: false; wheelDelta: 0 , 0; rightJustUp: false; rightJustDown: false; rightDown: false; mousePositionDelta: 0 , 0];
 	spawnNewWith: #(UniverseView) do: [:universeView | 
-		universeView size: (116@134); isCurrent: false; mousePosition: 389 , 112; leftJustUp: false; leftJustDown: false; leftDown: false; wheelDelta: 0 , 0; rightJustUp: false; rightJustDown: false; rightDown: false; mousePositionDelta: 0 , 0];
+		universeView size: (290@168); isCurrent: false; mousePosition: 389 , 112; leftJustUp: false; leftJustDown: false; leftDown: false; wheelDelta: 0 , 0; rightJustUp: false; rightJustDown: false; rightDown: false; mousePositionDelta: 0 , 0];
 	spawnNewWith: #(UniverseView) do: [:universeView | 
-		universeView size: (396@584); isCurrent: false; mousePosition: 254 , 73; leftJustUp: false; leftJustDown: false; leftDown: false; wheelDelta: 0 , 0; rightJustUp: false; rightJustDown: false; rightDown: false; mousePositionDelta: 0 , 0];
+		universeView size: (290@168); isCurrent: false; mousePosition: 254 , 73; leftJustUp: false; leftJustDown: false; leftDown: false; wheelDelta: 0 , 0; rightJustUp: false; rightJustDown: false; rightDown: false; mousePositionDelta: 0 , 0];
 	spawnNewWith: #(Transform Label InstanceOfTemplate MeatEatingComponent Rendered) do: [:transform :label :instanceOfTemplate :meatEatingComponent :rendered | 
 		transform bounds: (110 , 129 corner: 130 , 149).
 		label label: (Text string: 'wolf' runs: (RunArray runs: #(4) values: ((Array new: 1) at: 1 put: ((Array new: 1) at: 1 put: (TextColor basicNew instVarAt: 1 put: (Color r: 1 g: 0.0 b: 0.0); yourself); yourself); yourself))).
@@ -42,6 +45,25 @@ initialize
 		transform bounds: (188 , 62 corner: 208 , 82).
 		label label: (Text string: 'eagle' runs: (RunArray runs: #(5) values: ((Array new: 1) at: 1 put: ((Array new: 1) at: 1 put: (TextColor basicNew instVarAt: 1 put: (Color r: 1 g: 0.0 b: 0.0); yourself); yourself); yourself))).
 		fishEatingComponent howMuch: 0.
+		instanceOfTemplate template: 'eagle'.
+		rendered color: (ECSColor rgba: 16rFF000000); form: (ECSImageAsset of: #SomeGame at: 'animal_eagle.png')];
+	spawnNewWith: #(UniverseView) do: [:universeView | 
+		universeView size: (290@168); isCurrent: false; mousePosition: 3 , -11; leftJustUp: false; leftJustDown: false; leftDown: false; wheelDelta: 0 , 0; rightJustUp: false; rightJustDown: false; rightDown: false; mousePositionDelta: 0 , 0];
+	spawnNewWith: #(UniverseView) do: [:universeView | 
+		universeView size: (290@168); isCurrent: false; mousePosition: 527 , 727; leftJustUp: false; leftJustDown: false; leftDown: false; wheelDelta: 0 , 0; rightJustUp: false; rightJustDown: false; rightDown: false; mousePositionDelta: 0 , 0];
+	spawnNewWith: #(UniverseView) do: [:universeView | 
+		universeView size: (290@168); isCurrent: false; mousePosition: 182 , -26; leftJustUp: false; leftJustDown: false; leftDown: false; wheelDelta: 0 , 0; rightJustUp: false; rightJustDown: false; rightDown: false; mousePositionDelta: 0 , 0];
+	spawnNewWith: #(UniverseView) do: [:universeView | 
+		universeView size: (290@168); isCurrent: false; mousePosition: 392 , 581; leftJustUp: false; leftJustDown: false; leftDown: false; wheelDelta: 0 , 0; rightJustUp: false; rightJustDown: false; rightDown: false; mousePositionDelta: 0 , 0];
+	spawnNewWith: #(UniverseView) do: [:universeView | 
+		universeView size: (419@322); isCurrent: false; mousePosition: 105 , 305; leftJustUp: false; leftJustDown: false; leftDown: false; wheelDelta: 0 , 0; rightJustUp: false; rightJustDown: false; rightDown: false; mousePositionDelta: 0 , 0];
+	spawnNewWith: #(UniverseView) do: [:universeView | 
+		universeView size: (351@324); isCurrent: false; mousePosition: 301 , 170; leftJustUp: false; leftJustDown: false; leftDown: false; wheelDelta: 0 , 0; rightJustUp: false; rightJustDown: false; rightDown: false; mousePositionDelta: 0 , 0];
+	spawnNewWith: #(Transform Label FishEatingComponent PendingPlacement InstanceOfTemplate Rendered) do: [:transform :label :fishEatingComponent :pendingPlacement :instanceOfTemplate :rendered | 
+		transform bounds: (0 , 0 corner: 20 , 20).
+		label label: (Text string: 'eagle' runs: (RunArray runs: #(5) values: ((Array new: 1) at: 1 put: ((Array new: 1) at: 1 put: (TextColor basicNew instVarAt: 1 put: (Color r: 1 g: 0.0 b: 0.0); yourself); yourself); yourself))).
+		fishEatingComponent howMuch: 0.
+		pendingPlacement .
 		instanceOfTemplate template: 'eagle'.
 		rendered color: (ECSColor rgba: 16rFF000000); form: (ECSImageAsset of: #SomeGame at: 'animal_eagle.png')];
 	
