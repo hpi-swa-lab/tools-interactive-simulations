@@ -3,4 +3,4 @@ systemTickEnded: aPipeline system: aSystem
 
 	| time |
 	time := (Time utcMicrosecondClock - systemTickStart + 500 // 1000).
-	(logicStatistics at: aSystem ifAbsentPut: [ECSSmoothNumber new]) report: time
+	((inDrawingPipeline ifTrue: [drawStatistics] ifFalse: [logicStatistics]) at: aSystem ifAbsentPut: [ECSSmoothNumber new]) report: time
