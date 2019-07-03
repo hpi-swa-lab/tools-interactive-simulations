@@ -17,12 +17,14 @@ compile: text environment: anEnvironment classified: category withStamp: changeS
 		trailer: (self defaultMethodTrailerIfLogSource: logSource).
 	
 	method := methodAndNode method.
-	method propertyValueAt: #ecsWatcherIntervals put: watcherIntervals asArray.
+	method propertyValueAt: #ecsWatcherIntervals put: ((watcherIntervals withIndexCollect: [:each :index | each - ((index - 1) * 3)]) asArray).
 	selector := methodAndNode selector.
 	
-	logSource ifTrue: [
+	logSource ifTrue: [ | code |
+		"remove all attributes and String 1s from the text"
+		code := text asString copyReplaceAll: '"', (String value: 1), '"' with: ''.
 		self
-			logMethodSource: text asString asText "remove all attributes from the text"
+			logMethodSource: code asText
 			forMethodWithNode: methodAndNode 
 			inCategory: category
 			withStamp: changeStamp
