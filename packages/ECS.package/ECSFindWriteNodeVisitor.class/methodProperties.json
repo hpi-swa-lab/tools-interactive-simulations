@@ -1,0 +1,14 @@
+{
+	"class" : {
+		 },
+	"instance" : {
+		"bindingName" : "tobe 7/4/2019 10:11",
+		"bindingName:" : "tobe 7/4/2019 10:12",
+		"doSubMethod:" : "tobe 7/4/2019 11:12",
+		"hasReadAccess" : "tobe 7/4/2019 10:12",
+		"hasWriteAccess" : "tobe 7/4/2019 10:12",
+		"initialize" : "tobe 7/4/2019 10:16",
+		"methodClass" : "tobe 7/4/2019 10:54",
+		"methodClass:" : "tobe 7/4/2019 10:54",
+		"result" : "tobe 7/4/2019 10:15",
+		"visitMessageNode:" : "tobe 7/4/2019 11:25" } }

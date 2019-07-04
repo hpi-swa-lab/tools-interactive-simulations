@@ -1,0 +1,17 @@
+{
+	"category" : "ECS-Experiments",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"bindingName",
+		"hasReadAccess",
+		"hasWriteAccess",
+		"methodClass" ],
+	"name" : "ECSFindWriteNodeVisitor",
+	"pools" : [
+		 ],
+	"super" : "ParseNodeVisitor",
+	"type" : "normal" }

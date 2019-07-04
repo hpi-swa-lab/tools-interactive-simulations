@@ -1,0 +1,17 @@
+{
+	"category" : "ECS-Experiments",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"accessType",
+		"sourceRange",
+		"componentClass",
+		"method" ],
+	"name" : "ECSComponentAccess",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
