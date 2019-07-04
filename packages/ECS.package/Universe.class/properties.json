@@ -16,7 +16,8 @@
 		"saveFilter",
 		"accesses",
 		"canvas",
-		"views" ],
+		"views",
+		"queryLocalAccesses" ],
 	"name" : "Universe",
 	"pools" : [
 		 ],

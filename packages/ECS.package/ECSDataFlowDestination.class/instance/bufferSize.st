@@ -1,4 +1,4 @@
 initialize-release
 bufferSize
 
-	self values size
+	^ self values size

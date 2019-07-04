@@ -18,6 +18,13 @@ visitMessageNode: aNode
 			componentClass: aNode arguments first key;
 			accessType: #(attach);
 			sourceRange: (self sourceRangeFor: aNode))].
+		
+	(aNode receiver name = 'aUniverse' and: [aNode selector key = #queryList:]) ifTrue: [
+		aNode arguments first key do: [:comp |
+			accesses add: (ECSComponentAccess new
+				componentClass: comp;
+				accessType: #(read write);
+				sourceRange: (self sourceRangeFor: aNode))]].
 	
 	(aNode receiver name = 'aUniverse' and: [#(#query:do: #query:filter:do:) includes: aNode selector key])
 		ifTrue: [

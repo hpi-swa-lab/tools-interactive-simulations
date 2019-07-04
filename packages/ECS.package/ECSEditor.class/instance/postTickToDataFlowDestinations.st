@@ -1,0 +1,4 @@
+initialization
+postTickToDataFlowDestinations
+
+	dataFlowConnections do: #tickEnded

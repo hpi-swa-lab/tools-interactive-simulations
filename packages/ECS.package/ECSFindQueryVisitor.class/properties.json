@@ -1,14 +1,14 @@
 {
-	"category" : "ECS-DataFlow",
+	"category" : "ECS-Tools",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "ECSDataFlowSource",
+		"result" ],
+	"name" : "ECSFindQueryVisitor",
 	"pools" : [
 		 ],
-	"super" : "ECSDataFlowPoint",
+	"super" : "ParseNodeVisitor",
 	"type" : "normal" }

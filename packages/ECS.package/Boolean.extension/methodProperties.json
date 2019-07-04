@@ -3,4 +3,7 @@
 		"ecsDefault" : "TB 6/2/2019 13:04",
 		"editorType" : "cmfcmf 5/31/2019 20:32" },
 	"instance" : {
-		 } }
+		"and:ifTrue:" : "tobe 7/4/2019 15:56",
+		"and:ifTrue:ifFalse:" : "tobe 7/4/2019 15:56",
+		"or:ifTrue:" : "tobe 7/4/2019 15:56",
+		"or:ifTrue:ifFalse:" : "tobe 7/4/2019 15:56" } }

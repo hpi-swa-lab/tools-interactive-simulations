@@ -1,12 +1,15 @@
 {
-	"category" : "ECS-Tools",
+	"category" : "ECS-DataFlow",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"values" ],
+		"values",
+		"universe",
+		"hadReport",
+		"system" ],
 	"name" : "ECSDataFlowDestination",
 	"pools" : [
 		 ],

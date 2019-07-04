@@ -7,6 +7,8 @@ initializeFor: aUniverse
 	panels := Dictionary new.
 	dataFlowConnections := #().
 	
+	universe when: #postTick send: #postTickToDataFlowDestinations to: self.
+	
 	self
 		setLabel: universe className;
 		paneColor: Color white;

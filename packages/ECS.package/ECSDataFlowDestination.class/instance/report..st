@@ -1,5 +1,5 @@
 as yet unclassified
-report: anInteger
+report: aNumber
 
-	self values add: anInteger.
+	self values add: aNumber.
 	self triggerEvent: #valuesChanged

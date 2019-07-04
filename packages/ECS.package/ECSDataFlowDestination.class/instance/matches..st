@@ -1,4 +1,4 @@
 as yet unclassified
 matches: aSource
 
-	^ aSource components anySatisfy: [:comp | self components includes: comp]
+	^ aSource components allSatisfy: [:comp | self components includes: comp]

@@ -8,6 +8,7 @@ initialize
 	views := OrderedCollection new.
 	stepTime := 0.
 	accesses := 0.
+	queryLocalAccesses := 0.
 	
 	self resetEntityList.
 	

@@ -11,6 +11,7 @@ fetchComponentsInto: aCollection componentLists: lists at: entityIndex do: aBloc
 				ifFalse: [^ self]]].
 	
 	accesses := accesses + 1.
+	queryLocalAccesses := queryLocalAccesses + 1.
 	aBoolean
 		ifTrue: [aBlock valueWithArguments: aCollection]
 		ifFalse: [aBlock value: aCollection]

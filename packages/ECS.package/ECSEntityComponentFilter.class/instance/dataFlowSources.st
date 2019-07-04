@@ -1,4 +1,4 @@
 query-filtering
 dataFlowSources
-
-	^ {ECSDataFlowSource new components: #(AnnoTile AnnoCamera); morph: self}
+	
+	^ {ECSDataFlowSource new components: self componentsInQuery; morph: self}
