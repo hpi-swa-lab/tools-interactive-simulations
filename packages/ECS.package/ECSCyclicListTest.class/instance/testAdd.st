@@ -2,7 +2,7 @@ as yet unclassified
 testAdd
 
 	| list |
-	list := CyclicList new size: 4.
+	list := ECSCyclicList new size: 4.
 	self assert: (list contents hasEqualElements: {0. 0. 0. 0}).
 	
 	list add: 5.

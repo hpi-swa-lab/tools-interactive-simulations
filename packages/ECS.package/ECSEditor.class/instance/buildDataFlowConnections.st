@@ -12,4 +12,7 @@ buildDataFlowConnections
 	dataFlowConnections := Array streamContents: [:stream |
 		destinations do: [:dest |
 			sources do: [:src |
-				(dest matches: src) ifTrue: [stream nextPut: (ECSDataFlowConnection new source: src;  destination: dest)]]]]
+				(dest matches: src) ifTrue: [stream nextPut: (ECSDataFlowConnection new source: src;  destination: dest)]]]].
+
+	(dataFlowConnections collect: [:connection | connection destination]) asSet do: [:destination |
+		destination when: #valuesChanged send: #changed to: self]

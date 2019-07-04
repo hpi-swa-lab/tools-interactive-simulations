@@ -2,4 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
-		"matches:" : "tobe 7/3/2019 12:16" } }
+		"bufferSize" : "ek 7/4/2019 11:28",
+		"initialBufferSize" : "ek 7/4/2019 11:26",
+		"initialize" : "ek 7/4/2019 11:26",
+		"matches:" : "tobe 7/3/2019 12:16",
+		"report:" : "ek 7/4/2019 11:08",
+		"values" : "ek 7/4/2019 10:12" } }
