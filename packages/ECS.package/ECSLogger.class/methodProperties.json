@@ -4,7 +4,9 @@
 		"at:ifPresent:ifAbsent:" : "cmfcmf 6/27/2019 14:22",
 		"at:put:" : "cmfcmf 6/27/2019 13:59",
 		"initialize" : "cmfcmf 6/27/2019 14:00",
+		"removeBuffersFor:method:exceptThese:" : "cmfcmf 7/4/2019 09:15",
 		"resetBuffer:" : "cmfcmf 6/28/2019 13:25",
-		"resetBuffers" : "cmfcmf 6/27/2019 14:00" },
+		"resetBuffers" : "cmfcmf 6/27/2019 14:00",
+		"watchNameForClass:method:id:" : "cmfcmf 7/4/2019 08:52" },
 	"instance" : {
 		 } }

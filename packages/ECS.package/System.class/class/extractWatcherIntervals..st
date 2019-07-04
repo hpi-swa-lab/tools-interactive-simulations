@@ -1,16 +1,16 @@
 as yet unclassified
 extractWatcherIntervals: aText
 
-	| watcherIntervals interval |
-	watcherIntervals := OrderedCollection new.
+	| watcherIntervals interval id |
+	watcherIntervals := Dictionary new.
 	interval := nil.
+	id := nil.
 	1 to: aText size do: [:index | 
 		(aText attributesAt: index)
-			detect: [:each | each class = ECSWatchedExpressionAttribute]
+			detect: [:each | each isKindOf: ECSWatchedExpressionAttribute]
 			ifFound: [:attribute | interval 
-				ifNil: [interval := index to: index]
+				ifNil: [interval := index to: index. id := attribute id]
 				ifNotNil: [interval := interval start to: index]]
-			ifNone: [interval ifNotNil: [watcherIntervals add: interval. 
-					interval := nil]]].
+			ifNone: [interval ifNotNil: [watcherIntervals at: interval put: id. interval := nil]]].
 	
 	^ watcherIntervals

@@ -1,10 +1,10 @@
 as yet unclassified
-compile: aCue watcherIntervals: aCollection ifFail: failBlock 
+compile: aCue watcherIntervals: aDictionary ifFail: failBlock 
 
 	| newCode source |
 	source := aCue sourceStream contents.
 	newCode := self transformCode: source 
-		watcherIntervals: aCollection 
+		watcherIntervals: aDictionary 
 		class: aCue getClass
 		selector: (source lines first findSelector).
 	

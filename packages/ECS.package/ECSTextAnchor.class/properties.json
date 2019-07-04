@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"codeEditor",
 		"id" ],
-	"name" : "ECSWatchedExpressionAttribute",
+	"name" : "ECSTextAnchor",
 	"pools" : [
 		 ],
-	"super" : "TextAttribute",
+	"super" : "TextAnchor",
 	"type" : "normal" }

@@ -1,4 +1,4 @@
 as yet unclassified
-value
+id
 
-	^ self average
+	^ id

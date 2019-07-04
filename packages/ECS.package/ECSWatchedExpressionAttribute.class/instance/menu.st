@@ -1,6 +1,6 @@
 accessing
 menu
 
-	self flag: #todo.
-	"self halt."
-	^ nil
+	^ MenuMorph new
+		add: 'remove' target: codeEditor selector: #removeWatch: argument: self;		
+		yourself

@@ -3,8 +3,13 @@
 		 },
 	"instance" : {
 		"closeHtmlOn:" : "cmfcmf 6/28/2019 10:17",
+		"codeEditor:" : "cmfcmf 7/3/2019 12:20",
 		"dominates:" : "cmfcmf 6/28/2019 10:56",
-		"menu" : "cmfcmf 6/28/2019 10:57",
+		"emphasisCode" : "cmfcmf 7/4/2019 08:38",
+		"emphasizeScanner:" : "cmfcmf 7/4/2019 08:40",
+		"id" : "cmfcmf 7/4/2019 08:16",
+		"id:" : "cmfcmf 7/4/2019 08:16",
+		"menu" : "cmfcmf 7/4/2019 08:03",
 		"openHtmlOn:" : "cmfcmf 6/28/2019 10:17",
 		"shoutShouldPreserve" : "cmfcmf 6/28/2019 10:20",
 		"wantsCopyOnInsert" : "cmfcmf 6/28/2019 13:53" } }

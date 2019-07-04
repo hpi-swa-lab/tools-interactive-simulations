@@ -2,19 +2,15 @@ as yet unclassified
 yellowButtonActivity: shiftKeyState
 
 	super yellowButtonActivity: shiftKeyState.
-	(shiftKeyState not and: [self method notNil] and: [selectionInterval size > 0]) ifTrue: [ | watchName index watcherIntervals text |
-		watcherIntervals := System extractWatcherIntervals: self text.
-		index := 1.
-		watcherIntervals do: [:each | each stop < selectionInterval start ifTrue: [index := index + 1]].
-		watchName := (self method reference, '>>', index) asSymbol.
-		ECSLogger resetBuffer: watchName.
-		
+	(shiftKeyState not and: [self method notNil] and: [selectionInterval size > 0]) ifTrue: [ | text id |
+		id := Time utcMicrosecondClock.
 		text := self text copyReplaceFrom: selectionInterval stop + 1
 			to: selectionInterval stop
-			with: (self generateWatchFor: watchName).
-		text addAttribute: ECSWatchedExpressionAttribute new
-			from: selectionInterval start to: selectionInterval stop.
-		text addAttribute: (TextEmphasis new emphasisCode: 4) "underline"
+			with: (self generateWatchWithId: id).
+		text addAttribute: (ECSWatchedExpressionAttribute new
+				codeEditor: self;
+				id: id;
+				yourself)
 			from: selectionInterval start to: selectionInterval stop.
 		
 		self editString: text.

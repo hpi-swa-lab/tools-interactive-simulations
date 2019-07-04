@@ -17,8 +17,11 @@ compile: text environment: anEnvironment classified: category withStamp: changeS
 		trailer: (self defaultMethodTrailerIfLogSource: logSource).
 	
 	method := methodAndNode method.
-	method propertyValueAt: #ecsWatcherIntervals put: ((watcherIntervals withIndexCollect: [:each :index | each - ((index - 1) * 3)]) asArray).
+	method propertyValueAt: #ecsWatcherIntervals put: (Dictionary newFrom: (watcherIntervals associations 
+		withIndexCollect: [:each :index | each key - ((index - 1) * 3) -> each value])).
 	selector := methodAndNode selector.
+	
+	ECSLogger removeBuffersFor: self method: method selector exceptThese: watcherIntervals values.
 	
 	logSource ifTrue: [ | code |
 		"remove all attributes and String 1s from the text"

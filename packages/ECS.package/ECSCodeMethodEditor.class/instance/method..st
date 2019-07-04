@@ -6,16 +6,16 @@ method: aMethod
 	source := aMethod getSourceFromFile.
 	watcherIntervals := aMethod propertyValueAt: #ecsWatcherIntervals ifAbsent: [{}].
 	offset := 0.
-	watcherIntervals withIndexDo: [:each :index | | watchName interval |
+	watcherIntervals keysAndValuesDo: [:each :id | | interval |
 		interval := each + offset.
-		watchName := (self method reference, '>>', index) asSymbol.
 		
-		source addAttribute: ECSWatchedExpressionAttribute new
-			from: interval start to: interval stop.
-		source addAttribute: (TextEmphasis new emphasisCode: 4) "underline"
+		source addAttribute: (ECSWatchedExpressionAttribute new
+				codeEditor: self;
+				id: id;
+				yourself)
 			from: interval start to: interval stop.
 		source := source replaceFrom: interval stop + 1
 			to: interval stop
-			with: (self generateWatchFor: watchName).
+			with: (self generateWatchWithId: id).
 		offset := offset + 3].
 	self content: source

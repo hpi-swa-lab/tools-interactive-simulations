@@ -1,4 +1,4 @@
 as yet unclassified
-value
+menu
 
-	^ self average
+	self halt.
