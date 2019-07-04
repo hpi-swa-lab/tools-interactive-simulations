@@ -28,7 +28,7 @@ visitMessageNode: aNode
 	
 	(aNode receiver name = 'aUniverse' and: [#(#query:do: #query:filter:do:) includes: aNode selector key])
 		ifTrue: [
-			aNode arguments first key
+			(ECSFindQueryVisitor listElements: aNode arguments first)
 				with: aNode arguments second arguments
 				do: [:class :binding | | accessVisitor |
 					accessVisitor := ECSFindWriteNodeVisitor new

@@ -1,3 +1,4 @@
 accessing
 queryEditor
+
 	^ queryEditor
