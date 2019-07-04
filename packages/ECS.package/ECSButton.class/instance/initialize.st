@@ -1,6 +1,7 @@
 initialization
 initialize
 	super initialize.
+	self color: Color lightGray.
 	self layoutInset: (TextStyle defaultFont height / 3) rounded.
 	self cellInset: self layoutInset.
 	hovered := false.

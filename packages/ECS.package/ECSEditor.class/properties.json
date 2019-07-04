@@ -8,7 +8,8 @@
 	"commentStamp" : "ek 6/21/2019 13:49",
 	"instvars" : [
 		"universe",
-		"panels" ],
+		"panels",
+		"dataFlowConnections" ],
 	"name" : "ECSEditor",
 	"pools" : [
 		 ],

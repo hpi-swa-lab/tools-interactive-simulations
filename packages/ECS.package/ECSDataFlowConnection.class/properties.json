@@ -1,0 +1,16 @@
+{
+	"category" : "ECS-Tools",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"source",
+		"destination",
+		"values" ],
+	"name" : "ECSDataFlowConnection",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

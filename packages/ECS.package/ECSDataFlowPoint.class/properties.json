@@ -1,0 +1,15 @@
+{
+	"category" : "ECS-Tools",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"components",
+		"morph" ],
+	"name" : "ECSDataFlowPoint",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

@@ -14,8 +14,8 @@ initialize
 	
 	self addMorphBack: (ECSUniverseButton spawnNewEntityButtonFor: self).
 	self addMorphBack: (ECSButton new
-		when: #clicked send: #togglePause
-		to: self; icon: (pauseIcon := ECSIcon new large);
+		when: #clicked send: #togglePause to: self;
+		icon: (pauseIcon := ECSIcon new large);
 		balloonText: 'Toggle game universe paused';
 		large).
 	self addMorphBack: (ECSButton new
@@ -30,6 +30,7 @@ initialize
 	self updateIcon.
 	
 	self addMorphBack: ECSRow new.
+	self addMorphBack: (ECSUniverseButton buildDataFlowButtonFor: self).
 	self addMorphBack: (ECSUniverseButton profileButtonFor: self).
 	self addMorphBack: (ECSUniverseButton exploreButtonFor: self).
 	self addMorphBack: (ECSUniverseButton openNewToolButtonFor: self).

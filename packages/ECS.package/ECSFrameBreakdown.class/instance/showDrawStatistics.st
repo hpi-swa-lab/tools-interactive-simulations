@@ -1,6 +1,8 @@
 profiling
 showDrawStatistics
 
+	inDrawingPipeline := false.
+	
 	lastDrawGcDuration := 	(Smalltalk vmParameterAt: 8) + (Smalltalk vmParameterAt: 10) - drawGcTime.
 	(drawStatistics at: #GC) report: lastDrawGcDuration.
 	drawStatistics keysAndValuesRemove: [:key :value | value touched not].
