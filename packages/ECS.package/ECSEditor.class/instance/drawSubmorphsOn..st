@@ -10,7 +10,9 @@ drawSubmorphsOn: aCanvas
 		lastValues := connection destination values.
 		lastValues reverseWithIndexDo: [:value :index | | bubbleCenter bubbleRectangle |
 			bubbleCenter := start + ((destination - start) * index / connection destination bufferSize).
-			bubbleRectangle := (value * 7) sqrt rounded asPoint center: bubbleCenter.
+			"https://www.wolframalpha.com/input/?i=plot+-5000%2F(x%2B170)%2B30+from+0+to+50"
+			"plot -5000/(x+170)+30 from 0 to 50"
+			bubbleRectangle := (-5000 / (value + 170) + 30) ceiling asPoint center: bubbleCenter.
 			
 			aCanvas
 				fillOval: bubbleRectangle
