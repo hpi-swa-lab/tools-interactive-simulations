@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Watch",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ECSDisplayPrint",
+	"pools" : [
+		 ],
+	"super" : "StringMorph",
+	"type" : "normal" }

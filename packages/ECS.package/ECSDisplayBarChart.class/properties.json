@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Watch",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ECSDisplayBarChart",
+	"pools" : [
+		 ],
+	"super" : "ECSGraphPlot",
+	"type" : "normal" }
