@@ -5,7 +5,7 @@ buildConstantsArea
 	
 	self system class classVarNames do: [:each | 
 		constantsArea addMorphBack: (self buildConstantRowNamed: each)].
-			
+	
 	^ (ECSCollapsible new 
 		header: (ECSLabel new contents: 'Constants'; hResizing: #spaceFill);
 		header: (ECSButton new

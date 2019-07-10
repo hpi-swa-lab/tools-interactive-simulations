@@ -11,4 +11,4 @@ drawOn: aCanvas
 		aCanvas fillRectangle: (x - self gap @ (height - nowY) + self position extent: self gap @ nowY) color: Color red.
 		x := x + self gap].
 	
-	aCanvas drawString: label, ' (', data last asString, '/', max asString, ')' at: self position.
+	aCanvas drawString: label, ' (', data last asString, '/', max asString, ')' at: self position font: nil color: labelColor

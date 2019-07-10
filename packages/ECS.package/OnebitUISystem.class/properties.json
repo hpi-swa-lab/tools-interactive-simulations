@@ -1,16 +1,14 @@
 {
-	"category" : "ECS-UI",
+	"category" : "ECS-Onebit",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"data",
-		"label",
-		"labelColor" ],
-	"name" : "ECSGraphPlot",
+		 ],
+	"name" : "OnebitUISystem",
 	"pools" : [
 		 ],
-	"super" : "Morph",
+	"super" : "System",
 	"type" : "normal" }
