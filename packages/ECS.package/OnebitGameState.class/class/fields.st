@@ -1,4 +1,4 @@
 as yet unclassified
 fields
 
-	^ #(#state #movingTimeout #selectedPlace #score #selectedTower)
+	^ #(#state #movingTimeout #selectedPlace #score #selectedTower #coins)

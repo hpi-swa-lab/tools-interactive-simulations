@@ -6,7 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"cost" ],
+		"cost",
+		"canDamage",
+		"canTraverse" ],
 	"name" : "OnebitBlockMovement",
 	"pools" : [
 		 ],

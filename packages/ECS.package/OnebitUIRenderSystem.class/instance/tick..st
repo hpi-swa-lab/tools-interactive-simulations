@@ -15,6 +15,7 @@ tick: aUniverse
 					((aUniverse canvas)
 						fillRectangle: ((0 , 0) extent: (((((gameState score) / ((config maxScore) asFloat)) * ((view size) x)) rounded) , 10))
 						color: (Color red)).
+					(self drawCoinsIn: aUniverse state: gameState config: config view: view).
 					(((gameState selectedTower) alive) ifTrue: [ nil ]).
 					(aUniverse
 						query: #( #'OnebitButton' #'OnebitTerrainButton' )

@@ -1,4 +1,4 @@
 as yet unclassified
 mutatorFields
 
-	^ #(#state: #movingTimeout: #selectedPlace: #score: #selectedTower:)
+	^ #(#state: #movingTimeout: #selectedPlace: #score: #selectedTower: #coins:)

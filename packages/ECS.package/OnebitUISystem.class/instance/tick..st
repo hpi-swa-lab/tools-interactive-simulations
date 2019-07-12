@@ -9,7 +9,9 @@ tick: aUniverse
 				do: [ :view |
 					((view leftJustDown)
 						ifTrue: [
-							(aUniverse
-								query: #( #'OnebitButton' #'OnebitTerrainButton' )
-								do: [ :button :terrainButton |
-									(((button bounds) containsPoint: (view mousePosition)) ifTrue: [ (gameState selectedPlace: (terrainButton type)) ]) ]) ]) ]) ])
+							(OnebitHelper
+								buttonAt: (view mousePosition)
+								in: aUniverse
+								do: [ :entity |
+									((aUniverse getSingle: #'OnebitTerrainButton' of: entity)
+										ifNotNil: [ :terrain | (gameState selectedPlace: (terrain type)) ]) ]) ]) ]) ])

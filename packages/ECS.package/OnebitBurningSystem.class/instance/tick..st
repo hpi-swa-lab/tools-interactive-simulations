@@ -17,6 +17,8 @@ tick: aUniverse
 					((aUniverse storageOf: #'OnebitPosition')
 						in: aUniverse
 						neighborsOf: position
-						query: #( #'OnebitFlammable' #'id' )
-						do: [ :flammable :newEntity | (aUniverse attach: #'OnebitBurning' to: newEntity) ]).
+						query: { #'OnebitFlammable' . #'id' . (#'OnebitWet' optional) }
+						do: [ :flammable :newEntity :wet |
+							(aUniverse attach: #'OnebitBurning' to: newEntity).
+							(wet ifNotNil: [ (aUniverse remove: #'OnebitWet' from: newEntity) ]) ]).
 					(burningRendered ifNotNil: [ ((burningRendered color) alpha: (((health current) / (health max)) asFloat)) ]) ]) ])

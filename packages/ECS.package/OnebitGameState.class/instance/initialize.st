@@ -7,4 +7,5 @@ initialize
 	movingTimeout := 0.
 	selectedPlace := #unset.
 	score := 0.
-	selectedTower := 0
+	selectedTower := 0.
+	coins := 0

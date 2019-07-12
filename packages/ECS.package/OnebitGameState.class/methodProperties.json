@@ -1,17 +1,19 @@
 {
 	"class" : {
-		"fields" : "tobe 6/19/2019 08:30",
-		"mutatorFields" : "tobe 6/19/2019 08:30",
-		"storage" : "tobe 6/19/2019 08:30" },
+		"fields" : "tobe 7/12/2019 10:43",
+		"mutatorFields" : "tobe 7/12/2019 10:43",
+		"storage" : "tobe 7/12/2019 10:43" },
 	"instance" : {
-		"initialize" : "tobe 6/19/2019 08:30",
-		"movingTimeout" : "tobe 6/19/2019 08:30",
-		"movingTimeout:" : "tobe 6/19/2019 08:30",
-		"score" : "tobe 6/19/2019 08:30",
-		"score:" : "tobe 6/19/2019 08:30",
-		"selectedPlace" : "tobe 6/19/2019 08:30",
-		"selectedPlace:" : "tobe 6/19/2019 08:30",
-		"selectedTower" : "tobe 6/19/2019 08:30",
-		"selectedTower:" : "tobe 6/19/2019 08:30",
-		"state" : "tobe 6/19/2019 08:30",
-		"state:" : "tobe 6/19/2019 08:30" } }
+		"coins" : "tobe 7/12/2019 10:43",
+		"coins:" : "tobe 7/12/2019 10:43",
+		"initialize" : "tobe 7/12/2019 10:43",
+		"movingTimeout" : "tobe 7/12/2019 10:43",
+		"movingTimeout:" : "tobe 7/12/2019 10:43",
+		"score" : "tobe 7/12/2019 10:43",
+		"score:" : "tobe 7/12/2019 10:43",
+		"selectedPlace" : "tobe 7/12/2019 10:43",
+		"selectedPlace:" : "tobe 7/12/2019 10:43",
+		"selectedTower" : "tobe 7/12/2019 10:43",
+		"selectedTower:" : "tobe 7/12/2019 10:43",
+		"state" : "tobe 7/12/2019 10:43",
+		"state:" : "tobe 7/12/2019 10:43" } }
