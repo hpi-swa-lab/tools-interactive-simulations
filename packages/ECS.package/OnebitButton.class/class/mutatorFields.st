@@ -1,4 +1,4 @@
 as yet unclassified
 mutatorFields
 
-	^ #(#bounds: #active:)
+	^ #(#bounds: #active: #hovered: #visible:)

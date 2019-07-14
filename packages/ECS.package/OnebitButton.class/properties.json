@@ -7,7 +7,9 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"bounds",
-		"active" ],
+		"active",
+		"hovered",
+		"visible" ],
 	"name" : "OnebitButton",
 	"pools" : [
 		 ],

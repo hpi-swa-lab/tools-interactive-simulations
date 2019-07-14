@@ -1,4 +1,4 @@
 as yet unclassified
 fields
 
-	^ #(#bounds #active)
+	^ #(#bounds #active #hovered #visible)

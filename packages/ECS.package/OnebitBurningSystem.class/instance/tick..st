@@ -1,24 +1,25 @@
 as yet unclassified
 tick: aUniverse
 	
-	(aUniverse
-		query: { (#'Health' optional) . (#'Rendered' optional) . #'OnebitBurning' . #'OnebitPosition' . #'id' }
+	aUniverse
+		query: { #'Health' optional . #'Rendered' optional . #'OnebitBurning' . #'OnebitPosition' . #'id' }
 		do: [ :health :burningRendered :burning :position :entity |
-			(health
+			health
 				ifNotNil: [
-					(aUniverse
+					aUniverse
 						spawnNewWith: #( #'OnebitDamage' )
 						do: [ :damage |
-							(damage
+							damage
 								damage: 3;
 								target: entity;
-								color: (ECSColor red);
-								type: #'fire') ]).
-					((aUniverse storageOf: #'OnebitPosition')
+								color: Color red;
+								type: #'fire'].
+					(aUniverse storageOf: #'OnebitPosition')
 						in: aUniverse
 						neighborsOf: position
-						query: { #'OnebitFlammable' . #'id' . (#'OnebitWet' optional) }
+						query: { #'OnebitFlammable' . #'id' . #'OnebitWet' optional }
 						do: [ :flammable :newEntity :wet |
-							(aUniverse attach: #'OnebitBurning' to: newEntity).
-							(wet ifNotNil: [ (aUniverse remove: #'OnebitWet' from: newEntity) ]) ]).
-					(burningRendered ifNotNil: [ ((burningRendered color) alpha: (((health current) / (health max)) asFloat)) ]) ]) ])
+							aUniverse attach: #'OnebitBurning' to: newEntity.
+							wet ifNotNil: [aUniverse remove: #'OnebitWet' from: newEntity]].
+					burningRendered
+						ifNotNil: [burningRendered color alpha: (health current / health max) asFloat]]]

@@ -1,17 +1,20 @@
 as yet unclassified
 tick: aUniverse
 	
-	(aUniverse
+	aUniverse
 		query: #( #'OnebitConfig' #'DeltaTime' )
 		do: [ :config :deltaTime |
-			(aUniverse
+			aUniverse
 				query: #( #'OnebitSpawnPoint' #'OnebitPosition' )
 				do: [ :spawnPoint :spawnPosition |
-					(spawnPoint timeout: ((spawnPoint timeout) - 1)).
-					(((spawnPoint timeout) <= 0)
+					spawnPoint timeout: spawnPoint timeout - 1.
+					spawnPoint timeout <= 0
 						ifTrue: [
 							| enemy |
 							
-							(spawnPoint timeout: (spawnPoint frequency)).
-							(enemy := (aUniverse instanceTemplate: #'Enemy')).
-							((aUniverse getSingle: #'OnebitPosition' of: enemy) x: (spawnPosition x) y: (spawnPosition y)) ]) ]) ])
+							spawnPoint timeout: spawnPoint frequency.
+							enemy := aUniverse instanceTemplate: #'Enemy'.
+							(aUniverse getSingle: #'OnebitPosition' of: enemy)
+								x: spawnPosition x
+								y: spawnPosition y]]].
+	aUniverse query: #( #'OnebitGameState' ) do: [ :state |state coins: state coins + 50]

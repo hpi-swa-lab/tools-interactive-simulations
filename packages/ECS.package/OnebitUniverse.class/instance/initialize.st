@@ -3,7 +3,7 @@ initialize
 
 	super initialize.
 	self
-	stepTime: 37;
+	stepTime: 3.00000000s8;
 	saveFilter: [:u | 
 	(u getSingle: #OnebitGameState of: 1)
 			state: #unset.
@@ -12,13 +12,13 @@ initialize
 		title: 'Render';
 		runContinuously: false;
 		register: OnebitRenderSystem new;
+		register: OnebitPositionDebugRenderSystem new;
 		register: (OnebitUIRenderSystem new
 		constantAt: #TowerButtonAsset put: (ECSTileMapAsset of: #onebit at: (3 , 19 corner: 19 , 35) scale: 4 rotation: 0);
 		constantAt: #DigButtonAsset put: (ECSTileMapAsset of: #onebit at: (10 , 27 corner: 26 , 43) scale: 4 rotation: 0);
 		constantAt: #BoulderButtonAsset put: (ECSTileMapAsset of: #onebit at: (4 , 0 corner: 20 , 16) scale: 4 rotation: 0);
 		constantAt: #TreeButtonAsset put: (ECSTileMapAsset of: #onebit at: (2 , 1 corner: 18 , 17) scale: 4 rotation: 0));
-		register: AnnoFrameCounterSystem new;
-		register: OnebitPositionDebugRenderSystem new);
+		register: AnnoFrameCounterSystem new);
 	register: (Pipeline new
 		title: 'Loop';
 		runContinuously: true;
@@ -53,11 +53,11 @@ initialize
 		register: TowerSystem new;
 		register: OnebitWaterFlowSystem new);
 	spawnNewWith: #(OnebitGameState OnebitConfig Rendered OnebitPosition DeltaTime) do: [:onebitGameState :onebitConfig :rendered :onebitPosition :deltaTime | 
-		onebitGameState state: #unset; movingTimeout: 448; selectedPlace: #Sentry; score: -150; selectedTower: 83; coins: 0.
+		onebitGameState state: #unset; movingTimeout: 267; selectedPlace: #Sentry; score: 0; selectedTower: 84; coins: 2000.
 		onebitConfig scale: 2; tileSize: 16; mapSize: 30 , 30; turnTime: 500; worldBackgroundColor: (Color r: 0.279 g: 0.177 b: 0.236); maxScore: 10000.
-		rendered color: (ECSColor rgba: 16rFFA4FAFF); form: nil.
-		onebitPosition x: 7; y: 14.
-		deltaTime milliseconds: 52; last: 3740373967624; fpsAccumulated: 515; fpsAverage: 23.041474654377883; numAccumulated: 11; elapsed: 18274990];
+		rendered color: (ECSColor rgba: 16r6AA4FAFF); form: nil.
+		onebitPosition x: 1; y: 21.
+		deltaTime milliseconds: 37; last: 3740541543814; fpsAccumulated: 192; fpsAverage: 48.19277108433735; numAccumulated: 8; elapsed: 24435382];
 	
 		addTemplate: (ECSTemplate new
 	name: 'Enemy'; addComponent: (OnebitFlammable new);  addComponent: (OnebitPosition new);  addComponent: (OnebitMoving new velocity: 0 , 0);  addComponent: (Rendered new color: (ECSColor rgba: 16rFF000000);  form: (ECSTileMapAsset of: #onebit at: (29 , 2 corner: 45 , 18) scale: 2 rotation: 0));  addComponent: (OnebitEnemyMinion new nextSteps: nil);  addComponent: (Health new max: 100;  current: 100);  addComponent: (OnebitBlockMovement new cost: 0;  canDamage: false;  canTraverse: false));
@@ -69,7 +69,7 @@ initialize
 	name: 'Sentry'; addComponent: (Rendered new color: (ECSColor rgba: 16rFF000000);  form: (ECSTileMapAsset of: #onebit at: (3 , 19 corner: 19 , 35) scale: 2 rotation: 0));  addComponent: (OnebitPosition new);  addComponent: (OnebitTower new projectileDamage: 39;  reach: 5);  addComponent: (OnebitBlockMovement new cost: 999;  canDamage: false;  canTraverse: false);  addComponent: (OnebitBlocksPlacement new));
 	
 		addTemplate: (ECSTemplate new
-	name: 'TowerProjectile'; addComponent: (Rendered new color: (ECSColor rgba: 16rFF000000);  form: (ECSTileMapAsset of: #onebit at: (14 , 18 corner: 30 , 34) scale: 2 rotation: 0));  addComponent: (OnebitProjectile new sourcePosition: 0 , 0;  targetPosition: 0 , 0;  damage: 75);  addComponent: (OnebitPosition new));
+	name: 'TowerProjectile'; addComponent: (Rendered new color: (ECSColor rgba: 16rFF000000);  form: (ECSTileMapAsset of: #onebit at: (14 , 18 corner: 30 , 34) scale: 2 rotation: 0));  addComponent: (OnebitProjectile new sourcePosition: 0 , 0;  targetPosition: 0 , 0;  damage: 75;  source: 0);  addComponent: (OnebitPosition new));
 	
 		addTemplate: (ECSTemplate new
 	name: 'Base'; addComponent: (Rendered new color: (ECSColor rgba: 16rFF000000);  form: (ECSTileMapAsset of: #onebit at: (6 , 19 corner: 22 , 35) scale: 2 rotation: 0));  addComponent: (OnebitPosition new);  addComponent: (OnebitBase new damageTaken: 0));

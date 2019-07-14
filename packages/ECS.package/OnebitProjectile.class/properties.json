@@ -8,7 +8,8 @@
 	"instvars" : [
 		"sourcePosition",
 		"targetPosition",
-		"damage" ],
+		"damage",
+		"source" ],
 	"name" : "OnebitProjectile",
 	"pools" : [
 		 ],
