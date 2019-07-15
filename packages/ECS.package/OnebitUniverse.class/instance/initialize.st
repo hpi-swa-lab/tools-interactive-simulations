@@ -53,11 +53,11 @@ initialize
 		register: TowerSystem new;
 		register: OnebitWaterFlowSystem new);
 	spawnNewWith: #(OnebitGameState OnebitConfig Rendered OnebitPosition DeltaTime) do: [:onebitGameState :onebitConfig :rendered :onebitPosition :deltaTime | 
-		onebitGameState state: #unset; movingTimeout: 431; selectedPlace: #Tree; score: 410; selectedTower: 0; coins: 450; ticksTillSpawn: 8; spawnTimeout: 15; turnCount: 4.
+		onebitGameState state: #unset; movingTimeout: 105; selectedPlace: #Hole; score: -2290; selectedTower: 0; coins: 1770; ticksTillSpawn: 4; spawnTimeout: 15; turnCount: 1367.
 		onebitConfig scale: 2; tileSize: 16; mapSize: 30 , 30; turnTime: 800; worldBackgroundColor: (Color r: 0.279 g: 0.177 b: 0.236); maxScore: 10000; spawnTimeout: 15; placementCost: 30; towerPlacementCost: 100; coinsPerTurn: 10; startingCoins: 100.
 		rendered color: (ECSColor rgba: 16r6AA4FAFF); form: nil.
-		onebitPosition x: 11; y: 18.
-		deltaTime milliseconds: 21; last: 3740630230490; fpsAccumulated: 296; fpsAverage: 45.87155963302752; numAccumulated: 14; elapsed: 27004351];
+		onebitPosition x: 23; y: 22.
+		deltaTime milliseconds: 20; last: 3740632363461; fpsAccumulated: 314; fpsAverage: 39.138943248532286; numAccumulated: 14; elapsed: 27689895];
 	
 		addTemplate: (ECSTemplate new
 	name: 'Enemy'; addComponent: (OnebitFlammable new);  addComponent: (OnebitPosition new);  addComponent: (OnebitMoving new velocity: 0 , 0);  addComponent: (Rendered new color: (ECSColor rgba: 16rFF000000);  form: (ECSTileMapAsset of: #onebit at: (29 , 2 corner: 45 , 18) scale: 2 rotation: 0));  addComponent: (OnebitEnemyMinion new nextSteps: nil);  addComponent: (Health new max: 1000;  current: 1000);  addComponent: (OnebitBlockMovement new cost: 0;  canDamage: false;  canTraverse: false));
