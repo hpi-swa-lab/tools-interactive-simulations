@@ -1,6 +1,8 @@
 as yet unclassified
 tick: aUniverse
 	
+	| cost |
+	
 	aUniverse
 		query: #( #'UniverseView' )
 		do: [ :view |
@@ -43,5 +45,13 @@ tick: aUniverse
 												in: aUniverse
 												state: state].
 									^ self].
-							placed := aUniverse instanceTemplate: state selectedPlace.
-							(aUniverse getSingle: #'OnebitPosition' of: placed) x: mousePos x y: mousePos y]]]
+							cost := state selectedPlace = #'Sentry'
+									ifTrue: [config towerPlacementCost]
+									ifFalse: [config placementCost].
+							state coins >= cost
+								ifTrue: [
+									placed := aUniverse instanceTemplate: state selectedPlace.
+									(aUniverse getSingle: #'OnebitPosition' of: placed)
+										x: mousePos x
+										y: mousePos y.
+									state coins: state coins - cost]]]]

@@ -18,5 +18,4 @@ tick: aUniverse
 			(aUniverse getSingle: #'OnebitPosition' of: base) vector: config mapSize // 2.
 			aUniverse instanceTemplate: #'Player'.
 			self placeButtonsIn: aUniverse config: config.
-			self placeTowerButtonsIn: aUniverse config: config.
-			self placeSpawnPointsIn: aUniverse config: config]
+			self placeTowerButtonsIn: aUniverse config: config]

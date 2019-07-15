@@ -9,4 +9,4 @@ updateComponents: aCollection
 			i := i + 1]].
 	
 	" delete components if we currently have more than we should display. (we start at size instead of size+1 because we skipped #id earlier) "
-	self body submorphs from: aCollection size to: self body submorphCount do: [:m | self body removeMorph: m]
+	self body submorphs from: (aCollection size max: 1) to: self body submorphCount do: [:m | self body removeMorph: m]

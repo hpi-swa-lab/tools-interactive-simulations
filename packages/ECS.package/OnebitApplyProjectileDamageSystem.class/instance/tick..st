@@ -14,9 +14,12 @@ tick: aUniverse
 					ifNil: { projectile targetPosition }.
 			affectedArea
 				do: [ :position |
-					(aUniverse storageOf: #'OnebitPosition')
+					| positions |
+					
+					positions := aUniverse storageOf: #'OnebitPosition'.
+					positions
 						in: aUniverse
-						at: projectile targetPosition
+						at: position
 						query: #( #'Health' #'id' )
 						do: [ :health :entity |
 							| damageType |
@@ -33,5 +36,6 @@ tick: aUniverse
 										type: damageType first;
 										damage: projectile damage;
 										target: entity]].
-					self showImpactIn: aUniverse at: position].
+					self showImpactIn: aUniverse at: position.
+					self maySpawnOilIn: aUniverse from: projectile source at: position].
 			aUniverse remove: projectileEntity]

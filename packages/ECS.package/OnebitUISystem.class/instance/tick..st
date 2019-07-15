@@ -22,9 +22,11 @@ tick: aUniverse
 												getSingle: #'OnebitUpgradeButton'
 												of: entity)
 												ifNotNil: [ :upgrade |
-													aUniverse
-														attach: upgrade projectileType
-														to: gameState selectedTower.
-													gameState
-														coins: gameState coins
-															- upgrade cost]]]]]]
+													gameState coins >= upgrade cost
+														ifTrue: [
+															aUniverse
+																attach: upgrade projectileType
+																to: gameState selectedTower.
+															gameState
+																coins: gameState coins
+																	- upgrade cost]]]]]]]

@@ -6,4 +6,4 @@ removeComponent: aComponentEditor
 	list removeMorph: aComponentEditor.
 	template components remove: component.
 	
-	self allMyInstancesDo: [:entity | self universe remove: component class from: entity]
+	self allMyInstancesDo: [:entity | self universe remove: component className asSymbol from: entity]

@@ -11,7 +11,10 @@
 		"selectedPlace",
 		"score",
 		"selectedTower",
-		"coins" ],
+		"coins",
+		"ticksTillSpawn",
+		"spawnTimeout",
+		"turnCount" ],
 	"name" : "OnebitGameState",
 	"pools" : [
 		 ],

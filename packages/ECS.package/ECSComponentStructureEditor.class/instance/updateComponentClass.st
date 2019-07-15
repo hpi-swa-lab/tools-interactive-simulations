@@ -23,13 +23,13 @@ updateComponentClass
 	
 	component := EntityComponent 
 		subclass: className asSymbol
-		instanceVariableNames: (attributes collect: #first)
+		instanceVariableNames: ((attributes collect: #first) collect: #asSymbol)
 		classVariableNames: ''
 		poolDictionaries: ''
 		category: category.
 	
 	" initialize new fields "
-	(previousAttributes difference: (attributes collect: #first)) do: [:attr |
+	((attributes collect: #first) difference: previousAttributes) do: [:attr |
 		component allInstancesDo: [:inst | inst instVarNamed: attr put: (attributes detect: [:pair | pair first = attr]) second ecsDefault]].
 	
 	"storage type"

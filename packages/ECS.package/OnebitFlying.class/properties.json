@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Onebit",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "OnebitFlying",
+	"pools" : [
+		 ],
+	"super" : "EntityComponent",
+	"type" : "normal" }

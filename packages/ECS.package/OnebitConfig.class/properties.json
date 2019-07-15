@@ -11,7 +11,12 @@
 		"mapSize",
 		"turnTime",
 		"worldBackgroundColor",
-		"maxScore" ],
+		"maxScore",
+		"spawnTimeout",
+		"placementCost",
+		"towerPlacementCost",
+		"coinsPerTurn",
+		"startingCoins" ],
 	"name" : "OnebitConfig",
 	"pools" : [
 		 ],

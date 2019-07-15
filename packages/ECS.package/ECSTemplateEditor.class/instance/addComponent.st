@@ -5,4 +5,4 @@ addComponent
 		template components add: componentClass new.
 		self updateTemplate: template.
 		
-		self allMyInstancesDo: [:entity | self universe attach: componentClass to: entity]]
+		self allMyInstancesDo: [:entity | self universe attach: componentClass name asSymbol to: entity]]

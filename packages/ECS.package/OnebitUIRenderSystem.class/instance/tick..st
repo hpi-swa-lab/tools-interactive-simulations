@@ -13,7 +13,7 @@ tick: aUniverse
 					x := (view mousePosition) x.
 					y := (view mousePosition) y.
 					aUniverse canvas
-						fillRectangle: (0 , 0
+						fillRectangle: (0 , ((view size) y - 10)
 							extent: (gameState score / (config maxScore) asFloat * (view size) x) rounded , 
 							10)
 						color: Color red.
