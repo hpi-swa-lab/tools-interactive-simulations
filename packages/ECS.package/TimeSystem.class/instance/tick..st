@@ -16,8 +16,8 @@ tick: aUniverse
 			deltaTime fpsAccumulated: 0.
 			deltaTime numAccumulated: 0].
 		
-		"aUniverse query: #(Timer id) do: [:timer :id |
+		aUniverse query: #(Timer id) do: [:timer :id |
 			timer timeLeft: timer timeLeft - deltaTime milliseconds.
 			timer timeLeft <= 0 ifTrue: [
 				timer receiver perform: timer selector with: (timer arguments ifNil: [#()]).
-				aUniverse remove: id]]"]
+				aUniverse remove: id]]]
