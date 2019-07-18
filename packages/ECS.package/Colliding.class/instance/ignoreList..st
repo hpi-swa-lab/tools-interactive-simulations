@@ -1,5 +1,5 @@
 as yet unclassified
 ignoreList: anObject
 
-	<ecsType: #Object>
+	<ecsType: #OrderedCollection>
 	ignoreList := anObject

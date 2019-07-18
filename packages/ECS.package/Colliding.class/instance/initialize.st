@@ -3,5 +3,5 @@ initialize
 
 	super initialize.
 
-	ignoreList := nil.
+	ignoreList := ((OrderedCollection new)).
 	group := nil

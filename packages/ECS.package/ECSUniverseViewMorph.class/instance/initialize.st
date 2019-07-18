@@ -7,6 +7,7 @@ initialize
 	
 	viewEntity := self universe spawnNewWith: #(UniverseView) do: [:view | view size: self extent].
 	
+	self universe when: #unpauseAfterError send: #resumeAfterDrawError to: self.
 	self guessDrawPipeline.
 	
 	header addMorphBack: (ECSSelectButton new 

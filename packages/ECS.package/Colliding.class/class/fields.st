@@ -1,3 +1,4 @@
 as yet unclassified
 fields
-	^#(#ignoreList #group)
+
+	^ #(#ignoreList #group)
