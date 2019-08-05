@@ -1,16 +1,17 @@
 as yet unclassified
-removeWatch: anECSWatchedExpressionAttribute
+removeWatch: id
 
-	| endIndex startIndex id watchIndex |
-	id := anECSWatchedExpressionAttribute id.
-	startIndex := self text runs findFirst: [:attributes | attributes includes: anECSWatchedExpressionAttribute].
-	endIndex := self text runs findLast: [:attributes | attributes includes: anECSWatchedExpressionAttribute] startingAt: startIndex.
+	| watchIndex text watchedExpressionAttribute |
+	watchedExpressionAttribute := self text runs findFirst: [:attributes | attributes 
+		anySatisfy: [:each | (each isKindOf: ECSWatchedExpressionAttribute) and: [each id = id]]].
 	
-	self text removeAttribute: anECSWatchedExpressionAttribute.
+	self text removeAttribute: watchedExpressionAttribute.
 	
 	watchIndex := self text runs findFirst: [:attributes | attributes 
 		anySatisfy: [:each | (each isKindOf: ECSTextAnchor) and: [each id = id]]].
-	self text replaceFrom: watchIndex to: watchIndex with: ''.
-	
-	self textEdited: self text.
+	text := self text 
+		copyReplaceFrom: watchIndex - ((self text at: watchIndex - 1 ifAbsent: [$?]) = $") asBit
+		to: watchIndex + ((self text at: watchIndex + 1 ifAbsent: [$?]) = $") asBit
+		with: ''.
+	self setText: text.
 	self hasUnacceptedEdits: true

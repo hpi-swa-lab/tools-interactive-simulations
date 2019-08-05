@@ -1,4 +1,6 @@
-as yet unclassified
+accessing
 menu
 
-	self halt.
+	^ MenuMorph new
+		add: 'remove' target: codeEditor selector: #removeWatch: argument: self id;		
+		yourself

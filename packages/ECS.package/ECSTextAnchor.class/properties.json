@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"id" ],
+		"id",
+		"codeEditor" ],
 	"name" : "ECSTextAnchor",
 	"pools" : [
 		 ],

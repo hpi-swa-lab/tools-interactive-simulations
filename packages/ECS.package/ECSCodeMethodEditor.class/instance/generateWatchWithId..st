@@ -7,5 +7,6 @@ generateWatchWithId: aNumber
 	^ '"' asText, (Text string: (String value: 1)
 		attribute: (ECSTextAnchor new 
 			anchoredMorph: (ECSWatch for: watchName);
+			codeEditor: self;
 			id: aNumber;
 			yourself)), '"'

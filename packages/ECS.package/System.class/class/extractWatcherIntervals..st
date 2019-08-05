@@ -2,7 +2,7 @@ as yet unclassified
 extractWatcherIntervals: aText
 
 	| watcherIntervals interval id |
-	watcherIntervals := Dictionary new.
+	watcherIntervals := OrderedDictionary new.
 	aText isText ifFalse: [^ watcherIntervals].
 	
 	interval := nil.
