@@ -1,0 +1,16 @@
+{
+	"category" : "ECS-Watch",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"count",
+		"countInput",
+		"dark" ],
+	"name" : "ECSDisplayMultiple",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

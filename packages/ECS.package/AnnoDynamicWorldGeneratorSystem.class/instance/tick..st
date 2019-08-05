@@ -4,7 +4,7 @@ tick: aUniverse
 	| chunks tmp chunkPositions corners minDiff minSum maxDiff maxSum |
 	chunkPositions := Set new.
 		
-	aUniverse query: #(AnnoCamera UniverseView) do: [:camera :screenSize |
+	aUniverse query: #(AnnoCamera UniverseView) filter: [:camera :view | camera generateWorld] do: [:camera :screenSize |
 		"camera justMoved ifFalse: [^ self]." "todo: Should also listen for changes to screen size"
 		camera := camera position.
 		screenSize := screenSize size.

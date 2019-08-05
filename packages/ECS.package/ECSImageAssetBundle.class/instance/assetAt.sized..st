@@ -5,7 +5,7 @@ assetAt: aString sized: aPoint
 		at: aString, '@', aPoint asString
 		ifAbsentPut: [ECSImageAsset new
 			identifier: aString;
-			bundle: self title;
+			bundle: self;
 			object: ((self assets at: aString) object scaledIntoFormOfSize: aPoint);
 			isDerived: true;
 			yourself])

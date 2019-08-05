@@ -9,6 +9,7 @@ initialize
 	stepTime := 0.
 	accesses := 0.
 	queryLocalAccesses := 0.
+	pausedAfterError := false.
 	
 	self resetEntityList.
 	

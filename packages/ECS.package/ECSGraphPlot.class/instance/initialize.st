@@ -4,6 +4,8 @@ initialize
 	super initialize.
 	
 	data := ECSCyclicList new.
+	label := ''.
+	labelColor := Color black.
 	
 	self
 		hResizing: #spaceFill;

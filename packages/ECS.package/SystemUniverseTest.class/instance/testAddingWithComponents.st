@@ -2,7 +2,7 @@ as yet unclassified
 testAddingWithComponents
 
 	| universe entity entity2 |
-	universe := SystemUniverse new.
+	universe := Universe new.
 	self assert: (universe queryList: {Colliding}) isEmpty.
 	
 	entity := universe spawnNewWith: {Colliding new}.

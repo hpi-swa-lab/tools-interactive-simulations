@@ -1,4 +1,4 @@
 as yet unclassified
 mutatorFields
 
-	^ #(#position: #justMoved:)
+	^ #(#position: #justMoved: #leftJustDown: #rightJustDown: #leftJustUp: #rightJustUp: #generateWorld:)

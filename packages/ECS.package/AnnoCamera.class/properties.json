@@ -7,7 +7,12 @@
 	"commentStamp" : "",
 	"instvars" : [
 		"position",
-		"justMoved" ],
+		"justMoved",
+		"leftJustDown",
+		"rightJustDown",
+		"leftJustUp",
+		"rightJustUp",
+		"generateWorld" ],
 	"name" : "AnnoCamera",
 	"pools" : [
 		 ],

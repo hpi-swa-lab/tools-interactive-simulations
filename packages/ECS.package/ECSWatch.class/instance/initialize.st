@@ -9,5 +9,5 @@ initialize
 		vResizing: #shrinkWrap;
 		layoutInset: 2;
 		color: (Color gray: 0.9);
-		addMorph: (displayMorph := StringMorph new);
+		addMorph: (displayMorph := ECSWatchView new);
 		startStepping

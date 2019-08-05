@@ -11,4 +11,5 @@ SystemOrganization addCategory: #'ECS-Plumbing'!
 SystemOrganization addCategory: #'ECS-SomeGame'!
 SystemOrganization addCategory: #'ECS-Test'!
 SystemOrganization addCategory: #'ECS-Tools'!
+SystemOrganization addCategory: #'ECS-Watch'!
 SystemOrganization addCategory: #'ECS-UI'!

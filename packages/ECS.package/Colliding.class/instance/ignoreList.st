@@ -1,5 +1,5 @@
 as yet unclassified
 ignoreList
 
-	<ecsType: #Object>
+	<ecsType: #OrderedCollection>
 	^ ignoreList

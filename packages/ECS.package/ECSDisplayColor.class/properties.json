@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Watch",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ECSDisplayColor",
+	"pools" : [
+		 ],
+	"super" : "Morph",
+	"type" : "normal" }

@@ -1,6 +1,8 @@
 {
 	"class" : {
+		"buttonAt:in:do:" : "tobe 7/13/2019 07:34",
 		"in:withCameraTransformDraw:" : "tobe 6/21/2019 07:29",
-		"in:withCameraTransformOn:draw:" : "tobe 6/21/2019 07:49" },
+		"in:withCameraTransformOn:draw:" : "tobe 6/21/2019 07:49",
+		"selectTower:in:state:" : "tobe 7/13/2019 11:18" },
 	"instance" : {
 		 } }

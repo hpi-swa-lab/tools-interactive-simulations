@@ -1,11 +1,21 @@
 {
 	"class" : {
-		"fields" : "cmfcmf 6/16/2019 11:14",
-		"mutatorFields" : "cmfcmf 6/16/2019 11:14",
-		"storage" : "tobe 6/22/2019 08:11" },
+		"fields" : "cmfcmf 6/27/2019 12:13",
+		"mutatorFields" : "cmfcmf 6/27/2019 12:13",
+		"storage" : "cmfcmf 6/27/2019 12:13" },
 	"instance" : {
-		"initialize" : "cmfcmf 6/16/2019 11:14",
-		"justMoved" : "cmfcmf 6/16/2019 11:14",
-		"justMoved:" : "cmfcmf 6/16/2019 11:14",
-		"position" : "cmfcmf 6/16/2019 11:14",
-		"position:" : "cmfcmf 6/16/2019 11:14" } }
+		"generateWorld" : "cmfcmf 6/27/2019 12:13",
+		"generateWorld:" : "cmfcmf 6/27/2019 12:13",
+		"initialize" : "cmfcmf 6/27/2019 12:13",
+		"justMoved" : "cmfcmf 6/27/2019 12:13",
+		"justMoved:" : "cmfcmf 6/27/2019 12:13",
+		"leftJustDown" : "cmfcmf 6/27/2019 12:13",
+		"leftJustDown:" : "cmfcmf 6/27/2019 12:13",
+		"leftJustUp" : "cmfcmf 6/27/2019 12:13",
+		"leftJustUp:" : "cmfcmf 6/27/2019 12:13",
+		"position" : "cmfcmf 6/27/2019 12:13",
+		"position:" : "cmfcmf 6/27/2019 12:13",
+		"rightJustDown" : "cmfcmf 6/27/2019 12:13",
+		"rightJustDown:" : "cmfcmf 6/27/2019 12:13",
+		"rightJustUp" : "cmfcmf 6/27/2019 12:13",
+		"rightJustUp:" : "cmfcmf 6/27/2019 12:13" } }

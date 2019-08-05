@@ -5,7 +5,7 @@ tick: aUniverse
 	buttonData := {{#dirtRoad. 96}. {#woodCutter. 126}. {#tree. 127}. {#market. 153}}.
 	highlight := (ECSImageAsset of: #anno at: 'tools/', 85, '.png' sized: 53, 50).
 
-	aUniverse query: #(UniverseView) filter: [:view | view isCurrent] do: [:view |
+	aUniverse query: #(UniverseView AnnoCamera) filter: [:view :camera | view isCurrent] do: [:view :camera |
 		aUniverse query: #(AnnoState) do: [:state | | buttons y buttonPressed |
 			buttons := aUniverse queryList: #(id AnnoMenuButton Rendered).
 			buttons ifEmpty: [
@@ -14,9 +14,7 @@ tick: aUniverse
 						button index: index.
 						rendered form: (ECSImageAsset of: #anno at: 'tools/', each second, '.png' sized: 53, 50)]]].
 			
-			view rightJustUp ifTrue: [self removeBuildingFromHand: state universe: aUniverse].
-			
-			buttonPressed := view leftJustUp.
+			buttonPressed := camera leftJustUp.
 			y := view size y - 60.
 			buttons do: [:each | | id button rendered position data isHovered |
 				id := each first.

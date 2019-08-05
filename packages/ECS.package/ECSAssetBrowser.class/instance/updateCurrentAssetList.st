@@ -10,4 +10,6 @@ updateCurrentAssetList
 		dataClass :=  Smalltalk at: paramPair second.
 		parameters
 			addMorphBack: (ECSLabel new contents: paramPair first, ':');
-			addMorphBack: (dataClass editorType new value: dataClass ecsDefault)]
+			addMorphBack: (dataClass editorType new value: dataClass ecsDefault)].
+	self fullBounds.
+	self lastSubmorph setScrollDeltas

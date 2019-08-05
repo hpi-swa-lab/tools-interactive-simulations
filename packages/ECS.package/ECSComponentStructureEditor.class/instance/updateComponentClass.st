@@ -1,7 +1,7 @@
 component-updating
 updateComponentClass
 
-	| component className storageType attributes category |
+	| component className storageType attributes category previousAttributes |
 	[
 		className := self validatedClassName.
 		storageType := self validatedStorageType.
@@ -17,12 +17,20 @@ updateComponentClass
 		ifNotNil: [:class | class category] 
 		ifNil: [self universe class category].
 	
+	previousAttributes := (Smalltalk classNamed: className)
+		ifNotNil: [:class | class instVarNames]
+		ifNil: [attributes collect: #first].
+	
 	component := EntityComponent 
 		subclass: className asSymbol
-		instanceVariableNames: (attributes collect: #first)
+		instanceVariableNames: ((attributes collect: #first) collect: #asSymbol)
 		classVariableNames: ''
 		poolDictionaries: ''
 		category: category.
+	
+	" initialize new fields "
+	((attributes collect: #first) difference: previousAttributes) do: [:attr |
+		component allInstancesDo: [:inst | inst instVarNamed: attr put: (attributes detect: [:pair | pair first = attr]) second ecsDefault]].
 	
 	"storage type"
 	component class compile: ('storage\\	^ {1}' withCRs format: {storageType asString}).

@@ -1,11 +1,10 @@
 as yet unclassified
 initialize
 
-	| player1 player2 pipeline |
 	super initialize.
-	
-	pipeline := Pipeline new.
-	pipeline
+	self
+	stepTime: 0;
+	register: (Pipeline new
 		title: 'Game Loop';
 		runContinuously: true;
 		register: TimeSystem new;
@@ -15,36 +14,36 @@ initialize
 		register: PhysicsSystem new;
 		register: ProjectileSystem new;
 		register: InspectorSystem new;
-		register: RenderSystem new;
 		register: PlacementSystem new;
-		register: CleanUpSystem new.
-	
-	self
-		spawnNewWith: #(Gravity DeltaTime UniverseView) do: [:gravity :time :size |
-			gravity force: 0,500.
-			time milliseconds: 0; last: Time millisecondClockValue; elapsed: 0.
-			size size: 0,0];
-		register: pipeline.
-	
-	player1 := self spawnNewWith: #(Label Transform Colliding Physics Jetpack Weapon PlayerInput Rendered) do: [:label :transform :colliding :physics :jetpack :weapon :input : rendered |
+		register: CleanUpSystem new);
+	register: (Pipeline new
+		title: 'Render';
+		runContinuously: false;
+		register: RenderSystem new);
+	spawnNewWith: #(Gravity DeltaTime) do: [:gravity :deltaTime | 
+		gravity force: 0 , 500.
+		deltaTime milliseconds: 21; last: 3740893203325; fpsAccumulated: 213; fpsAverage: 45.146726862302486; numAccumulated: 10; elapsed: 88630];
+	spawnNewWith: #(Jetpack Colliding Rendered Transform PlayerInput Weapon Label Physics) do: [:jetpack :colliding :rendered :transform :playerInput :weapon :label :physics | 
+		jetpack fuel: 200; acceleration: 300; capacity: 200.
+		colliding ignoreList: #(); group: nil.
+		rendered color: (ECSColor rgba: 16rFF000000); form: (ECSImageAsset of: #platformer_base at: 'Player/p2_front.png').
+		transform bounds: (30.0 , 492.0 corner: 96.0 , 584).
+		playerInput acceleration: 30; left: $A; right: $D; up: $W; down: $S; shoot: $C.
+		weapon lastShotTime: 0; cooldown: 100.
 		label label: 'player1'.
-		transform bounds: (30 , 50 extent: 66 , 92).
-		colliding group: nil; ignoreList: #().
-		physics friction: 0.9; velocity: 0 , 0.
-		jetpack acceleration: 300; fuel: 200; capacity: 200.
-		weapon cooldown: 100; lastShotTime: 0.
-		input left: $A; right: $D; up: $W; down: $S; shoot: $C; acceleration: 30.
-		rendered color: (ECSColor rgba: 16rFF000000); form: (ECSImageAsset of: #platformer_base at: 'Player/p2_front.png')].
-	
-	player2 := self spawnNewWith: #(Label Transform Colliding Physics PlayerInput Rendered) do: [:label :transform :colliding :physics :input :rendered |
+		physics velocity: 0.0 , 0; friction: 0.9];
+	spawnNewWith: #(Colliding Rendered Transform PlayerInput Label Physics) do: [:colliding :rendered :transform :playerInput :label :physics | 
+		colliding ignoreList: #(); group: nil.
+		rendered color: (ECSColor rgba: 16rFF0000FF); form: nil.
+		transform bounds: (530.0 , 283.9999999999998 corner: 830.0 , 584).
+		playerInput acceleration: 30; left: $J; right: $L; up: $I; down: $K; shoot: $M.
 		label label: 'player2'.
-		transform bounds: (530,500 extent: 300,300).
-		colliding group: nil; ignoreList: #().
-		physics friction: 0.9; velocity: 0 , 0.
-		input left: $J; right: $L; up: $I; down: $K; shoot: $M; acceleration: 30.
-		rendered color: ECSColor blue; form: nil].
+		physics velocity: 0.0 , 0; friction: 0.9];
+	spawnNewWith: #(Rendered Transform JetpackFuelIndicator) do: [:rendered :transform :jetpackFuelIndicator | 
+		rendered color: (ECSColor rgba: 16rFFFF0000); form: nil.
+		transform bounds: (196 , 0 corner: 396 , 20).
+		jetpackFuelIndicator player: 2];
 	
-	self spawnNewWith: #(Transform Rendered JetpackFuelIndicator) do: [:transform :rendered :indicator |
-		transform bounds: (0,0 extent: 200,20).
-		rendered color: ECSColor red; form: nil.
-		indicator player: player1]
+		addTemplate: (ECSTemplate new
+	name: 'Platform'; addComponent: (Rendered new color: (ECSColor rgba: 16rFF000000);  form: (ECSImageAsset of: #platformer_base at: 'Tiles/stoneRight.png'));  addComponent: (Transform new bounds: (0 , 0 corner: 64 , 64)));
+	yourself

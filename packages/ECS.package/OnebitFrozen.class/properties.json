@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Onebit",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"duration" ],
+	"name" : "OnebitFrozen",
+	"pools" : [
+		 ],
+	"super" : "EntityComponent",
+	"type" : "normal" }

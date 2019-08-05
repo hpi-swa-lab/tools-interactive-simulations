@@ -3,6 +3,9 @@
 		 },
 	"instance" : {
 		"buildStreet:in:" : "tobe 6/10/2019 20:58",
-		"placeSpawnPointsIn:config:" : "tobe 6/13/2019 10:39",
+		"placeButtonsIn:config:" : "tobe 7/13/2019 11:24",
+		"placeSpawnPointsIn:config:" : "tobe 7/12/2019 10:46",
+		"placeTowerButtonsIn:config:" : "tobe 7/14/2019 09:16",
+		"placeTreesIn:config:" : "tobe 7/13/2019 08:00",
 		"spawn:at:config:in:" : "tobe 6/13/2019 10:40",
-		"tick:" : "tobe 6/13/2019 17:48" } }
+		"tick:" : "tobe 7/14/2019 16:06" } }

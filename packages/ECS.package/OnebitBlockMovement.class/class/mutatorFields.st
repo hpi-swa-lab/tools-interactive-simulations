@@ -1,4 +1,4 @@
 as yet unclassified
 mutatorFields
 
-	^ #(#cost:)
+	^ #(#cost: #canDamage: #canTraverse:)

@@ -1,7 +1,7 @@
 ui-building-updating
 updateComponent: aComponent
 
-	component ~~ aComponent
+	component ~~ aComponent or: [aComponent class fields size ~= (self submorphCount - 1)]
 		ifTrue: [
 			self removeAllMorphs.
 			self addMorphBack: (ECSRow new

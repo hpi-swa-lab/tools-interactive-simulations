@@ -1,4 +1,4 @@
 as yet unclassified
 fields
 
-	^ #(#cost)
+	^ #(#cost #canDamage #canTraverse)

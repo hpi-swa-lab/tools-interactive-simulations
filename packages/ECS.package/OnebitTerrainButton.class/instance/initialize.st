@@ -3,4 +3,5 @@ initialize
 
 	super initialize.
 
-	form := nil
+	form := nil.
+	type := #unset
