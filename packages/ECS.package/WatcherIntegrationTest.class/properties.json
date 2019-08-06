@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Test",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"system" ],
+	"name" : "WatcherIntegrationTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }

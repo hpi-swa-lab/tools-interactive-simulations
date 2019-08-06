@@ -4,10 +4,14 @@ method: aMethod
 	| source watcherIntervals offset |
 	method := aMethod.
 	source := aMethod getSourceFromFile.
-	watcherIntervals := aMethod propertyValueAt: #ecsWatcherIntervals ifAbsent: [{}].
+	watcherIntervals := aMethod
+		propertyValueAt: #ecsWatcherIntervals
+		ifAbsent: [Dictionary new].
 	offset := 0.
-	watcherIntervals keysAndValuesDo: [:each :id | | interval |
-		interval := each + offset.
+	watcherIntervals := watcherIntervals associations sortBy: [:a :b | a key start < b key start].
+	watcherIntervals do: [:each | | interval id |
+		interval := each key + offset.
+		id := each value.
 		
 		source addAttribute: (ECSWatchedExpressionAttribute new
 				codeEditor: self;
