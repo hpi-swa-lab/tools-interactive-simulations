@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Platformer",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "PlatRenderSystem",
+	"pools" : [
+		 ],
+	"super" : "System",
+	"type" : "normal" }

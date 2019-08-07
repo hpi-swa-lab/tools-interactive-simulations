@@ -13,7 +13,7 @@ visitMessageNode: aNode
 			accessType: #(remove);
 			sourceRange: (self sourceRangeFor: aNode))].
 	
-	(aNode receiver name = 'aUniverse' and: [aNode selector key = #attach:to:]) ifTrue: [
+	(aNode receiver name = 'aUniverse' and: [aNode selector key = #attach:to:] and: [aNode arguments first isKindOf: LeafNode]) ifTrue: [
 		accesses add: (ECSComponentAccess new
 			componentClass: aNode arguments first key;
 			accessType: #(attach);

@@ -5,7 +5,9 @@ SystemOrganization addCategory: #'ECS-Data'!
 SystemOrganization addCategory: #'ECS-DataFlow'!
 SystemOrganization addCategory: #'ECS-Experiments'!
 SystemOrganization addCategory: #'ECS-Game-Jetpack'!
+SystemOrganization addCategory: #'ECS-Platformer'!
 SystemOrganization addCategory: #'ECS-Onebit'!
+SystemOrganization addCategory: #'ECS-Demo'!
 SystemOrganization addCategory: #'ECS-OpenGL'!
 SystemOrganization addCategory: #'ECS-Plumbing'!
 SystemOrganization addCategory: #'ECS-SomeGame'!

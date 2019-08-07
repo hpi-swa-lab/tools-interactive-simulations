@@ -2,8 +2,8 @@
 	"class" : {
 		 },
 	"instance" : {
-		"testAddingWithComponents" : "cmfcmf 8/5/2019 14:29",
-		"testFetchesCorrectComponents" : "ek 5/15/2019 22:16",
+		"testAddingWithComponents" : "tobe 8/5/2019 16:07",
+		"testFetchesCorrectComponents" : "tobe 8/5/2019 16:06",
 		"testGetOfOptionals" : "tobe 6/19/2019 11:32",
 		"testOptionalComponents" : "tobe 6/13/2019 11:09",
-		"testReuseAfterRemove" : "ek 5/15/2019 22:16" } }
+		"testReuseAfterRemove" : "tobe 8/5/2019 15:38" } }

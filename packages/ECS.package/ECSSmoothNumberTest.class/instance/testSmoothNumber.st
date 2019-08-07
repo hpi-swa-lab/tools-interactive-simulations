@@ -7,7 +7,7 @@ testSmoothNumber
 	self assert: 0 equals: num value.
 	
 	num report: 1.
-	self assert: 0 equals: num value.
+	self assert: 0.1 equals: num value.
 	
 	2 to: 10 do: [:n | num report: n].
 	self assert: 5.5 equals: num value.

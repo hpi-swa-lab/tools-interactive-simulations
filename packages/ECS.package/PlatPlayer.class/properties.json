@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Platformer",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "PlatPlayer",
+	"pools" : [
+		 ],
+	"super" : "EntityComponent",
+	"type" : "normal" }

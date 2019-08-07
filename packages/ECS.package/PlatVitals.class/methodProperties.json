@@ -1,0 +1,19 @@
+{
+	"class" : {
+		"fields" : "tobe 7/23/2019 11:48",
+		"mutatorFields" : "tobe 7/23/2019 11:48",
+		"storage" : "tobe 7/23/2019 11:48" },
+	"instance" : {
+		"health" : "tobe 7/23/2019 11:48",
+		"health:" : "tobe 7/23/2019 11:48",
+		"initialize" : "tobe 7/23/2019 11:48",
+		"mana" : "tobe 7/23/2019 11:48",
+		"mana:" : "tobe 7/23/2019 11:48",
+		"maxHealth" : "tobe 7/23/2019 11:48",
+		"maxHealth:" : "tobe 7/23/2019 11:48",
+		"maxMana" : "tobe 7/23/2019 11:48",
+		"maxMana:" : "tobe 7/23/2019 11:48",
+		"maxStamina" : "tobe 7/23/2019 11:48",
+		"maxStamina:" : "tobe 7/23/2019 11:48",
+		"stamina" : "tobe 7/23/2019 11:48",
+		"stamina:" : "tobe 7/23/2019 11:48" } }

@@ -1,19 +1,21 @@
 as yet unclassified
 tick: aUniverse
 	
-	(aUniverse
+	SBExample self: [OnebitStateSystem new] args: [{ 123 }].
+	
+	aUniverse
 		query: #( #'OnebitGameState' #'OnebitConfig' #'DeltaTime' )
 		do: [ :state :config :deltaTime |
-			(state movingTimeout: ((state movingTimeout) - (deltaTime milliseconds))).
-			(((state movingTimeout) <= 0)
+			SBWatch report: (state movingTimeout: state movingTimeout - deltaTime milliseconds) for: 774088900.
+			state movingTimeout <= 0
 				ifTrue: [
-					(state movingTimeout: (config turnTime)).
-					(aUniverse onceRunPipelineNamed: 'GameTick') ]).
-			(((state state) == #'unset')
+					state movingTimeout: config turnTime.
+					aUniverse onceRunPipelineNamed: 'GameTick'].
+			state state == #'unset'
 				ifTrue: [
-					(state
+					state
 						state: #'init';
 						score: 0;
-						coins: 0).
-					((aUniverse storageOf: #'OnebitPosition') extent: (config mapSize)).
-					(aUniverse onceRunPipelineNamed: 'Generation') ]) ])
+						coins: 0.
+					(aUniverse storageOf: #'OnebitPosition') extent: config mapSize.
+					aUniverse onceRunPipelineNamed: 'Generation']]

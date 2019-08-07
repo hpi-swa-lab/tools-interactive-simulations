@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Demo",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "DemoPlayerControlled",
+	"pools" : [
+		 ],
+	"super" : "EntityComponent",
+	"type" : "normal" }

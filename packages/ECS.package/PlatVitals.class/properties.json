@@ -1,0 +1,19 @@
+{
+	"category" : "ECS-Platformer",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"health",
+		"mana",
+		"stamina",
+		"maxHealth",
+		"maxMana",
+		"maxStamina" ],
+	"name" : "PlatVitals",
+	"pools" : [
+		 ],
+	"super" : "EntityComponent",
+	"type" : "normal" }
