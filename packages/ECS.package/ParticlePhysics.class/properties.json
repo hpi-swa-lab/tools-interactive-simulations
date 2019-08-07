@@ -1,0 +1,16 @@
+{
+	"category" : "ECS-Demo",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"lifetime",
+		"direction",
+		"randomness" ],
+	"name" : "ParticlePhysics",
+	"pools" : [
+		 ],
+	"super" : "EntityComponent",
+	"type" : "normal" }

@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Demo",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "DemoParticleEmitterSystem",
+	"pools" : [
+		 ],
+	"super" : "System",
+	"type" : "normal" }

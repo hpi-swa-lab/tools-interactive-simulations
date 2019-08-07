@@ -1,0 +1,17 @@
+{
+	"category" : "ECS-Demo",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"color",
+		"direction",
+		"randomness",
+		"lifetimeMax" ],
+	"name" : "ParticleEmitter",
+	"pools" : [
+		 ],
+	"super" : "EntityComponent",
+	"type" : "normal" }
