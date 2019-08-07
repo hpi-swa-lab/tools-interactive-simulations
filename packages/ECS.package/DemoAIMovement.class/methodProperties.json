@@ -1,0 +1,11 @@
+{
+	"class" : {
+		"fields" : "tobe 8/7/2019 10:58",
+		"mutatorFields" : "tobe 8/7/2019 10:58",
+		"storage" : "tobe 8/7/2019 10:58" },
+	"instance" : {
+		"initialize" : "tobe 8/7/2019 10:58",
+		"moveLeft" : "tobe 8/7/2019 10:58",
+		"moveLeft:" : "tobe 8/7/2019 10:58",
+		"switchDirectionTimeout" : "tobe 8/7/2019 10:58",
+		"switchDirectionTimeout:" : "tobe 8/7/2019 10:58" } }

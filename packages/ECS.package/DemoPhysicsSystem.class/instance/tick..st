@@ -13,10 +13,6 @@ tick: aUniverse
 				friction := components second friction.
 				components fourth.
 				
-				components second velocity: velocity * (1.0 - (friction * deltaTime dt)) + (gravity force * deltaTime dt).
+				components second velocity: velocity * (1.0 - ("friction"0.3 * deltaTime dt)) + (gravity force * deltaTime dt).
 					(velocity closeTo: 0 @ 0) ifFalse: [
-						self attemptMoving: components by: velocity * deltaTime dt around: colliders universe: aUniverse].
-					
-					components first bounds bottom >= screenSize size y ifTrue: [
-						components first bounds bottom: screenSize size y.
-						components second velocity y: 0]]]]
+						self attemptMoving: components by: velocity * deltaTime dt around: colliders universe: aUniverse]]]]
