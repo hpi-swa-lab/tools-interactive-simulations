@@ -3,6 +3,8 @@ initialize
 
 	super initialize.
 	
+	labels := #().
+	
 	self
 		model: self;
 		getListSelector: #labels;

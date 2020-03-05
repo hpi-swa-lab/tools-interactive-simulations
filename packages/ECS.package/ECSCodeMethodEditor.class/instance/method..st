@@ -8,7 +8,7 @@ method: aMethod
 		propertyValueAt: #ecsWatcherIntervals
 		ifAbsent: [Dictionary new].
 	offset := 0.
-	watcherIntervals := watcherIntervals associations sortBy: [:a :b | a key start < b key start].
+	watcherIntervals := watcherIntervals associations sorted: [:a :b | a key start < b key start].
 	watcherIntervals do: [:each | | interval id |
 		interval := each key + offset.
 		id := each value.
