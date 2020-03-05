@@ -13,7 +13,7 @@ initialize
 	self vResizing: #shrinkWrap.
 	self hResizing: #spaceFill.
 	self changeTableLayout.
-	self cellInset: spacing.
+	self cellGap: spacing.
 	self layoutInset: spacing.
 	self addMorph: (deleteButton := ECSButton new
 		icon: ECSIcon iconRemove;

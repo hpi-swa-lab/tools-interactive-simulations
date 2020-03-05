@@ -3,7 +3,7 @@ addAttribute: aString type: aClass
 
 	| row |
 	row := (ECSRow new 
-		cellInset: (TextStyle defaultFont height / 2) rounded;
+		cellGap: (TextStyle defaultFont height / 2) rounded;
 		
 		addMorphBack: (ECSLabel contents: 'Name:');
 		addMorphBack: (ECSCodeEditor new 

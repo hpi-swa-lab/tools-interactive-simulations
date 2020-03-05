@@ -7,15 +7,15 @@ initialize
 	closeOnPick := false.
 	
 	spacing := (TextStyle defaultFont height / 2) rounded.
-	self changeListDirection: #topToBottom; changeTableLayout; layoutInset: spacing; cellInset: spacing; color: Color white.
+	self changeListDirection: #topToBottom; changeTableLayout; layoutInset: spacing; cellGap: spacing; color: Color white.
 	
 	assetList := ECSRow new
 		wrapDirection: #leftToRight;
-		cellInset: (TextStyle defaultFont height / 4) rounded;
+		cellGap: (TextStyle defaultFont height / 4) rounded;
 		color: Color white.
 	
 	self addMorphBack: (ECSRow new
-		cellInset: spacing * 2;
+		cellGap: spacing * 2;
 		wrapDirection: #leftToRight;
 		addMorphBack: (bundleButton := ECSButton new
 			icon: ECSIcon iconChevron_down;
@@ -24,7 +24,7 @@ initialize
 		addMorphBack: (ECSButton new
 			icon: ECSIcon iconPlus;
 			when: #clicked send: #addAssetBundle to: self);
-		addMorphBack: (parameters := ECSRow new cellInset: 16)).
+		addMorphBack: (parameters := ECSRow new cellGap: 16)).
 	self addMorphBack: (ECSScrollPane new setMorph: assetList).
 	
 	currentBundle := self class assetCache ifNotEmpty: [self class assetCache anyOne] ifEmpty: [].

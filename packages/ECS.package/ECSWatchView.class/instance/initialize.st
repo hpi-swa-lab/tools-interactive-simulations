@@ -9,7 +9,7 @@ initialize
 		changeTableLayout;
 		listDirection: #leftToRight;
 		color: Color transparent;
-		cellInset: 4;
+		cellGap: 4;
 		vResizing: #shrinkWrap;
 		hResizing: #spaceFill;
 		addMorphBack: (ECSIcon iconSearch large; on: #click send: #exploreLastValue to: self);

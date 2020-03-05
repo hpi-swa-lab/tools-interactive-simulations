@@ -5,7 +5,7 @@ initialize
 	super initialize.
 	
 	spacing := (TextStyle defaultFont height / 3) rounded.
-	self layoutInset: spacing; cellInset: spacing.
+	self layoutInset: spacing; cellGap: spacing.
 	self changeListDirection: #leftToRight.
 	self changeTableLayout.
 	self resetColor.

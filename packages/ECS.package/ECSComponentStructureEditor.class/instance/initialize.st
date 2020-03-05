@@ -10,7 +10,7 @@ initialize
 	instVarMorphs := ECSColumn new.
 	
 	self
-		cellInset: (TextStyle defaultFont height / 2) rounded;
+		cellGap: (TextStyle defaultFont height / 2) rounded;
 		addMorphBack: (ECSLabel new contents: 'Name' asText allBold; hResizing: #spaceFill);
 		addMorphBack: nameMorph;
 		addMorphBack: (ECSLabel new contents: 'Storage Type' asText allBold; hResizing: #spaceFill);

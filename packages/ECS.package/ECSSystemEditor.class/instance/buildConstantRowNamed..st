@@ -3,7 +3,7 @@ buildConstantRowNamed: aSymbol
 
 	| row removeButton |
 	row := ECSRow new
-		cellInset: ((TextStyle defaultFont height / 3) rounded);
+		cellGap: ((TextStyle defaultFont height / 3) rounded);
 		addMorphBack: (ECSLabel new contents: aSymbol asString);
 		addMorphBack: (ECSCodeEditor new 
 			value: (self system class classPool at: aSymbol) storeString;

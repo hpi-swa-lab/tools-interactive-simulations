@@ -6,7 +6,7 @@ initialize
 	recording := false.
 	looping := false.
 	
-	self cellInset: (TextStyle defaultFont height / 4) rounded.
+	self cellGap: (TextStyle defaultFont height / 4) rounded.
 	self changeListDirection: #leftToRight.
 	self addMorphBack: (recordButton := ECSButton new
 		icon: (ECSIcon iconCircle);

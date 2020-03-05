@@ -4,7 +4,7 @@ initialize
 	super initialize.
 	
 	self changeListDirection: #topToBottom.
-	self cellInset: (TextStyle defaultFont height / 4) rounded.
+	self cellGap: (TextStyle defaultFont height / 4) rounded.
 
 	self addMorphBack: self currentUniverseWidget.
 	self addMorphBack: (ECSButton new

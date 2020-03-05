@@ -3,7 +3,7 @@ initialize
 	super initialize.
 	self color: Color lightGray.
 	self layoutInset: (TextStyle defaultFont height / 3) rounded.
-	self cellInset: self layoutInset.
+	self cellGap: self layoutInset.
 	hovered := false.
 	active := false.
 	self changeListDirection: #leftToRight.

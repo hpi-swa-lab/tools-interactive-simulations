@@ -9,7 +9,7 @@ initialize
 	self universe when: #start send: #updateIcon to: self.
 	
 	self changeListDirection: #leftToRight.
-	self cellInset: (TextStyle defaultFont height / 4) rounded.
+	self cellGap: (TextStyle defaultFont height / 4) rounded.
 	pauseIcon := ECSIcon new large.
 	
 	self addMorphBack: (ECSUniverseButton spawnNewEntityButtonFor: self).
