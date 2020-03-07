@@ -6,7 +6,8 @@
 		"loadForm:" : "T 5/11/2019 20:25",
 		"open" : "T 5/17/2019 22:28",
 		"registerAssetBundle:forDirectory:requestedIdentifier:assetClass:" : "TB 5/31/2019 11:00",
-		"registerMissingAssetBundle:" : "T 5/16/2019 22:08" },
+		"registerMissingAssetBundle:" : "T 5/16/2019 22:08",
+		"removeAssetBundle:" : "tobe 3/7/2020 15:51" },
 	"instance" : {
 		"addAsset:" : "TB 6/3/2019 16:36",
 		"addAssetBundle" : "TB 5/31/2019 10:55",
