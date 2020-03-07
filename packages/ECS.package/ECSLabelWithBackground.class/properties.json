@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-UI",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ECSLabelWithBackground",
+	"pools" : [
+		 ],
+	"super" : "StringMorph",
+	"type" : "normal" }
