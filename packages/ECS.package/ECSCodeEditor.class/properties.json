@@ -8,7 +8,8 @@
 	"instvars" : [
 		"content",
 		"doItIsAccept",
-		"fullExpand" ],
+		"fullExpand",
+		"onChange" ],
 	"name" : "ECSCodeEditor",
 	"pools" : [
 		 ],

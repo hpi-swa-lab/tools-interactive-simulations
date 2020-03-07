@@ -85,4 +85,5 @@ initialize
 	
 		addTemplate: (ECSTemplate new
 	name: 'Tree'; addComponent: (OnebitBlocksPlacement new);  addComponent: (OnebitFlammable new);  addComponent: (Health new max: 100;  current: 100);  addComponent: (Rendered new color: (ECSColor rgba: 16rFF000000);  form: (ECSTileMapAsset of: #onebit at: (3 , 1 corner: 19 , 17) scale: 2 rotation: 0));  addComponent: (OnebitPosition new));
+	save;
 	yourself

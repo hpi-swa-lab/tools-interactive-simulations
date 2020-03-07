@@ -46,4 +46,5 @@ initialize
 	
 		addTemplate: (ECSTemplate new
 	name: 'Platform'; addComponent: (Rendered new color: (ECSColor rgba: 16rFF000000);  form: (ECSImageAsset of: #platformer_base at: 'Tiles/stoneRight.png'));  addComponent: (Transform new bounds: (0 , 0 corner: 64 , 64)));
+	save;
 	yourself

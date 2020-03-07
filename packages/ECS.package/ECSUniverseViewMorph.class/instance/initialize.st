@@ -5,8 +5,7 @@ initialize
 	
 	self color: Color black.
 	
-	viewEntity := self universe spawnNewWith: #(UniverseView) do: [:view | view size: self extent].
-	
+	self register.
 	self universe when: #unpauseAfterError send: #resumeAfterDrawError to: self.
 	self guessDrawPipeline.
 	

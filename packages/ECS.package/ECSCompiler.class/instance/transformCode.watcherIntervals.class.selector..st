@@ -5,7 +5,7 @@ transformCode: aString watcherIntervals: aDictionary class: aClass selector: aSy
 	
 	offset := 1.
 	newCode := ''.
-	tmp := aDictionary associations sortBy: [:a :b | a key start < b key start].
+	tmp := aDictionary associations sorted: [:a :b | a key start < b key start].
 	tmp do: [:each | | interval id watchName |
 		interval := each key.
 		id := each value.

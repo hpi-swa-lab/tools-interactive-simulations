@@ -12,7 +12,7 @@ initialize
 	self queryEditor: (ECSCodeEditor new 
 		content: self queryString;
 		doItIsAccept: true;
-		acceptAction: [:text |
+		onChange: [:text |
 			self queryString: text asString.
 			self updateList];
 		acceptOnCR: true;

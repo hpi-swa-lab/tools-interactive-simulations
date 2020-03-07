@@ -5,4 +5,4 @@ storeInitializeString
 		string nextPutAll: 'super initialize.'.
 		string cr.
 		string nextPutAll: 'self'.
-		self storeAttributeSettingOn: string]
+		self storeAttributeSettingOn: string withState: state]

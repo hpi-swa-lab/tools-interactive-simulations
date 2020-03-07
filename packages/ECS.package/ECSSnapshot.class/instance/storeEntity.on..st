@@ -1,4 +1,4 @@
-api
+as yet unclassified
 storeEntity: anId on: aStream
 
 	| entityComponents |

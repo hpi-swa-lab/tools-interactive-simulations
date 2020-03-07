@@ -7,7 +7,7 @@ editorFor: aFieldSymbol of: aComponent
 	class
 		ifNotNil: [
 			^ (ECSUpdatingEditable new editor: (Smalltalk at: class) editorType new)
-				 onChange: [:val | 
+				 onChange: [:val |
 					aComponent perform: aFieldSymbol asSimpleSetter with: val.
 					self triggerEvent: #changedValue withArguments: {aFieldSymbol. aComponent. val}];
 				 value: value].

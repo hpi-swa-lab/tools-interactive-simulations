@@ -4,5 +4,5 @@ storageOf: aComponentClass
 	| class |
 	^ components at: aComponentClass ifAbsentPut: [
 		self triggerEvent: #componentClassAdded.
-		class := Smalltalk at: aComponentClass value.
+		class := Smalltalk at: aComponentClass.
 		class storage newForType: class]

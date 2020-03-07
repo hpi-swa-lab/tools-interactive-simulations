@@ -5,7 +5,10 @@ updateComponents: aCollection
 	i := 1.
 	aCollection do: [:component |
 		component isNumber ifFalse: [
-			(self submorphAt: i orAdd: [ECSComponentEditor new]) updateComponent: component; parentTool: self.
+			(self submorphAt: i orAdd: [ECSComponentEditor new
+					when: #changedValue
+					send: #update:ofComponent:with:
+					to: self]) updateComponent: component; parentTool: self.
 			i := i + 1]].
 	
 	" delete components if we currently have more than we should display. (we start at size instead of size+1 because we skipped #id earlier) "

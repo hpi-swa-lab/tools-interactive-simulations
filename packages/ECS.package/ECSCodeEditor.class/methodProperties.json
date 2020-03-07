@@ -4,6 +4,7 @@
 	"instance" : {
 		"aboutToStyle:" : "tobe 3/7/2020 16:15",
 		"aboutToStyle:requestor:" : "tobe 3/7/2020 16:15",
+		"accept" : "tobe 3/7/2020 18:29",
 		"completionController" : "TB 6/2/2019 15:20",
 		"content:" : "TB 6/2/2019 15:15",
 		"createCompletionController" : "TB 6/2/2019 15:20",
@@ -20,7 +21,7 @@
 		"initialize" : "tobe 6/19/2019 14:53",
 		"keyStroke:" : "tobe 6/5/2019 20:40",
 		"minExtent" : "tobe 6/19/2019 14:54",
-		"onChange:" : "tobe 7/18/2019 11:24",
+		"onChange:" : "tobe 3/7/2020 18:18",
 		"paragraphSize" : "tobe 6/19/2019 14:50",
 		"privateGetText" : "cf 5/15/2019 11:33",
 		"privateSetText:notifying:" : "tobe 7/18/2019 11:25",

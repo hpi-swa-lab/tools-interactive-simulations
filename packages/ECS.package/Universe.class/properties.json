@@ -14,7 +14,8 @@
 		"canvas",
 		"views",
 		"pausedAfterError",
-		"state" ],
+		"state",
+		"persistedState" ],
 	"name" : "Universe",
 	"pools" : [
 		 ],
