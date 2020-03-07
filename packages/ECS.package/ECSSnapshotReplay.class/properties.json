@@ -9,7 +9,7 @@
 		"recording",
 		"looping",
 		"startTime",
-		"componentSnapshot",
+		"snapshot",
 		"endTime",
 		"recordIcon",
 		"eventHistory",

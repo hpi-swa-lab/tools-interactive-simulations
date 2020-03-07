@@ -8,7 +8,7 @@ toggleLooping
 			progress visible: true.
 			loopingButton label: 'Stop Looping'.
 			
-			componentSnapshot ifNotNil: [
+			snapshot ifNotNil: [
 				looping := true.
 				self universe when: #preTick send: #checkReplay to: self.
 				self playSnapshot]]

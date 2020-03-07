@@ -11,7 +11,7 @@ toggleRecording
 			
 			eventHistory := OrderedCollection new.
 			self universe when: #externalEvent send: #recordEvent: to: self.
-			componentSnapshot := self universe components veryDeepCopy]
+			snapshot := self universe state veryDeepCopy]
 		ifTrue: [
 			recording := false.
 			self universe query: #(DeltaTime) do: [:deltaTime | endTime := deltaTime elapsed].

@@ -1,4 +1,0 @@
-accessing
-maxEntityIndex
-
-	^ state maxEntityIndex
