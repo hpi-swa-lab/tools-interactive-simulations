@@ -1,6 +1,4 @@
-entity lifecycle
-remove: anEntityId
+accessing
+remove: anEntity
 
-	freeIndexList add: anEntityId.
-	" could also be deferred by keeping an 'alive' bitset "
-	components do: [:list | list remove: anEntityId]
+	state remove: anEntity

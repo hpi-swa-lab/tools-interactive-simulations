@@ -1,4 +1,4 @@
-component lifecyle
+as yet unclassified
 fetchComponentsInto: aCollection componentLists: lists at: entityIndex do: aBlock componentClasses: aCollectionOfClasses spread: aBoolean
 
 	1 to: lists size do: [:index | | list component |

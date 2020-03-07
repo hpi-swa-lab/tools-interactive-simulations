@@ -18,4 +18,5 @@ spawnNewEntity
 	
 	newEntity := self universe spawnNewWith: entityComponents."
 	
-	ECSEntityComponentFilter openForId: self universe allocateEntity universe: self universe
+	self universe spawnNewWith: {} do: [:entity |
+		ECSEntityComponentFilter openForId: entity universe: self universe]

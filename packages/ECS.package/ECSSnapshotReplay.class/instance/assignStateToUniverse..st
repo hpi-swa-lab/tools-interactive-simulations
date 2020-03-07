@@ -1,4 +1,4 @@
 replay
 assignStateToUniverse: aCollectionOfComponents
 
-	self universe components: componentSnapshot veryDeepCopy
+	self universe components: aCollectionOfComponents veryDeepCopy

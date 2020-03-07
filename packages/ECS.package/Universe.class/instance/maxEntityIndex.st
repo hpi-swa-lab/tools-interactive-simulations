@@ -1,4 +1,4 @@
 accessing
 maxEntityIndex
 
-	^ maxEntityIndex
+	^ state maxEntityIndex

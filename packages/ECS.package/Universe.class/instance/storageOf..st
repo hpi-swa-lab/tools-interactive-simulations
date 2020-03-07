@@ -1,4 +1,4 @@
 component lifecyle
 storageOf: aClassSymbol
 
-	^ components at: aClassSymbol
+	^ self storageOf: aClassSymbol

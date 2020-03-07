@@ -1,4 +1,4 @@
-entity lifecycle
+as yet unclassified
 resetEntityList
 
 	components := IdentityDictionary new.

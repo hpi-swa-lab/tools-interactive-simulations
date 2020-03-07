@@ -7,12 +7,11 @@ initialize
 	templates := OrderedCollection new.
 	views := OrderedCollection new.
 	stepTime := 0.
-	accesses := 0.
-	queryLocalAccesses := 0.
 	pausedAfterError := false.
 	
-	self resetEntityList.
+	running := false.
 	
-	components at: #id put: IndexStorage new.
-	
-	running := false
+	state := ECSSnapshot new
+		when: #componentClassAdded send: #triggerEvent: to: self with: #componentClassAdded;
+		when: #queryReport send: #queryReport:for: to: self;
+		yourself

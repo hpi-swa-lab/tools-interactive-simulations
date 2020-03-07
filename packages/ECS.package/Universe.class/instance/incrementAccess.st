@@ -1,4 +1,4 @@
 accessing
 incrementAccess
 
-	accesses := accesses + 1
+	state incrementAccess

@@ -20,7 +20,7 @@ visitMessageNode: aNode
 			sourceRange: (self sourceRangeFor: aNode))].
 		
 	(aNode receiver name = 'aUniverse' and: [aNode selector key = #queryList:]) ifTrue: [
-		aNode arguments first key do: [:comp |
+		(ECSFindQueryVisitor listElements: aNode arguments first) do: [:comp |
 			accesses add: (ECSComponentAccess new
 				componentClass: comp;
 				accessType: #(read write);

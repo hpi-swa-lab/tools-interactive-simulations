@@ -1,4 +1,4 @@
 accessing
 accesses: aNumber
 
-	accesses := aNumber
+	state accesses: aNumber

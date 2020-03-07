@@ -4,6 +4,6 @@ initialize
 	super initialize.
 	
 	self universe
-		when: #componentAdded
+		when: #componentClassAdded
 		send: #updateList
 		to: self

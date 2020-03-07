@@ -1,8 +1,8 @@
-api
+as yet unclassified
 query: aListOfComponentClasses do: aBlock spread: aBoolean
 
 	| lists filledComponents start |
-	lists := aListOfComponentClasses collect: [:class | components at: class value ifAbsentPut: [self constructStorageFor: class]].
+	lists := aListOfComponentClasses collect: [:class | self storageOf: class value].
 	
 	start := queryLocalAccesses.
 	

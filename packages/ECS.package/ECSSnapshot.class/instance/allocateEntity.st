@@ -1,4 +1,4 @@
-entity lifecycle
+as yet unclassified
 allocateEntity
 
 	| index |
