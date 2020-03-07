@@ -2,17 +2,19 @@ drawing
 drawOn: aCanvas
 
 	| offset barWidth leftPadding rightPadding |
-	total <= 0 ifTrue: [
-		aCanvas drawString: 'No data yet...' in: (self position extent: self extent) font: nil color: Color black.
-		^ self].
-	
 	"leave some space for displaying the title and total time"
 	leftPadding := 52.
 	rightPadding := 40.
 	
-	aCanvas drawString: title 
+	aCanvas drawString: title
 		in: (self position extent: leftPadding@self height) 
 		font: nil color: Color black.
+	
+	total < 0 ifTrue: [
+		^ aCanvas drawString: '<no data yet>' in: (self position + (leftPadding @ 0) extent: self extent) font: nil color: Color black].
+	
+	total = 0 ifTrue: [
+		^ aCanvas drawString: '<below 1ms>' in: (self position + (leftPadding @ 0) extent: self extent) font: nil color: Color black].
 	
 	barWidth := (self width - leftPadding - rightPadding) max: 0.
 	offset := leftPadding.
