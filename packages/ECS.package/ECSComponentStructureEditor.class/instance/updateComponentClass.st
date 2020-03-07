@@ -35,7 +35,7 @@ updateComponentClass
 	"storage type"
 	component class compile: ('storage\\	^ {1}' withCRs format: {storageType asString}).
 	component class compile: ('fields\\	^ {1}' withCRs format: {((attributes collect: #first) collect: #asSymbol) storeString}).
-	component class compile: ('mutatorFields\\	^ {1}' withCRs format: {(((attributes collect: #first) collect: #asSymbol) collect: #asMutator) storeString}).
+	component class compile: ('mutatorFields\\	^ {1}' withCRs format: {(((attributes collect: #first) collect: #asSymbol) collect: #asSimpleSetter) storeString}).
 	
 	"attributes"
 	

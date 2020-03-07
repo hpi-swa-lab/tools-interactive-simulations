@@ -3,4 +3,4 @@ updatePerformAccessor
 
 	| inst |
 	inst := self new.
-	^ [inst perform: #x asMutator with: 6; perform: #y asMutator with: 20] bench
+	^ [inst perform: #x asSimpleSetter with: 6; perform: #y asSimpleSetter with: 20] bench
