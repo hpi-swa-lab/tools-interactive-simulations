@@ -1,7 +1,7 @@
 api
 query: aListOfComponentClasses filter: aFilterBlock do: aBlock
 
-	self
+	state
 		query: aListOfComponentClasses
 		do: [:components |
 			(aFilterBlock valueWithArguments: components)

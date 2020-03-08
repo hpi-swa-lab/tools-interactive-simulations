@@ -1,7 +1,7 @@
 as yet unclassified
 in: aUniverse combinedQuery: aCollection with: anotherCollection do: aBlock
 	
-	(aUniverse
+	(aUniverse state
 		query: (aCollection copyWith: #'OnebitPosition')
 		do: [ :components |
 			| testPosition |

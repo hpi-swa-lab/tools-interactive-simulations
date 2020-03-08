@@ -6,7 +6,7 @@
 		"addMethod" : "ek 6/21/2019 17:45",
 		"buildConstantRowNamed:" : "tobe 3/5/2020 19:39",
 		"buildConstantsArea" : "tobe 7/8/2019 17:36",
-		"buildMethodUIElementfor:of:" : "tobe 7/18/2019 11:23",
+		"buildMethodUIElementfor:of:" : "tobe 3/7/2020 18:32",
 		"buildRequiredMethodUIElementfor:of:" : "tobe 7/18/2019 11:26",
 		"buildSystemFunctionsAreaAndFillIt" : "ek 6/21/2019 17:34",
 		"initialize" : "ek 6/21/2019 17:37",
@@ -26,4 +26,5 @@
 		"system:" : "ek 6/21/2019 15:49",
 		"togglePaused" : "ek 6/21/2019 16:09",
 		"universe" : "ek 6/21/2019 17:38",
-		"updateLabel" : "ek 6/21/2019 16:27" } }
+		"updateLabel" : "ek 6/21/2019 16:27",
+		"viewsChanged" : "tobe 3/7/2020 18:33" } }

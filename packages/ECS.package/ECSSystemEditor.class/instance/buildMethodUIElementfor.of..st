@@ -16,6 +16,7 @@ buildMethodUIElementfor: aMethodSymbol of: aSystem
 				replaceOnSelectorChange: true;
 				method: (aSystem class lookupSelector: aMethodSymbol);
 				when: #saved send: #maybeUnpauseAfterError to: self;
+				when: #saved send: #viewsChanged to: self;
 				"when: #changedSelector send: #updateMethodSelectorTo:from:in: to: self withArguments: {nil. aMethodSymbol. aSystem};"
 				yourself);
 			collapse))) value

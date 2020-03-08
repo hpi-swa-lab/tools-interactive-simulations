@@ -1,5 +1,6 @@
 as yet unclassified
 value: aCharacter
 
-	value := aCharacter.
-	self label: aCharacter storeString
+	aCharacter = value ifFalse: [
+		value := aCharacter.
+		self label: aCharacter storeString]

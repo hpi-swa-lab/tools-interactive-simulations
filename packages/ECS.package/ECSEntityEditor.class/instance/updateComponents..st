@@ -8,7 +8,9 @@ updateComponents: aCollection
 			(self submorphAt: i orAdd: [ECSComponentEditor new
 					when: #changedValue
 					send: #update:ofComponent:with:
-					to: self]) updateComponent: component; parentTool: self.
+					to: self;
+					parentTool: self;
+					yourself]) updateComponent: component.
 			i := i + 1]].
 	
 	" delete components if we currently have more than we should display. (we start at size instead of size+1 because we skipped #id earlier) "
