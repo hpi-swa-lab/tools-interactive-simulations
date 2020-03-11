@@ -1,4 +1,5 @@
 api
 save
 
-	persistedState := state veryDeepCopy
+	persistedState := state veryDeepCopy.
+	self markAllPersisted

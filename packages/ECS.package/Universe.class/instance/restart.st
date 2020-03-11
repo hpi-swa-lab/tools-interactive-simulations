@@ -2,6 +2,9 @@ api
 restart
 
 	state := persistedState veryDeepCopy.
-	self start.
+	
+	self
+		markAllPersisted;
+		start.
 	
 	self views do: #register

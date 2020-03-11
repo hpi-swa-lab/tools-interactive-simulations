@@ -2,10 +2,16 @@
 	"class" : {
 		 },
 	"instance" : {
+		"buildFor:" : "tobe 3/11/2020 17:31",
 		"component" : "T 5/17/2019 21:32",
-		"editorFor:of:" : "tobe 3/7/2020 17:55",
+		"editorFor:of:" : "tobe 3/11/2020 16:09",
+		"id" : "tobe 3/11/2020 16:19",
+		"id:" : "tobe 3/11/2020 16:19",
 		"openHighlightedMultiPipelineEditor" : "ek 6/21/2019 12:56",
 		"parentTool" : "ek 6/6/2019 16:45",
 		"parentTool:" : "ek 6/6/2019 16:45",
+		"rebuild" : "tobe 3/11/2020 17:29",
 		"removeMe" : "tobe 6/22/2019 09:20",
-		"updateComponent:" : "tobe 7/15/2019 08:08" } }
+		"universe" : "tobe 3/11/2020 16:19",
+		"universe:" : "tobe 3/11/2020 17:29",
+		"updateComponent:" : "tobe 3/11/2020 17:28" } }
