@@ -1,4 +1,4 @@
-accessing
+entity lifecycle
 remove: anEntity persisted: aBoolean
 
 	state remove: anEntity.

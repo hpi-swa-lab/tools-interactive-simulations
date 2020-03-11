@@ -1,4 +1,0 @@
-accessing
-handlesKeyboard: anEvent
-
-	^ true
