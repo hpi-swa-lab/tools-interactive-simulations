@@ -15,7 +15,8 @@
 		"views",
 		"pausedAfterError",
 		"state",
-		"persistedState" ],
+		"persistedState",
+		"autoPersist" ],
 	"name" : "Universe",
 	"pools" : [
 		 ],

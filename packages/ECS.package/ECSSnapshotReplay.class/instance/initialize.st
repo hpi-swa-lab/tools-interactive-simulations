@@ -6,6 +6,8 @@ initialize
 	recording := false.
 	looping := false.
 	
+	self universe when: #toolStateMutation send: #snapshotSet:in:of:to:persist: to: self.
+	
 	self cellGap: (TextStyle defaultFont height / 4) rounded.
 	self changeListDirection: #leftToRight.
 	self addMorphBack: (recordButton := ECSButton new

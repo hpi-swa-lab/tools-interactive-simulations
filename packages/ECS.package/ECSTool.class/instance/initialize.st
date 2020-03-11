@@ -9,4 +9,6 @@ initialize
 	self hResizing: #spaceFill.
 	self addMorphBack: (header := ECSToolHeader new tool: self).
 	
-	detached := false
+	detached := false.
+	
+	self addKeyboardCaptureFilter: self

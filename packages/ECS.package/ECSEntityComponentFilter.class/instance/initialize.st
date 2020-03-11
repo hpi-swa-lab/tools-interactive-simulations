@@ -22,4 +22,7 @@ initialize
 	self addMorphBack: (ECSScrollPane new setMorph: list).
 	self addMorphBack: (ECSToolResizer new target: self).
 	self height: 200 * (TextStyle defaultFont height / 10) rounded.
-	self vResizing: #rigid
+	self vResizing: #rigid.
+	
+	self header
+		addMorphBack: (ECSUniverseButton spawnNewEntityButtonFor: self)

@@ -14,10 +14,13 @@ initialize
 		#Logic -> ECSSmoothNumber new.
 		#Drawing -> ECSSmoothNumber new}.
 	
-	self 
+	self
 		addMorphBack: (logicBar := self makeBar: 'Logic');
 		addMorphBack: (drawBar := self makeBar: 'Drawing');
 		addMorphBack: (overallBar := self makeBar: 'Overall').
+	
+	self header
+		addMorphBack: (ECSUniverseButton profileButtonFor: self).
 	
 	self universe
 		when: #preTick send: #clearLogicStatistics to: self;

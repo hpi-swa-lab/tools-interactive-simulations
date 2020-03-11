@@ -6,6 +6,7 @@
 		"accesses:" : "tobe 3/7/2020 17:10",
 		"allComponentsOf:do:" : "tobe 3/7/2020 16:46",
 		"allocateEntity" : "tobe 3/7/2020 16:49",
+		"allocateEntity:" : "tobe 3/11/2020 13:43",
 		"attach:to:" : "tobe 3/7/2020 17:02",
 		"components" : "tobe 3/7/2020 17:11",
 		"fetchComponentsInto:componentLists:at:do:componentClasses:spread:" : "tobe 3/7/2020 17:08",
