@@ -1,0 +1,14 @@
+{
+	"category" : "ECS",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "PlacementDrawSystem",
+	"pools" : [
+		 ],
+	"super" : "System",
+	"type" : "normal" }

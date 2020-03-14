@@ -16,7 +16,10 @@
 		"rightJustUp",
 		"rightJustDown",
 		"rightDown",
-		"mousePositionDelta" ],
+		"mousePositionDelta",
+		"shiftPressed",
+		"commandKeyPressed",
+		"controlKeyPressed" ],
 	"name" : "UniverseView",
 	"pools" : [
 		 ],

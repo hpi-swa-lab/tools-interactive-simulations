@@ -7,4 +7,5 @@ handleMouseMove: anEvent from: aViewId
 	view 
 		mousePositionDelta: position - view mousePosition;
 		mousePosition: position.
+	self updateModifiersWith: anEvent for: aViewId.
 	self triggerEvent: #externalEvent with: {anEvent. aViewId}

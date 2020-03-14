@@ -11,9 +11,9 @@ storeAttributeSettingOn: aStream withState: aState
 	
 	self saveFilter
 		ifNotNil: [(self saveFilter value: self) do: [:components | aState storeEntity: components first on: aStream]]
-		ifNil: [(1 to: self maxEntityIndex) do: [:entity | self storeEntity: entity on: aStream]].
+		ifNil: [(1 to: aState maxEntityIndex) do: [:entity | aState storeEntity: entity on: aStream]].
 	
 	self templates do: [:template |
 		aStream cr; tab; nextPutAll: 'addTemplate: '. template storeOn: aStream. aStream nextPut: $;; cr].
 	
-	aStream nextPutAll: 'yourself'
+	aStream nextPutAll: 'save; yourself'

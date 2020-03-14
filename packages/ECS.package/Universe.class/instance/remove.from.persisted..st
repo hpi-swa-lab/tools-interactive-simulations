@@ -1,8 +1,9 @@
 component lifecyle
 remove: aComponentClass from: anEntityIndex persisted: aBoolean
 
-	state remove: aComponentClass from: anEntityIndex.
 	(aBoolean and: [self canPersistChangeTo: anEntityIndex component: aComponentClass]) ifTrue: [
+		state remove: aComponentClass from: anEntityIndex.
 		persistedState remove: aComponentClass from: anEntityIndex.
 		^ true].
+	state remove: aComponentClass from: anEntityIndex.
 	^ false

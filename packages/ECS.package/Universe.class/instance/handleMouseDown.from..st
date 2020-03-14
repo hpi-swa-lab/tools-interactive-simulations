@@ -5,5 +5,6 @@ handleMouseDown: anEvent from: aViewId
 	view := self getSingle: #UniverseView of: aViewId.
 	anEvent redButtonChanged ifTrue: [view leftJustDown: true; leftDown: true].
 	anEvent yellowButtonChanged ifTrue: [view rightJustDown: true; rightDown: true].
-	anEvent blueButtonChanged ifTrue: [view middleJustDown: true; middleDown: true].
+	"anEvent blueButtonChanged ifTrue: [view middleJustDown: true; middleDown: true]."
+	self updateModifiersWith: anEvent for: aViewId.
 	self triggerEvent: #externalEvent with: {anEvent. aViewId}

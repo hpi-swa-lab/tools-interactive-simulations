@@ -13,4 +13,7 @@ initialize
 	rightJustUp := false.
 	rightJustDown := false.
 	rightDown := false.
-	mousePositionDelta := 0 , 0
+	mousePositionDelta := 0 , 0.
+	shiftPressed := false.
+	commandKeyPressed := false.
+	controlKeyPressed := false

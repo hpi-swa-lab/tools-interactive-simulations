@@ -1,0 +1,14 @@
+{
+	"category" : "ECS",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"block" ],
+	"name" : "ECSEditorEvent",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

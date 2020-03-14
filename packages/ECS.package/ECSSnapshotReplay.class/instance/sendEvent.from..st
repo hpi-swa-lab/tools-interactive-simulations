@@ -8,4 +8,5 @@ sendEvent: anEvent from: aViewId
 		[#mouseUp] -> [self universe handleMouseUp: anEvent from: aViewId].
 		[#keyDown] -> [self universe handleKeyDown: anEvent from: aViewId].
 		[#keyUp] -> [self universe handleKeyUp: anEvent from: aViewId].
+		[#editorEvent] -> [self universe handleEditorEvent: anEvent]
 	} otherwise: [self error: 'unknown event type recorded']

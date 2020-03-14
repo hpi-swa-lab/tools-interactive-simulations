@@ -1,4 +1,4 @@
 as yet unclassified
-gridSize
+block
 
-	^ 100
+	^ block
