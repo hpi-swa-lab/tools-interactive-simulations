@@ -1,4 +1,4 @@
-SystemOrganization addCategory: #ECS!
+SystemOrganization addCategory: #'ECS-Core'!
 SystemOrganization addCategory: #'ECS-AnnoUniverse'!
 SystemOrganization addCategory: #'ECS-CodeInstrumentation'!
 SystemOrganization addCategory: #'ECS-Data'!
