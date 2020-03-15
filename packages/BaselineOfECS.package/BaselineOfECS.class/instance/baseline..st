@@ -17,7 +17,7 @@ baseline: spec
 			package: 'ECS-CodeInstrumentation';
 			package: 'ECS-DataFlow';
 			package: 'ECS-Experiments';
-			package: 'ECS-OpenGL' with: [spec requires: '3DTransform'];
+			package: 'ECS-OpenGL' with: [spec requires: #('3DTransform')];
 			package: 'ECS-Plumbing';
 			package: 'ECS-Test';
 			package: 'ECS-Tools';
@@ -28,8 +28,9 @@ baseline: spec
 			package: 'ECS-Game-Jetpack';
 			package: 'ECS-Game-Anno';
 			package: 'ECS-Game-Onebit';
-			package: 'ECS-Game-Platformer';
-			
+			package: 'ECS-Game-Platformer'.
+		
+		spec
 			group: 'default' with: #('ECS-Core' 'ECS-Data' 'ECS-CodeInstrumentation' 'ECS-DataFlow' 'ECS-Plumbing' 'ECS-Test' 'ECS-Tools' 'ECS-Watch' 'ECS-UI');
 			group: 'withExamples' with: #('default' 'ECS-Game-Platformer' 'ECS-Game-SomeGame' 'ECS-Game-Jetpack' 'ECS-Game-Anno' 'ECS-Game-Onebit' 'ECS-Game-Demo');
 			group: 'full' with: #('withExamples' 'ECS-Experiments' 'ECS-OpenGL')]
