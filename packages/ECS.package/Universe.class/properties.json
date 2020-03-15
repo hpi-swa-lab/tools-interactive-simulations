@@ -16,7 +16,8 @@
 		"pausedAfterError",
 		"state",
 		"persistedState",
-		"autoPersist" ],
+		"autoPersist",
+		"restartOnSave" ],
 	"name" : "Universe",
 	"pools" : [
 		 ],

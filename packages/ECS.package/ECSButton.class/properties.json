@@ -10,7 +10,9 @@
 		"icon",
 		"hovered",
 		"active",
-		"labelMorph" ],
+		"labelMorph",
+		"activeWhen",
+		"activeOwner" ],
 	"name" : "ECSButton",
 	"pools" : [
 		 ],

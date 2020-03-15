@@ -17,6 +17,11 @@ initialize
 	header addMorphBack: pipelineSelectionButton.
 	
 	header addMorphBack: (ECSButton new
+		icon: ECSIcon iconRetweet;
+		activeWhen: #restartOnSave of: self universe;
+		balloonText: 'Restart game on save').
+	
+	header addMorphBack: (ECSButton new
 		icon: (ECSIcon iconPlus);
 		when: #clicked send: #addPipeline to: self;
 		balloonText: 'Add new pipeline').

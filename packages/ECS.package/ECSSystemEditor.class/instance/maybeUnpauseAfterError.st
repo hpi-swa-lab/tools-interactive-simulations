@@ -1,4 +1,0 @@
-accessing
-maybeUnpauseAfterError
-
-	self universe maybeUnpauseAfterError

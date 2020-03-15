@@ -10,6 +10,7 @@ initialize
 	pausedAfterError := false.
 	autoPersist := true.
 	running := false.
+	restartOnSave := false.
 	
 	state := ECSSnapshot new
 		when: #componentClassAdded send: #triggerEvent: to: self with: #componentClassAdded;

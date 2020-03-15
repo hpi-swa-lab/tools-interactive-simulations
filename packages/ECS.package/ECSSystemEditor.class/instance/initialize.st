@@ -4,8 +4,8 @@ initialize
 	| removeButton addMethodButton | 	
 	super initialize.
 	
-	stateButton := ECSButton new icon: (ECSIcon new changeIconName: (self stateIconForRunningState: self system isEnabled)).
-	stateButton
+	stateButton := ECSButton new
+		icon: (ECSIcon new changeIconName: (self stateIconForRunningState: self system isEnabled));
 		when: #clicked send: #togglePaused to: self;
 		balloonText: 'Toggle system paused'.
 	
@@ -37,8 +37,6 @@ initialize
 		
 	self universe when: #postTick send: #updateLabel to: self.
 	
-	self assureExtension.
-	self extension assureOtherProperties.
-	self extension otherProperties at: #ecsSystem put:  self system.
+	self extension setProperty: #ecsSystem toValue: self system.
 	
 	self universe when: #postTick send: #updateLabel to: self

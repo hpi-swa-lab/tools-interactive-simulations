@@ -15,7 +15,7 @@ buildMethodUIElementfor: aMethodSymbol of: aSystem
 			body: (ECSCodeMethodEditor new
 				replaceOnSelectorChange: true;
 				method: (aSystem class lookupSelector: aMethodSymbol);
-				when: #saved send: #maybeUnpauseAfterError to: self;
+				when: #saved send: #codeChangesSaved to: self;
 				when: #saved send: #viewsChanged to: self;
 				"when: #changedSelector send: #updateMethodSelectorTo:from:in: to: self withArguments: {nil. aMethodSymbol. aSystem};"
 				yourself);

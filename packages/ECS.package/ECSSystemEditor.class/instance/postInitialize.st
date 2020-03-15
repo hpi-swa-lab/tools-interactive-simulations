@@ -37,8 +37,6 @@ postInitialize
 		
 	self universe when: #postTick send: #updateLabel:system: to: self withArguments: {systemTitle.  self system}.
 	
-	self assureExtension.
-	self extension assureOtherProperties.
-	self extension otherProperties at: #ecsSystem put:  self system.
+	self setProperty: #ecsSystem toValue: self system.
 	
 	self universe when: #postTick send: #updateLabel:system: to: self withArguments: {systemTitle.  self system}

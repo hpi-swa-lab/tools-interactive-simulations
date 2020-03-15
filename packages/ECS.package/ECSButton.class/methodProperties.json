@@ -2,6 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
+		"activeWhen:of:" : "tobe 3/15/2020 11:57",
 		"drawOn:" : "ek 7/3/2019 11:52",
 		"handlesMouseDown:" : "T 5/13/2019 12:47",
 		"handlesMouseOver:" : "T 5/13/2019 12:47",
@@ -15,4 +16,6 @@
 		"mouseEnter:" : "T 5/13/2019 18:29",
 		"mouseLeave:" : "TB 5/31/2019 06:54",
 		"mouseUp:" : "TB 5/31/2019 06:54",
-		"small" : "T 5/16/2019 08:21" } }
+		"small" : "T 5/16/2019 08:21",
+		"toggleActive" : "tobe 3/15/2020 11:57",
+		"update:" : "tobe 3/15/2020 11:57" } }
