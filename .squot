@@ -1,3 +1,4 @@
 OrderedDictionary {
-	'packages\/ECS.package' : #SquotCypressCodeSerializer
+	'packages\/ECS.package' : #SquotCypressCodeSerializer,
+	'packages\/BaselineOfECS.package' : #SquotCypressCodeSerializer
 }
