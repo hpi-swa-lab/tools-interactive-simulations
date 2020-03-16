@@ -6,6 +6,6 @@ highlightByComponent: aClass
 
 	list submorphsDo: [:systemMorphWrapper | | systemMorph |
 		systemMorph := systemMorphWrapper firstSubmorph.
-		((systemMorph propertyValueAt: #ecsSystem) class usesComponentClass: aClass)
+		((systemMorph valueOfProperty: #ecsSystem) class usesComponentClass: aClass)
 			ifTrue: [systemMorph headerColor: Color cantaloupe]
 			ifFalse: [systemMorph resetHeaderColor]]

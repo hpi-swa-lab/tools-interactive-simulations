@@ -19,6 +19,7 @@ tick: aUniverse
 	
 	aUniverse query: #(UniverseView) do: [:screenSize |
 		aUniverse query: #(Transform JetpackFuelIndicator) do: [:transform :jetpackFuelIndicator | | jetpack |
-			jetpack := (aUniverse get: #(Jetpack) of: jetpackFuelIndicator player) first.
-			transform bounds position: screenSize size x - 200 , 0.
-			transform bounds width: 200 * (jetpack fuel / jetpack capacity)]]
+			jetpack := (aUniverse get: #(Jetpack) of: jetpackFuelIndicator player) ifNotNil: #first.
+			jetpack ifNotNil: [
+				transform bounds position: screenSize size x - 200 , 0.
+				transform bounds width: 200 * (jetpack fuel / jetpack capacity)]]]
