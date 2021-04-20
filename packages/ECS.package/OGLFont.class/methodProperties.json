@@ -1,8 +1,0 @@
-{
-	"class" : {
-		"from:ogl:" : "T 5/8/2019 08:21" },
-	"instance" : {
-		"drawString:at:from:to:color:on:" : "T 5/23/2019 08:52",
-		"height" : "T 5/8/2019 08:24",
-		"initialize" : "T 5/8/2019 08:20",
-		"uploadFont:ogl:" : "T 5/10/2019 23:47" } }
