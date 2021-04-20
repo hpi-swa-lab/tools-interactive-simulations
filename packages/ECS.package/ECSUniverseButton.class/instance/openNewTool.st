@@ -6,7 +6,7 @@ openNewTool
 	availableTools := ECSTool allSubclasses.
 	
 	chosenTool := UIManager default
-		chooseFrom: availableTools
+		chooseFrom: (availableTools collect: #asString)
 		values: availableTools.
 		
 	chosenTool ifNil: [^ self].
