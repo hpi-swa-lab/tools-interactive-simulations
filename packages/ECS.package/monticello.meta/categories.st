@@ -8,7 +8,6 @@ SystemOrganization addCategory: #'ECS-Game-Jetpack'!
 SystemOrganization addCategory: #'ECS-Game-Platformer'!
 SystemOrganization addCategory: #'ECS-Game-Onebit'!
 SystemOrganization addCategory: #'ECS-Game-Demo'!
-SystemOrganization addCategory: #'ECS-OpenGL'!
 SystemOrganization addCategory: #'ECS-Plumbing'!
 SystemOrganization addCategory: #'ECS-Game-SomeGame'!
 SystemOrganization addCategory: #'ECS-Test'!
