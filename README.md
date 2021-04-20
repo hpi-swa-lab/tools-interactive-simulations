@@ -6,9 +6,9 @@ A small simulation and game engine using the Entity-Component-System pattern.
 
 ```smalltalk
 Metacello new
-	baseline: 'ECS';
-	repository: 'github://hpi-swa-lab/tools-Interactive-simulations:master/packages';
-	get; load.
+  baseline: 'ECS';
+  repository: 'github://hpi-swa-lab/tools-interactive-simulations:master/packages';
+  get; load.
 ```
 
 Open example game in the editor:
