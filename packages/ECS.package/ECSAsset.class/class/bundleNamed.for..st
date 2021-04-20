@@ -5,7 +5,9 @@ bundleNamed: aSymbol for: anObject
 		(MCRepositoryGroup default repositories
 			detect: [:repo | (repo isKindOf: MCFetchGithubRepository) and: [repo goferReferences anySatisfy: [:ref | ref name beginsWith: 'ECS-']]]
 			ifFound: [:repo |
-				(self filepathForDirectory: repo directory / '..' / 'assets' / aSymbol identifier: anObject) ifNotNil: [:path |
+				(self
+					filepathForDirectory: repo directory containingDirectory / 'assets' / aSymbol
+					identifier: anObject) ifNotNil: [:path |
 					ECSAssetBrowser
 						registerAssetBundle: aSymbol
 						forDirectory: path

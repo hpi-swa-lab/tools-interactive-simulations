@@ -7,7 +7,10 @@ initialLoadWithRequested: anIdentifierObject
 	self path fullNamesOfAllFilesInSubtree
 		select: [:name | name endsWith: '.png']
 		thenDo: [:name | | identifier |
-			identifier := (name allButFirst: self path fullName size + 1) copyReplaceAll: '\' with: '/'.
-			assets
-				at: identifier
-				put: (ECSImageAsset new bundle: self; identifier: identifier; updateFile: (FileDirectory on: name))]
+			identifier := (name allButFirst: self path fullName size + 1)
+				copyReplaceAll: '\'
+				with: '/'.
+			assets at: identifier put: (ECSImageAsset new
+				bundle: self;
+				identifier: identifier;
+				updateFile: (FileDirectory on: name))]
