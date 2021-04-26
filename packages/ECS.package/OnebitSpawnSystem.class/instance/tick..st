@@ -14,7 +14,7 @@ tick: aUniverse
 						timesRepeat: [
 							| position |
 							
-							enemy := aUniverse instanceTemplate: #'Enemy'.
+							enemy := aUniverse spawnTemplate: #'Enemy'.
 							position := 4 atRandom
 									caseOf: { [1] -> [((config mapSize) x) atRandom - 1 , 0] . [
 											2]

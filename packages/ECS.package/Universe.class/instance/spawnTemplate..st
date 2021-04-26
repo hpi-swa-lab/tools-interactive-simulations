@@ -1,5 +1,5 @@
 api
-instanceTemplate: aSymbol
+spawnTemplate: aSymbol
 
 	^ templates
 		detect: [:t | t name = aSymbol]

@@ -50,7 +50,7 @@ tick: aUniverse
 									ifFalse: [config placementCost].
 							state coins >= cost
 								ifTrue: [
-									placed := aUniverse instanceTemplate: state selectedPlace.
+									placed := aUniverse spawnTemplate: state selectedPlace.
 									(aUniverse getSingle: #'OnebitPosition' of: placed)
 										x: mousePos x
 										y: mousePos y.

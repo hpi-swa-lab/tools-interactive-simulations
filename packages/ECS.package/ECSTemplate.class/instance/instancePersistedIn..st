@@ -6,7 +6,11 @@ instancePersistedIn: aUniverse
 	
 	components do: [:component |
 		component class fieldsDo: [:name :mutate |
-			aUniverse autoPersistSet: name in: component className asSymbol of: entity to: (component perform: name)]].
+			aUniverse
+				autoPersistSet: name
+				in: component className asSymbol
+				of: entity
+				to: (component perform: name) veryDeepCopy]].
 	
 	aUniverse autoPersistAttach: #InstanceOfTemplate to: entity.
 	aUniverse autoPersistSet: #template in: #InstanceOfTemplate of: entity to: self name.

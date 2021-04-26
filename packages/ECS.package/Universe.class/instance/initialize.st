@@ -15,4 +15,5 @@ initialize
 	state := ECSSnapshot new
 		when: #componentClassAdded send: #triggerEvent: to: self with: #componentClassAdded;
 		when: #queryReport send: #queryReport:for: to: self;
-		yourself
+		yourself.
+	persistedState := ECSSnapshot new
