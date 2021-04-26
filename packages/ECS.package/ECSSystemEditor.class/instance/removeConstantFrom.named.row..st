@@ -1,5 +1,5 @@
 button-functionality
 removeConstantFrom: aSystem named: aSymbol row: aMorph
 
-	aSystem class removeClassVarNamed: aSymbol.
+	aSystem class removeClassVarName: aSymbol.
 	aMorph delete
