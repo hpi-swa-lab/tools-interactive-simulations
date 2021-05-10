@@ -2,7 +2,7 @@
 	"class" : {
 		"openFor:with:" : "ek 6/21/2019 17:36" },
 	"instance" : {
-		"addConstant" : "ek 6/21/2019 16:23",
+		"addConstant" : "tobe 4/26/2021 19:47",
 		"addMethod" : "ek 6/21/2019 17:45",
 		"buildConstantRowNamed:" : "tobe 3/5/2020 19:39",
 		"buildConstantsArea" : "tobe 7/8/2019 17:36",
@@ -16,7 +16,7 @@
 		"parentTool:" : "ek 6/21/2019 17:37",
 		"pausedIconName" : "ek 6/21/2019 16:01",
 		"postInitialize" : "tobe 3/15/2020 11:30",
-		"removeConstantFrom:named:row:" : "ek 6/21/2019 17:43",
+		"removeConstantFrom:named:row:" : "tobe 4/26/2021 19:48",
 		"removeMe" : "ek 6/21/2019 16:09",
 		"removeMethod:from:" : "ek 6/21/2019 18:25",
 		"requiredMethodSymbols" : "ek 6/21/2019 17:35",

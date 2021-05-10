@@ -19,7 +19,7 @@ initialize
 	register: (Pipeline new
 		title: 'Render';
 		runContinuously: false;
-		register: RenderSystem new;
+		register: JetpackRenderSystem new;
 		register: PlacementDrawSystem new;
 		register: DemoDebugBoundsSystem new disable);
 	spawnNewWith: #(Gravity DeltaTime) do: [:gravity :deltaTime | 

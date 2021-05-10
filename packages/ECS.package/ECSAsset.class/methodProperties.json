@@ -1,8 +1,9 @@
 {
 	"class" : {
-		"bundleNamed:for:" : "TB 5/31/2019 11:37",
+		"bundleNamed:for:" : "tobe 4/20/2021 16:01",
 		"ecsDefault" : "TB 6/2/2019 12:48",
 		"editorType" : "T 5/27/2019 16:20",
+		"filepathForDirectory:identifier:" : "tobe 4/20/2021 14:14",
 		"of:at:" : "TB 5/31/2019 11:37",
 		"previewSize" : "T 5/16/2019 17:22",
 		"wantsFileChooser" : "TB 5/31/2019 11:06" },
@@ -15,4 +16,5 @@
 		"identifier:" : "TB 5/31/2019 10:29",
 		"isSource" : "TB 5/31/2019 11:30",
 		"previewForm" : "TB 5/31/2019 11:16",
-		"storeOn:" : "tobe 6/6/2019 18:30" } }
+		"storeOn:" : "tobe 6/6/2019 18:30",
+		"veryDeepCopyWith:" : "tobe 4/26/2021 16:01" } }

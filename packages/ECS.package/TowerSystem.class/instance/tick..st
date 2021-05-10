@@ -22,7 +22,7 @@ tick: aUniverse
 				ifNotNil: [
 					| projectile |
 					
-					projectile := aUniverse instanceTemplate: #'TowerProjectile'.
+					projectile := aUniverse spawnTemplate: #'TowerProjectile'.
 					(aUniverse getSingle: #'OnebitProjectile' of: projectile)
 						source: towerEntity;
 						sourcePosition: towerPosition vector;

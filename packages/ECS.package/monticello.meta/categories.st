@@ -4,6 +4,7 @@ SystemOrganization addCategory: #'ECS-CodeInstrumentation'!
 SystemOrganization addCategory: #'ECS-Data'!
 SystemOrganization addCategory: #'ECS-DataFlow'!
 SystemOrganization addCategory: #'ECS-Experiments'!
+SystemOrganization addCategory: #'ECS-Blocks'!
 SystemOrganization addCategory: #'ECS-Game-Jetpack'!
 SystemOrganization addCategory: #'ECS-Game-Platformer'!
 SystemOrganization addCategory: #'ECS-Game-Onebit'!
@@ -14,3 +15,4 @@ SystemOrganization addCategory: #'ECS-Test'!
 SystemOrganization addCategory: #'ECS-Tools'!
 SystemOrganization addCategory: #'ECS-Watch'!
 SystemOrganization addCategory: #'ECS-UI'!
+SystemOrganization addCategory: #'ECS-My'!

@@ -3,9 +3,9 @@ tick
 
 	self triggerEvent: #preTick.
 	[pipelines select: #runContinuously thenDo: [:each | each tick: self]] 
-		on: Exception do: [:err |
+		on: Error, Halt, Warning do: [:err |
 			self pause.
 			pausedAfterError := true.
-			err signal].
+			ToolSet debugException: err].
 	self cleanUpSingleTickState.
 	self triggerEvent: #postTick

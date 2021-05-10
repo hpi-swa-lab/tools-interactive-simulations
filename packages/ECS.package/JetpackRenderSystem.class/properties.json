@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Game-Jetpack",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "JetpackRenderSystem",
+	"pools" : [
+		 ],
+	"super" : "System",
+	"type" : "normal" }
