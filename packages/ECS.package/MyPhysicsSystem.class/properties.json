@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "MyPhysicsSystem",
+	"pools" : [
+		 ],
+	"super" : "System",
+	"type" : "normal" }

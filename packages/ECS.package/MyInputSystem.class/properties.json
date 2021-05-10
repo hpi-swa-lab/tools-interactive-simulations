@@ -1,0 +1,15 @@
+{
+	"category" : "ECS-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"JumpHeight",
+		"MovementSpeed" ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "MyInputSystem",
+	"pools" : [
+		 ],
+	"super" : "System",
+	"type" : "normal" }

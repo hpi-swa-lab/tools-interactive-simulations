@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-My",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "MyUniverse",
+	"pools" : [
+		 ],
+	"super" : "Universe",
+	"type" : "normal" }

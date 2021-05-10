@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"velocity" ],
+	"name" : "MyPhysics",
+	"pools" : [
+		 ],
+	"super" : "EntityComponent",
+	"type" : "normal" }
