@@ -4,7 +4,7 @@ initialize
 	super initialize.
 	
 	self
-		hResizing: #spaceFill;
+		hResizing: #shrinkWrap;
 		vResizing: #shrinkWrap;
 		changeTableLayout;
 		cellGap: 4;
