@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Blocks",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ECSEntityComponentBlock",
+	"pools" : [
+		 ],
+	"super" : "SBBlock",
+	"type" : "normal" }

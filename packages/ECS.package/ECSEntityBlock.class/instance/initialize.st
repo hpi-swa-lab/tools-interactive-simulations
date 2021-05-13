@@ -12,7 +12,8 @@ initialize
 		addMorphBack: (SBRow new
 			cellGap: 8;
 			addMorphBack: (collapseIcon := SBIcon iconChevronDown on: #click send: #toggleCollapsed to: self);
-			addMorphBack: (SBTextBubble new placeholderText: 'Component Name');
+			addMorphBack: (SBTextBubble new placeholderText: 'Entity Name');
 			addMorphBack: (SBIcon iconRemove on: #click send: #deleteBlock to: self));
-		addMorphBack: (SBIcon iconPlus on: #click send: #addField to: self);
-		addMorphBack: ECSComponentBlockField new
+		addMorphBack: (SBIcon iconPlus on: #click send: #addComponent to: self);
+		addMorphBack: ECSComponentBlock new 
+			toggleCollapsed

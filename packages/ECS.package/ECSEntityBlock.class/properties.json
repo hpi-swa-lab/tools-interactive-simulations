@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Blocks",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"collapseIcon" ],
+	"name" : "ECSEntityBlock",
+	"pools" : [
+		 ],
+	"super" : "SBBlock",
+	"type" : "normal" }

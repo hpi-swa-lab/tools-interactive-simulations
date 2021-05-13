@@ -1,10 +1,10 @@
 {
 	"class" : {
-		"newOf:" : "Alexander Junger 5/11/2021 15:59" },
+		"newOf:" : "Alexander Junger 5/13/2021 12:27" },
 	"instance" : {
+		"addBlock" : "Alexander Junger 5/13/2021 12:22",
 		"example" : "Alexander Junger 5/11/2021 15:35",
 		"fixedNumberOfChildren" : "Alexander Junger 5/11/2021 13:59",
 		"initialize" : "Alexander Junger 5/11/2021 14:51",
-		"newEmptyChildNear:before:" : "Alexander Junger 5/11/2021 14:08",
 		"type" : "Alexander Junger 5/11/2021 14:21",
 		"type:" : "Alexander Junger 5/11/2021 14:22" } }
