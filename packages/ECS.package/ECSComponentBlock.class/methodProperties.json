@@ -1,10 +1,11 @@
 {
 	"class" : {
-		 },
+		"title" : "Alexander Junger 5/17/2021 10:37" },
 	"instance" : {
 		"addField" : "Alexander Junger 5/13/2021 12:07",
 		"component:" : "Alexander Junger 5/9/2021 10:58",
 		"componentName" : "Alexander Junger 5/9/2021 10:19",
+		"copyOnDrag" : "Alexander Junger 5/17/2021 11:01",
 		"example" : "Alexander Junger 5/13/2021 11:04",
 		"fields" : "Alexander Junger 5/9/2021 10:56",
 		"fixedNumberOfChildren" : "Alexander Junger 5/9/2021 09:58",

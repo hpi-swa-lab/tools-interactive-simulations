@@ -1,11 +1,12 @@
 {
 	"class" : {
-		 },
+		"title" : "Alexander Junger 5/17/2021 10:36" },
 	"instance" : {
 		"addComponent" : "Alexander Junger 5/13/2021 12:09",
 		"components" : "Alexander Junger 5/13/2021 11:20",
 		"example" : "Alexander Junger 5/13/2021 11:15",
 		"fixedNumberOfChildren" : "Alexander Junger 5/13/2021 11:09",
-		"initialize" : "Alexander Junger 5/13/2021 12:10",
+		"initialize" : "Alexander Junger 5/17/2021 09:31",
 		"isArtefact" : "Alexander Junger 5/13/2021 11:09",
+		"specialDropCommand:" : "Alexander Junger 5/17/2021 10:54",
 		"toggleCollapsed" : "Alexander Junger 5/13/2021 11:21" } }

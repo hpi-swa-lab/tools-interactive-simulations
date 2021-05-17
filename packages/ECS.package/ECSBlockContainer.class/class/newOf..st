@@ -14,9 +14,7 @@ newOf: anECSType
 			cellGap: 8;
 			addMorphBack: (SBIcon iconPlus on: #click send: #addBlock to: container);
 			addMorphBack: (SBStringMorph new
-			contents: (container type == ECSComponentBlock
-				ifTrue: ['Components']
-				ifFalse: ['Entities']);
+			contents: container type title;
 			hResizing: #spaceFill));
 		addMorphBack: SBRow new;
 		addMorphBack: container type new.
