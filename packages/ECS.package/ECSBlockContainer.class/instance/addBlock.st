@@ -1,4 +1,4 @@
 as yet unclassified
 addBlock
 
-	self addMorphBack: type new
+	self addMorphBack: self type new

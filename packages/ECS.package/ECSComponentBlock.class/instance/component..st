@@ -1,9 +1,11 @@
 as yet unclassified
-component: aComponentClass
+component: aComponent
 
-	self componentName contents: aComponentClass name.
-	currentClass := aComponentClass.
-	aComponentClass fields do: [:field |
+	| value |
+	self title: aComponent class asString.
+	currentClass := aComponent.
+	aComponent class fields do: [:field |
+		value := aComponent perform: field.
 		self addMorphBack: (ECSComponentBlockField new
 			fieldName: field;
-			fieldType: (aComponentClass >> (field pragmaAt: #ecsType:)) arguments first)]
+			fieldType: (aComponent class >> field pragmaAt: #ecsType:) arguments first)]

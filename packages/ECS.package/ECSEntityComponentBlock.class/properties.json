@@ -6,7 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
+		"universe",
+		"entities",
+		"components" ],
 	"name" : "ECSEntityComponentBlock",
 	"pools" : [
 		 ],
