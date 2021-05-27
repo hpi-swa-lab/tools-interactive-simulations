@@ -1,7 +1,10 @@
 as yet unclassified
 toggleCollapsed
 
-	self fields ifEmpty: [^ self].
+	self fields ifEmpty: [collapseIcon changeIconName: (collapseIcon iconName == #iconChevronDown 
+		ifTrue: [#iconChevronRight] 
+		ifFalse: [#iconChevronDown]).
+		^ self].
 	self fields do: [:field |
 		field
 			visible: field visible not;

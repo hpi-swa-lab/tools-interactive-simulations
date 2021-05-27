@@ -3,13 +3,14 @@
 		"newOf:" : "Alexander Junger 5/24/2021 11:38" },
 	"instance" : {
 		"addBlock" : "Alexander Junger 5/20/2021 14:56",
-		"editorAt:orAdd:" : "Alexander Junger 5/24/2021 11:37",
+		"components" : "Alexander Junger 5/27/2021 09:57",
+		"editorAt:orAdd:" : "Alexander Junger 5/27/2021 11:02",
 		"elements" : "Alexander Junger 5/24/2021 10:29",
 		"elements:" : "Alexander Junger 5/24/2021 11:37",
 		"example" : "Alexander Junger 5/11/2021 15:35",
 		"fixedNumberOfChildren" : "Alexander Junger 5/11/2021 13:59",
-		"initialize" : "Alexander Junger 5/24/2021 10:46",
+		"initialize" : "Alexander Junger 5/27/2021 09:57",
 		"startDrag:" : "Alexander Junger 5/17/2021 09:20",
 		"type" : "Alexander Junger 5/11/2021 14:21",
 		"type:" : "Alexander Junger 5/11/2021 14:22",
-		"updateElements:" : "Alexander Junger 5/24/2021 11:32" } }
+		"updateElements:" : "Alexander Junger 5/27/2021 11:03" } }
