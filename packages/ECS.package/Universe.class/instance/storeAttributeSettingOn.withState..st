@@ -2,6 +2,7 @@ api
 storeAttributeSettingOn: aStream withState: aState
 
 	aStream cr; nextPutAll: 'stepTime: '. self stepTime storeOn: aStream. aStream nextPut: $;; cr.
+	aStream cr; nextPutAll: 'componentClasses: '. self componentClasses storeOn: aStream. aStream nextPut: $;; cr.
 	
 	self saveFilter ifNotNil: [
 		aStream nextPutAll: 'saveFilter: '. saveFilter storeOn: aStream. aStream nextPut: $;; cr].

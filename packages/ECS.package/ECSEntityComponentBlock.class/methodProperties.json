@@ -2,8 +2,14 @@
 	"class" : {
 		 },
 	"instance" : {
-		"example" : "Alexander Junger 5/13/2021 11:33",
-		"initialize" : "Alexander Junger 5/24/2021 11:29",
+		"example" : "mb 5/27/2021 15:43",
+		"initialize" : "mb 5/29/2021 23:45",
+		"saveSnapshot" : "mb 5/27/2021 15:59",
+		"saveSnapshotButtonFor:" : "mb 5/27/2021 15:56",
+		"saveSnapshotInClass:" : "mb 5/29/2021 23:12",
+		"saveSnapshotInCurrentUniverseClass" : "mb 5/29/2021 23:13",
+		"saveSnapshotInNewUniverseClass" : "mb 5/27/2021 15:55",
+		"saveSnapshotInNewUniverseClassNamed:" : "mb 5/27/2021 15:55",
 		"startDrag:" : "Alexander Junger 5/17/2021 09:19",
 		"universe" : "Alexander Junger 5/20/2021 15:32",
-		"updateList" : "Alexander Junger 5/24/2021 11:32" } }
+		"updateList" : "mb 5/29/2021 23:39" } }

@@ -5,6 +5,7 @@ initialize
 	
 	pipelines := OrderedCollection new.
 	templates := OrderedCollection new.
+	componentClasses := OrderedCollection new.
 	views := OrderedCollection new.
 	stepTime := 0.
 	pausedAfterError := false.

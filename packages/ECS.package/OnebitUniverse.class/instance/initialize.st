@@ -4,6 +4,8 @@ initialize
 	super initialize.
 	self
 	stepTime: 0;
+	
+	componentClasses: ((OrderedCollection new) add: OnebitPosition; add: Health; add: OnebitBase; add: OnebitButton; add: OnebitBlocksPlacement; add: OnebitCameraFocus; add: OnebitMoving; add: OnebitWalking; add: Rendered; add: InstanceOfTemplate; add: OnebitWater; add: OnebitUpgradeButton; add: OnebitEnemyMinion; add: OnebitConfig; add: DeltaTime; add: OnebitTerrainButton; add: PlayerInput; add: UniverseView; add: Label; add: OnebitBlockMovement; add: ECSPersisted; add: OnebitFlammable; add: OnebitGameState; yourself);
 	saveFilter: [:u | 
 	(u getSingle: #OnebitGameState of: 1)
 			state: #unset.
@@ -15,8 +17,8 @@ initialize
 		register: OnebitPositionDebugRenderSystem new disable;
 		register: (OnebitUIRenderSystem new
 		constantAt: #TowerButtonAsset put: (ECSTileMapAsset of: #onebit at: (3 , 19 corner: 19 , 35) scale: 4 rotation: 0);
-		constantAt: #DigButtonAsset put: (ECSTileMapAsset of: #onebit at: (10 , 27 corner: 26 , 43) scale: 4 rotation: 0);
 		constantAt: #BoulderButtonAsset put: (ECSTileMapAsset of: #onebit at: (4 , 0 corner: 20 , 16) scale: 4 rotation: 0);
+		constantAt: #DigButtonAsset put: (ECSTileMapAsset of: #onebit at: (10 , 27 corner: 26 , 43) scale: 4 rotation: 0);
 		constantAt: #TreeButtonAsset put: (ECSTileMapAsset of: #onebit at: (2 , 1 corner: 18 , 17) scale: 4 rotation: 0));
 		register: AnnoFrameCounterSystem new);
 	register: (Pipeline new
@@ -52,12 +54,12 @@ initialize
 		register: OnebitMovingSystem new;
 		register: TowerSystem new;
 		register: OnebitWaterFlowSystem new);
-	spawnNewWith: #(OnebitGameState OnebitConfig Rendered OnebitPosition DeltaTime) do: [:onebitGameState :onebitConfig :rendered :onebitPosition :deltaTime | 
-		onebitGameState state: #unset; movingTimeout: 105; selectedPlace: #Hole; score: -2290; selectedTower: 0; coins: 1770; ticksTillSpawn: 4; spawnTimeout: 15; turnCount: 1367.
+	spawnNewWith: #(DeltaTime OnebitConfig OnebitGameState Rendered OnebitPosition) do: [:deltaTime :onebitConfig :onebitGameState :rendered :onebitPosition | 
+		deltaTime milliseconds: 20; last: 3740632363461; fpsAccumulated: 314; fpsAverage: 39.138943248532286; numAccumulated: 14; elapsed: 27689895.
 		onebitConfig scale: 2; tileSize: 16; mapSize: 30 , 30; turnTime: 800; worldBackgroundColor: (Color r: 0.279 g: 0.177 b: 0.236); maxScore: 10000; spawnTimeout: 15; placementCost: 30; towerPlacementCost: 100; coinsPerTurn: 10; startingCoins: 100.
+		onebitGameState state: #unset; movingTimeout: 105; selectedPlace: #Hole; score: -2290; selectedTower: 0; coins: 1770; ticksTillSpawn: 4; spawnTimeout: 15; turnCount: 1367.
 		rendered color: (ECSColor rgba: 16r6AA4FAFF); form: nil.
-		onebitPosition x: 23; y: 22.
-		deltaTime milliseconds: 20; last: 3740632363461; fpsAccumulated: 314; fpsAverage: 39.138943248532286; numAccumulated: 14; elapsed: 27689895];
+		onebitPosition x: 23; y: 22];
 	
 		addTemplate: (ECSTemplate new
 	name: 'Enemy'; addComponent: (OnebitFlammable new);  addComponent: (OnebitPosition new);  addComponent: (OnebitMoving new velocity: 0 , 0);  addComponent: (Rendered new color: (ECSColor rgba: 16rFF000000);  form: (ECSTileMapAsset of: #onebit at: (29 , 2 corner: 45 , 18) scale: 2 rotation: 0));  addComponent: (OnebitEnemyMinion new nextSteps: nil);  addComponent: (Health new max: 1000;  current: 1000);  addComponent: (OnebitBlockMovement new cost: 0;  canDamage: false;  canTraverse: false));
@@ -85,5 +87,4 @@ initialize
 	
 		addTemplate: (ECSTemplate new
 	name: 'Tree'; addComponent: (OnebitBlocksPlacement new);  addComponent: (OnebitFlammable new);  addComponent: (Health new max: 100;  current: 100);  addComponent: (Rendered new color: (ECSColor rgba: 16rFF000000);  form: (ECSTileMapAsset of: #onebit at: (3 , 1 corner: 19 , 17) scale: 2 rotation: 0));  addComponent: (OnebitPosition new));
-	save;
-	yourself
+	save; yourself

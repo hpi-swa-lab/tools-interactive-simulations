@@ -1,7 +1,10 @@
 as yet unclassified
 newOf: anECSType
 
-	| container |
+	^ self basicNew
+		type: anECSType;
+		initialize
+	"| container |
 	container := self new.
 	
 	container
@@ -15,6 +18,17 @@ newOf: anECSType
 			addMorphBack: (SBIcon iconPlus on: #click send: #addBlock to: container);
 			addMorphBack: (SBStringMorph new
 			contents: container type title;
-			hResizing: #spaceFill)).
+			hResizing: #spaceFill));
+		addMorphBack: (scroll := ScrollPane new
+			hResizing: #spaceFill;
+			vResizing: #spaceFill;
+			color: Color transparent;
+			borderColor: nil).
+			
+	scroll scroller
+		changeTableLayout;
+		cellGap: 8;
+		layoutInset: 8;
+		cellPositioning: #topLeft.
 	
-	^ container
+	^ container"

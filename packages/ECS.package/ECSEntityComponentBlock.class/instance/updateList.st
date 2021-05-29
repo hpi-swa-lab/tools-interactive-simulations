@@ -1,6 +1,5 @@
 as yet unclassified
 updateList
 
-	entities updateElements: (universe query: #()).
-	components updateElements: (universe query: #()).
-	self halt.
+	entities updateElements: (self universe query: #()) with: self universe.
+	components updateElements: (self universe query: #()) with: self universe.

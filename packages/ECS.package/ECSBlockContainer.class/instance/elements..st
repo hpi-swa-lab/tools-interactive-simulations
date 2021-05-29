@@ -1,4 +1,4 @@
 as yet unclassified
-elements: aOrderedCollection
+elements: aDictionary
 
-	elements := aOrderedCollection
+	elements := aDictionary
