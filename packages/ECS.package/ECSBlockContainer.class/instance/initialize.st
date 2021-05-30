@@ -3,6 +3,7 @@ initialize
 
 	super initialize.
 	
+<<<<<<< HEAD
 	self
 		changeTableLayout;
 		extent: 350 @ 400;
@@ -27,3 +28,7 @@ initialize
 		cellPositioning: #topLeft.
 
 	
+=======
+	components := Set new.
+	elements := OrderedCollection new
+>>>>>>> d59a2fc7a8cd108fee01ebc594e5e19baa0d189f
