@@ -16,7 +16,7 @@ initialize
 		cellGap: 8;
 		addMorphBack: (SBRow new
 			addMorphBack: (SBIcon iconSave on: #click send: #saveSnapshot to: self));
-		addMorphBack: ((ECSUniverseViewMorph newFor: universe) vResizing: #rigid; height: 500);
+		addMorphBack: ((ECSViewBlock newFor: universe) vResizing: #rigid; height: 500);
 		addMorphBack: (SBRow new
 			addMorphBack: entities;
 			addMorphBack: components)

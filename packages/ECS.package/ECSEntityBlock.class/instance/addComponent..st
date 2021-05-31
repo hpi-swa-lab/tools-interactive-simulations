@@ -1,4 +1,12 @@
 as yet unclassified
 addComponent: aComponent
 
-	self addMorphBack: (ECSComponentBlock new component: aComponent) toggleCollapsed
+	| componentBlock value |
+
+	componentBlock := ECSComponentBlock new component: aComponent.
+	self addMorphBack: componentBlock toggleCollapsed.
+	aComponent class fields do: [:field |
+		value := aComponent perform: field.
+		(componentBlock getField: field) 
+			fieldValue: value asString; 
+			showFieldValue]

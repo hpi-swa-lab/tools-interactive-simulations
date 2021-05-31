@@ -6,11 +6,11 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"fieldName",
-		"fieldValue",
-		"fieldType" ],
-	"name" : "ECSComponentBlockField",
+		"canvas",
+		"drawPipelineName",
+		"viewEntity" ],
+	"name" : "ECSViewBlock",
 	"pools" : [
 		 ],
-	"super" : "SBBlock",
+	"super" : "ECSTool",
 	"type" : "normal" }
