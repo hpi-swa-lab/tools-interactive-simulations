@@ -5,7 +5,8 @@ initialize
 	
 	self
 		changeTableLayout;
-		extent: 350 @ 400;
+		hResizing: #spaceFill;
+		vResizing: #spaceFill;
 		layoutInset: 8;
 		cellGap: 8;
 		addMorphBack: (SBRow new
@@ -23,6 +24,5 @@ initialize
 	scroll scroller
 		changeTableLayout;
 		cellGap: 8;
-		layoutInset: 8;
+		layoutInset: (Rectangle left: 0 right: 4 top: 0 bottom: 0);
 		cellPositioning: #topLeft.
-

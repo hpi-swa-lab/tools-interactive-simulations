@@ -9,5 +9,4 @@ addComponent: aComponent
 		value := aComponent perform: field.
 		(componentBlock getField: field) 
 			fieldValue: value asString; 
-			showFieldValue;
-			hideFieldType]
+			showFieldValue]

@@ -1,13 +1,13 @@
 {
 	"class" : {
-		"newOf:" : "mb 5/27/2021 14:10" },
+		"newOf:" : "Alexander Junger 6/3/2021 11:27" },
 	"instance" : {
 		"addBlock" : "mb 5/27/2021 11:52",
 		"elements" : "mb 5/26/2021 23:17",
 		"elements:" : "mb 5/26/2021 23:15",
 		"example" : "Alexander Junger 5/11/2021 15:35",
 		"fixedNumberOfChildren" : "Alexander Junger 5/11/2021 13:59",
-		"initialize" : "mb 5/27/2021 14:11",
+		"initialize" : "Alexander Junger 6/3/2021 16:00",
 		"startDrag:" : "Alexander Junger 5/17/2021 09:20",
 		"type" : "Alexander Junger 5/11/2021 14:21",
 		"type:" : "Alexander Junger 5/11/2021 14:22",

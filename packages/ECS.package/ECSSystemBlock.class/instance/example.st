@@ -4,4 +4,4 @@ example
 	SBMorphExample
 		setUp: [self class new]
 		cases: {SBMorphExampleCase name: 'example 1' caseBlock: [:m | m]}
-		extent: 723 @ 688
+		extent: 300 @ 300

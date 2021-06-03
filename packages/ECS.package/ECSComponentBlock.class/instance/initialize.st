@@ -3,15 +3,17 @@ initialize
 
 	super initialize.
 	
-	title := SBTextBubble new placeholderText: 'Component Name'.
+	title := SBTextBubble new placeholderText: 'Component Name'; hResizing: #spaceFill.
 	
 	self
-		hResizing: #shrinkWrap;
+		hResizing: #spaceFill;
 		vResizing: #shrinkWrap;
 		changeTableLayout;
 		layoutInset: 8;
 		cellGap: 8;
 		addMorphBack: (SBRow new
+			changeTableLayout; 
+			hResizing: #spaceFill;
 			cellGap: 8;
 			addMorphBack: (collapseIcon := SBIcon iconChevronDown on: #click send: #toggleCollapsed to: self);
 			addMorphBack: (SBIcon iconPlus on: #click send: #addField to: self);

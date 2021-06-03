@@ -5,9 +5,11 @@ initialize
 	
 	fieldName := SBTextBubble new
 		placeholderText: 'Field Name';
-		hResizing: #spaceFill.
+		width: 100;
+		hResizing: #rigid.
 	fieldValue := SBTextBubble new
 		placeholderText: 'Field Value';
+		width: 100;
 		hResizing: #spaceFill;
 		hide;
 		disableLayout: true.

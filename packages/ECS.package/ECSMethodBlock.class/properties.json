@@ -6,11 +6,8 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"universe",
-		"entities",
-		"components",
-		"systems" ],
-	"name" : "ECSEntityComponentBlock",
+		"title" ],
+	"name" : "ECSMethodBlock",
 	"pools" : [
 		 ],
 	"super" : "SBBlock",
