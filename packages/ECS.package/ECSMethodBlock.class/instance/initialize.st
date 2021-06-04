@@ -6,7 +6,7 @@ initialize
 	title := SBTextBubble new placeholderText: 'Method Name'.
 	
 	self
-		hResizing: #shrinkWrap;
+		hResizing: #spaceFill;
 		vResizing: #shrinkWrap;
 		changeTableLayout;
 		layoutInset: 8;

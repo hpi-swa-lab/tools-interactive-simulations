@@ -4,8 +4,7 @@ initialize
 	super initialize.
 
 	universe := JetpackUniverse new.
-	universe when: #postTick send: #updateList to: self.
-	
+	"universe when: #postTick send: #updateList to: self."
 	entities := ECSBlockContainer newOf: ECSEntityBlock.
 	components := ECSBlockContainer newOf: ECSComponentBlock.
 	systems := ECSBlockContainer newOf: ECSSystemBlock.
@@ -39,4 +38,6 @@ initialize
 					addMorphBack: components));
 			addMorphBack: (systems
 				hResizing: #spaceFill; 
-				vResizing: #spaceFill))
+				vResizing: #spaceFill)).
+
+	self updateList

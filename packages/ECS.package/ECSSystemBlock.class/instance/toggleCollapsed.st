@@ -1,14 +1,14 @@
 as yet unclassified
 toggleCollapsed
 
-	self components ifEmpty: [collapseIcon changeIconName: (collapseIcon iconName == #iconChevronDown 
+	self methods ifEmpty: [collapseIcon changeIconName: (collapseIcon iconName == #iconChevronDown 
 		ifTrue: [#iconChevronRight] 
 		ifFalse: [#iconChevronDown]).
 		^ self].
-	self components do: [:component |
-		component
-			visible: component visible not;
-			disableLayout: component disableLayout not].
-	collapseIcon changeIconName: (self components first visible
+	self methods do: [:method |
+		method
+			visible: method visible not;
+			disableLayout: method disableLayout not].
+	collapseIcon changeIconName: (self methods first visible
 		ifTrue: [#iconChevronDown]
 		ifFalse: [#iconChevronRight])
