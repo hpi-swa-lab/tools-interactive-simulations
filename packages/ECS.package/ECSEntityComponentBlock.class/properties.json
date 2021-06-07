@@ -9,7 +9,8 @@
 		"universe",
 		"entities",
 		"components",
-		"systems" ],
+		"systems",
+		"playIcon" ],
 	"name" : "ECSEntityComponentBlock",
 	"pools" : [
 		 ],

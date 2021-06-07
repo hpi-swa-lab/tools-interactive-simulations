@@ -8,6 +8,7 @@ initialize
 	entities := ECSBlockContainer newOf: ECSEntityBlock.
 	components := ECSBlockContainer newOf: ECSComponentBlock.
 	systems := ECSBlockContainer newOf: ECSSystemBlock.
+	playIcon := SBIcon iconPlay on: #click send: #togglePaused to: self.
 
 	self	changeTableLayout;
 		extent: 1200 @ 600;
@@ -17,7 +18,8 @@ initialize
 		layoutInset: 8;
 		cellGap: 8;
 		addMorphBack: (SBRow new
-			addMorphBack: (SBIcon iconSave on: #click send: #saveSnapshot to: self));
+			addMorphBack: (SBIcon iconSave on: #click send: #saveSnapshot to: self);
+			addMorphBack: playIcon);
 		addMorphBack: (SBRow new
 			changeTableLayout;
 			hResizing: #spaceFill; 
