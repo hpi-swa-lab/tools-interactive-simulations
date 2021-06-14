@@ -8,7 +8,8 @@
 	"instvars" : [
 		"type",
 		"elements",
-		"scroll" ],
+		"scroll",
+		"universe" ],
 	"name" : "ECSBlockContainer",
 	"pools" : [
 		 ],

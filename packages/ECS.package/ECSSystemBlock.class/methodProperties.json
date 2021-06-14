@@ -1,18 +1,19 @@
 {
 	"class" : {
+		"delete:in:" : "Alexander Junger 6/14/2021 10:06",
+		"gamePipelineIn:" : "Alexander Junger 6/14/2021 09:50",
 		"generateIds:" : "mb 5/27/2021 12:48",
 		"newWith:" : "mb 5/30/2021 13:29",
 		"title" : "Alexander Junger 6/3/2021 11:01" },
 	"instance" : {
-		"addComponent:" : "Alexander Junger 5/31/2021 11:35",
-		"addMethod" : "Alexander Junger 6/3/2021 14:12",
+		"deleteSystem" : "Alexander Junger 6/14/2021 10:38",
 		"example" : "Alexander Junger 5/13/2021 11:15",
 		"fixedNumberOfChildren" : "Alexander Junger 5/13/2021 11:09",
 		"id" : "mb 5/26/2021 23:21",
 		"id:" : "mb 5/26/2021 23:22",
-		"initialize" : "Alexander Junger 6/3/2021 15:38",
+		"initialize" : "Alexander Junger 6/14/2021 10:39",
 		"isArtefact" : "Alexander Junger 5/13/2021 11:09",
 		"methods" : "Alexander Junger 6/3/2021 14:12",
 		"title:" : "Alexander Junger 5/20/2021 15:15",
 		"toggleCollapsed" : "Alexander Junger 6/4/2021 10:38",
-		"updateWith:" : "Alexander Junger 6/7/2021 11:05" } }
+		"update" : "Alexander Junger 6/14/2021 10:04" } }

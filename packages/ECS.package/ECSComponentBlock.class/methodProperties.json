@@ -1,12 +1,15 @@
 {
 	"class" : {
+		"delete:in:" : "Alexander Junger 6/14/2021 10:27",
 		"newWith:" : "mb 5/26/2021 23:34",
 		"title" : "Alexander Junger 5/17/2021 10:37" },
 	"instance" : {
 		"addField" : "Alexander Junger 5/27/2021 11:02",
-		"component:" : "Alexander Junger 5/31/2021 11:29",
+		"component:" : "Alexander Junger 6/14/2021 10:43",
+		"component:forEntity:" : "Alexander Junger 6/13/2021 12:27",
 		"componentName" : "Alexander Junger 5/9/2021 10:19",
 		"copyOnDrag" : "Alexander Junger 5/17/2021 11:01",
+		"deleteComponent" : "Alexander Junger 6/14/2021 10:37",
 		"example" : "Alexander Junger 5/31/2021 09:56",
 		"fields" : "Alexander Junger 5/9/2021 10:56",
 		"fixedNumberOfChildren" : "Alexander Junger 5/9/2021 09:58",
@@ -14,7 +17,7 @@
 		"hasValues" : "Alexander Junger 5/31/2021 11:03",
 		"id" : "mb 5/26/2021 23:23",
 		"id:" : "mb 5/26/2021 23:23",
-		"initialize" : "Alexander Junger 6/3/2021 15:01",
+		"initialize" : "Alexander Junger 6/14/2021 10:38",
 		"isArtefact" : "Alexander Junger 5/9/2021 10:22",
 		"newEmptyChildNear:before:" : "Alexander Junger 5/9/2021 09:55",
 		"object" : "Alexander Junger 5/9/2021 11:26",
@@ -22,4 +25,4 @@
 		"title" : "Alexander Junger 5/27/2021 09:55",
 		"title:" : "Alexander Junger 5/22/2021 14:59",
 		"toggleCollapsed" : "Alexander Junger 5/27/2021 10:30",
-		"updateWith:" : "mb 5/27/2021 12:45" } }
+		"update" : "Alexander Junger 6/13/2021 12:24" } }

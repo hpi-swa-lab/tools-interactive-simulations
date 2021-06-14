@@ -1,18 +1,20 @@
 {
 	"class" : {
+		"delete:in:" : "Alexander Junger 6/14/2021 09:42",
 		"newWith:" : "mb 5/30/2021 13:29",
 		"title" : "Alexander Junger 5/17/2021 10:36" },
 	"instance" : {
 		"addComponent" : "Alexander Junger 5/27/2021 11:01",
-		"addComponent:" : "Alexander Junger 6/3/2021 15:04",
+		"addComponent:" : "Alexander Junger 6/14/2021 10:48",
 		"components" : "Alexander Junger 5/13/2021 11:20",
+		"deleteEntity" : "Alexander Junger 6/14/2021 10:38",
 		"example" : "Alexander Junger 5/13/2021 11:15",
 		"fixedNumberOfChildren" : "Alexander Junger 5/13/2021 11:09",
 		"id" : "mb 5/26/2021 23:21",
 		"id:" : "mb 5/26/2021 23:22",
-		"initialize" : "Alexander Junger 6/3/2021 14:59",
+		"initialize" : "Alexander Junger 6/14/2021 10:38",
 		"isArtefact" : "Alexander Junger 5/13/2021 11:09",
 		"specialDropCommand:" : "mb 5/27/2021 15:12",
 		"title:" : "Alexander Junger 5/20/2021 15:15",
 		"toggleCollapsed" : "Alexander Junger 5/27/2021 10:32",
-		"updateWith:" : "mb 5/30/2021 13:38" } }
+		"updateWith:" : "Alexander Junger 6/13/2021 11:01" } }

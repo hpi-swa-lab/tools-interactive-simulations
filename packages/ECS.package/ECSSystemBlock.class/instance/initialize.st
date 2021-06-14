@@ -16,6 +16,5 @@ initialize
 			hResizing: #spaceFill;
 			cellGap: 8;
 			addMorphBack: (collapseIcon := SBIcon iconChevronDown on: #click send: #toggleCollapsed to: self);
-			addMorphBack: (SBIcon iconPlus on: #click send: #addMethod to: self);
 			addMorphBack: title;
-			addMorphBack: (SBIcon iconRemove on: #click send: #deleteBlock to: self))
+			addMorphBack: (SBIcon iconRemove on: #click send: #deleteSystem to: self))

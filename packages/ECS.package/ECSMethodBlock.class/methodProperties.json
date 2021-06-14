@@ -1,8 +1,9 @@
 {
 	"class" : {
-		"newWith:" : "Alexander Junger 6/7/2021 10:35" },
+		"newWith:" : "Alexander Junger 6/13/2021 10:49" },
 	"instance" : {
-		"initialize" : "Alexander Junger 6/7/2021 11:18",
-		"methodClass" : "Alexander Junger 6/7/2021 10:34",
-		"methodClass:" : "Alexander Junger 6/7/2021 10:34",
-		"updateWith:" : "Alexander Junger 6/3/2021 14:09" } }
+		"argumentsDo:" : "Alexander Junger 6/13/2021 10:30",
+		"initialize" : "Alexander Junger 6/14/2021 10:41",
+		"selector" : "Alexander Junger 6/13/2021 10:31",
+		"selector:arguments:class:" : "Alexander Junger 6/13/2021 10:43",
+		"writeSignatureSourceOn:" : "Alexander Junger 6/13/2021 10:33" } }

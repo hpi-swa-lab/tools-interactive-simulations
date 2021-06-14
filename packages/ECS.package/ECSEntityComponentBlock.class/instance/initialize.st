@@ -5,19 +5,22 @@ initialize
 
 	universe := JetpackUniverse new.
 	"universe when: #postTick send: #updateList to: self."
-	entities := ECSBlockContainer newOf: ECSEntityBlock.
-	components := ECSBlockContainer newOf: ECSComponentBlock.
-	systems := ECSBlockContainer newOf: ECSSystemBlock.
+	entities := ECSBlockContainer newOf: ECSEntityBlock with: self universe.
+	components := ECSBlockContainer newOf: ECSComponentBlock with: self universe.
+	systems := ECSBlockContainer newOf: ECSSystemBlock with: self universe.
 	playIcon := SBIcon iconPlay on: #click send: #togglePaused to: self.
 
-	self	changeTableLayout;
-		extent: 1200 @ 600;
+	self	
+		changeTableLayout;
+		extent: 1320 @ 600;
+		minimumExtent: 1320 @ 600;
 		attachDecorator: SBResizableDecorator new;
 		hResizing: #rigid; 
 		vResizing: #rigid;
 		layoutInset: 8;
 		cellGap: 8;
 		addMorphBack: (SBRow new
+			cellGap: 8;
 			addMorphBack: (SBIcon iconSave on: #click send: #saveSnapshot to: self);
 			addMorphBack: playIcon);
 		addMorphBack: (SBRow new
@@ -30,7 +33,9 @@ initialize
 				hResizing: #spaceFill; 
 				vResizing: #spaceFill;
 				cellGap: 8;
-				addMorphBack: ((ECSViewBlock newFor: universe) hResizing: #spaceFill; vResizing: #spaceFill);
+				addMorphBack: ((ECSViewBlock newFor: universe) 
+					hResizing: #spaceFill; 
+					vResizing: #spaceFill);
 				addMorphBack: (SBRow new
 					changeTableLayout;
 					hResizing: #spaceFill;
@@ -42,4 +47,6 @@ initialize
 				hResizing: #spaceFill; 
 				vResizing: #spaceFill)).
 
-	self updateList
+	self 
+		updateList;
+		togglePaused

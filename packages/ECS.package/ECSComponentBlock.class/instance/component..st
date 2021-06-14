@@ -2,6 +2,7 @@ as yet unclassified
 component: aComponent
 
 	| value |
+
 	self title: aComponent class asString.
 	currentClass := aComponent.
 	aComponent class fields do: [:field |

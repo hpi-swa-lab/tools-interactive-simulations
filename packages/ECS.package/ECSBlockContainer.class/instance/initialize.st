@@ -11,10 +11,10 @@ initialize
 		cellGap: 8;
 		addMorphBack: (SBRow new
 			cellGap: 8;
-			addMorphBack: (SBIcon iconPlus on: #click send: #addBlock to: self);
+			addMorphBack: (SBIcon iconPlus on: #click send: #addElement to: self);
 			addMorphBack: (SBStringMorph new
-			contents: self type title;
-			hResizing: #spaceFill));
+				contents: self type title;
+				hResizing: #spaceFill));
 		addMorphBack: (scroll := ScrollPane new
 			hResizing: #spaceFill;
 			vResizing: #spaceFill;

@@ -6,10 +6,9 @@
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		"title",
-		"methodClass" ],
+		"signature" ],
 	"name" : "ECSMethodBlock",
 	"pools" : [
 		 ],
-	"super" : "SBBlock",
+	"super" : "SBStBasicMethod",
 	"type" : "normal" }

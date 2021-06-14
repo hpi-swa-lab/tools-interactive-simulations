@@ -18,4 +18,4 @@ initialize
 			addMorphBack: (collapseIcon := SBIcon iconChevronDown on: #click send: #toggleCollapsed to: self);
 			addMorphBack: (SBIcon iconPlus on: #click send: #addField to: self);
 			addMorphBack: title;
-			addMorphBack: (SBIcon iconRemove on: #click send: #deleteBlock to: self))
+			addMorphBack: (SBIcon iconRemove on: #click send: #deleteComponent to: self))
