@@ -4,7 +4,6 @@ initialize
 	super initialize.
 
 	universe := JetpackUniverse new.
-	"universe when: #postTick send: #updateList to: self."
 	entities := ECSBlockContainer newOf: ECSEntityBlock with: self universe.
 	components := ECSBlockContainer newOf: ECSComponentBlock with: self universe.
 	systems := ECSBlockContainer newOf: ECSSystemBlock with: self universe.
@@ -47,6 +46,4 @@ initialize
 				hResizing: #spaceFill; 
 				vResizing: #spaceFill)).
 
-	self 
-		updateList;
-		togglePaused
+	self togglePaused

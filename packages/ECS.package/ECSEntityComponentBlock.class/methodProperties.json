@@ -2,8 +2,9 @@
 	"class" : {
 		 },
 	"instance" : {
+		"entityIds" : "aj 6/17/2021 14:00",
 		"example" : "Alexander Junger 5/31/2021 10:02",
-		"initialize" : "Alexander Junger 6/14/2021 10:31",
+		"initialize" : "aj 6/17/2021 14:59",
 		"saveSnapshot" : "mb 5/27/2021 15:59",
 		"saveSnapshotInClass:" : "mb 5/29/2021 23:12",
 		"saveSnapshotInCurrentUniverseClass" : "mb 5/29/2021 23:13",
@@ -12,4 +13,4 @@
 		"startDrag:" : "Alexander Junger 5/17/2021 09:19",
 		"togglePaused" : "Alexander Junger 6/7/2021 11:30",
 		"universe" : "Alexander Junger 5/20/2021 15:32",
-		"updateList" : "Alexander Junger 6/14/2021 09:49" } }
+		"updateList" : "aj 6/17/2021 14:01" } }

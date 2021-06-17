@@ -26,3 +26,5 @@ initialize
 		cellGap: 8;
 		layoutInset: (Rectangle left: 0 right: 4 top: 0 bottom: 0);
 		cellPositioning: #topLeft.
+
+	self universe when: #postTick send: #updateElements to: self

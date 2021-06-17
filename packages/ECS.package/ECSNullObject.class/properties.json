@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Blocks",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ECSNullObject",
+	"pools" : [
+		 ],
+	"super" : "EntityComponent",
+	"type" : "normal" }

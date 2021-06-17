@@ -2,6 +2,7 @@ as yet unclassified
 saveTryFixing: aFixBoolean quick: aQuickBoolean
 
 	| class |
+	self flag: 'need to be fixed -> self componentName is the whole row with buttons'.
 	class := [:b |
 		b
 			class: self componentName contents
