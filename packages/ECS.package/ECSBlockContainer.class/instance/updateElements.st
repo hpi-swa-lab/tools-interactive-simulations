@@ -1,7 +1,7 @@
 as yet unclassified
 updateElements
 
-	| elementIds |
+	| elementIds |	
 
 	elementIds := self type elementsIn: self universe.
 	elementIds do: [:id |

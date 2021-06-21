@@ -18,7 +18,7 @@ initialize
 		object: #Number.
 	
 	self
-		hResizing: #shrinkWrap;
+		hResizing: #spaceFill;
 		vResizing: #shrinkWrap;
 		changeTableLayout;
 		cellGap: 4;

@@ -1,4 +1,4 @@
 as yet unclassified
 title: aString
 
-	title contents: aString
+	self id = ECSNullObject ifFalse: [title contents: aString]

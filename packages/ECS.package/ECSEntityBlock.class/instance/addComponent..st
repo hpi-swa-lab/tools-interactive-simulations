@@ -3,7 +3,7 @@ addComponent: aComponent
 
 	| componentBlock value |
 
-	componentBlock := ECSComponentBlock new component: aComponent forEntity: true.
+	componentBlock := ECSComponentBlock new component: aComponent.
 	self addMorphBack: componentBlock toggleCollapsed.
 	aComponent class fields do: [:field |
 		value := aComponent perform: field.
