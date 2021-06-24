@@ -4,6 +4,7 @@ component: aComponent
 	| value |
 
 	self title: aComponent class asString.
+	self id: aComponent.
 	currentClass := aComponent.
 	aComponent class fields do: [:field |
 		value := aComponent perform: field.

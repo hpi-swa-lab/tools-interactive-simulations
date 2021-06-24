@@ -13,4 +13,5 @@ newWith: anId in: aUniverse
 	query do: [:component |
 		component isNumber not 
 			ifTrue: [entity addComponent: component]].
+	aUniverse when: #postTick send: #updateValues to: entity.
 	^ entity

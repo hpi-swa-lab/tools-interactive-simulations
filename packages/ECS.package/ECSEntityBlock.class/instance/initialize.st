@@ -4,7 +4,7 @@ initialize
 	super initialize.
 	
 	title := SBTextBubble new placeholderText: 'Entity Name'; hResizing: #spaceFill.
-	
+
 	self
 		hResizing: #spaceFill;
 		vResizing: #shrinkWrap;

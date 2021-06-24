@@ -1,4 +1,4 @@
 as yet unclassified
 isInstance
 
-	^ self owner = ECSEntityBlock
+	^ self owner class = ECSEntityBlock
