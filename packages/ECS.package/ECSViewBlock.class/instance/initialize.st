@@ -7,8 +7,4 @@ initialize
 	self universe when: #unpauseAfterError send: #resumeAfterDrawError to: self.
 	self guessDrawPipeline.
 	
-	header 
-		disableLayout;
-		hide.
-	
 	self universe views addIfNotPresent: self

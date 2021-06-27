@@ -8,9 +8,10 @@
 	"instvars" : [
 		"canvas",
 		"drawPipelineName",
-		"viewEntity" ],
+		"viewEntity",
+		"universe" ],
 	"name" : "ECSViewBlock",
 	"pools" : [
 		 ],
-	"super" : "ECSTool",
+	"super" : "SBBlock",
 	"type" : "normal" }

@@ -1,6 +1,6 @@
 {
 	"class" : {
-		 },
+		"newFor:" : "tobe 6/27/2021 07:57" },
 	"instance" : {
 		"drawOn:" : "Alexander Junger 5/31/2021 10:24",
 		"drawPipelineName" : "tobe 6/21/2019 07:27",
@@ -10,12 +10,12 @@
 		"handlesMouseDown:" : "T 4/14/2019 00:09",
 		"handlesMouseMove:" : "T 5/27/2019 10:16",
 		"handlesMouseWheel:" : "cmfcmf 5/31/2019 20:36",
-		"initialize" : "Alexander Junger 5/31/2021 10:26",
+		"initialize" : "tobe 6/27/2021 07:58",
 		"intoWorld:" : "TB 5/31/2019 06:40",
 		"keyDown:" : "tobe 6/22/2019 09:06",
 		"keyUp:" : "tobe 6/22/2019 09:06",
 		"keyboardFocusChange:" : "cmfcmf 6/6/2019 13:32",
-		"mouseDown:" : "tobe 6/22/2019 09:03",
+		"mouseDown:" : "tobe 6/27/2021 07:59",
 		"mouseMove:" : "Alexander Junger 5/31/2021 10:25",
 		"mouseUp:" : "tobe 6/22/2019 09:05",
 		"mouseWheel:" : "cmfcmf 6/26/2019 11:10",
@@ -25,5 +25,7 @@
 		"stepTime" : "TB 6/2/2019 09:45",
 		"tickUniverse" : "cmfcmf 6/27/2019 09:11",
 		"title" : "tobe 6/21/2019 15:13",
+		"universe" : "tobe 6/27/2021 07:57",
+		"universe:" : "tobe 6/27/2021 07:57",
 		"updateScreenSize" : "tobe 6/21/2019 07:32",
 		"wantsKeyboardFocus" : "T 4/14/2019 08:51" } }
