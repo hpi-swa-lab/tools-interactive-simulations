@@ -3,6 +3,5 @@ generateIdIn: aUniverse
 
 	| id |
 
-	id := aUniverse state maxEntityIndex + 1.
-	aUniverse state allocateEntity.
+	id := aUniverse state allocateEntity.
 	^ id

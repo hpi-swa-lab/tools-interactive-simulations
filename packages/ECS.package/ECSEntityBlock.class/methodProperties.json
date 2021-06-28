@@ -2,8 +2,8 @@
 	"class" : {
 		"delete:in:" : "Alexander Junger 6/14/2021 09:42",
 		"elementsIn:" : "aj 6/17/2021 14:24",
-		"generateIdIn:" : "aj 6/17/2021 15:23",
-		"newWith:in:" : "aj 6/24/2021 15:13",
+		"generateIdIn:" : "aj 6/28/2021 09:44",
+		"newWith:in:" : "aj 6/28/2021 09:53",
 		"title" : "Alexander Junger 5/17/2021 10:36" },
 	"instance" : {
 		"addComponent" : "Alexander Junger 5/27/2021 11:01",
@@ -16,7 +16,9 @@
 		"id:" : "mb 5/26/2021 23:22",
 		"initialize" : "aj 6/24/2021 15:12",
 		"isArtefact" : "Alexander Junger 5/13/2021 11:09",
-		"specialDropCommand:" : "mb 5/27/2021 15:12",
+		"specialDropCommand:" : "aj 6/28/2021 10:01",
 		"title:" : "Alexander Junger 5/20/2021 15:15",
 		"toggleCollapsed" : "Alexander Junger 5/27/2021 10:32",
+		"universe" : "aj 6/28/2021 09:54",
+		"universe:" : "aj 6/28/2021 09:53",
 		"updateValues" : "aj 6/24/2021 15:19" } }
