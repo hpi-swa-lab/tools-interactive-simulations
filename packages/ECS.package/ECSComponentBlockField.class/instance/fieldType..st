@@ -1,4 +1,4 @@
 as yet unclassified
-fieldType: aSymbol
+fieldType: aType
 
-	fieldType object: aSymbol
+	fieldType := aType

@@ -2,13 +2,13 @@ as yet unclassified
 saveTryFixing: aFixBoolean quick: aQuickBoolean
 
 	| class |
-	self flag: 'need to be fixed -> self componentName is the whole row with buttons'.
+
 	class := [:b |
 		b
-			class: self componentName contents
+			class: self title contents
 			super: EntityComponent
 			instVars: (self fields collect: #fieldName)
-			current: currentClass] sbStSave.
+			current: currentClass class] sbStSave.
 	currentClass := class shownClass.
 	
 	self fields do: [:field |
@@ -19,6 +19,6 @@ saveTryFixing: aFixBoolean quick: aQuickBoolean
 		b
 			method: #fields
 			in: class classSide
-			do: (b return: (b array self fields collect: [:f | b symbol: f fieldName]))] sbStSave.
+			do: (b return: (b array: (self fields collect: [:f | b symbol: f fieldName])))] sbStSave.
 	
 	^ true

@@ -1,15 +1,17 @@
 {
 	"class" : {
-		 },
+		"newWith:of:" : "aj 7/5/2021 14:35" },
 	"instance" : {
 		"fieldName" : "Alexander Junger 5/31/2021 10:43",
-		"fieldName:" : "Alexander Junger 5/31/2021 10:43",
+		"fieldName:" : "aj 7/5/2021 09:54",
 		"fieldType" : "Alexander Junger 5/31/2021 10:43",
-		"fieldType:" : "Alexander Junger 5/31/2021 10:42",
-		"fieldValue" : "Alexander Junger 5/31/2021 10:43",
-		"fieldValue:" : "Alexander Junger 5/31/2021 10:44",
+		"fieldType:" : "aj 7/5/2021 09:54",
+		"fieldValue" : "aj 7/5/2021 10:10",
+		"fieldValue:" : "aj 7/5/2021 09:54",
+		"fieldValueContents:" : "aj 7/5/2021 10:17",
+		"fieldValueOnChange:" : "aj 7/5/2021 10:20",
 		"hideFieldType" : "Alexander Junger 6/3/2021 15:04",
-		"initialize" : "aj 6/21/2021 11:06",
+		"initialize" : "aj 7/5/2021 14:34",
 		"objectInterfaceNear:at:" : "Alexander Junger 5/6/2021 15:27",
 		"showFieldValue" : "Alexander Junger 5/31/2021 11:31",
 		"startDrag:" : "Alexander Junger 5/17/2021 10:58" } }

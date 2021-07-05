@@ -3,7 +3,10 @@ initialize
 
 	super initialize.
 	
-	title := SBTextBubble new placeholderText: 'Component Name'; hResizing: #spaceFill.
+	title := SBTextBubble new
+		placeholderText: 'Component Name';
+		hResizing: #spaceFill;
+		canDrag: false.
 	
 	self
 		hResizing: #spaceFill;
