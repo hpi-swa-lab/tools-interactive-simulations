@@ -3,5 +3,6 @@ addComponent: aComponent
 
 	| componentBlock |
 
-	componentBlock := ECSComponentBlock new component: aComponent.
+	componentBlock := (ECSComponentBlock newFrom: aComponent).
+	componentBlock when: #deleteElement send: #deleteComponent: to: self. 
 	self addMorphBack: componentBlock toggleCollapsed

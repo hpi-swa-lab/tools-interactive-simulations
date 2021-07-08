@@ -1,6 +1,13 @@
 as yet unclassified
 newWith: anId in: aUniverse
 
-	^ self new
-		component: anId new;
-		id: anId
+	| component |
+	
+	component :=  self new
+		title: anId asString;
+		id: anId;
+		component: anId new.
+	anId fields do: [:field |
+		component addMorphBack: (ECSComponentBlockField newWith: field of: anId)].
+	
+	 ^ component

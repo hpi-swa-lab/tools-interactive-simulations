@@ -10,7 +10,7 @@ newWith: aField of: aComponent
 		canDrag: false.
 	fieldType := SBComboBox new
 		values: {#Object. #ECSVector2. #Number. #Boolean};
-		object: (aComponent class >> aField pragmaAt: #ecsType:) arguments first;
+		object: (aComponent >> aField pragmaAt: #ecsType:) arguments first;
 		canDrag: false.
 	fieldValue := (Smalltalk at: fieldType object) editorType new
 		hResizing: #spaceFill;

@@ -8,8 +8,8 @@ saveTryFixing: aFixBoolean quick: aQuickBoolean
 			class: self title contents
 			super: EntityComponent
 			instVars: (self fields collect: #fieldName)
-			current: currentClass class] sbStSave.
-	currentClass := class shownClass.
+			current: self id] sbStSave.
+	self id: class shownClass.
 	
 	self fields do: [:field |
 		[:b | b pragma: #ecsType: with: (b symbol: field fieldType) in: (b getter: field fieldName in: class)] sbStSave.
