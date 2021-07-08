@@ -1,6 +1,6 @@
 as yet unclassified
 newWith: anId in: aUniverse
 
-	^ self new 
-		id: anId;
-		component: anId new
+	^ self new
+		component: anId new;
+		id: anId

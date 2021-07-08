@@ -2,4 +2,4 @@ as yet unclassified
 deleteEntity
 
 	self deleteBlock.
-	self triggerEvent: #delete with: self
+	self triggerEvent: #deleteElement with: self
