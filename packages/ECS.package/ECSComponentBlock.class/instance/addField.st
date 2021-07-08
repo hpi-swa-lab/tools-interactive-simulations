@@ -6,4 +6,4 @@ addField
 			ifTrue: [collapseIcon changeIconName: #iconChevronDown]]
 		ifFalse: [collapseIcon iconName == #iconChevronRight 
 			ifTrue: [self toggleCollapsed]].
-	self addMorphBack: ECSComponentBlockField new
+	self addMorphBack: (ECSComponentBlockField newWith: '' asSymbol of: (self id))

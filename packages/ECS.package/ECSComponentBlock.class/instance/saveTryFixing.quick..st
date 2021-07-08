@@ -20,5 +20,11 @@ saveTryFixing: aFixBoolean quick: aQuickBoolean
 			method: #fields
 			in: class classSide
 			do: (b return: (b array: (self fields collect: [:f | b symbol: f fieldName])))] sbStSave.
+
+	[:b |
+		b
+			method: #initialize
+			in: class
+			do: {b to: #initialize send: (b name: 'super')}, (self fields collect: [:f | b assign: f fieldName to: ((Smalltalk at: f fieldType) ecsDefault) storeString parseAsSandblock])] sbStSave.
 	
 	^ true
