@@ -6,7 +6,7 @@ newWith: anId in: aUniverse
 	component :=  self new
 		title: anId asString;
 		id: anId;
-		component: anId new.
+		component: nil.
 	anId fields do: [:field |
 		component addMorphBack: (ECSComponentBlockField newWith: field of: anId)].
 	

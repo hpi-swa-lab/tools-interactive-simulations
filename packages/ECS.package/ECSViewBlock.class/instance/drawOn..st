@@ -4,6 +4,7 @@ drawOn: aCanvas
 	super drawOn: aCanvas.
 	
 	self drawPipelineName ifNil: [^ self].
+	(self universe getSingle: #UniverseView of: viewEntity) ifNil: [^ self].
 	
 	self universe triggerEvent: #preDraw.
 	[ | area |
