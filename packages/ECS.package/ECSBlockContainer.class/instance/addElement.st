@@ -9,5 +9,4 @@ addElement
 	self elements at: id put: element.
 	self flag: 'Add this element to elements and generate an Id.'.
 	scroll scroller addMorphBack: element.
-	scroll scrollToShow: (0@9e8 extent: 0@0).
-	scroll scroller lastSubmorph inputContainedUnknown
+	scroll scrollToShow: scroll scroller lastSubmorph.

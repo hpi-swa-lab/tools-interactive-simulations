@@ -3,7 +3,7 @@
 		"delete:in:" : "Alexander Junger 6/14/2021 09:42",
 		"elementsIn:" : "aj 6/17/2021 14:24",
 		"generateIdIn:" : "aj 6/28/2021 09:44",
-		"newWith:in:" : "aj 6/28/2021 09:53",
+		"newWith:in:" : "mb 7/8/2021 12:22",
 		"title" : "Alexander Junger 5/17/2021 10:36" },
 	"instance" : {
 		"addComponent" : "Alexander Junger 5/27/2021 11:01",
@@ -18,7 +18,7 @@
 		"id:" : "mb 5/26/2021 23:22",
 		"initialize" : "aj 7/5/2021 14:33",
 		"isArtefact" : "Alexander Junger 5/13/2021 11:09",
-		"specialDropCommand:" : "aj 7/1/2021 15:02",
+		"specialDropCommand:" : "mb 7/8/2021 12:24",
 		"title:" : "Alexander Junger 5/20/2021 15:15",
 		"toggleCollapsed" : "Alexander Junger 5/27/2021 10:32",
 		"universe" : "aj 6/28/2021 09:54",
