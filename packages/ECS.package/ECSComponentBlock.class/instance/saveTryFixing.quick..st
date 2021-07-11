@@ -25,6 +25,6 @@ saveTryFixing: aFixBoolean quick: aQuickBoolean
 		b
 			method: #initialize
 			in: class
-			do: {b to: #initialize send: (b name: 'super')}, (self fields collect: [:f | b assign: f fieldName to: ((Smalltalk at: f fieldType) ecsDefault) storeString parseAsSandblock])] sbStSave.
+			do: {b to: (b name: 'super') send: #initialize}, (self fields collect: [:f | b assign: f fieldName to: ((Smalltalk at: f fieldType) ecsDefault) storeString parseAsSandblock])] sbStSave.
 	
 	^ true

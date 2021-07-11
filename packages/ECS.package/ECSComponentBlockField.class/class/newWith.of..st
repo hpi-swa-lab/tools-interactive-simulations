@@ -12,7 +12,7 @@ newWith: aField of: aClass
 		values: {#Object. #ECSVector2. #Number. #Boolean};
 		object: ((aClass fields includes: aField)
 			ifTrue: [(aClass >> aField pragmaAt: #ecsType:) arguments first]
-			ifFalse: [self halt. #Number]);
+			ifFalse: [#Number]);
 		canDrag: false.
 	fieldValue := (Smalltalk at: fieldType object) editorType new
 		hResizing: #spaceFill;

@@ -3,5 +3,5 @@ generateIdIn: aUniverse
 
 	| id |
 
-	id := ECSNullObject.
+	id := NewSystem.
 	^ id

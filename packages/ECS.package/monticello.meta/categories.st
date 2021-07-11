@@ -16,3 +16,4 @@ SystemOrganization addCategory: #'ECS-Tools'!
 SystemOrganization addCategory: #'ECS-Watch'!
 SystemOrganization addCategory: #'ECS-UI'!
 SystemOrganization addCategory: #'ECS-My'!
+SystemOrganization addCategory: #'ECS-New'!

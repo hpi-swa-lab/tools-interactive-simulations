@@ -8,7 +8,8 @@
 	"instvars" : [
 		"collapseIcon",
 		"title",
-		"id" ],
+		"id",
+		"universe" ],
 	"name" : "ECSSystemBlock",
 	"pools" : [
 		 ],

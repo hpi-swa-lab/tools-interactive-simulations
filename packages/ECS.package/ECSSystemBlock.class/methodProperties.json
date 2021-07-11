@@ -1,14 +1,16 @@
 {
 	"class" : {
-		"delete:in:" : "Alexander Junger 6/14/2021 10:06",
-		"elementsIn:" : "aj 6/17/2021 14:26",
+		"delete:in:" : "aj 7/11/2021 12:53",
+		"elementsIn:" : "aj 7/11/2021 11:55",
 		"gamePipelineIn:" : "Alexander Junger 6/14/2021 09:50",
-		"generateIdIn:" : "aj 6/17/2021 15:33",
-		"generateIds:" : "mb 5/27/2021 12:48",
-		"newWith:in:" : "aj 6/17/2021 14:55",
+		"generateIdIn:" : "aj 7/11/2021 14:44",
+		"generateIds:" : "aj 7/11/2021 11:50",
+		"newFrom:" : "aj 7/11/2021 11:55",
+		"newWith:in:" : "aj 7/11/2021 12:25",
 		"title" : "Alexander Junger 6/3/2021 11:01" },
 	"instance" : {
 		"canDrag" : "aj 7/5/2021 14:30",
+		"createNewSystemClass:" : "aj 7/11/2021 12:40",
 		"deleteSystem" : "mb 7/8/2021 01:56",
 		"example" : "Alexander Junger 5/13/2021 11:15",
 		"fixedNumberOfChildren" : "Alexander Junger 5/13/2021 11:09",
@@ -17,5 +19,9 @@
 		"initialize" : "aj 7/5/2021 14:32",
 		"isArtefact" : "Alexander Junger 5/13/2021 11:09",
 		"methods" : "Alexander Junger 6/3/2021 14:12",
-		"title:" : "aj 6/21/2021 10:32",
-		"toggleCollapsed" : "Alexander Junger 6/4/2021 10:38" } }
+		"saveTryFixing:quick:" : "aj 7/11/2021 14:04",
+		"title" : "aj 7/11/2021 10:13",
+		"title:" : "aj 7/11/2021 14:44",
+		"toggleCollapsed" : "Alexander Junger 6/4/2021 10:38",
+		"universe" : "aj 7/11/2021 11:11",
+		"universe:" : "aj 7/11/2021 11:12" } }

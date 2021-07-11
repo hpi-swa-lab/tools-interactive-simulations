@@ -4,4 +4,4 @@ delete: anId in: aUniverse
 	| pipeline |
 
 	pipeline := self gamePipelineIn: aUniverse.
-	pipeline unregister: (pipeline systems detect: [:system | system class = anId])
+	pipeline unregister: (pipeline systems detect: [:system | system = anId])

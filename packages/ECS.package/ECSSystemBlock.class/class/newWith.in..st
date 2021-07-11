@@ -3,6 +3,7 @@ newWith: anId in: aUniverse
 
 	^ self new 
 		id: anId;
-		title: anId asString;
-		addMorphBack: (ECSMethodBlock newWith: anId);
+		title: anId class asString;
+		universe: aUniverse;
+		addMorphBack: (ECSMethodBlock newWith: anId class);
 		toggleCollapsed
