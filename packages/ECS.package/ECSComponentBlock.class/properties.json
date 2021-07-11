@@ -9,7 +9,9 @@
 		"component",
 		"collapseIcon",
 		"title",
-		"id" ],
+		"id",
+		"entityId",
+		"universe" ],
 	"name" : "ECSComponentBlock",
 	"pools" : [
 		 ],

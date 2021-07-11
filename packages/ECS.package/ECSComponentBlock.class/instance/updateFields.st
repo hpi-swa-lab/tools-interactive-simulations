@@ -10,4 +10,4 @@ updateFields
 				fieldValueContents: value;
 				showFieldValue;
 				hideFieldType;
-				fieldValueOnChange: [:newValue | self component perform: field asSimpleSetter with: newValue]]]
+				fieldValueOnChange: [:newValue | self universe set: field in: self id name asSymbol of: self entityId to: newValue persist: true]]]
