@@ -1,9 +1,9 @@
 as yet unclassified
 newWith: anId in: aUniverse
 
-	^ self new 
+	^ self new
 		id: anId;
 		title: anId class asString;
 		universe: aUniverse;
-		addMorphBack: (anId class >> #tick: "ECSMethodBlock newWith: anId class") asSandblock;
+		addMorphBack: ((anId class >> #tick:) asSandblock hResizing: #spaceFill);
 		toggleCollapsed

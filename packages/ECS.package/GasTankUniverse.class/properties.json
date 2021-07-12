@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-GasTank",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "GasTankUniverse",
+	"pools" : [
+		 ],
+	"super" : "Universe",
+	"type" : "normal" }

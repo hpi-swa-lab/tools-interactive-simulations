@@ -13,5 +13,7 @@ saveTryFixing: aFixBoolean quick: aQuickBoolean
 
 	pipeline := self class gamePipelineIn: self universe.
 	(pipeline systems contains: [:system | system class = self id class]) ifFalse: [pipeline register: self id].
+	self methods first deleteBlock.
+	self addMorphBack: (self id class >> #tick:) asSandblock.
 	
 	^ true

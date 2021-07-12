@@ -2,7 +2,8 @@ as yet unclassified
 initialize
 
 	super initialize.
-	
+	self start.
+
 	self
 		changeTableLayout;
 		hResizing: #spaceFill;
