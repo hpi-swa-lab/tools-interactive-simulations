@@ -12,6 +12,6 @@ saveTryFixing: aFixBoolean quick: aQuickBoolean
 			category: 'UserObjects'] sbStSave.
 
 	pipeline := self class gamePipelineIn: self universe.
-	(pipeline systems includes: self id) ifFalse: [pipeline systems add: (Smalltalk at: self title ifAbsent: [(self createNewSystemClass: self title) new])].
+	(pipeline systems contains: [:system | system class = self id class]) ifFalse: [pipeline register: self id].
 	
 	^ true

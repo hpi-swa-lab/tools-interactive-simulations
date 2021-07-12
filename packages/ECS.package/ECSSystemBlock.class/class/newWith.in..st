@@ -5,5 +5,5 @@ newWith: anId in: aUniverse
 		id: anId;
 		title: anId class asString;
 		universe: aUniverse;
-		addMorphBack: (ECSMethodBlock newWith: anId class);
+		addMorphBack: (anId class >> #tick: "ECSMethodBlock newWith: anId class") asSandblock;
 		toggleCollapsed

@@ -1,4 +1,4 @@
 as yet unclassified
 delete: anId in: aUniverse
 
-	aUniverse remove: anId persisted: true
+	aUniverse remove: anId persisted: true.

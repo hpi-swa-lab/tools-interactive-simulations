@@ -12,7 +12,7 @@ newWith: anId in: aUniverse
 			ifFound: [:labelComponent | labelComponent label asString]
 			ifNone: ['<unnamed entity>']).
 	query do: [:component |
-		component isNumber not and: [component class ~= Label]
+		component isNumber not and: [component class ~= Label and: [component class ~= ECSPersisted]] 
 			ifTrue: [entity addComponent: component]].
 	aUniverse when: #postTick send: #updateValues to: entity.
 	^ entity

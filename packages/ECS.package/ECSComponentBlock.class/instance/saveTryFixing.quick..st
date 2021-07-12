@@ -9,7 +9,6 @@ saveTryFixing: aFixBoolean quick: aQuickBoolean
 			super: EntityComponent
 			instVars: (self fields collect: #fieldName)
 			current: self id] sbStSave.
-	self id: class shownClass.
 	
 	self fields do: [:field |
 		[:b | b pragma: #ecsType: with: (b symbol: field fieldType) in: (b getter: field fieldName in: class)] sbStSave.
@@ -26,5 +25,7 @@ saveTryFixing: aFixBoolean quick: aQuickBoolean
 			method: #initialize
 			in: class
 			do: {b to: (b name: 'super') send: #initialize}, (self fields collect: [:f | b assign: f fieldName to: ((Smalltalk at: f fieldType) ecsDefault) storeString parseAsSandblock])] sbStSave.
+		
+	(self universe componentClasses includes: self id) ifFalse: [self universe componentClasses add: self id].
 	
 	^ true

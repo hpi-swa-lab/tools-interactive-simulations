@@ -1,9 +1,9 @@
 {
 	"class" : {
 		"delete:from:in:" : "aj 7/11/2021 14:22",
-		"delete:in:" : "aj 7/11/2021 14:23",
+		"delete:in:" : "mb 7/12/2021 11:36",
 		"elementsIn:" : "aj 6/17/2021 14:24",
-		"generateIdIn:" : "aj 7/11/2021 14:44",
+		"generateIdIn:" : "mb 7/12/2021 09:33",
 		"newFrom:" : "mb 7/8/2021 11:24",
 		"newFrom:inEntity:in:" : "aj 7/11/2021 15:44",
 		"newWith:in:" : "aj 7/11/2021 15:41",
@@ -13,7 +13,7 @@
 		"component" : "mb 7/8/2021 11:20",
 		"component:" : "mb 7/8/2021 11:20",
 		"copyOnDrag" : "Alexander Junger 5/17/2021 11:01",
-		"deleteComponent" : "mb 7/8/2021 01:57",
+		"deleteComponent" : "mb 7/12/2021 11:25",
 		"entityId" : "aj 7/11/2021 15:39",
 		"entityId:" : "aj 7/11/2021 15:39",
 		"example" : "Alexander Junger 5/31/2021 09:56",
@@ -28,10 +28,11 @@
 		"isInstance" : "aj 6/24/2021 15:53",
 		"newEmptyChildNear:before:" : "Alexander Junger 5/9/2021 09:55",
 		"object" : "mb 7/8/2021 10:42",
-		"saveTryFixing:quick:" : "aj 7/11/2021 09:45",
+		"saveTryFixing:quick:" : "mb 7/12/2021 09:37",
 		"title" : "Alexander Junger 5/27/2021 09:55",
-		"title:" : "aj 7/11/2021 14:44",
+		"title:" : "mb 7/12/2021 11:46",
 		"toggleCollapsed" : "Alexander Junger 5/27/2021 10:30",
 		"universe" : "aj 7/11/2021 15:41",
 		"universe:" : "aj 7/11/2021 15:41",
-		"updateFields" : "aj 7/11/2021 15:47" } }
+		"updateFields" : "mb 7/12/2021 10:01",
+		"veryDeepCopyWith:" : "mb 7/12/2021 10:16" } }

@@ -6,4 +6,5 @@ addComponent
 			ifTrue: [collapseIcon changeIconName: #iconChevronDown]]
 		ifFalse: [collapseIcon iconName == #iconChevronRight 
 			ifTrue: [self toggleCollapsed]].
-	self addMorphBack: ECSComponentBlock new
+	
+	self addMorphBack: ECSComponentBlock new.

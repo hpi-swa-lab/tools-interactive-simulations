@@ -3,5 +3,5 @@ generateIdIn: aUniverse
 
 	| id |
 
-	id := aUniverse state allocateEntity.
+	id := aUniverse spawnNewAutoPersistedWith: {}.
 	^ id

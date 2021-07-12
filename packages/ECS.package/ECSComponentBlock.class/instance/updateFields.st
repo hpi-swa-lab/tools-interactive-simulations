@@ -1,11 +1,12 @@
 as yet unclassified
 updateFields
 
-	| value |
+	| value c |
 
 	self isInstance ifTrue: [
+		c := self universe getSingle: self id name of: self entityId. 
 		self id fields do: [:field |
-			value := self component perform: field.
+			value := c perform: field.
 			(self getField: field)
 				fieldValueContents: value;
 				showFieldValue;
