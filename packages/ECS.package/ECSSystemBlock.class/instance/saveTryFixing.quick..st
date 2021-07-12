@@ -9,7 +9,7 @@ saveTryFixing: aFixBoolean quick: aQuickBoolean
 			super: System
 			instVars: OrderedCollection new
 			current: self id class)
-			category: 'ECS-Block'] sbStSave.
+			category: 'ECS-Blocks'] sbStSave.
 
 	pipeline := self class gamePipelineIn: self universe.
 	(pipeline systems contains: [:system | system class = self id class]) ifFalse: [pipeline register: self id].

@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Blocks",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "Happynizer",
+	"pools" : [
+		 ],
+	"super" : "System",
+	"type" : "normal" }
