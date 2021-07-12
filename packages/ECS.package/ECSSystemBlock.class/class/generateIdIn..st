@@ -9,7 +9,7 @@ generateIdIn: aUniverse
 			super: System
 			instVars: OrderedCollection new
 			current: nil)
-			category: 'UserObjects'] sbStSave.
+			category: 'ECS-Blocks'] sbStSave.
 		
 	[:b |
 		(b method: #tick: in: class object with: {b name: 'aUniverse'} do: {})] sbStSave.
