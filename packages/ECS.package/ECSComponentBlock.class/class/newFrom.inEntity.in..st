@@ -6,7 +6,6 @@ newFrom: aComponent inEntity: anEntityId in: aUniverse
 	component := self new
 		title: aComponent class asString;
 		id: aComponent class;
-		component: aComponent;
 		entityId: anEntityId;
 		universe: aUniverse.
 	aComponent class fields do: [:field |

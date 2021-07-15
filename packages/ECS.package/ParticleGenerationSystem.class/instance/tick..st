@@ -4,7 +4,7 @@ tick: aUniverse
 	aUniverse query: #(#UniverseView) do: [:screenSize |
 		aUniverse query: #(#ParticleSettings) do: [:particleSettings | | counter |
 			counter := 0.
-			aUniverse query: #(#Physics) do: [:physics | counter := counter + 1].
+			aUniverse query: #(#Label) do: [:label | label label = 'Particle' ifTrue: [counter := counter + 1]].
 
 			particleSettings numParticles < counter 
 				ifTrue: [aUniverse query: #(#Physics #id) do: [:physics :id | aUniverse remove: id persisted: true.]] 
