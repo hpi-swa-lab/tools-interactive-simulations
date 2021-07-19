@@ -4,11 +4,12 @@ saveTryFixing: aFixBoolean quick: aQuickBoolean
 	| class |
 
 	class := [:b |
-		b
+		(b
 			class: self title contents
 			super: EntityComponent
 			instVars: (self fields collect: #fieldName)
-			current: self id] sbStSave.
+			current: self id)
+			category: 'ECS-Components'] sbStSave.
 	
 	self fields do: [:field |
 		field fieldValue: (Smalltalk at: field fieldType) editorType new.

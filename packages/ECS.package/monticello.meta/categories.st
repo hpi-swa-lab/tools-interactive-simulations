@@ -18,3 +18,4 @@ SystemOrganization addCategory: #'ECS-UI'!
 SystemOrganization addCategory: #'ECS-My'!
 SystemOrganization addCategory: #'ECS-New'!
 SystemOrganization addCategory: #'ECS-Game-GasTank'!
+SystemOrganization addCategory: #'ECS-Components'!
