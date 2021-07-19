@@ -1,4 +1,4 @@
-as yet unclassified
+artefact protocol
 saveTryFixing: aFixBoolean quick: aQuickBoolean
 
 	| class |

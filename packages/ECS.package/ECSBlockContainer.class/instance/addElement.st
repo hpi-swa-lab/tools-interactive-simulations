@@ -1,4 +1,4 @@
-as yet unclassified
+adding
 addElement
 
 	| element id |
@@ -7,6 +7,5 @@ addElement
 	element := self type newWith: id in: self universe.
 	element when: #deleteElement send: #deleteElement: to: self.
 	self elements at: id put: element.
-	self flag: 'Add this element to elements and generate an Id.'.
 	scroll scroller addMorphBack: element.
 	scroll scrollToShow: scroll scroller lastSubmorph.

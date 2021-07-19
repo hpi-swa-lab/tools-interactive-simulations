@@ -1,4 +1,4 @@
-as yet unclassified
+layout - visibility
 hideFieldType
 
 	fieldType

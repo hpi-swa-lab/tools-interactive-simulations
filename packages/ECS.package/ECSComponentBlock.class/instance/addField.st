@@ -1,4 +1,4 @@
-as yet unclassified
+field handling
 addField
 
 	self fields isEmpty

@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 type: anECSType
 
 	type := anECSType

@@ -1,0 +1,18 @@
+{
+	"category" : "ECS-Blocks",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"universe",
+		"entities",
+		"components",
+		"systems",
+		"playIcon" ],
+	"name" : "ECSBlocksEditor",
+	"pools" : [
+		 ],
+	"super" : "SBBlock",
+	"type" : "normal" }

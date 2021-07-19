@@ -1,4 +1,4 @@
-as yet unclassified
+actions
 toggleCollapsed
 
 	self fields ifEmpty: [collapseIcon changeIconName: (collapseIcon iconName == #iconChevronDown 

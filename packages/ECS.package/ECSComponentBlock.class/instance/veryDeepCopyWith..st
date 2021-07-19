@@ -1,4 +1,4 @@
-as yet unclassified
+copying
 veryDeepCopyWith: deepCopier
 
 	| new oldUniverse |

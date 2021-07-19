@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 isInstance
 
 	^ self owner class = ECSEntityBlock

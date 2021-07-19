@@ -1,4 +1,4 @@
-as yet unclassified
+testing
 hasValues
 
 	^ self owner class == ECSEntityBlock

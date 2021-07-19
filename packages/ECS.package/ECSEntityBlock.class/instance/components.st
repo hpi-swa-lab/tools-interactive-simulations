@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 components
 
 	^ self submorphs allButFirst

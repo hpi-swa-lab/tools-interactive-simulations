@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-New",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ECSBlocksPlacementDrawSystem",
+	"pools" : [
+		 ],
+	"super" : "System",
+	"type" : "normal" }

@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 fields
 
 	^ self submorphs allButFirst

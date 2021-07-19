@@ -1,4 +1,4 @@
-as yet unclassified
+insert/delete
 newEmptyChildNear: aBlock before: aBoolean
 
 	^ ECSComponentBlockField new

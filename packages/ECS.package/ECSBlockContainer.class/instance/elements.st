@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 elements
 
 	^ elements ifNil: [elements := Dictionary new]

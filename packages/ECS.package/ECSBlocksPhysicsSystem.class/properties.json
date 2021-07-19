@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-New",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ECSBlocksPhysicsSystem",
+	"pools" : [
+		 ],
+	"super" : "System",
+	"type" : "normal" }
