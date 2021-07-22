@@ -1,7 +1,5 @@
 {
 	"class" : {
-		"delete:from:in:" : "aj 7/11/2021 14:22",
-		"delete:in:" : "mb 7/12/2021 11:36",
 		"elementsIn:" : "aj 6/17/2021 14:24",
 		"generateIdIn:" : "mb 7/12/2021 09:33",
 		"newFrom:inEntity:in:" : "aj 7/15/2021 14:07",
@@ -10,7 +8,8 @@
 	"instance" : {
 		"addField" : "aj 7/15/2021 13:52",
 		"copyOnDrag" : "Alexander Junger 5/17/2021 11:01",
-		"deleteComponent" : "aj 7/19/2021 09:54",
+		"deleteComponent" : "mb 7/22/2021 12:46",
+		"deleteComponentFrom:" : "mb 7/22/2021 12:57",
 		"entityId" : "aj 7/11/2021 15:39",
 		"entityId:" : "aj 7/11/2021 15:39",
 		"example" : "Alexander Junger 5/31/2021 09:56",
