@@ -1,5 +1,6 @@
 insert/delete
 deleteComponentFrom: anEntityId
 
-	self universe removeActionsWithReceiver: self.
-	self universe remove: self id name from: anEntityId persisted: true
+	self universe
+		removeActionsWithReceiver: self;
+		remove: self id name from: anEntityId persisted: true

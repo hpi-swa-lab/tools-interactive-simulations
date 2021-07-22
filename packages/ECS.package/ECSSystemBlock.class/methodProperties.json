@@ -1,13 +1,13 @@
 {
 	"class" : {
-		"elementsIn:" : "aj 7/11/2021 11:55",
+		"elementsIn:" : "aj 7/22/2021 14:22",
 		"gamePipelineIn:" : "Alexander Junger 6/14/2021 09:50",
 		"generateIdIn:" : "aj 7/12/2021 20:18",
 		"newWith:in:" : "aj 7/12/2021 18:30",
 		"title" : "Alexander Junger 6/3/2021 11:01" },
 	"instance" : {
 		"canDrag" : "aj 7/5/2021 14:30",
-		"deleteSystem" : "mb 7/12/2021 10:59",
+		"deleteSystem" : "aj 7/22/2021 15:27",
 		"example" : "Alexander Junger 5/13/2021 11:15",
 		"fixedNumberOfChildren" : "Alexander Junger 5/13/2021 11:09",
 		"id" : "mb 5/26/2021 23:21",
@@ -15,7 +15,7 @@
 		"initialize" : "aj 7/5/2021 14:32",
 		"isArtefact" : "Alexander Junger 5/13/2021 11:09",
 		"methods" : "Alexander Junger 6/3/2021 14:12",
-		"saveTryFixing:quick:" : "aj 7/19/2021 11:54",
+		"saveTryFixing:quick:" : "aj 7/22/2021 15:39",
 		"title" : "aj 7/11/2021 10:13",
 		"title:" : "mb 7/12/2021 11:53",
 		"toggleCollapsed" : "Alexander Junger 6/4/2021 10:38",

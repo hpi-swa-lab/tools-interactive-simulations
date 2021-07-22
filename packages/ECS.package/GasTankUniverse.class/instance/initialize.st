@@ -11,6 +11,7 @@ initialize
 		runContinuously: true;
 		register: TimeSystem new;
 		register: GasTankPhysics new;
+		register: Happynizer new;
 		register: ParticleGenerationSystem new);
 	register: (Pipeline new
 		title: 'Render';

@@ -3,7 +3,6 @@ initialize
 
 	super initialize.
 
-	"universe := GasTankUniverse new."
 	entities := ECSBlockContainer newOf: ECSEntityBlock with: self universe.
 	components := ECSBlockContainer newOf: ECSComponentBlock with: self universe.
 	systems := ECSBlockContainer newOf: ECSSystemBlock with: self universe.

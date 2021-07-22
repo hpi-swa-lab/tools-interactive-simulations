@@ -1,0 +1,2 @@
+I contain blocks. The behaviour when adding or deleting of these blocks depends on my elements.
+Methods to be implemtented by my elements. These methods are elementsIn:, generateIdIn: and newWith: In:.

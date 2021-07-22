@@ -1,4 +1,4 @@
 as yet unclassified
 elementsIn: aUniverse
 
-	^ aUniverse componentClasses
+	^ aUniverse componentClasses copyWithoutAll: {Label. DeltaTime. UniverseView}

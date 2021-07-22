@@ -1,0 +1,1 @@
+I am field of an ECSComponentBlock. My value (state) is part of an entity and is only showing when my ECSComponentBlock is connected to an entity.

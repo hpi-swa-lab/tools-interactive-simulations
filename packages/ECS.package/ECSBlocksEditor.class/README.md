@@ -1,0 +1,1 @@
+I am an editor and contain a view, entities, components and systems as blocks.

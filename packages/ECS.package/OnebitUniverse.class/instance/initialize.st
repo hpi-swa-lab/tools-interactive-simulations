@@ -22,7 +22,7 @@ initialize
 		constantAt: #TreeButtonAsset put: (ECSTileMapAsset of: #onebit at: (2 , 1 corner: 18 , 17) scale: 4 rotation: 0));
 		register: AnnoFrameCounterSystem new);
 	register: (Pipeline new
-		title: 'Loop';
+		title: 'Game Loop';
 		runContinuously: true;
 		register: TimeSystem new;
 		register: OnebitStateSystem new;

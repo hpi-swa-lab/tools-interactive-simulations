@@ -1,0 +1,1 @@
+I visualize the rendered state of the universe and its entities.

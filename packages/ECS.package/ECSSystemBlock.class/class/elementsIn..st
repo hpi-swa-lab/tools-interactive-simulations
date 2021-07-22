@@ -1,4 +1,4 @@
 as yet unclassified
 elementsIn: aUniverse
 
-	^ (ECSSystemBlock gamePipelineIn: aUniverse) systems
+	^ (self gamePipelineIn: aUniverse) systems select: [:system | system class ~= ECSBlocksTimeSystem]

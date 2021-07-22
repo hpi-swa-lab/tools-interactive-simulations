@@ -1,4 +1,4 @@
 testing
 hasValues
 
-	^ self owner class == ECSEntityBlock
+	^ self owner class = ECSEntityBlock

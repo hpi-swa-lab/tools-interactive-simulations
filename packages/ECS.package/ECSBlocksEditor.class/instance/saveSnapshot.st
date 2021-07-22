@@ -2,6 +2,7 @@ snapshot saving
 saveSnapshot
 
 	| action |
+
 	self universe class == Universe
 		ifTrue: [self saveSnapshotInNewUniverseClass]
 		ifFalse: [action :=

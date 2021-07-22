@@ -8,4 +8,4 @@ addElement
 	element when: #deleteElement send: #deleteElement: to: self.
 	self elements at: id put: element.
 	scroll scroller addMorphBack: element.
-	scroll scrollToShow: scroll scroller lastSubmorph.
+	scroll scrollToShow: scroll scroller lastSubmorph
