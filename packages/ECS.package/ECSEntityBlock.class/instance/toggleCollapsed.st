@@ -1,10 +1,11 @@
 actions
 toggleCollapsed
 
-	self components ifEmpty: [collapseIcon changeIconName: (collapseIcon iconName == #iconChevronDown 
-		ifTrue: [#iconChevronRight] 
-		ifFalse: [#iconChevronDown]).
-		^ self].
+	self components
+		ifEmpty: [collapseIcon changeIconName: (collapseIcon iconName = #iconChevronDown 
+			ifTrue: [#iconChevronRight] 
+			ifFalse: [#iconChevronDown]).
+			^ self].
 	self components do: [:component |
 		component
 			visible: component visible not;

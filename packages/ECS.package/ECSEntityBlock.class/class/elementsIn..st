@@ -6,4 +6,5 @@ elementsIn: aUniverse
 	query := aUniverse query: #().
 	ids := OrderedCollection new.
 	query do: [:element | ids add: element first].
+
 	^ ids

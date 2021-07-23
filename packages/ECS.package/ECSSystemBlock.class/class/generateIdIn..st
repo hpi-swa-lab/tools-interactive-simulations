@@ -12,10 +12,15 @@ generateIdIn: aUniverse
 			category: 'ECS-Blocks'] sbStSave.
 		
 	[:b |
-		(b method: #tick: in: class object with: {b name: 'aUniverse'} do: {})] sbStSave.
+		(b
+			method: #tick:
+			in: class object
+			with: {b name: 'aUniverse'}
+			do: {})] sbStSave.
 	
 	instance := class object new.
 	pipeline := self gamePipelineIn: aUniverse.
-	(pipeline systems contains: [:system | system class = class object]) ifFalse: [pipeline register: instance].
+	(pipeline systems contains: [:system | system class = class object])
+		ifFalse: [pipeline register: instance].
 
 	^ instance

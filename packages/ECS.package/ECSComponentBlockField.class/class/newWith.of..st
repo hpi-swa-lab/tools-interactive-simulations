@@ -1,7 +1,7 @@
 as yet unclassified
 newWith: aField of: aClass
 
-	| fieldName fieldValue fieldType |
+	| fieldName fieldType fieldValue |
 
 	fieldName := SBTextBubble new
 		contents: aField;
@@ -19,12 +19,13 @@ newWith: aField of: aClass
 		hide;
 		disableLayout: true.
 
-	fieldType object = #Number ifTrue: [fieldValue contents: '0.0'].
+	fieldType object = #Number
+		ifTrue: [fieldValue contents: '0.0'].
 
 	^ self new
 		fieldName: fieldName;
-		fieldValue: fieldValue;
 		fieldType: fieldType;
+		fieldValue: fieldValue;
 		addMorphBack: fieldName;
-		addMorphBack: fieldValue;
-		addMorphBack: fieldType
+		addMorphBack: fieldType;
+		addMorphBack: fieldValue

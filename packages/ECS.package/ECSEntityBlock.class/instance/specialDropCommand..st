@@ -1,7 +1,7 @@
 dropping/grabbing
 specialDropCommand: aBlock
 
-	aBlock class == ECSComponentBlock
+	aBlock class = ECSComponentBlock
 		ifTrue: [^ SBCombinedCommand newWith: {
 			SBDoItCommand new do: [
 				self universe attach: aBlock id name asSymbol to: self id persisted: true.

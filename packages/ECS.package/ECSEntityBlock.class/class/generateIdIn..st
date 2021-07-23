@@ -4,4 +4,5 @@ generateIdIn: aUniverse
 	| id |
 
 	id := aUniverse spawnNewAutoPersistedWith: {}.
+
 	^ id

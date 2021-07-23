@@ -11,6 +11,9 @@ generateIdIn: aUniverse
 			current: nil] sbStSave.
 
 	[:b |
-		(b method: #fields in: class object classSide do: {b return: (b array: {})})] sbStSave.
+		(b
+			method: #fields
+			in: class object classSide
+			do: {b return: (b array: {})})] sbStSave.
 
 	^ class object

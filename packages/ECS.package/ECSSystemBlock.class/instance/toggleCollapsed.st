@@ -1,10 +1,11 @@
 actions
 toggleCollapsed
 
-	self methods ifEmpty: [collapseIcon changeIconName: (collapseIcon iconName == #iconChevronDown 
-		ifTrue: [#iconChevronRight] 
-		ifFalse: [#iconChevronDown]).
-		^ self].
+	self methods
+		ifEmpty: [collapseIcon changeIconName: (collapseIcon iconName = #iconChevronDown 
+			ifTrue: [#iconChevronRight] 
+			ifFalse: [#iconChevronDown]).
+			^ self].
 	self methods do: [:method |
 		method
 			visible: method visible not;

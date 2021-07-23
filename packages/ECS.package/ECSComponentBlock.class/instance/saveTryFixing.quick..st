@@ -26,8 +26,11 @@ saveTryFixing: aFixBoolean quick: aQuickBoolean
 		b
 			method: #initialize
 			in: class
-			do: {b to: #initialize send: (b name: 'super')}, (self fields collect: [:f | b assign: f fieldName to: ((Smalltalk at: f fieldType) ecsDefault) storeString parseAsSandblock])] sbStSave.
+			do:
+				{b to: #initialize send: (b name: 'super')},
+				(self fields collect: [:f | b assign: f fieldName to: ((Smalltalk at: f fieldType) ecsDefault) storeString parseAsSandblock])] sbStSave.
 		
-	(self universe componentClasses includes: self id) ifFalse: [self universe componentClasses add: self id].
+	(self universe componentClasses includes: self id)
+		ifFalse: [self universe componentClasses add: self id].
 	
 	^ true
