@@ -1,0 +1,14 @@
+{
+	"category" : "ECS-Palettes",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "ECSSystemPalette",
+	"pools" : [
+		 ],
+	"super" : "SBPalette",
+	"type" : "normal" }
