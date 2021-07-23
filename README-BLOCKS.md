@@ -4,7 +4,7 @@ An editor for programming novices which attempt to understand the ECS programmin
 
 ## Install
 
-ECS-Blocks depends on Sandblocks, so a installation of Sandblocks is required:
+ECS-Blocks depends on Sandblocks, so an installation of Sandblocks is required:
 ```smalltalk
 Metacello new
   baseline: 'Sandblocks';
@@ -12,9 +12,10 @@ Metacello new
   get; load.
 ```
 
-After that the installation of ECS-Blocks is possible:
+After that, the installation of ECS-Blocks is possible:
 ```smalltalk
-Scanner allowBlockArgumentAssignment: true
+Scanner allowBlockArgumentAssignment: true.
+
 Metacello new
   baseline: 'ECS';
   repository: 'github://hpi-swa-lab/tools-interactive-simulations:blocks/packages';
