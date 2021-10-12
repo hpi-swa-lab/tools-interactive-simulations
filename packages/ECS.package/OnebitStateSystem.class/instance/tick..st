@@ -1,8 +1,6 @@
 as yet unclassified
 tick: aUniverse
-	
-	SBExample self: [OnebitStateSystem new] args: [{ 123 }].
-	
+
 	aUniverse
 		query: #( #'OnebitGameState' #'OnebitConfig' #'DeltaTime' )
 		do: [ :state :config :deltaTime |
